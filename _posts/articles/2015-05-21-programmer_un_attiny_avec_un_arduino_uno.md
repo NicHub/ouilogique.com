@@ -86,6 +86,8 @@ et la quatrième LED, bleue, sert à vérifier que l’ATtiny a effectivement é
 
 # Charger le *bootloader* dans l’ATtiny
 
+> Normalement cette étape n’est pas nécessaire quand on programme en mode ISP. Le bootloader est justement là pour palier l’absence de programmateur. Comme je n’ai pas encore vérifié cette info, je laisse ce texte pour l’instant. De toute façon une chose est sûre : ça fonctionne comme ça.
+
 Cette opération est nécessaire pour les microcontrôleurs qui n’ont jamais été programmés. Elle ne doit être effectuée qu’une fois.
 
 - Changer la cible pour programmer l’ATtiny25V :
