@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Search"
-date: 
+title: "Recherche"
+date:
 modified:
 excerpt:
 image:
@@ -9,17 +9,17 @@ image:
 search_omit: true
 sitemap: false
 ---
-  
+
 <!-- Search form -->
 <form method="get" action="{{ site.url }}/search/" data-search-form class="simple-search">
-  <label for="q">Search {{ site.title }} for:</label>
-  <input type="search" name="q" id="q" placeholder="What are you looking for?" data-search-input id="goog-wm-qt" autofocus />
-  <input type="submit" value="Search" id="goog-wm-sb" />
+  <label for="q">Recherche</label>
+  <input type="search" name="q" id="q" placeholder="Demandez et on vous répondra." data-search-input id="goog-wm-qt" autofocus />
+  <input type="submit" value="GO !" id="goog-wm-sb" />
 </form>
 
 <!-- Search results placeholder -->
 <h6 data-search-found>
-  <span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.
+  <span data-search-found-count></span> résultat(s) pour &ldquo;<span data-search-found-term></span>&rdquo;.
 </h6>
 <ul class="post-list" data-search-results></ul>
 

@@ -7,6 +7,7 @@ image:
   feature: so-simple-sample-image-6.jpg
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+published: false
 ---
 
 General notes and suggestions for customizing **So Simple Theme**.
@@ -32,7 +33,7 @@ If you want to use So Simple with an existing Jekyll site follow these steps:
 3. Run `bundle install` to install all dependencies (Jekyll, [Jekyll-Sitemap](https://github.com/jekyll/jekyll-sitemap), [Octopress](https://github.com/octopress/octopress), etc)
 4. Remove demo posts/pages and replace with your own posts, pages, and any other content you want to move over.
 5. Update posts' and pages' YAML to match variables used by So Simple. Full details below.
-6. Update `_config.yml` and add navigation links and additional author data if applicable. Full details below. 
+6. Update `_config.yml` and add navigation links and additional author data if applicable. Full details below.
 
 **Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you won't want.
 {: .notice}
@@ -90,7 +91,7 @@ so-simple-theme/
 ├── images/                      # images for posts and pages
 ├── 404.md                       # 404 page
 ├── feed.xml                     # Atom feed template
-├── index.md                     # sample homepage. lists 5 latest posts 
+├── index.md                     # sample homepage. lists 5 latest posts
 └── theme-setup/                 # theme setup page. safe to remove
 {% endhighlight %}
 
@@ -125,7 +126,7 @@ url: http://mmistakes.github.io/so-simple-theme
 url: http://localhost:4000
 url: http://mademistakes.com
 url: //mademistakes.com
-url: 
+url:
 {% endhighlight %}
 
 [^protocol]: If you decide to use a protocol-relative URL know that it will most likely break sitemap.xml that the Jekyll-Sitemap gem creates. If a valid sitemap matters to you I'd suggest [creating your own sitemap.xml](http://davidensinger.com/2013/03/generating-a-sitemap-in-jekyll-without-a-plugin/) and apply some Liquid logic to prepend links to posts/pages with `https:`.
@@ -143,7 +144,7 @@ To set what links appear in the top navigation edit `_data/navigation.yml`. Use 
   url: /portfolio/
 
 - title: Made Mistakes
-  url: http://mademistakes.com  
+  url: http://mademistakes.com
 {% endhighlight %}
 
 ---
@@ -355,4 +356,4 @@ Found a bug or aren't quite sure how something works? By all means Ping me on Tw
 
 ## License
 
-This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer. 
+This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer.
