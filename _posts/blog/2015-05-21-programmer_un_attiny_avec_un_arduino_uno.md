@@ -8,9 +8,7 @@ author: Nicolas
 comments: true
 share: true
 image:
-  feature: so-simple-sample-image-7.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: 2015-02-23_microDelta_002.jpg
 published: true
 ---
 
