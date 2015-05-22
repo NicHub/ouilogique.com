@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bienvenue sur OUILOGIQUE.COM
+title: Bienvenue sur OuiLogique.com
 excerpt: "Expérimentations d’un Maker en herbe"
 modified: 2015-05-21T12:00:00+02:00
 image:
