@@ -9,7 +9,8 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-Ce blog existe parce que tout n’est pas aussi simple qu’un [OUI LOGIQUE](http://fr.wikipedia.org/wiki/Fonction_OUI).
 
-Mais ça va changer !
+<p style="text-align:center; font-size:180%">Ce blog existe parce que tout n’est pas aussi simple qu’un <a href="http://fr.wikipedia.org/wiki/Fonction_OUI">OUI LOGIQUE</a></p>
+
+<p style="text-align:center; font-size:180%; font-weight: bold">Mais ça va changer !</p>
 
