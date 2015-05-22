@@ -14,3 +14,10 @@ image:
 
 <p style="text-align:center; font-size:180%; font-weight: bold">Mais ça va changer !</p>
 
+
+<p style="text-align:center; font-size:180%">Donc si vous vous intéressez aux microcontrôleurs et plus particulièrement aux cartes de développement Arduino et Launchpad ainsi qu’aux imprimantes 3D, alors vous devriez trouver quelques informations d’intérêt par la-dedans.</p>
+
+
+<p style="text-align:center; font-size:180%">Bonne lecture.</p>
+
+<p style="text-align:center; font-size:180%">Nicolas</p>
