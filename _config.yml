@@ -1,4 +1,6 @@
 # Site wide configuration
+# git update-index --assume-unchanged "_config.yml"
+# git update-index --no-assume-unchanged "_config.yml"
 
 title: OUILOGIQUE.COM
 locale: fr_FR
