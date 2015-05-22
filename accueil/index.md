@@ -9,5 +9,7 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-Un site pour dire OUI à la logique !
+Ce blog existe parce que tout n’est pas aussi simple qu’un [OUI LOGIQUE](http://fr.wikipedia.org/wiki/Fonction_OUI).
+
+Mais ça va changer !
 
