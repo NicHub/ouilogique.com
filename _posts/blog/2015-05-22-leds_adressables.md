@@ -22,10 +22,18 @@ Jusque là, rien de bien méchant. Mais comme je n’avais qu’une LED de ce ty
 
 Mal m’en a pris, elles ne sont pas du tout du même type que ma LED RGB de base. En fait ce sont des LED adressables en PWM. Eh oui, elles contiennent de la logique capable de comprendre un signal PWM et de s’allumer en conséquence. Avec en plus la possibilité d’être mise en série.
 
+D’après Boxtec, la [LED P9823-F8](http://shop.boxtec.ch/led-neopixel-8mm-p9823-p-42265.html) est compatible avec [le modèle WS2812 vendu par Adafruit](http://www.adafruit.com/datasheets/WS2812.pdf).
+
 Pour la programmation sur Arduino, j’ai trouvé deux librairies :
 
 
 - [NeoPixels d’Adafruit](https://github.com/adafruit/Adafruit_NeoPixel)
 - [FastLED](http://fastled.io)
+
+
+![](/files/2015-05-22-leds_adressables/images/P1030717.JPG)
+
+![](/files/2015-05-22-leds_adressables/2015-05-22-leds_adressables_bb.svg)
+
 
 
