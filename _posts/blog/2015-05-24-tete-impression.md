@@ -19,3 +19,8 @@ Ma [µDelta](http://www.reprap-france.com) a [une nouvelle tête d’impression]
 ![](/files/2015-05-24-tete-impression/images/2015-05-24_hotend_6628216843.jpg)
 
 
+Petit soucis cependant, l’étalonnage de Reprap-France ne fonctionne plus... Il faut donc ruseren modifiant directement les réglages du Firmware enregistrés dans l’EEPROM de la carte Teensylu.
+
+![](/files/2015-05-24-tete-impression/images/FirmwareEEPROMSettings_1.png)
+
+![](/files/2015-05-24-tete-impression/images/FirmwareEEPROMSettings_2.png)
