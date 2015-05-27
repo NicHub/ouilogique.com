@@ -1,8 +1,10 @@
 # Site wide configuration
 # git update-index --assume-unchanged "_config.yml"
 # git update-index --no-assume-unchanged "_config.yml"
+# bundle exec jekyll build
+# bundle exec jekyll serve
 
-title: OUILOGIQUE.COM
+title: OuiLogique.com
 locale: fr_FR
 description: Expérimentations d’un Maker en herbe
 logo: site-logo.png
@@ -55,3 +57,4 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
+
