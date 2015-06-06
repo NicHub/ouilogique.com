@@ -11,7 +11,7 @@ date: 2015-01-07T12:00:00+01:00
 ---
 
 
-Lors du [quatrième MOOC sur les µcontrôleurs de l’EPFL](https://class.coursera.org/microcontroleurs-004/forum/thread?thread_id=327), Pierre-Yves Rochat nous a présenté comment utiliser une carte Launchpad pour programmer un MSP430 sur un breadboard. Cette façon de programmer est souvent appelée [ISP (in-system programmer) ou programmation in-situ](http://fr.wikipedia.org/wiki/Programmation_in-situ) en français.
+Lors du [quatrième MOOC sur les µcontrôleurs de l’EPFL](https://www.coursera.org/course/microcontroleurs), Pierre-Yves Rochat nous a présenté comment utiliser une carte Launchpad pour programmer un MSP430 sur un breadboard. Cette façon de programmer est souvent appelée [ISP (in-system programmer) ou programmation in-situ](http://fr.wikipedia.org/wiki/Programmation_in-situ) en français.
 
 Le document original peut être téléchargé ici :
 
