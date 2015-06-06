@@ -28,6 +28,12 @@ Voilà le résultat final :
 ![](/files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_021.jpg)
 
 
+<figure class="half">
+    <img src="/files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/adafruit_perma-proto_pt_129.jpg" alt="image">
+    <img src="/files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/adafruit_perma-proto_pt_131-1.jpg" alt="image">
+<!--    <figcaption>Caption describing these two images.</figcaption>
+ --></figure>
+
 
 
 
@@ -54,7 +60,14 @@ Voilà le résultat final :
  --></figure>
 
 
+## Notes
 
+Pour ceux qui ont participé au quatrième MOOC sur les microcontrôleurs, voici le lien vers le forum où j’ai présenté ce projet :
+
+<https://class.coursera.org/microcontroleurs-004/forum/thread?thread_id=327>
+
+
+## Code
 
 Et voilà le code pour faire des jolies transisitions sur la LED RGB :
 
