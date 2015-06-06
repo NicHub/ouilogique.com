@@ -30,10 +30,23 @@ Pour la programmation sur Arduino, j’ai trouvé deux librairies :
 - [NeoPixels d’Adafruit](https://github.com/adafruit/Adafruit_NeoPixel)
 - [FastLED](http://fastled.io)
 
+Celle d’Adafruit est plus simple à mettre en œuvre et les exemples fonctionnent bien.
+
+## Pinout
+
+![](/files/2015-05-22-leds_adressables/images/LED_P9823-F8_pinout.jpg)
+
+
+## Câblage
+
+![](/files/2015-05-22-leds_adressables/images/LED_P9823-F8_cablage.jpg)
 
 ![](/files/2015-05-22-leds_adressables/images/P1030717.JPG)
 
 ![](/files/2015-05-22-leds_adressables/2015-05-22-leds_adressables_bb.svg)
 
 
+## Liens
 
+- [Specification (en chinois traduit en anglais par Google...)](http://shop.boxtec.ch/pub/diverse/P9823.pdf)
+- [Boxtec NeoPixel Guide](http://playground.boxtec.ch/doku.php/led/ledpixel_guide)
