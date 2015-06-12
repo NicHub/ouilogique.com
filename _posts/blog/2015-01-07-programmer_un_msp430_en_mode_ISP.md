@@ -11,7 +11,7 @@ date: 2015-01-07T12:00:00+01:00
 ---
 
 
-Lors du [quatrième MOOC sur les µcontrôleurs de l’EPFL](https://class.coursera.org/microcontroleurs-004/forum/thread?thread_id=327), Pierre-Yves Rochat nous a présenté comment utiliser une carte Launchpad pour programmer un MSP430 sur un breadboard. Cette façon de programmer est souvent appelée [ISP (in-system programmer) ou programmation in-situ](http://fr.wikipedia.org/wiki/Programmation_in-situ) en français.
+Lors du [quatrième MOOC sur les µcontrôleurs de l’EPFL](https://www.coursera.org/course/microcontroleurs), Pierre-Yves Rochat nous a présenté comment utiliser une carte Launchpad pour programmer un MSP430 sur un breadboard. Cette façon de programmer est souvent appelée [ISP (in-system programmer) ou programmation in-situ](http://fr.wikipedia.org/wiki/Programmation_in-situ) en français.
 
 Le document original peut être téléchargé ici :
 
@@ -27,6 +27,12 @@ Voilà le résultat final :
 
 ![](/files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_021.jpg)
 
+
+<figure class="half">
+    <img src="/files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/adafruit_perma-proto_pt_129.jpg" alt="image">
+    <img src="/files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/adafruit_perma-proto_pt_131-1.jpg" alt="image">
+<!--    <figcaption>Caption describing these two images.</figcaption>
+ --></figure>
 
 
 
@@ -54,7 +60,14 @@ Voilà le résultat final :
  --></figure>
 
 
+## Notes
 
+Pour ceux qui ont participé au quatrième MOOC sur les microcontrôleurs, voici le lien vers le forum où j’ai présenté ce projet :
+
+<https://class.coursera.org/microcontroleurs-004/forum/thread?thread_id=327>
+
+
+## Code
 
 Et voilà le code pour faire des jolies transisitions sur la LED RGB :
 

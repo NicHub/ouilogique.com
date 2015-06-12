@@ -20,7 +20,7 @@ Jusque là, rien de bien méchant. Mais comme je n’avais qu’une LED de ce ty
 
 ![](/files/2015-05-22-leds_adressables/images/67053.jpg)
 
-Mal m’en a pris, elles ne sont pas du tout du même type que ma LED RGB de base. En fait ce sont des LED adressables en PWM. Eh oui, elles contiennent de la logique capable de comprendre un signal PWM et de s’allumer en conséquence. Avec en plus la possibilité d’être mise en série.
+Mal m’en a pris, elles ne sont pas du tout du même type que ma LED RGB de base. En fait ce sont des LED adressables en PWM. Eh oui, elles contiennent de la logique capable de comprendre un signal PWM et de s’allumer en conséquence. Avec en plus la possibilité d’être mises en série.
 
 D’après Boxtec, la [LED P9823-F8](http://shop.boxtec.ch/led-neopixel-8mm-p9823-p-42265.html) est compatible avec [le modèle WS2812 vendu par Adafruit](http://www.adafruit.com/datasheets/WS2812.pdf).
 
@@ -30,10 +30,36 @@ Pour la programmation sur Arduino, j’ai trouvé deux librairies :
 - [NeoPixels d’Adafruit](https://github.com/adafruit/Adafruit_NeoPixel)
 - [FastLED](http://fastled.io)
 
+Celle d’Adafruit est plus simple à mettre en œuvre et les exemples fonctionnent bien.
+
+## Pinout
+
+![](/files/2015-05-22-leds_adressables/images/LED_P9823-F8_pinout.jpg)
+
+
+## Câblage
+
+![](/files/2015-05-22-leds_adressables/images/LED_P9823-F8_cablage.jpg)
 
 ![](/files/2015-05-22-leds_adressables/images/P1030717.JPG)
 
 ![](/files/2015-05-22-leds_adressables/2015-05-22-leds_adressables_bb.svg)
 
 
+### Notes
+
+- Sur mon câblage, on voit que j’ai mis la pin DO de la dernière LED à la masse. Ce n’est pas nécessaire.
+- Les résistances sont de 220 Ω
+- Les condensateurs sont des 104 (100 nF)
+
+
+## Liens
+
+- [Spécification (en chinois traduit en anglais par Google...)](http://shop.boxtec.ch/pub/diverse/P9823.pdf)
+- [Boxtec NeoPixel Guide](http://playground.boxtec.ch/doku.php/led/ledpixel_guide)
+
+
+## Problème
+
+Le rouge ne fonctionne pas bien. Avec une LED c’est OK, mais dès qu’on en utilise plus, elles ont tendance à clignoter. Ceci est probablement dû au fait que les LED rouges ont besoin de plus de courant pour bien fonctionner.
 
