@@ -39,6 +39,7 @@ published: true
 
 - <http://arduino.cc/en/Main/Standalone>
 - <http://arduino.cc/en/Tutorial/ArduinoToBreadboard>
+- <http://codeandlife.com/2012/03/21/using-arduino-uno-as-isp/>
 
 
 # Préambule
