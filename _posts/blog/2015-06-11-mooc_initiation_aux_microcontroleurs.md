@@ -23,3 +23,6 @@ Et voici le cours au format GitBook :
 
 ![](/files/2015-06-11-mooc_initiation_aux_microcontroleurs/Microcontroleurs-v1.0.jpg)
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wCgJRtzTvmI" frameborder="0" allowfullscreen></iframe>
+
