@@ -26,7 +26,7 @@ Il y a un article sur le site de Mouser qui en parle aussi : <http://www.mouser
 
 Et voilà ce que ça donne en action :
 
-<div "text-align:center">
+<div style="text-align:center;">
 
 ![](https://www.lxtreme.nl/ols/img/logo.png)
 
