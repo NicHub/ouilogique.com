@@ -15,19 +15,18 @@ Voici un tuto très intéressant qui explique comment transformer un Arduino en 
 
 <http://letsmakerobots.com/node/31422>
 
-Pour résumer, il faut charger le code sur l’Arduino qui servira d’oscillo. Ce code se trouve ici :
+En résumé, cette solution nécessite deux programmes :
 
-<https://github.com/gillham/logic_analyzer>
+1. Le croquis Arduino : <https://github.com/gillham/logic_analyzer>
+2. Le programme de capture *Logic Sniffer* sur l’ordinateur : <https://www.lxtreme.nl/ols/#download>
 
-Puis, il faut installer Logic Sniffer :
 
-<http://www.lxtreme.nl/ols/>
 
-Il y a un article sur le site de Mouser qui en parle aussi :
-
-<http://www.mouser.com/blog/arduino-3-powerful-yet-overlooked-uses/>
+Il y a un article sur le site de Mouser qui en parle aussi : <http://www.mouser.com/blog/arduino-3-powerful-yet-overlooked-uses/>
 
 Et voilà ce que ça donne en action :
+
+![](https://www.lxtreme.nl/ols/img/logo.png)
 
 ![](/files/2015-06-12-logic_sniffer/2015-04-22_RF433_proto_1.jpg)
 
