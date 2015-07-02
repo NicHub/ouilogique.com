@@ -27,7 +27,7 @@ Ce test m’a été généreusement transmis par Jean-Marc. Merci à lui.
 
 Voici les illustrations qu’il m’a transmises :
 
-![](/files/2015-07-02-usb_hub_test/test_usb_hub_003.jpg)
+![](/files/2015-07-02-usb_hub_test/test_usb_hub_003.png)
 ![](/files/2015-07-02-usb_hub_test/test_usb_hub_004.jpg)
 ![](/files/2015-07-02-usb_hub_test/test_usb_hub_005.jpg)
 
