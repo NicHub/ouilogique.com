@@ -22,14 +22,3 @@ Le test consiste à placer une diode entre les pattes d’alimentation de la fic
 Sur cette image, on voit que je me suis gouré et que j’ai mis la résistance de 100 Ω en série. Comme la LED s’allume quand même, ça montre que le hub n’a pas de protection circuit ouvert (haute impédance.)
 
 ![](/files/2015-07-02-usb_hub_test/test_usb_hub_002.jpg)
-
----
-
-Ce test m’a été généreusement transmis par Jean-Marc. Merci à lui.
-
-Voici les illustrations qu’il m’a transmises :
-
-![](/files/2015-07-02-usb_hub_test/test_usb_hub_003.png)
-![](/files/2015-07-02-usb_hub_test/test_usb_hub_004.jpg)
-![](/files/2015-07-02-usb_hub_test/test_usb_hub_005.jpg)
-
