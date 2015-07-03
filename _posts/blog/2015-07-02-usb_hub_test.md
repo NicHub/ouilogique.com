@@ -23,5 +23,5 @@ Sur l’image ci-dessous, on voit que je me suis gouré et que j’ai mis la ré
 
 ![](/files/2015-07-02-usb_hub_test/test_usb_hub_002.jpg)
 
-![](/files/2015-07-02-usb_hub_test/test_usb_hub_003.png)
+<img src="/files/2015-07-02-usb_hub_test/test_usb_hub_003.png" alt="" width="200">
 
