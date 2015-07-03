@@ -17,8 +17,6 @@ Le test consiste à placer une diode entre les pattes d’alimentation de la fic
 
 > Vu que la LED s’allume, je ne recommande pas le hub LXL4072201A !
 
-À noter en plus que la LED s’allume même si la résistance de 100 Ω n’est pas connectée.
-
 <img src="/files/2015-07-02-usb_hub_test/test_usb_hub_003.png" alt="" width="300">
 
 ![](/files/2015-07-02-usb_hub_test/test_usb_hub_001.jpg)
