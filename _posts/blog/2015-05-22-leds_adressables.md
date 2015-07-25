@@ -61,7 +61,15 @@ Celle d’Adafruit est plus simple à mettre en œuvre et les exemples fonctionn
 
 ## Problème
 
-Le rouge ne fonctionne pas bien. Avec une LED c’est OK, mais dès qu’on en utilise plus, elles ont tendance à clignoter. Ceci est probablement dû au fait que les LED rouges ont besoin de plus de courant pour bien fonctionner. J’ai donc fait un test (2 mois plus tard...) avec des résistances de 47 Ω à la place des 220 Ω et ça fonctionne nettement mieux ! Pour avoir du blanc presque blanc, je suis descendu jusqu’à 10 Ω.
+Le rouge ne fonctionne pas bien. Avec une LED c’est OK, mais dès qu’on en utilise plus, elles ont tendance à clignoter. Ceci est probablement dû au fait que les LED rouges ont besoin de plus de courant pour bien fonctionner. J’ai donc fait un test (2 mois plus tard...) avec des résistances de 47 Ω à la place des 220 Ω et ça fonctionne nettement mieux ! Pour avoir du blanc presque blanc, je suis descendu jusqu’à 10 Ω. Bon le mieux est de vérifier la tension aux bornes des pattes d’alimentation des LED. Voilà ce que j’obtiens avec différentes résistances :
+
+| R<sub>LED</sub> (Ω) | U<sub>LED</sub> (V) |
+| --:                 | --:                 |
+| 10                  | 3.5                 |
+| 47                  | 3.0                 |
+| 220                 | 2.5                 |
+
+Donc, même avec 10 Ω, la tension n’atteind pas les 4.5 V minimum de la spec. Heureusement, ça marche quand même. Bon, le Vcc du µcontrôleur se casse la geule assez vite, donc inutile de vouloir lui coller trop de LEDs...
 
 
 
