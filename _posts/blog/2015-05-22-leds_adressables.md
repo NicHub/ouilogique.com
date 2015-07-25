@@ -49,7 +49,7 @@ Celle d’Adafruit est plus simple à mettre en œuvre et les exemples fonctionn
 ### Notes
 
 - Sur mon câblage, on voit que j’ai mis la pin DO de la dernière LED à la masse. Ce n’est pas nécessaire.
-- Les résistances sont de 220 Ω (à remplacer par des 47 Ω !!)
+- Les résistances sont de 220 Ω (à remplacer par des 47 Ω ou des 10 Ω !!)
 - Les condensateurs sont des 104 (100 nF)
 
 
@@ -61,7 +61,7 @@ Celle d’Adafruit est plus simple à mettre en œuvre et les exemples fonctionn
 
 ## Problème
 
-Le rouge ne fonctionne pas bien. Avec une LED c’est OK, mais dès qu’on en utilise plus, elles ont tendance à clignoter. Ceci est probablement dû au fait que les LED rouges ont besoin de plus de courant pour bien fonctionner. J’ai donc fait un test (2 mois plus tard...) avec des résistances de 47 Ω à la place des 220 Ω et ça fonctionne nettement mieux !
+Le rouge ne fonctionne pas bien. Avec une LED c’est OK, mais dès qu’on en utilise plus, elles ont tendance à clignoter. Ceci est probablement dû au fait que les LED rouges ont besoin de plus de courant pour bien fonctionner. J’ai donc fait un test (2 mois plus tard...) avec des résistances de 47 Ω à la place des 220 Ω et ça fonctionne nettement mieux ! Pour avoir du blanc presque blanc, je suis descendu jusqu’à 10 Ω.
 
 
 
