@@ -69,7 +69,7 @@ Le rouge ne fonctionne pas bien. Avec une LED c’est OK, mais dès qu’on en u
 	47                    3.0
 	220                   2.5
 
-Donc, même avec 10 Ω, la tension n’atteind pas les 4.5 V minimum de la spec. Heureusement, ça marche quand même. Bon, le Vcc du µcontrôleur se casse la geule assez vite, donc inutile de vouloir lui coller trop de LEDs...
+Donc, même avec 10 Ω, la tension n’atteint pas les 4.5 V minimums de la spec. Heureusement, ça marche quand même. Bon, le Vcc du µcontrôleur se casse la gueule assez vite, donc inutile de vouloir lui coller trop de LEDs...
 
 
 
