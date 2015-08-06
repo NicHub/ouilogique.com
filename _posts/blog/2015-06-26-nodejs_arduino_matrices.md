@@ -16,7 +16,7 @@ Le système est géré avec un Raspberry Pi B+ avec :
 
 - Un serveur [Node.js](https://nodejs.org)
 - [Un hotspot WiFi](https://learn.adafruit.com/setting-up-a-raspberry-pi-as-a-wifi-access-point?view=all)
-- [Un hub USB](http://ouilogique.com/blog/usb_hub_test/) sur lequel sont connectés les Arduino
+- [Un hub USB](http://ouilogique.com/blog/usb_hub_test/) sur lequel sont connectés les Arduino. Il y a 5 Arduino pour les matrices d’affichage et un 6<sup>e</sup> Arduino pour le contrôle des boutons poussoirs.
 
 La communication se passe de la façon suivante :
 
@@ -30,3 +30,4 @@ La communication se passe de la façon suivante :
 
 ![](/files/2015-06-26-nodejs_arduino_matrices/2015-05-29_platine.jpg)
 
+![](/files/2015-06-26-nodejs_arduino_matrices/2015-05-30_boutons.jpg)
