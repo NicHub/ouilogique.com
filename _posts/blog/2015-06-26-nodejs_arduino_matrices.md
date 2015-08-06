@@ -12,7 +12,7 @@ date: 2015-06-26T17:15:00+01:00
 
 
 
-On ne le voit pas sur le film, mais le système est géré avec un Raspberry Pi B+ avec :
+Le système est géré avec un Raspberry Pi B+ avec :
 
 - Un serveur Node.js
 - Un hotspot WiFi
@@ -28,4 +28,7 @@ La communication se passe de la façon suivante :
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/b8a_t5Tyg44" frameborder="0" allowfullscreen></iframe>
 
+
+
+![](/files/2015-06-26-nodejs_arduino_matrices/2015-05-29_platine.jpg)
 
