@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-  feature: TFT_screen.jpg
+  feature: TFT_screen_2.jpg
 date: 2015-07-14T14:20:00+01:00
 published: true
 ---
@@ -85,6 +85,7 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 
 
 
+![](/files/2015-08-14-2-4-in_TFT_Touch_screen/2-4-in_TFT_Touch_screen_ouilogique_com.jpg)
 
 
 
