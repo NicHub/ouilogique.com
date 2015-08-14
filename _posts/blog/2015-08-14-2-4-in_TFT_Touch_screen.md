@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-  feature:
+  feature: TFT_screen.jpg
 date: 2015-07-14T14:20:00+01:00
 published: true
 ---
