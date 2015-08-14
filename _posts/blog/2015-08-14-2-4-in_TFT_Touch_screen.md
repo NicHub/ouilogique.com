@@ -95,7 +95,7 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 
 <http://www.smokeandwires.co.nz/blog/a-2-4-tft-touchscreen-shield-for-arduino/>
 
-> Si on compare la table des signaux de *smokeandwires* et ma photo, on remarque que c’est complètement incohérent. Cependant, la version de *smokeandwires* fonctionne dans la modification des programmes d’Adafruit. Il y a un petit mystère à éclaircir.
+> Si on compare la table des signaux de *smokeandwires* et ma photo ci-dessous, on remarque que c’est complètement incohérent. Cependant, la version de *smokeandwires* fonctionne dans la modification des programmes d’Adafruit. Il y a un petit mystère à éclaircir.
 
 
 
