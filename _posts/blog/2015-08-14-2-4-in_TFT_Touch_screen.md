@@ -48,6 +48,17 @@ La librairie `TFTLCD-Library` contient un dossier `exemples` que vous pouvez cop
 > À noter que l’écran fonctionne aussi sans carte micro SD. Elle est juste utile pour stocker des bitmaps.
 
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ouilogique_1 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5638118185206577"
+     data-ad-slot="5843164030"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
 
 ## Modification de l’exemple `tftpaint.ino`
 
@@ -119,7 +130,11 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 | Touchscreen | 4 Wire Resistive Touchscreen        |
 
 
-### Arduino Pin Connections
+### Pinout de mon shield
+
+![](/files/2015-08-14-2-4-in_TFT_Touch_screen/2-4-in_TFT_Touch_screen_back.jpg)
+
+### Pinout de *smokeandwires*
 
 | Arduino Pin | LCD Shield Pin    | Use                      |
 | :--         | :--               | :--                      |
@@ -146,6 +161,14 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 
 
 
-![](/files/2015-08-14-2-4-in_TFT_Touch_screen/2-4-in_TFT_Touch_screen_back.jpg)
 
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ouilogique_1 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5638118185206577"
+     data-ad-slot="5843164030"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
