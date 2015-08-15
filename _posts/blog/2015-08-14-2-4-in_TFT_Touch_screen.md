@@ -148,9 +148,9 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 | A2          | LCD_RS  TOUCH_XM  | LCD Control / Touch Data          |
 | A3          | LCD_CS            | LCD Control                       |
 | A4          | LCD_RST           | LCD Reset                         |
-| A5          | -                 | -                                 |
-| D0          | -                 | *(RXD pas utilisé par le shield)* |
-| D1          | -                 | *(TXD pas utilisé par le shield)* |
+| A5          | ¹                 | -                                 |
+| D0          | ¹                 | *(RXD pas utilisé par le shield)* |
+| D1          | ¹                 | *(TXD pas utilisé par le shield)* |
 | D2          | LCD_D2            | LCD Data                          |
 | D3          | LCD_D3            | LCD Data                          |
 | D4          | LCD_D4            | LCD Data                          |
@@ -165,7 +165,7 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 | D13         | SD_SCK            | SD Clock                          |
 
 
-
+> ¹ On constate que le shield ne laisse que 3 broches libres : A5, D0 et D1. Comme D0 et D1 ne sont pas utilisées, on peut faire communiquer l’Arduino avec un autre système via RS232.
 
 
 
