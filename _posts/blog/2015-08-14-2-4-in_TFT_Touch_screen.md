@@ -39,13 +39,22 @@ Pour arriver à ce résultat, il faut tout d’abord télécharger trois librai
 - <https://github.com/adafruit/TFTLCD-Library>
 - <https://github.com/adafruit/Touch-Screen-Library>
 
-et les mettre dans le dossier des librairies de l’IDE Arduino, par exemple `~/Documents/Arduino/libraries/` sur Mac.
+et les mettre dans le dossier des librairies de l’IDE Arduino, par exemple `~/Documents/Arduino/libraries/` sur Mac. Le plus simple est d’exécuter les commandes suivantes dans un terminal :
+
+{% highlight bash %}
+cd ~/Documents/Arduino/libraries/
+git clone https://github.com/adafruit/Adafruit-GFX-Library.git
+git clone https://github.com/adafruit/TFTLCD-Library.git
+git clone https://github.com/adafruit/Touch-Screen-Library.git
+{% endhighlight %}
+
+Il faut redémarrer l’IDE Arduino pour utiliser les librairies.
 
 La librairie `TFTLCD-Library` contient un dossier `exemples` que vous pouvez copier pour faire des modifications et un dossier `bitmaps`. Les bitmaps peuvent être copiées à la racine d’une carte Micro SD. Celle-ci fonctionne bien pour moi :
 
 <http://www.banggood.com/8GB-Micro-SDTF-Memory-Card-For-Cell-Phone-PDA-MP3-Player-p-926928.html>
 
-> À noter que l’écran fonctionne aussi sans carte micro SD. Elle est juste utile pour stocker des bitmaps.
+> L’écran fonctionne aussi sans carte micro SD. Elle est juste utile pour stocker des bitmaps.
 
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -62,7 +71,7 @@ La librairie `TFTLCD-Library` contient un dossier `exemples` que vous pouvez cop
 
 ## Modification de l’exemple `tftpaint.ino`
 
-> À noter que c’est l’exemple `tftpaint` que j’ai utilisé et pas l’exemple `tftpaint_shield`.
+> C’est l’exemple `tftpaint` que j’ai utilisé et pas l’exemple `tftpaint_shield`.
 
 À la ligne 47
 {% highlight C++ %}
@@ -118,9 +127,6 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 
 <http://www.smokeandwires.co.nz/blog/a-2-4-tft-touchscreen-shield-for-arduino/>
 
-> Si on compare la table des signaux de *smokeandwires* et ma photo ci-dessous, on remarque que c’est complètement incohérent. Cependant, la version de *smokeandwires* fonctionne dans la modification des programmes d’Adafruit. Il y a un petit mystère à éclaircir.
-
-
 
 | Screen Size | 2.4 inch                            |
 | Resolution  | 240 x 320                           |
@@ -130,34 +136,37 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 | Touchscreen | 4 Wire Resistive Touchscreen        |
 
 
-### Pinout de mon shield
+### Pinout
 
 ![](/files/2015-08-14-2-4-in_TFT_Touch_screen/2-4-in_TFT_Touch_screen_back.jpg)
 
-### Pinout de *smokeandwires*
 
-| Arduino Pin | LCD Shield Pin    | Use                      |
-| :--         | :--               | :--                      |
-| 3.3V        | 3.3V              | Power                    |
-| 5V          | 5V                | Power                    |
-| GND         | GND               | Power                    |
-| A0          | LCD_RD            | LCD Control              |
-| A1          | LCD_WR  TOUCH_YP  | LCD Control / Touch Data |
-| A2          | LCD_RS  TOUCH_XM  | LCD Control / Touch Data |
-| A3          | LCD_CS            | LCD Control              |
-| A4          | LCD_RST           | LCD Reset                |
-| D2          | LCD_D2            | LCD Data                 |
-| D3          | LCD_D3            | LCD Data                 |
-| D4          | LCD_D4            | LCD Data                 |
-| D5          | LCD_D5            | LCD Data                 |
-| D6          | LCD_D6 / TOUCH XP | LCD Data/ Touch Data     |
-| D7          | LCD_D7 / TOUCH YM | LCD Data / Touch Data    |
-| D8          | LCD_D0            | LCD Data                 |
-| D9          | LCD_D1            | LCD Data                 |
-| D10         | SD_CS             | SD Select                |
-| D11         | SD_DI             | SD Data                  |
-| D12         | SD_DO             | SD Data                  |
-| D13         | SD_SCK            | SD Clock                 |
+| ARDUINO PIN | LCD SHIELD PIN    | USE                               |
+| :--         | :--               | :--                               |
+| 3.3V        | 3.3V              | Power                             |
+| 5V          | 5V                | Power                             |
+| GND         | GND               | Power                             |
+| A0          | LCD_RD            | LCD Control                       |
+| A1          | LCD_WR  TOUCH_YP  | LCD Control / Touch Data          |
+| A2          | LCD_RS  TOUCH_XM  | LCD Control / Touch Data          |
+| A3          | LCD_CS            | LCD Control                       |
+| A4          | LCD_RST           | LCD Reset                         |
+| A5          | -                 | -                                 |
+| D0          | -                 | *(RXD pas utilisé par le shield)* |
+| D1          | -                 | *(TXD pas utilisé par le shield)* |
+| D2          | LCD_D2            | LCD Data                          |
+| D3          | LCD_D3            | LCD Data                          |
+| D4          | LCD_D4            | LCD Data                          |
+| D5          | LCD_D5            | LCD Data                          |
+| D6          | LCD_D6 / TOUCH XP | LCD Data/ Touch Data              |
+| D7          | LCD_D7 / TOUCH YM | LCD Data / Touch Data             |
+| D8          | LCD_D0            | LCD Data                          |
+| D9          | LCD_D1            | LCD Data                          |
+| D10         | SD_CS             | SD Select                         |
+| D11         | SD_DI             | SD Data                           |
+| D12         | SD_DO             | SD Data                           |
+| D13         | SD_SCK            | SD Clock                          |
+
 
 
 
