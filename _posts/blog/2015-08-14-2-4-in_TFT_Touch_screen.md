@@ -123,10 +123,7 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 
 ## Spécifications
 
-### Source
-
-<http://www.smokeandwires.co.nz/blog/a-2-4-tft-touchscreen-shield-for-arduino/>
-
+> Source : <http://www.smokeandwires.co.nz/blog/a-2-4-tft-touchscreen-shield-for-arduino/>
 
 | Screen Size | 2.4 inch                            |
 | Resolution  | 240 x 320                           |
