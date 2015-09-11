@@ -21,10 +21,10 @@ published: true
 
 # Launchpad
 
-Launchpad-MSP430 rev 1.5, voir le pinout ici : <http://ouilogique.com/blog/pinouts/index.html#pinout-launchpad-msp430>
+Launchpad-MSP430 rev 1.5, voir le brochage ici : <http://ouilogique.com/blog/pinouts/index.html#pinout-launchpad-msp430>
 
 
-# Connections
+# Brochage
 
 <https://learn.adafruit.com/system/assets/assets/000/023/769/original/led_matrix_socket3.png?1426305755>
 
@@ -42,7 +42,7 @@ Launchpad-MSP430 rev 1.5, voir le pinout ici : <http://ouilogique.com/blog/pino
 
 # Programme
 
-Le programme ci-dessous m’a été gracieusement transmis par [Pierre-Yves Rochat](pyr@pyr.ch). La seule chose que j’ai modifiée est la description du brochage pour qu’elle corresponde à ma matrice.
+Le programme ci-dessous m’a été gracieusement transmis par [Pierre-Yves Rochat](pyr@pyr.ch). La seule chose que j’ai modifiée est la description du brochage pour qu’elle corresponde à ma matrice. Voir l’article d’Adafruit ci-dessus au sujet des différentes descriptions de brochage.
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
