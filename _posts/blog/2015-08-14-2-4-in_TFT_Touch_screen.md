@@ -23,7 +23,7 @@ published: true
 </script>
 
 
-J’ai acheté un écran TFT 2.4" chez Banggood
+J’ai acheté un écran TFT 2.4" chez Banggood :
 
 <http://www.banggood.com/UNO-R3-ATmega328P-Board-2_4-Inch-TFT-LCD-Screen-Module-For-Arduino-p-945755.html>
 
