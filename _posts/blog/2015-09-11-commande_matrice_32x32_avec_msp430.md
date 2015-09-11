@@ -26,6 +26,8 @@ Launchpad-MSP430 rev 1.5, voir le brochage ici : <http://ouilogique.com/blog/pi
 
 # Brochage
 
+Le brochage est décrit au début du programme.
+
 <https://learn.adafruit.com/system/assets/assets/000/023/769/original/led_matrix_socket3.png?1426305755>
 
 ![](/files/2015-09-11-commande_matrice_32x32_avec_msp430/mx32x32_connecteur.jpeg)
