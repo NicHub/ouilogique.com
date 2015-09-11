@@ -19,6 +19,10 @@ published: true
 
 <http://fr.aliexpress.com/item/p6-RGB-video-led-module-32-32-RGB-smd-led-module-export-korea/1677389664.html>
 
+# Launchpad
+
+Launchpad-MSP430 rev 1.5, voir le pinout ici : <http://ouilogique.com/blog/pinouts/index.html#pinout-launchpad-msp430>
+
 
 # Connections
 
