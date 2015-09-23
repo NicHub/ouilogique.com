@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title: "MOOC — Initiation aux microcontrôleurs"
 modified:
-categories: blog
+categories:
 excerpt:
 tags: []
 image:

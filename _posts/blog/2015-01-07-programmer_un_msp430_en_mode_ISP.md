@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title: "Programmer un MSP430 en mode ISP"
 modified:
-categories: blog
+categories:
 excerpt:
 tags: []
 image:

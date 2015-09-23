@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Commande d’une matrice 32×32 avec un MSP430'
 modified:
 categories:

@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title: "Commander des Arduino avec Node.js"
 modified:
-categories: blog
+categories:
 excerpt:
 tags: []
 image:

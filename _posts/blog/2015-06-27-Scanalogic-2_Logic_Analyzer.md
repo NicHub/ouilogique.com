@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title: "Analyseur logique Scanalogic-2"
 modified:
-categories: blog
+categories:
 excerpt:
 tags: []
 image:

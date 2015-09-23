@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title: "LEDs adressables"
 excerpt: "LEDs adressables"
-categories: blog
+categories:
 tags: [LED, PWM, NeoPixel, FastLED]
 author: Nicolas
 comments: true

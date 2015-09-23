@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title: "Tête d’impression chinoise pour µDelta"
 excerpt: "Tête d’impression chinoise pour µDelta"
-categories: blog
+categories:
 tags: [Impression 3D]
 author: Nicolas
 comments: true

@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title: "Un analyseur logique Arduino"
 modified:
-categories: blog
+categories:
 excerpt:
 tags: []
 image:
