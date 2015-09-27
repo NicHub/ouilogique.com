@@ -19,7 +19,7 @@ Ma [µDelta](http://www.reprap-france.com){:target="_blank"} a [une nouvelle tê
 ![](/files/2015-05-24-tete-impression/images/2015-05-24_hotend_6628216843.jpg)
 
 
-Petit soucis cependant, l’étalonnage de Reprap-France ne fonctionne plus... Il faut donc ruser en modifiant directement le réglage *Z max length [mm]* du Firmware enregistré sur l’EEPROM de la carte Teensylu.
+Petit souci cependant, l’étalonnage de Reprap-France ne fonctionne plus... Il faut donc ruser en modifiant directement le réglage *Z max length [mm]* du Firmware enregistré sur l’EEPROM de la carte Teensylu.
 
 ![](/files/2015-05-24-tete-impression/images/FirmwareEEPROMSettings_1.png)
 
