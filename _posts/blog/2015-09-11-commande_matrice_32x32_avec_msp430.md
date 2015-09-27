@@ -46,11 +46,8 @@ Le brochage est décrit au début du programme ci-dessous.
 
 Le programme ci-dessous m’a été gracieusement transmis par [Pierre-Yves Rochat](pyr@pyr.ch). La seule chose que j’ai modifiée est la description du brochage pour qu’elle corresponde à ma matrice. Voir l’article d’Adafruit ci-dessus au sujet des différentes descriptions de brochage.
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 
-
-
+&nbsp;
 
 
 {% highlight C++ %}
