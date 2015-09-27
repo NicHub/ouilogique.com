@@ -22,5 +22,5 @@ image:
 
 
 <div style="margin: 100px 0">
-	<a href="http://ouilogique.com/" class="site-logo" rel="home" title="OuiLogique.com"><img src="http://ouilogique.com/images/site-logo.png" width="200" height="200" alt="OuiLogique.com logo" class="animated fadeInDown" style="margin:0 auto; display:block"></a>
+	<a href="/" class="site-logo" rel="home" title="OuiLogique.com"><img src="/images/site-logo.png" width="200" height="200" alt="OuiLogique.com logo" class="animated fadeInDown" style="margin:0 auto; display:block"></a>
 </div>
