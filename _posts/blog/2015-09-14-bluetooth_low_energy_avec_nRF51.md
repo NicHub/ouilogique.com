@@ -23,9 +23,9 @@ published: true
 ![](/files/2015-05-28_pinouts/images/xnRF51-DK_Pinout_4.png)
 
 > Seules les broches P0.01 à P0.06 peuvent être configurées en entrées analogiques.
-
+>
 > Toutes les broches peuvent être utilisées pour le SPI, l’I²C et le RS232 et pas seulement les broches indiquées sur le schéma de brochage.
-
+>
 > Il n’y a qu’un périphérique UART, deux SPI et deux I²C (appelés TWI), mais il faut choisir : soit `SPI0` ou `TWI0`, soit `SPI1` ou `TWI1`, car ils partagent visiblement des ressources communes !
 
 
