@@ -8,7 +8,7 @@
  }
 
 // Remove margin
-body { margin: 0; } 
+body { margin: 0; }
 
 // Display HTML5 elements in IE6-9 and FF3
 article,
@@ -85,6 +85,8 @@ img {
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
+  display: block;
+  margin: 0 auto;
 }
 
 // Prevent max-width from affecting Google Maps
