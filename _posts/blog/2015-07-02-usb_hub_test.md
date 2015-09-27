@@ -2,7 +2,7 @@
 layout: page
 title: "Test d’un hub USB"
 modified:
-categories: blog
+categories:
 excerpt:
 tags: []
 image:
