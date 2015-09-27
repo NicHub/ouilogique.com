@@ -218,7 +218,7 @@ La version d’`avrdude` utilisée pour ce test est : `Version 6.0.1, compiled 
 
 ## Écriture des fusibles
 
-Pour configurer les fusibles, il est conseillé d’utiliser un configurateur, comme <http://www.engbedded.com/fusecalc/> ou de lire le chapitre *20. Memory Programming* de la spécification <http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf>. La vidéo <https://www.youtube.com/watch?v=jP1NTgs-a-s> donne une bonne introduction en anglais.
+Pour configurer les fusibles, il est conseillé d’utiliser un outil de configuration, comme <http://www.engbedded.com/fusecalc/> ou de lire le chapitre *20. Memory Programming* de la spécification <http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf>. La vidéo <https://www.youtube.com/watch?v=jP1NTgs-a-s> donne une bonne introduction en anglais.
 
 Dans notre cas, nous allons simplement utiliser les valeurs données par l’utilitaire *fusecalc* ci-dessus pour enlever la division par 8 de la fréquence d’horloge. La seule valeur que nous changeons est
 
