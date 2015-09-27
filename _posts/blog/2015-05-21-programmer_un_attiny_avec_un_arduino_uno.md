@@ -108,9 +108,9 @@ D’après [Didel](http://www.didel.com/diduino/ProgrammerUnAtTiny.pdf), ce n’
 
 {% highlight C++ %}
 /*
-	tinyblinky.ino
-	Programme pour tester la programmation en mode ISP d’un ATtiny25V
-	Fait clignoter une LED sur PB4, pin 3
+    tinyblinky.ino
+    Programme pour tester la programmation en mode ISP d’un ATtiny25V
+    Fait clignoter une LED sur PB4, pin 3
 */
 
 #include <avr/io.h>
@@ -121,20 +121,20 @@ D’après [Didel](http://www.didel.com/diduino/ProgrammerUnAtTiny.pdf), ce n’
 
 void wait( int delay_ms )
 {
-	for( volatile int i=0; i<delay_ms; i++ )
-	{
-		for( volatile int j=0; j<50; j++ ) {}
-	}
+    for( volatile int i=0; i<delay_ms; i++ )
+    {
+        for( volatile int j=0; j<50; j++ ) {}
+    }
 }
 
 int main()
 {
-	DDRB |= ( 1<<LedPin );
-	while( true )
-	{
-		LedToggle;  wait( delay1 );
-		LedToggle;  wait( delay2 );
-	}
+    DDRB |= ( 1<<LedPin );
+    while( true )
+    {
+        LedToggle;  wait( delay1 );
+        LedToggle;  wait( delay2 );
+    }
 }
 {% endhighlight %}
 
@@ -190,16 +190,16 @@ La commande utilisée par l’IDE Arduino nous donne toutes les informations de 
 
 {% highlight bash %}
 avrdude                      \
-	-C $AVRDUDECONF          \
-	-v                       \
-	-p attiny25              \
-	-c stk500v1              \
-	-P /dev/tty.usbmodem1421 \
-	-b 19200                 \
-	-U lfuse:r:-:i           \
-	-U hfuse:r:-:i           \
-	-U efuse:r:-:i           \
-	-n
+    -C $AVRDUDECONF          \
+    -v                       \
+    -p attiny25              \
+    -c stk500v1              \
+    -P /dev/tty.usbmodem1421 \
+    -b 19200                 \
+    -U lfuse:r:-:i           \
+    -U hfuse:r:-:i           \
+    -U efuse:r:-:i           \
+    -n
 {% endhighlight %}
 
 `avrdude` renvoie une longue réponse qui se termine par :
@@ -228,15 +228,15 @@ Ce qui modifie la valeur du `Low Byte` qui passe de `62` à `e2`.
 
 {% highlight bash %}
 avrdude                      \
-	-C $AVRDUDECONF          \
-	-v                       \
-	-p attiny25              \
-	-c stk500v1              \
-	-P /dev/tty.usbmodem1421 \
-	-b 19200                 \
-	-U lfuse:w:0xe2:m        \
-	-U hfuse:w:0xd7:m        \
-	-U efuse:w:0xff:m
+    -C $AVRDUDECONF          \
+    -v                       \
+    -p attiny25              \
+    -c stk500v1              \
+    -P /dev/tty.usbmodem1421 \
+    -b 19200                 \
+    -U lfuse:w:0xe2:m        \
+    -U hfuse:w:0xd7:m        \
+    -U efuse:w:0xff:m
 {% endhighlight %}
 
 Après l’exécution de la commande ci-dessus, on constate que le croquis `tinyblinky.ino` est exécuté 8 fois plus rapidement.
@@ -245,15 +245,15 @@ Si on veut retrouver les fusibles d’origine :
 
 {% highlight bash %}
 avrdude                      \
-	-C $AVRDUDECONF          \
-	-v                       \
-	-p attiny25              \
-	-c stk500v1              \
-	-P /dev/tty.usbmodem1421 \
-	-b 19200                 \
-	-U lfuse:w:0x62:m        \
-	-U hfuse:w:0xd7:m        \
-	-U efuse:w:0xff:m
+    -C $AVRDUDECONF          \
+    -v                       \
+    -p attiny25              \
+    -c stk500v1              \
+    -P /dev/tty.usbmodem1421 \
+    -b 19200                 \
+    -U lfuse:w:0x62:m        \
+    -U hfuse:w:0xd7:m        \
+    -U efuse:w:0xff:m
 {% endhighlight %}
 
 
