@@ -165,16 +165,8 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 | D13         | SD_SCK            | SD Clock                          |
 
 
+&nbsp;
+
 > ¹ On constate que le shield ne laisse que 3 broches libres : A5, D0 et D1. Comme D0 et D1 ne sont pas utilisées, on peut faire communiquer l’Arduino avec un autre système via RS232.
 
-
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- ouilogique_1 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-5638118185206577"
-     data-ad-slot="5843164030"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+&nbsp;
