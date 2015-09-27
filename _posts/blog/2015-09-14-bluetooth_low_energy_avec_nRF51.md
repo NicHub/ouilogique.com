@@ -30,7 +30,7 @@ published: true
 
 # La carte nRF51 en bref
 
-C’est une carte de développement pour le prototypage d’applications Bluetooth LE. Le brochage est compatible avec celui de l’Arduino UNO donc en théorie, on peut utiliser les même shields. Dans la pratique, il faudra faire attention au fait que la carte nRF51 ne fonctionne que sous 3.3 V et que le courant max des sorties est de 0.5 mA (5 mA high drive sur 3 broches au maximum)¹.
+C’est une carte de développement pour le prototypage d’applications Bluetooth LE. Le brochage est compatible avec celui de l’Arduino UNO, donc en théorie on peut utiliser les même shields. Dans la pratique, il faudra faire attention au fait que la carte nRF51 ne fonctionne que sous 3.3 V et que le courant max des sorties est de 0.5 mA (5 mA high drive sur 3 broches au maximum)¹.
 
 > ¹ [Voir “nRF51822 Product Specification v3.1 — chap 8.23 — General Purpose I/O (GPIO) specifications”, page 65](https://www.nordicsemi.com/eng/nordic/download_resource/20339/13/3799285){:target="_blank"}
 
