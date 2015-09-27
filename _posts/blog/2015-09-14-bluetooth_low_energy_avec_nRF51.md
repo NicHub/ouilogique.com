@@ -34,3 +34,10 @@ C’est une carte de développement pour le prototypage d’applications Bluetoo
 
 > ¹ [Voir “nRF51822 Product Specification v3.1 — chap 8.23 — General Purpose I/O (GPIO) specifications”, page 65](https://www.nordicsemi.com/eng/nordic/download_resource/20339/13/3799285){:target="_blank"}
 
+
+# Liens
+
+- <http://jmkikori.no-ip.org/jmk/joomla-static/index.php/2-uncategorised/1-introduction-bluetooth-low-energy.html>{:target="_blank"}
+- <https://developer.mbed.org/platforms/Nordic-nRF51-DK/>{:target="_blank"}
+- [Bande industrielle, scientifique et médicale (Wikipédia)](https://fr.wikipedia.org/wiki/Bande_industrielle,_scientifique_et_médicale){:target="_blank"}
+- [Bluetooth (Wikipédia)](https://fr.wikipedia.org/wiki/Bluetooth){:target="_blank"}
