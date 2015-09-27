@@ -33,6 +33,8 @@ published: true
 
 <http://www.thingiverse.com/thing:1012855>{:target="_blank"}
 
+<https://cad.onshape.com/documents/3f05e14ebb62415c928ff36e/w/d85b78be98c545f6ab2fd41f/e/7053fbf40382442182af2f67>{:target="_blank"}
+
 
 # La carte nRF51 en bref
 
