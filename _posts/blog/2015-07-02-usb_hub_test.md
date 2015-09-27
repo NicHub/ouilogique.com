@@ -17,7 +17,7 @@ Le test consiste à placer une diode entre les pattes d’alimentation de la fic
 
 > Vu que la LED s’allume, je ne recommande pas le hub LXL4072201A !
 
-![](/files/2015-07-02-usb_hub_test/test_usb_hub_003.svg){:height="527px" width="300px" style="margin: 0 auto; display: block"}
+![](/files/2015-07-02-usb_hub_test/test_usb_hub_003.svg){:height="527px" width="300px"}
 
 ![](/files/2015-07-02-usb_hub_test/test_usb_hub_001.jpg)
 
