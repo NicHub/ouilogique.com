@@ -20,7 +20,7 @@ published: true
 - Un Arduino UNO
 - Un ATtiny25V
 - Un breadboard
-- 4 LEDs
+- 4 LED
 - 4 résistances de 220 Ω
 
 
@@ -50,13 +50,13 @@ Le but de ce document est de présenter la programmation d’un microcontrôleur
 
 # Préparation matérielle
 
-Câbler la plaque d’essai selon le schéma ci-dessous. Les trois premières LEDs, verte, rouge et orange, servent à afficher le statut lors de la programmation :
+Câbler la plaque d’essai selon le schéma ci-dessous. Les trois premières LED, verte, rouge et orange, servent à afficher le statut lors de la programmation :
 
 - pin 9: Heartbeat   - shows the programmer is running
 - pin 8: Error       - Lights up if something goes wrong (use red if that makes sense)
 - pin 7: Programming - In communication with the slave
 
-et la quatrième LED, bleue, sert à vérifier que l’ATtiny a effectivement été programmé avec le programme `tinyblinky.ino`. À noter que les LEDs sont optionnelles.
+et la quatrième LED, bleue, sert à vérifier que l’ATtiny a effectivement été programmé avec le programme `tinyblinky.ino`. À noter que les LED sont optionnelles.
 
 ![](/images/programmer_un_attiny_avec_un_arduino_uno/programmer_un_attiny25v_bb.svg)
 

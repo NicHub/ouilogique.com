@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "LEDs adressables"
+title: "LED adressables"
 excerpt:
 categories:
 tags: [LED, PWM, NeoPixel, FastLED]
@@ -14,11 +14,11 @@ published: true
 
 
 
-Pour mon [projet de programmation d’un MSP430 en mode ISP](/blog/programmer_un_msp430_en_mode_ISP/), j’ai utilisé une LED RGB. C’est simplement trois LEDs dans un seul boîtier avec quatre pattes : une pour chaque couleur et une pour la masse.
+Pour mon [projet de programmation d’un MSP430 en mode ISP](/blog/programmer_un_msp430_en_mode_ISP/), j’ai utilisé une LED RGB. C’est simplement trois LED dans un seul boîtier avec quatre pattes : une pour chaque couleur et une pour la masse.
 
-Jusque là, rien de bien méchant. Mais comme je n’avais qu’une LED de ce type et que je l’ai soudée sur mon [Perma-Proto d’Adafruit](http://www.adafruit.com/blog/2011/11/18/adafruit-perma-proto-half-sized-breadboard-pcb-3-pack/), il m’en fallait des nouvelles. Ni une, ni deux, j’ai commandé quatre [LEDs P9823-F8](http://shop.boxtec.ch/led-neopixel-8mm-p9823-p-42265.html)  chez Boxtec.
+Jusque là, rien de bien méchant. Mais comme je n’avais qu’une LED de ce type et que je l’ai soudée sur mon [Perma-Proto d’Adafruit](http://www.adafruit.com/blog/2011/11/18/adafruit-perma-proto-half-sized-breadboard-pcb-3-pack/), il m’en fallait des nouvelles. Ni une, ni deux, j’ai commandé quatre [LED P9823-F8](http://shop.boxtec.ch/led-neopixel-8mm-p9823-p-42265.html)  chez Boxtec.
 
-![](/files/2015-05-22-leds_adressables/images/67053.jpg)
+![](/files/2015-05-22-leds_adressables/images/67053.jpg){:height="250px" width="250px"}
 
 Mal m’en a pris, elles ne sont pas du tout du même type que ma LED RGB de base. En fait ce sont des LED adressables en PWM. Eh oui, elles contiennent de la logique capable de comprendre un signal PWM et de s’allumer en conséquence. Avec en plus la possibilité d’être mises en série.
 
@@ -34,12 +34,12 @@ Celle d’Adafruit est plus simple à mettre en œuvre et les exemples fonctionn
 
 ## Pinout
 
-![](/files/2015-05-22-leds_adressables/images/LED_P9823-F8_pinout.jpg)
+![](/files/2015-05-22-leds_adressables/images/LED_P9823-F8_pinout.jpg){:width="200px"}
 
 
 ## Câblage
 
-![](/files/2015-05-22-leds_adressables/images/LED_P9823-F8_cablage.jpg)
+![](/files/2015-05-22-leds_adressables/images/LED_P9823-F8_cablage.jpg){:width="600px"}
 
 ![](/files/2015-05-22-leds_adressables/images/P1030717.JPG)
 
@@ -65,11 +65,11 @@ Le rouge ne fonctionne pas bien. Avec une LED c’est OK, mais dès qu’on en u
 
 	R LED (Ω)   U LED (V)
 	=====================
-	10          3.5
-	47          3.0
-	220         2.5
+	   10         3.5
+	   47         3.0
+	  220         2.5
 
-Donc, même avec 10 Ω, la tension n’atteint pas les 4.5 V minimums de la spec. Heureusement, ça marche quand même. Bon, le Vcc du µcontrôleur se casse la gueule assez vite, donc inutile de vouloir lui coller trop de LEDs...
+Donc, même avec 10 Ω, la tension n’atteint pas les 4.5 V minimums de la spec. Heureusement, ça marche quand même. Bon, le Vcc du µcontrôleur se casse la gueule assez vite, donc inutile de vouloir lui coller trop de LED...
 
 
 
