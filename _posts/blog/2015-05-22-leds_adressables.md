@@ -32,12 +32,12 @@ Pour la programmation sur Arduino, j’ai trouvé deux librairies :
 
 Celle d’Adafruit est plus simple à mettre en œuvre et les exemples fonctionnent bien.
 
-## Pinout
+# Pinout
 
 ![](/files/2015-05-22-leds_adressables/images/LED_P9823-F8_pinout.jpg){:width="200px"}
 
 
-## Câblage
+# Câblage
 
 ![](/files/2015-05-22-leds_adressables/images/LED_P9823-F8_cablage.jpg){:width="600px"}
 
@@ -46,20 +46,25 @@ Celle d’Adafruit est plus simple à mettre en œuvre et les exemples fonctionn
 ![](/files/2015-05-22-leds_adressables/2015-05-22-leds_adressables_bb.svg)
 
 
-### Notes
+## Notes
 
 - Sur mon câblage, on voit que j’ai mis la pin DO de la dernière LED à la masse. Ce n’est pas nécessaire.
 - Les résistances sont de 220 Ω (à remplacer par des 47 Ω ou des 10 Ω !!)
 - Les condensateurs sont des 104 (100 nF)
 
 
-## Liens
+# Exemple de programme
+
+[P9823_LED_RS232.ino](/files/2015-05-22-leds_adressables/P9823_LED_RS232.ino)
+
+
+# Liens
 
 - [Spécification (en chinois traduit en anglais par Google...)](http://shop.boxtec.ch/pub/diverse/P9823.pdf)
 - [Boxtec NeoPixel Guide](http://playground.boxtec.ch/doku.php/led/ledpixel_guide)
 
 
-## Problème
+# Problème
 
 Le rouge ne fonctionne pas bien. Avec une LED c’est OK, mais dès qu’on en utilise plus, elles ont tendance à clignoter. Ceci est probablement dû au fait que les LED rouges ont besoin de plus de courant pour bien fonctionner. J’ai donc fait un test (2 mois plus tard...) avec des résistances de 47 Ω à la place des 220 Ω et ça fonctionne nettement mieux ! Pour avoir du blanc presque blanc, je suis descendu jusqu’à 10 Ω. Bon le mieux est de vérifier la tension aux bornes des pattes d’alimentation des LED. Voilà ce que j’obtiens avec différentes résistances :
 
@@ -70,6 +75,8 @@ Le rouge ne fonctionne pas bien. Avec une LED c’est OK, mais dès qu’on en u
 	  220         2.5
 
 Donc, même avec 10 Ω, la tension n’atteint pas les 4.5 V minimums de la spec. Heureusement, ça marche quand même. Bon, le Vcc du µcontrôleur se casse la gueule assez vite, donc inutile de vouloir lui coller trop de LED...
+
+
 
 
 
