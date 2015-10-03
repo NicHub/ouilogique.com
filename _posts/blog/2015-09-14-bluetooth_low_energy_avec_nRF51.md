@@ -49,3 +49,4 @@ C’est une carte de développement pour le prototypage d’applications Bluetoo
 - <https://developer.mbed.org/platforms/Nordic-nRF51-DK/>{:target="_blank"}
 - [Bande industrielle, scientifique et médicale (Wikipédia)](https://fr.wikipedia.org/wiki/Bande_industrielle,_scientifique_et_médicale){:target="_blank"}
 - [Bluetooth (Wikipédia)](https://fr.wikipedia.org/wiki/Bluetooth){:target="_blank"}
+- [Bluetooth Accessory Design Guidelines for Apple Products](https://developer.apple.com/hardwaredrivers/BluetoothDesignGuidelines.pdf){:target="_blank"}
