@@ -43,6 +43,20 @@ C’est une carte de développement pour le prototypage d’applications Bluetoo
 > ¹ [Voir “nRF51822 Product Specification v3.1 — chap 8.23 — General Purpose I/O (GPIO) specifications”, page 65](https://www.nordicsemi.com/eng/nordic/download_resource/20339/13/3799285){:target="_blank"}
 
 
+# Bluetooth avec Node.js
+
+[NoBLE](https://github.com/sandeepmistry/noble){:target="_blank"}
+
+
+# Android
+
+[nRF Master Control Panel (BLE)](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en){:target="_blank"}
+
+
+# Quelques outils pour OS X
+
+[HardwareIOTools_Xcode_6.3](http://adcdownload.apple.com/Developer_Tools/Hardware_IO_Tools_for_Xcode_6.3/HardwareIOTools_Xcode_6.3.dmg){:target="_blank"}
+
 # Liens
 
 - <http://jmkikori.no-ip.org/jmk/joomla-static/index.php/2-uncategorised/1-introduction-bluetooth-low-energy.html>{:target="_blank"}
@@ -50,3 +64,5 @@ C’est une carte de développement pour le prototypage d’applications Bluetoo
 - [Bande industrielle, scientifique et médicale (Wikipédia)](https://fr.wikipedia.org/wiki/Bande_industrielle,_scientifique_et_médicale){:target="_blank"}
 - [Bluetooth (Wikipédia)](https://fr.wikipedia.org/wiki/Bluetooth){:target="_blank"}
 - [Bluetooth Accessory Design Guidelines for Apple Products](https://developer.apple.com/hardwaredrivers/BluetoothDesignGuidelines.pdf){:target="_blank"}
+- [Kit Didel](http://www.didel.com/diduino/AdanRF51.pdf){:target="_blank"}
+- [https://evothings.com](https://evothings.com){:target="_blank"}
