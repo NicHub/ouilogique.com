@@ -57,6 +57,28 @@ C’est une carte de développement pour le prototypage d’applications Bluetoo
 
 [HardwareIOTools_Xcode_6.3](http://adcdownload.apple.com/Developer_Tools/Hardware_IO_Tools_for_Xcode_6.3/HardwareIOTools_Xcode_6.3.dmg){:target="_blank"}
 
+
+# Portée des variables
+
+`static const` dans une fonction ⇒ stocké en flash
+
+{% highlight C %}
+                          // VISIBILITÉ  PERSISTANCE  ALLOCATION
+                          // ==========  ===========  ==========
+int vg;                   // globale     Programme    Heap
+static int vg;            // Module      Programme    Heap
+void f(...) {
+  int vl;                 // Fonction    Fonction     Stack
+  static int vlp;         // Fonction    Programme    Heap
+  const int vlc = ...;    // Fonction    Fonction     Stack/opt
+  static const vlcs = ...;// Fonction    Programme    Flash
+{% endhighlight %}
+
+
+norme C 99 ⇒ permet des déclarations spéciales de struct
+
+
+
 # Liens
 
 - <http://jmkikori.no-ip.org/jmk/joomla-static/index.php/2-uncategorised/1-introduction-bluetooth-low-energy.html>{:target="_blank"}
