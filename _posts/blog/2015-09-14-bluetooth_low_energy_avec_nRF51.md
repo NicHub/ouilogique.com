@@ -66,3 +66,4 @@ C’est une carte de développement pour le prototypage d’applications Bluetoo
 - [Bluetooth Accessory Design Guidelines for Apple Products](https://developer.apple.com/hardwaredrivers/BluetoothDesignGuidelines.pdf){:target="_blank"}
 - [Kit Didel](http://www.didel.com/diduino/AdanRF51.pdf){:target="_blank"}
 - [https://evothings.com](https://evothings.com){:target="_blank"}
+- [List of Bluetooth Smart and Bluetooth Smart Ready products available now](http://www.bluetooth.com/Pages/Bluetooth-Smart-Devices-List.aspx){:target="_blank"}
