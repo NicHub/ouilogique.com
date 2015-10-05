@@ -63,15 +63,18 @@ C’est une carte de développement pour le prototypage d’applications Bluetoo
 `static const` dans une fonction ⇒ stocké en flash
 
 {% highlight C %}
+
+/* PORTÉE DES VARIABLES */
                           // VISIBILITÉ  PERSISTANCE  ALLOCATION
                           // ==========  ===========  ==========
-int vg;                   // globale     Programme    Heap
+int vg;                   // Globale     Programme    Heap
 static int vg;            // Module      Programme    Heap
-void f(...) {
+void f(..) {
   int vl;                 // Fonction    Fonction     Stack
   static int vlp;         // Fonction    Programme    Heap
-  const int vlc = ...;    // Fonction    Fonction     Stack/opt
-  static const vlcs = ...;// Fonction    Programme    Flash
+  const int vlc = ..;     // Fonction    Fonction     Stack/opt
+  static const vlcs = ..; // Fonction    Programme    Flash
+
 {% endhighlight %}
 
 
