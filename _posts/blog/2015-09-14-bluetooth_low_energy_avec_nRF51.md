@@ -20,7 +20,7 @@ published: true
 
 # Brochage
 
-![](/files/2015-05-28_pinouts/images/xnRF51-DK_Pinout_4.png)
+![](/files/2015-05-28-pinouts/images/xnRF51-DK_Pinout_4.png)
 
 > Seules les broches P0.01 à P0.06 peuvent être configurées en entrées analogiques.
 >
