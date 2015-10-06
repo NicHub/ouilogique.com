@@ -162,10 +162,10 @@ WP ⇒ Wp-Super Cache
 - Liquid templates ⇒ ♡
 
 ## Middleman
-https://middlemanapp.com
+<https://middlemanapp.com>
 
 ## Harp
-http://harpjs.com
+<http://harpjs.com>
 
 ## roots (voir article)
 
