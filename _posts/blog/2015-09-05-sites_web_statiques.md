@@ -14,7 +14,7 @@ published: true
 
 ---
 
-Simon Wood — Future Insights
+# Simon Wood — Future Insights
 
 <iframe style="margin: 10px auto; display:block" width="640" height="360" src="https://www.youtube.com/embed/jeQCoiZT5gg" frameborder="0" allowfullscreen></iframe>
 
@@ -22,7 +22,8 @@ Simon Wood — Future Insights
 
 ![](https://avatars1.githubusercontent.com/u/189606?v=3&s=96)
 
-# ADVANTAGES
+
+# ADVANTAGES OF STATIC SITES
 
 - speed
 - simplicity
@@ -114,6 +115,7 @@ Simon Wood — Future Insights
 - livefyre
 - intensedebate
 
+
 # SURVEYS
 
 google docs
@@ -136,7 +138,7 @@ highchart
 
 Drupal ⇒ Boost
 WP ⇒ Wp-Super Cache
-https://ghost.org ⇒ Buster
+<https://ghost.org> ⇒ Buster
 
 
 # Alternatives
