@@ -19,14 +19,16 @@ Le test consiste à placer une diode entre les pattes d’alimentation de la fic
 
 > Vu que la LED s’allume, je ne recommande pas le hub LXL4072201A !
 
+---
+
+Le prochain hub à tester sera le [Delock 61857](http://www.delock.de/produkte/S_61857/merkmale.html) recommandé par [NewConcept Informatique](http://ncinformatique.ch). Il paraît qu’il passe le test de la diode.
+
+---
+
 ![](/files/2015-07-02-usb_hub_test/test_usb_hub_003.svg){:height="527px" width="300px"}
 
 ![](/files/2015-07-02-usb_hub_test/test_usb_hub_001.jpg)
 
 ![](/files/2015-07-02-usb_hub_test/test_usb_hub_004.jpg)
 
-
----
-
-Le prochain hub à tester sera le [Delock 61857](http://www.delock.de/produkte/S_61857/merkmale.html) recommandé par [NewConcept Informatique](http://ncinformatique.ch). Il paraît qu’il passe le test de la diode.
 
