@@ -38,6 +38,8 @@ Et voilà ce que ça donne en action :
 
 ---
 
+## Logiciels pour la visualisation des traces
+
 Pour l’analyse post-mortem, il y a :
 
 - [GTKWave](http://gtkwave.sourceforge.net/)
