@@ -11,9 +11,7 @@ date: 2015-06-12T12:00:00+01:00
 ---
 
 
-Voici un tuto très intéressant qui explique comment transformer un Arduino en analyseur logique :
-
-<http://letsmakerobots.com/node/31422>
+> Les informations ci-dessous viennent à l’origine d’un tuto qui n’est malheureusement plus en ligne (<http://letsmakerobots.com/node/31422>).
 
 En résumé, cette solution nécessite deux programmes :
 
