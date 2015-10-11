@@ -93,3 +93,11 @@ norme C 99 ⇒ permet des déclarations spéciales de struct
 - [Kit Didel](http://www.didel.com/diduino/AdanRF51.pdf){:target="_blank"}
 - [https://evothings.com](https://evothings.com){:target="_blank"}
 - [List of Bluetooth Smart and Bluetooth Smart Ready products available now](http://www.bluetooth.com/Pages/Bluetooth-Smart-Devices-List.aspx){:target="_blank"}
+
+# Modules BLE
+
+- [RedBearLab](http://redbearlab.com/nrf51822/)
+- [Aliexpress](http://fr.aliexpress.com/item/Low-power-consumption-BLE4-0-module-with-2-4GHz-PCB-antenna16-28mm-Free-sample/32334323347.html?shopNumber=1784058&adminSeq=221342080)
+- [SeeedStudio](http://www.seeedstudio.com/depot/MDBT40P%C2%A0%C2%A0nRF51822%C2%A0based%C2%A0BLE%C2%A0module-p-2503.html)
+- [Raytac](http://www.raytac.com/download/MDBT40/MDBT40%20spec-Version%20A3.pdf)
+- [Banggood — avec quartz 32 kHz](http://www.banggood.com/NRF51822-2_4GHz-Network-Bluetooth-Serial-Module-Support-For-Apple-Android-p-992468.html)
