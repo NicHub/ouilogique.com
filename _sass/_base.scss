@@ -47,7 +47,8 @@ p {
 }
 
 li {
-	@include font-size(16,12,24);
+	// @include font-size(16,12,24);
+	@include font-size(18,yes,28);
 }
 
 /* headings */
