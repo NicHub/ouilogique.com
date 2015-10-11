@@ -170,6 +170,20 @@ span + .entry-title {
 	}
 }
 
+/* Author + date below article */
+.entry-footer {
+	text-align: right;
+	line-height: 1em;
+	margin: 2em 0;
+	p {
+		margin: 0;
+	}
+	.entry-author, .entry-date {
+		font-style: italic;
+	}
+}
+
+
 /*
    Disqus
    ========================================================================== */

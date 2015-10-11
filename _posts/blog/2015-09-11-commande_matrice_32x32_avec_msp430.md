@@ -9,6 +9,7 @@ image:
      feature: msp430-mx32x32.jpg
 date: 2015-09-11T10:00:00+01:00
 published: true
+author: Nico
 ---
 
 

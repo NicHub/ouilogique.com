@@ -4,7 +4,7 @@ title: "Programmer un ATtiny25V avec un Arduino UNO comme programmateur"
 excerpt:
 categories:
 tags: [ATtiny, ISP, UNO]
-author: Nicolas
+author: Nico
 comments: true
 share: true
 image:

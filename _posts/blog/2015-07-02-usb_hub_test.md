@@ -8,6 +8,7 @@ tags: []
 image:
   feature:
 date: 2015-07-02T09:47:00+01:00
+author: Nico
 ---
 
 Test du hub USB de la marque *Anne*, modèle *LXL4072201A*, acheté sur [Aliexpress](http://fr.aliexpress.com/item/2014-newest-7-Port-USB-3-0-HUB-High-Speed-With-Power-Adapter-For-Laptop-Notebook/1997348166.html){:target="_blank"}.
