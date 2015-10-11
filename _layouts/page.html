@@ -23,7 +23,7 @@
         {{ content }}
         <div class="entry-footer">
           <p class="entry-author">{{ page.author }}</p>
-          <p class="entry-date">{{ page.date | date: '%d' }} {% assign m = page.date | date: "%-m" %}
+          <p class="entry-date">{{ page.date | date: '%-d' }} {% assign m = page.date | date: "%-m" %}
           {% case m %}
             {% when '1' %}janvier
             {% when '2' %}février
