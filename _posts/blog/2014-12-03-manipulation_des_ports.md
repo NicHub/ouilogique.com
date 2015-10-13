@@ -26,6 +26,8 @@ author: Nico
 | r/w | `PxSEL` |         | Sélection des fonctions                                                                 |
 
 > AVR n’a que les pullups
+> doc AVR, voir [datasheet chap. 14 p.75](http://www.atmel.com/images/atmel-8271-8-bit-avr-microcontroller-atmega48a-48pa-88a-88pa-168a-168pa-328-328p_datasheet_complete.pdf)
+> doc MSP, voir [slau144j.pdf p.329, 333](http://www.ti.com/lit/ug/slau144j/slau144j.pdf)
 
 
 # Exemple de programme
