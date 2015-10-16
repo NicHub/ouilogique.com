@@ -9,6 +9,8 @@ image:
   feature:
 date: 2015-06-26T17:15:00+01:00
 author: Nico
+redirect_from:
+  - /blog/nodejs_arduino_matrices/
 ---
 
 
