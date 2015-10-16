@@ -10,6 +10,8 @@ image:
 date: 2015-09-11T10:00:00+01:00
 published: true
 author: Nico
+redirect_from:
+  - /blog/commande_matrice_32x32_avec_msp430/
 ---
 
 

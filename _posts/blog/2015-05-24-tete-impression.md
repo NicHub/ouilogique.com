@@ -10,6 +10,8 @@ share: true
 image:
   feature: 2015-02-23_microDelta_002.jpg
 published: true
+redirect_from:
+  - /blog/tete-impression/
 ---
 
 

@@ -10,6 +10,8 @@ image:
 date: 2015-07-14T14:20:00+01:00
 published: true
 author: Nico
+redirect_from:
+  - /blog/2-4-in_TFT_Touch_screen/
 ---
 
 

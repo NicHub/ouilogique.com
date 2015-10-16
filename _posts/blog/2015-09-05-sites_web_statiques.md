@@ -8,6 +8,8 @@ tags: []
 date: 2015-09-05T13:53:00+01:00
 published: true
 author: Nico
+redirect_from:
+  - /blog/sites_web_statiques/
 ---
 
 

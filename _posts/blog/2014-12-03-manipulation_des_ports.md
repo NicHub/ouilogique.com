@@ -10,6 +10,8 @@ image:
 date: 2014-12-03T12:00:00+01:00
 published: true
 author: Nico
+redirect_from:
+  - /blog/manipulation_des_ports/
 ---
 
 
