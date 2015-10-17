@@ -26,3 +26,19 @@ Petit souci cependant, l’étalonnage de Reprap-France ne fonctionne plus... Il
 ![](/files/2015-05-24-tete-impression/images/FirmwareEEPROMSettings_1.png)
 
 ![](/files/2015-05-24-tete-impression/images/FirmwareEEPROMSettings_2.png)
+
+
+
+<figure class="half">
+	<img src="/files/2015-05-24-tete-impression/images/910737-Voronoi_Klein_Bottle_001.jpg" alt="image">
+	<img src="/files/2015-05-24-tete-impression/images/910737-Voronoi_Klein_Bottle_002.jpg" alt="image">
+	<figcaption><a href="http://www.thingiverse.com/thing:910737">Voronoi Klein Bottle — Thingiverse 910737</a></figcaption>
+</figure>
+
+<figure class="half">
+	<img src="/files/2015-05-24-tete-impression/images/910737-Voronoi_Klein_Bottle_003.jpg" alt="image">
+	<img src="/files/2015-05-24-tete-impression/images/910737-Voronoi_Klein_Bottle_004.jpg" alt="image">
+	<figcaption><a href="http://www.thingiverse.com/thing:910737">Voronoi Klein Bottle — Thingiverse 910737</a></figcaption>
+</figure>
+
+![](/files/2015-05-24-tete-impression/images/910737-Voronoi_Klein_Bottle_005.jpg)
