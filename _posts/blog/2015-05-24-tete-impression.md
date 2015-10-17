@@ -41,4 +41,3 @@ Petit souci cependant, l’étalonnage de Reprap-France ne fonctionne plus... Il
 	<figcaption><a href="http://www.thingiverse.com/thing:910737">Voronoi Klein Bottle — Thingiverse 910737</a></figcaption>
 </figure>
 
-![](/files/2015-05-24-tete-impression/images/910737-Voronoi_Klein_Bottle_005.jpg)
