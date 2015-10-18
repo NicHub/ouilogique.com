@@ -1,0 +1,7 @@
+# Site wide configuration
+
+url: http://localhost:4000
+gems:
+  - jekyll-sitemap
+  # - jekyll-redirect-from
+
