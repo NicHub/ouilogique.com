@@ -51,6 +51,19 @@ C’est une carte de développement pour le prototypage d’applications Bluetoo
 [NoBLE](https://github.com/sandeepmistry/noble)
 
 
+# Bluetooth et le marketing
+
+> ⚠ Bluetooth ≠ Bluetooth Low Energy
+
+| Nom courant                      | ⇒ *Nom du marketing*            |
+| :---                             | :---                            |
+| Bluetooth (v1, v2, v3)           | ⇒ *Bluetooth Classic (BR, EDR)* |
+| Bluetooth Low Energy (v4)        | ⇒ *Bluetooth Smart*             |
+| Bluetooth + Bluetooth Low Energy | ⇒ *Bluetooth Smart Ready*       |
+
+
+
+
 # Android
 
 [nRF Master Control Panel (BLE)](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en)
