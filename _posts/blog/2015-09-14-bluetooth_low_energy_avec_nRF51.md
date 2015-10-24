@@ -116,3 +116,4 @@ norme C 99 ⇒ permet des déclarations spéciales de struct
 - [MDBT40 (SeeedStudio)](http://www.seeedstudio.com/depot/MDBT40P%C2%A0%C2%A0nRF51822%C2%A0based%C2%A0BLE%C2%A0module-p-2503.html) — [MDBT40 (Raytac)](http://www.raytac.com/download/MDBT40/MDBT40%20spec-Version%20A3.pdf)
 - [Banggood (avec quartz 32 kHz)](http://www.banggood.com/NRF51822-2_4GHz-Network-Bluetooth-Serial-Module-Support-For-Apple-Android-p-992468.html)
 - [Microchip BM77](http://www.microchip.com/wwwproducts/Devices.aspx?product=bm77)
+- [HM-10 Bluetooth 4.0 Module Transparent Serial Port With Logic Level Translator](http://www.banggood.com/HM-10-Bluetooth-4_0-Module-Transparent-Serial-Port-p-967059.html)
