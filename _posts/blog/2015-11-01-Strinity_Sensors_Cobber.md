@@ -18,13 +18,33 @@ J’ai acheté une petite carte fort sympathique chez Banggood
 
 <http://www.banggood.com/4-in-1-Temperature-Pressure-Altitude-Light-Sensor-Module-p-965547.html>.
 
-Elle permet de mesurer la température, la luminosité ambiante, l’humidité, l’altitude et la pression.
+C’est une carte “trois en un” qui permet de mesurer :
 
-La mise en route fut un peu fastidieuse vu qu’il n’y a pas de doc. Heureusement, cette carte est similaire à la carte BMP085 d’Adafruit :
+- la luminosité ambiante (U3:TSL2561, 0x39)
+- la pression et l’altitude (U4:BMP180, 0x77)
+- la température et l’humidité (U5:AM2321, 0x5C)
 
+La mise en route fut un peu fastidieuse vu qu’il n’y a pas de doc. Heureusement, Adafruit propose deux pilotes pour la carte BMP180 :
+
+<https://github.com/adafruit/Adafruit_BMP085_Unified>
 <https://github.com/adafruit/Adafruit-BMP085-Library>
 
-Les mesures ont l’air cohérentes, ce qui est un bon point. Par contre l’exemple d’Adafruit ne mesure pas la luminosité ⇒ y a encore du travail en perspective !
+> La version “Unified” nécessite également cette librairie :
+<https://github.com/adafruit/Adafruit_Sensor>
+
+et un pilote pour la carte TSL2561 :
+
+<https://github.com/adafruit/Adafruit_TSL2561>
+
+Pour la mesure de température, ça se corse parce qu’Adafruit n’a qu’un pilote pour la carte AM2315 et il ne fonctionne pas avec la carte AM2321 :
+
+<https://github.com/adafruit/Adafruit_AM2315>
+
+Sinon Wangdong propose un pilote qui ne fonctionne pas non plus :
+
+<https://github.com/wangdong/AM2321>
+
+Alors pour l’instant, j’ai testé la luminosité et la pression et les mesures ont l’air cohérentes, ce qui est un bon point.
 
 > Les pinoches de la carte sont trop courtes (ou placées trop en retrait) et elle ne tient pas bien dans le breadboard. C’est pour ça que j’ai utilisé les fils.
 
