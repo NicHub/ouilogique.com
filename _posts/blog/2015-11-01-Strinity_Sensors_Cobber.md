@@ -44,9 +44,11 @@ Sinon Wangdong propose un pilote qui ne fonctionne pas non plus :
 
 - <https://github.com/wangdong/AM2321>
 
-Alors pour l’instant, j’ai testé la luminosité et la pression et les mesures ont l’air cohérentes, ce qui est un bon point.
+Alors pour l’instant, j’ai testé la luminosité et la pression et les mesures ont l’air cohérentes, ce qui est un bon point. À noter quand même que la carte `BMP180` retourne aussi la température.
 
 > Les pinoches de la carte sont trop courtes (ou placées trop en retrait) et elle ne tient pas bien dans le breadboard. C’est pour ça que j’ai utilisé les fils.
+
+> J’ai utilisé des pullups de 4.7 kΩ sur le bus I²C.
 
 ![](/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_001.jpg)
 
