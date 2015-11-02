@@ -24,7 +24,9 @@ C’est une carte “trois en un” qui permet de mesurer :
 - la pression et l’altitude `(U4:BMP180, 0x77)`
 - la température et l’humidité `(U5:AM2321, 0x5C)`
 
-La mise en route fut un peu fastidieuse vu qu’il n’y a pas de doc. Heureusement, Adafruit propose deux pilotes pour la carte `BMP180` :
+Elle offre la possibilité de sélectionner la tension (3.3 V ou 5V) à l’aide d’un bouton.
+
+La mise en route fut un peu fastidieuse vu qu’il n’y a pas de doc sur Banggood. Heureusement, Adafruit propose deux pilotes pour la carte `BMP180` :
 
 - <https://github.com/adafruit/Adafruit_BMP085_Unified>
 - <https://github.com/adafruit/Adafruit-BMP085-Library>
@@ -44,7 +46,9 @@ Sinon Wangdong propose un pilote qui ne fonctionne pas non plus :
 
 - <https://github.com/wangdong/AM2321>
 
-Alors pour l’instant, j’ai testé la luminosité et la pression et les mesures ont l’air cohérentes, ce qui est un bon point. À noter quand même que la carte `BMP180` retourne aussi la température.
+Il me reste plus qu’à lire la spec en chinois ;-) <https://www.microduino.cc/wiki/images/d/d1/AM2321.pdf>
+
+En attendant, j’ai testé la luminosité et la pression et les mesures ont l’air cohérentes, ce qui est un bon point. À noter quand même que la carte `BMP180` retourne aussi la température.
 
 > Les pinoches de la carte sont trop courtes (ou placées trop en retrait) et elle ne tient pas bien dans le breadboard. C’est pour ça que j’ai utilisé les fils.
 
