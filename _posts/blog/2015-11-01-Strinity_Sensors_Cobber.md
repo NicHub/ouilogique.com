@@ -54,5 +54,11 @@ En attendant, j’ai testé la luminosité et la pression et les mesures ont l�
 
 > J’ai utilisé des pullups de 4.7 kΩ sur le bus I²C.
 
+Bon, j’ai décidé de m’y remettre après une semaine de pause et comme le capteur de température ne veut rien savoir, j’ai utilisé un scanner I²C disponible ici :
+
+<http://playground.arduino.cc/Main/I2cScanner>
+
+> Résultat des courses : Le capteur de température ne répond pas ! Et il semble que je ne sois pas le seul dans ce cas, un autre client de Banggod a mentionné ce problème aussi. Bon, je peux quand même lire la température indiquée par le capteur de pression...
+
 ![](/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_001.jpg)
 
