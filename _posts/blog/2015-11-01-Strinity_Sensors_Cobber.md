@@ -14,7 +14,7 @@ author: Nico
 
 
 
-J’ai acheté une petite carte fort sympathique chez Banggood
+J’ai acheté une petite chez Banggood
 
 <http://www.banggood.com/4-in-1-Temperature-Pressure-Altitude-Light-Sensor-Module-p-965547.html>.
 
@@ -60,5 +60,16 @@ Bon, j’ai décidé de m’y remettre après une semaine de pause et comme le c
 
 > Résultat des courses : Le capteur de température ne répond pas ! Et il semble que je ne sois pas le seul dans ce cas, un autre client de Banggod a mentionné ce problème aussi. Bon, je peux quand même lire la température indiquée par le capteur de pression...
 
+
+# Liens
+
+- [BMP180 Digital pressure sensor — Bosch Sensortec](/files/BST-BMP180-DS000-09.pdf)
+- [TSL2560, TSL2561 Light-to-Digital Converter — TAOS](/files/TSL2561.pdf)
+- [Liens fourni sur page support Banggood](http://pan.baidu.com/s/1qWjYtqs)
+
+
 ![](/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_001.jpg)
+
+
+
 
