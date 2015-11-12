@@ -69,8 +69,12 @@ Bon, j’ai décidé de m’y remettre après une semaine de pause et comme le c
 
 
 <figure class="half">
-	<img src="/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_002_low_res.jpg" alt="image" />
-	<img src="/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_002_low_res.jpg" alt="image" />
+	<a href="/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_002.jpg">
+		<img src="/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_002_low_res.jpg" alt="image" />
+	</a>
+	<a href="/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_003.jpg">
+		<img src="/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_003_low_res.jpg" alt="image" />
+	</a>
 	<!--<figcaption>Caption describing these two images.</figcaption>-->
 </figure>
 
