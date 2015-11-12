@@ -60,6 +60,8 @@ Bon, j’ai décidé de m’y remettre après une semaine de pause et comme le c
 
 > Résultat des courses : Le capteur de température ne répond pas ! Et il semble que je ne sois pas le seul dans ce cas, un autre client de Banggod a mentionné ce problème aussi. Bon, je peux quand même lire la température indiquée par le capteur de pression...
 
+> Et comme une image vaut mille mots, j’ai fait une jolie photo du PCB et je me suis rendu compte que le capteur de température n’y est pas... je pouvais le chercher longtemps sur le bus I²C ! Grrr ! La morale de cette histoire, c’est qu’il vaut mieux commencer par prendre le temps de regarder de près les cartes bon marché !
+
 
 # Liens
 
