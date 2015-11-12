@@ -68,6 +68,12 @@ Bon, j’ai décidé de m’y remettre après une semaine de pause et comme le c
 - [Lien fourni sur page support Banggood](http://pan.baidu.com/s/1qWjYtqs)
 
 
+<figure class="half">
+	<img src="/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_002_low_res.jpg" alt="image" />
+	<img src="/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_002_low_res.jpg" alt="image" />
+	<!--<figcaption>Caption describing these two images.</figcaption>-->
+</figure>
+
 ![](/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_001.jpg)
 
 
