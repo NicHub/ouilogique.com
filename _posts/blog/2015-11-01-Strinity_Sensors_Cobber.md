@@ -67,7 +67,7 @@ Bon, j’ai décidé de m’y remettre après une semaine de pause et comme le c
 - [TSL2560, TSL2561 Light-to-Digital Converter — TAOS](/files/2015-11-01-Strinity_Sensors_Cobber/TSL2561.pdf)
 - [Lien fourni sur page support Banggood](http://pan.baidu.com/s/1qWjYtqs)
 
-
+<!--
 <figure class="half">
 	<a href="/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_002.jpg">
 		<img src="/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_002_low_res.jpg" alt="image" />
@@ -75,8 +75,10 @@ Bon, j’ai décidé de m’y remettre après une semaine de pause et comme le c
 	<a href="/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_003.jpg">
 		<img src="/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_003_low_res.jpg" alt="image" />
 	</a>
-	<!--<figcaption>Caption describing these two images.</figcaption>-->
 </figure>
+-->
+
+![](/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_004_low_res.jpg)
 
 ![](/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_001.jpg)
 
