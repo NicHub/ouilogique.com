@@ -117,3 +117,6 @@ norme C 99 ⇒ permet des déclarations spéciales de struct
 - [Banggood (avec quartz 32 kHz)](http://www.banggood.com/NRF51822-2_4GHz-Network-Bluetooth-Serial-Module-Support-For-Apple-Android-p-992468.html)
 - [Microchip BM77](http://www.microchip.com/wwwproducts/Devices.aspx?product=bm77)
 - [HM-10 Bluetooth 4.0 Module Transparent Serial Port With Logic Level Translator](http://www.banggood.com/HM-10-Bluetooth-4_0-Module-Transparent-Serial-Port-p-967059.html)
+- [DFRobot — Bluno](http://www.dfrobot.com/)
+- [Bluno Beetle V1.0 — AliExpress](http://fr.aliexpress.com/item/DFRoBot-100-Original-DIY-Bluno-Beetle-V1-0-wearable-mini-Micro-main-controller-Board-with-Bluetooth/32456535853.html)
+
