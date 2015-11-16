@@ -26,7 +26,7 @@ author: Nico
 
 # Premières impressions
 
-- Le chip Silabs CP2102 semble plus rapide que le CH341 utilisé par LoLin.
+- Le chip Silabs CP2102 semble plus rapide que le CH340G utilisé par LoLin.
 - Le pinout est différent de LoLin sur la 2<sup>e</sup> et la 3<sup>e</sup> pin en haut à gauche sur l’image du pinout ci-dessous.
 - La largeur des cartes Amica et LoLin sont différentes, et leurs deux rangées de pins sont aussi espacées de valeurs différentes :<br/>
 LoLin ⇒ 11 × 2.54 = 27.94 mm<br/>
