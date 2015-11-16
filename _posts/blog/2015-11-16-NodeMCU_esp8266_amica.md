@@ -23,3 +23,15 @@ author: Nico
 
 ![](/files/2015-11-16-NodeMCU_esp8266_amica/NodeMCU_esp8266_amica_003_lowres.jpg)
 
+
+
+# Pinout
+
+![](/files/2015-05-28-pinouts/images/NodeMCU_esp8266_amica_pinout.png)
+
+
+
+# Drivers Silabs CP2102
+
+<https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx>
+
