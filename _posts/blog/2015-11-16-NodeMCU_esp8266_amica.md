@@ -18,7 +18,7 @@ author: Nico
 
 
 
-# Référence AliExpress
+# Référence AliExpress {id="refAli"}
 
 <http://fr.aliexpress.com/item/V2-4M-4FLASH-NodeMcu-Lua-WIFI-Networking-development-board-Based-ESP8266/32448694790.html>
 
