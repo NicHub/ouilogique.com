@@ -18,7 +18,7 @@ redirect_from:
 
 ![](/files/2015-09-11-commande_matrice_32x32_avec_msp430/msp430-mx32x32.jpeg)
 
-# Référence de la matrice sur Aliexpress
+# Référence de la matrice sur AliExpress
 
 <http://fr.aliexpress.com/item/p6-RGB-video-led-module-32-32-RGB-smd-led-module-export-korea/1677389664.html>
 
