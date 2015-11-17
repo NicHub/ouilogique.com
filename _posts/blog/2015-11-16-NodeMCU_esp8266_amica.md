@@ -28,10 +28,10 @@ author: Nico
 
 - Le chip Silabs CP2102 semble plus rapide que le CH340G utilisé par LoLin.
 - Le pinout est différent de LoLin sur la 2<sup>e</sup> et la 3<sup>e</sup> pin en haut à gauche sur l’image du pinout ci-dessous.
-- La largeur des cartes Amica et LoLin sont différentes, et leurs deux rangées de pins sont aussi espacées de valeurs différentes :<br/>
+- Les largeurs des cartes Amica et LoLin sont différentes, et leurs deux rangées de pins sont aussi espacées de valeurs différentes :<br/>
 LoLin ⇒ 11 × 2.54 = 27.94 mm<br/>
 Amica ⇒ 9 × 2.54 = 22.86 mm
-- Au premier test, la carte à refusé de communiquer sur le port série. Sur le dessous de la carte, il est indiqué 9600 bauds, mais il me semble qu’en fait c’est 115200 bauds. De toute façon, aucune vitesse ne semblait fonctionner, donc j’ai flashé un nouveau firmware et ça a fonctionné.
+- Au premier test, la carte a refusé de communiquer sur le port série. Sur le dessous de la carte, il est indiqué 9600 bauds, mais il me semble qu’en fait c’est 115200 bauds. De toute façon, aucune vitesse ne semblait fonctionner, donc j’ai flashé un nouveau firmware et ça a fonctionné.
 - Pour flasher le firmware, j’ai dû appuyer sur le bouton “FLASH” et tout en le maintenant appuyé, presser une fois le bouton “RST”. Sur LoLin, ce n’est pas nécessaire.
 - Les barrettes de pins ne sont pas perpendiculaires au PCB, mais ça entre quand même dans un breadboard.
 - Cette carte a deux LED : une bleue sur GPIO 4 à côté de l’antenne et une rouge sur GPIO 0 à 7 mm du bouton “RST”. La carte LoLin n’a que la LED bleue.
@@ -52,7 +52,7 @@ Amica ⇒ 9 × 2.54 = 22.86 mm
 
 # Vitesse de la liaison série
 
-Le test consiste à flasher un firmware identique sur LoLin et Amica et de comparer le temps nécessaire.
+Le test consiste à flasher un firmware identique sur LoLin et Amica et de comparer les temps nécessaires.
 
 ## Script de flashage
 
