@@ -50,6 +50,51 @@ Amica ⇒ 9 × 2.54 = 22.86 mm
 ![](/files/2015-05-28-pinouts/images/NodeMCU_esp8266_amica_pinout.png)
 
 
+# Vitesse de la liaison série
+
+Le test consiste à flasher un firmware identique sur LoLin et Amica et de comparer le temps nécessaire.
+
+## Script de flashage
+
+{% highlight bash %}
+#!/bin/bash
+
+# USBPORT=/dev/cu.SLAB_USBtoUART
+USBPORT=/dev/tty.wchusbserial14140
+FIRMWARE=nodemcu_integer_0.9.6-dev_20150704.bin
+esptool.py           \
+    --port $USBPORT  \
+    --baud 230400    \
+    write_flash      \
+    --flash_mode qio \
+    --flash_size 32m \
+    --flash_freq 40m \
+    0x00000 $FIRMWARE
+{% endhighlight %}
+
+## Résultat LoLin
+
+{% highlight bash %}
+Connecting...
+Erasing flash...
+Wrote 450560 bytes at 0x00000000 in 33.2 seconds (108.6 kbit/s)...
+
+Leaving...
+{% endhighlight %}
+
+## Résultat Amica
+
+{% highlight bash %}
+Connecting...
+Erasing flash...
+Wrote 450560 bytes at 0x00000000 in 22.8 seconds (158.0 kbit/s)...
+
+Leaving...
+{% endhighlight %}
+
+## Conclusion
+
+Le chip Silabs CP2102 est 50 % plus rapide que le CH340G !
 
 # Drivers Silabs CP2102
 
