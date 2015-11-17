@@ -94,7 +94,7 @@ Leaving...
 
 ## Conclusion
 
-Le chip Silabs CP2102 est 50 % plus rapide que le CH340G !
+Le chip Silabs CP2102 est 50 % plus rapide que le CH340G ! J’ai réalisé ce test sur mon MacBook Pro (Retina, 13 pouces, mi-2014, 2.8 GHz Intel Core i5, 8 Go 1600 MHz DDR3) avec un hub USB [Delock 61857](http://www.delock.de/produkte/S_61857/merkmale.html).
 
 # Drivers Silabs CP2102
 
