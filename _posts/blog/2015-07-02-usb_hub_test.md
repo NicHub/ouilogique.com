@@ -73,3 +73,13 @@ Sur cette image, on voit que la LED ne s’allume pas ⇒ donc c’est bon.
 Sur cette image, on voit que le montage de test fonctionne et que si la LED ne s’est pas allumée dans le test ci-dessus, c’est vraiment parce qu’il n’y avait pas de jus.
 
 ![](/files/2015-07-02-usb_hub_test/test_usb_hub_006_lowres.jpg)
+
+
+# Référence du matériel de test
+
+[Connecteur Jack-rapide](http://www.banggood.com/DC-Power-Male-Female-5_5X-2_1mm-Connector-Adapter-Plug-Cable-Pressed-connected-for-LED-Strips-12V-p-998683.html)
+
+[Câble Jack-USB](http://www.banggood.com/USB-Port-to-5_5mm-2_1mm-5V-DC-Barrel-Jack-Power-Cable-Connector-p-997025.html)
+
+[USB Femelle-Femelle](http://fr.aliexpress.com/item/laptop-High-Speed-blue-USB-3-0-cable-A-Female-TO-A-Female-Adapter-cables-converter/1855157465.html)
+
