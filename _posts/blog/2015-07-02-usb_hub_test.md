@@ -74,6 +74,13 @@ Sur cette image, on voit que le montage de test fonctionne et que si la LED ne s
 
 ![](/files/2015-07-02-usb_hub_test/test_usb_hub_006_lowres.jpg)
 
+---
+
+Pour info, le hub vu de dessous
+
+![](/files/2015-07-02-usb_hub_test/test_usb_hub_007.jpg)
+
+
 
 # Référence du matériel de test
 
