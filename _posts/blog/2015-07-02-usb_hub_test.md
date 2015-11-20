@@ -52,7 +52,7 @@ Le test consiste à placer une diode entre les pattes d’alimentation de la fic
 
 Le *Delock 61857* coûte environ 60 CHF, ce qui est nettement plus cher que les 14 CHF que m’ont coûtés le hub *Anne LXL4072201A*. Mais vu le résultat du test, je pense que c’est de l’argent bien investi.
 
-Ce hub a 10 ports USB (6 devant, 2 derrière et 2 qui peuvent pivoter).
+Ce hub a 10 ports USB (6 devant, 2 derrière et 2 qui peuvent pivoter). Il serait parfait s’il y avait des interrupteurs pour activer et désactiver les ports sans avoir besoin de débrancher les cordons comme sur le hub *Anne LXL4072201A*.
 
 Il a quand même deux défauts agaçants :
 
