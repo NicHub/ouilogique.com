@@ -56,7 +56,7 @@ Ce hub a 10 ports USB (6 devant, 2 derrière et 2 qui peuvent pivoter). Il sera
 
 Il a quand même deux défauts agaçants :
 
-- On entend clairement le sifflement de l’alim à découpage quand il n’y a pas assez de charge. Il y a peut-être aussi une influence de mon Mac BookPro qui a un problème d’alimentation électrique. Je me reçois des châtaignes de temps à autre quand il connecté au 240 V.
+- On entend clairement le sifflement de l’alim à découpage quand il n’y a pas assez de charge. Il y a peut-être aussi une influence de mon MacBook Pro qui a un problème d’alimentation électrique. Je me reçois des châtaignes de temps à autre quand il connecté au 240 V.
 - Ce hub est un véritable sapin de Noël avec sa gigantesque LED bleue qui illumine tout. Le patron de [NewConcept Informatique](http://ncinformatique.ch) utilise d’ailleurs de l’adhésif noir pour la cacher.
 
 Un autre souci de ma config, c’est mon écran Apple Thunderbolt 27". Il a un hub USB intégré sur lequel je branche mon clavier et ma souris. Lorsque j’ai branché le hub Delock sur le hub de l’écran pour la première fois, ça a fait planter l’ordi. Ça m’était déjà arrivé en connectant des cartes Arduino et c’est d’ailleurs pour ça que je préfère les connecter à un hub plutôt que directement sur le Mac ou sur le hub de l’écran. Résultat des courses, il me semble que mon Mac et mon écran ont quelques soucis électriques...
