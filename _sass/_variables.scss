@@ -20,7 +20,8 @@ body {
 
 // COLORS =====================================================
 $body-color         : #fff;
-$text-color         : #222;
+// $text-color         : #222;
+$text-color         : #2d3030;
 $base-color         : #343434;
 $selection-color    : orange;
 $comp-color         : spin($base-color, 180);
@@ -28,7 +29,8 @@ $border-color       : #ddd;
 $white              : #fff;
 $black              : #000;
 $accent-color       : $black;
-$link-color         : #222;
+// $link-color         : #222;
+$link-color         : $text-color;
 
 $table-border-color           : $border-color;
 $table-border                 : 1px solid $table-border-color;
