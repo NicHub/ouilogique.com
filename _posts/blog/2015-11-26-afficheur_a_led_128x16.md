@@ -121,7 +121,7 @@ Pas de mot passe par défaut.
 
 1. Brancher le câble USB entre l’afficheur et l’ordinateur.
 2. Vérifier si la carte USB est reconnue dans les périphériques de Windows.
-3. Si c’est le cas noter son port COM.
+3. Si c’est le cas, noter son port COM.
 4. Si ce n’est pas le cas installer le driver pour le CH340 et retourner au point 2.
 5. Utiliser le logiciel fourni (MiniLEDDisplayEditorV2.exe)
 
@@ -198,4 +198,10 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/profile_118x25_002_lowres.jpg)
 
+
+## Connecteur jack ⌀ 5.5 mm / ⌀ 2.5 mm
+
+> ⚠ Le connecteur Jack de l’afficheur ne mesure que 9 mm de long. Quand on le tourne, il y a de temps en temps des mauvais contacts qui font que l’afficheur redémarre. Avec un connecteur de 11 mm de long, ce problème disparait.
+
+![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_011_lowres.jpg)
 
