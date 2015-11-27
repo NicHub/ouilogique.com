@@ -94,7 +94,7 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 ## Exemples de messages sur une ligne
 
 > Le mode de défilement est optionnel. Si on ne le précise pas, tous les modes de défilement sont utilisés successivement et dans l’ordre chronologique (F1, F2,...). On ne peut pas spécifier plusieurs modes de défilement sur une ligne donnée.<br/>
-> Les lignes ci-dessous doivent être envoyées dans des SMS distincts.
+> Les lignes de commande ci-dessous doivent être envoyées dans des SMS distincts.
 
 	*<F1><CG>A GAGNER EN CE MOMENT A L'EURO MILLIONS : <CR>!! 147 MILLION$ !!#02
 	*<F5>!! 147 MILLION$ !!#03
