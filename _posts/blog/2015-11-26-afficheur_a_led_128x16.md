@@ -67,7 +67,8 @@ Pas de mot passe par défaut.
 
 ## Exemples de messages sur une ligne
 
-> Le mode de défilement est optionnel.<br/>
+> Le mode de défilement est optionnel. Si on ne le précise pas, tous les modes de défilement sont utilisés successivement et dans l’ordre indiqué ci-dessus.<br/>
+> On ne peut pas cumuler manuellement plusieurs modes de défilement dans le même message.<br/>
 > Les lignes ci-dessous doivent être envoyées dans des SMS distincts.
 
 	*<F3>LE KIOSQUE DE MONTCHOISI VOUS SOUHAITE DE JOYEUSES FETES DE FIN D'ANNEE#01
