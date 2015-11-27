@@ -68,24 +68,28 @@ et se termine obligatoirement par `#×` où `×` est le n° du message à affich
 
 Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionnels.
 
-	<F×> Mode de défilement, × = 1 .. 6
-	<L×> N° de ligne, × = 1, 2
-	<C×>   Définition de la couleur, × = R (rouge), Y (jaune), G (vert), C (cyan), B (bleu), P (mangenta), W (blanc)
+|        |                                                                                                           |
+| --     | --                                                                                                        |
+| `<F×>` | Mode de défilement, × = 1 .. 6                                                                            |
+| `<L×>` | N° de ligne, × = 1, 2                                                                                     |
+| `<C×>` | Définition de la couleur, × = R (rouge), Y (jaune), G (vert), C (cyan), B (bleu), P (mangenta), W (blanc) |
 
 ## Modes de défilement
 
-	<F1> statique
-	<F2> défilement vers le haut
-	<F3> défilement vers la gauche
-	<F4> défilement vers le bas
-	<F5> clignote
+|        |                           |
+| --     | --                        |
+| `<F1>` | statique                  |
+| `<F2>` | défilement vers le haut   |
+| `<F3>` | défilement vers la gauche |
+| `<F4>` | défilement vers le bas    |
+| `<F5>` | clignote                  |
 
 ## Combinaisons de modes de défilements possibles sur deux lignes
 
-|        |       |       |       |       |       |       |       |       |       |       |       |
-| --     | --    | --    | --    | --    | --    | --    | --    | --    | --    | --    | --    |
-| **L1** | \<F1> | \<F1> | \<F1> | \<F1> | \<F2> | \<F2> | \<F2> | \<F4> | \<F4> | \<F5> | \<F5> |
-| **L2** | \<F1> | \<F2> | \<F3> | \<F4> | \<F1> | \<F2> | \<F3> | \<F1> | \<F4> | \<F3> | \<F5> |
+|        |      |      |      |      |      |      |      |      |      |      |      |
+| --     | --   | --   | --   | --   | --   | --   | --   | --   | --   | --   | --   |
+| **L1** | `F1` | `F1` | `F1` | `F1` | `F2` | `F2` | `F2` | `F4` | `F4` | `F5` | `F5` |
+| **L2** | `F1` | `F2` | `F3` | `F4` | `F1` | `F2` | `F3` | `F1` | `F4` | `F3` | `F5` |
 
 ## Exemples de messages sur une ligne
 
