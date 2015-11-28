@@ -229,7 +229,7 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_012.jpg)
 
-> J’ai également fait un test avec deux connecteurs jack de test de diamètre intérieur 2.1 mm. Le connecteur de test sur l’afficheur a un très bon contact alors que le connecteur de test branché au jack de l’alimentation pose le même problème de faux contact que si l’alimentation est directement connectée à l’afficheur.
+> J’ai également fait un test avec deux connecteurs jack de test d’une longeur de 12 mm, de diamètre intérieur 2.1 mm et sans ergot. Le connecteur de test sur l’afficheur a un très bon contact alors que le connecteur de test branché au jack de l’alimentation pose le même problème de faux contact que si l’alimentation est directement connectée à l’afficheur.
 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_013.jpg)
 
