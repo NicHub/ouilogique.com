@@ -223,7 +223,8 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 
 ## Connecteur jack ⌀ 5.5 mm / ⌀ 2.5 mm
 
-> ⚠ Le connecteur Jack de l’afficheur ne mesure que 9 mm de long. Quand on le tourne, il y a de temps en temps des mauvais contacts qui font que l’afficheur redémarre. Avec [un connecteur de 11 mm de long](http://fr.aliexpress.com/item/AC110-240V-to-DC-12V-2A-3A-4A-5A-6A-7A-8A-Power-Supply-Changer-Transformer/1983926091.html), ce problème disparait.
+> ⚠ Le connecteur Jack de l’afficheur ne mesure que 9 mm de long. Quand on le tourne, il y a de temps en temps des mauvais contacts qui font que l’afficheur redémarre. Avec un connecteur de 11 mm de long, ce problème disparait. À noter que le connecteur de 11 mm à également des ergots dans le diamètre intérieur.
 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_011_lowres.jpg)
 
+![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_012.jpg)
