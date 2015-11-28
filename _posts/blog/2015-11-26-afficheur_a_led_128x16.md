@@ -223,8 +223,13 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 
 ## Connecteur jack ⌀ 5.5 mm / ⌀ 2.5 mm
 
-> ⚠ Le connecteur Jack de l’afficheur ne mesure que 9 mm de long. Quand on le tourne, il y a de temps en temps des mauvais contacts qui font que l’afficheur redémarre. Avec un connecteur de 11 mm de long, ce problème disparait. À noter que le connecteur de 11 mm est pourvu d’ergots dans le diamètre intérieur.
+> ⚠ Le connecteur jack de l’afficheur ne mesure que 9 mm de long et a un diamètre intérieur de 2.5 mm. Quand on le tourne, il y a de temps en temps des mauvais contacts qui font que l’afficheur redémarre. Avec un connecteur de 11 mm de long, ce problème disparait. À noter que le connecteur de 11 mm est pourvu d’ergots dans le diamètre intérieur.
 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_011_lowres.jpg)
 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_012.jpg)
+
+> J’ai également fait un test avec deux connecteurs jack de test de diamètre intérieur 2.1 mm. Le connecteur de test sur l’afficheur a un très bon contact alors que le connecteur de test branché au jack de l’alimentation pose le même problème de faux contact que si l’alimentation est directement connectée à l’afficheur.
+
+![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_013.jpg)
+
