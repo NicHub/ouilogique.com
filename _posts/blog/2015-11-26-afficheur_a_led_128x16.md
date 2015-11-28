@@ -36,6 +36,7 @@ author: Nico
 	CSQ Checks...
 	CSQ: 9
 
+> Le CSQ indique probablement la qualité du signal GPRS : <http://m2msupport.net/m2msupport/atcsq-signal-quality/>
 
 
 # CARTE SIM
