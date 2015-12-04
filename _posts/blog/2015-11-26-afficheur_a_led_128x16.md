@@ -36,7 +36,9 @@ author: Nico
 	CSQ Checks...
 	CSQ: 9
 
-> Le CSQ indique probablement la qualité du signal GPRS : <http://m2msupport.net/m2msupport/atcsq-signal-quality/>
+> Le CSQ indique la qualité du signal GPRS : <http://m2msupport.net/m2msupport/atcsq-signal-quality/>
+
+> L’afficheur n’a pas d’antenne et la réception est très mauvaise dès que l’on s’éloigne des fenêtres. Je vais essayer [ce modèle de chez AliExpress](http://www.aliexpress.com/item/10PCS-Radio-Antenna-900-1800MHZ-GPRS-GSM-SMA-Male-Plug-Right-Angle-Female-Thead/32358787182.html).
 
 
 # CARTE SIM
@@ -174,6 +176,13 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 	<ID01><PD><L1><F4>KIOSQUE DE MONTCHOISI<L2><F4>JOYEUSES FETES DE FIN D'ANNEE<E>
 	<ID01><RG>ABCD<E>
 
+
+
+# MODULE GSM/GPRS
+
+[Quectel GC65](http://www.quectel.com/UploadFile/Product/%E7%A7%BB%E8%BF%9C%E9%80%9A%E4%BF%A1_GC65_GSM_%E4%BA%A7%E5%93%81%E8%A7%84%E6%A0%BC%E4%B9%A6_V2.0.pdf)
+
+850/**900/1800**/1900 MHz
 
 
 # IMAGES

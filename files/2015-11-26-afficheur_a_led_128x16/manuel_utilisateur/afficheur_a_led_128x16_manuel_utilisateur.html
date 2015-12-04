@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 id="full-color-display-type-p6-16"><strong>128 full-color display type P6-16</strong></h1>
+<p>16×128 pixels</p>
+<p><a href="szxcled.com">Xuan Cai</a></p>
+<h1 id="informations-au-démarrage">INFORMATIONS AU DÉMARRAGE</h1>
+<pre><code>Colorful LED V39
+System Checks..
+Password OFF
+Baud 9600
+Sim card OK!
+CSQ Checks...
+CSQ: 9</code></pre>
+<blockquote>
+<p>Le CSQ indique la qualité du signal GPRS. L’idéal serait que le CSQ soit plus grand ou égal à 15, mais ça fonctionne avec un CSQ de 6.</p>
+</blockquote>
+<h1 id="carte-sim">CARTE SIM</h1>
+<p>Introduire la carte SIM avec son support en plastique.</p>
+<p>Ressortir la carte en pressant le bouton vert à côté de celle-ci.</p>
+<p>La carte SIM permet de contrôler l’afficheur à distance via SMS ou <em>Fetion App</em> (service chinois de messagerie).</p>
+<h1 id="mot-de-passe">MOT DE PASSE</h1>
+<p>Pas de mot passe par défaut.</p>
+<h1 id="commande-par-sms">COMMANDE PAR SMS</h1>
+<blockquote>
+<p>Les commandes sont sensibles à la casse !<br/> Les accents ne sont pas supportés !<br/> 140 caractères maximum !</p>
+</blockquote>
+<h2 id="protocole">Protocole</h2>
+<p>Le message commence obligatoirement par <code>*</code> et se termine obligatoirement par <code>#×</code> où <code>×</code> est le n° du message à afficher, × = 1 .. 59. Si × n’est pas dans l’intervalle 1 .. 59, le message <code>#1</code> est modifié. × peut être spécifié avec un <code>0</code> non significatif (#1 ou #01).</p>
+<p>Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionnels.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>&lt;F×&gt;</code></td>
+<td style="text-align: left;">Mode de défilement, × = 1 .. 6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>&lt;L×&gt;</code></td>
+<td style="text-align: left;">N° de ligne, × = 1, 2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>&lt;C×&gt;</code></td>
+<td style="text-align: left;">Définition de la couleur, × = R (rouge), Y (jaune), G (vert), C (cyan), B (bleu), P (mangenta), W (blanc)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modes-de-défilement">Modes de défilement</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>&lt;F1&gt;</code></td>
+<td style="text-align: left;">statique</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>&lt;F2&gt;</code></td>
+<td style="text-align: left;">défilement vers le haut</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>&lt;F3&gt;</code></td>
+<td style="text-align: left;">défilement vers la gauche</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>&lt;F4&gt;</code></td>
+<td style="text-align: left;">défilement vers le bas</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>&lt;F5&gt;</code></td>
+<td style="text-align: left;">clignote</td>
+</tr>
+</tbody>
+</table>
+<h2 id="combinaisons-de-modes-de-défilements-possibles-sur-deux-lignes"> Combinaisons de modes de défilements possibles sur deux lignes</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>L1</strong></td>
+<td style="text-align: left;"><code>F1</code></td>
+<td style="text-align: left;"><code>F1</code></td>
+<td style="text-align: left;"><code>F1</code></td>
+<td style="text-align: left;"><code>F1</code></td>
+<td style="text-align: left;"><code>F2</code></td>
+<td style="text-align: left;"><code>F2</code></td>
+<td style="text-align: left;"><code>F2</code></td>
+<td style="text-align: left;"><code>F4</code></td>
+<td style="text-align: left;"><code>F4</code></td>
+<td style="text-align: left;"><code>F5</code></td>
+<td style="text-align: left;"><code>F5</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>L2</strong></td>
+<td style="text-align: left;"><code>F1</code></td>
+<td style="text-align: left;"><code>F2</code></td>
+<td style="text-align: left;"><code>F3</code></td>
+<td style="text-align: left;"><code>F4</code></td>
+<td style="text-align: left;"><code>F1</code></td>
+<td style="text-align: left;"><code>F2</code></td>
+<td style="text-align: left;"><code>F3</code></td>
+<td style="text-align: left;"><code>F1</code></td>
+<td style="text-align: left;"><code>F4</code></td>
+<td style="text-align: left;"><code>F3</code></td>
+<td style="text-align: left;"><code>F5</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="exemples-de-messages-sur-une-ligne">Exemples de messages sur une ligne</h2>
+<blockquote>
+<p>Le mode de défilement est optionnel. Si on ne le précise pas, tous les modes de défilement sont utilisés successivement et dans l’ordre chronologique (F1, F2,...). On ne peut pas spécifier plusieurs modes de défilement sur une ligne donnée.<br/> Les lignes de commande ci-dessous doivent être envoyées dans des SMS distincts.</p>
+</blockquote>
+<pre><code>*&lt;F1&gt;&lt;CG&gt;A GAGNER A L&#39;EURO MILLIONS : &lt;CR&gt;!! 147 MILLION$ !!#02
+*&lt;F5&gt;!! 147 MILLION$ !!#03</code></pre>
+<h2 id="exemples-de-messages-sur-deux-lignes">Exemples de messages sur deux lignes</h2>
+<blockquote>
+<p>En mode deux lignes, les caractères ont une hauteur de 7 px. Par défaut, la première lignes est statique et la deuxième défile vers la gauche.<br/> On peut changer les modes de défilement des deux lignes. Voir les combinaisons possibles ci-dessus.</p>
+</blockquote>
+<pre><code>*&lt;L1&gt;&lt;F2&gt;KIOSQUE DE MONTCHOISI&lt;L2&gt;&lt;F2&gt;JOYEUSES FETES DE FIN D&#39;ANNEE#01
+*&lt;L1&gt;&lt;F4&gt;KIOSQUE DE MONTCHOISI&lt;L2&gt;&lt;F4&gt;JOYEUSES FETES DE FIN D&#39;ANNEE#04</code></pre>
+<h2 id="spécifier-les-textes-qui-doivent-safficher">Spécifier les textes qui doivent s’afficher</h2>
+<pre><code>*RL#01#02#03#04*</code></pre>
+<h2 id="spécifier-la-couleur">Spécifier la couleur</h2>
+<blockquote>
+<p>Si aucune couleur n’est spécifiée, les caractères s’affichent dans 7 couleurs successivement : (rouge R, jaune Y, vert G, cyan C, bleu B, mangenta P, blanc W)</p>
+</blockquote>
+<pre><code>*&lt;CR&gt;ce texte sera rouge &lt;CY&gt;et celui-ci sera jaune#08</code></pre>
+<h2 id="spécifier-la-vitesse">Spécifier la vitesse</h2>
+<blockquote>
+<p>Vitesses de 1 à 6<br/> 1 = rapide, 6 = lent<br/> Utiliser de préférence les vitesses S1, S2 et S3. Les autres ont tendance à scintiller.<br/> La vitesse est définie pour tous les messages. On ne peut pas régler des vitesses individuelles.</p>
+</blockquote>
+<pre><code>*S1*</code></pre>
+<h2 id="spécifier-la-luminosité">Spécifier la luminosité</h2>
+<blockquote>
+<p>Luminosité de 1 à 6<br/> 1 = moins lumineux, 6 = plus lumineux La luminosité est définie pour tous les messages. On ne peut pas régler des luminosité individuelles.</p>
+</blockquote>
+<pre><code>*B1*</code></pre>
+<h2 id="mise-à-zéro">Mise à zéro</h2>
+<blockquote>
+<p>La mise à zéro supprime tous les messages. Si aucun message n’est enregistré, le message “Welcome!” est affiché.</p>
+</blockquote>
+<pre><code>*DEL*</code></pre>
+</body>
+</html>

@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+@page {
+	size: A5;
+	margin-top: 1cm;
+	margin-bottom: 1.1cm;
+	margin-left: 1.5cm;
+	margin-right: 1.5cm;
+	font-family: "Helvetica Neue";
+	font-size: 8pt;
+	color: rgb( 60, 60, 60 );
+}
+html * {
+	font-size: 8pt;
+	margin: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue";
+	font-size: 8pt;
+	color: rgb( 60, 60, 60 );
+	counter-reset: metaphore;
+	border: 1px solid transparent;
+	hyphens: auto;
+	hyphenate-lines: 1;
+	prince-hyphenate-before: 2;
+	prince-hyphenate-after: 2;
+}
+h1:first-of-type {
+	text-align: center;
+	font-size: 14pt;
+	color: white;
+	background-color: #666;
+}
+h1:first-of-type strong {
+	font-size: 14pt;
+}
+
+h1 {
+	margin-top: 0.5cm;
+	text-transform: uppercase;
+}
+h2 {
+	margin-top: 0.5cm;
+}
+
+pre {
+	margin-top: 0.2cm;
+}
+
+.footnote, sup, sub
+{
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	position: relative;
+	font-size: 0.65em;
+
+}
+sub { top: 0.5ex; }
+.footnote, sup { bottom: 1ex; }
+.footnotes hr { display: none; }
+.footnotes p { text-indent: 0; }
+.footnotes ol { margin: 0 0 0 0.6cm; }
+
+
+td {
+	vertical-align: top;
+}
