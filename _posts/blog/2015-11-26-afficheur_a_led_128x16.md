@@ -38,7 +38,7 @@ author: Nico
 
 > Le CSQ indique la qualité du signal GPRS : <http://m2msupport.net/m2msupport/atcsq-signal-quality/>
 
-> L’afficheur n’a pas d’antenne et la réception est très mauvaise dès que l’on s’éloigne des fenêtres. J’ai acheté [ce modèle de chez AliExpress](http://www.aliexpress.com/item/10PCS-Radio-Antenna-900-1800MHZ-GPRS-GSM-SMA-Male-Plug-Right-Angle-Female-Thead/32358787182.html) et il fonctionne très bien. Le CSQ est de 14 au milieu d’une pièce (~3 m de la fenêtre).
+> L’afficheur n’a pas d’antenne et la réception est très mauvaise dès que l’on s’éloigne des fenêtres. J’ai acheté [ce modèle de chez AliExpress](http://www.aliexpress.com/item/10PCS-Radio-Antenna-900-1800MHZ-GPRS-GSM-SMA-Male-Plug-Right-Angle-Female-Thead/32358787182.html) et il fonctionne très bien. Le CSQ est de 14 au milieu d’une pièce (environ 3 m de la fenêtre).
 
 
 
