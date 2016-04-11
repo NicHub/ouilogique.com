@@ -88,7 +88,7 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 | `<F4>` | défilement vers le bas    |
 | `<F5>` | clignote                  |
 
-## Combinaisons de modes de défilements possibles sur deux lignes
+## Combinaisons de modes de défilements possibles sur deux lignes
 
 |        |      |      |      |      |      |      |      |      |      |      |      |
 | --     | --   | --   | --   | --   | --   | --   | --   | --   | --   | --   | --   |
@@ -232,7 +232,7 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/profile_118x25_002_lowres.jpg)
 
 
-## Connecteur jack ⌀ 5.5 mm / ⌀ 2.5 mm
+## Connecteur jack ⌀ 5.5 mm / ⌀ 2.5 mm
 
 > ⚠ Le connecteur jack de l’afficheur ne mesure que 9 mm de long et a un diamètre intérieur de 2.5 mm. Quand on le tourne, il y a de temps en temps des mauvais contacts qui font que l’afficheur redémarre. Avec un connecteur de 11 mm de long, de diamètre intérieur de 2.5 mm, mais pourvus d’ergots, ce problème disparait.
 
