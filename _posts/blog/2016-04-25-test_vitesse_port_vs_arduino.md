@@ -17,6 +17,8 @@ Vous le savez peut-être, les fonctionnalités offertes par l’écosystème Ard
 
 J’ai mesuré les résultats présentés ci-dessous sur un clone d’Arduino Nano. Les temps sont donnés en nombre de cycles d’horloge, et dans le cas présenté, un cycle vaut 62.5 ns (16 MHz).
 
+Le programme de test est disponible ci-dessous. Si le test est fait avec une boucle `for`, il faut ajouter 2 aux nombres de cycles indiqués dans le tableau.
+
 | ---                                                                              |           |
 | Fonction                                                                         | Nb cycles |
 | -                                                                                | :-        |
