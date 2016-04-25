@@ -188,9 +188,11 @@ void loop()
     T1 = micros();
 
     #if type_test % 2 == 1
+        // Cette boucle for utilise 2 cycles d’horloge.
         for( int i=0; i<iMax; i++ )
             { w1; w2; }
     #else
+        // Ici, la boucle for est dépliée pour ne pas consommer les 2 cycles d’horloge. Il y a 1000 w1 et 1000 w2.
         w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;
         w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;
         w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;w1;w2;
