@@ -5,7 +5,7 @@ _site
 codekit-config.json
 node_modules
 .sass-cache
-
+jekyll-metadata
 
 
 files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/P1030385.JPG
