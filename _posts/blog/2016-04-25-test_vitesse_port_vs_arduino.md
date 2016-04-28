@@ -181,10 +181,11 @@ void loop()
     #endif
 
 
-    // Début du test
     // Il faut attendre un peu après le dernier Serial.print,
     // sinon les temps mesurés sont plus longs d’environ 12 ns.
     _delay_ms( 20 );
+
+    // Début du test
     T1 = micros();
 
     #if type_test % 2 == 1
