@@ -44,7 +44,7 @@ Le programme de test est disponible ci-dessous. Si le test est fait avec une bou
  * Mesure des temps d’exécution de diverses fonctions.
  * Les n° de test impairs sont exécutés avec une boucle for.
  * Les n° de test pairs  sont exécutés sans boucle for (dépliés).
- * La boucle for consomme typiquement 2 cycles d’horloge.
+ * La boucle for consomme typiquement 2 cycles d’horloge à chaque itération.
  *
  * avril 2016, ouilogique.com
  *
