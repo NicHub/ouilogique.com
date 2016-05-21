@@ -98,7 +98,7 @@ void loop()
   Serial.print( " ms\t" );
 
   Serial.print( "dt = " );
-  Serial.print( dt, 1 );
+  Serial.print( dt );
   Serial.print( " ms\t" );
 
   Serial.print( "T = " );
