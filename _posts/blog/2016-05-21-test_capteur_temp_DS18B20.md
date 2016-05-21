@@ -55,6 +55,8 @@ REMARQUES
 - Le capteur DS18B20 n’est pas très réactif, il faut environ 5 min
   pour qu’il se stabilise.
 
+mai 2016, ouilogique.com
+
 */
 
 #include <OneWire.h>
