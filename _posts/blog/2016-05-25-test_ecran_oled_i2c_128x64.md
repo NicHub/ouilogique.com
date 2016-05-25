@@ -51,6 +51,10 @@ Cet écran est séparé en deux zones verticales
 Les deux zones sont séparées d’une largeur d’environ
 1 pixel qui apparaît donc toujours noire.
 
+La communication I²C fonctionne sans les résistances de pull-up.
+Cela dit, il est sans doute préférable d’ajouter deux résistances
+de 4.7 kΩ entre SCK et VDD ainsi qu’entre SDA et VDD.
+
 
 mai 2016, ouilogique.com
 
