@@ -12,11 +12,9 @@ published: true
 author: Nico
 ---
 
+![...](/files/2016-05-25-test_ecran_oled_i2c_128x64/test_ecran_oled_i2c_128x64_001_lowres.jpg)
 
-![...](/files/2016-05-25-test_test_ecran_oled_i2c_128x64/test_ecran_oled_i2c_128x64_001_lowres.jpg)
-
-![...](/files/2016-05-25-test_test_ecran_oled_i2c_128x64/test_ecran_oled_i2c_128x64_002_lowres.jpg)
-
+![...](/files/2016-05-25-test_ecran_oled_i2c_128x64/test_ecran_oled_i2c_128x64_002_lowres.jpg)
 
 ~~~ c++
 
@@ -50,6 +48,8 @@ Il faut éditer le fichier Adafruit_SSD1306.h de la manière suivante :
 Cet écran est séparé en deux zones verticales
 - Une zone de 16 px de haut avec des pixels jaunes
 - Une zone de 48 px de haut avec des pixels bleus
+Les deux zones sont séparées d’une largeur d’environ
+1 pixel qui apparaît donc toujours noire.
 
 
 mai 2016, ouilogique.com
