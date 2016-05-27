@@ -231,7 +231,7 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/profile_118x35_002_lowres.jpg)
 
-À priori, les rainures au dos ne peuvent pas être utilisées avec de la visserie standard. En effet le M5 est trop petit et le M6 est trop grand.
+> ⚠ À priori, les rainures au dos ne peuvent pas être utilisées avec de la visserie standard. En effet le M5 est trop petit et le M6 est trop grand. [Voir le dessin Onshape](https://cad.onshape.com/documents/e5f336ade20ccc683bafba82/w/173a1521199ae1cdb856deb0/e/e25f28ef1201f0b017f8ac6d)
 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/profile_118x35_003.png)
 
