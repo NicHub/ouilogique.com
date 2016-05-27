@@ -225,12 +225,15 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/MiniLEDDisplayEditorV2_003.png)
 
 
-## Profilé 118 × 25 mm
+## Profilé 118 × 35 mm
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/profile_118x25_001_lowres.jpg)
+![](/files/2015-11-26-afficheur_a_led_128x16/images/profile_118x35_001_lowres.jpg)
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/profile_118x25_002_lowres.jpg)
+![](/files/2015-11-26-afficheur_a_led_128x16/images/profile_118x35_002_lowres.jpg)
 
+À priori, les rainures au dos ne peuvent pas être utilisées avec de la visserie standard. En effet le M5 est trop petit et le M6 est trop grand.
+
+![](/files/2015-11-26-afficheur_a_led_128x16/images/profile_118x35_003.png)
 
 ## Connecteur jack ⌀ 5.5 mm / ⌀ 2.5 mm
 
