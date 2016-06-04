@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Mise en route d’un capteur de pression, température et humidité <em>Strinity Sensors Cobber</em>"
+title: "Mise en route d’un capteur de pression, température et humidité <em>Strinity Sensors Cobber</em> I²C"
 modified:
 categories:
 excerpt:
