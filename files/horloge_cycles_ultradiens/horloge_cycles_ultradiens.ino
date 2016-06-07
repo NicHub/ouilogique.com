@@ -110,7 +110,7 @@ void serialEvent()
   // Cette procédure permet de régler l’heure de l’horloge
   // via le bus RS232.
   // Exemple de commande à envoyer :
-  // 2016,6,6,16,12,50
+  // 2016,6,6,16,24,50
 
   const byte nbCharMax = 19;
   char str[ nbCharMax ] = { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 };
@@ -201,7 +201,7 @@ void loop()
                               displayWidth/2, displayWidth ); }
   else
     { frac16eJourPx = map( frac16eJour,
-                              5400/2,         5400,
+                              5400/2,         5399,
                               0,              displayWidth/2-1 ); }
 
   // Calcul du pourcentage du cycle d’attention
