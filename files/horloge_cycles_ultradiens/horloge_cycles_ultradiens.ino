@@ -110,7 +110,7 @@ void serialEvent()
   // Cette procédure permet de régler l’heure de l’horloge
   // via le bus RS232.
   // Exemple de commande à envoyer :
-  // 2016,6,6,16,24,50
+  // 2016,6,7,21,00,30
 
   const byte nbCharMax = 19;
   char str[ nbCharMax ] = { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 };
@@ -178,22 +178,26 @@ void loop()
 {
 
   // ****
-  // Calculs du pourcentage du cycle d’attention
-  // et du temps équivalent en 16e de jour exprimé en pixels
+  // Calculs du pourcentage du cycle d’attention (cycle)
+  // et du temps équivalent en 1/16e de jour exprimé en pixels (frac16eJourPx)
   // **
 
   // lecture de l’heure actuelle
   DateTime now = RTC.now();
 
-  // Calcul du temps équivalent en 16e de jour
+  // Calcul du temps équivalent en 1/16e de jour
   // NB : - Il y a 16 cycles d’1 h 30 dans 24 h
   //      - 1 h 30 = 5400 s
   long frac16eJour = ( now.secondstime() - heureAttentionMax ) % 5400;
 
+  // Calcul du pourcentage du cycle d’attention
+  // 2 * π * 16 / 86400 = 0.0011635528
+  double cycle = 100.0 * 0.5 * ( 1.0 + cos( ( double )( frac16eJour ) * 0.0011635528 ) );
+
   // Conversion de “frac16eJour” en pixels
-  // Les valeurs de la 1ère moitié du cycle sont affichées à droite de l’écran.
-  // Les valeurs de la 2e moitié du cycle sont affichées à gauche de l’écran.
-  // Le code ci-dessous permute les deux moitiés pour qu’elles s’affichent au bon endroit.
+  // Les valeurs de la 1ère moitié du cycle correspondent à la partie droite du cosinus.
+  // Les valeurs de la 2e moitié du cycle correspondent à la partie gauche du cosinus.
+  // Le code ci-dessous permute les deux moitiés pour qu’elles s’affichent du bon côté.
   int16_t frac16eJourPx;
   if( frac16eJour < 5400/2 )
     { frac16eJourPx = map( frac16eJour,
@@ -204,19 +208,15 @@ void loop()
                               5400/2,         5400-1,
                               0,              displayWidth/2-1 ); }
 
-  // Calcul du pourcentage du cycle d’attention
-  // 2 * π * 16 / 86400 = 0.0011635528
-  double cycle = 50.0 * ( 1.0 + cos( ( double )( frac16eJour ) * 0.0011635528 ) );
-
 
   // ****
   //  Affichage des résultats
   // **
 
-  // Efface l’écran
+  // Effacement de l’écran
   display.clearDisplay();
 
-  // Prépare l’affichage de la date
+  // Préparation de l’affichage de la date
   display.setTextSize( 1 );
   display.setCursor( 0, 0 );
   display.print( now.day() );
@@ -239,32 +239,29 @@ void loop()
   display.setCursor( 0, 9 );
   display.print( now.year() );
 
-  // Prépare l’affichage de l’heure et des minutes
+  // Préparation de l’affichage de l’heure et des minutes
   char texteAffichage[ 5 ];
   sprintf( texteAffichage, "%2d:%02d", now.hour(), now.minute() );
   display.setTextSize( 2 );
   display.setCursor( 49, 0 );
   display.print( texteAffichage );
 
-  // Prépare l’affichage des secondes
+  // Préparation de l’affichage des secondes
   sprintf( texteAffichage, ":%02d", now.second() );
   display.setTextSize( 1 );
   display.print( texteAffichage );
 
-  // Prépare l’affichage du pourcentage du cycle
+  // Préparation de l’affichage du pourcentage du cycle
   display.setTextSize( 2 );
-  // cycle = 0..9.9
-  if( cycle < 10 )       { display.setCursor( 46, 21 );
-                           display.print( cycle, 1 );  }
-  // cycle = 10..99.4999
-  else if( cycle < 99.5 ){ display.setCursor( 34, 21 );
-                          display.print( cycle, 1 );  }
-  // cycle >= 99.5
-  else                   { display.setCursor( 42, 21 );
-                           display.print( cycle, 0 );  }
+  if( cycle < 10 )
+    { display.setCursor( 34, 21 ); display.print( cycle, 2 ); }
+  else if( cycle < 99.5 )
+    { display.setCursor( 34, 21 ); display.print( cycle, 1 ); }
+  else
+    { display.setCursor( 42, 21 ); display.print( cycle, 0 ); }
   display.print( char( 37 ) ); // signe %
 
-  // Prépare l’affichage de la courbe du cycle
+  // Préparation de l’affichage de la courbe du cycle
   prepareCourbeCycle( frac16eJourPx );
 
   // Met à jour l’affichage
