@@ -21,13 +21,18 @@ Le programme se trouve ici :
 
 ## Description du programme
 
-C’est une horloge qui affiche des cycles de 1 h 30. On définit la valeur de la constante `heureMax` au nombre de secondes du pic du cycle. Par exemple, si votre cycle a un pic à 7 h 15 (= 26100 s), le cycle a son pic à `heureMax = 26100 % 5400 = 4500` où `%` est l’opérateur *modulo* et 5400 est le nombre de secondes dans 1 h 30. La constante `heureMax` doit être adaptée manuellement dans le programme à la ligne 192.
+C’est une horloge qui affiche les pourcentages d’attention par cycles de 1 h 30. On définit la valeur de la constante `heureMax` au nombre de secondes du pic d’attention du cycle. Par exemple, si votre cycle a un pic à 7 h 15 (= 26100 s), le cycle a son pic à `heureMax = 26100 % 5400 = 4500` où `%` est l’opérateur *modulo* et 5400 est le nombre de secondes dans 1 h 30. La constante `heureMax` doit être adaptée manuellement dans le programme à la ligne 192.
 
 L’horloge peut être mise à jour via le port RS232. Comme le programme utilise beaucoup de RAM, j’ai désactivé cette fonctionnalité par défaut. Pour la réactiver, il suffit de changer la valeur de `avecSerial false` à `avecSerial true` à la ligne 46 et de recharger le programme sur le microcontrôleur.
 
 ## Notes
 
-- Les pullups ont une résistance de 4.7 Ω.
+- Les pullups ont une résistance de 4.7 kΩ.
 - Le bouton sur `D2` n’est pas utilisé dans le programme.
 - Le buzzer sur `A0` non plus.
+
+## Voir aussi
+
+- [Test d’une horloge temps réel DS1307 I²C](http://ouilogique.com/test_horloge_temps_reel_i2c/)
+- [Test d’un écran OLED 128×64 I²C](http://ouilogique.com/test_ecran_oled_i2c_128x64/)
 
