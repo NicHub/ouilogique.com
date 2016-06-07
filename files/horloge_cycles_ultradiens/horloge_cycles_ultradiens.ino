@@ -193,7 +193,7 @@ void loop()
   // Conversion de “frac16eJour” en pixels
   // Les valeurs de la 1ère moitié du cycle sont affichées à droite de l’écran.
   // Les valeurs de la 2e moitié du cycle sont affichées à gauche de l’écran.
-  // Il faut donc permuter les deux moitiés pour qu’elles s’affichent au bon endroit.
+  // Le code ci-dessous permute les deux moitiés pour qu’elles s’affichent au bon endroit.
   int16_t frac16eJourPx;
   if( frac16eJour < 5400/2 )
     { frac16eJourPx = map( frac16eJour,
@@ -201,7 +201,7 @@ void loop()
                               displayWidth/2, displayWidth ); }
   else
     { frac16eJourPx = map( frac16eJour,
-                              5400/2,         5399,
+                              5400/2,         5400-1,
                               0,              displayWidth/2-1 ); }
 
   // Calcul du pourcentage du cycle d’attention
