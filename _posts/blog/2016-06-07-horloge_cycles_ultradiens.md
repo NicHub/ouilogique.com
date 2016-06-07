@@ -14,14 +14,11 @@ author: Nico
 
 ![...](/files/horloge_cycles_ultradiens/horloge_cycles_ultradiens_lowres.jpg)
 
-Le programme se trouve ici :
-
-<https://github.com/NicHub/ouilogique.com/blob/gh-pages/files/horloge_cycles_ultradiens/horloge_cycles_ultradiens.ino>
-
-
 ## Description du programme
 
-C’est une horloge qui affiche les pourcentages d’attention par cycles de 1 h 30. On définit la valeur de la constante `heureMax` au nombre de secondes du pic d’attention du cycle. Par exemple, si votre cycle a un pic à 7 h 15 (= 26100 s), cela correspond à `heureMax = 26100 % 5400 = 4500` où `%` est l’opérateur *modulo* et 5400 est le nombre de secondes dans 1 h 30. La constante `heureMax` doit être adaptée manuellement dans le programme à la ligne 192.
+_**Le programme se trouve ici :** [horloge_cycles_ultradiens.ino](https://github.com/NicHub/ouilogique.com/blob/gh-pages/files/horloge_cycles_ultradiens/horloge_cycles_ultradiens.ino)_
+
+C’est une horloge qui affiche les pourcentages d’attention par cycles d’une heure et demie. On définit la valeur de la constante `heureMax` au nombre de secondes du pic d’attention du cycle. Par exemple, si votre cycle a un pic à 7 h 15 (= 26100 s), cela correspond à `heureMax = 26100 % 5400 = 4500` où `%` est l’opérateur *modulo* et 5400 est le nombre de secondes dans 1 h 30. La constante `heureMax` doit être adaptée manuellement dans le programme à la ligne 172.
 
 L’horloge peut être mise à jour via le port RS232. Comme le programme utilise beaucoup de RAM, j’ai désactivé cette fonctionnalité par défaut. Pour la réactiver, il suffit de changer la valeur de `avecSerial false` à `avecSerial true` à la ligne 46 et de recharger le programme sur le microcontrôleur.
 
