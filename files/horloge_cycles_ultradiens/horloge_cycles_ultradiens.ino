@@ -1,6 +1,6 @@
 /*
 
-HORLOGE CYCLES CIRCADIENS
+HORLOGE CYCLES ULTRADIENS
 
 RÉFÉRENCE AliExpress DU DS1307
 http://fr.aliexpress.com/item/5pcs-lot-Tiny-RTC-I2C-AT24C32-DS1307-Real-Time-Clock-Module-Board-For-Arduino-With-A/32327865928.html
