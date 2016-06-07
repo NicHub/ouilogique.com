@@ -46,44 +46,24 @@ const int bLed13 = PORTB5;
 #define avecSerial false
 
 const byte displayWidth = 128;
-// static const unsigned char cosinus_cmap[ displayWidth ] PROGMEM =
-// {
-//   61, 61, 61, 61, 61, 60, 60, 60,
-//   60, 59, 59, 59, 58, 58, 57, 57,
-//   56, 56, 55, 54, 53, 52, 51, 50,
-//   49, 48, 47, 46, 45, 44, 43, 42,
-//   41, 40, 39, 38, 37, 36, 35, 34,
-//   33, 32, 31, 30, 29, 28, 27, 26,
-//   25, 25, 24, 24, 23, 23, 22, 22,
-//   21, 21, 20, 20, 20, 20, 19, 19,
-//   19, 19, 19, 20, 20, 20, 20, 21,
-//   21, 22, 22, 23, 23, 24, 24, 25,
-//   25, 26, 27, 28, 29, 30, 31, 32,
-//   33, 34, 35, 36, 37, 38, 39, 40,
-//   41, 42, 43, 44, 45, 46, 47, 48,
-//   49, 50, 51, 52, 53, 54, 55, 56,
-//   56, 57, 57, 58, 58, 59, 59, 59,
-//   60, 60, 60, 60, 61, 61, 61, 61
-// };
-
 static const unsigned char cosinus_cmap[ displayWidth ] PROGMEM =
 {
   63, 63, 63, 63, 63, 62, 62, 62,
-  62, 62, 62, 62, 61, 61, 61, 61,
-  60, 60, 60, 59, 59, 58, 58, 57,
-  57, 56, 56, 55, 55, 54, 54, 53,
-  53, 52, 52, 51, 51, 50, 50, 49,
-  49, 48, 48, 47, 47, 46, 46, 45,
-  45, 45, 44, 44, 44, 44, 43, 43,
-  43, 43, 42, 42, 42, 42, 42, 42,
-  42, 42, 42, 42, 42, 42, 42, 43,
+  62, 62, 62, 61, 61, 61, 61, 60,
+  60, 60, 59, 59, 58, 58, 57, 57,
+  56, 56, 55, 55, 54, 54, 53, 53,
+  52, 52, 51, 51, 50, 50, 49, 49,
+  48, 48, 47, 47, 46, 46, 45, 45,
+  45, 44, 44, 44, 44, 43, 43, 43,
+  43, 43, 43, 42, 42, 42, 42, 42,
+  42, 42, 42, 42, 42, 43, 43, 43,
   43, 43, 43, 44, 44, 44, 44, 45,
   45, 45, 46, 46, 47, 47, 48, 48,
   49, 49, 50, 50, 51, 51, 52, 52,
   53, 53, 54, 54, 55, 55, 56, 56,
   57, 57, 58, 58, 59, 59, 60, 60,
   60, 61, 61, 61, 61, 62, 62, 62,
-  62, 62, 62, 62, 63, 63, 63, 63
+  62, 62, 62, 63, 63, 63, 63, 63
 };
 
 void afficheCourbeCycle( int16_t pxNow )
@@ -246,7 +226,7 @@ void loop()
   char texteAffichage[ 5 ];
   sprintf( texteAffichage, "%2d:%02d", now.hour(), now.minute() );
   display.setTextSize( 2 );
-  display.setCursor( 43, 0 );
+  display.setCursor( 49, 0 );
   display.print( texteAffichage );
 
   // Prépare l’affichage des secondes
@@ -254,21 +234,21 @@ void loop()
   display.setTextSize( 1 );
   display.print( texteAffichage );
 
-  // Prépare l’affichage du poucentage du cycle
+  // Prépare l’affichage du pourcentage du cycle
   display.setTextSize( 2 );
   if( cycle < 10 )             // cycle = 0..9.9
   {
-    display.setCursor( 45, 21 );
+    display.setCursor( 46, 21 );
     display.print( cycle, 1 );
   }
   else if( cycle < 100 )       // cycle = 10..99.9
   {
-    display.setCursor( 33, 21 );
+    display.setCursor( 34, 21 );
     display.print( cycle, 1 );
   }
   else                         // cycle = 100
   {
-    display.setCursor( 41, 21 );
+    display.setCursor( 42, 21 );
     display.print( cycle, 0 );
   }
   display.print( char( 37 ) ); // signe %
