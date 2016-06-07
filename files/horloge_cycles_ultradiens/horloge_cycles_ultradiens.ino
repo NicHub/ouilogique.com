@@ -198,7 +198,7 @@ void loop()
   if( frac16eJour < 5400/2 )
     { frac16eJourPx = map( frac16eJour,
                               0,              5400/2-1,
-                              displayWidth/2, displayWidth ); }
+                              displayWidth/2, displayWidth-1 ); }
   else
     { frac16eJourPx = map( frac16eJour,
                               5400/2,         5400-1,
