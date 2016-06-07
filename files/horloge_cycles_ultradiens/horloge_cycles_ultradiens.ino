@@ -1,25 +1,47 @@
 /*
 
-HORLOGE CYCLES ULTRADIENS
+HORLOGE À CYCLES ULTRADIENS
 
-RÉFÉRENCE AliExpress DU DS1307
-http://fr.aliexpress.com/item/5pcs-lot-Tiny-RTC-I2C-AT24C32-DS1307-Real-Time-Clock-Module-Board-For-Arduino-With-A/32327865928.html
+http://ouilogique.com/horloge_cycles_ultradiens/
 
-ADRESSES I²C DU DS1307
-0x50 (EEPROM AT24C32)
-0x68 (DS1307)
+HORLOGE DS1307 I²C
+    RÉFÉRENCE AliExpress
+    http://fr.aliexpress.com/item/5pcs-lot-Tiny-RTC-I2C-AT24C32-DS1307-Real-Time-Clock-Module-Board-For-Arduino-With-A/32327865928.html
 
-LIBRAIRIE Adafruit du DS1307
-https://github.com/adafruit/RTClib.git
+    ADRESSES I²C
+    0x50 (EEPROM AT24C32)
+    0x68 (DS1307)
 
-CONNEXIONS
-GND    GND
-VCC    +5V
-SDA    pin A4
-SCL    pin A5
+    LIBRAIRIE Adafruit
+    https://github.com/adafruit/RTClib.git
+
+    CONNEXIONS
+    GND    GND
+    VCC    +5V
+    SDA    pin A4
+    SCL    pin A5
+
+ÉCRAN OLED 128×64 I²C
+    RÉFÉRENCE AliExpress
+    http://fr.aliexpress.com/item/1Pcs-Yellow-blue-double-color-128X64-OLED-LCD-LED-Display-Module-For-Arduino-0-96/32305641669.html
+
+    ADRESSE I²C
+    0x3C
+
+    LIBRAIRIE Adafruit
+    https://github.com/adafruit/Adafruit_SSD1306.git
+
+    CONNEXIONS
+    GND    GND
+    VDD    +5V
+    SCK    pin A5
+    SDA    pin A4
+
+PULLUPS I²C
+    4.7 kΩ
 
 MICROCONTRÔLEUR
-Clone Arduino Nano
+    Clone Arduino Nano
 
 juin 2016, ouilogique.com
 
@@ -37,14 +59,13 @@ Adafruit_SSD1306 display( OLED_RESET );
 #error( "Height incorrect, please fix Adafruit_SSD1306.h!" );
 #endif
 
-const int bBtn1  = PORTD2;
-const int bLed13 = PORTB5;
-
-#define btn1Read   ! bitRead( PIND, bBtn1 )
-#define led13Set   bitSet( PORTB, bLed13 )
-#define led13Clear bitClear( PORTB, bLed13 )
 #define avecSerial false
 
+// “heureAttentionMax = 4500” correspond à 7 h 15,
+// car   7:15 = 26100 s
+// et    26100 % 5400 = 4500 s
+// où 5400 est le nombre de secondes dans 1 h 30
+const long heureAttentionMax = 4500;
 const byte displayWidth = 128;
 static const unsigned char cosinus_cmap[ displayWidth ] PROGMEM =
 {
@@ -66,17 +87,17 @@ static const unsigned char cosinus_cmap[ displayWidth ] PROGMEM =
   62, 62, 62, 63, 63, 63, 63, 63
 };
 
-void afficheCourbeCycle( int16_t pxNow )
+void prepareCourbeCycle( int16_t frac16eJourPx )
 {
   unsigned char py;
   // Partie de la courbe avec remplissage
-  for( int16_t px=0; px<=pxNow; px++ )
+  for( int16_t px=0; px<=frac16eJourPx; px++ )
   {
     py = pgm_read_byte( &cosinus_cmap[ px ] );
     display.drawLine( px, display.height()-1, px, py, WHITE );
   }
   // Partie de la courbe sans remplissage
-  for( int16_t px=pxNow+1; px<displayWidth; px++ )
+  for( int16_t px=frac16eJourPx+1; px<displayWidth; px++ )
   {
     py = pgm_read_byte( &cosinus_cmap[ px ] );
     display.drawPixel( px, py, WHITE );
@@ -89,7 +110,7 @@ void serialEvent()
   // Cette procédure permet de régler l’heure de l’horloge
   // via le bus RS232.
   // Exemple de commande à envoyer :
-  // 2016,6,6,13,39,10
+  // 2016,6,6,16,12,50
 
   const byte nbCharMax = 19;
   char str[ nbCharMax ] = { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 };
@@ -155,46 +176,42 @@ void setup()
 
 void loop()
 {
-/*
-  // 2016,6,6,15,10,50
-  // 2016,6,6,7,15,00
-  // 2016,6,6,7,29,50
-  // 2016,6,6,8,0,0
-  // 2016,6,6,8,15,00
-  // 2016,6,6,8,45,00
-  // 2016,6,6,19,04,20
-  // 2016,6,6,19,31,20
-*/
+
+  // ****
+  // Calculs du pourcentage du cycle d’attention
+  // et du temps équivalent en 16e de jour exprimé en pixels
+  // **
+
+  // lecture de l’heure actuelle
   DateTime now = RTC.now();
-  long secondstime = now.secondstime();
-  // long nbSecondesSeiziemeJour = secondstime % 86400 % 5400;
-  long nbSecondesSeiziemeJour = secondstime % 5400;
-  const long heureMax = 4500; // 1:15 ⇒ correspond à 7:15
-  long tempsCos = ( nbSecondesSeiziemeJour - heureMax );
-  if( tempsCos < 0 )
-    { tempsCos = 5400 + tempsCos; }
-  double cycle = 50.0 * ( 1.0 + cos( double( tempsCos ) * 0.0011635528 ) ); // 2 * π * 16 / 86400 = 0.0011635528
-  cycle = int( cycle * 10.0 ) / 10.0;
-  byte pxNow = map( tempsCos, 0, 5399, 0, 127 );
-  if( pxNow < displayWidth / 2 )
-  { pxNow += displayWidth / 2; }
+
+  // Calcul du temps équivalent en 16e de jour
+  // NB : - Il y a 16 cycles d’1 h 30 dans 24 h
+  //      - 1 h 30 = 5400 s
+  long frac16eJour = ( now.secondstime() - heureAttentionMax ) % 5400;
+
+  // Conversion de “frac16eJour” en pixels
+  // Les valeurs de la 1ère moitié du cycle sont affichées à droite de l’écran.
+  // Les valeurs de la 2e moitié du cycle sont affichées à gauche de l’écran.
+  // Il faut donc permuter les deux moitiés pour qu’elles s’affichent au bon endroit.
+  int16_t frac16eJourPx;
+  if( frac16eJour < 5400/2 )
+    { frac16eJourPx = map( frac16eJour,
+                              0,              5400/2-1,
+                              displayWidth/2, displayWidth ); }
   else
-  { pxNow -= displayWidth / 2; }
-  // Serial.print( "\tsecondstime = " );
-  // Serial.print( secondstime );
-  // Serial.print( "\tnbSecondesSeiziemeJour = " );
-  // Serial.print( nbSecondesSeiziemeJour );
-  // Serial.print( "\ttempsCos = " );
-  // Serial.print( tempsCos );
-  // Serial.print( "\tpxNow = " );
-  // Serial.print( pxNow );
-  // Serial.print( "\tcycle = " );
-  // Serial.print( cycle );
-  // if( cycle < 100 )
-  //   Serial.print( "\tcycle < 100" );
-  // else
-  //   Serial.print( "\tcycle >= 100" );
-  // Serial.print( "\n" );
+    { frac16eJourPx = map( frac16eJour,
+                              5400/2,         5400,
+                              0,              displayWidth/2-1 ); }
+
+  // Calcul du pourcentage du cycle d’attention
+  // 2 * π * 16 / 86400 = 0.0011635528
+  double cycle = 50.0 * ( 1.0 + cos( ( double )( frac16eJour ) * 0.0011635528 ) );
+
+
+  // ****
+  //  Affichage des résultats
+  // **
 
   // Efface l’écran
   display.clearDisplay();
@@ -217,7 +234,7 @@ void loop()
     case  9: display.print( F( "SEPT" ) ); break;
     case 10: display.print( F( "OCT"  ) ); break;
     case 11: display.print( F( "NOV"  ) ); break;
-    case 12: display.print( F( "DEC"  ) ); break;
+    case 12: display.print( F( "DEC"  ) );
   }
   display.setCursor( 0, 9 );
   display.print( now.year() );
@@ -236,25 +253,19 @@ void loop()
 
   // Prépare l’affichage du pourcentage du cycle
   display.setTextSize( 2 );
-  if( cycle < 10 )             // cycle = 0..9.9
-  {
-    display.setCursor( 46, 21 );
-    display.print( cycle, 1 );
-  }
-  else if( cycle < 100 )       // cycle = 10..99.9
-  {
-    display.setCursor( 34, 21 );
-    display.print( cycle, 1 );
-  }
-  else                         // cycle = 100
-  {
-    display.setCursor( 42, 21 );
-    display.print( cycle, 0 );
-  }
+  // cycle = 0..9.9
+  if( cycle < 10 )       { display.setCursor( 46, 21 );
+                           display.print( cycle, 1 );  }
+  // cycle = 10..99.4999
+  else if( cycle < 99.5 ){ display.setCursor( 34, 21 );
+                          display.print( cycle, 1 );  }
+  // cycle >= 99.5
+  else                   { display.setCursor( 42, 21 );
+                           display.print( cycle, 0 );  }
   display.print( char( 37 ) ); // signe %
 
   // Prépare l’affichage de la courbe du cycle
-  afficheCourbeCycle( pxNow );
+  prepareCourbeCycle( frac16eJourPx );
 
   // Met à jour l’affichage
   display.display();
