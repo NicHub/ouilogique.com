@@ -67,6 +67,8 @@ juin 2016, ouilogique.com
 
 */
 
+#include <avr/io.h>
+#include <avr/interrupt.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <math.h>
@@ -194,11 +196,21 @@ void setup()
   display.begin( SSD1306_SWITCHCAPVCC, 0x3C );
   display.clearDisplay();
   display.setTextColor( WHITE );
+
+  // Initialisation du Timer 1 à 1 s
+  cli();                   // disable global interrupts
+  TCCR1A = 0b00000000;     // set entire TCCR1A register to 0
+  TCCR1B = 0b00000000
+         | (1 << WGM12)    // turn on CTC mode:
+         | (1 << CS10)     // Set CS10 and CS12 bits for 1024 prescaler:
+         | (1 << CS12);
+  OCR1A = 15624;           // set compare match register to desired timer count
+  TIMSK1 |= (1 << OCIE1A); // enable timer compare interrupt:
+  sei();                   // enable global interrupts
 }
 
-void loop()
+void horloge()
 {
-
   // ****
   // Calculs du pourcentage du cycle d’attention (cycleAtt)
   // et du temps équivalent en 1/16e de jour exprimé en pixels (frac16eJourPx)
@@ -316,6 +328,19 @@ void loop()
 
   // Met à jour l’affichage
   display.display();
+}
 
-  _delay_ms( 1000 );
+bool timerOK = false;
+void loop()
+{
+  if( timerOK )
+  {
+    horloge();
+    timerOK = false;
+  }
+}
+
+ISR( TIMER1_COMPA_vect )
+{
+  timerOK = true;
 }
