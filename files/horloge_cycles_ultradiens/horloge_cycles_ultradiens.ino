@@ -5,19 +5,28 @@ HORLOGE À CYCLES ULTRADIENS
 http://ouilogique.com/horloge_cycles_ultradiens/
 
 DESCRIPTION DU PROGRAMME
-Ce programme affiche le pourcentage d’attention d’une personne en fonction de l’heure. Il se base sur les hypothèses suivantes :
-- Le corps humain est soumis à des cycles d’attention d’une durée d’une heure et demie, soit 16 cycles de 5400 secondes par jour.
-- Lors de ces cycles, l’attention passe par un minimum et par un maximum et peut être représentée sous la forme d’un cosinus.
-- Le seul paramètre qui change d’une personne à l’autre est le déphasage de la courbe.
+Ce programme affiche le pourcentage d’attention d’une personne en fonction
+de l’heure. Il se base sur les hypothèses suivantes :
 
-Pour utiliser ce programme, il faut donc connaître une des 16 heures d’attention maximum possibles lors d’une journée et de modifier la constante “heureAttentionMax” en conséquence.
+- Le corps humain est soumis à des cycles d’attention d’une durée d’une
+  heure et demie, soit 16 cycles de 5400 secondes par jour.
+- Lors de ces cycles, l’attention passe par un minimum et par un maximum et
+  peut être représentée sous la forme d’un cosinus.
+- Le seul paramètre qui change d’une personne à l’autre est le déphasage de
+  la courbe.
 
-Pour mettre à jour l’heure de l’horloge, il faut changer la valeur de “avecSerial” à “true” et recharger le programme sur le microcontrôleur. Cette valeur est à “false” par défaut pour limiter l’utilisation de la RAM.
+Pour utiliser ce programme, il faut donc connaître une des 16 heures
+d’attention maximum possibles lors d’une journée et de modifier la constante
+“heureAttentionMax” en conséquence.
+
+Pour mettre à jour l’heure de l’horloge, il faut changer la valeur de
+“avecSerial” à “true” et recharger le programme sur le microcontrôleur.
+Cette valeur est à “false” par défaut pour limiter l’utilisation de la RAM.
 
 
 HORLOGE DS1307 I²C
     RÉFÉRENCE AliExpress
-    http://fr.aliexpress.com/item/5pcs-lot-Tiny-RTC-I2C-AT24C32-DS1307-Real-Time-Clock-Module-Board-For-Arduino-With-A/32327865928.html
+    http://www.aliexpress.com/item/5pcs-lot-Tiny-RTC-I2C-AT24C32-DS1307-Real-Time-Clock-Module-Board-For-Arduino-With-A/32327865928.html
 
     ADRESSES I²C
     0x50 (EEPROM AT24C32)
@@ -34,7 +43,7 @@ HORLOGE DS1307 I²C
 
 ÉCRAN OLED 128×64 I²C
     RÉFÉRENCE AliExpress
-    http://fr.aliexpress.com/item/1Pcs-Yellow-blue-double-color-128X64-OLED-LCD-LED-Display-Module-For-Arduino-0-96/32305641669.html
+    http://www.aliexpress.com/item/1Pcs-Yellow-blue-double-color-128X64-OLED-LCD-LED-Display-Module-For-Arduino-0-96/32305641669.html
 
     ADRESSE I²C
     0x3C
