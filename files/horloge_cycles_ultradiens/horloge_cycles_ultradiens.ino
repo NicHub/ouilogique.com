@@ -276,14 +276,21 @@ void loop()
 
   // Préparation de l’affichage du pourcentage du cycle
   display.setTextSize( 2 );
-  if( cycleAtt < 0.005 )
-    { display.setCursor( 53, 21 ); display.print( cycleAtt, 0 ); }
-  else if( cycleAtt < 9.995 )
-    { display.setCursor( 34, 21 ); display.print( cycleAtt, 2 ); }
-  else if( cycleAtt < 99.95 )
-    { display.setCursor( 34, 21 ); display.print( cycleAtt, 1 ); }
-  else
-    { display.setCursor( 42, 21 ); display.print( cycleAtt, 0 ); }
+  #if false // Affichage avec 3 chiffres significatifs pour le déverminage
+    if( cycleAtt < 0.005 )
+      { display.setCursor( 53, 21 ); display.print( cycleAtt, 0 ); }
+    else if( cycleAtt < 9.995 )
+      { display.setCursor( 34, 21 ); display.print( cycleAtt, 2 ); }
+    else if( cycleAtt < 99.95 )
+      { display.setCursor( 34, 21 ); display.print( cycleAtt, 1 ); }
+    else
+      { display.setCursor( 42, 21 ); display.print( cycleAtt, 0 ); }
+  #else // Affichage sans décimales pour l’utilisation normale
+    if( cycleAtt < 9.5 )       { display.setCursor( 54, 21 ); }
+    else if( cycleAtt < 99.5 ) { display.setCursor( 49, 21 ); }
+    else                       { display.setCursor( 42, 21 ); }
+    display.print( cycleAtt, 0 );
+  #endif
   display.print( char( 37 ) ); // signe %
 
   // Préparation de l’affichage de la courbe du cycle
