@@ -132,7 +132,7 @@ void serialEvent()
   // Cette procédure permet de régler l’heure de l’horloge
   // via le bus RS232.
   // Exemple de commande à envoyer :
-  // 2016,6,8,9,36,30
+  // 2016,6,8,11,18,20
 
   const byte nbCharMax = 19;
   char str[ nbCharMax ] = { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 };
@@ -276,11 +276,11 @@ void loop()
 
   // Préparation de l’affichage du pourcentage du cycle
   display.setTextSize( 2 );
-  if( cycleAtt < 0.01 )
+  if( cycleAtt < 0.005 )
     { display.setCursor( 53, 21 ); display.print( cycleAtt, 0 ); }
-  else if( cycleAtt < 10 )
+  else if( cycleAtt < 9.995 )
     { display.setCursor( 34, 21 ); display.print( cycleAtt, 2 ); }
-  else if( cycleAtt < 99.5 )
+  else if( cycleAtt < 99.95 )
     { display.setCursor( 34, 21 ); display.print( cycleAtt, 1 ); }
   else
     { display.setCursor( 42, 21 ); display.print( cycleAtt, 0 ); }
