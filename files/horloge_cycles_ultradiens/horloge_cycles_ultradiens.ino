@@ -4,6 +4,17 @@ HORLOGE À CYCLES ULTRADIENS
 
 http://ouilogique.com/horloge_cycles_ultradiens/
 
+DESCRIPTION DU PROGRAMME
+Ce programme affiche le pourcentage d’attention d’une personne en fonction de l’heure. Il se base sur les hypothèses suivantes :
+- Le corps humain est soumis à des cycles d’attention d’une durée d’une heure et demie, soit 16 cycles de 5400 secondes par jour.
+- Lors de ces cycles, l’attention passe par un minimum et par un maximum et peut être représentée sous la forme d’un cosinus.
+- Le seul paramètre qui change d’une personne à l’autre est le déphasage de la courbe.
+
+Pour utiliser ce programme, il faut donc connaître une des 16 heures d’attention maximum possibles lors d’une journée et de modifier la constante “heureAttentionMax” en conséquence.
+
+Pour mettre à jour l’heure de l’horloge, il faut changer la valeur de “avecSerial” à “true” et recharger le programme sur le microcontrôleur. Cette valeur est à “false” par défaut pour limiter l’utilisation de la RAM.
+
+
 HORLOGE DS1307 I²C
     RÉFÉRENCE AliExpress
     http://fr.aliexpress.com/item/5pcs-lot-Tiny-RTC-I2C-AT24C32-DS1307-Real-Time-Clock-Module-Board-For-Arduino-With-A/32327865928.html
@@ -61,10 +72,12 @@ Adafruit_SSD1306 display( OLED_RESET );
 
 #define avecSerial false
 
-// “heureAttentionMax = 4500” correspond à 7 h 15,
-// car   7:15 = 26100 s
-// et    26100 % 5400 = 4500 s
-// où 5400 est le nombre de secondes dans 1 h 30
+// Modifier ici l’heure d’attention maximum.
+// Par exemple, si 7 h 15 est une heure d’attention maximum :
+// heureAttentionMax = 7 h 15
+// heureAttentionMax = MOD( 7*3600 + 15*60, 5400 )
+// heureAttentionMax = 4500 s
+// (5400 est le nombre de secondes dans 1 h 30)
 const long heureAttentionMax = 4500;
 const byte displayWidth = 128;
 static const unsigned char cosinus_cmap[ displayWidth ] PROGMEM =
@@ -110,7 +123,7 @@ void serialEvent()
   // Cette procédure permet de régler l’heure de l’horloge
   // via le bus RS232.
   // Exemple de commande à envoyer :
-  // 2016,6,7,21,00,30
+  // 2016,6,8,9,36,30
 
   const byte nbCharMax = 19;
   char str[ nbCharMax ] = { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 };
@@ -178,7 +191,7 @@ void loop()
 {
 
   // ****
-  // Calculs du pourcentage du cycle d’attention (cycle)
+  // Calculs du pourcentage du cycle d’attention (cycleAtt)
   // et du temps équivalent en 1/16e de jour exprimé en pixels (frac16eJourPx)
   // **
 
@@ -192,11 +205,12 @@ void loop()
 
   // Calcul du pourcentage du cycle d’attention
   // 2 * π * 16 / 86400 = 0.0011635528
-  double cycle = 100.0 * 0.5 * ( 1.0 + cos( ( double )( frac16eJour ) * 0.0011635528 ) );
+  double cycleAtt = 100.0 * 0.5 * ( 1.0 + cos( ( double )( frac16eJour ) * 0.0011635528 ) );
 
-  // Conversion de “frac16eJour” en pixels
-  // Les valeurs de la 1ère moitié du cycle correspondent à la partie droite du cosinus.
-  // Les valeurs de la 2e moitié du cycle correspondent à la partie gauche du cosinus.
+  // Conversion de “frac16eJour” en pixels.
+  // Le cosinus est affiché avec un déphasage d’une demi-période, donc
+  // les valeurs de la 1ère moitié du cycle correspondent à la partie droite du cosinus et
+  // les valeurs de la 2e moitié du cycle correspondent à la partie gauche du cosinus.
   // Le code ci-dessous permute les deux moitiés pour qu’elles s’affichent du bon côté.
   int16_t frac16eJourPx;
   if( frac16eJour < 5400/2 )
@@ -253,12 +267,14 @@ void loop()
 
   // Préparation de l’affichage du pourcentage du cycle
   display.setTextSize( 2 );
-  if( cycle < 10 )
-    { display.setCursor( 34, 21 ); display.print( cycle, 2 ); }
-  else if( cycle < 99.5 )
-    { display.setCursor( 34, 21 ); display.print( cycle, 1 ); }
+  if( cycleAtt < 0.01 )
+    { display.setCursor( 53, 21 ); display.print( cycleAtt, 0 ); }
+  else if( cycleAtt < 10 )
+    { display.setCursor( 34, 21 ); display.print( cycleAtt, 2 ); }
+  else if( cycleAtt < 99.5 )
+    { display.setCursor( 34, 21 ); display.print( cycleAtt, 1 ); }
   else
-    { display.setCursor( 42, 21 ); display.print( cycle, 0 ); }
+    { display.setCursor( 42, 21 ); display.print( cycleAtt, 0 ); }
   display.print( char( 37 ) ); // signe %
 
   // Préparation de l’affichage de la courbe du cycle
