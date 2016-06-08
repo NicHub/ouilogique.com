@@ -280,7 +280,7 @@ void loop()
 
   // Préparation de l’affichage des minutes
   display.setCursor( 86, 0 );
-  sprintf( texteAffichage, "%2d", now.minute() );
+  sprintf( texteAffichage, "%02d", now.minute() );
   display.print( texteAffichage );
 
   // Préparation de l’affichage des secondes
