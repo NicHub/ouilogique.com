@@ -202,6 +202,7 @@ void loop()
   // ****
   // Calculs du pourcentage du cycle d’attention (cycleAtt)
   // et du temps équivalent en 1/16e de jour exprimé en pixels (frac16eJourPx)
+  // Temps d’exécution sur l’ATmega328P ≅ 1.3 ms
   // **
 
   // lecture de l’heure actuelle
@@ -234,6 +235,7 @@ void loop()
 
   // ****
   //  Affichage des résultats
+  // Temps d’exécution sur l’ATmega328P ≅ 69 ms
   // **
 
   // Effacement de l’écran
@@ -241,9 +243,12 @@ void loop()
 
   // Préparation de l’affichage de la date
   display.setTextSize( 1 );
-  display.setCursor( 0, 0 );
+  if( now.day() < 10 )
+    { display.setCursor( 6, 0 ); }
+  else
+    { display.setCursor( 0, 0 ); }
   display.print( now.day() );
-  display.print( " " );
+  display.setCursor( 15, 0 );
   switch( now.month() )
   {
     case  1: display.print( F( "JAN"  ) ); break;
@@ -259,19 +264,29 @@ void loop()
     case 11: display.print( F( "NOV"  ) ); break;
     case 12: display.print( F( "DEC"  ) );
   }
-  display.setCursor( 0, 9 );
+  display.setCursor( 15, 9 );
   display.print( now.year() );
 
-  // Préparation de l’affichage de l’heure et des minutes
+  // Préparation de l’affichage de l’heure
   char texteAffichage[ 5 ];
-  sprintf( texteAffichage, "%2d:%02d", now.hour(), now.minute() );
   display.setTextSize( 2 );
-  display.setCursor( 49, 0 );
+  display.setCursor( 54, 0 );
+  sprintf( texteAffichage, "%2d", now.hour() );
+  display.print( texteAffichage );
+
+  // Préparation de l’affichage du séparateur
+  display.setCursor( 76, 0 );
+  display.print( ":" );
+
+  // Préparation de l’affichage des minutes
+  display.setCursor( 86, 0 );
+  sprintf( texteAffichage, "%2d", now.minute() );
   display.print( texteAffichage );
 
   // Préparation de l’affichage des secondes
-  sprintf( texteAffichage, ":%02d", now.second() );
   display.setTextSize( 1 );
+  display.setCursor( 112, 0 );
+  sprintf( texteAffichage, "%02d", now.second() );
   display.print( texteAffichage );
 
   // Préparation de l’affichage du pourcentage du cycle
@@ -286,10 +301,13 @@ void loop()
     else
       { display.setCursor( 42, 21 ); display.print( cycleAtt, 0 ); }
   #else // Affichage sans décimales pour l’utilisation normale
-    if( cycleAtt < 9.5 )       { display.setCursor( 54, 21 ); }
-    else if( cycleAtt < 99.5 ) { display.setCursor( 49, 21 ); }
-    else                       { display.setCursor( 42, 21 ); }
+    int16_t tx;
+    if( cycleAtt < 9.5 )       { tx = 52; }
+    else if( cycleAtt < 99.5 ) { tx = 47; }
+    else                       { tx = 41; }
+    display.setCursor( tx, 21 );
     display.print( cycleAtt, 0 );
+    display.setCursor( display.getCursorX() + 3, 21 );
   #endif
   display.print( char( 37 ) ); // signe %
 
