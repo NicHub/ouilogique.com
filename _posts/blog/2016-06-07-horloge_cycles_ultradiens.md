@@ -12,11 +12,11 @@ published: true
 author: Nico
 ---
 
-![...](/files/horloge_cycles_ultradiens/horloge_cycles_ultradiens_lowres.jpg)
+![...](/files/horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_lowres.jpg)
 
 ## Description du programme
 
-_**Le programme se trouve ici :** [horloge_cycles_ultradiens.ino](https://github.com/NicHub/ouilogique.com/blob/gh-pages/files/horloge_cycles_ultradiens/horloge_cycles_ultradiens.ino)_
+_**Le programme se trouve ici :** [horloge_cycles_ultradiens](https://github.com/NicHub/ouilogique.com/tree/gh-pages/files/horloge_cycles_ultradiens)_
 
 C’est une horloge qui affiche les pourcentages d’attention par cycles d’une heure et demie. On définit la valeur de la constante `heureAttentionMax` au nombre de secondes du pic d’attention du cycle. Par exemple, si votre cycle a un pic à 7 h 15 (= 26100 s), cela correspond à `heureAttentionMax = 26100 % 5400 = 4500` où `%` est l’opérateur *modulo* et 5400 est le nombre de secondes dans 1 h 30. La constante `heureAttentionMax` doit être ajustée manuellement dans le programme.
 
@@ -26,7 +26,6 @@ L’horloge peut être mise à jour via le port RS232. Comme le programme utilis
 
 - Les pullups ont une résistance de 4.7 kΩ.
 - Le bouton connecté à `D2` n’est pas utilisé dans le programme.
-- Le buzzer connecté à `A0` non plus.
 
 ## Voir aussi
 

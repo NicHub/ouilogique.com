@@ -80,8 +80,10 @@ Adafruit_SSD1306 display( OLED_RESET );
 #if( SSD1306_LCDHEIGHT != 64 )
 #error( "Height incorrect, please fix Adafruit_SSD1306.h!" );
 #endif
+#include "aTunes.h"
+#define buzzerPin A0
 
-#define avecSerial false
+#define avecSerial true
 
 // Modifier ici l’heure d’attention maximum.
 // Par exemple, si 7 h 15 est une heure d’attention maximum :
@@ -207,6 +209,10 @@ void setup()
   OCR1A = 15624;           // set compare match register to desired timer count
   TIMSK1 |= (1 << OCIE1A); // enable timer compare interrupt:
   sei();                   // enable global interrupts
+
+  // Broche du haut-parleur en sortie
+  pinMode( buzzerPin, OUTPUT );
+  MarioBros( buzzerPin );
 }
 
 void horloge()
@@ -328,6 +334,12 @@ void horloge()
 
   // Met à jour l’affichage
   display.display();
+
+  // Sonne lorsque le cycle est au maximum
+  // Cette procédure est bloquante, donc l’horloge ne sera
+  // pas mise à jour pendant la sonnerie !
+  if( frac16eJour == 0  )
+    { MarioBros( buzzerPin ); }
 }
 
 bool timerOK = false;
