@@ -82,13 +82,12 @@ Adafruit_SSD1306 display( OLED_RESET );
 #error( "Height incorrect, please fix Adafruit_SSD1306.h!" );
 #endif
 #include "aTunes.h"
-#define buzzerPin A0
+#define carillonPin A0
 #define dXCarillon 5
 #define dYCarillon 25
-
+const int adrCarillon = 0;
 bool timerOK = false;
 const int bBtn1  = PORTD2;
-const int adrCarillon = 0;
 
 #define avecSerial false
 
@@ -203,7 +202,7 @@ void boutonPress()
 }
 
 
-void afficheIconeCarillonBase()
+void prepareIconeCarillonBase()
 {
   display.drawLine(  0+dXCarillon,  5+dYCarillon,  0+dXCarillon, 11+dYCarillon, WHITE );
   display.drawLine(  1+dXCarillon,  5+dYCarillon,  1+dXCarillon, 11+dYCarillon, WHITE );
@@ -218,7 +217,7 @@ void afficheIconeCarillonBase()
   display.drawLine( 10+dXCarillon,  0+dYCarillon, 10+dXCarillon, 16+dYCarillon, WHITE );
 }
 
-void afficheIconeCarillonON()
+void prepareIconeCarillonON()
 {
   display.drawLine( 13+dXCarillon,  5+dYCarillon, 13+dXCarillon,  6+dYCarillon, WHITE );
   display.drawLine( 13+dXCarillon, 10+dYCarillon, 13+dXCarillon, 11+dYCarillon, WHITE );
@@ -239,21 +238,21 @@ void afficheIconeCarillonON()
   display.drawLine( 20+dXCarillon,  5+dYCarillon, 20+dXCarillon, 12+dYCarillon, WHITE );
 }
 
-void afficheIconeCarillonOFF()
+void prepareIconeCarillonOFF()
 {
   display.drawLine( 14+dXCarillon,  5+dYCarillon, 20+dXCarillon, 11+dYCarillon, WHITE );
   display.drawLine( 14+dXCarillon, 11+dYCarillon, 20+dXCarillon,  5+dYCarillon, WHITE );
 }
 
-void afficheStatutSon()
+void prepareIconeCarillon()
 {
   display.setTextSize( 1 );
   display.setCursor( 2, 25 );
-  afficheIconeCarillonBase();
+  prepareIconeCarillonBase();
   if( EEPROM.read( adrCarillon ) )
-    { afficheIconeCarillonON(); }
+    { prepareIconeCarillonON(); }
   else
-    { afficheIconeCarillonOFF(); }
+    { prepareIconeCarillonOFF(); }
 }
 
 void setup()
@@ -298,7 +297,7 @@ void setup()
   display.display();
 
   // Initialisation du carillon
-  pinMode( buzzerPin, OUTPUT );
+  pinMode( carillonPin, OUTPUT );
   carillon();
 }
 
@@ -419,8 +418,8 @@ void horloge()
   // Préparation de l’affichage de la courbe du cycle
   prepareCourbeCycle( frac16eJourPx );
 
-  // Affiche le statut du son
-  afficheStatutSon();
+  // Préparation de l’affichage de l’icône du carillon
+  prepareIconeCarillon();
 
   // Met à jour l’affichage
   display.display();
@@ -435,7 +434,7 @@ void horloge()
 void carillon()
 {
   if( EEPROM.read( adrCarillon ) )
-    { MarioBros( buzzerPin ); }
+    { MarioBros( carillonPin ); }
 }
 
 void loop()
