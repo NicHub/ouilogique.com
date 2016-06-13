@@ -290,11 +290,11 @@ void setup()
   display.setTextColor( WHITE );
   display.setTextSize( 2 );
   display.setCursor( 25, 0 );
-  display.print( "HORLOGE" );
+  display.print( F( "HORLOGE" ) );
   display.setCursor( 20, 19 );
-  display.print( "A CYCLES" );
+  display.print( F( "A CYCLES" ) );
   display.setCursor( 5, 40 );
-  display.print( "ULTRADIENS" );
+  display.print( F( "ULTRADIENS" ) );
   display.display();
 
   // Initialisation du carillon
@@ -381,7 +381,7 @@ void horloge()
 
   // Préparation de l’affichage du séparateur
   display.setCursor( 76, 0 );
-  display.print( ":" );
+  display.print( F( ":" ) );
 
   // Préparation de l’affichage des minutes
   display.setCursor( 86, 0 );
@@ -414,7 +414,7 @@ void horloge()
     display.print( cycleAtt, 0 );
     display.setCursor( display.getCursorX() + 3, 21 );
   #endif
-  display.print( char( 37 ) ); // signe %
+  display.print( F( "%" ) );
 
   // Préparation de l’affichage de la courbe du cycle
   prepareCourbeCycle( frac16eJourPx );
