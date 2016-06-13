@@ -203,7 +203,7 @@ void boutonPress()
 }
 
 
-void afficheIconeCarillon()
+void afficheIconeCarillonBase()
 {
   display.drawLine(  0+dXCarillon,  5+dYCarillon,  0+dXCarillon, 11+dYCarillon, WHITE );
   display.drawLine(  1+dXCarillon,  5+dYCarillon,  1+dXCarillon, 11+dYCarillon, WHITE );
@@ -249,16 +249,11 @@ void afficheStatutSon()
 {
   display.setTextSize( 1 );
   display.setCursor( 2, 25 );
+  afficheIconeCarillonBase();
   if( EEPROM.read( adrCarillon ) )
-  {
-    afficheIconeCarillon();
-    afficheIconeCarillonON();
-  }
+    { afficheIconeCarillonON(); }
   else
-  {
-    afficheIconeCarillon();
-    afficheIconeCarillonOFF();
-  }
+    { afficheIconeCarillonOFF(); }
 }
 
 void setup()
