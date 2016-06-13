@@ -67,6 +67,7 @@ juin 2016, ouilogique.com
 
 */
 
+#include <EEPROM.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <Wire.h>
@@ -82,8 +83,14 @@ Adafruit_SSD1306 display( OLED_RESET );
 #endif
 #include "aTunes.h"
 #define buzzerPin A0
+#define dXCarillon 5
+#define dYCarillon 25
 
-#define avecSerial true
+bool timerOK = false;
+const int bBtn1  = PORTD2;
+const int adrCarillon = 0;
+
+#define avecSerial false
 
 // Modifier ici l’heure d’attention maximum.
 // Par exemple, si 7 h 15 est une heure d’attention maximum :
@@ -184,12 +191,89 @@ void serialEvent()
 }
 #endif
 
+
+void boutonPress()
+{
+  static unsigned long lastMillis;
+  unsigned long dT = millis() - lastMillis;
+  if( dT < 200 )
+    { return; }
+  EEPROM.write( 0, ! EEPROM.read( adrCarillon ) );
+  timerOK = true;
+}
+
+
+void afficheIconeCarillon()
+{
+  display.drawLine(  0+dXCarillon,  5+dYCarillon,  0+dXCarillon, 11+dYCarillon, WHITE );
+  display.drawLine(  1+dXCarillon,  5+dYCarillon,  1+dXCarillon, 11+dYCarillon, WHITE );
+  display.drawLine(  2+dXCarillon,  5+dYCarillon,  2+dXCarillon, 11+dYCarillon, WHITE );
+  display.drawLine(  3+dXCarillon,  5+dYCarillon,  3+dXCarillon, 11+dYCarillon, WHITE );
+  display.drawLine(  4+dXCarillon,  5+dYCarillon,  4+dXCarillon, 11+dYCarillon, WHITE );
+  display.drawLine(  5+dXCarillon,  5+dYCarillon,  5+dXCarillon, 11+dYCarillon, WHITE );
+  display.drawLine(  6+dXCarillon,  4+dYCarillon,  6+dXCarillon, 12+dYCarillon, WHITE );
+  display.drawLine(  7+dXCarillon,  3+dYCarillon,  7+dXCarillon, 13+dYCarillon, WHITE );
+  display.drawLine(  8+dXCarillon,  2+dYCarillon,  8+dXCarillon, 14+dYCarillon, WHITE );
+  display.drawLine(  9+dXCarillon,  1+dYCarillon,  9+dXCarillon, 15+dYCarillon, WHITE );
+  display.drawLine( 10+dXCarillon,  0+dYCarillon, 10+dXCarillon, 16+dYCarillon, WHITE );
+}
+
+void afficheIconeCarillonON()
+{
+  display.drawLine( 13+dXCarillon,  5+dYCarillon, 13+dXCarillon,  6+dYCarillon, WHITE );
+  display.drawLine( 13+dXCarillon, 10+dYCarillon, 13+dXCarillon, 11+dYCarillon, WHITE );
+  display.drawLine( 14+dXCarillon,  6+dYCarillon, 14+dXCarillon, 10+dYCarillon, WHITE );
+
+  display.drawLine( 15+dXCarillon,  3+dYCarillon, 15+dXCarillon,  4+dYCarillon, WHITE );
+  display.drawLine( 15+dXCarillon, 12+dYCarillon, 15+dXCarillon, 13+dYCarillon, WHITE );
+  display.drawLine( 16+dXCarillon,  4+dYCarillon, 16+dXCarillon,  5+dYCarillon, WHITE );
+  display.drawLine( 16+dXCarillon, 11+dYCarillon, 16+dXCarillon, 12+dYCarillon, WHITE );
+  display.drawLine( 17+dXCarillon,  5+dYCarillon, 17+dXCarillon, 11+dYCarillon, WHITE );
+
+  display.drawLine( 17+dXCarillon,  1+dYCarillon, 17+dXCarillon,  2+dYCarillon, WHITE );
+  display.drawLine( 17+dXCarillon, 14+dYCarillon, 17+dXCarillon, 15+dYCarillon, WHITE );
+  display.drawLine( 18+dXCarillon,  2+dYCarillon, 18+dXCarillon,  3+dYCarillon, WHITE );
+  display.drawLine( 18+dXCarillon, 13+dYCarillon, 18+dXCarillon, 14+dYCarillon, WHITE );
+  display.drawLine( 19+dXCarillon,  3+dYCarillon, 19+dXCarillon,  5+dYCarillon, WHITE );
+  display.drawLine( 19+dXCarillon, 11+dYCarillon, 19+dXCarillon, 14+dYCarillon, WHITE );
+  display.drawLine( 20+dXCarillon,  5+dYCarillon, 20+dXCarillon, 12+dYCarillon, WHITE );
+}
+
+void afficheIconeCarillonOFF()
+{
+  display.drawLine( 14+dXCarillon,  5+dYCarillon, 20+dXCarillon, 11+dYCarillon, WHITE );
+  display.drawLine( 14+dXCarillon, 11+dYCarillon, 20+dXCarillon,  5+dYCarillon, WHITE );
+}
+
+void afficheStatutSon()
+{
+  display.setTextSize( 1 );
+  display.setCursor( 2, 25 );
+  if( EEPROM.read( adrCarillon ) )
+  {
+    afficheIconeCarillon();
+    afficheIconeCarillonON();
+  }
+  else
+  {
+    afficheIconeCarillon();
+    afficheIconeCarillonOFF();
+  }
+}
+
 void setup()
 {
   #if avecSerial
   // Initalisation de la communication série pour régler l’heure
   Serial.begin( 115200 );
   #endif
+
+  // Initialisation du bouton
+  bitSet( DDRD, bBtn1 );
+  bitSet( PORTD, bBtn1 );
+
+  // Initialisation de l’interruption du bouton
+  attachInterrupt( 0, boutonPress, FALLING );
 
   // Initialisation de l’horloge
   RTC.begin();
@@ -212,7 +296,7 @@ void setup()
 
   // Broche du haut-parleur en sortie
   pinMode( buzzerPin, OUTPUT );
-  MarioBros( buzzerPin );
+  carillon();
 }
 
 void horloge()
@@ -332,6 +416,9 @@ void horloge()
   // Préparation de l’affichage de la courbe du cycle
   prepareCourbeCycle( frac16eJourPx );
 
+  // Affiche le statut du son
+  afficheStatutSon();
+
   // Met à jour l’affichage
   display.display();
 
@@ -339,10 +426,15 @@ void horloge()
   // Cette procédure est bloquante, donc l’horloge ne sera
   // pas mise à jour pendant la sonnerie !
   if( frac16eJour == 0  )
+    { carillon(); }
+}
+
+void carillon()
+{
+  if( EEPROM.read( adrCarillon ) )
     { MarioBros( buzzerPin ); }
 }
 
-bool timerOK = false;
 void loop()
 {
   if( timerOK )

@@ -25,7 +25,8 @@ L’horloge peut être mise à jour via le port RS232. Comme le programme utilis
 ## Notes
 
 - Les pullups ont une résistance de 4.7 kΩ.
-- Le bouton connecté à `D2` n’est pas utilisé dans le programme.
+- Le carillon sonne lorsque le cycle est à 100 %.
+- Le bouton connecté à `D2` permet d’activer ou de désactiver le carillon.
 
 ## Voir aussi
 
