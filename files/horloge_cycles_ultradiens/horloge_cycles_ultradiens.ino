@@ -270,14 +270,6 @@ void setup()
   // Initialisation de l’interruption du bouton
   attachInterrupt( 0, boutonPress, FALLING );
 
-  // Initialisation de l’horloge
-  RTC.begin();
-
-  // Initialisation de l’écran
-  display.begin( SSD1306_SWITCHCAPVCC, 0x3C );
-  display.clearDisplay();
-  display.setTextColor( WHITE );
-
   // Initialisation du Timer 1 à 1 s
   cli();                   // disable global interrupts
   TCCR1A = 0b00000000;     // set entire TCCR1A register to 0
@@ -289,7 +281,23 @@ void setup()
   TIMSK1 |= (1 << OCIE1A); // enable timer compare interrupt:
   sei();                   // enable global interrupts
 
-  // Broche du haut-parleur en sortie
+  // Initialisation de l’horloge
+  RTC.begin();
+
+  // Initialisation de l’écran
+  display.begin( SSD1306_SWITCHCAPVCC, 0x3C );
+  display.clearDisplay();
+  display.setTextColor( WHITE );
+  display.setTextSize( 2 );
+  display.setCursor( 25, 0 );
+  display.print( "HORLOGE" );
+  display.setCursor( 20, 19 );
+  display.print( "A CYCLES" );
+  display.setCursor( 5, 40 );
+  display.print( "ULTRADIENS" );
+  display.display();
+
+  // Initialisation du carillon
   pinMode( buzzerPin, OUTPUT );
   carillon();
 }
