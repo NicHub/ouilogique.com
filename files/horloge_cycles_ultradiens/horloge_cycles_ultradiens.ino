@@ -142,7 +142,7 @@ void serialEvent()
   // Cette procédure permet de régler l’heure de l’horloge
   // via le bus RS232.
   // Exemple de commande à envoyer :
-  // 2016,6,8,11,18,20
+  // 2016,6,14,10,06,10
 
   const byte nbCharMax = 19;
   char str[ nbCharMax ] = { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 };
@@ -286,7 +286,7 @@ void setup()
   // Initialisation de l’écran
   display.begin( SSD1306_SWITCHCAPVCC, 0x3C );
   display.clearDisplay();
-  display.setTextColor( WHITE );
+  display.setTextColor( INVERSE );
   display.setTextSize( 2 );
   display.setCursor( 25, 0 );
   display.print( F( "HORLOGE" ) );
@@ -393,30 +393,31 @@ void horloge()
   sprintf( texteAffichage, "%02d", now.second() );
   display.print( texteAffichage );
 
+  // Préparation de l’affichage de la courbe du cycle
+  prepareCourbeCycle( frac16eJourPx );
+
   // Préparation de l’affichage du pourcentage du cycle
   display.setTextSize( 2 );
+  #define hY 48
   #if false // Affichage avec 3 chiffres significatifs pour le déverminage
     if( cycleAtt < 0.005 )
-      { display.setCursor( 53, 21 ); display.print( cycleAtt, 0 ); }
+      { display.setCursor( 53, hY ); display.print( cycleAtt, 0 ); }
     else if( cycleAtt < 9.995 )
-      { display.setCursor( 34, 21 ); display.print( cycleAtt, 2 ); }
+      { display.setCursor( 34, hY ); display.print( cycleAtt, 2 ); }
     else if( cycleAtt < 99.95 )
-      { display.setCursor( 34, 21 ); display.print( cycleAtt, 1 ); }
+      { display.setCursor( 34, hY ); display.print( cycleAtt, 1 ); }
     else
-      { display.setCursor( 42, 21 ); display.print( cycleAtt, 0 ); }
+      { display.setCursor( 42, hY ); display.print( cycleAtt, 0 ); }
   #else // Affichage sans décimales pour l’utilisation normale
     int16_t tx;
     if( cycleAtt < 9.5 )       { tx = 52; }
     else if( cycleAtt < 99.5 ) { tx = 47; }
     else                       { tx = 41; }
-    display.setCursor( tx, 21 );
+    display.setCursor( tx, hY );
     display.print( cycleAtt, 0 );
-    display.setCursor( display.getCursorX() + 3, 21 );
+    display.setCursor( display.getCursorX() + 3, hY );
   #endif
   display.print( F( "%" ) );
-
-  // Préparation de l’affichage de la courbe du cycle
-  prepareCourbeCycle( frac16eJourPx );
 
   // Préparation de l’affichage de l’icône du carillon
   prepareIconeCarillon();
