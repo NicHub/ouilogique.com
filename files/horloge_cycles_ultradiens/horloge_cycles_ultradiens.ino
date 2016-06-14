@@ -83,6 +83,7 @@ Adafruit_SSD1306 display( OLED_RESET );
 #endif
 #include "aTunes.h"
 #define carillonPin A0
+#define carillonBit PORTC0
 #define dXCarillon 5
 #define dYCarillon 25
 const int adrCarillon = 0;
@@ -190,17 +191,16 @@ void serialEvent()
 }
 #endif
 
-
 void boutonPress()
 {
   static unsigned long lastMillis;
   unsigned long dT = millis() - lastMillis;
-  if( dT < 200 )
+  if( dT < 100 )
     { return; }
   EEPROM.write( 0, ! EEPROM.read( adrCarillon ) );
+  lastMillis = millis();
   timerOK = true;
 }
-
 
 void prepareIconeCarillonBase()
 {
@@ -262,8 +262,8 @@ void setup()
   Serial.begin( 115200 );
   #endif
 
-  // Initialisation du bouton
-  bitSet( DDRD, bBtn1 );
+  // Initialisation du bouton en INPUT_PULLUP
+  bitClear( DDRD, bBtn1 );
   bitSet( PORTD, bBtn1 );
 
   // Initialisation de l’interruption du bouton
@@ -297,7 +297,6 @@ void setup()
   display.display();
 
   // Initialisation du carillon
-  pinMode( carillonPin, OUTPUT );
   carillon();
 }
 
@@ -417,7 +416,7 @@ void horloge()
     display.print( cycleAtt, 0 );
     display.setCursor( display.getCursorX() + 3, hY );
   #endif
-  display.print( F( "%" ) );
+  display.print( F( "\x25" ) ); // signe %
 
   // Préparation de l’affichage de l’icône du carillon
   prepareIconeCarillon();
@@ -435,7 +434,17 @@ void horloge()
 void carillon()
 {
   if( EEPROM.read( adrCarillon ) )
-    { MarioBros( carillonPin ); }
+  {
+    // Carillonne
+    MarioBros( carillonPin );
+
+    // On met le carillon en INPUT_PULLUP pour éviter les ronflements
+    // parasites causés par l’écran.
+    // Il n’y a pas besoin de le mettre en OUTPUT avant l’utilisation,
+    // car la procédure “tone” s’en charge.
+    bitClear( DDRC, carillonBit );
+    bitSet( PORTC, carillonBit );
+  }
 }
 
 void loop()
