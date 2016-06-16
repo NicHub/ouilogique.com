@@ -195,7 +195,7 @@ void boutonPress()
 {
   static unsigned long lastMillis;
   unsigned long dT = millis() - lastMillis;
-  if( dT < 100 )
+  if( dT < 1000 )
     { return; }
   EEPROM.write( 0, ! EEPROM.read( adrCarillon ) );
   lastMillis = millis();

@@ -12,7 +12,7 @@ published: true
 author: Nico
 ---
 
-![...](/files/horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_lowres.jpg)
+![...](/files/horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_002_lowres.jpg)
 
 ## Description du programme
 
