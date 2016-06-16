@@ -16,7 +16,7 @@ author: Nico
 
 ## Description du programme
 
-_**Le programme se trouve ici :** [horloge_cycles_ultradiens](https://github.com/NicHub/ouilogique.com/tree/gh-pages/files/horloge_cycles_ultradiens)_
+_**Téléchargez le code source ici :** [horloge_cycles_ultradiens.ino + aTunes.h](https://github.com/NicHub/ouilogique.com/tree/gh-pages/files/horloge_cycles_ultradiens)_
 
 C’est une horloge qui affiche les pourcentages d’attention par cycles d’une heure et demie. On définit la valeur de la constante `heureAttentionMax` au nombre de secondes du pic d’attention du cycle. Par exemple, si votre cycle a un pic à 7 h 15 (= 26100 s), cela correspond à `heureAttentionMax = 26100 % 5400 = 4500` où `%` est l’opérateur *modulo* et 5400 est le nombre de secondes dans 1 h 30. La constante `heureAttentionMax` doit être ajustée manuellement dans le programme.
 
