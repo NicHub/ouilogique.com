@@ -14,11 +14,13 @@ author: Nico
 
 # Version pour Arduino Nano
 
-![...](/files/horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_002_lowres.jpg)
+![...](/files/2016-06-07-horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_002_lowres.jpg)
+
+## Code source
+
+[horloge-cycles-ultradiens-arduino.ino + aTunes.h](https://github.com/NicHub/ouilogique-Arduino/tree/master/horloge-cycles-ultradiens-arduino)_
 
 ## Description du programme
-
-_**Téléchargez le code source ici :** [horloge_cycles_ultradiens.ino + aTunes.h](https://github.com/NicHub/ouilogique.com/tree/gh-pages/files/horloge_cycles_ultradiens)_
 
 C’est une horloge qui affiche les pourcentages d’attention par cycles d’une heure et demie. On définit la valeur de la constante `heureAttentionMax` au nombre de secondes du pic d’attention du cycle. Par exemple, si votre cycle a un pic à 7 h 15 (= 26100 s), cela correspond à `heureAttentionMax = 26100 % 5400 = 4500` où `%` est l’opérateur *modulo* et 5400 est le nombre de secondes dans 1 h 30. La constante `heureAttentionMax` doit être ajustée manuellement dans le programme.
 
@@ -41,7 +43,7 @@ L’horloge peut être mise à jour via le port RS232. Comme le programme utilis
 
 # Version pour ESP8266
 
-![...](/files/horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_003_lowres.jpg)
+![...](/files/2016-06-07-horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_003_lowres.jpg)
 
 ## Code source
 
