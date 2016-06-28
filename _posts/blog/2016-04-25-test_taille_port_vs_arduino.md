@@ -42,25 +42,25 @@ On voit que la taille en mémoire de stockage de programme est 2.16 fois plus �
 
 static const double wait = 1000;
 
-#define LED13                               PORTB5
-#define LED13InputPinMode  bitClear(  DDRB, PORTB5 )
-#define LED13OutputPinMode bitSet  (  DDRB, PORTB5 )
-#define LED13Read          bitRead (  PINB, PORTB5 )
-#define LED13Set           bitSet  ( PORTB, PORTB5 )
-#define LED13Clear         bitClear( PORTB, PORTB5 )
-#define LED13Toggle        PORTB ^= 1UL<<PORTB5
+#define LED13Toggle              PORTB ^= 1UL<<PORTB5
+#define LED13Read                bitRead (  PINB, PORTB5 )
+#define LED13Set                 bitSet  ( PORTB, PORTB5 )
+#define LED13Clear               bitClear( PORTB, PORTB5 )
+#define LED13OutputPinMode       bitSet  (  DDRB, PORTB5 )
+#define LED13InputPinMode        bitClear(  DDRB, PORTB5 )
+#define LED13InputPullupPinMode  LED13InputPinMode;LED13Set
 
 void setup()
 {
-    LED13OutputPinMode;
+  LED13OutputPinMode;
 }
 
 void loop()
 {
-    LED13Set;
-    _delay_ms( wait );
-    LED13Clear;
-    _delay_ms( wait );
+  LED13Set;
+  _delay_ms( wait );
+  LED13Clear;
+  _delay_ms( wait );
 }
 
 ~~~
