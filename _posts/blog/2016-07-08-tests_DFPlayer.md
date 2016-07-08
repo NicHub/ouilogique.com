@@ -20,7 +20,7 @@ Voici un petit module fort pratique pour lire des fichiers MP3. Il ne coûte pre
 > RX Arduino ⇒ TX DFPlayer
 
 
-À priori, ce module peut être utilisé de 3.2 V à 5 V, mais à 5 V il y a un ronflement prononcé sur l’haut-parleur. La solution consiste à placer une résistance de 1 kΩ en série sur la sortie TX de l’Arduino.
+À priori, ce module peut être utilisé de 3.2 V à 5 V, mais à 5 V il y a un ronflement prononcé sur le haut-parleur. La solution consiste à placer une résistance de 1 kΩ en série sur la sortie TX de l’Arduino.
 
 Pour la qualité du son, je ne peux pas me prononcer, puisqu’au moment du test, je n’avais pas de haut-parleur sous la main. Mais pour le déverminage, mon buzzer a très bien fait l’affaire avec un son complètement pourri évidemment.
 
