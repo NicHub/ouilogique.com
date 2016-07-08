@@ -31,7 +31,7 @@ J’ai testé deux cartes micro SD : une de 32 Go et une autre de 8 Go et les
 
 # Programme d’exemple
 
-<https://github.com/NicHub/ouilogique-Arduino/tree/master/DFPlayer>
+<https://github.com/NicHub/ouilogique-Arduino/blob/master/DFPlayer/DFPlayer-test-1/DFPlayer-test-1.ino>
 
 Pour utiliser le programme ci-dessus, il faut installer la bibliothèque `DFPlayer-Mini-mp3` de *DFRobot* :
 
