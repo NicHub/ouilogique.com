@@ -20,6 +20,8 @@ author: Nico
 
 [horloge-cycles-ultradiens-arduino.ino + aTunes.h](https://github.com/NicHub/ouilogique-Arduino/tree/master/horloge-cycles-ultradiens-arduino)
 
+> J’ai fait un *upgrade* en ajoutant un encodeur rotatif à la place du bouton poussoir et c’est cette version du programme qui est sur GitHub. Mais pour l’instant je n’utilise que le bouton poussoir de l’encodeur, donc du point de vu de la fonctionnalité, ça ne change rien par rapport à la photo ci-dessus. Je vais changer la photo tout soudain.
+
 ## Description du programme
 
 C’est une horloge qui affiche les pourcentages d’attention par cycles d’une heure et demie. On définit la valeur de la constante `heureAttentionMax` au nombre de secondes du pic d’attention du cycle. Par exemple, si votre cycle a un pic à 7 h 15 (= 26100 s), cela correspond à `heureAttentionMax = 26100 % 5400 = 4500` où `%` est l’opérateur *modulo* et 5400 est le nombre de secondes dans 1 h 30. La constante `heureAttentionMax` doit être ajustée manuellement dans le programme.
