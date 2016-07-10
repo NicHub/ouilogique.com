@@ -14,13 +14,20 @@ author: Nico
 
 # Version pour Arduino Nano
 
-![...](/files/2016-06-07-horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_002_lowres.jpg)
+**Première version avec un bouton poussoir**
+
+![Horloge à cycles ultradiens — Arduino Nano](/files/2016-06-07-horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_002_lowres.jpg)
+
+**Deuxième version avec un encodeur rotatif KY-040**
+
+> L’encodeur rotatif peut être remplacé par un simple bouton poussoir pour l’instant parce que je n’utilise que cette fonction. J’ai commencé à tester cet encodeur avec le traceur série de l’IDE Arduino et [le programme de test se trouve sur mon GitHub](https://github.com/NicHub/ouilogique-Arduino/blob/master/encodeur-rotatif-KY-040/encodeur-rotatif-KY-040-test-1/encodeur-rotatif-KY-040-test-1.ino). Je modifierai bientôt le programme de l’horloge pour y intégrer un menu que l’on pourra utiliser avec l’encodeur.
+
+![Horloge à cycles ultradiens — Arduino Nano](/files/2016-06-07-horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_004_lowres.jpg)
 
 ## Code source
 
 [horloge-cycles-ultradiens-arduino.ino + aTunes.h](https://github.com/NicHub/ouilogique-Arduino/tree/master/horloge-cycles-ultradiens-arduino)
 
-> J’ai fait un *upgrade* en ajoutant un encodeur rotatif à la place du bouton poussoir et c’est cette version du programme qui est sur GitHub. Mais pour l’instant je n’utilise que le bouton poussoir de l’encodeur, donc du point de vu de la fonctionnalité, ça ne change rien par rapport à la photo ci-dessus. Je vais changer la photo tout soudain.
 
 ## Description du programme
 
@@ -45,7 +52,7 @@ L’horloge peut être mise à jour via le port RS232. Comme le programme utilis
 
 # Version pour ESP8266
 
-![...](/files/2016-06-07-horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_003_lowres.jpg)
+![Horloge à cycles ultradiens — ESP8266](/files/2016-06-07-horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_003_lowres.jpg)
 
 ## Code source
 
