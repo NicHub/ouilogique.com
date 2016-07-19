@@ -14,18 +14,6 @@ redirect_from:
   - /blog/2-4-in_TFT_Touch_screen/
 ---
 
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- ouilogique_1 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-5638118185206577"
-     data-ad-slot="5843164030"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
 J’ai acheté un écran TFT 2.4" chez Banggood :
 
 <http://www.banggood.com/UNO-R3-ATmega328P-Board-2_4-Inch-TFT-LCD-Screen-Module-For-Arduino-p-945755.html>
@@ -58,18 +46,6 @@ La librairie `TFTLCD-Library` contient un dossier `exemples` que vous pouvez cop
 <http://www.banggood.com/8GB-Micro-SDTF-Memory-Card-For-Cell-Phone-PDA-MP3-Player-p-926928.html>
 
 > L’écran fonctionne aussi sans carte micro SD. Elle est juste utile pour stocker des bitmaps.
-
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- ouilogique_1 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-5638118185206577"
-     data-ad-slot="5843164030"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 
 
 ## Modification de l’exemple `tftpaint.ino`
