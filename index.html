@@ -84,10 +84,8 @@
 
 </script>
 
+<h1>TEST 3</h1>
 
-
-
-<h1>TEST 2</h1>
 
 <div class="navigation-wrapper">
 	<nav role="navigation" id="site-nav" class="animated drop">
@@ -413,6 +411,78 @@
     </nav><!-- /.pagination -->
   </article>
 </div><!-- /#main -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+
+
+<span>2016 OuiLogique.com
+<div class="social-icons">
+
+
+
+
+
+
+
+
+
+
+
+  <a href="http://ouilogique.com/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://ouilogique.com';
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://ouilogique.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://ouilogique.com/assets/js/scripts.min.js"></script>
+
+
+
+<script>
+function targetBlank() {
+  // remove subdomain of current site's url and setup regex
+  var internal = location.host.replace( "www.", "" );
+  internal = new RegExp( internal, "i" );
+  var a = document.getElementsByTagName( 'a' ); // then, grab every link on the page
+  for( var i = 0; i < a.length; i++ ) {
+    var href = a[ i ].host; // set the host of each link
+    if( !internal.test( href ) ) { // make sure the href doesn't contain current site's host
+          a[ i ].setAttribute( 'target', '_blank' ); // if it doesn't, set attributes
+      }
+  }
+};
+targetBlank();
+</script>
 
 
 </body>
