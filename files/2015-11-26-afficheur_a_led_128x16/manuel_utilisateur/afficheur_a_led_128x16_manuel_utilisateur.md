@@ -5,7 +5,7 @@
 
 16×128 pixels
 
-[Xuan Cai](szxcled.com)
+[Xuan Cai](http://www.szxcled.com)
 
 
 
