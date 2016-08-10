@@ -12,7 +12,7 @@ published: true
 author: Nico
 ---
 
-L’idée est de déterminer s’il est possible d’utiliser une carte à microcontrôleur comme le Launchpad, l’Arduino Nano ou l’ESP8266 pour remplacer un bridge USB-RS232.
+L’idée est de déterminer s’il est possible de remplacer un bridge USB-RS232 par une carte à microcontrôleur comme le Launchpad, l’Arduino Nano ou l’ESP8266. Elle m’a été inspirée par [cette réponse sur StackExchange][0].
 
 # Essai avec Launchpad
 
@@ -30,9 +30,6 @@ L’idée est de déterminer s’il est possible d’utiliser une carte à micro
   transmis, mais ce comportement n’est pas reproductible et ce
   programme permet de rendre le comportement fiable.
 
-  L’idée m’est venue après avoir lu cette réponse sur
-  StackExchange : http://goo.gl/ngbV6Q
-
   ¹ https://www.arduino.cc/en/Serial/End
 */
 
@@ -44,13 +41,15 @@ void loop()
 
 ## Branchements
 
-Deux Launchpad avec RX connecté à TX et inversement. GND à GND. Les cavaliers RXD et TXD connectés horizontalement (mode `HW UART` selon le pictogramme à côté des cavaliers).
+- Deux Launchpad avec RX connecté à TX et inversement TX à RX.
+- GND connecté à GND.
+- Les cavaliers RXD et TXD connectés horizontalement (mode `HW UART` selon le pictogramme à côté des cavaliers).
 
 ![Branchement des Launchpad](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_launchpad_lowres.jpg)
 
 ## Résultat
 
-On peut envoyer des commandes d’un Launchpad vers l’autre via CoolTerm et ça marche à 115200 bauds (voir en bas des captures d’écran de CoolTerm) alors même que le MSP430 ne supporte pas des vitesses supérieures à 9600 bauds ⇒ Cool !
+On peut envoyer des commandes d’un Launchpad vers l’autre via [CoolTerm][1] et ça marche à 115200 bauds (voir en bas des captures d’écran de CoolTerm) alors même que le MSP430 ne supporte pas des vitesses supérieures à 9600 bauds ⇒ Cool !
 
 ![CoolTerm Launchpad 1](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/coolterm_launchpad_1.png)
 
@@ -58,6 +57,9 @@ On peut envoyer des commandes d’un Launchpad vers l’autre via CoolTerm et ç
 
 ## Sans le microcontrôleur
 
-Ça marche aussi si on enlève le microcontrôleur
+Et ça fonctionne aussi si on enlève le microcontrôleur.
 
 ![Branchement des Launchpad sans MSP430](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_launchpad_sans_msp430_lowres.jpg)
+
+[0]: http://arduino.stackexchange.com/questions/18575/send-at-commands-to-esp8266-from-arduino-uno-via-a-softwareserial-port/18614#18614
+[1]: http://freeware.the-meiers.org/
