@@ -55,3 +55,9 @@ On peut envoyer des commandes d’un Launchpad vers l’autre via CoolTerm et ç
 ![CoolTerm Launchpad 1](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/coolterm_launchpad_1.png)
 
 ![CoolTerm Launchpad 2](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/coolterm_launchpad_2.png)
+
+## Sans le microcontrôleur
+
+Ça marche aussi si on enlève le microcontrôleur
+
+![Branchement des Launchpad sans MSP430](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_launchpad_sans_msp430_lowres.jpg)
