@@ -49,11 +49,13 @@ void loop()
 
 ## Résultat
 
-On peut envoyer des commandes d’un Launchpad vers l’autre via [CoolTerm][1] et ça marche à 115200 bauds (voir en bas des captures d’écran de CoolTerm) alors même que le MSP430 ne supporte pas des vitesses supérieures à 9600 bauds ⇒ Cool !
+On peut envoyer des commandes d’un Launchpad vers l’autre via [CoolTerm][1]. Malheureusement, même si on modifie la vitesse de transmission dans CoolTerm, elle reste à 9600 bauds entre les deux Launchpad. J’ai vérifié ça avec un analyseur logique.
 
 ![CoolTerm Launchpad 1](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/coolterm_launchpad_1.png)
 
 ![CoolTerm Launchpad 2](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/coolterm_launchpad_2.png)
+
+![Scanalogic entre les Launchpad](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/acquisition_launchpad.png)
 
 ## Sans le microcontrôleur
 
