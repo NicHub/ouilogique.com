@@ -47,7 +47,7 @@ void loop()
 
 ![Branchement des Launchpad](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_launchpad_lowres.jpg)
 
-## Résultat
+## Résultats
 
 On peut envoyer des commandes d’un Launchpad vers l’autre via [CoolTerm][1]. Malheureusement, même si on modifie la vitesse de transmission dans CoolTerm, elle reste à 9600 bauds entre les deux Launchpad. J’ai vérifié ça avec un analyseur logique.
 
@@ -65,3 +65,47 @@ Et ça fonctionne aussi si on enlève le microcontrôleur.
 
 [0]: http://arduino.stackexchange.com/questions/18575/send-at-commands-to-esp8266-from-arduino-uno-via-a-softwareserial-port/18614#18614
 [1]: http://freeware.the-meiers.org/
+
+---
+
+# Essai avec ESP8266-12E — Test 1
+
+## Programmation des ESP8266-12E
+
+Idem que pour les Launchpad (programme serial_end.ino)
+
+## Branchements
+
+- Deux ESP8266-12E avec RX connecté à TX et inversement TX à RX.
+
+![Branchement des ESP8266-12E](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_esp8266-12E_test1_lowres.jpg)
+
+## Résultats
+
+On peut envoyer des commandes d’un ESP8266-12E vers l’autre via [CoolTerm][1]. Contrairement aux Launchpad, on peut modifier la vitesse de transmission dans CoolTerm et la vitesse de transmission entre les deux ESP8266-12E change aussi. Encore une fois j’ai vérifié ça avec un analyseur logique.
+
+![Scanalogic entre les ESP8266-12E 9600 bauds](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/acquisition_esp8266-12E_9600.png)
+
+![Scanalogic entre les ESP8266-12E 115200 bauds](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/acquisition_esp8266-12E_115200.png)
+
+---
+
+# Essai avec ESP8266-12E — Test 2
+
+La différence entre le test 2 et le test 1, c’est que j’ai connecté la broche RST au GND. Pour vérifier que les ESP ne démarrent pas, j’ai chargé le programme blink.ino.
+
+## Programmation des ESP8266-12E
+
+[Avec blink.ino](https://github.com/NicHub/ouilogique-ESP8266-Arduino/blob/master/blink/blink.ino)
+
+## Branchements
+
+- Deux ESP8266-12E avec RX connecté à TX et inversement TX à RX.
+- RST connecté à GND
+
+![Branchement des ESP8266-12E](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_esp8266-12E_test2_lowres.jpg)
+
+## Résultats
+
+Idem que pour le test 1.
+
