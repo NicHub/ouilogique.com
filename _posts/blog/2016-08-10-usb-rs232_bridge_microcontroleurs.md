@@ -84,7 +84,11 @@ Idem que pour les Launchpad (programme serial_end.ino)
 
 On peut envoyer des commandes d’un ESP8266-12E vers l’autre via [CoolTerm][1]. Contrairement aux Launchpad, on peut modifier la vitesse de transmission dans CoolTerm et la vitesse de transmission entre les deux ESP8266-12E change aussi. Encore une fois j’ai vérifié ça avec un analyseur logique.
 
+### 9600 bauds
+
 ![Scanalogic entre les ESP8266-12E 9600 bauds](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/acquisition_esp8266-12E_9600.png)
+
+### 115200 bauds
 
 ![Scanalogic entre les ESP8266-12E 115200 bauds](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/acquisition_esp8266-12E_115200.png)
 
