@@ -33,7 +33,7 @@ AT+CWLAP
 
 # Connect to your home/office access point
 AT+CWJAP="yourSSID","yourWifiPassword"
-AT+CWJAP="FrankNet","slpdP1234"
+AT+CWJAP="×××","×××"
 
 > WIFI CONNECTED
 > WIFI GOT IP
