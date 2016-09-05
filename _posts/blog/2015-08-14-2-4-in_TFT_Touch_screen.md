@@ -16,7 +16,7 @@ redirect_from:
 
 J’ai acheté un écran TFT 2.4" chez Banggood :
 
-<http://www.banggood.com/UNO-R3-ATmega328P-Board-2_4-Inch-TFT-LCD-Screen-Module-For-Arduino-p-945755.html>
+<http://www.banggood.com/UNO-R3-ATmega328P-Board-2_4-Inch-TFT-LCD-Screen-Module-For-Arduino-p-945755.html?p=0431091025639201412F>
 
 C’est un écran tactile résistif avec un lecteur de carte micro SD intégré. Le PCB indique [www.mcufriend.com](http://www.mcufriend.com), mais ce site ne répondait pas au moment où j’ai essayé. Je me suis donc armé de patience et après quelques heures et quelques dizaines de recherches sur Google, j’ai réussi à en faire quelque chose.
 
@@ -43,7 +43,7 @@ Il faut redémarrer l’IDE Arduino pour utiliser les librairies.
 
 La librairie `TFTLCD-Library` contient un dossier `exemples` que vous pouvez copier pour faire des modifications et un dossier `bitmaps`. Les bitmaps peuvent être copiées à la racine d’une carte Micro SD. Celle-ci fonctionne bien pour moi :
 
-<http://www.banggood.com/8GB-Micro-SDTF-Memory-Card-For-Cell-Phone-PDA-MP3-Player-p-926928.html>
+<http://www.banggood.com/8GB-Micro-SDTF-Memory-Card-For-Cell-Phone-PDA-MP3-Player-p-926928.html?p=0431091025639201412F>
 
 > L’écran fonctionne aussi sans carte micro SD. Elle est juste utile pour stocker des bitmaps.
 

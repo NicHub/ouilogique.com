@@ -16,7 +16,7 @@ author: Nico
 
 J’ai acheté une carte chez Banggood pour me faire une mini station météo :
 
-<http://www.banggood.com/4-in-1-Temperature-Pressure-Altitude-Light-Sensor-Module-p-965547.html>.
+<http://www.banggood.com/4-in-1-Temperature-Pressure-Altitude-Light-Sensor-Module-p-965547.html?p=0431091025639201412F>.
 
 C’est une carte “trois en un” qui permet de mesurer :
 
