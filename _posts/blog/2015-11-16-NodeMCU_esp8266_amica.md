@@ -22,7 +22,11 @@ author: Nico
 
 <http://fr.aliexpress.com/item/V2-4M-4FLASH-NodeMcu-Lua-WIFI-Networking-development-board-Based-ESP8266/32448694790.html>
 
+# Installation du pilote pour le Silabs CP2102
 
+<https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx>
+
+La version *4.x.13 - August 31*, 2016 fonctionne sous macOS Sierra.
 
 # Premières impressions
 
