@@ -33,7 +33,7 @@ author: Nico
 
 C’est une horloge qui affiche les pourcentages d’attention par cycles d’une heure et demie. On définit la valeur de la constante `heureAttentionMax` au nombre de secondes du pic d’attention du cycle. Par exemple, si votre cycle a un pic à 7 h 15 (= 26100 s), cela correspond à `heureAttentionMax = 26100 % 5400 = 4500` où `%` est l’opérateur *modulo* et 5400 est le nombre de secondes dans 1 h 30. La constante `heureAttentionMax` doit être ajustée manuellement dans le programme.
 
-L’horloge peut être mise à jour via le port RS232. Comme le programme utilise beaucoup de RAM, j’ai désactivé cette fonctionnalité par défaut. Pour la réactiver, il suffit de changer la valeur de `avecSerial false` à `avecSerial true` à la ligne 46 et de recharger le programme sur le microcontrôleur.
+L’heure de horloge temps réel DS1307 peut être mise à jour via le port RS232. Comme le programme utilise beaucoup de RAM, j’ai désactivé cette fonctionnalité par défaut. Pour la réactiver, il suffit de changer la valeur de `avecSerial false` à `avecSerial true` à la ligne 46 et de recharger le programme sur le microcontrôleur.
 
 ## Notes
 
@@ -51,6 +51,8 @@ L’horloge peut être mise à jour via le port RS232. Comme le programme utilis
 
 
 # Version pour ESP8266
+
+La version pour l’ESP8266 synchronise l’heure de horloge temps réel DS1307 avec un serveur NTP.
 
 ![Horloge à cycles ultradiens — ESP8266](/files/2016-06-07-horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_003_lowres.jpg)
 
