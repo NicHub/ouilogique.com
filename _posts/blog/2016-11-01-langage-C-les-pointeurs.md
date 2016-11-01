@@ -14,18 +14,18 @@ author: Nico
 
 Je suis en train de suivre [le très bon cours sur la programmation en C d’Open Classrooms][1] et le deuxième exercice consiste à expliquer les pointeurs à quelqu’un qui n’y connait rien mais qui a des bases en C. Or donc, c’est une bonne occasion de créer une page sur mon blog à ce sujet histoire de faire d’une pierre deux coups, puisque d’après [Mathieu Nebra][2], le prof de ce cours, les programmeurs sont des gros fainéants qui n’aiment pas répéter deux fois les mêmes choses, et... je crois qu’il a raison.
 
-> Les exemples de cette pages sont formatés selon la façon traditionnelle des cours sur le language C. Donc si vous ne connaissez que la présentation Arduino, celà pourrait vous surprendre. Cependant toute les notions abordées ici sont réutilisables en Arduino C.
+> Les exemples de cet article sont formatés selon la façon traditionnelle des cours sur le langage C. Donc si vous ne connaissez que la présentation Arduino, cela pourrait vous surprendre. Cependant toutes les notions abordées ici sont réutilisables en Arduino C.
 
-Donc commençons par une lapalissade grande comme une maison : la programmation, c’est surtout une affaire de données. Eh oui, rien de très extraordinaire : pour faire avancer le schmilblick les programmes que l’on donne à manger à nos ordinateurs ou nos microcontrôleurs ont besoins de données que l’on va stocker dans des variables. Et c’est bien joli de remplir leurs mémoires avec lesdites données, encore faut-il pouvoir les retrouver et pour cela il y a deux façons de s’y prendre :
+Donc commençons par une lapalissade grande comme une maison : la programmation, c’est surtout une affaire de données. Eh oui, rien de très extraordinaire : pour faire avancer le schmilblick les programmes que l’on donne à manger à nos ordinateurs ou nos microcontrôleurs ont besoin de données que l’on va stocker dans des variables. Et c’est bien joli de remplir leurs mémoires avec lesdites données, encore faut-il pouvoir les retrouver et pour cela il y a deux façons de s’y prendre :
 
 1. les transmettre par valeur
 2. les transmettre par référence
 
 Voyons ça d’un peu plus près :
 
-## Transmision de variables par valeur
+## Transmission de variables par valeur
 
-Transmettre le contenu d’une variable par valeur est à peu près une des premières choses que l’on apprend à faire quel que soit le langage de programmation que l’on étudie. Voici ce que ça donne en C :
+Transmettre le contenu d’une variable par valeur est à peu près une des premières choses que l’on apprend à faire, quel que soit le langage de programmation que l’on étudie. Voici ce que ça donne en C :
 
 {% highlight C++ %}
 #include <stdio.h>
@@ -41,7 +41,7 @@ int main()
 }
 {% endhighlight %}
 
-L’exemple ci-dessus est des plus basique, mais il faut bien commencer par quelque chose. D’abord on assigne la valeur `1` à la variable `maVariable` et ensuite, on affiche le contenu de cette variable. Et pour l’affichage, on utilise la fonction `printf` à laquelle on transmet la *valeur* de `maVariable`, c’est-à-dire `1` dans cet exemple. Ce qui ne se voit pas par contre, c’est qu’en interne, `maVariable` a été copiée, un peu comme si on avait fait une photocopie et que l’on avait envoyé cette photocopie à la fonction `printf`. Comme `printf` est une fonction de la librairie standard du C ce comportement est difficile à mettre en évidence. Pour celà, nous alons définir une fonction et tout deviendra plus clair.
+L’exemple ci-dessus est des plus basique, mais il faut bien commencer par quelque chose. D’abord on assigne la valeur `1` à la variable `maVariable` et ensuite, on affiche le contenu de cette variable. Et pour l’affichage, on utilise la fonction `printf` à laquelle on transmet la *valeur* de `maVariable`, c’est-à-dire `1` dans cet exemple. Ce qui ne se voit pas par contre, c’est qu’en interne, `maVariable` a été copiée, un peu comme si on avait fait une photocopie et que l’on avait envoyé cette photocopie à la fonction `printf`. Comme `printf` est une fonction de la librairie standard du C ce comportement est difficile à mettre en évidence. Pour cela, nous allons définir une fonction et tout deviendra plus clair.
 
 {% highlight C++ %}
 #include <stdio.h>
@@ -59,7 +59,7 @@ int main()
   ex02( maVariable );
 
   // Maitenant la fonction `ex02` est terminée. Elle a modifié
-  // la valeur de la variable qu’on lui a transmit, mais elle
+  // la valeur de la variable qu’on lui a transmise, mais elle
   // ne l’a fait que sur sa “photocopie”. Donc notre “original”
   // n’est pas modifié. En conséquence, le code suivant affiche
   // "3. maVariable = 1"
@@ -165,7 +165,7 @@ void ex03( int *adresseDeMaVariable )
 
   // Et maintenant retournons dans la fonction `main()`
   // et vérifions que la valeur de la variable que nous avons
-  // transmise à `ex03` à bel et bien été modifiée. Suspense...
+  // transmise à `ex03` a bel et bien été modifiée. Suspense...
 }
 {% endhighlight %}
 
@@ -174,8 +174,8 @@ void ex03( int *adresseDeMaVariable )
 
 - Si on veut obtenir l’adresse en mémoire d’une variable, il faut utiliser le signe `&`.
 - L’adresse doit être stockée dans une variable de même type que la variable pointée (`int` dans l’exemple) avec en plus le signe `*`.
-- Si l’on affiche la valeur du pointeur SANS le signe `*` on obtient en fait L’ADRESSE de la variable pointée.
-- Si l’on affiche la valeur du pointeur AVEC le signe `*` on obtient en fait LA VALEUR de la variable pointée.
+- Si l’on demande la valeur du pointeur SANS le signe `*` on obtient en fait L’ADRESSE de la variable pointée.
+- Si l’on demande la valeur du pointeur AVEC le signe `*` on obtient en fait LA VALEUR de la variable pointée.
 
 ### Notes pratiques
 
