@@ -41,7 +41,7 @@ int main()
 }
 {% endhighlight %}
 
-L’exemple ci-dessus est des plus basique, mais il faut bien commencer par quelque chose. D’abord on assigne la valeur `1` à la variable `maVariable` et ensuite, on affiche le contenu de cette variable. Et pour l’affichage, on utilise la fonction `printf` à laquelle on transmet la *valeur* de `maVariable`, c’est-à-dire `1` dans cet exemple. Ce qui ne se voit pas par contre, c’est qu’en interne, `maVariable` a été copiée, un peu comme si on avait fait une photocopie et que l’on avait envoyé cette photocopie à la fonction `printf`. Comme `printf` est une fonction de la librairie standard du C ce comportement est difficile à mettre en évidence. Pour cela, nous allons définir une fonction et tout deviendra plus clair.
+L’exemple ci-dessus est des plus basique, mais il faut bien commencer par quelque chose. D’abord on instancie la variable `maVariable` avec le type `int` et on lui assigne la valeur `1` dans la foulée. Ensuite, on affiche le contenu de cette variable. Et pour l’affichage, on utilise la fonction `printf` à laquelle on transmet la *valeur* de `maVariable`, c’est-à-dire `1` dans cet exemple. Ce qui ne se voit pas par contre, c’est qu’en interne, `maVariable` a été copiée, un peu comme si on avait fait une photocopie et que l’on avait envoyé cette photocopie à la fonction `printf`. Comme `printf` est une fonction de la librairie standard du C ce comportement est difficile à mettre en évidence. Pour cela, nous allons définir une fonction et tout deviendra plus clair.
 
 {% highlight C++ %}
 #include <stdio.h>
