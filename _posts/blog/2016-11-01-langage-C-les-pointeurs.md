@@ -91,7 +91,7 @@ Dans ce deuxième exemple, on se rend tout de suite compte des limitations du pa
 
 Bon ben je crois que le constat est clair, on a besoin d’un autre système pour transmettre nos variables. Et comme j’ai *spoilé* la réponse au début de cet article, vous savez déjà qu’il s’agit de la...
 
-## Transmision de variables par référence
+## Transmission de variables par référence
 
 Si vous ne connaissiez vraiment rien aux pointeurs avant de commencer la lecture de cet article, je suppose que l’inventeur qui sommeille en vous a dû se réveiller et s’écrier “Mais bon sang, pourquoi on ne transmettrait pas l’original plutôt que la copie !” Et bien vous venez de (ré)inventer le passage de variables par référence : BRAVO ! Et le principe est très simple, on ne transmet plus le contenu de nos variables, mais leurs adresses. Et ben oui, c’est un peu “viens chez moi, j’habite chez une copine”. Il suffit de transmettre l’adresse de la variable, histoire que le programme sache où aller passer sa soirée. Donc comme un exemple vaut 1000 mots en voici un :
 
@@ -173,24 +173,17 @@ void ex03( int *adresseDeMaVariable )
 ### Petit récapitulatif
 
 - Si on veut obtenir l’adresse en mémoire d’une variable, il faut utiliser le signe `&`.
-- L’adresse doit être stockée dans une variable de même type que la variable pointée (`int` dans l’exemple) avec en plus le signe `*`.
+- L’adresse doit être stockée dans une variable de même type que la variable pointée (`int` dans l’exemple) avec en plus le signe `*`. C’est ce qu’on appelle un *pointeur*.
 - Si l’on demande la valeur du pointeur SANS le signe `*` on obtient en fait L’ADRESSE de la variable pointée.
 - Si l’on demande la valeur du pointeur AVEC le signe `*` on obtient en fait LA VALEUR de la variable pointée.
 
 ### Notes pratiques
 
-On peut écrire
+On peut écrire indifféremment `int *adresseDeMaVariable` ou `int* adresseDeMaVariable`
 
-`int *adresseDeMaVariable`
+---
 
-ou
-
-`int* adresseDeMaVariable`
-
-
-<!--
-
-La notation d’un pointeur en C se fait donc toujours en deux parties :
+La notation d’un pointeur en C se fait en deux parties :
 
 1. Le signe `*`.
 2. Le nom de la variable qui contient l’adresse pointée.
@@ -199,7 +192,25 @@ Dans mon exemple ci-dessus, cela donne : `*adresseDeMaVariable`.
 
 Donc pour ne pas se mélanger les pinceaux, il vaut mieux éviter d’écrire : ~~`*pointeurVersMaVariable`~~, car le pointeur, est composée des deux parties (le signe `*` et l’adresse).
 
+---
+
+! La syntaxe du C n’est pas cohérente, car suivant le contexte, le signe `*` aura une signification différente :
+
+- quand on spécifie qu’une fonction accepte un pointeur en paramètre, on utilise le signe `*`, alors que ce qui est transmis est l’adresse et pas la valeur.
+- quand on veut obtenir la valeur pointée (et pas l’adresse), on doit aussi utiliser le signe `*`.
+
+
+<!--
  -->
+
+
+## Pour la suite
+
+Mon exemple de transmission de variable par référence pourrait ne pas utiliser de pointeur, mais la possibilité de retourner une valeur à la fin de la fonction avec le mot clé `return`. Cependant les `return` sont en général utilisés pour retourner le statut d’exécution de la fonction, c’est-à-dire est-ce qu’elle a réussi a faire ce qu’elle devait ou pas.
+
+Et les `return` ont une limitation particulièrement ennuyeuse qui nous obligera de toute façon à utiliser les pointeurs : ils ne peuvent pas transmettre de tableaux. Et comme les tableaux sont omniprésents en programmation, on va donc également utiliser abondamment les pointeurs. Mais ça fera l’objet d’un autre article.
+
+
 
 ## Note pour les pros
 
