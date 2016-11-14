@@ -53,12 +53,12 @@ int main()
   // On assigne une valeur initiale à `maVariable`
   int maVariable = 1;
 
-  // On appelle la fonction `ex02` et on lui transmet
+  // On appelle la fonction `ex02()` et on lui transmet
   // la valeur de `maVariable`
   // (comme une photocopie de cette variable)
   ex02( maVariable );
 
-  // Maitenant la fonction `ex02` est terminée. Elle a modifié
+  // Maitenant la fonction `ex02()` est terminée. Elle a modifié
   // la valeur de la variable qu’on lui a transmise, mais elle
   // ne l’a fait que sur sa “photocopie”. Donc notre “original”
   // n’est pas modifié. En conséquence, le code suivant affiche
@@ -69,7 +69,7 @@ int main()
 }
 
 void ex02( int maVariable ) // `maVariable` est transmise par valeur
-                            // à la fonction `ex02`
+                            // à la fonction `ex02()`
 {
   // Affiche "1. maVariable = 1"
   printf( "1. maVariable = %d\n", maVariable );
@@ -85,7 +85,7 @@ void ex02( int maVariable ) // `maVariable` est transmise par valeur
 
 Dans ce deuxième exemple, on se rend tout de suite compte des limitations du passage de variables par valeur :
 
-- Les valeurs sont copiées et la copie ne revient pas à l’expéditeur (l’expéditeur, c’est la fonction `main()` et le destinataire, c’est la fonction `ex02`). C’est du vol qualifié et c’est surtout pas pratique si on veut que notre fonction retourne un résultat différent de la donnée de base. Bon, il y a toujours la possibilité d’utiliser un `return`, on en discutera après.
+- Les valeurs sont copiées et la copie ne revient pas à l’expéditeur (l’expéditeur, c’est la fonction `main()` et le destinataire, c’est la fonction `ex02()`). C’est du vol qualifié et c’est surtout pas pratique si on veut que notre fonction retourne un résultat différent de la donnée de base. Bon, il y a toujours la possibilité d’utiliser un `return`, on en discutera après.
 - Et ces copies prennent de la place en mémoire. Sur un ordi ça ne causera de problèmes que pour des gros programmes, mais sur l’ATmega328p d’un Arduino UNO avec 2 ko de RAM, ça compte.
 - C’est potentiellement lent, puisqu’il faut copier les valeurs avant de les envoyer (sans compter le salaire de la secrétaire qui fait les copies... pff).
 
@@ -165,7 +165,8 @@ void ex03( int *adresseDeMaVariable )
 
   // Et maintenant retournons dans la fonction `main()`
   // et vérifions que la valeur de la variable que nous avons
-  // transmise à `ex03` a bel et bien été modifiée. Suspense...
+  // transmise à `ex03()` a bel et bien été modifiée.
+  // Suspense...
 }
 {% endhighlight %}
 
@@ -190,7 +191,7 @@ La notation d’un pointeur en C se fait en deux parties :
 
 Dans mon exemple ci-dessus, cela donne : `*adresseDeMaVariable`.
 
-Donc pour ne pas se mélanger les pinceaux, il vaut mieux éviter d’écrire : ~~`*pointeurVersMaVariable`~~, car le pointeur, est composée des deux parties (le signe `*` et l’adresse).
+Donc pour ne pas se mélanger les pinceaux, il vaut mieux éviter d’écrire : ~~`*pointeurVersMaVariable`~~, car le pointeur est composée des deux parties (le signe `*` et l’adresse).
 
 ---
 
@@ -206,7 +207,7 @@ Donc pour ne pas se mélanger les pinceaux, il vaut mieux éviter d’écrire :
 
 ## Pour la suite
 
-Mon exemple de transmission de variable par référence pourrait ne pas utiliser de pointeur, mais la possibilité de retourner une valeur à la fin de la fonction avec le mot clé `return`. Cependant les `return` sont en général utilisés pour retourner le statut d’exécution de la fonction, c’est-à-dire est-ce qu’elle a réussi a faire ce qu’elle devait ou pas.
+Mon exemple de transmission de variable par référence pourrait ne pas utiliser de pointeur, mais la possibilité de retourner une valeur à la fin de la fonction avec le mot clé `return`. Cependant les `return` sont en général utilisés pour retourner le statut d’exécution de la fonction, autrement dit si elle a réussi à faire ce qu’on lui a demandé ou pas.
 
 Et les `return` ont une limitation particulièrement ennuyeuse qui nous obligera de toute façon à utiliser les pointeurs : ils ne peuvent pas transmettre de tableaux. Et comme les tableaux sont omniprésents en programmation, on va donc également utiliser abondamment les pointeurs. Mais ça fera l’objet d’un autre article.
 
