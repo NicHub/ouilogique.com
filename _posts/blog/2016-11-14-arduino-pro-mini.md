@@ -27,6 +27,11 @@ Donc, je mes suis rabattu sur MiniCore : <https://github.com/MCUdude/MiniCore>,
 
 La procédure d’utilisation est très bien détaillée sur la page GitHub de MiniCore, donc je ne la répète pas ici.
 
+La configuration que j’ai utilisée est la suivante :
+
+![Configuration MiniCore programmation d’Arduino Pro Mini](../../files/2016-11-14-arduino-pro-mini/config_MiniCore.png)
+
+
 ![Programmation d’Arduino Pro Mini](../../files/2016-11-14-arduino-pro-mini/arduino-pro-mini-lowres.jpg)
 
 La programmation ISP fonctionne nickel, mais je n’arrive pas à [utiliser l’ESP8266 comme bridge USB‑RS232](http://ouilogique.com/usb-rs232_bridge_microcontroleurs/).
