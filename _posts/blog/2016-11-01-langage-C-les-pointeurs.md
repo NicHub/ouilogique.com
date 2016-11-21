@@ -220,6 +220,13 @@ Et les `return` ont une limitation particulièrement ennuyeuse qui nous obligera
 > `gcc $FILENAME.c -o $FILENAME && ./$FILENAME`
 
 
+## Utilisation des pointeurs pour les tableaux
+
+Quand j’aurai le temps, j’écrirai un article sur ce sujet. Pour l’instant voici quelques exemples que j’ai posté sur StackExchange :
+
+<http://arduino.stackexchange.com/a/31417/13995>
+
+
 [1]: https://openclassrooms.com/courses/apprenez-a-programmer-en-c
 [2]: https://openclassrooms.com/membres/mateo21
 
