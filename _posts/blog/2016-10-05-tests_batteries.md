@@ -26,10 +26,11 @@ author: Nico
 | [MXJO IMR18650][2]           | 3000 mAh          | 1786 mAh         | 60%                              | 3 h 42               | -               | -              | -                   |
 | [Infinity PV][3]             | 2600 mAh          | 1563 mAh         | 60%                              | 3 h 54               | 5.12 V          | 0.39 A         | 13.1 Ω              |
 | Powerbank Arctic             | 2000 mAh          | 893  mAh         | 45%                              | 1 h 54               | -               | -              | -                   |
-| Powerbank Solaire            | 20’000 mAh        | 5806 mAh         | 29%                              | 15 h 58              | 4.55 V          | 0.36 A         | 12.6 Ω              |
+| [Powerbank Solaire][4]       | 20’000 mAh        | 5806 mAh         | 29%                              | 15 h 58              | 4.55 V          | 0.36 A         | 12.6 Ω              |
 
 
 
 [1]: http://www.gearbest.com/batteries/pp_241348.html
 [2]: http://www.lepetitvapoteur.com/fr/accus/1876-accu-mxjo-imr-18650-3000-ma-35-a-.html
 [3]: https://www.infinitypv.com/images/HeLi-on_manual_v1.pdf
+[4]: https://www.youtube.com/watch?v=NL6nySngGtU
