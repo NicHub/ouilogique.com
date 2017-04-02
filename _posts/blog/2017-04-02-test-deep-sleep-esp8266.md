@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Test du <em>deep sleep</em> de l’ESP8266"
+title: "Test du deep sleep de l’ESP8266"
 modified:
 categories:
 excerpt:
