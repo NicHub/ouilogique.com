@@ -20,25 +20,27 @@ author: Nico
 [1]: http://www.banggood.com/WeMos-D1-Mini-V2-NodeMcu-4M-Bytes-Lua-WIFI-Internet-Of-Things-Development-Board-Based-ESP8266-p-1115398.html?p=0431091025639201412F
 
 
-## *Setup 1* — Interruption temporelle
+## Montage 1 — Interruption temporelle
 
 L’ESP sort du *deep sleep* à intervales réguliers. Lors de ce reset, D0 passe à `0` pendant 273.70 µs et doit être connecté à `RST`. Le `reset` a lieu lors du flanc montant.
 
-![Deep Sleep ESP8266 — Test 1](../../files/2017-04-02-test-deep-sleep-esp8266/2017-04-02-test-deep-sleep-esp8266-setup-1.jpg)
+*Note : 273.70 µs correspond à 21896 cycles d’horloge à 80 MHz (= 80E+6 \* 273.7E-6).*
+
+![Deep Sleep ESP8266 — Test 1](../../files/2017-04-02-test-deep-sleep-esp8266/2017-04-02-test-deep-sleep-esp8266-montage-1.jpg)
 
 ![Deep Sleep ESP8266 — Signal de reset sur D0](../../files/2017-04-02-test-deep-sleep-esp8266/2017-04-02-test-deep-sleep-esp8266-signal-DO-reset.jpg)
 
 
-## *Setup 2* — Interruption externe
+## Montage 2 — Interruption externe
 
-L’ESP sort du *deep sleep* lorsque le bouton connecté en *pull-up* est pressé. Problème garanti avec ce montage parce que l’ESP sera *reseté* autant de fois que le bouton sera pressé, y compris lors des rebonds du bouton.
+L’ESP sort du *deep sleep* lorsque le bouton connecté en *pull-up* est pressé. Problème garanti avec ce montage parce que l’ESP sera *reseté* autant de fois que le bouton sera pressé, y compris lors des rebonds du bouton. Une solution serait d’utiliser une bascule en entrée (<https://github.com/esp8266/Arduino/issues/1488>).
 
-![Deep Sleep ESP8266 — Test 2](../../files/2017-04-02-test-deep-sleep-esp8266/2017-04-02-test-deep-sleep-esp8266-setup-2.jpg)
+![Deep Sleep ESP8266 — Test 2](../../files/2017-04-02-test-deep-sleep-esp8266/2017-04-02-test-deep-sleep-esp8266-montage-2.jpg)
 
 
 ## Programme de test
 
-Note : c’est le même programme qui est utilisé pour les deux *setups*.
+Note : c’est le même programme qui est utilisé pour les deux montages.
 
 {% highlight C++ %}
 
