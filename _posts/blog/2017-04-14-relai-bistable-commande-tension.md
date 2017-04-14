@@ -31,7 +31,6 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 - [Diode 1N4004 400 V 1A DO-41](https://fr.aliexpress.com/item/50pcs-1N4004-400V-1A-DO-41-Axial-Lead-Silicon-Rectifier-Diodes/32464825368.html)
 - [Optocoupleur SFH620A DIP DIP-4](https://fr.aliexpress.com/item/Free-shippin-10pcs-lot-SFH620A-DIP-DIP-4-new-original/32553455903.html?spm=2114.13010608.0.0.H1VvjL)
   - [Spécifications (PDF)](../../files/2017-04-14-relai-bistable-commande-tension/datasheets/sfh620.pdf)
-- [Forêts à étage (pour la découpe des passages des presse-étoupes)](https://fr.aliexpress.com/item/3pcs-HSS-Steel-Step-Cone-Milling-Cutter-Titanium-Coated-Step-Drill-Cutting-Tools-Bit-Set/32661376446.html)
 - [Relai solid state (pour le tout premier proto)](https://fr.aliexpress.com/item/Industrial-FOTEK-single-phase-solid-state-relay-SSR-25DA-25A-actually-3-32V-DC-TO-24/32621331021.html)
 - [Boitier plastique](https://fr.aliexpress.com/item/Two-colors-plastic-enclosure-diy-project-box-abs-plastic-box-electronics-small-desktop-box-135/32426076659.html)
   - [Boitier plastique dimensions 1](../../files/2017-04-14-relai-bistable-commande-tension/schemas/dimension-boitier-plastique-1.jpg)
@@ -39,11 +38,16 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
   - [Onshape 1](https://cad.onshape.com/documents/bdfa03cae61f8d99e05c256d/w/6a80dbc21d7d7ec99d4ca430/e/ff237b71c3e3937e7775091c)
   - [Onshape 2](https://cad.onshape.com/documents/bdfa03cae61f8d99e05c256d/w/6a80dbc21d7d7ec99d4ca430/e/d16ebce6912d78151dce1e60)
 - [Presse-étoupes](https://fr.aliexpress.com/item/PG7-Cable-Glands-Nylon-plastic-waterproof-cable-connectors-spiral-fixed-2013-New-product/1000045565.html)
+- [Forêts à étage (pour la découpe des passages des presse-étoupes)](https://fr.aliexpress.com/item/3pcs-HSS-Steel-Step-Cone-Milling-Cutter-Titanium-Coated-Step-Drill-Cutting-Tools-Bit-Set/32661376446.html)
+- [Arduino Pro Mini](http://www.banggood.com/5Pcs-3_3V-8MHz-ATmega328P-AU-Pro-Mini-Microcontroller-Board-For-Arduino-p-980292.html?p=0431091025639201412F)
 - [Interface clone FTDI (je déconseille ce modèle car il envoie du 5 V en mode 3.3 V, mais pour l’Arduino Pro Mini, ça n’a pas de conséquence)](http://www.miniinthebox.com/fr/programme-downloader-ftdi-basic-usb-a-ttl-ft232-pour-arduino_p903425.html)
+
 
 ## Programme
 
 <https://github.com/NicHub/ouilogique-Arduino/blob/master/relai-bistable-commande-tension/relai-bistable-commande-tension.ino>
+
+Pour la programmation de l’Arduino Pro Mini dans l’IDE Arduino, voir <http://ouilogique.com/arduino-pro-mini/>
 
 
 ## Prototype sur *breadboard*
