@@ -20,6 +20,49 @@ author: Nico
 [1]: http://www.banggood.com/WeMos-D1-Mini-V2-NodeMcu-4M-Bytes-Lua-WIFI-Internet-Of-Things-Development-Board-Based-ESP8266-p-1115398.html?p=0431091025639201412F
 
 
+
+## Différences entre les 3 modes de veille
+
+<http://www.espressif.com/sites/default/files/9b-esp8266-low_power_solutions_en_0.pdf>
+
+- Modem-sleep
+- Light-sleep
+- Deep-sleep
+
+| Item                      | Modem-sleep | Light-sleep | Deep-sleep |
+| :---:                     | ---         | ---         | ---        |
+| Wi-Fi                     | OFF         | OFF         | OFF        |
+| System clock              | ON          | OFF         | OFF        |
+| RTC                       | ON          | ON          | ON         |
+| CPU                       | ON          | Pending     | OFF        |
+| Substrate current         | 15 mA       | 0.4 mA      | ~ 20 µA    |
+| Average current DTIM = 1  | 16.2 mA     | 1.8 mA      | -          |
+| Average current DTIM = 3  | 15.4 mA     | 0.9 mA      | -          |
+| Average current DTIM = 10 | 15.2 mA     | 0.55 mA     | -          |
+
+
+**Pour comparaison**
+
+- un MSP430 consomme 230 µA en mode *Active*, 0.5 µA en mode *Standby* et 0.1 µA en mode *Off* ([Datasheet du MSP430](http://www.ti.com/lit/ds/symlink/msp430g2453.pdf)).
+- un ATtiny consomme 300 µA en mode *Active* et 0.1 µA en mode *Power-down* ([Datasheet de l’ATtiny](http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf)).
+
+### Deep Sleep
+
+Il y a deux manières de sortir du *Deep Sleep*
+
+1. Débrancher et rebrancher l’alimentation
+2. Créer une pulse vers `GND` sur `RST`. Le reset aura lieu au flanc montant. En temps normal, `RST` doit être maintenu à `VCC` ou éventuellement laissé flottant. Cette impulsion peut être crée :
+    - Avec une interruption temporelle : on spécifie la durée d’endormissement dans le programme et l’ESP génère la pulse sur `GPIO16` qui doit être connecté à `RST`.
+    - Avec une interruption matérielle : on connecte un signal en *pull up* sur `RST`. Ce signal doit être exempt de rebonds, sinon l’ESP sera remis à zéro en saccades.
+
+**Notes**
+
+Si on spécifie une durée de `0`, l’ESP reste en `deep sleep` jusqu’au prochain `reset` sur `RST` ou lors du prochain branchement.
+
+Si `GPIO 16` n’est pas connecté à `RST`, certaines fonctions de l’ESP sont quand même redémarrées à la fin du temps de veille, car sa consommation augmente à ~10 mA, même avec la RF désactivée...
+
+
+
 ## Montage 1 — Interruption temporelle
 
 L’ESP sort du *deep sleep* à intervales réguliers. Lors de ce reset, D0 passe à `0` pendant 273.70 µs et doit être connecté à `RST`. Le `reset` a lieu lors du flanc montant.
@@ -116,3 +159,10 @@ void loop()
 {}
 
 {% endhighlight %}
+
+
+
+## Sources
+
+<http://www.esp8266.com/viewtopic.php?f=13&t=8315>
+<https://www.youtube.com/watch?v=9G-nMGcELG8&index=11&list=PL3XBzmAj53Rlu3Byy_GkqG6b-nwEpWku0>
