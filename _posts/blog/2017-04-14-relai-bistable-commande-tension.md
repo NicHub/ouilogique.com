@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+     feature: veroboard-relai-bistable.jpg
 date: 2017-04-14T10:00:00+02:00
 published: true
 author: Nico
@@ -80,7 +80,7 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 
 ## Tout premier prototype
 
-Le tout premier prototype était basé sur un Arduino UNO avec deux relais solid state, un pour la phase et l’autre pour le neutre. J’ai préféré la solution avec relai bistable pour le deuxième proto (ci-dessus), pour assurer la séparation galvanique. Le relai bistable a aussi l’avantage de ne consommer que lors des commutations.
+Le tout premier prototype était basé sur un Arduino UNO avec deux relais *solid state*, un pour la phase et l’autre pour le neutre. J’ai préféré la solution avec relai bistable pour le deuxième proto (ci-dessus), pour assurer la séparation galvanique. Le relai bistable a aussi l’avantage de ne consommer que lors des commutations. Comme il ne commute que la phase, j’ai utilisé un cordon 240 V avec une prise à 3 broches pour être sûr que c’est la phase qui est connectée au relai (et pas le neutre).
 
 ![Prototype sur veroboard commande relai solid state avec Arduino UNO](../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-000.jpg)
 
