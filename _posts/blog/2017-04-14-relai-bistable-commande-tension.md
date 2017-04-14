@@ -41,6 +41,7 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 - [Forêts à étage (pour la découpe des passages des presse-étoupes)](https://fr.aliexpress.com/item/3pcs-HSS-Steel-Step-Cone-Milling-Cutter-Titanium-Coated-Step-Drill-Cutting-Tools-Bit-Set/32661376446.html)
 - [Arduino Pro Mini](http://www.banggood.com/5Pcs-3_3V-8MHz-ATmega328P-AU-Pro-Mini-Microcontroller-Board-For-Arduino-p-980292.html?p=0431091025639201412F)
 - [Interface clone FTDI (je déconseille ce modèle car il envoie du 5 V en mode 3.3 V, mais pour l’Arduino Pro Mini, ça n’a pas de conséquence)](http://www.miniinthebox.com/fr/programme-downloader-ftdi-basic-usb-a-ttl-ft232-pour-arduino_p903425.html)
+- [Borniers](http://www.banggood.com/20pcs-2-Pin-Plug-in-Screw-Terminal-Block-Connector-5_08mm-Pitch-p-993197.html?p=0431091025639201412F)
 
 
 ## Programme
@@ -56,6 +57,8 @@ Pour la programmation de l’Arduino Pro Mini dans l’IDE Arduino, voir <http:/
 
 
 ## Prototype sur *veroboard*
+
+> Pour diminuer la consommation d’énergie, j’ai dessoudé la LED verte qui indique que l’Arduino Pro Mini est alimenté.
 
 ![Prototype sur veroboard commande relai bistable avec Arduino Pro Mini](../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-002.jpg)
 
