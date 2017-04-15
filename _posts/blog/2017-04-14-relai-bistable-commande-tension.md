@@ -53,6 +53,11 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 > Pour la programmation de l’Arduino Pro Mini dans l’IDE Arduino, voir <http://ouilogique.com/arduino-pro-mini/>
 
 
+## Schéma électrique
+
+![Schéma électrique relai bistable Arduino Prp Mini](../../files/2017-04-14-relai-bistable-commande-tension/kicad/relai-bistable-commande-tension.sch.svg){: width="90%" }
+
+
 ## Prototype sur *breadboard*
 
 ![Prototype sur breadboard commande relai bistable avec Arduino Pro Mini](../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-001.jpg)
