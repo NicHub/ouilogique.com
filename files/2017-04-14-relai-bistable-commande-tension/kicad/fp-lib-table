@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name empreintes)(type KiCad)(uri ${KIPRJMOD}/empreintes.pretty)(options "")(descr "Crée par Nico"))
+)
