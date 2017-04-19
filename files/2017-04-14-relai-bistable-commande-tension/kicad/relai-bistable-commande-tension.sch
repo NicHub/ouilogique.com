@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:relai-bistable-commande-tension-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -87,28 +88,6 @@ F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 3250 3900 50  0001 C CNN
 F 3 "" H 3250 3900 50  0000 C CNN
 	1    3250 3900
 	1    0    0    -1  
-$EndComp
-$Comp
-L ARDUINO-PRO-MINI APM1
-U 1 1 58F25AB8
-P 3900 1850
-F 0 "APM1" H 3900 300 60  0000 C CNN
-F 1 "ARDUINO-PRO-MINI" V 3900 1000 60  0000 C CNN
-F 2 "empreintes:Arduino_Pro_Mini" H 3900 1850 60  0001 C CNN
-F 3 "" H 3900 1850 60  0001 C CNN
-	1    3900 1850
-	0    1    -1   0   
-$EndComp
-$Comp
-L RELAI-BISTABLE RB1
-U 1 1 58F25BD3
-P 3100 4850
-F 0 "RB1" H 3100 5050 60  0000 C CNN
-F 1 "RELAI-BISTABLE" H 3100 4950 60  0000 C CNN
-F 2 "empreintes:Relai_Bistable_Panasonic_ADW1203W" H 3100 4850 60  0001 C CNN
-F 3 "" H 3100 4850 60  0001 C CNN
-	1    3100 4850
-	-1   0    0    1   
 $EndComp
 $Comp
 L D D1
@@ -229,7 +208,7 @@ F 1 "~" V 3400 5650 50  0000 C TNN
 F 2 "Connectors_Phoenix:PhoenixContact_MC-G_03x5.08mm_Angled" H 3550 5325 50  0001 C CNN
 F 3 "" H 3525 5750 50  0001 C CNN
 	1    3550 5650
-	0    1    -1   0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Screw_Terminal_1x03 J1
@@ -240,28 +219,28 @@ F 1 "~" V 2500 5650 50  0000 C TNN
 F 2 "Connectors_Phoenix:PhoenixContact_MC-G_03x5.08mm_Angled" H 2650 5325 50  0001 C CNN
 F 3 "" H 2625 5750 50  0001 C CNN
 	1    2650 5650
-	0    1    -1   0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Screw_Terminal_1x02 J3
 U 1 1 58F28418
 P 4450 5650
-F 0 "J3" V 4450 5400 50  0000 C TNN
+F 0 "J3" V 4450 5900 50  0000 C TNN
 F 1 "~" V 4300 5650 50  0000 C TNN
 F 2 "Connectors_Phoenix:PhoenixContact_MC-G_02x5.08mm_Angled" H 4450 5425 50  0001 C CNN
 F 3 "" H 4425 5650 50  0001 C CNN
 	1    4450 5650
-	0    1    -1   0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L R R5
 U 1 1 58F2940D
-P 4550 5200
-F 0 "R5" V 4450 5200 50  0000 C CNN
-F 1 "1kΩ" V 4650 5200 50  0000 C CNN
-F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" V 4480 5200 50  0001 C CNN
-F 3 "" H 4550 5200 50  0000 C CNN
-	1    4550 5200
+P 4350 5200
+F 0 "R5" V 4250 5200 50  0000 C CNN
+F 1 "1kΩ" V 4450 5200 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" V 4280 5200 50  0001 C CNN
+F 3 "" H 4350 5200 50  0000 C CNN
+	1    4350 5200
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -318,17 +297,6 @@ F 2 "" H 1250 3900 50  0000 C CNN
 F 3 "" H 1250 3900 50  0000 C CNN
 	1    1250 3900
 	1    0    0    -1  
-$EndComp
-$Comp
-L OPTOCOUPLEUR-SFH620A OC1
-U 1 1 58F28B34
-P 4300 4600
-F 0 "OC1" V 4300 4700 60  0000 C CNN
-F 1 "~" H 4300 4700 60  0000 C CNN
-F 2 "empreintes:Optocoupleur_SFH620" H 4400 4600 60  0001 C CNN
-F 3 "" H 4400 4600 60  0001 C CNN
-	1    4300 4600
-	0    -1   -1   0   
 $EndComp
 $Comp
 L GND #PWR010
@@ -425,17 +393,6 @@ NoConn ~ 3000 2400
 NoConn ~ 2800 2400
 NoConn ~ 2700 2400
 $Comp
-L ALIM-IRM-03-3.3 ALIM1
-U 1 1 58F5DF1E
-P 1400 4200
-F 0 "ALIM1" H 1400 4000 60  0000 C CNN
-F 1 "ALIM-IRM-03-3.3" H 1450 3800 60  0000 C CNN
-F 2 "empreintes:AC-DC_power_supply_IRM-03" H 1400 4200 60  0001 C CNN
-F 3 "" H 1400 4200 60  0001 C CNN
-	1    1400 4200
-	-1   0    0    -1  
-$EndComp
-$Comp
 L R R0
 U 1 1 58F610DE
 P 3100 3700
@@ -490,10 +447,6 @@ Wire Wire Line
 	3750 5450 3750 4700
 Wire Wire Line
 	3750 4700 3650 4700
-Wire Wire Line
-	4550 4950 4500 4950
-Wire Wire Line
-	4400 4950 4350 4950
 Wire Wire Line
 	2500 2850 2050 2850
 Wire Wire Line
@@ -559,12 +512,6 @@ Wire Notes Line
 Connection ~ 2650 5200
 Wire Wire Line
 	3100 3550 3100 3500
-Wire Wire Line
-	4550 4950 4550 5050
-Wire Wire Line
-	4550 5350 4550 5450
-Wire Wire Line
-	4350 4950 4350 5450
 Connection ~ 2450 5800
 Wire Wire Line
 	2650 5450 2650 5200
@@ -576,4 +523,58 @@ Wire Wire Line
 Wire Wire Line
 	3200 2400 3200 2750
 NoConn ~ 3300 2400
+$Comp
+L ALIM-IRM-03-3.3 ALIM1
+U 1 1 58F76FA5
+P 1400 4200
+F 0 "ALIM1" H 1400 4000 60  0000 C CNN
+F 1 "ALIM-IRM-03-3.3" H 1450 3800 60  0000 C CNN
+F 2 "empreintes:AC-DC_power_supply_IRM-03" H 1400 4200 60  0001 C CNN
+F 3 "" H 1400 4200 60  0001 C CNN
+	1    1400 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L OPTOCOUPLEUR-SFH620A OC1
+U 1 1 58F77240
+P 4300 4600
+F 0 "OC1" V 4300 4700 60  0000 C CNN
+F 1 "~" H 4300 4700 60  0000 C CNN
+F 2 "empreintes:Optocoupleur_SFH620" H 4400 4600 60  0001 C CNN
+F 3 "" H 4400 4600 60  0001 C CNN
+	1    4300 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RELAI-BISTABLE-RESCUE-relai-bistable-commande-tension RB1
+U 1 1 58F772B1
+P 3100 4850
+F 0 "RB1" H 3100 5050 60  0000 C CNN
+F 1 "RELAI-BISTABLE" H 3100 4950 60  0000 C CNN
+F 2 "empreintes:Relai_Bistable_Panasonic_ADW1203W" H 3100 4850 60  0001 C CNN
+F 3 "" H 3100 4850 60  0001 C CNN
+	1    3100 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L ARDUINO-PRO-MINI APM1
+U 1 1 58F77B8D
+P 3900 1850
+F 0 "APM1" H 3900 300 60  0000 C CNN
+F 1 "ARDUINO-PRO-MINI" V 3900 1000 60  0000 C CNN
+F 2 "empreintes:Arduino_Pro_Mini" H 3900 1850 60  0001 C CNN
+F 3 "" H 3900 1850 60  0001 C CNN
+	1    3900 1850
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4350 5450 4350 5350
+Wire Wire Line
+	4350 5050 4350 4950
+Wire Wire Line
+	4350 4950 4400 4950
+Wire Wire Line
+	4500 4950 4550 4950
+Wire Wire Line
+	4550 4950 4550 5450
 $EndSCHEMATC

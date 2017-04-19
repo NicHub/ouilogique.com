@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# RELAI-BISTABLE-RESCUE-relai-bistable-commande-tension
+#
+DEF RELAI-BISTABLE-RESCUE-relai-bistable-commande-tension RB 0 40 Y Y 1 F N
+F0 "RB" 0 200 60 H V C CNN
+F1 "RELAI-BISTABLE-RESCUE-relai-bistable-commande-tension" 0 100 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -350 0 350 -600 0 1 0 N
+S -50 -350 -250 -450 0 1 0 F
+S 50 -350 250 -450 0 1 0 N
+P 2 0 1 0 -50 -400 50 -400 N
+P 2 0 1 0 0 -400 0 -600 N
+P 2 0 1 0 350 -150 50 -150 N
+P 3 0 1 0 -350 -150 -50 -150 50 -100 N
+P 3 0 1 0 -300 -600 -300 -400 -250 -400 N
+P 3 0 1 0 250 -400 300 -400 300 -600 N
+X ~ 3 550 -150 200 L 50 50 1 1 P
+X ~ 5 -550 -150 200 R 50 50 1 1 P
+X ~ -1 -300 -800 200 U 50 50 1 1 P
+X ~ -6 300 -800 200 U 50 50 1 1 P
+X ~ +7 0 -800 200 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
