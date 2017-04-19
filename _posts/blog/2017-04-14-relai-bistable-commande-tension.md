@@ -55,12 +55,16 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 
 ## Schéma électrique
 
-![Schéma électrique relai bistable Arduino Prp Mini](../../files/2017-04-14-relai-bistable-commande-tension/kicad/relai-bistable-commande-tension.sch.svg){: width="90%" }
+[![Schéma électrique relai bistable Arduino Prp Mini][i1]{: width="90%" }][i1]
+
+[i1]: ../../files/2017-04-14-relai-bistable-commande-tension/kicad/relai-bistable-commande-tension.sch.svg
 
 
 ## Prototype sur *breadboard*
 
-![Prototype sur breadboard commande relai bistable avec Arduino Pro Mini](../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-001.jpg)
+[![Prototype sur breadboard commande relai bistable avec Arduino Pro Mini][i2]][i2]
+
+[i2]: ../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-001.jpg
 
 
 ## Prototype sur *veroboard*
@@ -72,22 +76,37 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 > Les broches du [relai Panasonic ADW1203W][2] ne sont pas au pas de 2.54 mm. J’ai dû souder des fils aux broches et les plier pour pouvoir souder le tout sur le veroboard.
 
 
-![Prototype sur veroboard commande relai bistable avec Arduino Pro Mini](../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-002.jpg)
+[![Prototype sur veroboard commande relai bistable avec Arduino Pro Mini][i3]][i3]
 
-![Prototype sur veroboard commande relai bistable avec Arduino Pro Mini](../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-003.jpg)
+[i3]: ../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-002.jpg
 
-![Prototype sur veroboard commande relai bistable avec Arduino Pro Mini](../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-004.jpg)
+[![Prototype sur veroboard commande relai bistable avec Arduino Pro Mini][i4]][i4]
 
-![Prototype sur veroboard commande relai bistable avec Arduino Pro Mini](../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-005.png)
+[i4]: ../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-003.jpg
 
-![Prototype sur veroboard commande relai bistable avec Arduino Pro Mini](../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-006.jpg)
+[![Prototype sur veroboard commande relai bistable avec Arduino Pro Mini][i5]][i5]
+
+[i5]: ../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-004.jpg
+
+[![Prototype sur veroboard commande relai bistable avec Arduino Pro Mini][i6]][i6]
+
+[i6]: ../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-005.png
+
+[![Prototype sur veroboard commande relai bistable avec Arduino Pro Mini][i7]][i7]
+
+[i7]: ../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-006.jpg
+
+
+
 
 
 ## Tout premier prototype
 
 Le tout premier prototype était basé sur un Arduino UNO avec deux relais *solid state*, un pour la phase et l’autre pour le neutre. J’ai préféré la solution avec relai bistable pour le deuxième proto (ci-dessus), pour assurer la séparation galvanique. Le relai bistable a aussi l’avantage de ne consommer que lors des commutations. Comme il ne commute que la phase, j’ai utilisé un cordon 240 V avec une prise à 3 broches pour être sûr que c’est la phase qui est connectée au relai (et pas le neutre).
 
-![Prototype sur veroboard commande relai solid state avec Arduino UNO](../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-000.jpg)
+[![Prototype sur veroboard commande relai solid state avec Arduino UNO][i8]][i8]
+
+[i8]: ../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-000.jpg
 
 
 [1]: https://fr.aliexpress.com/item/Free-shippin-10pcs-lot-SFH620A-DIP-DIP-4-new-original/32553455903.html?spm=2114.13010608.0.0.H1VvjL
