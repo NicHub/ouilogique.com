@@ -1,4 +1,4 @@
-update=Mercredi, 19 avril 2017 'à' 17:59:54
+update=Jeudi, 20 avril 2017 'à' 13:30:54
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=librairie
@@ -70,3 +60,13 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=librairie/myLib
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=svg
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

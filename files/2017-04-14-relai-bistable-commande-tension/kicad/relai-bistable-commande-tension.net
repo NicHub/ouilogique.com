@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/nico/Sites/ouilogique.com/files/2017-04-14-relai-bistable-commande-tension/kicad/relai-bistable-commande-tension.sch)
-    (date "Mercredi, 19 avril 2017 'à' 22:25:43")
+    (date "Jeudi, 20 avril 2017 'à' 13:34:10")
     (tool "Eeschema 4.0.6")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -261,14 +261,14 @@
         (pin (num 2) (name ~) (type passive))
         (pin (num 3) (name ~) (type passive)))))
   (libraries
+    (library (logical myLib)
+      (uri /Users/nico/Sites/ouilogique.com/files/2017-04-14-relai-bistable-commande-tension/kicad/librairie/myLib.lib))
     (library (logical device)
       (uri "/Library/Application Support/kicad/library/device.lib"))
     (library (logical transistors)
       (uri "/Library/Application Support/kicad/library/transistors.lib"))
     (library (logical conn)
-      (uri "/Library/Application Support/kicad/library/conn.lib"))
-    (library (logical myLib)
-      (uri /Users/nico/Sites/ouilogique.com/files/2017-04-14-relai-bistable-commande-tension/kicad/librairie/myLib.lib)))
+      (uri "/Library/Application Support/kicad/library/conn.lib")))
   (nets
     (net (code 1) (name "Net-(R1-Pad1)")
       (node (ref R1) (pin 1))
