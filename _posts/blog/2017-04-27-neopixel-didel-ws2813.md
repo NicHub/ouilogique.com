@@ -33,7 +33,8 @@ Didel propose des exemples de programme pour Arduino <http://didel.com/WS28.zip>
 | -              | GND          |
 | +              | 5V ¹         |
 | d              | A0 ²         |
-| b              | –            |
+| b              | NC           |
+
 
 ¹ Utiliser une résistance de 220 Ω à 1 kΩ pour limiter le courant.
 ² `A0` est utilisé par défaut dans les programmes de Didel, mais n’importe quel GPIO peut être utilisé.
