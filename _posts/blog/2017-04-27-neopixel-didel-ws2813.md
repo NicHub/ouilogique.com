@@ -32,16 +32,25 @@ Didel propose des exemples de programme pour Arduino <http://didel.com/WS28.zip>
 | :-:            | :-:          |
 | -              | GND          |
 | +              | 5V ¹         |
-| d              | A0           |
+| d              | A0 ²         |
 | b              | –            |
 
 ¹ Utiliser une résistance de 220 Ω à 1 kΩ pour limiter le courant.
+² `A0` est utilisé par défaut dans les programmes de Didel, mais n’importe quel GPIO peut être utilisé.
+
 
 ## Notes
 
 On peut aussi alimenter ce strip en 3.3 V.
 
 Les programmes de Didel sont optimisés pour être aussi compacts que possible et tiennent sans problèmes sur un ATtiny.
+
+| Programme       | Taille programme | Taille variables globales |
+| :-:             | :-:              | :-:                       |
+| WS28First.ino   | 812 o (2%)       | 9 o (0%)                  |
+| RGBvsLogRGB.ino | 886 o (2%)       | 42 o (2%)                 |
+| Huetest.ino     | 1264 o  (4%)     | 23 o (1%)                 |
+
 
 
 
@@ -50,6 +59,6 @@ Les programmes de Didel sont optimisés pour être aussi compacts que possible e
 [i1]: ../../files/2017-04-27-neopixel-didel-ws2813/2017-04-27-neopixel-didel-ws2813-001.jpg
 
 
-## Voir aussi
+## Voir aussi
 
 [LED adressable P9823-F8](http://ouilogique.com/leds_adressables/)
