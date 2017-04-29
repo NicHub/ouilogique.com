@@ -1,0 +1,416 @@
+#!/bin/bash
+# AIDE-MÉMOIRE BASH
+
+### Find récursif
+sudo find . -iname \*.html
+          ^  ^     ^
+          |  |     shift-alt 7
+          |  case insensitive
+          starting from current dir
+
+### Locate (find dans une DB)
+locate
+
+### Find récursif QNAP
+sudo find . | grep -i mystring
+#   will find "mystring" anywhere with any case
+
+### Afficher les variables (Obsolète. Voir nouvelle méthode avec launchd plus bas)
+set | grep P4
+printenv | grep P4
+#	sensible à la casse
+
+# Ajout permanent d’une variable
+# Pour l’utilisateur courant, ajouter dans le fichier ~/.bash_profile
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Pour tous les utilisateurs, éditer le fichier
+/private/etc/paths
+# Ou ajouter des fichiers dans le répertoire /private/etc/paths.d/. Les variables seront concaténées.
+
+
+### md5 récursif
+find ~/Pictures -name \*.jpg -exec md5 {} \;;
+
+### Enlever le bit d’execution récursivement aux fichiers et pas aux répertoires
+find . -type f -exec chmod -x {} \;
+
+### Sha 256 récursif
+find "/Volumes/nicobook/backup_nicomac/Music/iTunes/iTunes Media/Music/" -type f -exec shasum -a 256 {} > ~/Desktop/music.txt \;;
+
+### Suppression des fichiers .DS_Store récursivement
+find ~ -name ".DS_Store" -delete
+
+# Cette version ne fonctionne plus (pas possible de déplacer des fichiers avec le même nom)
+find ~/Pictures -name .DS_Store -exec mv {} ~/.Trash/  \;;
+
+
+### Trouver une string à l'intérieur d'un fichier récursivement
+# Les paths sont affichés en relatif si le point est utilisé comme répertoire de départ et en absolu si un répertoire de départ absolu et précisé.
+# L'option i (case insensitive) ralenti la recherche d'un facteur 3.
+grep -ril --include=*.txt --include=*.php "My String" .
+
+# Mesurer le temps nécessaire pour exécuter une commande.
+{ time grep -ril "My String" . ; } > ~/Desktop/grep.txt 2> ~/Desktop/time_grep.txt
+
+
+
+
+### Changer l'éditeur par défaut
+enregistrer la commande dans ~/.bash_profile
+export EDITOR=nano
+
+
+### Port scan
+# source : http://codesnippets.joyent.com/posts/show/1325
+# first create a symbolic link
+# Before OSX 10.9
+sudo ln -s "/Applications/Utilities/Network Utility.app/Contents/Resources/stroke" /bin/portscan
+# Since OSX 10.9
+sudo ln -s "/System/Library/CoreServices/Applications/Network Utility.app/Contents/Resources/stroke" /bin/portscan
+# usage: portscan address startPort endPort
+portscan localhost 1 5000
+portscan $(/usr/sbin/ipconfig getifaddr en0 2>/dev/null || /bin/echo localhost) 1 10000
+
+
+### rsync
+# Check what will be done (remove -n to do the transfert)
+# from nicomac to nicobook
+rsync -avn --delete --progress /Users/nico/Music/iTunes /Volumes/nicobook/backup_nicomac/Music/ > ~/Desktop/rsync_itunes.txt
+
+
+# from nicobook to nicomac
+rsync -avn --delete --progress  /Volumes/nicobook/backup_nicomac/Music/iTunes/iTunes\ Music/Music/               "/Users/nico/Music/iTunes/iTunes Music/Music/"       > ~/Desktop/rsync_itunes.txt
+
+
+# from nicobook to frankmac
+rsync -avn --delete  --progress  /Volumes/nicobook/backup_nicomac/Music/iTunes/iTunes\ Music/Music/   /Users/nico/Music/iTunes/iTunes\ Media/Music/ > ~/Desktop/rsync_itunes.txt
+
+# from frankmac to nicobook
+rsync -avn --delete  --progress  /Users/nico/Music/iTunes/iTunes\ Media/Music/      /Volumes/nicobook/backup_nicomac/Music/iTunes/iTunes\ Music/Music/    > ~/Desktop/rsync_itunes.txt
+
+
+
+## Mettre des widgets Dashboard sur le bureau
+defaults write com.apple.Dashboard devmode YES
+killall Dock
+Déplacer le widget souhaité en maintenant le raccourci clavier de Dashboard appuyé (F12)
+Pour l'enlever du bureau utiliser la même méthode (il sera ouvert dans dashboard) ou maintenir la touche option appuyée et fermer le widget (il sera aussi fermé dans Dashboard)
+
+## Faire apparaître Quitter le Finder
+defaults write com.apple.finder QuitMenuItem YES
+killall Finder
+
+## Changer les paramètres par défaut lors de la création d'un compte utilisateur.
+# Faire une copie des défauts d'Apple
+mv "/System/Library/User Template/French.lproj" "/System/Library/User Template/French.lproj-original"
+
+# Créer un compte utilisateur (ou activer le compte d'invité)
+# Se logger à ce compte, faire les modifs désirées
+# Copier le répertoire ~/Library dans /System/Library/User Template/new/Library
+cp -R ~/Library /System/Library/User\ Template/new/
+
+# Se délogger
+# Se logger comme admin et changer les permissions
+sudo chown -R nico:wheel /System/Library/User\ Template/new
+# Renommer le répertoire
+mv /System/Library/User\ Template/new /System/Library/User\ Template/French.lproj
+
+# Je ne sais pas pourquoi il faut passer par un répertoire intermédiaire, mais sans ça, ça ne fonctionne pas.
+
+# Créer un iso
+1) insérer CD/DVD
+2) Ouvrir /Applications/Utilities/Disk Utility.app/
+3) Sélectionner la session à graver
+!! Typiquement il y a trois niveaux à un CD/DVD a) le drive b) la session c) le contenu de la session. C'est le niveau session qu'il faut sélectionner.
+4) Cliquer sur Nouvelle image
+4) Format d'image : maître DVD/CD
+5) Chiffrement : aucun
+6) Renommer en *iso
+
+
+# Disabling Spotlight in Snow Leopard
+sudo mdutil -a -i off
+
+# Re-enabling Spotlight in Mac OS X 10.6 Snow Leopard
+sudo mdutil -a -i on
+
+
+# Utiliser Transmit indéfiniment (!! il faut recréer les préférences à chaque fois )
+# Effacer le fichier
+mv ~/Library/Preferences/com.panic.Transmit.plist ~/.Trash/
+
+# Utiliser TextMate indéfiniment (!! il faut recréer les préférences à chaque fois )
+# Effacer le fichier
+mv ~/Library/Preferences/com.macromates.textmate.plist ~/.Trash/
+
+# Créer un lien web cliquable dans le Finder
+# Enregistrer sous monFichier.url
+# TOUJOURS FINIR PAR UN CR !!!
+[InternetShortcut]
+URL=http://www.google.ch/
+
+
+
+
+
+# Zip avec password
+# The -e flag specifies encryption is to be used on the zipfile; you'll be prompted for a password.
+# The -r flag specifies recursion; all the files in dir2 and dir4 will be included.
+# The resulting zipped, encrypted file containing dir2 and dir4 will be placed at filename.zip
+
+zip -er filename.zip dir2 dir4
+
+
+
+# Filesystem Hierarchy Standard
+http://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
+
+
+
+# Utilisation de MacPorts
+# http://www.macports.org/
+
+sudo port selfupdate
+sudo port upgrade outdated
+
+sudo port clean texlive-latex-recommended
+sudo port install texlive-latex-recommended
+
+
+# http://wiki.octave.org/Octave_for_MacOS_X#MacPorts
+# On Mavericks, Xcode command line tools must be installed prior to octave installation (see https://trac.macports.org/ticket/40810)
+xcode-select --install
+
+sudo port -v selfupdate
+sudo port clean octave-devel
+TIMEFORMAT='time : %3R s'; time( sudo port install octave-devel +atlas+docs )
+
+
+
+
+# GraphicsMagick IS INSTALLED WITH OCTAVE !!!
+
+# http://stackoverflow.com/questions/17756587/installing-graphicsmagick-on-mac-os-x-10-8
+sudo port -v selfupdate
+sudo port clean graphicsmagick
+sudo port install graphicsmagick
+
+
+
+sudo port selfupdate; sudo port upgrade outdated;
+PP=wget
+PP=ImageMagick
+PP=poppler # http://poppler.freedesktop.org
+PP=pdftk
+sudo port clean $PP; sudo port install $PP
+
+
+sudo port install ImageMagick +jbig +mpeg +rsvg +wmf
+
+
+
+
+
+
+# Enregistrer une man page
+
+# en format texte
+man ls | col -b > manpage.txt
+
+# en format postscript
+man -t pandoc_markdown | open -f -a /Applications/Preview.app
+
+
+
+
+
+
+
+# CHANGE ENVIRONMENT VARIABLES FOR THE ENTIRE SYSTEM
+# (REBOOT TO BE EFFECTIVE).
+
+# Before Mountain Lion : ~/.MacOSX/environment.plist
+# Since  Mountain Lion : /private/etc/launchd.conf
+
+# The variable P4EDITOR must be placed in /.p4config
+# This is because launchd.conf doesn’t support spaces.
+# P4EDITOR=bbedit --wait --resume
+# ou
+# P4EDITOR="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" -w --new-window
+
+
+setenv P4CLIENT frankmac
+setenv P4COMMANDCHARSET utf8
+setenv P4CONFIG .p4config
+setenv P4PORT ssl:www.nicoforce.net:1666
+setenv P4USER nico
+setenv P4IGNORE .p4ignore
+
+setenv EDITOR nano
+
+
+
+
+# Changer variable d’environnement manuellement (fonctionne pas ??)
+launchctl setenv P4IGNORE .p4ignore
+
+
+
+# ~/.bash_profile
+alias ls='ls -lGhF'
+alias la='ls -a'
+alias pisshready=until nc -vzw 2 $PIIP 22; do sleep 2; done
+alias sha='shasum -a 256'
+PS1=$'\n\n\xf0\x9f\x98\x88'"  \t – \[\033[01m\]\u@\h\[\033[00m\]:\W > "
+export P4CONFIG=.p4config
+export PIIP=192.168.1.113
+PATH=$PATH:$HOME/Documents/mes_livres/tools/
+
+
+
+#####
+# PERFORCE
+# Config Yosemite
+#####
+
+# Pour Bash + BBEdit -> dans ~/.bash_profile
+export P4CONFIG=.p4config
+
+# Pour P4V
+# http://www.perforce.com/perforce/doc.current/manuals/cmdref/envars.html
+# Exécuter une fois la commande :
+p4 set P4CONFIG=.p4config
+
+# Contenu du fichier /.p4config
+P4EDITOR=subl --wait
+P4IGNORE=.p4ignore
+P4PORT=ssl:www.nicoforce.net:1666
+P4USER=nico
+
+
+
+
+
+
+# Couleurs du shell
+
+## Pour le texte gras
+> #7F2819
+
+## Pour le fond
+> #F2F2F2
+
+
+
+
+
+# Unicode char in bash
+# http://stackoverflow.com/questions/602912/how-do-you-echo-a-4-digit-unicode-character-in-bash
+echo -n ☠ | hexdump
+echo -e "\xE2\x98\xA0"
+
+
+
+
+# Sublime Text
+# Crée un symlink vers l’exe qui permet de lancer sublimeText depuis le terminal
+
+sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+
+
+
+
+
+# #########################
+# MODIFIE LA COULEUR DANS LE FINDER
+
+# Violet
+FINDERINFO='00 00 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00'
+
+# Rouge
+#FINDERINFO='00 00 00 00 00 00 00 00 00 0C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00'
+
+# Exécute le changement de couleur
+xattr -wx com.apple.FinderInfo "`echo $FINDERINFO`" myfolder
+
+
+# Copier les attribut d’un fichier (ou répertoire) à un autre
+# xattr -wx com.apple.FinderInfo "`xattr -px com.apple.FinderInfo ./test`"  ./test2
+
+# Afficher les attributs d’un fichier (ou répertoire)
+# xattr -px com.apple.FinderInfo ./test
+
+# #########################
+
+
+
+
+
+
+# Enlever la protection Gatkeeper de tous les programmes d’un répertoire
+# http://gotofritz.net/blog/geekery/os-x-extended-attibutes/
+
+xattr -rd com.apple.quarantine *
+
+# Enlever tous les attributs de tous les fichiers du répertoire courant
+
+xattr -cr .
+
+# Enlever tous les attributs d’un fichier
+
+xattr -c $FILE
+
+
+
+# Installer pip
+curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
+sudo python get-pip.py
+rm get-pip.py
+
+
+
+# USB Statut
+
+system_profiler SPUSBDataType | pbcopy
+
+
+# copies the directory listing
+ls -l | pbcopy
+# get pasteboard lines containing foo and save them in a_file
+pbpaste | grep foo > a_file
+
+
+
+
+# Problème FileVault Yosemite
+fdesetup status
+
+
+http://apple.stackexchange.com/questions/160161/filevault-stuck-on-pause
+https://discussions.apple.com/message/26913486#26913486
+
+# > Hi,
+# > same problem, i've try the command in terminal but no way
+# > i've resolved the issued doing this:
+# > restarting my mac book pro ssd 500gb
+# > reset pram with option+cmd+p+r
+# > booting with cmd+r the utility disc (i've macintosh hd and one partition encrypted (the one with encoding paused)) >select the partition encrypted>click file and unlock>repair the partition disk>repair permission on partition>repair macintosh hd
+# > restar
+# > the encryption was resumed, after almost 9 hour the encryption ended.
+# >
+# > Hope this can help you.
+# > Federico
+
+
+
+# Obtenir le chemin du script courant
+SCRIPT_PATH=`pwd`
+echo $SCRIPT_PATH
+
+
+
+# Trouver tous les IP assignées du réseau avec port 22 ouvert
+nmap -sP -PS22 192.168.1.0/24
+
+
+

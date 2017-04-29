@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Scratchpad</title>
+
+	<style type="text/css">
+		body {
+			font-size: 20pt;
+			margin: 2em;
+		    background-color: #f2f2f2;
+		}
+		body * {
+			font-family: monospace;
+		}
+		pre, pre * {
+			font-family: monospace;
+		}
+		h1{ text-align: center; }
+	</style>
+</head>
+<body>
+
+<h1>Scratchpad</h1>
+<pre>
+
+<span style="font-size:200%; font-family:inherit,Cochin,Trebuchet MS,Helvetica Neue, Times New Roman">¥€$</span>
+
+<a href="aide-memoire_bash.txt">aide-memoire_bash.txt</a>
+
+<a href="subl.zip">Préférences Sublime Text</a>
+
+
+
+
+<a href="http://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts">Unicode subscripts and superscripts</a> ᵉʳ
+
+</pre>
+
+<table>
+
+
+<tr>
+<td><a href="http://fr.wikipedia.org/wiki/Tiret">http://fr.wikipedia.org/wiki/Tiret</a></td>
+<td></td>
+</tr>
+
+
+<tr>
+<td>demi-cadratin</td>
+<td>–</td>
+</tr>
+
+<tr>
+<td>tiret</td>
+<td>–</td>
+</tr>
+
+<tr>
+<td>cadratin</td>
+<td>—</td>
+</tr>
+
+<tr>
+<td></td>
+<td>«  »</td>
+</tr>
+
+
+<tr>
+<td></td>
+<td>“”</td>
+<td>❝❞</td>
+</tr>
+
+
+<tr>
+<td></td>
+<td>•</td>
+</tr>
+
+<tr>
+<td></td>
+<td>’</td>
+</tr>
+
+
+
+
+
+
+<tr>
+<td></td>
+<td>©</td>
+</tr>
+
+
+<tr>
+<td></td>
+<td>×</td>
+</tr>
+
+
+<tr>
+<td>&amp;middot;</td>
+<td>⋅</td>
+</tr>
+
+
+<tr>
+<td></td>
+<td>⚠</td>
+</tr>
+
+<tr>
+<td></td>
+<td>❧</td>
+</tr>
+
+<tr>
+<td></td>
+<td>❊</td>
+</tr>
+
+
+<tr>
+<td></td>
+<td>æ</td>
+</tr>
+
+
+<tr>
+<td>espace fine (&amp;#x202F;)(&amp;#8239;)</td>
+<td> </td>
+</tr>
+
+<tr>
+<td></td>
+<td>œ</td>
+</tr>
+
+
+</table>
+
+
+
+<a href="http://fr.wiktionary.org/wiki/&mu;"><b>Alphabet grec</b></a>
+<pre style="font-family: monospace;">
+ 1. alpha     Α      α
+ 2. bêta      Β      β ϐ
+ 3. gamma     Γ      γ
+ 4. delta     Δ      δ
+ 5. epsilon   Ε      ε
+ 6. dzêta     Ζ      ζ
+ 7. êta       Η      η
+ 8. thêta     Θ ϴ    θ ϑ
+ 9. iota      Ι      ι
+10. kappa     Κ      κ ϰ
+11. lambda    Λ      λ
+12. mu        Μ      μ
+13. nu        Ν      ν
+14. xi        Ξ      ξ
+15. omicron   Ο      ο
+16. pi        Π      π ϖ
+17. rhô       Ρ      ρ ϱ
+18. sigma     Σ      σ ς
+19. tau       Τ      τ
+20. upsilon   Υ      ϒ υ
+21. phi       Φ      φ ϕ
+22. khi       Χ      χ
+23. psi       Ψ      ψ
+24. omega     Ω      ω
+</pre>
+
+<pre>
+
+∽oOo~
+
+
+
+#!/bin/bash
+
+
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+or
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
+
+<hr />
+<b># Bash Time</b>
+TIMEFORMAT='time : %3R s'; time( ls )
+
+
+<hr />
+<b># Regexp to find &lt;p&gt;...&lt;/p&gt;</b>
+&lt;p&gt;(?&lt;=\&lt;p&gt;).*?(?=&lt;/p&gt;)&lt;/p&gt;
+
+
+<hr />
+<b># Regexp to find missing &laquo;</b>
+(?&lt;=\&raquo;)[^&laquo;]*?(?=&raquo;)
+
+
+<hr />
+<b># Regexp to find entities</b>
+&amp;(?&lt;=\&amp;).*?(?=;);
+
+
+<hr />
+
+<b># Trouver tous les IP assignées du réseau avec port 22 ouvert</b>
+
+<code>nmap -sP -PS22 192.168.1.0/24</code>
+
+<hr />
+
+<b># <a href="http://www.graphicsmagick.org/">GraphicsMagick.org</a></b>
+
+<b># <a href="http://www.graphicsmagick.org/GraphicsMagick.html">http://www.graphicsmagick.org/GraphicsMagick.html</a></b>
+
+<code>file=`date "+%Y-%m-%d_%H-%M-%S_out.pdf"`; gm convert *.tiff -monochrome -compress Fax $file</code>
+
+
+<b># Convert EPS to PNG with transparent background</b>
+<code>FILE=myFile; gm convert -density 200 -transparent white $FILE.eps $FILE.png;</code>
+
+
+<b># Convert JPEG’s from Apple’s Image Capture.app to PDF</b>
+
+#!/bin/bash
+filelist=`ls -1 *.jpeg | sort -n -k2 | while read -r i; do printf "'$i' "; done`
+fileout=`date "+%Y-%m-%d_%H-%M-%S_out.pdf"`
+eval "gm convert -quality 10 -level 20%,1,85% $filelist $fileout"
+
+
+
+
+<hr />
+
+<b># <a href="http://ImageMagick.org">ImageMagick.org</a></b>
+<b># <a href="http://www.imagemagick.org/Usage/formats/#pdf">http://www.imagemagick.org/Usage/formats/#pdf</a></b>
+<code>file=`date "+%Y-%m-%d_%H-%M-%S_out.pdf"`; convert *.tiff -monochrome -compress Group4 $file; open $file</code>
+<code>convert *.tiff *.tif *.png *.jpg *.jpeg  -alpha off -monochrome -compress Group4 -quality 100 -units PixelsPerInch -density 300  `date "+%Y-%m-%d_%H-%M-%S_out.pdf"`</code>
+<code>convert -density 600 in.pdf `date "+%Y-%m-%d_%H-%M-%S_out.png"`</code>
+
+<b># Convert to jpeg quality 70 in sibling folder "out"</b>
+<code>for pic in *.jpg ; do echo "$pic" ; convert "$pic" -quality 70 "../out/${pic%.jpg}.jpeg" ; done</code>
+
+<b># Créer des thumbnails</b>
+<code>mkdir ../thumbs; for pic in *.* ; do echo "$pic" ; convert "$pic" -thumbnail 'x150' "../thumbs/${pic}" ; done</code>
+
+<b># Créer des thumbnails de même taille pour Wordpress Gallery (le flag -define sert à rendre le processus plus rapide)</b>
+<code>mkdir ../thumbs; for pic in *.* ; do echo "$pic" ; convert -define jpeg:size=220x170 "$pic" -thumbnail 110x85^  -gravity center -extent 110x85  "../thumbs/thumbs_${pic}" ; done</code>
+
+<b># Créer des thumbnails avec un nom incrémenté</b>
+i=0; for pic in *.jpg ;  do echo "$pic"; let i=$i+1 ; fname=`printf "../out/nouveau_nom_%03d.jpg" $i`; convert "$pic" -quality 70 -thumbnail '1000x' $fname; done
+
+<b># Créer un pdf à partir d’une image jpeg en gardant une taille de fichier similaire</b>
+gm convert -compress jpeg  in.jpeg out.pdf
+
+<hr />
+
+
+<b># <a href="http://www.pdflabs.com/docs/pdftk-cli-examples/">PDFtk</a></b>
+<code>pdftk *.pdf cat output out.pdf</code>
+
+
+<hr />
+
+<b># <a href="http://poppler.freedesktop.org">POPPLER (install with MacPorts)</a></b>
+pdftohtml in.pdf # Create html files + extract images
+
+
+<hr />
+
+
+
+
+
+<b># Bash Rename</b>
+i=0; for NAME1 in *.JPG ;  do echo "$NAME1"; let i=$i+1 ; NAME2=`printf "NEW-NAME_%03d.jpg" $i`; mv $NAME1 $NAME2; done
+
+<hr />
+
+
+
+<code>
+# Fichier URL
+# Créer un lien web cliquable dans le Finder
+# Enregistrer sous monFichier.url
+# TOUJOURS FINIR PAR UN LF !!!
+[InternetShortcut]
+URL=http://www.google.ch/
+</code>
+
+
+
+
+<code>
+# Open BBEdit front document in Marked.
+try
+	tell application "BBEdit"
+		set myFile to get file of front document of window 1
+	end tell
+	tell application "Marked"
+		activate
+		open myFile
+	end tell
+end try
+</code>
+
+
+<code>
+
+# Liste des CDN courants
+
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+&lt;script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+&lt;script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</code>
+
+
+
+
+⇥
+⇧
+⌃
+⌥
+⌘
+
+↵
+¶
+❡
+
+
+♥♥♥♥
+♡♡♡♡
+☀☀☀☀
+♂♀►◄▲▼
+
+▶◼
+♫♪♫♬
+<span>♩♪♫♬♮♯♭</span>
+¶
+http://chexed.com/ComputerTips/asciicodes.php
+
+±×ºØ·αΣρΩΔ¼½¾⅓⅔⅛⅜⅝⅞çÉµ≤≥
+
+Exposants : ⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿⁱ
+Indices : ₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₒₓₔ
+
+
+
+<b>Asterisk</b>
+
+✻
+
+
+❤	❥	웃	유	♋	☮	✌	☏	☢	☠	✔	☑	♚	▲	♪	✈	❞	¿
+♥	❣	♂	♀	☿	Ⓐ	✍	✉	☣	☤	✘	☒	♛	▼	♫	⌘	❝	¡
+♡	ღ	ツ	☼	☁	❅	♒	✎	©	®	™	Σ	✪	✯	☭	➳	卐	✞
+℃	℉	°	✿	ϟ	☃	☂	✄	¢	€	£	∞	✫	★	½	☯	✡	☪
+
+
+
+→
+←
+↓
+↑
+
+⇐
+⇑
+⇒
+⇓
+⇔
+⇕
+⇖
+⇗
+⇘
+⇙
+
+
+༒
+࿃
+࿇
+࿈
+࿉
+࿊
+࿋
+࿌
+༗
+༺༻
+༼༽
+༿༾
+༶
+ཿ
+࿂
+྾
+྿
+࿀
+࿁
+࿂
+࿃
+࿄
+࿅
+࿆࿆࿇
+࿈
+࿉
+࿊
+࿋
+࿌
+࿏
+᠀
+᠁
+᠂
+᠃
+᠄
+᠅
+᠆
+᠇
+᠈
+᠉
+᠊
+᠐
+᠑
+᠒
+⁂
+•
+‣
+⁑
+⁓
+⁕
+⁖
+⁘
+⁙
+⁚
+⁛
+⁜
+⁝
+⁞
+⃛
+⃜
+ℂℕℙℚℝ
+ↀ
+ↁ
+ↂ
+∆
+∇
+∴
+∵
+∶
+∷
+≺≻
+⊰⊱
+⋰⋱
+⍫⍬
+
+─┐
+⚢
+⚣
+⚥
+⚦
+⚧
+⚨
+⚩
+⚪
+⚫
+⚬
+⚭
+⚮
+⚯
+♡
+♨
+
+</pre>
+</body>
+</html>
