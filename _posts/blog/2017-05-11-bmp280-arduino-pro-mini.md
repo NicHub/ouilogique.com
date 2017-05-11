@@ -44,7 +44,8 @@ Comme ce modèle de BMP280 n’a pas de régulateur de tension 3.3 V, j’en ai
 Je n’ai testé que le mode SPI (hardware) et pas le mode I²C. Les valeurs de température ont l’air un peu trop élevées et celles de pression trop faibles... à investiguer.
 
 
-![][image-1]
+[![BMP280 + Arduino Pro Mini][image-1]][image-1]
+
 
 [image-1]: ../../files/2017-05-11-bmp280-arduino-pro-mini/2017-05-11-bmp280-arduino-pro-mini-001.jpg
 [1]: http://www.banggood.com/5Pcs-3_3V-8MHz-ATmega328P-AU-Pro-Mini-Microcontroller-Board-For-Arduino-p-980292.html?p=0431091025639201412F
