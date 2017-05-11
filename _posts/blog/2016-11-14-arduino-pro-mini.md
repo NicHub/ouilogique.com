@@ -65,7 +65,7 @@ La programmation ISP fonctionne nickel, mais je n’arrive pas à [utiliser l’
 
 
 {: #prog2 }
-## Programmation de l’Arduino Pro Mini avec un convertisseur USB-série
+## Programmation de l’Arduino Pro Mini avec un convertisseur USB-série MiniInTheBox
 
 J’ai également fait un test de programmation avec [un convertisseur USB-série][3]. Là aussi, j’ai dû utiliser MiniCore avec les paramètres détaillés dans le chapitre précédent. La seule chose qui change, c’est qu’il faut téléverser le programme avec la commande `Croquis/Téléverser ⌘+U`, alors qu’avec le UNO comme programmateur, il fallait utiliser la commande `Croquis/Téléverser avec un programmateur ⇧+⌘+U`.
 
@@ -77,6 +77,36 @@ J’ai également fait un test de programmation avec [un convertisseur USB-séri
 
 ![Arduino Pro Mini + convertisseur USB-série][5]
 
+<!--
+
+{: #prog3 }
+## Programmation de l’Arduino Pro Mini avec un convertisseur USB-série Banggood
+
+Et j’ai aussi testé un [convertisseur USB-série de chez Banggood][13] qui a l’avantage de se présenter sous la forme d’un cordon USB entièrement isolé. Il est aussi livré avec un connecteur 5 broches fort pratique.
+
+Par contre les fils ne sont pas branchés dans le bon ordre, donc il faut corriger cela selon la table ci-dessous :
+
+| Arduino Pro Mini | Convertisseur |
+| :-               | :-            |
+| BLK              | blue CTS      |
+| GND              | black GND     |
+| VCC              | red 5V        |
+| RXI              | green TXD     |
+| TX0              | white RXD     |
+| GRN              | yellow RTS    |
+
+
+| Arduino Pro Mini | Convertisseur |
+| :-               | :-            |
+| BLK              | black GND     |
+| GND              | blue CTS      |
+| VCC              | red 5V        |
+| RXI              | green TXD     |
+| TX0              | white RXD     |
+| GRN              | yellow RTS    |
+
+
+-->
 
 
 [1]: http://www.banggood.com/5Pcs-3_3V-8MHz-ATmega328P-AU-Pro-Mini-Microcontroller-Board-For-Arduino-p-980292.html?p=0431091025639201412F
@@ -102,4 +132,6 @@ J’ai également fait un test de programmation avec [un convertisseur USB-séri
 [11]: ../../files/2016-11-14-arduino-pro-mini/arduino-pro-mini_lowres.jpg
 
 [12]: ../../files/2016-11-14-arduino-pro-mini/arduino-pro-mini-back.jpg
+
+[13]: https://www.banggood.com/6Pin-FTDI-FT232RL-USB-To-Serial-Adapter-Module-USB-TO-TTL-RS232-Arduino-Cable-p-1035802.html?p=0431091025639201412F
 
