@@ -16,7 +16,7 @@ author: Nico
 ## Matériel
 
 - [BMP280 acheté chez Banggood pour 1.98 $][2]
-- [ATmega328P-AU Pro Mini 3.3V 8MHz (oscillateur interne ⇒ pas de quartz), acheté chez Banggood pour 13 $ les 5 pièces][1]
+- [ATmega328P-AU Pro Mini 3.3V 8MHz, acheté chez Banggood pour 13 $ les 5 pièces][1]
 - [Programmateur FTDI][3]
 
 
@@ -41,7 +41,7 @@ Comme ce modèle de BMP280 n’a pas de régulateur de tension 3.3 V, j’en ai
 
 ## Résultats
 
-Je n’ai testé que le mode SPI et pas le mode I²C. Les valeurs de température ont l’air un peu trop élevées et celles de pression trop faibles... à investiguer.
+Je n’ai testé que le mode SPI (hardware) et pas le mode I²C. Les valeurs de température ont l’air un peu trop élevées et celles de pression trop faibles... à investiguer.
 
 
 ![][image-1]

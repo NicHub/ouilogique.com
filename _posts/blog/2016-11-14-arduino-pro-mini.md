@@ -22,7 +22,7 @@ L’Arduino Pro Mini n’a pas d’UART visible sur le port USB de l’ordinateu
 
 ## Matériel
 
-- [ATmega328P-AU Pro Mini 3.3V 8MHz (oscillateur interne ⇒ pas de quartz), acheté chez Banggood pour 13 $ les 5 pièces][1]
+- [ATmega328P-AU Pro Mini 3.3V 8MHz, acheté chez Banggood pour 13 $ les 5 pièces][1]
 - [Programmateur FTDI][3]
 
 {: #prog1 }
