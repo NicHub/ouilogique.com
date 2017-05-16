@@ -22,7 +22,7 @@ C’est un écran tactile résistif avec un lecteur de carte micro SD intégré.
 
 > Avant de faire quoi que ce soit, il semble que ça soit une bonne idée d’isoler le connecteur USB de l’Arduino UNO avec de l’adhésif Kapton par exemple.
 
-![](/files/2015-08-14-2-4-in_TFT_Touch_screen/2-4-in_TFT_Touch_screen_front.jpg)
+[![mcufriend LCD touch screen][1]][1]
 
 Pour arriver à ce résultat, il faut tout d’abord télécharger trois librairies d’Adafruit :
 
@@ -95,8 +95,7 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 ---
 
 
-
-![](/files/2015-08-14-2-4-in_TFT_Touch_screen/2-4-in_TFT_Touch_screen_ouilogique_com.jpg)
+[![mcufriend LCD touch screen][2]][2]
 
 
 
@@ -114,7 +113,7 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 
 ### Pinout
 
-![](/files/2015-08-14-2-4-in_TFT_Touch_screen/2-4-in_TFT_Touch_screen_back.jpg)
+[![mcufriend LCD touch screen][3]][3]
 
 
 | ARDUINO PIN | LCD SHIELD PIN    | USE                               |
@@ -143,9 +142,22 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 | D12         | SD_DO             | SD Data                           |
 | D13         | SD_SCK            | SD Clock                          |
 
-
 &nbsp;
 
 > ¹ On constate que le shield ne laisse que 3 broches libres : A5, D0 et D1. Comme D0 et D1 ne sont pas utilisées, on peut faire communiquer l’Arduino avec un autre système via RS232.
 
 &nbsp;
+
+# LCD Drivers
+
+Les deux drivers LCD sont des TM74HC245.
+
+[Datasheet en chinois](http://www.szjdf.net/Private/ProductFiles/595775de665f4acba6a1.pdf)
+[Datasheet traduite par Google](https://goo.gl/hKB7W1)
+
+[![TM74HC245][10]][10]
+
+[1]: ../../files/2015-08-14-2-4-in_TFT_Touch_screen/2-4-in_TFT_Touch_screen_front.jpg
+[2]: ../../files/2015-08-14-2-4-in_TFT_Touch_screen/2-4-in_TFT_Touch_screen_ouilogique_com.jpg
+[3]: ../../files/2015-08-14-2-4-in_TFT_Touch_screen/2-4-in_TFT_Touch_screen_back.jpg
+[10]: ../../files/2015-08-14-2-4-in_TFT_Touch_screen/2-4-in_TFT_Touch_screen_ouilogique_TM74HC245_videoinverse.jpg
