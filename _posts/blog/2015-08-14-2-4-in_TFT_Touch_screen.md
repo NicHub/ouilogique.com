@@ -116,35 +116,37 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 [![mcufriend LCD touch screen][3]][3]
 
 
-| ARDUINO PIN | LCD SHIELD PIN    | USE                               |
-| :--         | :--               | :--                               |
-| 3.3V        | 3.3V              | Power                             |
-| 5V          | 5V                | Power                             |
-| GND         | GND               | Power                             |
-| A0          | LCD_RD            | LCD Control                       |
-| A1          | LCD_WR  TOUCH_YP  | LCD Control / Touch Data          |
-| A2          | LCD_RS  TOUCH_XM  | LCD Control / Touch Data          |
-| A3          | LCD_CS            | LCD Control                       |
-| A4          | LCD_RST           | LCD Reset                         |
-| A5          | ¹                 | -                                 |
-| D0          | ¹                 | *(RXD pas utilisé par le shield)* |
-| D1          | ¹                 | *(TXD pas utilisé par le shield)* |
-| D2          | LCD_D2            | LCD Data                          |
-| D3          | LCD_D3            | LCD Data                          |
-| D4          | LCD_D4            | LCD Data                          |
-| D5          | LCD_D5            | LCD Data                          |
-| D6          | LCD_D6 / TOUCH XP | LCD Data/ Touch Data              |
-| D7          | LCD_D7 / TOUCH YM | LCD Data / Touch Data             |
-| D8          | LCD_D0            | LCD Data                          |
-| D9          | LCD_D1            | LCD Data                          |
-| D10         | SD_CS             | SD Select                         |
-| D11         | SD_DI             | SD Data                           |
-| D12         | SD_DO             | SD Data                           |
-| D13         | SD_SCK            | SD Clock                          |
+| ARDUINO PIN | LCD SHIELD PIN    | USE                      |
+| :--         | :--               | :--                      |
+| 3.3V        | 3.3V              | Power                    |
+| 5V          | 5V                | Power                    |
+| GND         | GND               | Power                    |
+| A0          | LCD_RD            | LCD Control              |
+| A1          | LCD_WR  TOUCH_YP  | LCD Control / Touch Data |
+| A2          | LCD_RS  TOUCH_XM  | LCD Control / Touch Data |
+| A3          | LCD_CS            | LCD Control              |
+| A4          | LCD_RST           | LCD Reset                |
+| A5 ¹        | ¹                 | -                        |
+| D0 ¹        | ¹                 | -                        |
+| D1 ¹        | ¹                 | -                        |
+| D2          | LCD_D2            | LCD Data                 |
+| D3          | LCD_D3            | LCD Data                 |
+| D4          | LCD_D4            | LCD Data                 |
+| D5          | LCD_D5            | LCD Data                 |
+| D6          | LCD_D6 / TOUCH XP | LCD Data/ Touch Data     |
+| D7          | LCD_D7 / TOUCH YM | LCD Data / Touch Data    |
+| D8          | LCD_D0            | LCD Data                 |
+| D9          | LCD_D1            | LCD Data                 |
+| D10 ²       | SD_CS ²           | SD Select                |
+| D11 ²       | SD_DI ²           | SD Data                  |
+| D12 ²       | SD_DO ²           | SD Data                  |
+| D13 ²       | SD_SCK ²          | SD Clock                 |
 
 &nbsp;
 
 > ¹ On constate que le shield ne laisse que 3 broches libres : A5, D0 et D1. Comme D0 et D1 ne sont pas utilisées, on peut faire communiquer l’Arduino avec un autre système via RS232.
+
+> ² Si on n’utilise pas la carte SD, on peut libérer les 4 broches D10 à D13 (bus SPI), ce qui fait un total de 7 broches libres.
 
 &nbsp;
 
