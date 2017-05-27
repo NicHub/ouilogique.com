@@ -65,11 +65,14 @@ La programmation ISP fonctionne nickel, mais je n’arrive pas à [utiliser l’
 
 ### Programmation ISP avec un autre Arduino Pro Mini
 
-C’est la même chose qu’avec l’Arduino UNO. Donc voici la photo du montage :
+J’ai testé cette solution 6 mois plus tard que celle avec l’Arduino UNO, mais c’est le même principe dans les deux cas. Donc voici la photo du montage :
 
 [![Arduino Pro Mini programmation ISP][14]][14]
 
 Avec ce montage, l’IDE Arduino version 1.8.2 accepte de graver le bootloader qui permet ensuite d’utiliser l’option “Arduino Pro or Pro Mini” standard de l’IDE. Cependant, les fusibles sont toujours à 0.
+
+⚠ Sur la photo, le convertisseur USB-série est branché sur l’Arduino cible. Lors de la programmation, il doit être branché sur l’autre Arduino. On voit aussi que j’ai dû ajouter un régulateur de tension 3.3 V (voir ci-dessous).
+
 
 {: #prog2 }
 ## Programmation de l’Arduino Pro Mini avec un convertisseur USB-série MiniInTheBox
@@ -78,13 +81,15 @@ J’ai également fait un test de programmation avec [un convertisseur USB-séri
 
 ⚠ Ce convertisseur envoie toujours du 5 V sur VCC, même en mode 3.3 V. Il faut donc lui ajouter un régulateur de tension. Je m’en suis fait un que l’on voit sur la photo du chapitre précédent.
 
-![convertisseur USB-série][6]
+⚠ Les broches CTS et GND sont permutées sur l’Arduino Pro Mini et sur le convertisseur. Curieusement, il semble que CTS soit en fait connecté à GND, parce que ça marche quand même avec la permutation.
 
-![Arduino Pro Mini][11]
+[![convertisseur USB-série][6]][6]
 
-![Arduino Pro Mini Back][12]
+[![Arduino Pro Mini][11]][11]
 
-![Arduino Pro Mini + convertisseur USB-série][5]
+[![Arduino Pro Mini Back][12]][12]
+
+[![Arduino Pro Mini + convertisseur USB-série][5]][5]
 
 <!--
 
