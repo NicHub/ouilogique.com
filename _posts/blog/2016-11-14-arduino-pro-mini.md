@@ -44,9 +44,9 @@ La procédure d’utilisation est très bien détaillée sur la page GitHub de M
 
 La configuration que j’ai utilisée est la suivante :
 
-![Configuration MiniCore programmation d’Arduino Pro Mini][7]
+[![Configuration MiniCore programmation d’Arduino Pro Mini][7]][7]
 
-![Programmation d’Arduino Pro Mini][8]
+[![Programmation d’Arduino Pro Mini][8]][8]
 
 La programmation ISP fonctionne nickel, mais je n’arrive pas à [utiliser l’ESP8266 comme bridge USB‑RS232][9].
 
@@ -63,11 +63,20 @@ La programmation ISP fonctionne nickel, mais je n’arrive pas à [utiliser l’
 | 12  | 12       |
 | 13  | 13       |
 
+### Programmation ISP avec un autre Arduino Pro Mini
+
+C’est la même chose qu’avec l’Arduino UNO. Donc voici la photo du montage :
+
+[![Arduino Pro Mini programmation ISP][14]][14]
+
+Avec ce montage, l’IDE Arduino version 1.8.2 accepte de graver le bootloader qui permet ensuite d’utiliser l’option “Arduino Pro or Pro Mini” standard de l’IDE. Cependant, les fusibles sont toujours à 0.
 
 {: #prog2 }
 ## Programmation de l’Arduino Pro Mini avec un convertisseur USB-série MiniInTheBox
 
 J’ai également fait un test de programmation avec [un convertisseur USB-série][3]. Là aussi, j’ai dû utiliser MiniCore avec les paramètres détaillés dans le chapitre précédent. La seule chose qui change, c’est qu’il faut téléverser le programme avec la commande `Croquis/Téléverser ⌘+U`, alors qu’avec le UNO comme programmateur, il fallait utiliser la commande `Croquis/Téléverser avec un programmateur ⇧+⌘+U`.
+
+⚠ Ce convertisseur envoie toujours du 5 V sur VCC, même en mode 3.3 V. Il faut donc lui ajouter un régulateur de tension. Je m’en suis fait un que l’on voit sur la photo du chapitre précédent.
 
 ![convertisseur USB-série][6]
 
@@ -135,3 +144,4 @@ Par contre les fils ne sont pas branchés dans le bon ordre, donc il faut corrig
 
 [13]: https://www.banggood.com/6Pin-FTDI-FT232RL-USB-To-Serial-Adapter-Module-USB-TO-TTL-RS232-Arduino-Cable-p-1035802.html?p=0431091025639201412F
 
+[14]: ../../files/2016-11-14-arduino-pro-mini/arduino-pro-mini-as-isp_lowres.jpg
