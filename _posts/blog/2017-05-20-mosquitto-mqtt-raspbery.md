@@ -23,9 +23,10 @@ author: Nico
 
 Cette étape est optionnelle. Elle est surtout utile si vous voulez démarrer de zéro.
 
-- Télécharger [Raspbian Jessie with Pixel][1] au format zip.
+- Télécharger [Raspbian Jessie with Pixel][1] au format zip. Pas besoin de décompresser le zip.
 - Télécharger [Etcher][2].
 - Insérer la carte SD dans le lecteur du Mac.
+- Dans les préférences (icône en forme de roue dentée en haut à droite), décocher “auto-unmount on success”.
 - Flasher le fichier zip sur la carte SD avec Etcher.
 - Enlever et remettre la carte SD dans le lecteur (parce que par défaut, Etcher démonte le disque après le flashage).
 - Créer un fichier texte vide s’appelant `ssh` à la racine de la carte pour autoriser les connexions SSH.
@@ -35,14 +36,30 @@ Cette étape est optionnelle. Elle est surtout utile si vous voulez démarrer de
 ## Installation de Mosquitto MQTT
 
 - Sur le Mac, ouvrir le Terminal et taper la commande `ssh pi@raspberrypi.local`. Quand SSH demande d’autoriser la connexion, répondre `yes` en toutes lettres, puis entrer le mot de passe par défaut `raspberry`.
-- Installer les mises à jour du système et installer `mosquitto` :
+- Changer la zone horaire avec `sudo raspi-config`, puis sélectionner `4 Localisation Options/I2 Change Timezone`.
+- Installer les mises à jour du système :
 
 {% highlight bash %}
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get dist-upgrade
+sudo apt-get update # ~ 2 min
+sudo apt-get upgrade # ~ 12 min
+sudo apt-get dist-upgrade # ~ 0 min
+{% endhighlight %}
+
+- Installer GNU `screen` :
+
+{% highlight bash %}
+sudo apt-get install screen
+nano ~/.screenrc
+# Ajouter l’instruction suivante dans ~/.screenrc
+shell -$SHELL
+{% endhighlight %}
+
+- Installer `mosquitto` :
+
+{% highlight bash %}
 sudo apt-get install mosquitto mosquitto-clients python-mosquitto
 {% endhighlight %}
+
 
 - Pour les tests, il faut commenter la ligne suivante dans le fichier `mosquitto.conf`
 
