@@ -60,11 +60,34 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 [i1]: ../../files/2017-04-14-relai-bistable-commande-tension/kicad/svg/relai-bistable-commande-tension.sch.svg
 
 
-## Prototype sur *breadboard*
+## Montage final avec PCB
 
-[![Prototype sur breadboard commande relai bistable avec Arduino Pro Mini][i2]][i2]
+J’ai designé le PCB sur KiCad et je l’ai fait fabriquer chez [SeeedStudio](https://www.seeedstudio.com/fusion_pcb.html).
 
-[i2]: ../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-001.jpg
+[![PCB commande relai bistable avec Arduino Pro Mini][i9]{:style="width:60%;"}][i9]
+
+[i9]: ../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-007.jpg
+
+[![commande relai bistable avec Arduino Pro Mini][i10]{:style="width:50%; float:left"}][i10]
+
+[i10]: ../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-008.jpg
+
+[![commande relai bistable avec Arduino Pro Mini][i11]{:style="width:50%; float:left"}][i11]
+
+[i11]: ../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-009.jpg
+
+[![commande relai bistable avec Arduino Pro Mini][i12]{:style="width:50%; float:left"}][i12]
+
+[i12]: ../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-010.jpg
+
+[![commande relai bistable avec Arduino Pro Mini][i13]{:style="width:50%"}][i13]
+
+[i13]: ../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-011.jpg
+
+[![Montage final commande relai bistable avec Arduino Pro Mini][i14]{:style="width:100%; margin-top: 50px;"}][i14]
+
+[i14]: ../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-012.jpg
+
 
 
 ## Prototype sur *veroboard*
@@ -98,9 +121,17 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 
 
 
+## Prototype sur *breadboard*
+
+Avec un relai bistable au lieu des relais *solid state*.
+
+[![Prototype sur breadboard commande relai bistable avec Arduino Pro Mini][i2]][i2]
+
+[i2]: ../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-001.jpg
 
 
-## Tout premier prototype
+
+## Tout premier prototype dans une boîte en carton...
 
 Le tout premier prototype était basé sur un Arduino UNO avec deux relais *solid state*, un pour la phase et l’autre pour le neutre. J’ai préféré la solution avec relai bistable pour le deuxième proto (ci-dessus), pour assurer la séparation galvanique. Le relai bistable a aussi l’avantage de ne consommer que lors des commutations. Comme il ne commute que la phase, j’ai utilisé un cordon 240 V avec une prise à 3 broches pour être sûr que c’est la phase qui est connectée au relai (et pas le neutre).
 
