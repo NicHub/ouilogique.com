@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature: veroboard-relai-bistable.jpg
+     feature: relai-bistable-commande-tension-pcb-1490x745.jpg
 date: 2017-04-14T10:00:00+02:00
 published: true
 author: Nico
