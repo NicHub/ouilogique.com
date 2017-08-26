@@ -50,6 +50,7 @@ author: Nico
 
 	nano ~/.bash_profile
 
+	# Copier-coller les commandes suivantes dans .bash_profile
 	PS1=$'\n\n\xf0\x9f\x98\xBA'"  \t – \[\033[01;32m\]\u@\h\[\033[00m\]:\W > "
 	alias ls='ls -lGhF'
 	alias la='ls -a'
