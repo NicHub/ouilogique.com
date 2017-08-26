@@ -50,10 +50,10 @@ author: Nico
 
 	nano ~/.bash_profile
 
-PS1=$'\n\n\xf0\x9f\x98\xBA'"  \t – \[\033[01;32m\]\u@\h\[\033[00m\]:\W > "
-alias ls='ls -lGhF'
-alias la='ls -a'
-alias gs='git status'
+	PS1=$'\n\n\xf0\x9f\x98\xBA'"  \t – \[\033[01;32m\]\u@\h\[\033[00m\]:\W > "
+	alias ls='ls -lGhF'
+	alias la='ls -a'
+	alias gs='git status'
 
 	source ~/.bash_profile
 
