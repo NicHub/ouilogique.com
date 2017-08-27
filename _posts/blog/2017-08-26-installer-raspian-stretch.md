@@ -55,6 +55,8 @@ author: Nico
 	alias ls='ls -lGhF'
 	alias la='ls -a'
 	alias gs='git status'
+	IP=$(hostname -I | awk '{print $1}')
+	alias pyserver='PORT=4000; echo -e "\nhttp://localhost:$PORT"; echo -e "http://$IP:$PORT\n"; python -m SimpleHTTPServer $PORT'
 
 	source ~/.bash_profile
 
@@ -63,3 +65,13 @@ author: Nico
 	# Update
 
 
+## Quelques programmes utiles
+
+### GNU screen
+
+	sudo apt-get --assume-yes install screen
+	echo "shell -$SHELL" > ~/.screenrc # Pour que screen lise .bash_profile
+	screen # Démarre un nouveau shell
+	# ctrl-A ctrl-D # revient au shell principal
+	screen -ls # liste des shells
+	screen -r xxxx # xxxx = no du shell que l’on veut activer
