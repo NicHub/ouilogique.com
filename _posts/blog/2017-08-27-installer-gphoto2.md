@@ -19,6 +19,10 @@ Ancienne URL
 http://ouilogique.com/gphoto2/
 -->
 
+La bibliothèque GPHOTO2 est utilisée par des applications pour accéder à une grande variété de modèles d’appareils photo numériques, à l’aide des protocoles standards comme l’USB Mass Storage et PTP, ou à l’aide des protocoles propres aux fabricants.
+
+Dans cet article, je présente l’installation de GPHOTO2 sous MaxOS Sierra et sous Raspbian Stretch.
+
 
 # Installation de GPHOTO2 sur *MacOS Sierra*
 
@@ -74,8 +78,8 @@ L’installation de GPHOTO2 sur *MacOS Sierra* se fait avec [Homebrew](https://b
 
 > Pour installer la version 2.5.14
 
-	wget http://archive.raspbian.org/raspbian/pool/main/g/gphoto2/gphoto2_2.5.14-1_armhf.deb \
-	http://archive.raspbian.org/raspbian/pool/main/libg/libgphoto2/libgphoto2-6_2.5.14-1_armhf.deb
+	wget http://archive.raspbian.org/raspbian/pool/main/g/gphoto2/gphoto2_2.5.14-1_armhf.deb
+	wget http://archive.raspbian.org/raspbian/pool/main/libg/libgphoto2/libgphoto2-6_2.5.14-1_armhf.deb
 	sudo dpkg -i gphoto2_2.5.14-1_armhf.deb libgphoto2-6_2.5.14-1_armhf.deb
 	rm gphoto2_2.5.14-1_armhf.deb libgphoto2-6_2.5.14-1_armhf.deb
 	gphoto2 -v
@@ -117,7 +121,7 @@ L’installation de GPHOTO2 sur *MacOS Sierra* se fait avec [Homebrew](https://b
 - <https://www.raspberrypi.org/forums/viewtopic.php?t=186405>
 - <http://archive.raspbian.org/raspbian/pool/main/g/gphoto2/>
 - <https://github.com/NicHub/ouilogique.com/commit/d4f594d08b8c9a30e6577072fafda794f4ec93bc>
-
+- <https://packages.debian.org/stretch/gphoto2>
 
 [1]: http://ouilogique.com/installer-raspian-stretch/
 
