@@ -43,35 +43,41 @@ author: Nico
 
 ## Mise à jour de Raspbian
 
-    sudo apt-get --assume-yes update # ~23 s
-    sudo apt-get --assume-yes dist-upgrade # ~3min
+{% highlight bash %}
+sudo apt-get --assume-yes update # ~23 s
+sudo apt-get --assume-yes dist-upgrade # ~3min
+{% endhighlight %}
 
 ## Configuration
 
-	nano ~/.bash_profile
+{% highlight bash %}
+nano ~/.bash_profile
 
-	# Copier-coller les commandes suivantes dans .bash_profile
-	PS1=$'\n\n\xf0\x9f\x98\xBA'"  \t – \[\033[01;32m\]\u@\h\[\033[00m\]:\W > "
-	alias ls='ls -lGhF'
-	alias la='ls -a'
-	alias gs='git status'
-	IP=$(hostname -I | awk '{print $1}')
-	alias pyserver='PORT=4000; echo -e "\nhttp://localhost:$PORT"; echo -e "http://$IP:$PORT\n"; python -m SimpleHTTPServer $PORT'
+# Copier-coller les commandes suivantes dans .bash_profile
+PS1=$'\n\n\xf0\x9f\x98\xBA'"  \t – \[\033[01;32m\]\u@\h\[\033[00m\]:\W > "
+alias ls='ls -lGhF'
+alias la='ls -a'
+alias gs='git status'
+IP=$(hostname -I | awk '{print $1}')
+alias pyserver='PORT=4000; echo -e "\nhttp://localhost:$PORT"; echo -e "http://$IP:$PORT\n"; python -m SimpleHTTPServer $PORT'
 
-	source ~/.bash_profile
+source ~/.bash_profile
 
-	sudo raspi-config
-	# Localisation Options
-	# Update
+sudo raspi-config
+# Localisation Options
+# Update
+{% endhighlight %}
 
 
 ## Quelques programmes utiles
 
 ### GNU screen
 
-	sudo apt-get --assume-yes install screen
-	echo "shell -$SHELL" > ~/.screenrc # Pour que screen lise .bash_profile
-	screen # Démarre un nouveau shell
-	# ctrl-A ctrl-D # revient au shell principal
-	screen -ls # liste des shells
-	screen -r xxxx # xxxx = no du shell que l’on veut activer
+{% highlight bash %}
+sudo apt-get --assume-yes install screen
+echo "shell -$SHELL" > ~/.screenrc # Pour que screen lise .bash_profile
+screen # Démarre un nouveau shell
+# ctrl-A ctrl-D # revient au shell principal
+screen -ls # liste des shells
+screen -r xxxx # xxxx = no du shell que l’on veut activer
+{% endhighlight %}
