@@ -48,8 +48,6 @@ L’installation de GPHOTO2 sur *MacOS Sierra* se fait avec [Homebrew](https://b
 	# libgphoto2_port 0.12.0         clang, ltdl, USB, serial without locking
 
 
-
-
 # Installation de GPHOTO2 sur *Raspbian Stretch*
 
 > GPHOTO2 n’est disponible qu’à la version 2.5.4 sur *Raspbian Jessie* avec la commande `sudo apt-get install gphoto2`. Il est donc préférable d’utiliser [*Raspbian Stretch*][1]. Sur *Raspbian Stretch*, la version par défaut est la 2.5.11, mais il est possible d’installer manuellement la version 2.5.14.
@@ -100,8 +98,8 @@ L’installation de GPHOTO2 sur *MacOS Sierra* se fait avec [Homebrew](https://b
 
 # Quelques commandes utiles
 
-	# Connecter un appareil de photo.
-	# J’ai testé avec un Nikon DSC D3200 et ça fonctionne
+	# Connecter un appareil de photo sur un port USB du Raspberry.
+	# J’ai testé avec un Nikon D3200 et ça fonctionne
 	gphoto2 --auto-detect
 	gphoto2 --abilities
 	gphoto2 --summary
@@ -110,6 +108,19 @@ L’installation de GPHOTO2 sur *MacOS Sierra* se fait avec [Homebrew](https://b
 	cd gphoto2/
 	gphoto2 --capture-image-and-download --interval 2 --frames 2 --filename=image_%Y-%m-%d_%H-%M-%S.jpg
 
+
+# Pour visionner les photos
+
+Un moyen simple de visionner les photos est de créer un mini serveur web sur le Raspberry. Pour démarrer ce serveur, il suffit d’utiliser les commandes suivantes, puis de copier-coller l’URL (par exemple http://192.168.1.135:4000) dans un navigateur.
+
+	# Ces deux commandes peuvent être copié-collées directement dans le terminal ou mises dans le fichier ~/.bash_profile.
+	# Voir http://ouilogique.com/installer-raspian-stretch/#configuration.
+	IP=$(hostname -I | awk '{print $1}')
+	alias pyserver='PORT=4000; echo -e "\nhttp://localhost:$PORT"; echo -e "http://$IP:$PORT\n"; python -m SimpleHTTPServer $PORT'
+	# Démarre le serveur (ctrl-C pour l’arrêter)
+	pyserver
+
+Comme le serveur bloque la ligne de commande, il est préférable de l’utiliser dans un autre shell avec l’utilitaire [`gnu screen`][2].
 
 
 # Quelques liens
@@ -124,4 +135,4 @@ L’installation de GPHOTO2 sur *MacOS Sierra* se fait avec [Homebrew](https://b
 - <https://packages.debian.org/stretch/gphoto2>
 
 [1]: http://ouilogique.com/installer-raspian-stretch/
-
+[2]: http://ouilogique.com/installer-raspian-stretch/#gnu-screen
