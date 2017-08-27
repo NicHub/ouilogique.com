@@ -116,6 +116,8 @@ L’installation de GPHOTO2 sur *MacOS Sierra* se fait avec [Homebrew](https://b
 - <https://github.com/gphoto/gphoto2/issues/72>
 - <https://www.raspberrypi.org/forums/viewtopic.php?t=186405>
 - <http://archive.raspbian.org/raspbian/pool/main/g/gphoto2/>
+- <https://github.com/NicHub/ouilogique.com/commit/d4f594d08b8c9a30e6577072fafda794f4ec93bc>
 
- [1]: http://ouilogique.com/installer-raspian-stretch/
+
+[1]: http://ouilogique.com/installer-raspian-stretch/
 
