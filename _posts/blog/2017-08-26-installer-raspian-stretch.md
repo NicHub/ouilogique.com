@@ -16,16 +16,16 @@ author: Nico
 
 - Un Raspberry Pi modèle 2
 - Une carte SD 32 GB
-- Un ordinateur MacOS Sierra
+- Un ordinateur macOS Sierra
 - Un routeur
-- Un câble ethernet
+- Un câble Ethernet
 
 > Pas besoin d’écran, de clavier ou de souris pour le Raspberry, nous utiliserons uniquement SSH pour nous connecter au RPi depuis le Mac.
 
 ## Préparation (~15 min)
 
 - Télécharger RASPBIAN STRETCH WITH DESKTOP (1.76 Go) <https://www.raspberrypi.org/downloads/raspbian/>
-- Décompresser l’archive `2017-08-16-raspbian-stretch.zip`. Elle contient une image disque qui se nomme `2017-08-16-raspbian-stretch.img`. Sur MacOS Sierra, l’utilitaire d’archive par défaut se débrouille très bien pour la décompression.
+- Décompresser l’archive `2017-08-16-raspbian-stretch.zip`. Elle contient une image disque qui se nomme `2017-08-16-raspbian-stretch.img`. Sur macOS Sierra, l’utilitaire d’archive par défaut se débrouille très bien pour la décompression.
 - Télécharger et installer Etcher <https://etcher.io/>
 - Ouvrir Etcher et dans les options (icône en forme de roue dentée en haut à droite), décocher l’option “Auto-unmount on success”, puis cliquer sur “Back” pour revenir à l’écran d’accueil.
 
