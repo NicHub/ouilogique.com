@@ -16,7 +16,7 @@ author: Nico
 
 - Un Raspberry Pi modèle 2
 - Une carte SD 32 GB
-- Un ordinateur Mac OS Sierra
+- Un ordinateur MacOS Sierra
 - Un routeur
 - Un câble ethernet
 

@@ -28,22 +28,70 @@ L’installation de GPHOTO2 sur *MacOS Sierra* se fait avec [Homebrew](https://b
 	brew install gphoto2
 	# Ou pour mettre à jour
 	brew upgrade gphoto2
-	gphoto2 -v # gphoto2 2.5.14
+	gphoto2 -v
+
+	# gphoto2 2.5.14
+	#
+	# Copyright (c) 2000-2016 Lutz Mueller and others
+	#
+	# gphoto2 comes with NO WARRANTY, to the extent permitted by law. You may
+	# redistribute copies of gphoto2 under the terms of the GNU General Public
+	# License. For more information about these matters, see the files named COPYING.
+	#
+	# This version of gphoto2 is using the following software versions and options:
+	# gphoto2         2.5.14         clang, popt(m), no exif, no cdk, no aa, jpeg, readline
+	# libgphoto2      2.5.14         all camlibs, clang, ltdl, no EXIF
+	# libgphoto2_port 0.12.0         clang, ltdl, USB, serial without locking
+
 
 
 
 # Installation de GPHOTO2 sur *Raspbian Stretch*
 
-> GPHOTO2 n’est disponible qu’à la version 2.5.4 sur *Raspbian Jessie* avec la commande `sudo apt-get install gphoto2`. Il est donc préférable d’utiliser [*Raspbian Stretch*][1].
+> GPHOTO2 n’est disponible qu’à la version 2.5.4 sur *Raspbian Jessie* avec la commande `sudo apt-get install gphoto2`. Il est donc préférable d’utiliser [*Raspbian Stretch*][1]. Sur *Raspbian Stretch*, la version par défaut est la 2.5.11, mais il est possible d’installer manuellement la version 2.5.14.
 
 	sudo apt-get --assume-yes install gphoto2
-	gphoto2 -v # gphoto2 2.5.11
+	gphoto2 -v
+
+	# gphoto2 2.5.11
+	#
+	# Copyright (c) 2000-2016 Lutz Mueller and others
+	#
+	# gphoto2 comes with NO WARRANTY, to the extent permitted by law. You may
+	# redistribute copies of gphoto2 under the terms of the GNU General Public
+	# License. For more information about these matters, see the files named COPYING.
+	#
+	# This version of gphoto2 is using the following software versions and options:
+	# gphoto2         2.5.11         gcc, popt(m), exif, cdk, aa, jpeg, readline
+	# libgphoto2      2.5.12         all camlibs, gcc, ltdl, EXIF
+	# libgphoto2_port 0.12.0         gcc, ltdl, USB, serial without locking
 
 > GPHOTO2 entre en conflit avec *gvfs-gphoto2-volume-monitor* et il est donc nécessaire de le désactiver avec les commandes suivantes :
 
 	sudo chmod -x /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
 	sudo reboot
 	ssh pi@raspberrypi.local
+
+> Pour installer la version 2.5.14
+
+	wget http://archive.raspbian.org/raspbian/pool/main/g/gphoto2/gphoto2_2.5.14-1_armhf.deb \
+	http://archive.raspbian.org/raspbian/pool/main/libg/libgphoto2/libgphoto2-6_2.5.14-1_armhf.deb
+	sudo dpkg -i gphoto2_2.5.14-1_armhf.deb libgphoto2-6_2.5.14-1_armhf.deb
+	rm gphoto2_2.5.14-1_armhf.deb libgphoto2-6_2.5.14-1_armhf.deb
+	gphoto2 -v
+
+	# gphoto2 2.5.14
+	#
+	# Copyright (c) 2000-2016 Lutz Mueller and others
+	#
+	# gphoto2 comes with NO WARRANTY, to the extent permitted by law. You may
+	# redistribute copies of gphoto2 under the terms of the GNU General Public
+	# License. For more information about these matters, see the files named COPYING.
+	#
+	# This version of gphoto2 is using the following software versions and options:
+	# gphoto2         2.5.14         gcc, popt(m), exif, cdk, aa, jpeg, readline
+	# libgphoto2      2.5.14         all camlibs, gcc, ltdl, EXIF
+	# libgphoto2_port 0.12.0         gcc, ltdl, USB, serial without locking
 
 
 # Quelques commandes utiles
