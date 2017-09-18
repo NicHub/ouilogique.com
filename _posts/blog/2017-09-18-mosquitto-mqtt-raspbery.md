@@ -142,7 +142,8 @@ mosquitto_sub --host raspberrypi.local --topic "SUPERTEST/#"
 {% endhighlight %}
 
 {% highlight bash %}
-mosquitto_pub --retain --host raspberrypi.local --topic "SUPERTEST" --message '{"DATE":"'"`date "+%Y-%m-%dT%H:%M:%S+02:00"`"'"}'
+mosquitto_pub --retain --host raspberrypi.local --topic "SUPERTEST" \
+--message '{"DATE":"'"`date "+%Y-%m-%dT%H:%M:%S+02:00"`"'"}'
 {% endhighlight %}
 
 
