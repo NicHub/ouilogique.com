@@ -13,13 +13,13 @@ author: Nico
 ---
 
 
-## Matériel
+# Matériel
 
 - Un Raspberry Pi (testé avec un Raspberry Pi 2, Raspbian Stretch)
 - Un Mac (testé avec macOS Sierra)
 
 
-## Installation de Raspian Stretch
+# Installation de Raspian Stretch
 
 J’ai testé la procédure ci-dessous avec une installation propre de Raspian Stretch.
 
@@ -34,29 +34,37 @@ Les informations ci-dessous sont tirées de ce blog :
 
 {% highlight bash %}
 
-mkdir ~/mosquitto
-cd ~/mosquitto/
 
+# Installation des dépendances
 sudo apt-get --assume-yes install build-essential python quilt devscripts python-setuptools python3 libssl-dev cmake libc-ares-dev uuid-dev daemon
 sudo apt-get --assume-yes install zlibc zlib1g zlib1g-dev
 
+# Compilation de libwebsockets
 git clone https://github.com/warmcat/libwebsockets.git
 cd libwebsockets
 mkdir build
 cd build
 cmake .. && sudo make install && sudo ldconfig
 
-cd ~/mosquitto
+# Compilation de mosquitto
+mkdir ~/mosquitto
+cd ~/mosquitto/
 MOSQUITTO_VER=mosquitto-1.4.14
 wget https://mosquitto.org/files/source/$MOSQUITTO_VER.tar.gz
 tar zxvf $MOSQUITTO_VER.tar.gz
 cd $MOSQUITTO_VER
-sudo nano config.mk # WITH_WEBSOCKETS:=yes
+
+# Configuration des options de compilation de mosquitto
+# Changer la ligne : WITH_WEBSOCKETS:=yes
+sudo nano config.mk
 
 make && sudo make install
 sudo cp mosquitto.conf /etc/mosquitto
+
+# Ajout de l’utilisateur “mosquitto”
 sudo adduser mosquitto
 
+# Configuration des options de mosquitto
 sudo nano /etc/mosquitto/mosquitto.conf
 # Trouver et modifier les lignes suivantes :
 port 1883
@@ -64,14 +72,15 @@ listener 9001
 protocol websockets
 pid_file /var/run/mosquitto.pid
 
-# Optional: I'm going to add security by forcing credentials
-# You can do so by creating as password file:
+# Optionellement, on peut ajouter une couche de sécurité en créant un fichier de mot de passe
 mosquitto_passwd -c /etc/mosquitto/passwd yourloginname
 sudo nano /etc/mosquitto/mosquitto.conf
 allow_anonymous false
 
-
+# Création d’un lien
 sudo ln -s /usr/local/sbin/mosquitto /bin/mosquitto
+
+# Redémarrage
 sudo reboot
 
 # Pour démarrer mosquitto manuellement
@@ -80,6 +89,8 @@ mosquitto -c /etc/mosquitto/mosquitto.conf
 # Pour démarrer mosquitto automatiquement lors du boot du Raspberry
 sudo nano /etc/systemd/system/mosquitto.service
 
+# Mettre les infos suivantes dans le fichier “mosquitto.service”
+# Voir <https://goo.gl/wMCZFv> pour plus d’infos
 [Unit]
 Description=Mosquitto MQTT Broker daemon
 ConditionPathExists=/etc/mosquitto/mosquitto.conf
@@ -96,12 +107,14 @@ Restart=on-failure
 [Install]
 WantedBy=multi-user.target
 
-
+# Activer le service
 sudo systemctl enable mosquitto
 sudo systemctl start mosquitto
 
+# À partir d’ici, mosquitto démarrera avec le système
 sudo reboot
 
+# Vérifier que tout fonctionne
 pidof mosquitto
 mosquitto -v
 
