@@ -1,14 +1,14 @@
 ---
 layout: page
-title: "Installer Mosquitto MQTT sur un Raspberry Pi"
+title: "Installer Mosquitto MQTT avec WebSocket sur un Raspberry Pi"
 modified:
 categories:
 excerpt:
 tags: []
 image:
      feature:
-date: 2017-05-20T16:00:00+02:00
-published: false
+date: 2017-09-18T18:43:00+02:00
+published: true
 author: Nico
 ---
 
@@ -19,19 +19,98 @@ author: Nico
 - Un Mac (testé avec macOS Sierra)
 
 
-## Installation de Raspi
+## Installation de Raspian Stretch
 
-Cette étape est optionnelle. Elle est surtout utile si vous voulez démarrer de zéro.
+J’ai testé la procédure ci-dessous avec une installation propre de Raspian Stretch.
 
-- Télécharger [Raspbian Jessie with Pixel][1] au format zip. Pas besoin de décompresser le zip.
-- Télécharger [Etcher][2].
-- Insérer la carte SD dans le lecteur du Mac.
-- Dans les préférences (icône en forme de roue dentée en haut à droite), décocher “auto-unmount on success”.
-- Flasher le fichier zip sur la carte SD avec Etcher.
-- Enlever et remettre la carte SD dans le lecteur (parce que par défaut, Etcher démonte le disque après le flashage).
-- Créer un fichier texte vide s’appelant `ssh` à la racine de la carte pour autoriser les connexions SSH.
-- Insérer la carte SD dans le Raspberry et le démarrer
+<http://ouilogique.com/installer-raspian-stretch/>
 
+
+# Installation et compilation de mosquitto 1.4.14
+
+Les informations ci-dessous sont tirées de ce blog :
+
+<https://jolabsblog.wordpress.com/2016/10/31/setting-up-a-custom-home-automation-server/>
+
+{% highlight bash %}
+
+mkdir ~/mosquitto
+cd ~/mosquitto/
+
+sudo apt-get --assume-yes install build-essential python quilt devscripts python-setuptools python3 libssl-dev cmake libc-ares-dev uuid-dev daemon
+sudo apt-get --assume-yes install zlibc zlib1g zlib1g-dev
+
+git clone https://github.com/warmcat/libwebsockets.git
+cd libwebsockets
+mkdir build
+cd build
+cmake .. && sudo make install && sudo ldconfig
+
+cd ~/mosquitto
+MOSQUITTO_VER=mosquitto-1.4.14
+wget https://mosquitto.org/files/source/$MOSQUITTO_VER.tar.gz
+tar zxvf $MOSQUITTO_VER.tar.gz
+cd $MOSQUITTO_VER
+sudo nano config.mk # WITH_WEBSOCKETS:=yes
+
+make && sudo make install
+sudo cp mosquitto.conf /etc/mosquitto
+sudo adduser mosquitto
+
+sudo nano /etc/mosquitto/mosquitto.conf
+# Trouver et modifier les lignes suivantes :
+port 1883
+listener 9001
+protocol websockets
+pid_file /var/run/mosquitto.pid
+
+# Optional: I'm going to add security by forcing credentials
+# You can do so by creating as password file:
+mosquitto_passwd -c /etc/mosquitto/passwd yourloginname
+sudo nano /etc/mosquitto/mosquitto.conf
+allow_anonymous false
+
+
+sudo ln -s /usr/local/sbin/mosquitto /bin/mosquitto
+sudo reboot
+
+# Pour démarrer mosquitto manuellement
+mosquitto -c /etc/mosquitto/mosquitto.conf
+
+
+# Pour démarrer mosquitto automatiquement lors du boot du Raspberry
+sudo nano /etc/systemd/system/mosquitto.service
+
+[Unit]
+Description=Mosquitto MQTT Broker daemon
+ConditionPathExists=/etc/mosquitto/mosquitto.conf
+Requires=network.target
+
+[Service]
+Type=simple
+ExecStartPre=/bin/rm -f /run/mosquitto.pid
+ExecStart=/usr/local/sbin/mosquitto -c /etc/mosquitto/mosquitto.conf -d
+ExecReload=/bin/kill -HUP $MAINPID
+PIDFile=/run/mosquitto.pid
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
+
+sudo systemctl enable mosquitto
+sudo systemctl start mosquitto
+
+sudo reboot
+
+pidof mosquitto
+mosquitto -v
+
+{% endhighlight %}
+
+
+
+<!--
 
 ## Installation de Mosquitto MQTT
 
@@ -113,3 +192,6 @@ mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
 
 [1]: https://www.raspberrypi.org/downloads/raspbian/
 [2]: https://etcher.io/
+
+
+-->
