@@ -28,16 +28,28 @@ J’ai testé la procédure ci-dessous avec une installation propre de Raspian S
 
 # Installation et compilation de mosquitto 1.4.14
 
-Les informations ci-dessous sont tirées de ce blog :
+Les informations ci-dessous sont tirées de ce blog avec quelques adaptations :
 
-<https://jolabsblog.wordpress.com/2016/10/31/setting-up-a-custom-home-automation-server/>
+<https://goo.gl/BQh6hA>
 
 {% highlight bash %}
 
-
 # Installation des dépendances
-sudo apt-get --assume-yes install build-essential python quilt devscripts python-setuptools python3 libssl-dev cmake libc-ares-dev uuid-dev daemon
-sudo apt-get --assume-yes install zlibc zlib1g zlib1g-dev
+sudo apt-get --assume-yes install \
+build-essential \
+python \
+quilt \
+devscripts \
+python-setuptools \
+python3 \
+libssl-dev \
+cmake \
+libc-ares-dev \
+uuid-dev \
+daemon \
+zlibc \
+zlib1g \
+zlib1g-dev
 
 # Compilation de libwebsockets
 git clone https://github.com/warmcat/libwebsockets.git
@@ -72,7 +84,8 @@ listener 9001
 protocol websockets
 pid_file /var/run/mosquitto.pid
 
-# Optionellement, on peut ajouter une couche de sécurité en créant un fichier de mot de passe
+# Optionnellement, on peut ajouter une couche
+# de sécurité en créant un fichier de mot de passe
 mosquitto_passwd -c /etc/mosquitto/passwd yourloginname
 sudo nano /etc/mosquitto/mosquitto.conf
 allow_anonymous false
@@ -86,10 +99,12 @@ sudo reboot
 # Pour démarrer mosquitto manuellement
 mosquitto -c /etc/mosquitto/mosquitto.conf
 
-# Pour démarrer mosquitto automatiquement lors du boot du Raspberry
+# Pour démarrer mosquitto automatiquement
+# lors du boot du Raspberry
 sudo nano /etc/systemd/system/mosquitto.service
 
-# Mettre les infos suivantes dans le fichier “mosquitto.service”
+# Mettre les infos suivantes
+# dans le fichier “mosquitto.service”
 # Voir <https://goo.gl/wMCZFv> pour plus d’infos
 [Unit]
 Description=Mosquitto MQTT Broker daemon
@@ -120,8 +135,18 @@ mosquitto -v
 
 {% endhighlight %}
 
+# Pour tester
+
+{% endhighlight %}
+mosquitto_sub --host raspberrypi.local --topic "SUPERTEST/#"
+{% endhighlight %}
+
+{% highlight bash %}
+mosquitto_pub --retain --host raspberrypi.local --topic "SUPERTEST" --message '{"DATE":"'"`date "+%Y-%m-%dT%H:%M:%S+02:00"`"'"}'
+{% highlight bash %}
 
 
+{% comment %}
 <!--
 
 ## Installation de Mosquitto MQTT
@@ -207,3 +232,4 @@ mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
 
 
 -->
+{% endcomment %}
