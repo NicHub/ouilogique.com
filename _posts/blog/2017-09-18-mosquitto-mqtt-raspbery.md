@@ -15,7 +15,7 @@ author: Nico
 
 ## Matériel
 
-- Un Raspberry Pi (testé avec un Raspberry Pi 2, Raspbian Jessie With Pixel)
+- Un Raspberry Pi (testé avec un Raspberry Pi 2, Raspbian Stretch)
 - Un Mac (testé avec macOS Sierra)
 
 
@@ -76,7 +76,6 @@ sudo reboot
 
 # Pour démarrer mosquitto manuellement
 mosquitto -c /etc/mosquitto/mosquitto.conf
-
 
 # Pour démarrer mosquitto automatiquement lors du boot du Raspberry
 sudo nano /etc/systemd/system/mosquitto.service
