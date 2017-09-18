@@ -137,7 +137,7 @@ mosquitto -v
 
 # Pour tester
 
-{% endhighlight %}
+{% highlight bash %}
 mosquitto_sub --host raspberrypi.local --topic "SUPERTEST/#"
 {% endhighlight %}
 
