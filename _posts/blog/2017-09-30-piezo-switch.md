@@ -16,7 +16,7 @@ author: Nico
 ## Matériel
 
 - Un Arduino Nano
-- Un bouton piézoélectrique (piezo-switch)
+- [Un bouton piézoélectrique (piezo-switch)][2]
 
 ## Image
 
@@ -44,4 +44,9 @@ Le code sur GitHub montre trois façons d’utiliser ce bouton avec un Arduino 
 
 [https://github.com/NicHub/ouilogique-Arduino/tree/master/piezo-switch][1]
 
+## Note
+
+Cet interrupteur est étanche IP68 (6 = étanche à la poussière, 8 = résiste à l’immersion prolongée). J’ai fait un bref test dans un verre d’eau et il fonctionnait, même lorsqu’il était immergé.
+
 [1]: https://github.com/NicHub/ouilogique-Arduino/tree/master/piezo-switch
+[2]: https://fr.aliexpress.com/item/ONPOW-16mm-piezo-commutateur-IP68-CE-RoHS-PS165Z10YNT1/32670308839.html
