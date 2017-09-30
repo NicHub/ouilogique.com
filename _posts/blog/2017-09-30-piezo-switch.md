@@ -26,7 +26,9 @@ author: Nico
 
 ## Fonctionnement
 
-Un bouton piézoélectrique n’envoie qu’une brève impulsion lorsqu’on appuie dessus. On peut donc détecter les pressions de l’utilisateur, mais pas leur durée.
+Un bouton piézoélectrique n’envoie qu’une brève impulsion lorsqu’on appuie dessus. La durée de cette impulsion est très variable, mais vaut en moyenne 75 ms.
+
+> On peut donc détecter les pressions de l’utilisateur, mais pas leur durée.
 
 ## Câblage
 
