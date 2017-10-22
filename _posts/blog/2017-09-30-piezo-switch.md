@@ -20,19 +20,23 @@ author: Nico
 
 ## Image
 
-[![WEMOS Sandwich][image-1]][image-1]
+[![Bouton piézoélectrique avec Arduino Nano][image-1]][image-1]
 
 [image-1]: ../../files/2017-09-30-piezo-switch/2017-09-30-piezo-switch-001-lowres.jpg
 
 ## Fonctionnement
 
-Un bouton piézoélectrique n’envoie qu’une brève impulsion lorsqu’on appuie dessus. La durée de cette impulsion est très variable, mais vaut en moyenne 75 ms.
+Un bouton piézoélectrique n’envoie qu’une brève impulsion lorsqu’on appuie dessus. La durée de cette impulsion est très variable, mais vaut en moyenne 75 ms. Elle peut durer jusqu’à 400 ms voire plus si l’utilisateur appuie longtemps ou quelques millisecondes si l’utilisateur donne une pichenette.
 
 > On peut donc détecter les pressions de l’utilisateur, mais pas leur durée.
+
+> Cet interrupteur est sensible aux vibrations.
 
 ## Câblage
 
 Le bouton que j’ai testé n’a que deux fils que l’on câble comme un bouton mécanique standard, c’est-à-dire avec une résistance de tirage vers le haut (pullup). Pour simplifier le câblage, on peut utiliser une pullup interne de l’Arduino.
+
+La polarité est sans importance.
 
 ## Code
 
