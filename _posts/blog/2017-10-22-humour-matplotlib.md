@@ -22,3 +22,21 @@ Un peu d’humour avec Matplotlib. L’exemple vient de la page <https://matplot
 
 
 Et le code se trouve là : [effet-des-pizzas-sur-ma-sante.py](../../files/2017-10-22-humour-matplotlib/effet-des-pizzas-sur-ma-sante.py)
+
+
+Matplotlib fait partie des 4 bibliothèques de base pour le calcul numérique avec Python (NumPy (libraire de base), SciPy (fonctions étendues), Matplotlib (graphiques) et Pandas (gestion des données)). On peut écrire le code dans n’importe quel éditeur de texte, mais c’est quand même plus agréable d’utiliser “Spyder” qui est un IDE qui ressemble comme deux gouttes d’eau à celui de Matlab.
+
+Python, Spyder, les 4 bibliothèques dont j’ai parlé ainsi qu’une ribambelle d’autres outils peuvent être téléchargés et installés avec [le package Anaconda](https://www.anaconda.com/download/). Si vous débutez dans le monde Python, je vous conseille de télécharger la version *Python 3.6*.
+
+Une fois Anaconda installé, vous pouvez ouvrir Spyder de la façon suivante :
+
+- Sous Windows, taper “Spyder” dans le menu démarrer
+- Sous MacOS, ouvrir le Terminal et taper “Spyder”. La fenêtre du Terminal doit rester ouverte pendant l’utilisation de Spyder.
+
+## Références
+
+- [Mon aide mémoire Python](../../files/2017-10-22-humour-matplotlib/python_aide-memoire.py)
+- <http://www.diveintopython3.net/>
+- <https://python.developpez.com/cours/plongez_au_coeur_de_python/?page=page1>
+
+
