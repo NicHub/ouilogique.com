@@ -247,6 +247,10 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_013.jpg)
 
+La norme de ce genre de connecteurs s’appelle EIAJ et il me semble que celui de l’afficheur est un EIAJ-04.
+
+<https://en.wikipedia.org/wiki/EIAJ_connector>
+
 ## Conclusion
 
 Un connecteur jack de diamètres 5.5/2.1 mm et d’une longueur de 11 ou 12 mm ferait mieux l’affaire.
