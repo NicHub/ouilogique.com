@@ -12,7 +12,7 @@ published: true
 author: Nico
 ---
 
-L’idée est de déterminer s’il est possible de remplacer un bridge USB-RS232 par une carte à microcontrôleur comme le Launchpad, l’Arduino Nano ou l’ESP8266. Elle m’a été inspirée par [cette réponse sur StackExchange][0].
+L’idée est de déterminer s’il est possible de remplacer un bridge USB-RS232 ([UART][2]) par une carte à microcontrôleur comme le Launchpad, l’Arduino Nano ou l’ESP8266. Elle m’a été inspirée par [cette réponse sur StackExchange][0].
 
 # Essai avec Launchpad
 
@@ -65,6 +65,7 @@ Et ça fonctionne aussi sans le microcontrôleur.
 
 [0]: http://arduino.stackexchange.com/questions/18575/send-at-commands-to-esp8266-from-arduino-uno-via-a-softwareserial-port/18614#18614
 [1]: http://freeware.the-meiers.org/
+[2]: https://fr.wikipedia.org/wiki/UART
 
 ---
 
