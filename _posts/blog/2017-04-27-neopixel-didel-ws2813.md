@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+     feature: 2017-04-27-neopixel-didel-ws2813-000.jpg
 date: 2017-04-27T18:48:00+02:00
 published: true
 author: Nico
@@ -36,7 +36,7 @@ Didel propose des exemples de programme pour Arduino <http://didel.com/WS28.zip>
 | b              | NC           |
 
 
-¹ Utiliser une résistance de 220 Ω à 1 kΩ pour limiter le courant.
+¹ ~~Utiliser une résistance de 220 Ω à 1 kΩ pour limiter le courant.~~ Faux ! Voir [l’édition de février-mars 2018 ci-dessous][édit-de-février-mars-2018].
 ² `A0` est utilisé par défaut dans les programmes de Didel, mais n’importe quel GPIO peut être utilisé.
 
 
@@ -54,12 +54,48 @@ Les programmes de Didel sont optimisés pour être aussi compacts que possible e
 
 
 
+[![Neopixel Didel WS2813][image-1]{: width="90%" }][image-1]
 
-[![Neopixel Didel WS2813][i1]{: width="90%" }][i1]
 
-[i1]: ../../files/2017-04-27-neopixel-didel-ws2813/2017-04-27-neopixel-didel-ws2813-001.jpg
+## Édit de février-mars 2018
+
+J’ai refait des tests avec ces LED pour évaluer leur luninosité et je me suis rendu compte que j’avais fait une grosse bourde : il ne faut pas utiliser de résistance de limitation de courant !
+
+Dans la foulée, j’ai aussi essayé de les alimenter de deux façons différentes :
+
+- Avec l’Arduino Nano.
+- Avec une alimentation 5 V externe.
+
+> Résultat des courses : l’intensité lumineuse est identique dans les deux cas.
+
+Le programme de test se trouve [sur mon GitHub][Programme de test].
+
+**Alimentation avec l’Arduino Nano**
+
+[![Neopixel Didel WS2813 alimentée par l’Arduino Nano][image-2]{: width="90%" }][image-2]
+
+**Alimentation avec une source 5 V externe**
+
+[![Neopixel Didel WS2813 alimentée par une source externe 5 V][image-3]{: width="90%" }][image-3]
 
 
 ## Voir aussi
 
-[LED adressable P9823-F8](http://ouilogique.com/leds_adressables/)
+- [LED adressable P9823-F8][LED adressable P9823-F8]
+- [RGBstrips.pdf][RGBstrips]
+
+
+[édit-de-février-mars-2018]: #édit-de-février-mars-2018
+
+[LED adressable P9823-F8]: http://ouilogique.com/leds_adressables/
+
+[RGBstrips]: ../../files/2017-04-27-neopixel-didel-ws2813/RGBstrips.pdf
+
+[Programme de test]: https://github.com/NicHub/ouilogique-Arduino/tree/master/neopixel-didel-ws2813
+
+[image-1]: ../../files/2017-04-27-neopixel-didel-ws2813/2017-04-27-neopixel-didel-ws2813-001.jpg
+
+[image-2]: ../../files/2017-04-27-neopixel-didel-ws2813/2017-04-27-neopixel-didel-ws2813-002.jpg
+
+[image-3]: ../../files/2017-04-27-neopixel-didel-ws2813/2017-04-27-neopixel-didel-ws2813-003.jpg
+

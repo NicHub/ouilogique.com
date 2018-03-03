@@ -18,7 +18,7 @@ $( document ).ready( function() {
     }
 
     Mousetrap.bind( 'left',       function( e ) { navigate_to_page( e, '#bouton-prec'    ); });
-    Mousetrap.bind( 'esc',        function( e ) { navigate_to_page( e, '#bouton-accueil' ); });
+    // Mousetrap.bind( 'esc',        function( e ) { navigate_to_page( e, '#bouton-accueil' ); });
     Mousetrap.bind( 'right',      function( e ) { navigate_to_page( e, '#bouton-suiv'    ); });
 
     // $( 'body' ).on( 'mousedown',  function( e ) { disable_swipe( e ); });
