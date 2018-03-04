@@ -79,6 +79,24 @@ Le programme de test se trouve [sur mon GitHub][Programme de test].
 [![Neopixel Didel WS2813 alimentée par une source externe 5 V][image-3]{: width="90%" }][image-3]
 
 
+## Test avec un Raspberry Pi
+
+J’ai aussi fait un test avec un Raspberry Pi pour voir s’il est possible de faire fonctionner des LED adressables lorsque le processeur du RPI est utilisé au maximum de sa capacité.
+
+Pour les LED, j’ai utilisé [la solution logicielle proposée par Adafruit][neopixels-rpi].
+
+Pour le stress-test, j’ai utilisé [`vcgencmd`][stress-test].
+
+Pour convertir le 3.3 V en 5 V, j’ai utilisé un *Logic Level Converter* bidirectionnel.
+
+La broche de données est la 18.
+
+> Résultat du test : ça fonctionne parfaitement. Le RPI peut sans problème être utilisé à 100 % de sa capacité et en même temps piloter les deux LED. Peut-être que ça sera plus dur avec plus de LED... à voir.
+
+[![Neopixel Didel WS2813 avec un Raspberry Pi][image-4]{: width="90%" }][image-4]
+
+
+
 ## Voir aussi
 
 - [LED adressable P9823-F8][LED adressable P9823-F8]
@@ -99,3 +117,8 @@ Le programme de test se trouve [sur mon GitHub][Programme de test].
 
 [image-3]: ../../files/2017-04-27-neopixel-didel-ws2813/2017-04-27-neopixel-didel-ws2813-003.jpg
 
+[image-4]: ../../files/2017-04-27-neopixel-didel-ws2813/2017-04-27-neopixel-didel-ws2813-004.jpg
+
+[neopixels-rpi]: https://learn.adafruit.com/neopixels-on-raspberry-pi/software
+
+[stress-test]: https://core-electronics.com.au/tutorials/stress-testing-your-raspberry-pi.html
