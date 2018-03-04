@@ -59,12 +59,12 @@ Les programmes de Didel sont optimisés pour être aussi compacts que possible e
 
 ## Édit de février-mars 2018
 
-J’ai refait des tests avec ces LED pour évaluer leur luninosité et je me suis rendu compte que j’avais fait une grosse bourde : il ne faut pas utiliser de résistance de limitation de courant !
+J’ai refait des tests avec ces LED pour évaluer leur luminosité et je me suis rendu compte que j’avais fait une grosse bourde : il ne faut pas utiliser de résistance de limitation de courant !
 
 Dans la foulée, j’ai aussi essayé de les alimenter de deux façons différentes :
 
 - Avec l’Arduino Nano.
-- Avec une alimentation 5 V externe.
+- Avec une alimentation externe 5 V.
 
 > Résultat des courses : l’intensité lumineuse est identique dans les deux cas.
 
@@ -74,14 +74,14 @@ Le programme de test se trouve [sur mon GitHub][Programme de test].
 
 [![Neopixel Didel WS2813 alimentée par l’Arduino Nano][image-2]{: width="90%" }][image-2]
 
-**Alimentation avec une source 5 V externe**
+**Alimentation avec une source externe 5 V**
 
 [![Neopixel Didel WS2813 alimentée par une source externe 5 V][image-3]{: width="90%" }][image-3]
 
 
 ## Test avec un Raspberry Pi
 
-J’ai aussi fait un test avec un Raspberry Pi pour voir s’il est possible de faire fonctionner des LED adressables lorsque le processeur du RPI est utilisé au maximum de sa capacité.
+J’ai aussi fait un test avec un Raspberry Pi pour voir s’il est possible de faire fonctionner des LED adressables lorsque le processeur du RPi est utilisé au maximum de sa capacité.
 
 Pour les LED, j’ai utilisé [la solution logicielle proposée par Adafruit][neopixels-rpi].
 
@@ -91,7 +91,7 @@ Pour convertir le 3.3 V en 5 V, j’ai utilisé un *Logic Level Converter* bid
 
 La broche de données est la 18.
 
-> Résultat du test : ça fonctionne parfaitement. Le RPI peut sans problème être utilisé à 100 % de sa capacité et en même temps piloter les deux LED. Peut-être que ça sera plus dur avec plus de LED... à voir.
+> Résultat du test : ça fonctionne parfaitement. Le RPi peut sans problème être utilisé à 100 % de sa capacité et en même temps piloter les deux LED. Peut-être que ça sera plus dur avec plus de LED... à voir.
 
 [![Neopixel Didel WS2813 avec un Raspberry Pi][image-4]{: width="90%" }][image-4]
 
