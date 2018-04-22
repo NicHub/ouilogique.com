@@ -30,7 +30,7 @@ Les informations de cet article proviennent des sources suivantes :
 
 ## Câblage
 
-Le Rpi fonctionne en 3.3 V et les NeoPixels en 5 V. Il est donc nécessaire d’utiliser un *logic level converter*.
+Le Rpi fonctionne en 3.3 V et les NeoPixels en 5 V. Il est donc nécessaire d’utiliser un *logic level converter*. Les données sont transmises aux LED depuis la broche 18 du Rpi.
 
 L’anneau de LED a 4 connexions :
 
