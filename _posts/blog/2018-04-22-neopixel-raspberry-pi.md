@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "NeoPixel sur Raspberry Pi"
+title: "NeoPixel sur Raspberry Pi"
 modified:
 categories:
 excerpt:
