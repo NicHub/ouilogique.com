@@ -12,7 +12,17 @@ published: true
 author: Nico
 ---
 
-![...](/files/2016-06-02-servomoteur-basique/2016-06-02-servomoteur-basique_lowres.jpg)
+
+## À voir aussi
+
+<https://www.youtube.com/watch?v=iH9_xtulyws>
+
+
+## Programme basique pour commander un servomoteur
+
+[![Servo moteur basique][image-1]][image-1]
+
+
 
 ~~~ c++
 
@@ -104,3 +114,6 @@ void clignoteLed13()
 }
 
 ~~~
+
+
+[image-1]: ../../files/2016-06-02-servomoteur-basique/2016-06-02-servomoteur-basique_lowres.jpg
