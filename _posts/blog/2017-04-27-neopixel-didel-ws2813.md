@@ -105,7 +105,7 @@ La broche de données est la 18.
 
 [édit-de-février-mars-2018]: #édit-de-février-mars-2018
 
-[LED adressable P9823-F8]: http://ouilogique.com/leds_adressables/
+[LED adressable P9823-F8]: https://ouilogique.com/leds_adressables/
 
 [RGBstrips]: ../../files/2017-04-27-neopixel-didel-ws2813/RGBstrips.pdf
 

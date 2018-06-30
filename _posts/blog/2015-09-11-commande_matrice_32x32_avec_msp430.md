@@ -24,7 +24,7 @@ redirect_from:
 
 # Launchpad
 
-Launchpad-MSP430 rev 1.5, voir le brochage ici : <http://ouilogique.com/blog/pinouts/index.html#pinout-launchpad-msp430>
+Launchpad-MSP430 rev 1.5, voir le brochage ici : <https://ouilogique.com/blog/pinouts/index.html#pinout-launchpad-msp430>
 
 
 # Brochage

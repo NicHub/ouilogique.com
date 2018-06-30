@@ -50,7 +50,7 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 
 <https://github.com/NicHub/ouilogique-Arduino/blob/master/relai-bistable-commande-tension/relai-bistable-commande-tension.ino>
 
-> Pour la programmation de l’Arduino Pro Mini dans l’IDE Arduino, voir <http://ouilogique.com/arduino-pro-mini/>
+> Pour la programmation de l’Arduino Pro Mini dans l’IDE Arduino, voir <https://ouilogique.com/arduino-pro-mini/>
 
 
 ## Schéma électrique

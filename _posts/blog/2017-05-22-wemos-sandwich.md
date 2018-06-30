@@ -51,7 +51,7 @@ Pour les connexions, j’ai utilisé des [Long 8-pin Headers][6] qui sont forts 
 
 [4b]: https://fr.aliexpress.com/item/1LOT-10PCS-Aluminum-Capacitors-2200uF-228-20-10-17mm-10V-2200000nF-2200000000pF-Diameter10mm/32707549315.html
 
-[4c]: http://ouilogique.com/tests_nRF24L01+/#nrf24l01-sur-esp8266
+[4c]: https://ouilogique.com/tests_nRF24L01+/#nrf24l01-sur-esp8266
 
 [5]: https://www.banggood.com/DHT11-Single-Bus-Digital-Temperature-Humidity-Sensor-Shield-For-WeMos-D1-Mini-p-1050049.html?p=0431091025639201412F
 

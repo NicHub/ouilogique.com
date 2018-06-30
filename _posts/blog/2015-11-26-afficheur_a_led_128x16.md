@@ -164,7 +164,7 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 
 Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de l’IDE Arduino fonctionne bien.
 
-- Installer le pilote pour la communication USB avec le CH340 <http://ouilogique.com/ch340_driver/>
+- Installer le pilote pour la communication USB avec le CH340 <https://ouilogique.com/ch340_driver/>
 - L’adresse du port RS232 est de la forme `/dev/cu.wchusbserial14240`
 - Vitesse de transmission : 9600 bauds
 - Attendre ~ 3 s entre chaque commande

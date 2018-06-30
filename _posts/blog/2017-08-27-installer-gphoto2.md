@@ -11,12 +11,12 @@ date: 2017-08-27T01:00:00+02:00
 published: true
 author: Nico
 redirect_from:
-  - http://ouilogique.com/gphoto2/
+  - https://ouilogique.com/gphoto2/
 ---
 
 <!--
 Ancienne URL
-http://ouilogique.com/gphoto2/
+https://ouilogique.com/gphoto2/
 -->
 
 La bibliothèque GPHOTO2 est utilisée par des applications pour accéder à une grande variété de modèles d’appareils photo numériques, à l’aide des protocoles standards comme l’USB Mass Storage et PTP, ou à l’aide des protocoles propres aux fabricants.
@@ -125,7 +125,7 @@ Un moyen simple de visionner les photos est de créer un mini serveur web sur le
 
 {% highlight bash %}
 # Ces deux commandes peuvent être copiées-collées directement dans le terminal ou mises dans le fichier ~/.bash_profile.
-# Voir http://ouilogique.com/installer-raspian-stretch/#configuration.
+# Voir https://ouilogique.com/installer-raspian-stretch/#configuration.
 IP=$(hostname -I | awk '{print $1}')
 alias pyserver='PORT=4000; echo -e "\nhttp://localhost:$PORT"; echo -e "http://$IP:$PORT\n"; python -m SimpleHTTPServer $PORT'
 # Démarre le serveur (ctrl-C pour l’arrêter)
@@ -146,5 +146,5 @@ Comme le serveur bloque la ligne de commande, il est préférable de l’utilise
 - <https://github.com/NicHub/ouilogique.com/commit/d4f594d08b8c9a30e6577072fafda794f4ec93bc>
 - <https://packages.debian.org/stretch/gphoto2>
 
-[1]: http://ouilogique.com/installer-raspian-stretch/
-[2]: http://ouilogique.com/installer-raspian-stretch/#gnu-screen
+[1]: https://ouilogique.com/installer-raspian-stretch/
+[2]: https://ouilogique.com/installer-raspian-stretch/#gnu-screen

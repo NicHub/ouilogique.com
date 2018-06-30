@@ -43,8 +43,8 @@ L’heure de horloge temps réel DS1307 peut être mise à jour via le port RS23
 
 ## Voir aussi
 
-- [Test d’une horloge temps réel DS1307 I²C](http://ouilogique.com/test_horloge_temps_reel_i2c/)
-- [Test d’un écran OLED 128×64 I²C](http://ouilogique.com/test_ecran_oled_i2c_128x64/)
+- [Test d’une horloge temps réel DS1307 I²C](https://ouilogique.com/test_horloge_temps_reel_i2c/)
+- [Test d’un écran OLED 128×64 I²C](https://ouilogique.com/test_ecran_oled_i2c_128x64/)
 
 
 

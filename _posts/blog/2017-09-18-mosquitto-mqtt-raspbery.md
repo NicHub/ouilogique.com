@@ -23,7 +23,7 @@ author: Nico
 
 J’ai testé la procédure ci-dessous avec une installation propre de Raspian Stretch.
 
-<http://ouilogique.com/installer-raspian-stretch/>
+<https://ouilogique.com/installer-raspian-stretch/>
 
 
 # Installation et compilation de mosquitto 1.4.14

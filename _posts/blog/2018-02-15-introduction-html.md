@@ -271,7 +271,7 @@ La balise “p” est la plus utilisée pour afficher du texte.
     <div></div>
 </div>
 
-<img src="http://ouilogique.com/images/site-logo.png" alt="image de démo" />
+<img src="https://ouilogique.com/images/site-logo.png" alt="image de démo" />
 ```
 
 ### Liste des balises HTML
@@ -297,7 +297,7 @@ Toutes les balises acceptent des attributs, certains étant obligatoires d’aut
 Par exemple, la balise `<img>` qui sert à insérer une image a deux attributs obligatoires : `src` et `alt`. À noter que l’attribut `alt` est souvent omis dans les pages web que vous rencontrerez. Il est pourtant fortement conseillé, car il s’agit du texte qui remplacera l’image si celle-ci ne peut pas être affichée. Cet attribut est aussi utilisé par les systèmes de lecture pour les malvoyants.
 
 ```html
-<img src="http://ouilogique.com/images/site-logo.png" alt="image de démo" />
+<img src="https://ouilogique.com/images/site-logo.png" alt="image de démo" />
 ```
 
 [Voir les attributs possibles de la balise `<img />` sur le site MDN.][img MDN]
@@ -306,7 +306,7 @@ Les attributs peuvent être mis à ligne pour faciliter la lecture :
 
 ```html
 <img
-    src="http://ouilogique.com/images/site-logo.png"
+    src="https://ouilogique.com/images/site-logo.png"
     alt="image de démo" />
 ```
 

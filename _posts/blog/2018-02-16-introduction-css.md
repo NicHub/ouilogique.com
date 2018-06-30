@@ -628,7 +628,7 @@ Le site du W3C contient lui aussi beaucoup d’informations utiles : [CSS sur l
 
 [Héritage MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_cascade_et_l_h%C3%A9ritage#L'h%C3%A9ritage
 
-[ouilogique ESP8266 WeMos]: http://ouilogique.com/NodeMCU_esp8266/
+[ouilogique ESP8266 WeMos]: https://ouilogique.com/NodeMCU_esp8266/
 
 [Wiki du cours HTML embarqué]: https://github.com/NicHub/microclub-atelier-html-embarque/wiki
 
