@@ -52,24 +52,60 @@ sudo apt-get --assume-yes dist-upgrade # ~3min
 
 {% highlight bash %}
 nano ~/.bash_profile
+{% endhighlight %}
 
-# Copier-coller les commandes suivantes dans .bash_profile
+Copier-coller les commandes suivantes dans .bash_profile
+
+{% highlight bash %}
 PS1=$'\n\n\xf0\x9f\x98\xBA'"  \t – \[\033[01;32m\]\u@\h\[\033[00m\]:\W > "
 alias ls='ls -lGhF'
 alias la='ls -a'
 alias gs='git status'
 IP=$(hostname -I | awk '{print $1}')
-alias pyserver='PORT=4000; echo -e "\nhttp://localhost:$PORT"; echo -e "http://$IP:$PORT\n"; python -m SimpleHTTPServer $PORT'
+alias pyserver='PORT=4000; echo -e "\nhttp://localhost:$PORT"; echo -e "http://$IP:$PORT\n"; /usr/bin/python3 -m http.server $PORT'
+{% endhighlight %}
 
+{% highlight bash %}
 source ~/.bash_profile
+{% endhighlight %}
 
+{% highlight bash %}
 sudo raspi-config
 # Localisation Options
 # Update
+# Advanced Options / Expand filesystem
 {% endhighlight %}
 
 
-## Quelques programmes utiles
+
+## VNC
+
+{% highlight bash %}
+sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
+{% endhighlight %}
+
+{% highlight bash %}
+sudo raspi-config
+# - Navigate to Interfacing Options.
+# - Scroll down and select VNC > Yes.
+{% endhighlight %}
+
+
+## Enlever les programmes inutiles
+
+Enfin, inutiles pour moi....
+
+{% highlight bash %}
+df -h # Pour voir la capacité de la carte SD
+sudo apt-get purge wolfram-engine
+sudo apt-get purge libreoffice*
+sudo apt-get clean
+sudo apt-get autoremove
+df -h # Vous venez de libérer 1.1 GB !
+{% endhighlight %}
+
+
+## Ajouter quelques programmes utiles
 
 ### GNU screen
 
