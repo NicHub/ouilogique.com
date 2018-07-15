@@ -20,7 +20,7 @@ Cet article montre comment lire les signaux d’une clé RF433 à l’aide d’u
 
 ## Limitation
 
-Cette technique ne fonctionne qu’avec des émetteurs RF433 non sécurisés. Ce genre d’émetteurs envoient toujours le même signal que l’on peut copier et programmer sur un Arduino.
+Cette technique ne fonctionne qu’avec des émetteurs RF433 non sécurisés. Ces émetteurs envoient toujours le même signal que l’on peut copier et programmer sur un Arduino.
 
 À contrario, les émetteurs sécurisés, comme ceux qui sont utilisés pour verrouiller les véhicules, émettent un code différent à chaque utilisation (*rolling code*), ce qui implique qu’il ne sert à (presque) rien de copier le signal puisqu’il ne pourra être utilisé au mieux qu’une seule fois.
 
@@ -85,7 +85,7 @@ sudo pip3 install .
 
     1110111011101000100010001000100011101110111010001000111010001000100010001110111010001000111010001
 
-- Il faut aussi noter la valeur `Bit Length`. Sur l’image ci-dessous, elle est de 276 ms. À d’autres endroits du signal cette valeur peut être légèrement différente. J’ai opté pour une valeur de 280 µs qui convient très bien.
+- Il faut aussi noter la valeur `Bit Length`. Sur l’image ci-dessous, elle est de 276 µs. À d’autres endroits du signal cette valeur peut être légèrement différente. J’ai opté pour une valeur de 280 µs qui convient très bien.
 - Maintenant, on a les bits du signal (97 bits dans mon cas). Mais il faut encore évaluer combien de bits sont dans l’intervalle sans signal. Dans mon cas, il y en a 31, donc une période complète comprend 97 + 31 = 128 bits.
 - Il faut également ajouter les zéros au code copié. Dans mon cas, il y en a 31.
 
