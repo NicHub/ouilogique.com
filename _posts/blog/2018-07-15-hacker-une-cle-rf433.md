@@ -65,7 +65,7 @@ sudo pip3 install .
 
 [![Raspberry Pi avec dongle SDR][image-1]][image-1]
 
-- Dans l’interface graphique de Raspbian, ouvrir un terminal et taper la commande {% highlight bash %}urh{% endhighlight %}
+- Dans l’interface graphique de Raspbian, ouvrir un terminal et taper la commande `urh`.
 - Dans la fenêtre qui s’ouvre, aller dans le menu `File/Record Signal...`.
 - Dans la nouvelle fenêtre, choisir l’adaptateur : `Device : RTL-SDR`.
 - Cliquer sur la flèche arrondie en regard de `Device Identifier`. L’identifiant de l’adaptateur doit d’afficher, par exemple : `Realtek RTL2838UHIDIR (SN: 00000001)`.
@@ -85,8 +85,9 @@ sudo pip3 install .
 
     1110111011101000100010001000100011101110111010001000111010001000100010001110111010001000111010001
 
-- Il faut aussi noter la valeur `Bit Length`. Sur l’image ci-dessous, elle est de 276 ms. À d’autres endroits du signal cette valeur peut être légèrement différente. J’ai opté pour une valeur de 280 ms qui convient très bien.
+- Il faut aussi noter la valeur `Bit Length`. Sur l’image ci-dessous, elle est de 276 ms. À d’autres endroits du signal cette valeur peut être légèrement différente. J’ai opté pour une valeur de 280 µs qui convient très bien.
 - Maintenant, on a les bits du signal (97 bits dans mon cas). Mais il faut encore évaluer combien de bits sont dans l’intervalle sans signal. Dans mon cas, il y en a 31, donc une période complète comprend 97 + 31 = 128 bits.
+- Il faut également ajouter les zéros au code copié. Dans mon cas, il y en a 31.
 
 
 [![Enregistrement d’un signal RF433 avec URH][image-3]][image-3]
