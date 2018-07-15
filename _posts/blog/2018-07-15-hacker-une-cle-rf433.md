@@ -35,7 +35,8 @@ Cet article m’a été inspiré par [la vidéo d’Andreas Spiess “How to Hac
 - Un Arduino UNO ou équivalent
 - Un bouton
 - Un *breadboard*
-- Un émetteur RF433
+- Un [émetteur RF433][émetteur RF433]
+- Une [clé RF433][clé RF433] à copier (mais normalement vous devriez déjà avoir cet article)
 
 ## Installation d’URH
 
@@ -135,3 +136,6 @@ Et il ne reste plus qu’à flasher l’Arduino et faire un test.
 
 [rf433-spoof sur GitHub]: https://github.com/NicHub/ouilogique-Arduino/tree/master/rf433-spoof
 
+[émetteur RF433]: https://fr.aliexpress.com/item/1Lot-1-pair-2pcs-RF-wireless-receiver-module-transmitter-module-Ordinary-super-regeneration-315-433MHZ-DC5V/968306683.html
+
+[clé RF433]: https://fr.aliexpress.com/item/Universal-2-Channels-Electric-Garage-Door-Cloning-Remote-Control-Key-Fob-433mhz/32816768549.html
