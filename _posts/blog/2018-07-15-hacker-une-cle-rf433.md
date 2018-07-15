@@ -30,9 +30,12 @@ Cet article m’a été inspiré par [la vidéo d’Andreas Spiess “How to Hac
 
 ## Matériel
 
-- SDR-Dongle: http://s.click.aliexpress.com/e/bQ91w8QM ou http://bit.ly/2NcRMT2
-
-- Raspberry Pi modèle 2 ou 3
+- SDR-Dongle: <http://s.click.aliexpress.com/e/bQ91w8QM> ou <http://bit.ly/2NcRMT2>
+- Raspberry Pi modèle 2 ou 3. On peut aussi utiliser URH sur Windows, Linux et sur Mac, donc le RPi est optionnel. À noter que l’adaptateur SDR que j’ai n’est pas reconnu par URH sur mon Mac et j’ai donc opté pour la solution RPi.
+- Un Arduino UNO ou équivalent
+- Un bouton
+- Un *breadboard*
+- Un émetteur RF433
 
 ## Installation d’URH
 
@@ -63,29 +66,53 @@ sudo pip3 install .
 [![Raspberry Pi avec dongle SDR][image-1]][image-1]
 
 - Dans l’interface graphique de Raspbian, ouvrir un terminal et taper la commande {% highlight bash %}urh{% endhighlight %}
-- Dans la fenêtre qui s’ouvre, aller dans le menu `File/Record signal...`.
+- Dans la fenêtre qui s’ouvre, aller dans le menu `File/Record Signal...`.
 - Dans la nouvelle fenêtre, choisir l’adaptateur : `Device : RTL-SDR`.
 - Cliquer sur la flèche arrondie en regard de `Device Identifier`. L’identifiant de l’adaptateur doit d’afficher, par exemple : `Realtek RTL2838UHIDIR (SN: 00000001)`.
 - Laisser les autres options par défaut.
 
-[![Enregistrement d’un signls RF433 avec URH][image-2]][image-2]
+[![Enregistrement d’un signal RF433 avec URH][image-2]][image-2]
 
 - Cliquer sur le bouton `Start`.
 - Appuyer sur le bouton de la clé RF433.
 - Cliquer sur le bouton `Stop`. Il faut arrêter l’acquisition le plus rapidement possible car le fichier de résultats grandit à une vitesse vertigineuse. En plus, le buffer est rapidement saturé.
 - Cliquer sur `Save` et enregistrer le fichier pour une utilisation ultérieure.
-- Fermer la fenêtre d’acqusition. La fenêtre de traitement des données s’ouvre. Cette fenêtre peut être rappelée en ouvrant le fichier enregistré précédement.
+- Fermer la fenêtre d’acquisition. La fenêtre de traitement des données s’ouvre. Cette fenêtre peut être rappelée en ouvrant le fichier enregistré précédemment.
 - Cliquer sur `Modulation: ASK`. ASK = *Amplitude Shift Keying*.
-- Dans la partie sous le graphique, double-cliquer de façon à sélectionner une ligne. La partie correspondante du graphique est sélectionnée. Inversément, on peut sélectionner une partie du graphique et les chiffres correspondant seront automatiquement sélectionnés également.
-- On peut zoomer le graphique avec la rolette de la souris. La position du curseur de la souris modifie également le point central du zoom.
-- Évaluez quelle ligne de chiffres se répette le plus souvent et la copier avec le raccourci clavier `CTRL-C`.
+- Dans la partie sous le graphique, double-cliquer de façon à sélectionner une ligne. La partie correspondante du graphique est sélectionnée. Inversement, on peut sélectionner une partie du graphique et les chiffres correspondants seront automatiquement sélectionnés également.
+- On peut zoomer le graphique avec la roulette de la souris. La position du curseur de la souris modifie également le point central du zoom.
+- Évaluer quelle ligne de chiffres se répète le plus souvent et la copier avec le raccourci clavier `CTRL-C`.
 
     1110111011101000100010001000100011101110111010001000111010001000100010001110111010001000111010001
 
+- Il faut aussi noter la valeur `Bit Length`. Sur l’image ci-dessous, elle est de 276 ms. À d’autres endroits du signal cette valeur peut être légèrement différente. J’ai opté pour une valeur de 280 ms qui convient très bien.
+- Maintenant, on a les bits du signal (97 bits dans mon cas). Mais il faut encore évaluer combien de bits sont dans l’intervalle sans signal. Dans mon cas, il y en a 31, donc une période complète comprend 97 + 31 = 128 bits.
 
-[![Enregistrement d’un signls RF433 avec URH][image-3]][image-3]
+
+[![Enregistrement d’un signal RF433 avec URH][image-3]][image-3]
 
 
+## Tester le code copié
+
+Pour tester le code que nous venons de copier avec URH, il faut tout d’abord réaliser le montage de la photo ci-dessous. À noter que le récepteur RF433 à gauche de la photo n’est pas utilisé dans le cadre de cet article.
+
+L’émetteur RF433 est connecté à la broche 7.
+
+Les boutons sont connectés aux broches 8, 9 et 10. Pour un premier test, un seul bouton suffit.
+
+[![Enregistrement d’un signal RF433 avec URH][image-4]][image-4]
+
+Le code de test se trouve ici : [rf433-spoof sur GitHub][rf433-spoof sur GitHub].
+
+On peut aussi télécharger tous les exemples de ce blog d’un coup avec la commande git :
+
+{% highlight bash %}
+git clone https://github.com/NicHub/ouilogique-Arduino.git
+{% endhighlight %}
+
+Ensuite il faut modifier le code du signal, la durée d’un bit et le nombre de bits dans le fichier `rf433-messages.h`.
+
+Et il ne reste plus qu’à flasher l’Arduino et faire un test.
 
 
 
@@ -102,3 +129,8 @@ sudo pip3 install .
 [image-2]: ../../files/2018-07-15-hacker-une-cle-rf433/hacker-une-cle-rf433-002.jpg
 
 [image-3]: ../../files/2018-07-15-hacker-une-cle-rf433/hacker-une-cle-rf433-003.jpg
+
+[image-4]: ../../files/2018-07-15-hacker-une-cle-rf433/hacker-une-cle-rf433-004.jpg
+
+[rf433-spoof sur GitHub]: https://github.com/NicHub/ouilogique-Arduino/tree/master/rf433-spoof
+
