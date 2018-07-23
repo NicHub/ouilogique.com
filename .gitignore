@@ -2,6 +2,7 @@
 *.kicad_pcb-bak
 *.sublime-project
 *.sublime-workspace
+*nogit*
 .DS_Store
 .jekyll-metadata
 .sass-cache
