@@ -1,7 +1,6 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'jekyll'
-gem 'jekyll-sitemap'
-gem 'octopress', '~> 3.0.0.rc.12'
-gem 'rouge'
-gem 'jekyll-redirect-from'
+gem "github-pages"
+# gem "jekyll"
+gem "jekyll-sitemap"
+gem "jekyll-redirect-from"

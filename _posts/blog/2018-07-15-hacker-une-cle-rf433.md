@@ -122,7 +122,7 @@ Et il ne reste plus qu’à flasher l’Arduino et faire un test.
 
 [URH GitHub]: https://github.com/jopohl/urh
 
-[installer Raspbian Stretch]: [https://ouilogique.com/installer-raspian-stretch/]
+[installer Raspbian Stretch]: https://ouilogique.com/installer-raspian-stretch/
 
 [truc install URH]: https://github.com/jopohl/urh/issues/502
 
