@@ -117,3 +117,54 @@ screen # Démarre un nouveau shell
 screen -ls # liste des shells
 screen -r xxxx # xxxx = no du shell que l’on veut activer
 {% endhighlight %}
+
+
+## Partager un espace disque avec samba
+
+> Source : <https://raspberrypihq.com/how-to-share-a-folder-with-a-windows-computer-from-a-raspberry-pi/>
+
+### Sur le Raspberry
+
+Installer samba
+
+    sudo apt-get install --assume-yes samba samba-common-bin
+
+Éditer la configuration
+
+    sudo nano /etc/samba/smb.conf
+
+Au début du fichier, vérifier les informations suivantes :
+
+    workgroup = WORKGROUP
+    wins support = yes
+
+À la fin du fichier, ajouter les informations suivantes :
+
+    # Source
+    # https://raspberrypihq.com/how-to-share-a-folder-with-a-windows-computer-from-a-raspberry-pi/
+    [PiShare]
+     comment = Raspberry Pi Share
+     path = /home/pi
+     browseable = yes
+     writeable = yes
+     only guest = no
+     create mask = 0777
+     directory mask = 0777
+     public = yes
+
+Le flag `public=yes` permet l’accès en temps qu’invité. Il est possible de restreindre cet accès avec `public=no` et de définir le mot de passe samba avec :
+
+    sudo smbpasswd -a pi
+
+### Monter le disque partagé sur macOS
+
+Dans le Finder :
+
+    ⌘ K
+    smb://raspberrypi.local
+
+### Monter le disque partagé sur Windows
+
+Voir <https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-drive>
+
+    smb://raspberrypi.local
