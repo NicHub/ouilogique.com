@@ -199,8 +199,15 @@ TIMEFORMAT='time : %E'
 time (bash configure && make -j4 altinstall)
 exit
 cd ~ && rm -r temp
+
+Créer un lien pour que Python 3.6 soit la version de Python 3 par défaut
+
+{% highlight bash %}
 which python3.6 # /usr/local/bin/python3.6
 python3.6 -V # Python 3.6.7
+sudo ln -s /usr/local/bin/python3.6 python3
+/usr/bin/env python3 -V # Python 3.6.7
+which python3 # /usr/local/bin/python3
 {% endhighlight %}
 
 Pour installer des modules
