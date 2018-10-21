@@ -112,10 +112,20 @@ df -h # Vous venez de libérer 1.1 GB !
 {% highlight bash %}
 sudo apt-get --assume-yes install screen
 echo "shell -$SHELL" > ~/.screenrc # Pour que screen lise .bash_profile
+
 screen # Démarre un nouveau shell
 # ctrl-A ctrl-D # revient au shell principal
 screen -ls # liste des shells
 screen -r xxxx # xxxx = no du shell que l’on veut activer
+
+# ctrl-A K # arrête le shell en cours
+screen -X -S xxxx quit # quitte le shell no xxxx
+screen -X -S xxxx kill # arrête le shell no xxxx
+
+# RS232
+python -m serial.tools.list_ports
+screen /dev/ttyACM0 115200
+# ctrl-A K # pour arrêter la transmission série
 {% endhighlight %}
 
 
@@ -150,9 +160,9 @@ Au début du fichier, vérifier les informations suivantes :
      only guest = no
      create mask = 0777
      directory mask = 0777
-     public = yes
+     public = no
 
-Le flag `public=yes` permet l’accès en temps qu’invité. Il est possible de restreindre cet accès avec `public=no` et de définir le mot de passe samba avec :
+Le flag `public = no` indique que l’accès en temps qu’invité est désactivé. Si on le change en `public = yes`, le disque partagé est en lecture seule.
 
     sudo smbpasswd -a pi
 
@@ -168,3 +178,33 @@ Dans le Finder :
 Voir <https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-drive>
 
     smb://raspberrypi.local
+
+
+## Installer Python 3.6.7
+
+Source : <https://liftcodeplay.com/2017/06/30/how-to-install-python-3-6-on-raspbian-linux-for-raspberry-pi/>
+
+Temps d’installation environ 40 min.
+Cette procédure n’écrase pas les versions de Python existantes.
+
+{% highlight bash %}
+sudo apt-get --assume-yes install build-essential checkinstall
+sudo apt-get --assume-yes install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+mkdir ~/temp && cd ~/temp
+wget https://www.python.org/ftp/python/3.6.7/Python-3.6.7.tgz
+sudo tar xzf Python-3.6.7.tgz
+cd Python-3.6.7
+sudo -s
+TIMEFORMAT='time : %E'
+time (bash configure && make -j4 altinstall)
+exit
+cd ~ && rm -r temp
+which python3.6 # /usr/local/bin/python3.6
+python3.6 -V # Python 3.6.7
+{% endhighlight %}
+
+Pour installer des modules
+
+    sudo python3.6 -m pip install --upgrade pip
+    sudo python3.6 -m pip install websockets
+

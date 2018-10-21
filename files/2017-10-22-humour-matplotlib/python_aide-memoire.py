@@ -10,40 +10,42 @@ Ceci est un exemple de docstring. Elle commence par la lettre u pour supporter u
 
 """
 
-# Version de Python sur osx 10.6.7 au 4 juin 2011 -> Python 2.6.1
+# Version de Python sur osx
+# 4 juin 2011 -> Python 2.6.1
+# 20 octobre 2018 -> Python 2.7.10
 
 
-# Ajouter un chemin de recherche de modules (d'import)
+# Ajouter un chemin de recherche de modules (d’import)
 import sys
-sys.path.append( '/mypath' )
-sys.path.append( '/Users/nico/Documents/boulot/2011-04-26_jenova/2011-05-12_solarmax/application/diveintopython/diveintopython-examples-5.4/py/' )
+sys.path.append('/mypath')
+sys.path.append('/Users/nico/Documents/boulot/2011-04-26_jenova/2011-05-12_solarmax/application/diveintopython/diveintopython-examples-5.4/py/')
 
 # Importer un module
 import mymodule
 
 # Obtenir des info sur un module
-info( mymodule )
+info(mymodule)
 
-# Imprimer la docstring d'une fonction d'un module
+# Imprimer la docstring d’une fonction d’un module
 print mymodule.myfunction.__doc__
 
 # Imprimer la docstring d’un script
-print globals()[ '__doc__' ]
+print globals()['__doc__']
 
-# __name__ est le nom de fichier du module sans le chemin d'accès ni le suffixe
+# __name__ est le nom de fichier du module sans le chemin d’accès ni le suffixe
 
-# Permet d'exécuter le module lorsqu'il est appelé manuellement (ie qu'il n'est pas utilisé pour ses fonctions)
+# Permet d’exécuter le module lorsqu’il est appelé manuellement (ie qu’il n’est pas utilisé pour ses fonctions)
 if __name__ == "__main__":
-	# mettre du code qui doit être exécuté uniquement lors de l'appel manuel
+    # mettre du code qui doit être exécuté uniquement lors de l’appel manuel
 
 
 
 
-# DÉFINITION D'UN DICTIONNAIRE
+# DÉFINITION D’UN DICTIONNAIRE
 # !! Les valeurs ne sont pas dans un ordre définit
 # !! Les clés sont sensibles à la casse
-# Les valeurs d'un dico peuvent être de n'importe quel type
-# Les clés d'un dico peuvent être des strings, des entiers (et quelques autres encore)
+# Les valeurs d’un dico peuvent être de n’importe quel type
+# Les clés d’un dico peuvent être des strings, des entiers (et quelques autres encore)
 d = {"server":"mpilgrim", "database":"master"}     # Assignation
 d["server"]                                        # renvoie 'mpilgrim'
 d["uid"] = "sa"                                    # Assignation
@@ -59,14 +61,14 @@ d                                                  # {'retrycount': 3, 'database
 d.clear()
 d                                                  # Renvoie {}
 
-# Teste la présence d'une clé avec une valeur donnée
+# Teste la présence d’une clé avec une valeur donnée
 "server" in d                                      # Renvoie True
 
 # Ça ne marche pas sur les valeurs
 "mpilgrim" in d                                    # Renvoie False
 
 
-# DÉFINITION D'UNE LISTE
+# DÉFINITION D’UNE LISTE
 
 li = ["a", "b", "mpilgrim", "z", "example"]        # Assignation
 li                                                 # Renvoie ['a', 'b', 'mpilgrim', 'z', 'example']
@@ -74,7 +76,7 @@ li[0]                                              # Renvoie 'a'
 li[4]                                              # Renvoie 'example'
 li[-1]                                             # Renvoie 'example'
 
-# Découpage d'une liste
+# Découpage d’une liste
 li[1:3]                                            # Renvoie ['b', 'mpilgrim']
 li[1:-1]                                           # Renvoie ['b', 'mpilgrim', 'z']
 li[0:-1]                                           # Renvoie ['a', 'b', 'mpilgrim', 'z']
@@ -87,7 +89,7 @@ li[:]                                              # Renvoie ['a', 'b', 'mpilgri
 # Attention li ≠ li[:]. li[:] est utilisé pour créer une copie
 
 
-# Ajout d'éléments à une liste
+# Ajout d’éléments à une liste
 li.append("new")
 li                                                  # Renvoie ['a', 'b', 'mpilgrim', 'z', 'example', 'new']
 li.insert(2, "new")
@@ -110,35 +112,35 @@ li.index("example")                                 # Renvoie 5
 
 
 # Avant la version 2.2.1, Python n'avait pas de type
-# 	booléen. Pour compenser cela, Python acceptait
-# 	pratiquement n'importe quoi dans un contexte
-# 	requérant un booléen (comme une instruction
-# 	if), en fonction des règles suivantes :
+#   booléen. Pour compenser cela, Python acceptait
+#   pratiquement n'importe quoi dans un contexte
+#   requérant un booléen (comme une instruction
+#   if), en fonction des règles suivantes :
 #
 # 0 est faux, tous les autres nombres sont vrai.
 #
 # Une chaîne vide ("") est faux, toutes les autres
-# 	chaînes sont vrai.
+#   chaînes sont vrai.
 #
 # Une liste vide ([]) est faux, toutes les autres
-# 	listes sont vrai.
+#   listes sont vrai.
 #
 # Un tuple vide (()) est faux, tous les autres
-# 	tuples sont vrai.
+#   tuples sont vrai.
 #
 # Un dictionnaire vide ({}) est faux, tous les
-# 	autres dictionnaires sont vrai.
+#   autres dictionnaires sont vrai.
 #
 # Ces règles sont toujours valides en Python 2.3.3
-# 	et au-delà, mais vous pouvez maintenant
-# 	utiliser un véritable booléen, qui a pour
-# 	valeur True ou False. Notez la majuscule, ces
-# 	valeurs comme tout le reste en Python, sont
-# 	sensibles à la casse.
+#   et au-delà, mais vous pouvez maintenant
+#   utiliser un véritable booléen, qui a pour
+#   valeur True ou False. Notez la majuscule, ces
+#   valeurs comme tout le reste en Python, sont
+#   sensibles à la casse.
 
 
-# Enlever des éléments d'une liste
-# Si la valeur n'existe pas, une erreur est retournée
+# Enlever des éléments d’une liste
+# Si la valeur n’existe pas, une erreur est retournée
 li = ['a', 'b', 'new', 'mpilgrim', 'z', 'example', 'new', 'two', 'elements']
 li.remove("new")                                 # Enlève la première occurence de "new" et ne renvoie rien
 li.pop()                                         # Enlève la dernière valeur de la liste et retourne cette valeur. Dans notre cas 'elements'
@@ -150,20 +152,20 @@ li = li + ['example', 'new']
 li                                                 # Renvoie ['a', 'b', 'mpilgrim', 'example', 'new']
 
 
-# Teste la présence d'un élément avec une valeur donnée
+# Teste la présence d’un élément avec une valeur donnée
 "b" in li                                          # Renvoie True
 
 
-# Attention, on peut concaténer avec l'opérateur + ou la fonction extend, mais l'opérateur + crée une nouvelle liste en mémoire
+# Attention, on peut concaténer avec l’opérateur + ou la fonction extend, mais l’opérateur + crée une nouvelle liste en mémoire
 liste = liste + autreliste
 
 # TUPLE
 # Un tuple (n-uplet) est une liste non-mutable. Un fois créé, un tuple ne peut en aucune manière être modifié.
 # La syntaxe est similaire aux listes. Les crochets droits sont remplacés par des parenthèses.
-#Les tuples n'ont pas de méthodes
+#Les tuples n’ont pas de méthodes
 t = ("a", "b", "mpilgrim", "z", "example")
 
-# Teste la présence d'un élément avec une valeur donnée
+# Teste la présence d’un élément avec une valeur donnée
 "b" in t                                           # Renvoie True
 
 
@@ -185,7 +187,7 @@ z                                                  # Renvoie e
 # Assignation de valeurs consécutives
 range(7)                                           # Renvoie [0, 1, 2, 3, 4, 5, 6]
 (MONDAY, TUESDAY, WEDNESDAY, \
-	THURSDAY, FRIDAY, SATURDAY, SUNDAY) = range(7)
+    THURSDAY, FRIDAY, SATURDAY, SUNDAY) = range(7)
 MONDAY                                             # Renvoie 0
 TUESDAY                                            # Renvoie 1
 WEDNESDAY                                          # Renvoie 2
@@ -207,8 +209,8 @@ print "Users connected: %d" % (userCount, )        # Renvoie Users connected: 6.
 print "Users connected: " + userCount              # Erreur de conversion
 
 # Formatage de nombres
-print "Today's stock price: %f" % 50.4625          # Renvoie 50.462500
-print "Today's stock price: %.2f" % 50.4625        # Renvoie 50.46
+print "Today’s stock price: %f" % 50.4625          # Renvoie 50.462500
+print "Today’s stock price: %.2f" % 50.4625        # Renvoie 50.46
 print "Change since yesterday: %+.2f" % 1.5        # Renvoie +1.50
 
 
@@ -228,7 +230,7 @@ params.items()                                     # Renvoie la liste des tuples
 [v for k, v in params.items()]                     # Renvoie ['secret', 'master', 'sa', 'mpilgrim']
 ["%s=%s" % (k, v) for k, v in params.items()]      # Renvoie ['pwd=secret', 'database=master', 'uid=sa', 'server=mpilgrim']
 ";".join(["%s=%s" % (k, v) \
-	for k, v in params.items()])                   # Renvoie 'pwd=secret;database=master;uid=sa;server=mpilgrim'
+    for k, v in params.items()])                   # Renvoie 'pwd=secret;database=master;uid=sa;server=mpilgrim'
 
 
 # Concaténation et découpage de chaînes
@@ -253,7 +255,7 @@ info(odbchelper, collapse=0)
 info(spacing=15, object=odbchelper)
 
 
-# Obtenir le type d'une donnée
+# Obtenir le type d’une donnée
 type(1)                                            # Renvoie <type 'int'>
 type([])                                           # Renvoie <type 'list'>
 type(())                                           # Renvoie <type 'tuple'>
@@ -322,20 +324,20 @@ type(odbchelper) == types.ModuleType               # Renvoie True
 'a' and 'b' and 'c'                                # Renvoie 'c'
 
 # Lorsqu’on utilise and les valeurs sont évaluées
-# 	dans un contexte booléen de gauche à droite.
-# 	0, '', [], (), {} et None valent faux dans ce
-# 	contexte, tout le reste vaut vrai.[1]Si toutes
-# 	les valeurs valent vrai dans un contexte
-# 	booléen, and retourne la dernière valeur. Ici
-# 	and évalue 'a', qui vaut vrai, puis 'b', qui
-# 	vaut vrai et retourne 'b'.
+#   dans un contexte booléen de gauche à droite.
+#   0, '', [], (), {} et None valent faux dans ce
+#   contexte, tout le reste vaut vrai.[1]Si toutes
+#   les valeurs valent vrai dans un contexte
+#   booléen, and retourne la dernière valeur. Ici
+#   and évalue 'a', qui vaut vrai, puis 'b', qui
+#   vaut vrai et retourne 'b'.
 #
 # Si une des valeurs vaut faux and retourne la
-# 	première valeur fausse. Ici '' est la première
-# 	valeur fausse.
+#   première valeur fausse. Ici '' est la première
+#   valeur fausse.
 #
 # Toutes les valeurs sont vrai, donc and retourne la
-# 	dernière valeur, 'c'.
+#   dernière valeur, 'c'.
 
 
 'a' or 'b'                                         # Renvoie 'a'
@@ -344,37 +346,37 @@ type(odbchelper) == types.ModuleType               # Renvoie True
 'b' or ''                                          # Renvoie 'b'
 'a' or 'b' or 'c'                                  # Renvoie 'a'
 def sidefx():
-	print "in sidefx()"
-	return 1
+    print "in sidefx()"
+    return 1
 'a' or sidefx()                                    # Renvoie 'a'
 
 # Lorsqu’on utilise or, les valeurs sont évaluées
-# 	dans un contexte booléen de gauche à droite,
-# 	comme pour and. Si une des valeurs vaut vrai,
-# 	or la retourne immédiatement. Dans ce cas 'a'
-# 	est la première valeur vraie.
+#   dans un contexte booléen de gauche à droite,
+#   comme pour and. Si une des valeurs vaut vrai,
+#   or la retourne immédiatement. Dans ce cas 'a'
+#   est la première valeur vraie.
 #
 # or évalue '', qui vaut faux, puis 'b', qui vaut
-# 	vrai et retourne 'b'.
+#   vrai et retourne 'b'.
 #
 # Si toutes les valeurs valent faux, or retourne la
-# 	dernière valeur. or évalue '', qui vaut faux,
-# 	puis [], qui vaut faux, puis {}, qui vaut faux
-# 	et retourne {}.
+#   dernière valeur. or évalue '', qui vaut faux,
+#   puis [], qui vaut faux, puis {}, qui vaut faux
+#   et retourne {}.
 #
 # Notez que or continue l’évaluation seulement
-# 	jusqu’à ce qu’il trouve une valeur vraie, le
-# 	reste est ignoré. C’est important si certaines
-# 	valeurs peuvent avoir un effet de bord. Ici,
-# 	la fonction sidefx n’est jamais appelée, car
-# 	or évalue 'a', qui vaut vrai et retourne 'a'
-# 	immédiatement.
+#   jusqu’à ce qu’il trouve une valeur vraie, le
+#   reste est ignoré. C’est important si certaines
+#   valeurs peuvent avoir un effet de bord. Ici,
+#   la fonction sidefx n’est jamais appelée, car
+#   or évalue 'a', qui vaut vrai et retourne 'a'
+#   immédiatement.
 
 # 4.7. Utiliser des fonctions lambda
 
 # Fonction ordinaire
 def f(x):
-	return x*2
+    return x*2
 
 f(3)                                               # Renvoie 6
 
@@ -393,7 +395,7 @@ g(3)                                               # Renvoie 6
 # par exemple :
 
 def FonctionPasEncoreImplementee():
-	pass
+    pass
 
 
 
@@ -417,8 +419,8 @@ os._exit( 0 ) # Violent
 # For loops
 
 for i in range( 0, 3 ):
-	for j in range( 10, 13 ):
-		print "Valeur de i = %d — Valeur de j = %d" % ( i, j )
+    for j in range( 10, 13 ):
+        print "Valeur de i = %d — Valeur de j = %d" % ( i, j )
 
 
 # Boucles while
@@ -426,8 +428,8 @@ for i in range( 0, 3 ):
 
 count = 0
 while( count < 9 ):
-	print 'The count is:', count
-	count = count + 1
+    print 'The count is:', count
+    count = count + 1
 
 print "Good bye!"
 
@@ -436,9 +438,9 @@ print "Good bye!"
 
 i = 0
 while( True ):
-	print "C’est pas la fin car i = %d" % ( i )
-	i = i + 1
-	if i > 10:
-		break
+    print "C’est pas la fin car i = %d" % ( i )
+    i = i + 1
+    if i > 10:
+        break
 
 
