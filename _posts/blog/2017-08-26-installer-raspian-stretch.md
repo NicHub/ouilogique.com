@@ -199,6 +199,7 @@ TIMEFORMAT='time : %E'
 time (bash configure && make -j4 altinstall)
 exit
 cd ~ && rm -r temp
+{% endhighlight %}
 
 Créer un lien pour que Python 3.6 soit la version de Python 3 par défaut
 
