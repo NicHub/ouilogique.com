@@ -34,7 +34,7 @@ author: Nico
 - Dans Etcher, cliquer sur “Select image” et choisir le fichier “2017-08-16-raspbian-stretch.img”.
 - Insérer la carte SD et vérifier qu’Etcher l’a bien détectée.
 - Cliquer sur “Flash”. Entrez votre mot de passe lorsque le dialogue le demande. L’écriture de l’image disque prend environ 15 min et la vérification (si elle a été sélectionnée dans les préférences) prend aussi 15 min. Ces temps peuvent beaucoup varier en fonction de votre matériel.
-- Quand Etcher a terminé, créer un fichier vide appelé “ssh” à la racine de la carte SD. N’importe quel éditeur de texte fera l’affaire. On peut aussi utiliser la commande suivante dans le terminal<br/>`touch /Volumes/boot/ssh`.
+- Quand Etcher a terminé, créer un fichier vide appelé “ssh” à la racine de la carte SD. N’importe quel éditeur de texte fera l’affaire. On peut aussi utiliser la commande suivante dans le terminal :<br/>`touch /Volumes/boot/ssh`.
 - Éjecter la carte SD dans le Finder.
 - Insérer la carte SD dans le Raspberry.
 - Connecter le câble Ethernet.
@@ -180,14 +180,17 @@ Voir <https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-dri
     smb://raspberrypi.local
 
 
-## Installer Python 3.6.7
+### Installer une autre version de Python
+
+Raspbian Stretch propose la version 3.5 de Python. Comme Python 3.6 apporte de nouvelles fonctionnalités comme les *f-strings* et que le module `asyncio` a été amélioré, je pense que c’est intéressant de l’installer aussi. L’idée est aussi de pouvoir tester le module [quart][quart].
 
 Source : <https://liftcodeplay.com/2017/06/30/how-to-install-python-3-6-on-raspbian-linux-for-raspberry-pi/>
 Les versions de Python disponibles sont téléchargeables à : <https://www.python.org/ftp/python/>
 Temps d’installation : environ 30 min.
 Cette procédure n’écrase pas les versions de Python existantes.
 
-> J’ai essayé avec la version 3.7.1 et l’installation a réussi, mais malheureusement pip ne fonctionnait pas, donc il m’était impossible d’installer de nouveeaux modules.
+Cette procédure montre comment installer Python 3.6.7.
+> J’ai aussi essayé d’installer la version 3.7.1 et l’installation a réussi, mais malheureusement pip ne fonctionnait pas, donc il m’était impossible d’installer de nouveaux modules.
 
 {% highlight bash %}
 sudo apt-get --assume-yes install build-essential checkinstall
@@ -203,7 +206,7 @@ exit
 cd ~ && sudo rm -rf temp
 {% endhighlight %}
 
-Créer un lien pour que Python 3.6 soit la version de Python 3 par défaut
+Créer un lien pour que Python 3.6 soit la version de Python 3 par défaut. Ceci nous permettra d’indiquer le *shebang* `#!/usr/bin/env python3` au début des scripts et de les exécuter avec la commande `python3 <nom_du_script.py>`.
 
 {% highlight bash %}
 which python3.6 # /usr/local/bin/python3.6
@@ -218,5 +221,7 @@ Pour installer des modules
 > Si `pip install <module>` ne fonctionne pas, on peut utiiser les commandes suivantes :
 
     sudo python3.6 -m pip install --upgrade pip
-    sudo python3.6 -m pip install websockets
+    sudo python3.6 -m pip install quest
 
+
+[quart]: https://gitlab.com/pgjones/quart
