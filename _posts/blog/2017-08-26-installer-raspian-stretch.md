@@ -221,7 +221,7 @@ Pour installer des modules
 > Si `pip install <module>` ne fonctionne pas, on peut utiiser les commandes suivantes :
 
     sudo python3.6 -m pip install --upgrade pip
-    sudo python3.6 -m pip install quest
+    sudo python3.6 -m pip install quart
 
 
 [quart]: https://gitlab.com/pgjones/quart
