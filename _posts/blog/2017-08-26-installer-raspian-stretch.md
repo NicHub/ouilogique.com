@@ -183,9 +183,11 @@ Voir <https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-dri
 ## Installer Python 3.6.7
 
 Source : <https://liftcodeplay.com/2017/06/30/how-to-install-python-3-6-on-raspbian-linux-for-raspberry-pi/>
-
-Temps d’installation environ 40 min.
+Les versions de Python disponibles sont téléchargeables à : <https://www.python.org/ftp/python/>
+Temps d’installation : environ 30 min.
 Cette procédure n’écrase pas les versions de Python existantes.
+
+> J’ai essayé avec la version 3.7.1 et l’installation a réussi, mais malheureusement pip ne fonctionnait pas, donc il m’était impossible d’installer de nouveeaux modules.
 
 {% highlight bash %}
 sudo apt-get --assume-yes install build-essential checkinstall
@@ -198,7 +200,7 @@ sudo -s
 TIMEFORMAT='time : %E'
 time (bash configure && make -j4 altinstall)
 exit
-cd ~ && rm -r temp
+cd ~ && sudo rm -rf temp
 {% endhighlight %}
 
 Créer un lien pour que Python 3.6 soit la version de Python 3 par défaut
@@ -206,12 +208,14 @@ Créer un lien pour que Python 3.6 soit la version de Python 3 par défaut
 {% highlight bash %}
 which python3.6 # /usr/local/bin/python3.6
 python3.6 -V # Python 3.6.7
-sudo ln -s /usr/local/bin/python3.6 python3
+sudo ln -sf /usr/local/bin/python3.6 /usr/local/bin/python3
 /usr/bin/env python3 -V # Python 3.6.7
 which python3 # /usr/local/bin/python3
 {% endhighlight %}
 
 Pour installer des modules
+
+> Si `pip install <module>` ne fonctionne pas, on peut utiiser les commandes suivantes :
 
     sudo python3.6 -m pip install --upgrade pip
     sudo python3.6 -m pip install websockets
