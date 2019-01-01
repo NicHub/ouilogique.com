@@ -20,9 +20,9 @@ Ce document fait partie du [cours sur le HTML embarqué][Wiki du cours HTML emba
 
 ## LES DOCUMENTS DU COURS
 
-- [Introduction au language HTML][Introduction au language HTML]
-- [Introduction au language CSS][Introduction au language CSS]
-- [Introduction au language JavaScript][Introduction au language JavaScript]
+- [Introduction au langage HTML][Introduction au langage HTML]
+- [Introduction au langage CSS][Introduction au langage CSS]
+- [Introduction au langage JavaScript][Introduction au langage JavaScript]
 - [Cours complet au format PDF][microclub-atelier-html-embarque.pdf]
 
 
@@ -652,8 +652,8 @@ Le site du W3C contient lui aussi beaucoup d’informations utiles : [CSS sur l
 
 [microclub-atelier-html-embarque.pdf]:  ../../files/2018-02-17-html-embarque/microclub-atelier-html-embarque.pdf
 
-[Introduction au language HTML]: ../introduction-html/
+[Introduction au langage HTML]: ../introduction-html/
 
-[Introduction au language CSS]: ../introduction-css/
+[Introduction au langage CSS]: ../introduction-css/
 
-[Introduction au language JavaScript]: ../introduction-javascript/
+[Introduction au langage JavaScript]: ../introduction-javascript/

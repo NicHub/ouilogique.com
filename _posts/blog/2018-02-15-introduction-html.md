@@ -20,9 +20,9 @@ Ce document fait partie du [cours sur le HTML embarqué][Wiki du cours HTML emba
 
 ## LES DOCUMENTS DU COURS
 
-- [Introduction au language HTML][Introduction au language HTML]
-- [Introduction au language CSS][Introduction au language CSS]
-- [Introduction au language JavaScript][Introduction au language JavaScript]
+- [Introduction au langage HTML][Introduction au langage HTML]
+- [Introduction au langage CSS][Introduction au langage CSS]
+- [Introduction au langage JavaScript][Introduction au langage JavaScript]
 - [Cours complet au format PDF][microclub-atelier-html-embarque.pdf]
 
 
@@ -151,7 +151,7 @@ Alors que ceci n’est pas valide :
 
 > Dans une balise autofermante, l’espace avant la barre oblique est optionnel.
 
-Voici une liste d’éléments vides : [Élements vides MDN, fr][Élements vides MDN, fr]
+Voici une liste d’éléments vides : [Éléments vides MDN, fr][Éléments vides MDN, fr]
 
 ### Éléments HTML non vides
 
@@ -177,7 +177,7 @@ Alors que ceci n’est pas valide :
 
 ### Cas particulier de l’élément `<script>`
 
-L’élément `script` est un peu spécial parce qu’il  peut être utilisée de deux façons différentes :
+L’élément `script` est un peu spécial parce qu’il peut être utilisée de deux façons différentes :
 
 - Pour appeler un script externe au fichier HTML.
 - Pour définir un script interne au fichier HTML.
@@ -280,7 +280,7 @@ La norme HTML définit environ 130 balises différentes que vous pouvez découvr
 
 ### Éléments vs balises
 
-Comme nous l’avons vu ci-dessus, un élément HTML est composé de balises et d’un contenu. Dans le language courant, on utilise souvent indifféremment les termes *éléments* et *balises*, même si à proprement parler il s’agit de deux choses distinctes.
+Comme nous l’avons vu ci-dessus, un élément HTML est composé de balises et d’un contenu. Dans le langage courant, on utilise souvent indifféremment les termes *éléments* et *balises*, même si à proprement parler il s’agit de deux choses distinctes.
 
 ### Pour en savoir plus
 
@@ -461,7 +461,9 @@ alors qu’en XHTML, toutes les balises doivent être fermées :
 >
 > La syntaxe HTML permet quand à elle d’économiser quelques octets puisque le nombre de balises nécessaires est moindre. Certaines personnes, dont je ne fais pas partie, la trouvent aussi plus facile à lire puisque moins verbeuse.
 >
-> Le validateur du W3C accepte le mélange des deux syntaxes dans un même document et de ce que je peux voir sur le web, la syntaxe HTML a le vent en poupe. Cependant, **mon conseil est de privilégier systématiquement la syntaxe XHTML.**
+> Le validateur du W3C accepte le mélange des deux syntaxes dans un même document et de ce que je peux voir sur le web, la syntaxe HTML a le vent en poupe. Cependant, **mon conseil est de privilégier ~~systématiquement~~ la syntaxe XHTML.** (Je découvre quelques mois plus tard que [Google suggère de privilégier la syntaxe HTML][Google HTML CSS Style Guide Optional Tags].)
+
+
 
 ### Les différences principales entre HTML et XHTML
 
@@ -490,7 +492,7 @@ alors qu’en XHTML, toutes les balises doivent être fermées :
 
 - [HTML and XHTML (W3Schools en)][HTML and XHTML]
 - [Apostrophe et « impostrophe »][Apostrophe et « impostrophe »]
-
+- [Google HTML/CSS Style Guide][Google HTML CSS Style Guide]
 
 
 ## LE TRAITEMENT DES BLANCS
@@ -549,7 +551,7 @@ p.pre-line { white-space: pre-line; }
 
 ## LES COMMENTAIRES
 
-Si l’on commenter une portion de code HTML, il faut utiliser la notation suivante :
+Si l’on veut commenter une portion de code HTML, il faut utiliser la notation suivante :
 
 ```html
 <!-- Commentaire -->
@@ -629,7 +631,7 @@ Exemple avec du code JavaScript intégré dans le code HTML :
 
 [Wiki du cours HTML embarqué]: https://github.com/NicHub/microclub-atelier-html-embarque/wiki
 
-[Élements vides MDN, fr]: https://developer.mozilla.org/fr/docs/Glossaire/Element_vide
+[Éléments vides MDN, fr]: https://developer.mozilla.org/fr/docs/Glossaire/Element_vide
 
 [Recommended list of Doctype declarations (W3C en)]: https://www.w3.org/QA/2002/04/valid-dtd-list.html
 
@@ -641,9 +643,12 @@ Exemple avec du code JavaScript intégré dans le code HTML :
 
 [microclub-atelier-html-embarque.pdf]:  ../../files/2018-02-17-html-embarque/microclub-atelier-html-embarque.pdf
 
-[Introduction au language HTML]: ../introduction-html/
+[Introduction au langage HTML]: ../introduction-html/
 
-[Introduction au language CSS]: ../introduction-css/
+[Introduction au langage CSS]: ../introduction-css/
 
-[Introduction au language JavaScript]: ../introduction-javascript/
+[Introduction au langage JavaScript]: ../introduction-javascript/
 
+[Google HTML CSS Style Guide]: https://google.github.io/styleguide/htmlcssguide.html
+
+[Google HTML CSS Style Guide Optional Tags]: https://google.github.io/styleguide/htmlcssguide.html#Optional_Tags
