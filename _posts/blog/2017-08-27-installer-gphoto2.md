@@ -24,7 +24,7 @@ La bibliothèque GPHOTO2 est utilisée par des applications pour accéder à une
 Dans cet article, je présente l’installation de GPHOTO2 sous MaxOS Sierra et sous Raspbian Stretch.
 
 
-# Installation de GPHOTO2 sur *macOS Sierra*
+## Installation de GPHOTO2 sur *macOS Sierra*
 
 L’installation de GPHOTO2 sur *macOS Sierra* se fait avec [Homebrew](https://brew.sh/index_fr.html)
 
@@ -50,7 +50,7 @@ gphoto2 -v
 {% endhighlight %}
 
 
-# Installation de GPHOTO2 sur *Raspbian Stretch*
+## Installation de GPHOTO2 sur *Raspbian Stretch*
 
 > GPHOTO2 n’est disponible qu’à la version 2.5.4 sur *Raspbian Jessie* avec la commande `sudo apt-get install gphoto2`. Il est donc préférable d’utiliser [*Raspbian Stretch*][1]. Sur *Raspbian Stretch*, la version par défaut est la 2.5.11, mais il est possible d’installer manuellement la version 2.5.14.
 
@@ -104,7 +104,7 @@ gphoto2 -v
 {% endhighlight %}
 
 
-# Quelques commandes utiles
+## Quelques commandes utiles
 
 {% highlight bash %}
 # Connecter un appareil de photo sur un port USB du Raspberry.
@@ -119,7 +119,7 @@ gphoto2 --capture-image-and-download --interval 2 --frames 2 --filename=image_%Y
 {% endhighlight %}
 
 
-# Pour visionner les photos
+## Pour visionner les photos
 
 Un moyen simple de visionner les photos est de créer un mini serveur web sur le Raspberry. Pour démarrer ce serveur, il suffit d’utiliser les commandes suivantes, puis de copier-coller l’URL (par exemple http://192.168.1.135:4000) dans un navigateur.
 
@@ -135,7 +135,7 @@ pyserver
 Comme le serveur bloque la ligne de commande, il est préférable de l’utiliser dans un autre shell avec l’utilitaire [`gnu screen`][2].
 
 
-# Quelques liens
+## Quelques liens
 
 - <http://gphoto.org/>
 - <http://lists.alioth.debian.org/pipermail/pkg-phototools-devel/2017-June/010392.html>

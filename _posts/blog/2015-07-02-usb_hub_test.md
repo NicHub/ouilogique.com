@@ -19,7 +19,7 @@ redirect_from:
 
 
 
-# Test du hub *Anne LXL4072201A*
+## Test du hub *Anne LXL4072201A*
 
 Test du hub USB de la marque *Anne*, modèle *LXL4072201A*, acheté sur [AliExpress](http://fr.aliexpress.com/item/2014-newest-7-Port-USB-3-0-HUB-High-Speed-With-Power-Adapter-For-Laptop-Notebook/1997348166.html){:target="_blank"}.
 
@@ -34,21 +34,21 @@ Le test consiste à placer une diode entre les pattes d’alimentation de la fic
 
 ![](/files/2015-07-02-usb_hub_test/test_usb_hub_004.jpg)
 
-## Conclusion
+### Conclusion
 
 > Vu que la LED s’allume, je ne recommande pas le hub *Anne LXL4072201A* !
 
 
 
-# Test du hub *Delock 61857*
+## Test du hub *Delock 61857*
 
 20 nov. 2015. Test du hub [Delock 61857](http://www.delock.de/produkte/S_61857/merkmale.html) acheté chez [NewConcept Informatique](http://ncinformatique.ch).
 
-## Conclusion
+### Conclusion
 
 > Vu que la LED ne s’allume pas, je recommande le hub *Delock 61857* !
 
-## Remarques
+### Remarques
 
 Le *Delock 61857* coûte environ 60 CHF, ce qui est nettement plus cher que les 14 CHF que m’ont coûtés le hub *Anne LXL4072201A*. Mais vu le résultat du test, je pense que c’est de l’argent bien investi.
 
@@ -83,9 +83,8 @@ Pour info, le hub vu de dessous
 
 
 
-# Référence du matériel de test
+## Référence du matériel de test
 
 - [Connecteur Jack-rapide](http://www.banggood.com/DC-Power-Male-Female-5_5X-2_1mm-Connector-Adapter-Plug-Cable-Pressed-connected-for-LED-Strips-12V-p-998683.html?p=0431091025639201412F)
 - [Câble Jack-USB](http://www.banggood.com/USB-Port-to-5_5mm-2_1mm-5V-DC-Barrel-Jack-Power-Cable-Connector-p-997025.html?p=0431091025639201412F) ⇒ ⚠ ce câble a une grande résistance de ligne qui fait chuter considérablement la tension !
 - [USB Femelle-Femelle](http://fr.aliexpress.com/item/laptop-High-Speed-blue-USB-3-0-cable-A-Female-TO-A-Female-Adapter-cables-converter/1855157465.html)
-

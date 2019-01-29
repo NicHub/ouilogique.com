@@ -180,5 +180,3 @@ int main()
 
 
 {% endhighlight %}
-
-

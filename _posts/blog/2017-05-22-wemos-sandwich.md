@@ -30,7 +30,7 @@ J’ai réalisé le *shield nRF24* moi-même. Pour le brochage, voir [la page su
 Pour les connexions, j’ai utilisé des [Long 8-pin Headers][6] qui sont forts pratiques. Ils permettent également de séparer les éléments trop hauts comme le relai.
 
 
-# Images
+## Images
 
 [![WEMOS Sandwich][image-1]][image-1]
 
@@ -56,4 +56,3 @@ Pour les connexions, j’ai utilisé des [Long 8-pin Headers][6] qui sont forts 
 [5]: https://www.banggood.com/DHT11-Single-Bus-Digital-Temperature-Humidity-Sensor-Shield-For-WeMos-D1-Mini-p-1050049.html?p=0431091025639201412F
 
 [6]: https://fr.aliexpress.com/item/Free-shipping-60Pcs-lot-2-54MM-6Pin-8Pin-10Pin-10MM-Long-Needle-Female-Pin-Header-Strip/32684334510.html
-

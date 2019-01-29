@@ -16,7 +16,7 @@ redirect_from:
 
 
 
-# Matériel requis
+## Matériel requis
 
 - Un ordinateur sur OS X Yosemite (10.10)
 - Un Arduino UNO
@@ -26,7 +26,7 @@ redirect_from:
 - 4 résistances de 220 Ω
 
 
-# Sources
+## Sources
 
 > Source principale
 
@@ -44,13 +44,13 @@ redirect_from:
 - <http://codeandlife.com/2012/03/21/using-arduino-uno-as-isp/>
 
 
-# Préambule
+## Préambule
 
 Le but de ce document est de présenter la programmation d’un microcontrôleur ATtiny25V à l’aide d’un Arduino UNO. Ce mode de programmation s’appelle en anglais *AVR ISP (in-system programmer)*. L’IDE Arduino utilisé pendant les tests était la version 1.5.8 bêta Java 6.
 
 
 
-# Préparation matérielle
+## Préparation matérielle
 
 Câbler la plaque d’essai selon le schéma ci-dessous. Les trois premières LED, verte, rouge et orange, servent à afficher le statut lors de la programmation :
 
@@ -64,7 +64,7 @@ et la quatrième LED, bleue, sert à vérifier que l’ATtiny a effectivement é
 
 
 
-# Préparation logicielle (IDE < 1.6.4)
+## Préparation logicielle (IDE < 1.6.4)
 
 > !! edit 2016-07-03
 > Ceci est valable pour les version de l’IDE Arduino qui n’avaient pas le gestionnaire de carte. À partir de la version 1.6.4, suivre la procédure du chapitre suivant.
@@ -75,7 +75,7 @@ et la quatrième LED, bleue, sert à vérifier que l’ATtiny a effectivement é
 - Le fichier `boards.txt` peut optionnellement être modifié, par exemple pour enlever des définitions de microcontrôleurs inutiles. Ce fichier complète celui de l’IDE qui se trouve à `/Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/avr/boards.txt` et qui peut lui aussi être édité.
 - Redémarrer l’IDE. Le menu `Outils/Type de carte` doit afficher la liste des ATtiny installés ci-dessus.
 
-# Préparation logicielle (IDE >= 1.6.4)
+## Préparation logicielle (IDE >= 1.6.4)
 
 > !! edit 2016-07-03
 
@@ -86,7 +86,7 @@ et la quatrième LED, bleue, sert à vérifier que l’ATtiny a effectivement é
 
 
 
-# Configurer l’Arduino UNO comme un programmateur
+## Configurer l’Arduino UNO comme un programmateur
 
 - Ouvrir le croquis `ArduinoISP.ino` qui se trouve dans le menu `Fichier/Exemples` en onzième position.
 - Vérifier que la cible est l’Arduino UNO :
@@ -97,7 +97,7 @@ et la quatrième LED, bleue, sert à vérifier que l’ATtiny a effectivement é
 
 
 
-# Charger le *bootloader* dans l’ATtiny
+## Charger le *bootloader* dans l’ATtiny
 
 > Normalement cette étape n’est pas nécessaire quand on programme en mode ISP. Le bootloader est justement là pour palier l’absence de programmateur. Comme je n’ai pas encore vérifié cette info, je laisse ce texte pour l’instant. De toute façon une chose est sûre : ça fonctionne comme ça.
 
@@ -114,7 +114,7 @@ D’après [Didel](http://www.didel.com/diduino/ProgrammerUnAtTiny.pdf), ce n’
 
 
 
-# Programmer l’ATtiny
+## Programmer l’ATtiny
 
 - Vérifier que la cible est effectivement l’ATtiny comme à l’étape précédente.
 - Téléverser le croquis suivant :
@@ -153,7 +153,7 @@ int main()
 {% endhighlight %}
 
 
-# Résolution de problèmes
+## Résolution de problèmes
 
 Certaines cartes UNO requièrent l’ajout d’un condensateur de  10 µF entre la pin `RESET` et la pin `GND`. Voir à ce sujet <http://forum.arduino.cc/index.php?topic=104435.0>. Pour moi, ça a fonctionné sans ce condensateur.
 
@@ -168,7 +168,7 @@ Certaines cartes UNO requièrent l’ajout d’un condensateur de  10 µF entre 
 
 
 
-# Programmation des fusibles
+## Programmation des fusibles
 
 > Les infos de ce chapitres m’ont été gracieusement transmises par [Richard](http://www.fablab-chene20.ch).
 
@@ -188,7 +188,7 @@ Les fusibles (*fuses* en anglais) sont des paramètres intégrés aux microcontr
 /Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/bin/avrdude -C/Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/etc/avrdude.conf -v -v -v -v -pattiny25 -cstk500v1 -P/dev/tty.usbmodem1421 -b19200 -Uflash:w:/var/folders/3l/c6_nv3414rb_sxjkb8z9z1fr0000gn/T/build2612095162045447463.tmp/tinyblinky.cpp.hex:i
 {% endhighlight %}
 
-## Configuration d’`avrdude`
+### Configuration d’`avrdude`
 
 Pour utiliser `avrdude`, le plus simple est d’ajouter les deux lignes suivantes à la fin du fichier `~/.bash_profile` et de redémarrer le terminal
 
@@ -198,7 +198,7 @@ AVRDUDECONF=/Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr
 {% endhighlight %}
 
 
-## Lectures des fusibles
+### Lectures des fusibles
 
 La commande utilisée par l’IDE Arduino nous donne toutes les informations de configuration pour envoyer nos propres commandes. La première chose à faire est de lire la configuration actuelle. Adaptez la commande suivante à votre configuration :
 
@@ -230,7 +230,7 @@ La version d’`avrdude` utilisée pour ce test est : `Version 6.0.1, compiled 
 
 
 
-## Écriture des fusibles
+### Écriture des fusibles
 
 Pour configurer les fusibles, il est conseillé d’utiliser un outil de configuration, comme <http://www.engbedded.com/fusecalc/> ou de lire le chapitre *20. Memory Programming* de la spécification <http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf>. La vidéo <https://www.youtube.com/watch?v=jP1NTgs-a-s> donne une bonne introduction en anglais.
 
@@ -269,5 +269,3 @@ avrdude                      \
     -U hfuse:w:0xd7:m        \
     -U efuse:w:0xff:m
 {% endhighlight %}
-
-

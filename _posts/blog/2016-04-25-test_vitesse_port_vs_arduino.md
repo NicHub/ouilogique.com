@@ -273,4 +273,3 @@ void loop()
 ## À lire également
 
 [Benchmarking Arduino’s digitalWrite() with a Logic Analyzer](https://www.baldengineer.com/digitalwrite-on-a-logic-analyzer.html)
-

@@ -26,7 +26,7 @@ author: Nico
 
 
 
-# INFORMATIONS AU DÉMARRAGE
+## INFORMATIONS AU DÉMARRAGE
 
 	Colorful LED V39
 	System Checks..
@@ -42,7 +42,7 @@ author: Nico
 
 
 
-# CARTE SIM
+## CARTE SIM
 
 Introduire la carte SIM avec son support en plastique.
 
@@ -52,19 +52,19 @@ La carte SIM permet de contrôler l’afficheur à distance via SMS ou *Fetion A
 
 
 
-# MOT DE PASSE
+## MOT DE PASSE
 
 Pas de mot passe par défaut.
 
 
 
-# COMMANDE PAR SMS
+## COMMANDE PAR SMS
 
 > ⚠ Les commandes sont sensibles à la casse !<br/>
 > ⚠ Les accents ne sont pas supportés !<br/>
 > ⚠ 140 caractères maximum !
 
-## Protocole
+### Protocole
 
 Le message commence obligatoirement par `*`
 
@@ -78,7 +78,7 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 | `<L×>` | N° de ligne, × = 1, 2                                                                                     |
 | `<C×>` | Définition de la couleur, × = R (rouge), Y (jaune), G (vert), C (cyan), B (bleu), P (mangenta), W (blanc) |
 
-## Modes de défilement
+### Modes de défilement
 
 |        |                           |
 | --     | --                        |
@@ -88,14 +88,14 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 | `<F4>` | défilement vers le bas    |
 | `<F5>` | clignote                  |
 
-## Combinaisons de modes de défilements possibles sur deux lignes
+### Combinaisons de modes de défilements possibles sur deux lignes
 
 |        |      |      |      |      |      |      |      |      |      |      |      |
 | --     | --   | --   | --   | --   | --   | --   | --   | --   | --   | --   | --   |
 | **L1** | `F1` | `F1` | `F1` | `F1` | `F2` | `F2` | `F2` | `F4` | `F4` | `F5` | `F5` |
 | **L2** | `F1` | `F2` | `F3` | `F4` | `F1` | `F2` | `F3` | `F1` | `F4` | `F3` | `F5` |
 
-## Exemples de messages sur une ligne
+### Exemples de messages sur une ligne
 
 > Le mode de défilement est optionnel. Si on ne le précise pas, tous les modes de défilement sont utilisés successivement et dans l’ordre chronologique (F1, F2,...). On ne peut pas spécifier plusieurs modes de défilement sur une ligne donnée.<br/>
 > Les lignes de commande ci-dessous doivent être envoyées dans des SMS distincts.
@@ -103,7 +103,7 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 	*<F1><CG>A GAGNER EN CE MOMENT A L'EURO MILLIONS : <CR>!! 147 MILLION$ !!#02
 	*<F5>!! 147 MILLION$ !!#03
 
-## Exemples de messages sur deux lignes
+### Exemples de messages sur deux lignes
 
 > En mode deux lignes, les caractères ont une hauteur de 7 px.
 > Par défaut, la première lignes est statique et la deuxième défile vers la gauche.<br/>
@@ -112,18 +112,18 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 	*<L1><F2>KIOSQUE DE MONTCHOISI<L2><F2>JOYEUSES FETES DE FIN D'ANNEE#01
 	*<L1><F4>KIOSQUE DE MONTCHOISI<L2><F4>JOYEUSES FETES DE FIN D'ANNEE#04
 
-## Spécifier les textes qui doivent s’afficher
+### Spécifier les textes qui doivent s’afficher
 
 	*RL#01#02#03#04*
 
-## Spécifier la couleur
+### Spécifier la couleur
 
 > Si aucune couleur n’est spécifiée, les caractères s’affichent dans 7 couleurs successivement :
 (rouge R, jaune Y, vert G, cyan C, bleu B, mangenta P, blanc W)
 
 	*<CR>ce texte sera rouge <CY>et celui-ci sera jaune#08
 
-## Spécifier la vitesse
+### Spécifier la vitesse
 
 > Vitesses de 1 à 6<br/>
 > 1 = rapide, 6 = lent<br/>
@@ -132,7 +132,7 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 
 	*S1*
 
-## Spécifier la luminosité
+### Spécifier la luminosité
 
 > Luminosité de 1 à 6<br/>
 > 1 = moins lumineux, 6 = plus lumineux
@@ -140,7 +140,7 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 
 	*B1*
 
-## Mise à zéro
+### Mise à zéro
 
 > La mise à zéro supprime tous les messages. Si aucun message n’est enregistré, le message “Welcome!” est affiché.
 
@@ -148,7 +148,7 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 
 
 
-# COMMANDE PAR USB SUR WINDOWS
+## COMMANDE PAR USB SUR WINDOWS
 
 1. Brancher le câble USB entre l’afficheur et l’ordinateur.
 2. Vérifier si la carte USB est reconnue dans les périphériques de Windows.
@@ -158,7 +158,7 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 
 
 
-# COMMANDE PAR USB SUR OS X
+## COMMANDE PAR USB SUR OS X
 
 > Pour trouver les commandes RS232 à envoyer, j’ai espionné les transmissions du logiciel `MiniLEDDisplayEditorV2.exe` avec [Free Serial Analyzer](http://freeserialanalyzer.com/) sous Win10/VirtualBox.
 
@@ -169,7 +169,7 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 - Vitesse de transmission : 9600 bauds
 - Attendre ~ 3 s entre chaque commande
 
-## Exemples
+### Exemples
 
 	<ID01><PA><L1><F2>KIOSQUE DE MONTCHOISI<L2><F2>JOYEUSES FETES DE FIN D'ANNEE<E>
 	<ID01><PB><F1><CG>A GAGNER EN CE MOMENT A L'EURO MILLIONS : <CR>!! 147 MILLION$ !!<E>
@@ -179,14 +179,14 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 
 
 
-# MODULE GSM/GPRS
+## MODULE GSM/GPRS
 
 [Quectel GC65](http://www.quectel.com/UploadFile/Product/%E7%A7%BB%E8%BF%9C%E9%80%9A%E4%BF%A1_GC65_GSM_%E4%BA%A7%E5%93%81%E8%A7%84%E6%A0%BC%E4%B9%A6_V2.0.pdf)
 
 850/**900/1800**/1900 MHz
 
 
-# IMAGES
+## IMAGES
 
 
 
@@ -203,20 +203,20 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_006_lowres.jpg)
 
-## Carte GPRS + USB *XC-1015 MSC6.3*
+### Carte GPRS + USB *XC-1015 MSC6.3*
 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_007_lowres.jpg)
 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_008_lowres.jpg)
 
-## Nappe
+### Nappe
 
 > ⚠ Un des connecteurs de cette nappe est plus bas que normal (environ 3mm du câble jusqu’au sommet). C’est nécessaire pour pouvoir assembler l’afficheur !
 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_009_lowres.jpg)
 
 
-## Logiciel `MiniLEDDisplayEditorV2.exe`
+### Logiciel `MiniLEDDisplayEditorV2.exe`
 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/MiniLEDDisplayEditorV2_001.png)
 
@@ -225,7 +225,7 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/MiniLEDDisplayEditorV2_003.png)
 
 
-## Profilé 118 × 35 mm
+### Profilé 118 × 35 mm
 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/profile_118x35_001_lowres.jpg)
 
@@ -235,7 +235,7 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 
 ![](/files/2015-11-26-afficheur_a_led_128x16/images/profile_118x35_003.png)
 
-## Connecteur jack ⌀ 5.5 mm / ⌀ 2.5 mm
+### Connecteur jack ⌀ 5.5 mm / ⌀ 2.5 mm
 
 > ⚠ Le connecteur jack de l’afficheur ne mesure que 9 mm de long et a un diamètre intérieur de 2.5 mm. Quand on le tourne, il y a de temps en temps des mauvais contacts qui font que l’afficheur redémarre. Avec un connecteur de 11 mm de long, de diamètre intérieur de 2.5 mm, mais pourvus d’ergots, ce problème disparait.
 
@@ -251,7 +251,6 @@ La norme de ce genre de connecteurs s’appelle EIAJ et il me semble que celui d
 
 <https://en.wikipedia.org/wiki/EIAJ_connector>
 
-## Conclusion
+### Conclusion
 
 Un connecteur jack de diamètres 5.5/2.1 mm et d’une longueur de 11 ou 12 mm ferait mieux l’affaire.
-

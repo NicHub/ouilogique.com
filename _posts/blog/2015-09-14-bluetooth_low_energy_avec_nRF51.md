@@ -21,7 +21,7 @@ redirect_from:
 ![](/files/2015-09-14-bluetooth_low_energy_avec_nRF51/nRF51_002.jpg)
 
 
-# Brochage
+## Brochage
 
 ![](/files/2015-05-28-pinouts/images/xnRF51-DK_Pinout_4.png)
 
@@ -32,26 +32,26 @@ redirect_from:
 > Il n’y a qu’un périphérique UART, deux SPI et deux I²C (appelés TWI), mais il faut choisir : soit `SPI0` ou `TWI0`, soit `SPI1` ou `TWI1`, car ils partagent visiblement des ressources communes !
 
 
-# Support imprimé 3D
+## Support imprimé 3D
 
 <http://www.thingiverse.com/thing:1012855>
 
 <https://cad.onshape.com/documents/3f05e14ebb62415c928ff36e/w/d85b78be98c545f6ab2fd41f/e/7053fbf40382442182af2f67>
 
 
-# La carte nRF51 en bref
+## La carte nRF51 en bref
 
 C’est une carte de développement pour le prototypage d’applications Bluetooth LE. Le brochage est compatible avec celui de l’Arduino UNO, donc en théorie on peut utiliser les mêmes shields. Dans la pratique, il faudra faire attention au fait que la carte nRF51 ne fonctionne que sous 3.3 V et que le courant max des sorties est de 0.5 mA (5 mA sur 3 broches au maximum avec le mode “high drive” qu’il faut configurer explicitement)¹.
 
 > ¹ [Voir “nRF51822 Product Specification v3.1 — chap 8.23 — General Purpose I/O (GPIO) specifications”, page 65](https://www.nordicsemi.com/eng/nordic/download_resource/20339/13/3799285)
 
 
-# Bluetooth avec Node.js
+## Bluetooth avec Node.js
 
 [NoBLE](https://github.com/sandeepmistry/noble)
 
 
-# Bluetooth et le marketing
+## Bluetooth et le marketing
 
 > ⚠ Bluetooth ≠ Bluetooth Low Energy
 
@@ -64,17 +64,17 @@ C’est une carte de développement pour le prototypage d’applications Bluetoo
 
 
 
-# Android
+## Android
 
 [nRF Master Control Panel (BLE)](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en)
 
 
-# Quelques outils pour OS X
+## Quelques outils pour OS X
 
 [HardwareIOTools_Xcode_6.3](http://adcdownload.apple.com/Developer_Tools/Hardware_IO_Tools_for_Xcode_6.3/HardwareIOTools_Xcode_6.3.dmg)
 
 
-# Portée des variables
+## Portée des variables
 
 `static const` dans une fonction ⇒ stocké en flash
 
@@ -98,7 +98,7 @@ norme C 99 ⇒ permet des déclarations spéciales de struct
 
 
 
-# Liens
+## Liens
 
 - <http://jmkikori.no-ip.org/jmk/joomla-static/index.php/2-uncategorised/1-introduction-bluetooth-low-energy.html>
 - <https://developer.mbed.org/platforms/Nordic-nRF51-DK/>
@@ -109,7 +109,7 @@ norme C 99 ⇒ permet des déclarations spéciales de struct
 - [https://evothings.com](https://evothings.com)
 - [List of Bluetooth Smart and Bluetooth Smart Ready products available now](http://www.bluetooth.com/Pages/Bluetooth-Smart-Devices-List.aspx)
 
-# Modules BLE
+## Modules BLE
 
 - [RedBearLab](http://redbearlab.com/nrf51822/)
 - [Aliexpress](http://fr.aliexpress.com/item/Low-power-consumption-BLE4-0-module-with-2-4GHz-PCB-antenna16-28mm-Free-sample/32334323347.html)
@@ -119,4 +119,3 @@ norme C 99 ⇒ permet des déclarations spéciales de struct
 - [HM-10 Bluetooth 4.0 Module Transparent Serial Port With Logic Level Translator](http://www.banggood.com/HM-10-Bluetooth-4_0-Module-Transparent-Serial-Port-p-967059.html?p=0431091025639201412F)
 - [DFRobot — Bluno](http://www.dfrobot.com/)
 - [Bluno Beetle V1.0 — AliExpress](http://fr.aliexpress.com/item/DFRoBot-100-Original-DIY-Bluno-Beetle-V1-0-wearable-mini-Micro-main-controller-Board-with-Bluetooth/32456535853.html)
-

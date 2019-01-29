@@ -63,7 +63,7 @@ Bon, j’ai décidé de m’y remettre après une semaine de pause et comme le c
 > Et comme une image vaut mille mots, j’ai fait une jolie photo du PCB et je me suis rendu compte que le capteur de température n’y est pas... je pouvais le chercher longtemps sur le bus I²C ! Grrr ! La morale de cette histoire, c’est qu’il vaut mieux commencer par prendre le temps de regarder de près les cartes bon marché !
 
 
-# Liens
+## Liens
 
 - [BMP180 Digital pressure sensor — Bosch Sensortec](/files/2015-11-01-Strinity_Sensors_Cobber/BST-BMP180-DS000-09.pdf)
 - [TSL2560, TSL2561 Light-to-Digital Converter — TAOS](/files/2015-11-01-Strinity_Sensors_Cobber/TSL2561.pdf)
@@ -83,7 +83,3 @@ Bon, j’ai décidé de m’y remettre après une semaine de pause et comme le c
 ![](/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_004_low_res.jpg)
 
 ![](/files/2015-11-01-Strinity_Sensors_Cobber/Strinity_Sensors_Cobber_001.jpg)
-
-
-
-

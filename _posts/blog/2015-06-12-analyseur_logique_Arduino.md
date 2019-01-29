@@ -52,6 +52,3 @@ Pour l’analyse post-mortem, il y a :
 Le format d’enregistrement des traces que j’utilise est le [VCD (Value Change Dump)](https://en.wikipedia.org/wiki/Value_change_dump)
 
 ---
-
-
-

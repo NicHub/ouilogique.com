@@ -150,7 +150,7 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 
 &nbsp;
 
-# LCD Drivers
+## LCD Drivers
 
 Les deux drivers LCD sont des TM74HC245.
 

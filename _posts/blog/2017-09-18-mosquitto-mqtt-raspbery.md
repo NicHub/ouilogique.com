@@ -13,20 +13,20 @@ author: Nico
 ---
 
 
-# Matériel
+## Matériel
 
 - Un Raspberry Pi (testé avec un Raspberry Pi 2, Raspbian Stretch)
 - Un Mac (testé avec macOS Sierra)
 
 
-# Installation de Raspian Stretch
+## Installation de Raspian Stretch
 
 J’ai testé la procédure ci-dessous avec une installation propre de Raspian Stretch.
 
 <https://ouilogique.com/installer-raspian-stretch/>
 
 
-# Installation et compilation de mosquitto 1.4.14
+## Installation et compilation de mosquitto 1.4.14
 
 Les informations ci-dessous sont tirées de ce blog avec quelques adaptations :
 
@@ -135,7 +135,7 @@ mosquitto -v
 
 {% endhighlight %}
 
-# Pour tester
+## Pour tester
 
 {% highlight bash %}
 mosquitto_sub --host raspberrypi.local --topic "SUPERTEST/#"

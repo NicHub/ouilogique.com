@@ -17,7 +17,7 @@ redirect_from:
 
 ---
 
-# Simon Wood — Future Insights
+## Simon Wood — Future Insights
 
 <iframe style="margin: 10px auto; display:block" width="640" height="360" src="https://www.youtube.com/embed/jeQCoiZT5gg" frameborder="0" allowfullscreen></iframe>
 
@@ -26,7 +26,7 @@ redirect_from:
 ![](https://avatars1.githubusercontent.com/u/189606?v=3&s=96)
 
 
-# ADVANTAGES OF STATIC SITES
+## ADVANTAGES OF STATIC SITES
 
 - speed
 - simplicity
@@ -36,13 +36,13 @@ redirect_from:
 - portability (Convenient hosting)
 
 
-# SITES ANNUAIRES
+## SITES ANNUAIRES
 
 - <https://staticsitegenerators.net>
 - <https://www.staticgen.com>
 
 
-# GENERATORS I
+## GENERATORS I
 
 - moveable type
 - [nanoc](http://nanoc.ws) (ruby)
@@ -51,7 +51,7 @@ redirect_from:
 - stacey ⇒ mozilla WebFWD
 
 
-# GENERATORS II
+## GENERATORS II
 
 - [assemble](http://assemble.io) ⇒ À regarder, basé sur Yeoman et Grunt
 - [Cactus](http://cactusformac.com)
@@ -69,14 +69,14 @@ redirect_from:
 - wintersmith
 
 
-# MARKDOWN TOOLS
+## MARKDOWN TOOLS
 
 - Web editor <http://dillinger.io>
 - mouapp
 - gitbook
 
 
-# TEMPLATES
+## TEMPLATES
 
 - handlebars
 - mustache
@@ -86,7 +86,7 @@ redirect_from:
 - twig
 
 
-# HOSTING
+## HOSTING
 
 - git pages
 - AWS S3
@@ -95,7 +95,7 @@ redirect_from:
 37:25
 
 
-# CMS for flatfile gen
+## CMS for flatfile gen
 
 - [Kirby](http://getkirby.com)
 - [Statamic](http://statamic.com) ⇒ ♡
@@ -106,82 +106,81 @@ redirect_from:
 - [razorCMS](http://www.razorcms.co.uk)
 
 
-## examples
+### examples
 
 - Statamic ⇒ [ASANA](https://asana.com)
 - Kirby ⇒ [World Backup Day](http://www.worldbackupday.com/fr/)
 
 
-# DISCUSSION
+## DISCUSSION
 
 - disqus
 - livefyre
 - intensedebate
 
 
-# SURVEYS
+## SURVEYS
 
 google docs
 survey monkeys
 
 
-# VIDEOS
+## VIDEOS
 
 don’t want to pay for bandwidth ⇒ YouTube, Vimeo
 
 
-# CHARTS
+## CHARTS
 
 d3js
 highchart
 
 <http://caniuse.com/>
 
-# Generator for CMS
+## Generator for CMS
 
 Drupal ⇒ Boost
 WP ⇒ Wp-Super Cache
 <https://ghost.org> ⇒ Buster
 
 
-# Alternatives
+## Alternatives
 
 - [Hammer](http://hammerformac.com)
 - [Mixture](http://mixture.io) ⇒  Stopped, use Gulp or Grunt
 - [Cactus](http://cactusformac.com)
 
-## À voir aussi
+### À voir aussi
 
 - [codekit](http://incident57.com/codekit/)
 - [wufoo](http://www.wufoo.com)
 - [Parse](https://parse.com)
 
 
-# Comparing Static Site Engines with Brian Rinaldi
+## Comparing Static Site Engines with Brian Rinaldi
 <https://www.youtube.com/watch?v=R-fJWOO1bjE>
 
 
-## Jekyll
+### Jekyll
 - Liquid templates ⇒ ♡
 
-## Middleman
+### Middleman
 <https://middlemanapp.com>
 
-## Harp
+### Harp
 <http://harpjs.com>
 
-## roots (voir article)
+### roots (voir article)
 
-# Bootstrap
+## Bootstrap
 
 [18 Essential Bootstrap UI Editors](http://mashable.com/2013/10/20/bootstrap-editors/)
 
 
-# AASPIR
+## AASPIR
 
 - <http://www.mauricezundel.ch>
 - <https://maishademo.wordpress.com/>
 - <https://organizationdemo.wordpress.com/>
 - <https://ampersanddemo.wordpress.com/>
 - <https://motifdemo.wordpress.com/>
-

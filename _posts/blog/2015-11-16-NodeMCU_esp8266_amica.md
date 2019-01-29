@@ -18,17 +18,17 @@ author: Nico
 
 
 
-# Référence AliExpress
+## Référence AliExpress
 
 <http://fr.aliexpress.com/item/V2-4M-4FLASH-NodeMcu-Lua-WIFI-Networking-development-board-Based-ESP8266/32448694790.html>
 
-# Installation du pilote pour le Silabs CP2102
+## Installation du pilote pour le Silabs CP2102
 
 <https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx>
 
 La version *4.x.13 - August 31*, 2016 fonctionne sous macOS Sierra.
 
-# Premières impressions
+## Premières impressions
 
 - Le chip Silabs CP2102 semble plus rapide que le CH340G utilisé par LoLin.
 - Le pinout est différent de LoLin sur la 2<sup>e</sup> et la 3<sup>e</sup> pin en haut à gauche sur l’image du pinout ci-dessous.
@@ -49,16 +49,16 @@ Amica ⇒ 9 × 2.54 = 22.86 mm
 
 
 
-# Pinout
+## Pinout
 
 ![](/files/2015-05-28-pinouts/images/NodeMCU_esp8266_amica_pinout.png)
 
 
-# Vitesse de la liaison série
+## Vitesse de la liaison série
 
 Le test consiste à flasher un firmware identique sur LoLin et Amica et de comparer les temps nécessaires.
 
-## Script de flashage
+### Script de flashage
 
 {% highlight bash %}
 #!/bin/bash
@@ -76,7 +76,7 @@ esptool.py           \
     0x00000 $FIRMWARE
 {% endhighlight %}
 
-## Résultat LoLin
+### Résultat LoLin
 
 {% highlight bash %}
 Connecting...
@@ -86,7 +86,7 @@ Wrote 450560 bytes at 0x00000000 in 33.2 seconds (108.6 kbit/s)...
 Leaving...
 {% endhighlight %}
 
-## Résultat Amica
+### Résultat Amica
 
 {% highlight bash %}
 Connecting...
@@ -96,11 +96,10 @@ Wrote 450560 bytes at 0x00000000 in 22.8 seconds (158.0 kbit/s)...
 Leaving...
 {% endhighlight %}
 
-## Conclusion
+### Conclusion
 
 Le chip Silabs CP2102 est 50 % plus rapide que le CH340G ! J’ai réalisé ce test sur mon MacBook Pro (Retina, 13 pouces, mi-2014, 2.8 GHz Intel Core i5, 8 Go 1600 MHz DDR3) avec un hub USB [Delock 61857](http://www.delock.de/produkte/S_61857/merkmale.html).
 
-# Drivers Silabs CP2102
+## Drivers Silabs CP2102
 
 <https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx>
-

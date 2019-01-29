@@ -18,16 +18,16 @@ redirect_from:
 
 ![](/files/2015-09-11-commande_matrice_32x32_avec_msp430/msp430-mx32x32.jpeg)
 
-# Référence de la matrice sur AliExpress
+## Référence de la matrice sur AliExpress
 
 <http://fr.aliexpress.com/item/p6-RGB-video-led-module-32-32-RGB-smd-led-module-export-korea/1677389664.html>
 
-# Launchpad
+## Launchpad
 
 Launchpad-MSP430 rev 1.5, voir le brochage ici : <https://ouilogique.com/blog/pinouts/index.html#pinout-launchpad-msp430>
 
 
-# Brochage
+## Brochage
 
 Le brochage est décrit au début du programme ci-dessous.
 
@@ -38,18 +38,18 @@ Le brochage est décrit au début du programme ci-dessous.
 ![](/files/2015-09-11-commande_matrice_32x32_avec_msp430/msp430-mx32x32_brochage.jpeg)
 
 
-# Article sur Adafruit
+## Article sur Adafruit
 
 <https://learn.adafruit.com/32x16-32x32-rgb-led-matrix?view=all>
 
 
-# Brochage des différents connecteurs de matrices
+## Brochage des différents connecteurs de matrices
 
 <http://www.ec086.com/Technical_support.html>
 
 
 
-# Programme
+## Programme
 
 Le programme ci-dessous m’a été gracieusement transmis par [Pierre-Yves Rochat](mailto:pyr@pyr.ch). La seule chose que j’ai modifiée est la description du brochage pour qu’elle corresponde à ma matrice. Voir l’article d’Adafruit ci-dessus au sujet des différentes descriptions de brochage.
 
