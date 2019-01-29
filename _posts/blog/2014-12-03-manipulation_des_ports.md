@@ -17,7 +17,7 @@ redirect_from:
 
 
 
-# Description des registres AVR & MSP
+## Description des registres AVR & MSP
 
 | R/W | MSP     | AVR     | USAGE                                                                                   |
 | :-- | :--     | :--     | :--                                                                                     |
@@ -32,7 +32,7 @@ redirect_from:
 > doc MSP, voir [slau144j.pdf p.329, 333](http://www.ti.com/lit/ug/slau144j/slau144j.pdf)
 
 
-# Exemple de programme
+## Exemple de programme
 
 {% highlight C++ %}
 
@@ -69,13 +69,13 @@ void loop()
 
 
 
-# Liens
+## Liens
 
 <http://www.mon-club-elec.fr/pmwiki_reference_arduino/pmwiki.php?n=Main.PortManipulation>
 
 
 
-# Manipulation des registres de l’ESP8266
+## Manipulation des registres de l’ESP8266
 
 Je n’ai pas trouvé de page qui décrit comment manipuler les registres de l’ESP, mais en fouillant dans les librairie, j’ai réussi à trouver comment réaliser un programme Blink.
 
