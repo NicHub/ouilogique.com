@@ -44,6 +44,8 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 - [Arduino Pro Mini](http://www.banggood.com/5Pcs-3_3V-8MHz-ATmega328P-AU-Pro-Mini-Microcontroller-Board-For-Arduino-p-980292.html?p=0431091025639201412F)
 - [Interface clone FTDI (je déconseille ce modèle car il envoie du 5 V en mode 3.3 V, mais pour l’Arduino Pro Mini, ça n’a pas de conséquence)](http://www.miniinthebox.com/fr/programme-downloader-ftdi-basic-usb-a-ttl-ft232-pour-arduino_p903425.html)
 - [Borniers](http://www.banggood.com/20pcs-2-Pin-Plug-in-Screw-Terminal-Block-Connector-5_08mm-Pitch-p-993197.html?p=0431091025639201412F)
+- [Connecteurs 3 pôles](https://fr.aliexpress.com/item/F217-10-sets-ht5-08-3pin-Terminal-plug-type-300V-10A-5-08mm-pitch-connector-pcb/32657384224.html)
+- [Connecteurs 2 pôles (plus disponible)](https://fr.aliexpress.com/item/10-sets-5-08-2pin-Right-angle-Terminal-plug-type-300V-10A-5-08mm-pitch-connector/32787731420.html)
 
 
 ## Programme
