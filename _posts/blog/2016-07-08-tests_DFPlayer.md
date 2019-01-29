@@ -26,8 +26,7 @@ Pour la qualité du son, elle est très bonne. Pendant le déverminage, je me su
 
 J’ai testé deux cartes micro SD : une de 32 Go et une autre de 8 Go et les deux ont fonctionné sans problème. Le formatage en FAT32 sous OSX avec l’utilitaire de disques n’a pas posé de problème non plus.
 
-![...](/files/2016-07-08-tests_DFPlayer/images/2016-07-08-tests_DFPlayer_001_lowres.jpg)
-
+[![Test d’un module DFPlayer avec un Arduino nano][image-1]][image-1]
 
 # Programme d’exemple
 
@@ -94,3 +93,4 @@ Si on a pas de haut-parleur, un buzzer peut faire l’affaire lors de la mise en
 	DAC\_L  (pin 5)   ⇒     Haut-parleur gauche +
 	SPK2    (pin 6)   ⇒     Haut-parleur droite - & gauche -
 
+[image-1]: ../../files/2016-07-08-tests_DFPlayer/images/2016-07-08-tests_DFPlayer_001_lowres.jpg
