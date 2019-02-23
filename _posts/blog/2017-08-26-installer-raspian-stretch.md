@@ -105,6 +105,14 @@ df -h # Vous venez de libérer 1.1 GB !
 {% endhighlight %}
 
 
+## Réinstaller un programme qu’on croyait inutile
+
+{% highlight bash %}
+sudo apt-get --assume-yes update
+sudo apt-get --assume-yes install wolfram-engine
+{% endhighlight %}
+
+
 ## Ajouter quelques programmes utiles
 
 ### GNU screen

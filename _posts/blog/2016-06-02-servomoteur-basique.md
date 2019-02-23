@@ -44,6 +44,12 @@ BOUTON         D2
 MICROCONTRÔLEUR
 Clone Arduino Nano
 
+SERVOMOTEUR
+SM-S2309S
+Rotation      : ±60°
+Speed @4.8V   : 0.11 s/60°
+Speed @6V     : 0.09 s/60°
+
 juin 2016, ouilogique.com
 
 */
