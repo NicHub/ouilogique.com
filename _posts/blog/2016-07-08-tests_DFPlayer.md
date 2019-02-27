@@ -19,14 +19,16 @@ Voici un petit module fort pratique pour lire des fichiers MP3. Il ne coûte pre
 > TX Arduino ⇒ RX DFPlayer
 > RX Arduino ⇒ TX DFPlayer
 
-
 À priori, ce module peut être utilisé de 3.2 V à 5 V, mais à 5 V il y a un ronflement prononcé sur le haut-parleur. La solution consiste à placer une résistance de 1 kΩ en série sur la sortie TX de l’Arduino.
 
-Pour la qualité du son, elle est très bonne. Pendant le déverminage, je me suis contenté d’un buzzer comme on le voit sur l’image ci-dessous. Mais par après, j’ai fait un test en connectant une enceinte monophonique amplifiée et j’ai été agréablement surpris par la qualité du son. Bon, comme mon enceinte de test est mono, je n’ai pas pu tester la qualité du stéréo (s’il est disponible, parce que ce point n’est pas clair). Lorsque j’ai testé les sorties DAC\_R et DAC\_L (broches 4 & 5) , j’ai remarqué que la masse “Power GND” (broche 7 ou 10) donnait des résultats médiocre, alors que si on utilise SPK2 (broche 6), le résultat est très bon. En conclusion, ça marche bien avec les sorties DAC ou avec les sorties SPK.
+Pour la qualité du son, elle est très bonne. Pendant le déverminage, je me suis contenté d’un buzzer comme on le voit sur l’image ci-dessous. Mais par après, j’ai fait un test en connectant une enceinte monophonique amplifiée et j’ai été agréablement surpris par la qualité du son. Bon, comme mon enceinte de test est mono, je n’ai pas pu tester la qualité en stéréo (si le mode stéréo est possible, parce que ce point n’est pas clair). Lorsque j’ai testé les sorties DAC\_R et DAC\_L (broches 4 & 5) , j’ai remarqué que la masse “Power GND” (broche 7 ou 10) donnait des résultats médiocres, alors que si on utilise SPK2 (broche 6), le résultat est très bon. En conclusion, ça marche bien avec les sorties DAC ou avec les sorties SPK.
 
 J’ai testé deux cartes micro SD : une de 32 Go et une autre de 8 Go et les deux ont fonctionné sans problème. Le formatage en FAT32 sous OSX avec l’utilitaire de disques n’a pas posé de problème non plus.
 
 [![Test d’un module DFPlayer avec un Arduino nano][image-1]][image-1]
+
+[image-1]: ../../files/2016-07-08-tests_DFPlayer/images/2016-07-08-tests_DFPlayer_001_lowres.jpg
+
 
 ## Programme d’exemple
 
@@ -39,12 +41,12 @@ Pour utiliser le programme ci-dessus, il faut installer la bibliothèque `DFPlay
 > !! Attention, le dépôt Git contient un sous-répertoire `DFPlayer_Mini_Mp3` et c’est lui seul qui doit se trouver dans `~/Documents/Arduino/libraries/` !!
 
 
-
 ## RÉFÉRENCES
 - <http://www.banggood.com/3Pcs-DFPlayer-Mini-MP3-Player-Module-For-Arduino-p-981366.html?p=0431091025639201412F>
 - <http://www.dfrobot.com/wiki/index.php/DFPlayer_Mini_SKU:DFR0299>
 - <http://www.dfrobot.com/image/data/DFR0299/DFPlayer%20Mini%20Manul.pdf>
 - <http://www.trainelectronics.com/Arduino/MP3Sound/TalkingTemperature/FN-M16P%20Embedded%20MP3%20Audio%20Module%20Datasheet.pdf>
+
 
 ## NOTES
 
@@ -54,7 +56,7 @@ Le DFPlayer communique avec le port série. Comme l’Arduino Nano n’a qu’un
 
 Pour le déverminage, il peut être utile de passer au morceau suivant ou précédent en mettant les broches 11 (IO2) et 9 (IO1) à la masse pour forcer la lecture.
 
-Si on a pas de haut-parleur, un buzzer peut faire l’affaire lors de la mise en route.
+Si on n’a pas de haut-parleur, un buzzer peut faire l’affaire lors de la mise en route.
 
 
 ## NOTES SUR LA  CARTE SD
@@ -93,4 +95,10 @@ Si on a pas de haut-parleur, un buzzer peut faire l’affaire lors de la mise en
 	DAC\_L  (pin 5)   ⇒     Haut-parleur gauche +
 	SPK2    (pin 6)   ⇒     Haut-parleur droite - & gauche -
 
-[image-1]: ../../files/2016-07-08-tests_DFPlayer/images/2016-07-08-tests_DFPlayer_001_lowres.jpg
+
+### ERREURS DANS LES FICHES TECHNIQUES (édit. du 27.02.2019)
+
+Les fiches techniques disponibles ont des erreurs : SPK1 et SPK2 sont inversés suivant où l’on regarde.
+
+<https://github.com/NicHub/ouilogique-Arduino/commit/a6653da674c18434d6784aeaf6c92e0cf681c2e0#r32497731>
+
