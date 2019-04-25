@@ -85,6 +85,7 @@ Cinématique inverse avec servomoteurs **😃 Meilleure source pour les calculs 
 
 
 ## PLATEFORME DE STEWART AVEC 3 DEGRÉS DE LIBERTÉ
+
  - https://www.instructables.com/id/Ball-Balancing-PID-System/
 
 
@@ -108,6 +109,7 @@ Felix Ros **😃 Avec du code Processing et Arduino !**
 Un rotopod permet de faire une rotation complète sans ajouter un 7e moteur.
 
 Version de Circular-Base-Stewart-Platform
+
 **😃 Il montre un logiciel de tunning des PID dans le 2e lien**
   - https://www.youtube.com/channel/UCgm1PM2V9BgfP7Qaze1teAw
   - https://youtu.be/zna9Hw_Ei58?t=482
@@ -121,7 +123,7 @@ Version commerciale de Mikrolar
   - https://motionsystems.eu/products/
 
 
-## Modelling and Simulation of a 6DOF Motion Platform with Permanent Magnet Linear Actuators for Testing in Wind Tunnel"
+## Modelling and Simulation of a 6DOF Motion Platform with Permanent Magnet Linear Actuators for Testing in Wind Tunnel
 
   - https://www.youtube.com/watch?v=AZjgcrV642c
 
@@ -147,14 +149,17 @@ PDF à trouver :
 ## APPLICATIONS MICROCLUB
 
  ### Application 1 : Labyrinthe
+
   - Concours de vitesse de sortie du labyrinthe
     - plusieurs robots s’affrontent en mode auto
     - plusieurs utilisateurs s’affrontent en mode manuel
 
  ### Application 2 : Système de stabilisation pour appareil photo
+
   - Besoin d’un 7e axe pour augmenter l’angle de rotation autour de l’axe Z.
 
  ### Application 3 : Ball bouncing
+
   - http://poe.olin.edu/2017/Bounce/
   - https://github.com/TShapinsky/Bounce
 
@@ -162,6 +167,7 @@ PDF à trouver :
 ## IMPLÉMENTATION
 
  ### inputs
+
   - Mesure de la position de la bille par tapis résistif
   - Commande depuis navigateur web
   - Commande depuis Blender
@@ -169,6 +175,7 @@ PDF à trouver :
   - Joystick cablé (Wii Nunchuck)
 
  ### outputs
+
   - Mouvements du robot (6 ou 7 axes)
   - Retour visuel sur navigateur web
   - Retour visuel sur Blender
@@ -177,6 +184,7 @@ PDF à trouver :
 ## MATÉRIEL
 
  ### Servomoteurs
+
   - Tower Pro MG90s Servos
     - https://www.banggood.com/6X-Towerpro-MG90S-Metal-Gear-RC-Micro-Servo-p-1072260.html
     - https://www.towerpro.com.tw/product/mg90s-3/
@@ -195,6 +203,7 @@ PDF à trouver :
 
 
  ### Rotules + tiges
+
   - M3x100mm https://aliexpress.com/af/32775630549.html
   - En M2 https://aliexpress.com/af/32704692789.html
   - rotule https://aliexpress.com/af/32887391192.html
@@ -204,29 +213,35 @@ PDF à trouver :
   - complète https://aliexpress.com/af/32894390128.html
 
  ### Alim 5V
+
   - Courant 10A https://aliexpress.com/af/32810906485.html
 
  ### Levier de servo (Servo horn arm)
+
   - couleur tritanium https://aliexpress.com/af/32843432977.html
   - https://aliexpress.com/af/32811563669.html
 
  ### Liste complète de matériel
+
   - https://01.org/developerjourney/recipe/building-stewart-platform
 
  ### Touch screen
+
   - Digikey 360-3520-ND https://www.digikey.ch/short/pj85db (utilisé par https://github.com/xoxota99/stewy)
   - https://aliexpress.com/af/32809597549.html
 
  ### ESP32
+
   - WeMos ESP32 WROOM
     - https://www.banggood.com/fr/WeMos-ESP32-WiFi-Bluetooth-Development-Board-Ultra-Low-Power-Consumption-Dual-Core-ESP-32-ESP-32S-p-1175488.html
 
  ### Joystick
+
   - Wii Nunchuck https://aliexpress.com/af/32827461737.html
 
 
 
-# PINOUT
+## PINOUT
 
 31 DIRA GPIO14
 34 TC5  GPIO13
