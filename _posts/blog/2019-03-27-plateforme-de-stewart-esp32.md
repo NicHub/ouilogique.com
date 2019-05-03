@@ -12,22 +12,64 @@ published: true
 author: Nico
 ---
 
-<p>
-<a href="https://raw.githubusercontent.com/NicHub/stewart-platform-esp32/master/doc/stewart-plateform-ouilogique.jpg" class="image-popup" target="_blank">
-<img style="height:400px" src="https://raw.githubusercontent.com/NicHub/stewart-platform-esp32/master/doc/stewart-plateform-ouilogique.jpg" alt="Plateforme de Stewart" />
-</a>
-</p>
+[![Plateforme de Stewart — ouilogique.com][i1]{:style="width:50%;"}][i1]
+
+[i1]: ../../files/plateforme-de-stewart/images/stewart-plateform-ouilogique.jpg
 
 
-Premier prototype d’une plateforme de Stewart que je construis dans le cadre du projet 2019 (P19) du [Microclub][Microclub]. Il me manque encore les biellettes, donc j’en ai bricolé avec du fil de fer. J’avais hâte de tester la [cinématique de xoxota99][cinématique de xoxota99].
+Premiers prototypes d’une plateforme de Stewart que je construis dans le cadre du projet 2019 (P19) du [Microclub][Microclub].
 
-Le code source est sur GitHub : <https://github.com/NicHub/stewart-platform-esp32>.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qbQuXtnF4H4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Microclub]: https://microclub.ch
 
 [cinématique de xoxota99]: https://github.com/xoxota99/stewy
+
+
+## Code source
+
+**Le code source et quelques détails sur GitHub**
+
+<https://github.com/NicHub/stewart-platform-esp32>
+
+
+## Première version
+
+Avec un joystick analogique, des biellettes en fil de fer et des clones de servos Tower Pro MG90s.
+
+<div style="display:block; margin-bottom:50px;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qbQuXtnF4H4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+[![Plateforme de Stewart — ouilogique.com][i2]{:style="width:50%; float:left"}][i2]
+
+[i2]: ../../files/plateforme-de-stewart/images/2019-03-21-proto-plateforme-de-stewart_001.jpg
+
+[![Plateforme de Stewart — ouilogique.com][i2b]{:style="width:50%; float:left; clear:right; margin-bottom:100px"}][i2b]
+
+[i2b]: ../../files/plateforme-de-stewart/images/2019-03-21-proto-plateforme-de-stewart_002.jpg
+
+
+
+## Deuxième version
+
+Avec un clone de Nunchuck (joystick I²C de la console Wii), des vraie biellettes et des clones de servos Tower Pro MG996R.
+
+[![Plateforme de Stewart — ouilogique.com][i3]{:style="width:50%; float:left"}][i3]
+
+[i3]: ../../files/plateforme-de-stewart/images/2019-05-03-proto-plateforme-de-stewart_001.jpg
+
+[![Plateforme de Stewart — ouilogique.com][i4]{:style="width:50%; float:left"}][i4]
+
+[i4]: ../../files/plateforme-de-stewart/images/2019-05-03-proto-plateforme-de-stewart_002.jpg
+
+[![Plateforme de Stewart — ouilogique.com][i5]{:style="width:50%; float:left"}][i5]
+
+[i5]: ../../files/plateforme-de-stewart/images/2019-05-03-proto-plateforme-de-stewart_003.jpg
+
+[![Plateforme de Stewart — ouilogique.com][i6]{:style="width:50%; float:left; clear:right; margin-bottom:200px;"}][i6]
+
+[i6]: ../../files/plateforme-de-stewart/images/2019-05-03-proto-plateforme-de-stewart_004.jpg
+
 
 
 
@@ -77,7 +119,6 @@ Webots
   - <https://www.youtube.com/watch?v=ddrtiwjKAaY>
 
 Projet memememememememe **😃 Avec un simulateur fonctionnel en Processing et le code pour RPi !**
-  - <https://www.youtube.com/watch?v=rD4kTW_khXQ>
   - <https://memememememememe.me/post/stewart-platform-math/>
   - <https://github.com/thiagohersan/memememe>
 
@@ -102,6 +143,7 @@ Dynamixel motor
 
 Avec GUI Processing [Arun Dayal Udai]
   - <https://youtu.be/LFpyIZx2QGU?t=221>
+  - <https://www.youtube.com/watch?v=rD4kTW_khXQ>
   - <https://www.youtube.com/watch?v=RqUcHulonHk>
 
 Felix Ros **😃 Avec du code Processing et Arduino !**
