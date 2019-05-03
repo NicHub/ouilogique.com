@@ -12,6 +12,13 @@ published: true
 author: Nico
 ---
 
+<p>
+<a href="https://raw.githubusercontent.com/NicHub/stewart-platform-esp32/master/doc/stewart-plateform-ouilogique.jpg" class="image-popup" target="_blank">
+<img style="height:400px" src="https://raw.githubusercontent.com/NicHub/stewart-platform-esp32/master/doc/stewart-plateform-ouilogique.jpg" alt="Plateforme de Stewart" />
+</a>
+</p>
+
+
 Premier prototype d’une plateforme de Stewart que je construis dans le cadre du projet 2019 (P19) du [Microclub][Microclub]. Il me manque encore les biellettes, donc j’en ai bricolé avec du fil de fer. J’avais hâte de tester la [cinématique de xoxota99][cinématique de xoxota99].
 
 Le code source est sur GitHub : <https://github.com/NicHub/stewart-platform-esp32>.
@@ -34,9 +41,8 @@ Article Wikipedia
 
 Vidéo qui m’a donné envie de réaliser une plateforme de Stewart
 San-José State University
-  - <http://fullmotiondynamics.com>
   - <https://www.youtube.com/watch?v=j4OmVLc_oDw>
-  - <http://fullmotiondynamics.com/>
+  - <http://fullmotiondynamics.com>
 
 Vidéo où l’on voit bien les imperfections métrologiques
   - <https://www.youtube.com/watch?v=QdKo9PYwGaU>
