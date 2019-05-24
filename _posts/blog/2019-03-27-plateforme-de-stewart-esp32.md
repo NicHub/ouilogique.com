@@ -287,7 +287,9 @@ PDF à trouver :
 
   - Wii Nunchuck <https://aliexpress.com/af/32827461737.html>
 
+### Calculs
 
+  - https://www.scratchapixel.com/lessons/mathematics-physics-for-computer-graphics/geometry/transforming-points-and-vectors
 
 ## PINOUT
 
