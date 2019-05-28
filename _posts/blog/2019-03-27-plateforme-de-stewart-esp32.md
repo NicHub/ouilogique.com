@@ -289,7 +289,7 @@ PDF à trouver :
 
 ### Calculs
 
-  - https://www.scratchapixel.com/lessons/mathematics-physics-for-computer-graphics/geometry/transforming-points-and-vectors
+  - <https://www.scratchapixel.com/lessons/mathematics-physics-for-computer-graphics/geometry/transforming-points-and-vectors>
 
 ## PINOUT
 
