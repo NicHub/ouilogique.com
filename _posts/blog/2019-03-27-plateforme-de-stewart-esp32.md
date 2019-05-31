@@ -32,22 +32,23 @@ Premiers prototypes d’une plateforme de Stewart que je construis dans le cadre
 <https://github.com/NicHub/stewart-platform-esp32>
 
 
-## Première version
+## Quatrième version
 
-Avec un joystick analogique, des biellettes en fil de fer et des clones de servos Tower Pro MG90s.
+Pour la quatrième version, je vais tester un driver I²C de servomoteurs PCA9685.
+
+<https://fr.aliexpress.com/af/32718274859.html>
+
+## Troisième version
+
+Avec un clone de Nunchuck (joystick I²C de la console Wii), des vraie biellettes et des clones de servos Tower Pro MG90s. J’ai abandonné les clones de servos Tower Pro MG996R qui ne fonctionnent vraiment pas bien, car ils sont beaucoup trop lents et consomment trop de courant.
 
 <div style="display:block; margin-bottom:50px;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qbQuXtnF4H4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1uQ3CkhVr-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-[![Plateforme de Stewart — ouilogique.com][i2]{:style="width:50%; float:left"}][i2]
+[![Plateforme de Stewart — ouilogique.com][i7]{:style="width:50%;  margin-bottom:100px"}][i7]
 
-[i2]: ../../files/plateforme-de-stewart/images/2019-03-21-proto-plateforme-de-stewart_001.jpg
-
-[![Plateforme de Stewart — ouilogique.com][i2b]{:style="width:50%; float:left; clear:right; margin-bottom:100px"}][i2b]
-
-[i2b]: ../../files/plateforme-de-stewart/images/2019-03-21-proto-plateforme-de-stewart_002.jpg
-
+[i7]: ../../files/plateforme-de-stewart/images/2019-05-31-proto-plateforme-de-stewart_001.jpg
 
 
 ## Deuxième version
@@ -70,6 +71,23 @@ Avec un clone de Nunchuck (joystick I²C de la console Wii), des vraie biellette
 
 [i6]: ../../files/plateforme-de-stewart/images/2019-05-03-proto-plateforme-de-stewart_004.jpg
 
+
+
+## Première version
+
+Avec un joystick analogique, des biellettes en fil de fer et des clones de servos Tower Pro MG90s.
+
+<div style="display:block; margin-bottom:50px;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qbQuXtnF4H4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+[![Plateforme de Stewart — ouilogique.com][i2]{:style="width:50%; float:left"}][i2]
+
+[i2]: ../../files/plateforme-de-stewart/images/2019-03-21-proto-plateforme-de-stewart_001.jpg
+
+[![Plateforme de Stewart — ouilogique.com][i2b]{:style="width:50%; float:left; clear:right; margin-bottom:100px"}][i2b]
+
+[i2b]: ../../files/plateforme-de-stewart/images/2019-03-21-proto-plateforme-de-stewart_002.jpg
 
 
 
