@@ -104,6 +104,13 @@ San-José State University
   - <https://www.youtube.com/watch?v=j4OmVLc_oDw>
   - <http://fullmotiondynamics.com>
 
+California Polytechnic University of Pomona — Mechanical Engineering Department — Controls Class Final Project
+  - <https://www.youtube.com/watch?v=7Jw8m4pbTYI>
+
+MIPT, Department of Radio Engineering and Cybernetics
+2 degrés de liberté + code Arduino
+  - <https://www.youtube.com/watch?v=p65XPP53rLo>
+
 Vidéo où l’on voit bien les imperfections métrologiques
   - <https://www.youtube.com/watch?v=QdKo9PYwGaU>
   - Ils utilisent ce controleur de servos
@@ -267,6 +274,15 @@ PDF à trouver :
   - Parallax 900-00005 (utilisé par fullmotiondynamics)
     <https://www.parallax.com/product/900-00005>
 
+### Fonctionnement des servos
+
+  - Analogiques <https://www.youtube.com/watch?v=LXURLvga8bQ>
+  - <https://learn.sparkfun.com/tutorials/hobby-servo-tutorial/all>
+
+
+### Driver de servos
+
+  - PCA9685 (16 servos, I²C) <https://aliexpress.com/af/32718274859.html>
 
 ### Rotules + tiges
 
@@ -308,6 +324,11 @@ PDF à trouver :
 ### Calculs
 
   - <https://www.scratchapixel.com/lessons/mathematics-physics-for-computer-graphics/geometry/transforming-points-and-vectors>
+
+
+### PCB
+
+  - <https://jlcpcb.com>
 
 ## PINOUT
 
