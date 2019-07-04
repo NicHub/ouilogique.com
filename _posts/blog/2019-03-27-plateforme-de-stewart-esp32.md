@@ -159,6 +159,14 @@ Cinématique inverse avec servomoteurs **😃 Meilleure source pour les calculs 
 ## PLATEFORME DE STEWART AVEC 3 DEGRÉS DE LIBERTÉ
 
  - <https://www.instructables.com/id/Ball-Balancing-PID-System/>
+ - <https://www.instructables.com/id/3DOF-Ball-on-Plate-Using-Closed-Loop-Stepper-Motor/>
+ - <https://people.ece.cornell.edu/land/courses/ece4760/FinalProjects/f2017/psl58_aw698_eb645/psl58_aw698_eb645/index.html#HLD>
+
+
+## SPRK: A Low-Cost Stewart Platform For Motion Study In Surgical Robotics
+
+ - <https://goldberg.berkeley.edu/pubs/2018_ISMR_stewart_design.pdf>
+ - <https://github.com/BerkeleyAutomation/sprk>
 
 
 ## PLATEFORME DE STEWART AVEC RETOUR DE FORCE
@@ -280,7 +288,7 @@ PDF à trouver :
   - <https://learn.sparkfun.com/tutorials/hobby-servo-tutorial/all>
 
 
-### Driver de servos
+### Driver de servos
 
   - PCA9685 (16 servos, I²C) <https://aliexpress.com/af/32718274859.html>
 
