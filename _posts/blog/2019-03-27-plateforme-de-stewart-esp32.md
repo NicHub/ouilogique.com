@@ -338,6 +338,10 @@ PDF à trouver :
 
   - <https://jlcpcb.com>
 
+### Système complet avec caméra [Swiftflying Store](https://swiftflying.fr.aliexpress.com/store/3246059)
+
+  - <https://fr.aliexpress.com/item/32957141466.html>
+
 ## PINOUT
 
 31 DIRA GPIO14
