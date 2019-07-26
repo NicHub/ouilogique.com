@@ -45,6 +45,11 @@ Cet article ne présente que la fonctionnalité de débuggage JTAG.
 
 ## Connections JTAG
 
+> Le débuggage JTAG utilise les GPIO 12 à 15, ce qui veut dire que ces broches ne peuvent pas être utilisées par le programme en cours de test !
+
+Les couleurs sont indicatives et correspondent simplement aux fils que j’ai utilisés et que l’on peut voir sur la photo.
+
+
 ```
        ESP32        PROG BOARD      |      PROG BOARD    ESP32
 ====================================|=================================
