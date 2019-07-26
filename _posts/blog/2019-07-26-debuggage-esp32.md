@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Debuggage d’un ESP32 avec un <em>ESP&#8209;Prog<em> et <em>PIO Unified Debugger</em>"
+title: "Débuggage sur ESP32 avec un <em>ESP&#8209;Prog<em> et <em>PIO Unified Debugger</em>"
 modified:
 categories:
 excerpt:
@@ -43,7 +43,7 @@ Cet article ne présente que la fonctionnalité de débuggage JTAG.
 
   - <https://www.youtube.com/watch?v=psMqilqlrRQ>
 
-## Connections JTAG
+## Connexions JTAG
 
 > Le débuggage JTAG utilise les GPIO 12 à 15, ce qui veut dire que ces broches ne peuvent pas être utilisées par le programme en cours de test !
 
