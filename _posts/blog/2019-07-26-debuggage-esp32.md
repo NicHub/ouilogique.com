@@ -74,7 +74,7 @@ bleu   GND       3. GND             |   4. ESP_TCK       IO_13  violet
 ```ini
 [env]
 debug_tool = esp-prog
-debug_init_break = tbreak_setup
+debug_init_break = tbreak setup
 ```
 
  - Brancher les connecteurs USB de l’ESP et de l’ESP&#8209;Prog à l’ordinateur. L’ESP&#8209;Prog utilise deux ports série.
