@@ -1,8 +1,11 @@
 <!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="fr"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="fr"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"><!--<![endif]-->
+{% if page.lang %}
+  {% assign page_lang = page.lang %}{% else %}{% assign page_lang = "fr" %}
+{% endif %}
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{ page_lang }}"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="{{ page_lang }}"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="{{ page_lang }}"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ page_lang }}"><!--<![endif]-->
 <head>
 {% include head.html %}
 </head>
@@ -42,7 +45,7 @@
 {% include google-adsense.liquid %}
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
-    <nav class="pagination" role="navigation">
+    <nav class="pagination">
       {% if page.previous %}
         <a id="bouton-prec" href="{{ site.url }}{{ page.previous.url }}" class="btn btn_prev_next bouton-prec" title="{{ page.previous.title }}">Précédent</a>
       {% endif %}
@@ -56,7 +59,7 @@
 
 
 <div class="footer-wrapper">
-  <footer role="contentinfo" class="entry-wrapper">
+  <footer class="entry-wrapper">
     {% include footer.html %}
   </footer>
 </div><!-- /.footer-wrapper -->
