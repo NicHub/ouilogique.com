@@ -63,36 +63,36 @@ How So Simple is organized and what the various files are. All posts, layouts, i
 {% highlight text %}
 so-simple-theme/
 ├── _includes/
-|    ├── browser-upgrade.html   # prompt to install a modern browser for < IE9
-|    ├── disqus-comments.html   # Disqus comments script
-|    ├── feed-footer.html       # post footers in feed
-|    ├── footer.html            # site footer
-|    ├── head.html              # site head
-|    ├── navigation.html        # site top navigation
-|    ├── open-graph.html        # meta data for Open Graph and Twitter cards
-|    └── scripts.html           # site scripts
+|    ├── browser-upgrade.liquid   # prompt to install a modern browser for < IE9
+|    ├── disqus-comments.liquid   # Disqus comments script
+|    ├── feed-footer.liquid       # post footers in feed
+|    ├── footer.liquid            # site footer
+|    ├── head.liquid              # site head
+|    ├── navigation.liquid        # site top navigation
+|    ├── open-graph.liquid        # meta data for Open Graph and Twitter cards
+|    └── scripts.liquid           # site scripts
 ├── _layouts/
-|    ├── page.html               # single column page layout
-|    └── post.html               # main content with sidebar for author/post details
-├── _posts/                      # MarkDown formatted posts
-├── _sass/                       # Sass stylesheets
-├── _templates/                  # used by Octopress to define YAML variables for new posts/pages
-├── about/                       # sample about page
-├── articles/                    # sample articles category page
+|    ├── page.liquid              # single column page layout
+|    └── post.liquid              # main content with sidebar for author/post details
+├── _posts/                       # MarkDown formatted posts
+├── _sass/                        # Sass stylesheets
+├── _templates/                   # used by Octopress to define YAML variables for new posts/pages
+├── about/                        # sample about page
+├── articles/                     # sample articles category page
 ├── assets/
-|    ├── css/                    # compiled stylesheets
-|    ├── fonts/                  # webfonts
+|    ├── css/                     # compiled stylesheets
+|    ├── fonts/                   # webfonts
 |    └── js/
-|        ├── _main.js            # main JavaScript file, plugin settings, etc
-|        ├── plugins/            # scripts and jQuery plugins to combine with _main.js
-|        ├── scripts.min.js      # concatenated and minified _main.js + plugin scripts
-|        └── vendor/             # vendor scripts to leave alone and load as is
-├── blog/                        # sample blog category page
-├── images/                      # images for posts and pages
-├── 404.md                       # 404 page
-├── feed.xml                     # Atom feed template
-├── index.md                     # sample homepage. lists 5 latest posts
-└── theme-setup/                 # theme setup page. safe to remove
+|        ├── _main.js             # main JavaScript file, plugin settings, etc
+|        ├── plugins/             # scripts and jQuery plugins to combine with _main.js
+|        ├── scripts.min.js       # concatenated and minified _main.js + plugin scripts
+|        └── vendor/              # vendor scripts to leave alone and load as is
+├── blog/                         # sample blog category page
+├── images/                       # images for posts and pages
+├── 404.md                        # 404 page
+├── feed.xml                      # Atom feed template
+├── index.md                      # sample homepage. lists 5 latest posts
+└── theme-setup/                  # theme setup page. safe to remove
 {% endhighlight %}
 
 ---
@@ -301,7 +301,7 @@ site:
     disqus-shortname: shortname
 {% endhighlight %}
 
-If you would like comments to appear on every post or page that uses the `post.html` layout simply add the following line to your `_config.yml` and you're done.
+If you would like comments to appear on every post or page that uses the `post.liquid` layout simply add the following line to your `_config.yml` and you're done.
 
 {% highlight yaml %}
 comments: true
