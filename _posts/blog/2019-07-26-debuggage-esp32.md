@@ -12,16 +12,12 @@ published: true
 author: Nico
 ---
 
-
-
-Cet article montre comment mettre en route un board *ESP&#8209;Prog* et les outils intégrés à PlatformIO pour débugger un ESP32.
+Cet article montre comment mettre en route un board *ESP&#8209;Prog* et les outils intégrés à PlatformIO pour flasher et débugger un ESP32.
 
 Le board *ESP&#8209;Prog* permet de faire deux choses distinctes :
 
   - du débuggage en utilisant une interface JTAG (connecteur 10 broches) (ESP32 uniquement)
-  - de flasher des programmes via l’interface série (connecteur 6 broches) (ESP8266 & ESP32)
-
-Cet article ne présente que la fonctionnalité de débuggage JTAG.
+  - de flasher des programmes (ESP8266 & ESP32)
 
 ## Documentation
 
@@ -49,7 +45,6 @@ Cet article ne présente que la fonctionnalité de débuggage JTAG.
 
 Les couleurs sont indicatives et correspondent simplement aux fils que j’ai utilisés et que l’on peut voir sur la photo.
 
-
 ```
        ESP32        PROG BOARD      |      PROG BOARD    ESP32
 ====================================|=================================
@@ -72,12 +67,37 @@ bleu   GND       3. GND             |   4. ESP_TCK       IO_13  violet
   - Ajouter les informations suivantes dans le fichier `platformio.ini`.
 
 ```ini
-[env]
 debug_tool = esp-prog
+upload_protocol = esp-prog
 debug_init_break = tbreak setup
 ```
 
- - Brancher les connecteurs USB de l’ESP et de l’ESP&#8209;Prog à l’ordinateur. L’ESP&#8209;Prog utilise deux ports série.
+  - Pour info, voici le fichier `platformio.ini` que j’ai utilisé :
+
+```ini
+
+[platformio]
+default_envs =
+    esp32doit-devkit-v1
+
+
+[env]
+monitor_speed = 115200
+build_flags =
+    -D VERSION="0.1"
+    -D BAUD_RATE=${env.monitor_speed}
+
+
+[env:esp32doit-devkit-v1]
+platform = espressif32
+board = esp32doit-devkit-v1
+framework = arduino
+debug_tool = esp-prog
+upload_protocol = esp-prog
+debug_init_break = tbreak setup
+```
+
+ - Brancher le connecteurs USB de l’ESP&#8209;Prog à l’ordinateur. L’ESP&#8209;Prog utilise deux ports série. Il n’y a pas besoin de brancher le connecteur USB de l’ESP, mais ça peut être pratique pour accéder à l’interface série. L’ESP&#8209;Prog a aussi une interface série que je n’ai pas testé.
  - Sous Windows, il faut modifier le pilote par défaut avec le logiciel [Zadig][Zadig]. Voir [la procédure dans la vidéo d’Andreas Spiess à 14:52][Zadig Andreas].
  - Uploader le programme avec la commande standard de PlatformIO (`ctrl alt u`).
  - Placer quelques points d’arrêts dans le programme.
@@ -94,7 +114,7 @@ debug_init_break = tbreak setup
 
 
 
-
+{% comment %}
 <!--
 
 # ESP-Prog Board
@@ -194,3 +214,4 @@ sudo kextunload /Library/Extensions/FTDIUSBSerialDriver.kext
 
 
 -->
+{% endcomment %}
