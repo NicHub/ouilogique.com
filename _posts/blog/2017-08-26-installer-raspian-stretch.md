@@ -171,7 +171,7 @@ screen /dev/ttyACM0 115200
 Installer samba
 
 ```bash
-    sudo apt-get install --assume-yes samba samba-common-bin
+sudo apt-get install --assume-yes samba samba-common-bin
 ```
 
 Éditer la configuration
@@ -202,7 +202,7 @@ directory mask = 0777
 public = no
 ```
 
-Le flag `public = no` indique que l’accès en temps qu’invité est désactivé. Si on le change en `public = yes`, le disque partagé est en lecture seule.
+Le flag `public = no` indique que l’accès en temps qu’invité est désactivé. Si on le change en `public = yes`, le disque est partagé en lecture seule.
 
 ```bash
 sudo smbpasswd -a pi
@@ -228,11 +228,10 @@ smb://raspberrypi.local
 ### Installer une autre version de Python 3
 
 > Edit du 16 octobre 2019 : Raspbian Buster intègre la version 3.7.3 de Python.
-> Avant d’installer une nouvelle version de Python 3, il est prudent de vérifier la version la version actuelle avec la commande
-
-```bash
-python3 --version
-```
+>
+> Avant d’installer une nouvelle version de Python 3, il est prudent de vérifier la version installée sur le Raspberry avec la commande
+>
+> `python3 --version`
 
 Raspbian Stretch propose la version 3.5 de Python. Comme Python 3.6 apporte de nouvelles fonctionnalités comme les *f-strings* et que le module `asyncio` a été amélioré, je pense que c’est intéressant de l’installer aussi. L’idée est aussi de pouvoir tester le module [quart][quart].
 
