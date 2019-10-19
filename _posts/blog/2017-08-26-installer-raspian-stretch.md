@@ -43,107 +43,106 @@ author: Nico
 
 ## Mise à jour de Raspbian
 
-{% highlight bash %}
+```bash
 sudo apt-get --assume-yes update # ~23 s
 sudo apt-get --assume-yes dist-upgrade # ~3 min
-{% endhighlight %}
+```
 
 ## Configuration
 
-{% highlight bash %}
+```bash
 nano ~/.bash_profile
-{% endhighlight %}
+```
 
 Copier-coller les commandes suivantes dans .bash_profile
 
-{% highlight bash %}
+```bash
 PS1=$'\n\n\xf0\x9f\x98\xBA'"  \t – \[\033[01;32m\]\u@\h\[\033[00m\]:\W > "
 alias ll='ls -lGhF'
 alias la='ls -a'
 alias gs='git status'
-alias lsserial='python -m serial.tools.list_ports'
+alias lsserial='python3 -m serial.tools.list_ports'
 IP=$(hostname -I | awk '{print $1}')
 alias pyserver='PORT=4000; echo -e "\nhttp://localhost:$PORT"; echo -e "http://$IP:$PORT\n"; /usr/bin/python3 -m http.server $PORT'
-{% endhighlight %}
+```
 
-{% highlight bash %}
+```bash
 source ~/.bash_profile
-{% endhighlight %}
+```
 
-{% highlight bash %}
+```bash
 sudo raspi-config
 # Localisation Options
 # Interfacing Options / P2 SSH
 # Update
 # Advanced Options / Expand filesystem
-{% endhighlight %}
+```
 
 
 ## SSH
 
-{% highlight bash %}
+```bash
 mkdir .ssh
 cat .ssh/id_rsa.pub # Sur l’ordi hôte + copier
 nano ~/.ssh/authorized_keys # coller
 cd ~/.ssh
 ssh-keygen
-{% endhighlight %}
+```
 
 
 
 ## VNC
 
-{% highlight bash %}
+```bash
 sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
-{% endhighlight %}
+```
 
-{% highlight bash %}
+```bash
 sudo raspi-config
 # - Navigate to Interfacing Options.
 # - Scroll down and select VNC > Yes.
-{% endhighlight %}
+```
 
 
 ## Enlever les programmes inutiles
 
 Enfin, inutiles pour moi....
 
-{% highlight bash %}
+```bash
 df -h # Pour voir la capacité de la carte SD
 sudo apt-get purge wolfram-engine
 sudo apt-get purge libreoffice*
 sudo apt-get clean
 sudo apt-get autoremove
 df -h # Vous venez de libérer 1.1 GB !
-{% endhighlight %}
+```
 
 
 ## Réinstaller un programme qu’on croyait inutile
 
-{% highlight bash %}
+```bash
 sudo apt-get --assume-yes update
 sudo apt-get --assume-yes install wolfram-engine
-{% endhighlight %}
+```
 
 
 ## Ajouter quelques programmes utiles
 
 ### TMUX
 
-{% highlight bash %}
+```bash
 sudo apt --assume-yes install tmux
 
 tmux # Démarre un nouveau shell
 # ctrl-B D # revient au shell principal
 tmux ls # liste les shells tmux
 tmux a -t 0 # revient au shell tmux numéro 0
-
-{% endhighlight %}
+```
 
 
 ### GNU screen
 
-{% highlight bash %}
+```bash
 sudo apt-get --assume-yes install screen
 echo "shell -$SHELL" > ~/.screenrc # Pour que screen lise .bash_profile
 
@@ -157,10 +156,10 @@ screen -X -S xxxx quit # quitte le shell no xxxx
 screen -X -S xxxx kill # arrête le shell no xxxx
 
 # RS232
-python -m serial.tools.list_ports
+python3 -m serial.tools.list_ports
 screen /dev/ttyACM0 115200
 # ctrl-A K # pour arrêter la transmission série
-{% endhighlight %}
+```
 
 
 ## Partager un espace disque avec samba
@@ -171,48 +170,60 @@ screen /dev/ttyACM0 115200
 
 Installer samba
 
+```bash
     sudo apt-get install --assume-yes samba samba-common-bin
+```
 
 Éditer la configuration
 
-    sudo nano /etc/samba/smb.conf
+```bash
+sudo nano /etc/samba/smb.conf
+```
 
 Au début du fichier, vérifier les informations suivantes :
 
-    workgroup = WORKGROUP
-    wins support = yes
+```conf
+workgroup = WORKGROUP
+wins support = yes
+```
 
 À la fin du fichier, ajouter les informations suivantes :
-
-    # Source
-    # https://raspberrypihq.com/how-to-share-a-folder-with-a-windows-computer-from-a-raspberry-pi/
-    [PiShare]
-     comment = Raspberry Pi Share
-     path = /home/pi
-     browseable = yes
-     writeable = yes
-     only guest = no
-     create mask = 0777
-     directory mask = 0777
-     public = no
+```conf
+# Source
+# https://raspberrypihq.com/how-to-share-a-folder-with-a-windows-computer-from-a-raspberry-pi/
+[PiShare]
+comment = Raspberry Pi Share
+path = /home/pi
+browseable = yes
+writeable = yes
+only guest = no
+create mask = 0777
+directory mask = 0777
+public = no
+```
 
 Le flag `public = no` indique que l’accès en temps qu’invité est désactivé. Si on le change en `public = yes`, le disque partagé est en lecture seule.
 
-    sudo smbpasswd -a pi
+```bash
+sudo smbpasswd -a pi
+```
 
 ### Monter le disque partagé sur macOS
 
 Dans le Finder :
 
-    ⌘ K
-    smb://raspberrypi.local
+```bash
+⌘ K
+smb://raspberrypi.local
+```
 
 ### Monter le disque partagé sur Windows
 
 Voir <https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-drive>
 
-    smb://raspberrypi.local
-
+```bash
+smb://raspberrypi.local
+```
 
 ### Installer une autre version de Python 3
 
@@ -233,7 +244,7 @@ Cette procédure n’écrase pas les versions de Python existantes.
 Cette procédure montre comment installer Python 3.6.7.
 > J’ai aussi essayé d’installer la version 3.7.1 et l’installation a réussi, mais malheureusement pip ne fonctionnait pas, donc il m’était impossible d’installer de nouveaux modules.
 
-{% highlight bash %}
+```bash
 sudo apt-get --assume-yes install build-essential checkinstall
 sudo apt-get --assume-yes install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
 mkdir ~/temp && cd ~/temp
@@ -245,24 +256,25 @@ TIMEFORMAT='time : %E'
 time (bash configure && make -j4 altinstall)
 exit
 cd ~ && sudo rm -rf temp
-{% endhighlight %}
+```
 
 Créer un lien pour que Python 3.6 soit la version de Python 3 par défaut. Ceci nous permettra d’indiquer le *shebang* `#!/usr/bin/env python3` au début des scripts et de les exécuter avec la commande `python3 <nom_du_script.py>`.
 
-{% highlight bash %}
+```bash
 which python3.6 # /usr/local/bin/python3.6
 python3.6 -V # Python 3.6.7
 sudo ln -sf /usr/local/bin/python3.6 /usr/local/bin/python3
 /usr/bin/env python3 -V # Python 3.6.7
 which python3 # /usr/local/bin/python3
-{% endhighlight %}
+```
 
 Pour installer des modules
 
 > Si `pip install <module>` ne fonctionne pas, on peut utiiser les commandes suivantes :
 
-    sudo python3.6 -m pip install --upgrade pip
-    sudo python3.6 -m pip install quart
-
+```bash
+sudo python3.6 -m pip install --upgrade pip
+sudo python3.6 -m pip install quart
+```
 
 [quart]: https://gitlab.com/pgjones/quart
