@@ -39,13 +39,13 @@ author: Nico
 - Insérer la carte SD dans le Raspberry.
 - Connecter le câble Ethernet.
 - Brancher le câble d’alimentation du Raspberry.
-- Après environ 30 secondes, se connecter au Raspberry avec la commande<br/>`ssh pi@raspberrypi.local`. Le mot de passe par défaut est `raspberry`. Si une entrée existe déjà pour `raspberrypi.local` dans le fichier `~/.ssh/known_hosts`, il faut la supprimer.
+- Après environ 30 secondes, se connecter au Raspberry avec la commande<br/>`ssh pi@raspberrypi.local`. Le mot de passe par défaut est `raspberry`. Si une entrée existe déjà pour `raspberrypi.local` dans le fichier `~/.ssh/known_hosts` de l’ordinateur hôte (pas le RPi), il faut la supprimer.
 
 ## Mise à jour de Raspbian
 
 {% highlight bash %}
 sudo apt-get --assume-yes update # ~23 s
-sudo apt-get --assume-yes dist-upgrade # ~3min
+sudo apt-get --assume-yes dist-upgrade # ~3 min
 {% endhighlight %}
 
 ## Configuration
@@ -58,9 +58,10 @@ Copier-coller les commandes suivantes dans .bash_profile
 
 {% highlight bash %}
 PS1=$'\n\n\xf0\x9f\x98\xBA'"  \t – \[\033[01;32m\]\u@\h\[\033[00m\]:\W > "
-alias ls='ls -lGhF'
+alias ll='ls -lGhF'
 alias la='ls -a'
 alias gs='git status'
+alias lsserial='python -m serial.tools.list_ports'
 IP=$(hostname -I | awk '{print $1}')
 alias pyserver='PORT=4000; echo -e "\nhttp://localhost:$PORT"; echo -e "http://$IP:$PORT\n"; /usr/bin/python3 -m http.server $PORT'
 {% endhighlight %}
@@ -72,8 +73,20 @@ source ~/.bash_profile
 {% highlight bash %}
 sudo raspi-config
 # Localisation Options
+# Interfacing Options / P2 SSH
 # Update
 # Advanced Options / Expand filesystem
+{% endhighlight %}
+
+
+## SSH
+
+{% highlight bash %}
+mkdir .ssh
+cat .ssh/id_rsa.pub # Sur l’ordi hôte + copier
+nano ~/.ssh/authorized_keys # coller
+cd ~/.ssh
+ssh-keygen
 {% endhighlight %}
 
 
@@ -114,6 +127,19 @@ sudo apt-get --assume-yes install wolfram-engine
 
 
 ## Ajouter quelques programmes utiles
+
+### TMUX
+
+{% highlight bash %}
+sudo apt --assume-yes install tmux
+
+tmux # Démarre un nouveau shell
+# ctrl-B D # revient au shell principal
+tmux ls # liste les shells tmux
+tmux a -t 0 # revient au shell tmux numéro 0
+
+{% endhighlight %}
+
 
 ### GNU screen
 
@@ -188,7 +214,14 @@ Voir <https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-dri
     smb://raspberrypi.local
 
 
-### Installer une autre version de Python
+### Installer une autre version de Python 3
+
+> Edit du 16 octobre 2019 : Raspbian Buster intègre la version 3.7.3 de Python.
+> Avant d’installer une nouvelle version de Python 3, il est prudent de vérifier la version la version actuelle avec la commande
+
+```bash
+python3 --version
+```
 
 Raspbian Stretch propose la version 3.5 de Python. Comme Python 3.6 apporte de nouvelles fonctionnalités comme les *f-strings* et que le module `asyncio` a été amélioré, je pense que c’est intéressant de l’installer aussi. L’idée est aussi de pouvoir tester le module [quart][quart].
 
