@@ -117,6 +117,13 @@ Ensuite il faut modifier le code du signal, la durée d’un bit et le nombre de
 Et il ne reste plus qu’à flasher l’Arduino et faire un test.
 
 
+## À voir aussi
+
+- <https://github.com/merbanan/rtl_433>
+- [RTL-SDR Blog V3 R820T2 RTL2832U 1PPM TCXO SMA Software Defined Radio (Dongle Only)](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
+- <http://gqrx.dk/>
+- <https://airspy.com>
+
 
 [Video Andreas]: https://www.youtube.com/watch?v=L0fSEbGEY-Q
 
