@@ -36,7 +36,7 @@ Premiers prototypes d’une plateforme de Stewart que je construis dans le cadre
 
 Pour la quatrième version, je vais tester un driver I²C de servomoteurs PCA9685.
 
-<https://fr.aliexpress.com/af/32718274859.html>
+<https://www.mouser.ch/ProductDetail/adafruit/3416/?qs=F5EMLAvA7ICYzX4Av%252bhRHw==&countrycode=CH&currencycode=CHF>
 
 ## Troisième version
 
