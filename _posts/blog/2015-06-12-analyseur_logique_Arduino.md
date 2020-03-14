@@ -13,7 +13,6 @@ redirect_from:
   - /blog/analyseur_logique_Arduino/
 ---
 
-
 > Les informations ci-dessous viennent à l’origine d’un tuto qui n’est malheureusement plus en ligne (<http://letsmakerobots.com/node/31422>).
 
 En résumé, cette solution nécessite deux programmes :
@@ -21,23 +20,15 @@ En résumé, cette solution nécessite deux programmes :
 1. Le croquis Arduino : <https://github.com/gillham/logic_analyzer>
 2. Le programme de capture *Logic Sniffer* sur l’ordinateur : <https://www.lxtreme.nl/ols/#download>
 
-
-
 Il y a un article sur le site de Mouser qui en parle aussi : <http://www.mouser.com/blog/arduino-3-powerful-yet-overlooked-uses/>
 
 Et voilà ce que ça donne en action :
-
-
-
-![](https://www.lxtreme.nl/ols/img/logo.png)
 
 ![](/files/2015-06-12-logic_sniffer/2015-04-22_analyseur_logique.png)
 
 ![](/files/2015-06-12-logic_sniffer/2015-04-22_RF433_proto_1.jpg)
 
 ![](/files/2015-06-12-logic_sniffer/2015-04-22_RF433_proto_2.jpg)
-
-
 
 ---
 
