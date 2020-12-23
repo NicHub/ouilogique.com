@@ -81,14 +81,39 @@ sudo raspi-config
 
 ## SSH
 
+**Sur l’ordinateur hôte**
+
 ```bash
-mkdir .ssh
-cat .ssh/id_rsa.pub # Sur l’ordi hôte + copier
-nano ~/.ssh/authorized_keys # coller
 cd ~/.ssh
-ssh-keygen
+# Si le fichier ~/.ssh/id_rsa.pub n’existe pas,
+# il faut le créer avec `ssh-keygen`.
+ssh-keygen # Accepter toutes les valeurs par défaut.
+cat ~/.ssh/id_rsa.pub # + Copier le résultat dans le presse-papier.
 ```
 
+**Sur le RPi**
+
+```bash
+mkdir ~/.ssh
+chmod 700 ~/.ssh
+nano ~/.ssh/authorized_keys # + Coller la clé de l’hôte à la fin du fichier.
+chmod 644 ~/.ssh/authorized_keys
+```
+
+## Permissions de fichiers courants
+
+```bash
+chmod 700 ~/.ssh
+chmod 644 ~/.ssh/authorized_keys
+chmod 644 ~/.ssh/known_hosts
+chmod 644 ~/.ssh/config
+chmod 600 ~/.ssh/id_rsa
+chmod 644 ~/.ssh/id_rsa.pub
+chmod 600 ~/.ssh/github_rsa
+chmod 644 ~/.ssh/github_rsa.pub
+chmod 600 ~/.ssh/mozilla_rsa
+chmod 644 ~/.ssh/mozilla_rsa.pub
+```
 
 
 ## VNC
