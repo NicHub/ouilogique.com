@@ -54,7 +54,7 @@ while true; do
     fi
 done
 
-# Enregistre les paramètres dans le fichier de config
+# Saves the settings in the development config file.
 # http://stackoverflow.com/questions/24633919/prepend-heredoc-to-a-file-in-bash
 CONFIG_DEV="_config_dev.yml"
 read -r -d '' CONFIG_STR << EOF
@@ -78,5 +78,6 @@ ruby -v
 export PATH=/usr/local/opt/ruby/bin:$PATH
 ruby -v
 
-# Démarre Jekyll
-bundle exec jekyll serve --config _config.yml,_config_dev.yml --incremental
+# Start Jekyll.
+# Remove `2>/dev/null` to see warnings.
+bundle exec jekyll serve --config _config.yml,_config_dev.yml --incremental 2>/dev/null
