@@ -12,16 +12,22 @@ published: true
 author: Nico
 ---
 
+## Source
+
+La version originale de ce document a été écrite par Johannes du [Microclub](https://microclub.ch). Il m’a aimablement autorisé à la retranscrire à ma sauce dans cet article.
+
 ## Introduction
 
-Cette page explique comment installer et configurer Pi-hole sur un Raspberry.
+Pi-hole est un système de blocage d’accès aux contenus internet adventices, c’est-à-dire non sollicitées directement par l’utilisateur et qu’il préfèrerait ne pas télécharger s’il en avait le choix et la possibilité.
+
+Cet article explique comment installer et configurer Pi-hole sur un Raspberry avec Raspberry Pi OS Buster, mais Pi-hole peut aussi être déployé sur d’autres OS ainsi que dans une image Docker.
 
 ## Ressources
 
 - [Site officiel de Pi-hole](https://pi-hole.net)
 - [Documentation de Pi-hole](https://docs.pi-hole.net)
 - [Liste des modèles de Raspberry supportés](https://docs.pi-hole.net/ftldns/compatibility/)
-- [Télécharger Raspberry Pi OS](https://www.raspberrypi.org/software/)
+- [Liste des OS supportés](https://docs.pi-hole.net/main/prerequisites/#supported-operating-systems)
 
 ## Installation de Pi-hole sur le Raspberry
 
