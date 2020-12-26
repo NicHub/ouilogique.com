@@ -26,8 +26,8 @@ Cet article explique comment installer et configurer Pi-hole sur un Raspberry av
 
 - [Site officiel de Pi-hole](https://pi-hole.net)
 - [Documentation de Pi-hole](https://docs.pi-hole.net)
-- [Liste des modèles de Raspberry supportés](https://docs.pi-hole.net/ftldns/compatibility/)
-- [Liste des OS supportés](https://docs.pi-hole.net/main/prerequisites/#supported-operating-systems)
+- [Liste des modèles de Raspberry compatibles](https://docs.pi-hole.net/ftldns/compatibility/)
+- [Liste des OS compatibles](https://docs.pi-hole.net/main/prerequisites/#supported-operating-systems)
 
 ## Installation de Pi-hole sur le Raspberry
 
