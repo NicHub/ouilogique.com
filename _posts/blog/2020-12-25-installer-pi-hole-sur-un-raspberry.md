@@ -134,412 +134,122 @@ sudo reboot
   <http://192.168.1.28/admin/groups-domains.php?type=black>
 - Ajouter des URL à votre convenance.
 
+## Récupération des URL indiquées dans les Adlists
+
+Les Adlists sont stockées dans des fichiers textes qu’il est possible de télécharger sur un autre ordinateur. Ces fichiers ont une extension `.domains` et contiennent beaucoup d’URL redondantes, il est donc utile de les filtrer. Voici les commandes bash qui permettent de récupérer ces URL. À noter qu’il est préférable de les exécuter l’une après l’autre.
+
+```bash
+# Télécharge les fichiers *.domains.
+scp 'pi@192.168.1.28:/etc/pihole/*.domains' .
+
+# Concatène tous les fichiers,
+# classe les URL par ordre alphabétique
+# et supprime les doublons.
+cat *.domains | sort | uniq -u > pihole_adlist_urls_sorted_unique.txt
+
+# Compte les URL.
+N1=$(cat *.domains | wc -l)
+N2=$(cat pihole_adlist_urls_sorted_unique.txt | wc -l)
+P1=$(python -c "p = $N2 / $N1 * 100; print(p)")
+printf "Nombre d’URL total        : %10d\n" $N1
+printf "Nombre d’URL uniques      : %10d\n" $N2
+printf "Pourcentage d’URL uniques : %8.1f %%\n" $P1
+
+# Cleanup.
+rm *.domains
+```
+
+Avec ma configuration, les résultats retournés sont :
+
+```bash
+Nombre d’URL total        :    5281881
+Nombre d’URL uniques      :    1605385
+Pourcentage d’URL uniques :     30,4 %
+```
+
 ## URL des listes de blocage (Adlists)
 
-http://phishing.mailscanner.info/phishing.bad.sites.conf
-http://sysctl.org/cameleon/hosts
-https://adaway.org/hosts.txt
-https://adblock.mahakala.is
-https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt
-https://blocklistproject.github.io/Lists/abuse.txt
-https://blocklistproject.github.io/Lists/fraud.txt
-https://blocklistproject.github.io/Lists/malware.txt
-https://blocklistproject.github.io/Lists/phishing.txt
-https://blocklistproject.github.io/Lists/piracy.txt
-https://blocklistproject.github.io/Lists/ransomware.txt
-https://blocklistproject.github.io/Lists/scam.txt
-https://blocklistproject.github.io/Lists/tracking.txt
-https://blocklistproject.github.io/Lists/youtube.txt
-https://dbl.oisd.nl/
-https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt
-https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
-https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt
-https://hostfiles.frogeye.fr/multiparty-trackers-hosts.txt
-https://hosts.nfz.moe/basic/hosts
-https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
-https://mirror1.malwaredomains.com/files/justdomains
-https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt
-https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
-https://phishing.army/download/phishing_army_blocklist_extended.txt
-https://raw.github.com/notracking/hosts-blocklists/master/hostnames.txt
-https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/cryptomine.txt
-https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
-https://raw.githubusercontent.com/anudeepND/youtubeadsblacklist/master/domainlist.txt
-https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts
-https://raw.githubusercontent.com/CHEF-KOCH/Audio-fingerprint-pages/master/AudioFp.txt
-https://raw.githubusercontent.com/CHEF-KOCH/Canvas-fingerprinting-pages/master/Canvas.txt
-https://raw.githubusercontent.com/CHEF-KOCH/WebRTC-tracking/master/WebRTC.txt
-https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
-https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt
-https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts
-https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts
-https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts
-https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts
-https://raw.githubusercontent.com/hectorm/hmirror/master/data/disconnect.me-malvertising/list.txt
-https://raw.githubusercontent.com/hectorm/hmirror/master/data/disconnect.me-malware/list.txt
-https://raw.githubusercontent.com/hectorm/hmirror/master/data/eth-phishing-detect/list.txt
-https://raw.githubusercontent.com/hectorm/hmirror/master/data/malwaredomainlist.com/list.txt
-https://raw.githubusercontent.com/hectorm/hmirror/master/data/malwaredomains.com-immortaldomains/list.txt
-https://raw.githubusercontent.com/hectorm/hmirror/master/data/malwaredomains.com-justdomains/list.txt
-https://raw.githubusercontent.com/hectorm/hmirror/master/data/ransomwaretracker.abuse.ch/list.txt
-https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
-https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/crowed_list.txt
-https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt
-https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/spammers.txt
-https://raw.githubusercontent.com/mitchellkrogza/Badd-Boyz-Hosts/master/hosts
-https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hacked-domains.list
-https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/AmazonFireTV.txt
-https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt
-https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt
-https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt
-https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileAds.txt
-https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt
-https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/crypto
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/malware
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/notserious
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Phishing-Angriff
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Phishing-Angriffe
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/samsung
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/spam.mails
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Streaming
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Win10Telemetry
-https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
-https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-https://raw.githubusercontent.com/vokins/yhosts/master/hosts
-https://raw.githubusercontent.com/wlqY8gkVb9w1Ck5MVD4lBre9nWJez8/W10TelemetryBlocklist/master/W10TelemetryBlocklist
-https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
-https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
-https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
-https://someonewhocares.org/hosts/zero/hosts
-https://ssl.bblck.me/blacklists/hosts-file.txt
-https://urlhaus.abuse.ch/downloads/hostfile/
-https://v.firebog.net/hosts/AdguardDNS.txt
-https://v.firebog.net/hosts/Admiral.txt
-https://v.firebog.net/hosts/BillStearns.txt
-https://v.firebog.net/hosts/Easylist.txt
-https://v.firebog.net/hosts/Easyprivacy.txt
-https://v.firebog.net/hosts/Prigent-Ads.txt
-https://v.firebog.net/hosts/Prigent-Crypto.txt
-https://v.firebog.net/hosts/Prigent-Malware.txt
-https://v.firebog.net/hosts/Shalla-mal.txt
-https://v.firebog.net/hosts/static/w3kbl.txt
-https://winhelp2002.mvps.org/hosts.txt
-https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt
-https://www.joewein.net/dl/bl/dom-bl-base.txt
-https://www.malwaredomainlist.com/hostslist/hosts.txt
-https://www.stopforumspam.com/downloads/toxic_domains_whole.txt
-https://www.sunshine.it/blacklist.txt
-https://www.technoy.de/lists/blocklist.txt
-https://www.technoy.de/lists/fake-streaming.txt
-https://www.technoy.de/lists/malware2.txt
-https://www.technoy.de/lists/Session-Replay.txt
-https://www.technoy.de/lists/Suspicious.txt
-https://www.technoy.de/lists/xporn.txt
-https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser
-https://zerodot1.gitlab.io/CoinBlockerLists/list_browser.txt
-https://zerodot1.gitlab.io/CoinBlockerLists/list_optional.txt
-https://zerodot1.gitlab.io/CoinBlockerLists/list.txt
-
+[URL des listes de blocage (Adlists)](../../files/2020-12-25-installer-pi-hole-sur-un-raspberry/pi-hole-adlists.txt)
 
 ## Faux positifs (Whitelist)
 
-0-edge-chat.facebook.com
-0.client-channel.google.com
-1-edge-chat.facebook.com
-1drv.com
-2-edge-chat.facebook.com
-2.android.pool.ntp.org
-3-edge-chat.facebook.com
-4-edge-chat.facebook.com
-5-edge-chat.facebook.com
-6-edge-chat.facebook.com
-adf.ly
-ae01.alicdn.com
-akamaihd.net
-akamaitechnologies.com
-akamaized.net
-amazonaws.com
-amzn.com
-amzn.to
-android.clients.google.com
-api-global.netflix.com
-api.facebook.com
-api.ipify.org
-api.rlje.net
-app-api.ted.com
-appboot.netflix.com
-appleid.apple.com
-apps.skype.com
-appsbackup-pa.clients6.google.com
-appsbackup-pa.googleapis.com
-appspot-preview.l.google.com
-apresolve.spotify.com
-apt.sonarr.tv
-aspnetcdn.com
-attestation.xboxlive.com
-audio-ake.spotify.com.edgesuite.net
-ax.phobos.apple.com.edgesuite.net
-b-api.facebook.com
-b-graph.facebook.com
-bigzipfiles.facebook.com
-bit.ly
-brightcove.net
-c.s-microsoft.com
-captive.apple.com
-cdn.cloudflare.net
-cdn.embedly.com
-cdn.fbsbx.com
-cdn.optimizely.com
-cdn.vidible.tv
-cdn2.optimizely.com
-cdn3.optimizely.com
-cdnjs.cloudflare.com
-cert.mgt.xboxlive.com
-client-s.gateway.messenger.live.com
-clientconfig.passport.net
-clients1.google.com
-clients2.google.com
-clients3.google.com
-clients4.google.com
-clients5.google.com
-clients6.google.com
-cognito-identity.us-east-1.amazonaws.com
-connect.facebook.com
-connectivitycheck.android.com
-connectivitycheck.gstatic.com
-continuum.dds.microsoft.com
-cpms.spop10.ams.plex.bz
-cpms35.spop10.ams.plex.bz
-creative.ak.fbcdn.net
-cse.google.com
-ctldl.windowsupdate.com
-cws.conviva.com
-d2c8v52l 5s99u.cloudfront.net
-d2gatte9o95jao.cloudfront.net
-dashboard.plex.tv
-dataplicity.com
-def-vef.xboxlive.com
-delivery.vidible.tv
-det-ta-g7g.amazon.com
-dev.virtualearth.net
-device-messaging-na.amazon.com
-device-metrics-us-2.amazon.com
-device-metrics-us.amazon.com
-device.auth.xboxlive.com
-display.ugc.bazaarvoice.com
-displaycatalog.mp.microsoft.com
-dl.delivery.mp.microsoft.com
-dl.dropbox.com
-dl.dropboxusercontent.com
-dl.google.com
-dns.msftncsi.com
-download.sonarr.tv
-drift.com
-driftt.com
-drive.google.com
-dynupdate.no-ip.com
-ecn.dev.virtualearth.net
-edge-chat.facebook.com
-edge-mqtt.facebook.com
-edge.api.brightcove.com
-eds.xboxlive.com
-events.gfe.nvidia.com
-external-lhr0-1.xx.fbcdn.net
-external-lhr1-1.xx.fbcdn.net
-external-lhr10-1.xx.fbcdn.net
-external-lhr2-1.xx.fbcdn.net
-external-lhr3-1.xx.fbcdn.net
-external-lhr4-1.xx.fbcdn.net
-external-lhr5-1.xx.fbcdn.net
-external-lhr6-1.xx.fbcdn.net
-external-lhr7-1.xx.fbcdn.net
-external-lhr8-1.xx.fbcdn.net
-external-lhr9-1.xx.fbcdn.net
-facebook.com
-facebook.net
-fb.me
-fbcdn-creative-a.akamaihd.net
-fbcdn.net
-fe3.delivery.dsp.mp.microsoft.com.nsatc.net
-firestore.googleapis.com
-fonts.gstatic.com
-forums.sonarr.tv
-g.live.com
-geo-prod.do.dsp.mp.microsoft.com
-geo3.ggpht.com
-gfwsl.geforce.com
-giphy.com
-github.com
-github.io
-goo.gl
-googleapis.com
-googleapis.l.google.com
-graph.facebook.com
-graph.instagram.com
-gravatar.com
-gsp1.apple.com
-gstatic.com
-help.ui.xboxlive.com
-hls.ted.com
-i.s-microsoft.com
-i.ytimg.com
-i1.ytimg.com
-imagesak.secureserver.net
-img.vidible.tv
-imgix.net
-imgs.xkcd.com
-instagram.c10r.facebook.com
-instantmessaging-pa.googleapis.com
-intercom.io
-ipv6.msftncsi.com
-jquery.com
-jsdelivr.net
-keystone.mwbsys.com
-l.facebook.com
-lastfm-img2.akamaized.net
-licensing.xboxlive.com
-live.com
-livepassdl.conviva.com
-login.live.com
-login.microsoftonline.com
-m.hotmail.com
-manifest.googlevideo.com
-market.spotify.com
-meta-db-worker02.pop.ric.plex.bz
-meta.plex.bz
-meta.plex.tv
-microsoftonline.com
-mobile-ap.spotify.com
-mqtt-mini.facebook.com
-mqtt.c10r.facebook.com
-msftncsi.com
-my.plexapp.com
-nexusrules.officeapps.live.com
-nine.plugins.plexapp.com
-no-ip.com
-node.plexapp.com
-notify.xboxlive.com
-npr-news.streaming.adswizz.com
-ns1.dropbox.com
-ns2.dropbox.com
-o1.email.plex.tv
-o2.sg0.plex.tv
-ocsp.apple.com
-ocsp.rootg2.amazontrust.com
-office.com
-office.net
-office365.com
-officeclient.microsoft.com
-om.cbsi.com
-onedrive.live.com
-ota-downloads.nvidia.com
-outlook.live.com
-outlook.office365.com
-ow.ly
-pings.conviva.com
-placehold.it
-placeholdit.imgix.net
-players.brightcove.net
-portal.fb.com
-pricelist.skype.com
-prod.telemetry.ros.rockstargames.com
-products.office.com
-proxy.plex.bz
-proxy.plex.tv
-proxy02.pop.ord.plex.bz
-pubsub.plex.bz
-pubsub.plex.tv
-raw.githubusercontent.com
-redirector.googlevideo.com
-reminders-pa.googleapis.com
-res.cloudinary.com
-s.gateway.messenger.live.com
-s.marketwatch.com
-s.shopify.com
-s.youtube.com
-s.ytimg.com
-s1.symcb.com
-s1.wp.com
-s2.symcb.com
-s2.youtube.com
-s3-eu-west-1.amazonaws.com
-s3.amazonaws.com
-s3.symcb.com
-s4.symcb.com
-s5.symcb.com
-sa.symcb.com
-scontent-lhr3-1.xx.fbcdn.net
-scontent.fgdl5-1.fna.fbcdn.net
-scontent.xx.fbcdn.net
-script.google.com
-secure.avangate.com
-secure.brightcove.com
-secure.netflix.com
-secure.surveymonkey.com
-services.sonarr.tv
-settings-win.data.microsoft.com
-skyhook.sonarr.tv
-sls.update.microsoft.com.akadns.net
-spclient.wg.spotify.com
-ssl.p.jwpcdn.com
-stackoverflow.com
-staging.plex.tv
-star-mini.c10r.facebook.com
-star.c10r.facebook.com
-status.plex.tv
-t.co
-t0.ssl.ak.dynamic.tiles.virtualearth.net
-t0.ssl.ak.tiles.virtualearth.net
-tawk.to
-tedcdn.com
-themoviedb.com
-thetvdb.com
-tinyurl.com
-title.auth.xboxlive.com
-title.mgt.xboxlive.com
-todo-ta-g7g.amazon.com
-tracking-protection.cdn.mozil a.net
-tracking.epicgames.com
-traffic.libsyn.com
-tvdb2.plex.tv
-tvthemes.plexapp.com
-twimg.com
-twitter.com
-ui.skype.com
-unagi-na.amazon.com
-upgrade.scdn.com
-upload.facebook.com
-us-east-1.amazonaws.com
-v10.events.data.microsoft.com
-v10.vortex-win.data.microsoft.com
-v20.events.data.microsoft.com
-video-stats.l.google.com
-videos.vidible.tv
-vidtech.cbsinteractive.com
-widget-cdn.rpxnow.com
-win10.ipv6.microsoft.com
-wp.com
-ws.audioscrobbler.com
-www.adf.ly
-www.apple.com
-www.appleiphonecel .com
-www.bit.ly
-www.dataplicity.com
-www.googleapis.com
-www.msftconnecttest.com
-www.msftncsi.com
-www.no-ip.com
-www.ow.ly
-www.worldometers.info
-www.xboxlive.com
-www.youtube-nocookie.com
-xbox.ipv6.microsoft.com
-xboxexperiencesprod.experimentation.xboxlive.com
-xflight.xboxlive.com
-xkms.xboxlive.com
-xsts.auth.xboxlive.com
-youtu.be
-youtube-nocookie.com
-yt3.ggpht.com
-zee.cws.conviva.com
+[Faux positifs (Whitelist)](../../files/2020-12-25-installer-pi-hole-sur-un-raspberry/pi-hole-whitelist.txt)
+
+## Faire des requêtes directement dans la base de données de Pi-hole
+
+Pi-hole enregistre les informations dans des bases de données SQLite3 :
+
+- `/etc/pihole/gravity.db`.
+- `/etc/pihole/macvendor.db`.
+- `/etc/pihole/pihole-FTL.db`.
+
+Il est possible de faire des requêtes sur ces bases de données directement depuis Bash. Par exemple, la commande suivante renvoie les 3 domaines les plus demandés depuis l’installation de Pi-hole :
+
+```bash
+sqlite3 "/etc/pihole/pihole-FTL.db" "SELECT domain,count(domain) FROM queries WHERE (STATUS == 2 OR STATUS == 3) GROUP BY domain ORDER BY count(domain) DESC LIMIT 3;"
+```
+
+On peut aussi entrer les commandes dans un shell SQLite3 :
+
+```bash
+sqlite3 /etc/pihole/pihole-FTL.db
+SELECT domain,count(domain) FROM queries WHERE (STATUS == 2 OR STATUS == 3) GROUP BY domain ORDER BY count(domain) DESC LIMIT 3;
+```
+
+Ou enregistrer les commandes SQL dans un fichier :
+
+```bash
+# Créer un fichier de commandes SQL :
+echo "SELECT domain,count(domain) FROM queries WHERE (STATUS == 2 OR STATUS == 3) GROUP BY domain ORDER BY count(domain) DESC LIMIT 3;" > ~/get_queried_most.sql
+
+# L’exécuter depuis Bash :
+cat ~/get_queried_most.sql | sqlite3 "/etc/pihole/pihole-FTL.db"
+
+# Ou l’eécuter depuis le shell SQLite3 :
+sqlite3 "/etc/pihole/pihole-FTL.db"
+.read /home/pi/get_queried_most.sql
+```
+
+Pour afficher les noms des tables d’une base de données :
+
+```bash
+sqlite3 "/etc/pihole/gravity.db" ".schema"
+```
+
+Pour afficher les noms des champs d’une table :
+
+```bash
+sqlite3 "/etc/pihole/gravity.db" ".schema domainlist"
+```
+
+Pour compter le nombre d’entrées d’une table :
+
+```bash
+sqlite3 "/etc/pihole/gravity.db" "SELECT COUNT(*) FROM gravity" # Le résultat est 5251857 pour mon Pi-hole
+```
+
+Pour limiter le nombre de résultats affichés :
+
+```bash
+sqlite3 "/etc/pihole/gravity.db" "SELECT * FROM gravity LIMIT 3"
+```
+
+Pour afficher les URL des Adlists :
+
+```bash
+sqlite3 "/etc/pihole/gravity.db" "SELECT address FROM adlist"
+```
+
+Pour afficher les URL de la whitelist :
+
+```bash
+sqlite3 "/etc/pihole/gravity.db" "SELECT domain FROM vw_regex_whitelist;"
+sqlite3 "/etc/pihole/gravity.db" "SELECT domain FROM vw_whitelist;"
+```
+
+Pour afficher les URL de la blacklist :
+
+```bash
+sqlite3 "/etc/pihole/gravity.db" "SELECT domain FROM vw_regex_blacklist;"
+sqlite3 "/etc/pihole/gravity.db" "SELECT domain FROM vw_blacklist;"
+```
