@@ -18,7 +18,7 @@ La version originale de ce document a été écrite par Johannes du [Microclub](
 
 ## Introduction
 
-Pi-hole est un système de blocage d’accès aux contenus internet adventices, c’est-à-dire non sollicitées directement par l’utilisateur et qu’il préfèrerait ne pas télécharger s’il en avait le choix et la possibilité.
+Pi-hole est un système de blocage d’accès aux contenus Internet adventices, c’est-à-dire non sollicités directement par l’utilisateur et qu’il préfèrerait ne pas télécharger s’il en avait le choix et la possibilité.
 
 Cet article explique comment installer et configurer Pi-hole sur un Raspberry avec Raspberry Pi OS Buster, mais Pi-hole peut aussi être déployé sur d’autres OS ainsi que dans une image Docker.
 
@@ -107,8 +107,7 @@ sudo reboot
 
 - Dans le menu de gauche, cliquer sur `Group Management`, puis sur `Adlists`
   <http://192.168.1.28/admin/groups-adlists.php>.
-- Copier les URL des listes de blocage plus bas sur cette page
-  [./#url-des-listes-de-blocage-adlists](./#url-des-listes-de-blocage-adlists).
+- Copier les [URL des listes de blocage (Adlists)](../../files/2020-12-25-installer-pi-hole-sur-un-raspberry/pi-hole-adlists.txt).
 - Coller ces URL dans le champ `Address`. Les retours à la ligne sont acceptés comme séparateur d’URL.
 - Cliquer sur le bouton `Add`.
 
@@ -122,8 +121,7 @@ sudo reboot
 
 - Dans le menu de gauche, cliquer sur `Whitelist`
   <http://192.168.1.28/admin/groups-domains.php?type=white>.
-- Copier les URL de la liste des faux positifs plus bas sur cette page
-  [./#faux-positifs-whitelist](./#faux-positifs-whitelist).
+- Copier les [URL des faux positifs (Whitelist)](../../files/2020-12-25-installer-pi-hole-sur-un-raspberry/pi-hole-whitelist.txt).
 - Coller ces URL dans le champ `Domain`. Les retours à la ligne sont acceptés comme séparateur d’URL.
 - Activer l’option `Add domain as wildcard`.
 - Cliquer sur le bouton `Add to Whitelist`.
@@ -133,6 +131,10 @@ sudo reboot
 - Dans le menu de gauche, cliquer sur `Blacklist`
   <http://192.168.1.28/admin/groups-domains.php?type=black>
 - Ajouter des URL à votre convenance.
+
+Voilà, Pi-hole est installé et fonctionnel. Nous allons voir maintenant comment récupérer quelques informations.
+
+---
 
 ## Récupération des URL indiquées dans les Adlists
 
@@ -167,14 +169,6 @@ Nombre d’URL uniques      :    1605385
 Pourcentage d’URL uniques :     30,4 %
 ```
 
-## URL des listes de blocage (Adlists)
-
-[URL des listes de blocage (Adlists)](../../files/2020-12-25-installer-pi-hole-sur-un-raspberry/pi-hole-adlists.txt)
-
-## Faux positifs (Whitelist)
-
-[Faux positifs (Whitelist)](../../files/2020-12-25-installer-pi-hole-sur-un-raspberry/pi-hole-whitelist.txt)
-
 ## Faire des requêtes directement dans la base de données de Pi-hole
 
 Pi-hole enregistre les informations dans des bases de données SQLite3 :
@@ -205,7 +199,7 @@ echo "SELECT domain,count(domain) FROM queries WHERE (STATUS == 2 OR STATUS == 3
 # L’exécuter depuis Bash :
 cat ~/get_queried_most.sql | sqlite3 "/etc/pihole/pihole-FTL.db"
 
-# Ou l’eécuter depuis le shell SQLite3 :
+# Ou l’exécuter depuis le shell SQLite3 :
 sqlite3 "/etc/pihole/pihole-FTL.db"
 .read /home/pi/get_queried_most.sql
 ```
