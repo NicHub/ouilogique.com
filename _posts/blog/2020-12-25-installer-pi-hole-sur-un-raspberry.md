@@ -22,6 +22,9 @@ Pi-hole est un système de blocage d’accès aux contenus Internet adventices, 
 
 Cet article explique comment installer et configurer Pi-hole sur un Raspberry avec Raspberry Pi OS Buster, mais Pi-hole peut aussi être déployé sur d’autres OS ainsi que dans une image Docker.
 
+*Note :* Si vous voulez juste tester le système avec un Pi-hole existant, vous pouvez utiliser celui de Digitec.ch à l’adresse IP `40.114.239.83`.
+Ils ont aussi écrit un article sur leur solution : [Article Pi-hole Digitec](https://www.digitec.ch/fr/page/le-pi-hole-de-digitec-ou-comment-en-finir-avec-les-publicites-18923).
+
 ## Ressources
 
 - [Site officiel de Pi-hole](https://pi-hole.net)
