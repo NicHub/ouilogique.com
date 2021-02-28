@@ -20,10 +20,11 @@ La version originale de ce document a été écrite par Johannes du [Microclub](
 
 Pi-hole est un système de blocage d’accès aux contenus Internet adventices, c’est-à-dire non sollicités directement par l’utilisateur et qu’il préfèrerait ne pas télécharger s’il en avait le choix et la possibilité.
 
-Cet article explique comment installer et configurer Pi-hole sur un Raspberry avec Raspberry Pi OS Buster, mais Pi-hole peut aussi être déployé sur d’autres OS ainsi que dans une image Docker.
+Cet article explique comment installer et configurer Pi-hole sur un Raspberry avec Raspberry Pi OS Buster. À noter que Pi-hole peut aussi être déployé sur d’autres OS ainsi que dans une image Docker.
 
-*Note :* Si vous voulez juste tester le système avec un Pi-hole existant, vous pouvez utiliser celui de Digitec.ch à l’adresse IP `40.114.239.83`.
+*Note :* Si vous voulez juste tester le système avec un Pi-hole existant, vous pouvez utiliser celui de Digitec à l’adresse IP `40.114.239.83`.
 Ils ont aussi écrit un article sur leur solution : [Article Pi-hole Digitec](https://www.digitec.ch/fr/page/le-pi-hole-de-digitec-ou-comment-en-finir-avec-les-publicites-18923).
+Bien évidemment, il faut être à l’aise avec le fait que Digitec aura connaissance de toutes les URL que votre ordinateur interroge.
 
 ## Ressources
 
@@ -55,7 +56,7 @@ sudo reboot
 
 > Les explications sont basées sur un modèle de routeur “Sunrise Internet Box”. Les liens proposés ci-dessous fonctionneront donc uniquement sur ce modèle de routeur, mais les principes restent les mêmes pour tous les autres routeurs.
 >
-> <span style="color:red">L’adresse IP locale de mon RPi est 192.168.1.28. Dans les explications si dessous, il faut remplacer cet IP par celui de votre RPi.</span>
+> <span style="color:red">L’adresse IP locale de mon RPi est 192.168.1.28. Dans les explications si dessous, il faut remplacer cette IP par celle de votre RPi.</span>
 
 - Se connecter à l’interface d’administration du routeur
   <http://192.168.1.1/>.
