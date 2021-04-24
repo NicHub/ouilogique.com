@@ -44,6 +44,10 @@ Pour la quatrième version, je ne génère plus le PWM des servos avec l’ESP32
 
 [i9]: ../../files/plateforme-de-stewart/images/2021-04-24-proto-plateforme-de-stewart_002.jpg
 
+<div style="display:block; margin-bottom:50px;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1ll8JVwJC50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 
 ## Troisième version
 
