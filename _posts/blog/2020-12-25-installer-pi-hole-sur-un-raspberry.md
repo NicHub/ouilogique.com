@@ -251,3 +251,5 @@ Pour afficher les URL de la blacklist :
 sqlite3 "/etc/pihole/gravity.db" "SELECT domain FROM vw_regex_blacklist;"
 sqlite3 "/etc/pihole/gravity.db" "SELECT domain FROM vw_blacklist;"
 ```
+
+❧
