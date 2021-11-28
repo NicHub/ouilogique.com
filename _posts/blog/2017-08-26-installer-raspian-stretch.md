@@ -159,8 +159,8 @@ sudo apt-get --assume-yes install wolfram-engine
 sudo apt --assume-yes install tmux
 
 tmux # crée et démarre un nouveau shell
-mux new -s session_name  # idem mais avec un nom de session
-tmux detach # détache du shell en cours
+tmux new -s session_name  # idem mais avec un nom de session
+tmux detach # pour se détacher du shell en cours
 
 # ctrl-B S # liste les shells tmux
 # ctrl-B D # revient au shell principal
@@ -182,6 +182,9 @@ set-option -g mouse on
 # aux shells existants, mais on peut le faire dans
 # chaque shell individuel avec la commande
 tmux set-option -g mouse on
+# En mode mouse on, il n'est possible de sélectionner
+# du texte. Il faut donc revenir en mode off.
+tmux set-option -g mouse off
 
 ```
 
@@ -217,7 +220,7 @@ screen /dev/ttyACM0 115200
 Installer samba
 
 ```bash
-sudo apt-get install --assume-yes samba samba-common-bin
+sudo apt-get --assume-yes install samba samba-common-bin
 ```
 
 Éditer la configuration
@@ -323,3 +326,13 @@ sudo python3.6 -m pip install quart
 ```
 
 [quart]: https://gitlab.com/pgjones/quart
+
+# picocom
+
+Picocom est un terminal série.
+
+```bash
+sudo apt-get --assume-yes install picocom
+
+picocom -b 115200 -p 1 -c /dev/tty
+```
