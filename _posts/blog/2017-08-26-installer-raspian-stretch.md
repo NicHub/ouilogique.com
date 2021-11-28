@@ -158,10 +158,31 @@ sudo apt-get --assume-yes install wolfram-engine
 ```bash
 sudo apt --assume-yes install tmux
 
-tmux # Démarre un nouveau shell
+tmux # crée et démarre un nouveau shell
+mux new -s session_name  # idem mais avec un nom de session
+tmux detach # détache du shell en cours
+
+# ctrl-B S # liste les shells tmux
 # ctrl-B D # revient au shell principal
+
 tmux ls # liste les shells tmux
-tmux a -t 0 # revient au shell tmux numéro 0
+tmux a -t 0 # revient au shell tmux 0
+tmux a # revient au dernier shell utilisé
+exit # quitte et détruit le shell en cours
+
+tmux kill-session -t 0 # détruit une session détachée
+
+# Par défaut, la roulette de la souris fait défiler
+# l’historique des commandes. Pour que la roulette
+# fasse défiler l’écran, il faut éditer le fichier
+~/.tmux.conf
+# et ajouter le paramètre
+set-option -g mouse on
+# Il ne s’appliquera qu’aux nouveaux shells et pas
+# aux shells existants, mais on peut le faire dans
+# chaque shell individuel avec la commande
+tmux set-option -g mouse on
+
 ```
 
 
