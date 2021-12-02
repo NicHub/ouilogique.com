@@ -1,6 +1,6 @@
-# OuiLogique.com
+# ouilogique.com
 
-Fichiers du blog [OuiLogique.com](https://ouilogique.com)
+Fichiers du blog [ouilogique.com](https://ouilogique.com)
 
 
 ---
