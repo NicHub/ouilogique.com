@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Interruptions externes sur les ATmega168/328"
+title: "External interrupts on the ATmega168/328"
 modified:
 categories:
 excerpt:
@@ -8,11 +8,11 @@ tags: []
 image:
      feature:
 date: 2016-10-21T12:31:00+02:00
-published: false
+published: true
 author: Nico
 ---
 
-Source : [EXTERNAL INTERRUPTS ON THE ATmega168/328](https://sites.google.com/site/qeewiki/books/avr-guide/external-interrupts-on-the-atmega328)
+Original Source (doesn’t exists anymore) : [EXTERNAL INTERRUPTS ON THE ATmega168/328](https://sites.google.com/site/qeewiki/books/avr-guide/external-interrupts-on-the-atmega328)
 
 
 ## INTRODUCTION
