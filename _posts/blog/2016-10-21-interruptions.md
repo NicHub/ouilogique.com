@@ -121,13 +121,6 @@ One important thing to note, on the older ATmega8 does not have any PCINT pints,
 | PCIFR | -     | -     | -     | -     | -     | PCIF2 | PCIF1 | PCIF0 |
 
 
-### Pin Change Mask Register 0
-
-|        | 7 bit  | 6 bit  | 5 bit  | 4 bit  | 3 bit  | 2 bit  | 1 bit  | 0 bit  |
-| :--    | :--    | :--    | :--    | :--    | :--    | :--    | :--    | :--    |
-| PCMSK0 | PCINT7 | PCINT6 | PCINT5 | PCINT4 | PCINT3 | PCINT2 | PCINT1 | PCINT0 |
-
-
 ### Pin Change Mask Register 2
 
 |        | 7 bit   | 6 bit   | 5 bit   | 4 bit   | 3 bit   | 2 bit   | 1 bit   | 0 bit   |
