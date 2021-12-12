@@ -119,15 +119,13 @@ chmod 644 ~/.ssh/mozilla_rsa.pub
 ## VNC
 
 ```bash
+sudo raspi-config
+# - Interfacing Options / I3 VNC <Yes>.
+
+# Si l’option n’est pas visible, il faut
+# installer VNC au préalable avec la commande :
 sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
 ```
-
-```bash
-sudo raspi-config
-# - Navigate to Interfacing Options.
-# - Scroll down and select VNC > Yes.
-```
-
 
 ## Enlever les programmes inutiles
 
