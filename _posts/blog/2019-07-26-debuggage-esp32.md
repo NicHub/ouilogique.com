@@ -6,11 +6,16 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+     feature: esp-prog-board-close-up.jpg
 date: 2019-07-26T14:00:00+02:00
 published: true
 author: Nico
 ---
+
+[![ESP-Prog — ouilogique.com][i3]{:style="width:90%;"}][i3]
+
+[i3]: ../../files/2019-07-26-debuggage-esp32/esp-prog-board-close-up-lowres.jpg
+
 
 Cet article montre comment mettre en route un board *ESP&#8209;Prog* et les outils intégrés à PlatformIO pour flasher et débugger un ESP32.
 
@@ -98,6 +103,7 @@ debug_init_break = tbreak setup
 ```
 
  - Brancher le connecteurs USB de l’ESP&#8209;Prog à l’ordinateur. L’ESP&#8209;Prog utilise deux ports série. Il n’y a pas besoin de brancher le connecteur USB de l’ESP, mais ça peut être pratique pour accéder à l’interface série. L’ESP&#8209;Prog a aussi une interface série que je n’ai pas testé.
+ - Sous Mac, il faut installer libusb avec [Homebrew][Homebrew] (`brew update && brew upgrade && brew install libusb`).
  - Sous Windows, il faut modifier le pilote par défaut avec le logiciel [Zadig][Zadig]. Voir [la procédure dans la vidéo d’Andreas Spiess à 14:52][Zadig Andreas].
  - Uploader le programme avec la commande standard de PlatformIO (`ctrl alt u`).
  - Placer quelques points d’arrêts dans le programme.
@@ -106,6 +112,7 @@ debug_init_break = tbreak setup
 
 [Zadig Andreas]: https://youtu.be/psMqilqlrRQ?t=892
 [Zadig]: https://zadig.akeo.ie
+[Homebrew]: https://brew.sh/
 
 
 [![Debuggage d’un ESP32 avec un ESP-Prog et PIO Unified Debugger — ouilogique.com][i2]{:style="width:90%;"}][i2]

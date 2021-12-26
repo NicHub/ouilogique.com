@@ -166,6 +166,9 @@ Cinématique inverse avec servomoteurs **😃 Meilleure source pour les calculs 
   - <https://www.marginallyclever.com/product/rotary-stewart-platform-v2/>
   - <https://github.com/MarginallyClever/RotaryStewartPlatform/blob/master/RSPv1/RSPv1.ino>
 
+Robots à chaînes exotiques, Jean-Pierre Merlet, INRIA Sophia-Antipolis
+  - <https://www-sop.inria.fr/members/Jean-Pierre.Merlet/Archi/node17.html>
+
 
 ## PLATEFORME DE STEWART AVEC 3 DEGRÉS DE LIBERTÉ
 
