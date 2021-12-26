@@ -16,6 +16,10 @@ author: Nico
 
 [i3]: ../../files/2019-07-26-debuggage-esp32/esp-prog-board-close-up-lowres.jpg
 
+[![ESP-Prog back — ouilogique.com][i4]{:style="width:90%;"}][i4]
+
+[i4]: ../../files/2019-07-26-debuggage-esp32/esp-prog-board-close-up-back-lowres.jpg
+
 
 Cet article montre comment mettre en route un board *ESP&#8209;Prog* et les outils intégrés à PlatformIO pour flasher et débugger un ESP32.
 
