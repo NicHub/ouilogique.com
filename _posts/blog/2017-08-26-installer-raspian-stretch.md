@@ -325,7 +325,7 @@ sudo python3.6 -m pip install quart
 
 [quart]: https://gitlab.com/pgjones/quart
 
-# picocom
+### picocom
 
 Picocom est un terminal série.
 
@@ -333,4 +333,13 @@ Picocom est un terminal série.
 sudo apt-get --assume-yes install picocom
 
 picocom -b 115200 -p 1 -c /dev/tty
+```
+
+Pour pouvoir l’utiliser sans être sudoer, il faut que l’utilisateur courant fasse partie du groupe dialout (et peut-être des groupes plugdev et input, je ne suis plus sûr). Il faut redémarrer le rPi pour que le changement soit pris en compte.
+
+```bash
+sudo usermod -a -G dialout $USER
+sudo usermod -a -G plugdev $USER
+sudo usermod -a -G input $USER
+sudo reboot
 ```
