@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-  feature: https://ouilogique.com/files/plateforme-de-stewart/images/2021-04-24-proto-plateforme-de-stewart_002.jpg
+  feature: 2021-04-24-proto-plateforme-de-stewart_002.jpg
 date: 2019-03-27T17:00:00+01:00
 published: true
 author: Nico
