@@ -160,12 +160,6 @@ Projet memememememememe **😃 Avec un simulateur fonctionnel en Processing et l
 - <https://memememememememe.me/post/stewart-platform-math/>
 - <https://github.com/thiagohersan/memememe>
 
-Cinématique inverse avec servomoteurs **😃 Meilleure source pour les calculs pour l’instant !**
-
-> Méthode de calcul de la cinématique inverse utilisée par le projet memememememememe. C’est la seule méthode qui inclu des servomoteurs en rotation. Les autres proposent systématiquement des actuateurs linéaires.
-
-- <https://web.archive.org/web/20130506134518/http://www.wokinghamu3a.org.uk/Maths%20of%20the%20Stewart%20Platform%20v5.pdf>
-
 **😃 Autres codes Arduino !**
 
 - <https://www.marginallyclever.com/product/rotary-stewart-platform-v2/>
@@ -182,6 +176,10 @@ Robots à chaînes exotiques, Jean-Pierre Merlet, INRIA Sophia-Antipolis
 - <https://www.instructables.com/id/3DOF-Ball-on-Plate-Using-Closed-Loop-Stepper-Motor/>
 - <https://people.ece.cornell.edu/land/courses/ece4760/FinalProjects/f2017/psl58_aw698_eb645/psl58_aw698_eb645/index.html#HLD>
 - <https://youtu.be/2i5qN2XWZLk>
+
+## MECCAD Ball and plate
+
+https://youtu.be/bEM5AywnzKg
 
 ## SPRK: A Low-Cost Stewart Platform For Motion Study In Surgical Robotics
 
@@ -369,3 +367,29 @@ STPB
 ## DELTA-ROBOT ONE — Robot Delta Arduino
 
 - <https://www.hackster.io/deltarobotone/delta-robot-one-8386a1?utm_campaign=new_projects&utm_content=2&utm_medium=email&utm_source=hackster&utm_term=project_name>
+
+## Calcul de la cinématique inverse
+
+Cinématique inverse avec servomoteurs **😃 Meilleure source pour les calculs pour l’instant !**
+
+> Méthode de calcul de la cinématique inverse utilisée par le projet memememememememe. C’est la seule méthode qui inclu des servomoteurs en rotation. Les autres proposent systématiquement des actuateurs linéaires.
+
+- <https://web.archive.org/web/20130506134518/http://www.wokinghamu3a.org.uk/Maths%20of%20the%20Stewart%20Platform%20v5.pdf>
+
+Analyse vectorielle des lieux de singularité de la plate-forme de Gough-Stewart
+
+- <https://corpus.ulaval.ca/jspui/bitstream/20.500.11794/23444/1/28962.pdf>
+
+https://stringfixer.com/fr/Stewart_platform
+
+https://fr.lambdageeks.com/parallel-robot-kinematics/
+
+https://fr.wikipedia.org/wiki/Reymond_Clavel
+
+https://fr.wikipedia.org/wiki/Robot_Delta
+
+https://vimeo.com/129643275
+
+https://www.ni.com/fr-ch/shop/software/products/6-dof-stewart-platform-control-library.html
+
+https://www.ni.com/fr-ch/shop/software/products/stewart-platform-trainer-toolkit.html
