@@ -393,3 +393,19 @@ https://vimeo.com/129643275
 https://www.ni.com/fr-ch/shop/software/products/6-dof-stewart-platform-control-library.html
 
 https://www.ni.com/fr-ch/shop/software/products/stewart-platform-trainer-toolkit.html
+
+https://www.xarg.org/paper/inverse-kinematics-of-a-stewart-platform/
+
+## Divers
+
+https://youtu.be/S-_VvNg_4cE
+
+https://youtu.be/N1g_KwHqew8
+
+Stewart's Platform. Microcontrollers: ATMega 1284PA, ATMega 8. Servos: TowerPro MG995
+
+https://grabcad.com/oleksandr.stepanenko-1/models
+
+https://youtu.be/eXULfD94gho
+
+https://youtu.be/Bf_1pUyjNiM
