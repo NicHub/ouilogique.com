@@ -173,7 +173,8 @@ tmux kill-session -t 0 # détruit une session détachée
 # Par défaut, la roulette de la souris fait défiler
 # l’historique des commandes. Pour que la roulette
 # fasse défiler l’écran, il faut éditer le fichier
-~/.tmux.conf
+# ~/.tmux.conf
+nano ~/.tmux.conf
 # et ajouter le paramètre
 set-option -g mouse on
 # Il ne s’appliquera qu’aux nouveaux shells et pas

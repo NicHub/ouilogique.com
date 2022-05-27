@@ -396,6 +396,8 @@ https://www.ni.com/fr-ch/shop/software/products/stewart-platform-trainer-toolkit
 
 https://www.xarg.org/paper/inverse-kinematics-of-a-stewart-platform/
 
+https://youtu.be/1jrP3_1ML9M
+
 ## Divers
 
 https://youtu.be/S-_VvNg_4cE
@@ -409,3 +411,18 @@ https://grabcad.com/oleksandr.stepanenko-1/models
 https://youtu.be/eXULfD94gho
 
 https://youtu.be/Bf_1pUyjNiM
+
+https://youtu.be/c1oxyk2IIOQ
+
+https://youtu.be/vlCH4zhIqmM
+
+https://acrome.net/product/stewart-platform
+
+https://youtu.be/5wCK6XGC3ig
+
+https://motionsystems.eu/product-category/motion-platforms/
+
+https://youtu.be/VeD4_FghKhQ
+
+https://youtu.be/PzOGIeGEyHY
+
