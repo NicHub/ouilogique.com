@@ -426,3 +426,8 @@ https://youtu.be/VeD4_FghKhQ
 
 https://youtu.be/PzOGIeGEyHY
 
+https://upcommons.upc.edu/bitstream/handle/2117/101560/Memoria_TFG_Aitor_Ramirez.pdf?sequence=1&isAllowed=y
+
+https://youtu.be/hkoTRNfivbU
+
+https://youtu.be/fDgqAfzSy0c
