@@ -344,3 +344,7 @@ sudo usermod -a -G plugdev $USER
 sudo usermod -a -G input $USER
 sudo reboot
 ```
+
+## À voir aussi
+
+- <https://www.raspberrypi.com/news/raspberry-pi-bullseye-update-april-2022/>
