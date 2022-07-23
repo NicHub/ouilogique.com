@@ -64,6 +64,14 @@ alias gs='git status'
 alias lsserial='python3 -m serial.tools.list_ports'
 IP=$(hostname -I | awk '{print $1}')
 alias pyserver='PORT=4000; echo -e "\nhttp://localhost:$PORT"; echo -e "http://$IP:$PORT\n"; /usr/bin/python3 -m http.server $PORT'
+
+###
+# Create virtual environment for python3 (once)
+# cd $HOME && python3 -m venv pyenv
+# and activate it (for each terminal)
+##
+VENVPATH="$HOME/pyenv/bin/activate"
+if [[ -f "$VENVPATH" ]]; then source "$VENVPATH"; fi
 ```
 
 ```bash
