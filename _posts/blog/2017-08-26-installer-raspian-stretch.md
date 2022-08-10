@@ -192,7 +192,6 @@ tmux set-option -g mouse on
 # En mode mouse on, il n'est possible de sélectionner
 # du texte. Il faut donc revenir en mode off.
 tmux set-option -g mouse off
-
 ```
 
 
