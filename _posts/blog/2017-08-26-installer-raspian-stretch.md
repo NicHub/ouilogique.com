@@ -41,6 +41,21 @@ author: Nico
 - Brancher le câble d’alimentation du Raspberry.
 - Après environ 30 secondes, se connecter au Raspberry avec la commande<br/>`ssh pi@raspberrypi.local`. Le mot de passe par défaut est `raspberry`. Si une entrée existe déjà pour `raspberrypi.local` dans le fichier `~/.ssh/known_hosts` de l’ordinateur hôte (pas le RPi), il faut la supprimer.
 
+## Retrouver un appareil sur le réseau local
+
+Si on doit retrouver un Raspberry sur le réseau, la première commande à essayer est<br/>`ping c-1 raspberrypi.local`.
+Mais si on ne connait pas le nom du Raspberry, alors il faut balayer toutes les adresses possibles (*network scan*).
+Il y a deux commandes utiles pour cela, `arp` et `nmap`. Sur la commande `nmap` doit être installée via Homebrew.
+Pour ceux qui préfèrent les GUI, il y a aussi [Zenmap](https://nmap.org/zenmap/).
+
+```bash
+arp -a
+```
+
+```bash
+nmap -sP 192.168.1.0/24
+```
+
 ## Mise à jour de Raspbian
 
 ```bash
@@ -280,7 +295,7 @@ Voir <https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-dri
 smb://raspberrypi.local
 ```
 
-### Installer une autre version de Python 3
+### Installer une autre version de Python 3
 
 > Edit du 16 octobre 2019 : Raspbian Buster intègre la version 3.7.3 de Python.
 >
@@ -324,7 +339,7 @@ which python3 # /usr/local/bin/python3
 
 Pour installer des modules
 
-> Si `pip install <module>` ne fonctionne pas, on peut utiiser les commandes suivantes :
+> Si `pip install <module>` ne fonctionne pas, on peut utiliser les commandes suivantes :
 
 ```bash
 sudo python3.6 -m pip install --upgrade pip
@@ -351,6 +366,104 @@ sudo usermod -a -G plugdev $USER
 sudo usermod -a -G input $USER
 sudo reboot
 ```
+
+## Arrêter ou redémarrer un Raspberry
+
+Ce n’est pas une bonne idée de juste tirer la prise quand on veut arrêter ou redémarrer son Raspberry.
+En effet, au bout de quelque temps, le système se retrouve avec un grand nombre de fichiers partiels et probablement illisibles.
+Si des fichiers importants sont touchés, le Raspberry peut devenir inutilisable.
+
+Donc pour éteindre un Raspberry, on utilisera une des commandes suivantes
+
+```bash
+sudo halt
+sudo shutdown -h now
+```
+
+Et pour redémarrer un Raspberry, on utilisera une des commandes suivantes
+
+```bash
+sudo reboot
+sudo shutdown -r now
+```
+
+> N. B. Attention, les commandes `halt` et `shutdown` ne coupent ni l’alimentation de la carte, ni l’alimentation des ports USB.
+> Donc ce n’est pas une bonne option pour éjecter un disque externe par exemple.
+
+## Lire un disque externe
+
+Lorsqu’on connecte un disque externe, il est automatiquement accessible au chemin `/media/pi/nom_du_disque`.
+Ce chemin est ausi appelé *point de montage*.
+On peut le voir avec la commande `ls` et accéder aux répertoires avec la commande `cd`.
+Dans l’exemple ci-dessous, le disque externe s’appelle `LaCie`.
+Ce nom changera avec d’autres fabricants ou si plusieurs disques du même fabricant sont utilisés en même temps.
+Il faut tenir compte de ce fait lorsqu’on écrit des scripts et des programmes qui utilisent le chemin du point de montage.
+
+```bash
+ls -l /media/pi/
+cd /media/pi/LaCie
+```
+
+
+## Éjecter un disque externe
+
+> N. B. À proprement parler, seuls les médias comme les CD où les bandes peuvent être éjectés. Mais le terme est aussi utilisé pour les autres médias.
+
+Éjecter un média est un peu plus compliqué que de le connecter et l’utiliser.
+En effet, sur un Raspbery ou n’importe quel [système *nix](https://fr.wikipedia.org/wiki/Type_Unix), il faut comprendre trois notions :
+
+- Les disques
+- Les partitions
+- Les points de montage
+
+Pour explorer ces concepts, utilisons la commande `lsblk`.
+
+```bash
+lsblk --output NAME,PATH,RM,RO,ROTA,TYPE,SIZE,FSAVAIL,MOUNTPOINT
+```
+
+```bash
+NAME        PATH           RM RO ROTA TYPE  SIZE FSAVAIL MOUNTPOINT
+sda         /dev/sda        0  0    1 disk  4.5T
+├─sda1      /dev/sda1       0  0    1 part  200M
+└─sda2      /dev/sda2       0  0    1 part  4.5T      1T /media/pi/LaCie
+mmcblk0     /dev/mmcblk0    0  0    0 disk 29.7G
+├─mmcblk0p1 /dev/mmcblk0p1  0  0    0 part  256M  201.8M /boot
+└─mmcblk0p2 /dev/mmcblk0p2  0  0    0 part 29.5G     24G /
+```
+
+Les résultats affichés par la commande `lsblk`ci-dessus montrent deux disques appelés `sda`et `mmcblk0`.
+Ils ont chacun deux partitions `sda1`, `sda2`, `mmcblk0p1` et `mmcblk0p2`.
+Et ils ont chacun un ou deux points de montage `/media/pi/LaCie`, `/boot` et `/`.
+On peut différencier les disques des partitions dans le dessin de la structure hiérarchique de la première colonne NAME et aussi dans la colonne TYPE.
+
+L’éjection du disque se passe en deux étapes :
+
+1. Démonter ses points de montage.
+   Dans le cas présenté, il n’en a qu’un qui est monté à `/media/pi/LaCie`, mais dont la référence se trouve à `/dev/sda2`.
+2. Déclencher le disque.
+   La référence du disque lui-même se trouve à `/dev/sda`.
+
+```bash
+udisksctl unmount --block-device /dev/sda2
+sudo udisksctl power-off --block-device /dev/sda
+```
+
+<!--
+Voici quelques explications sur ces informations.
+
+- Les disques durs standards sont nommés avec le préfixe `sd`suivi d’une lettre attribuée dans l’ordre alphabétique. Donc le premier disque aura le nom `sda`, le deuxième `sdb`, etc.
+  L’acronyme `sd`signifie *SCSI mass-storage driver*. Ici, c’est le pilote qui est SCSI, même si le disque n’est pas SCSI.
+- Les stockages NVMe (Non-Volatile Memory Express) sont nommés avec le préfix `nvm`.
+- Les stockages MMC (Multi Media Card) sont nommés avec le préfix `nvm`.
+ -->
+
+### Pour aller plus loin
+
+- [What you need to know about disks and disk partitions in Linux](https://linuxbsdos.com/2021/11/27/what-you-need-to-know-about-disks-and-disk-partitions-in-linux/).
+- [What is NVMe SSD technology?](https://www.kingston.com/en/ssd/what-is-nvme-ssd-technology)
+- [What Is an MMC Card - Full Guide](https://recoverit.wondershare.com/memorycard-recovery/what-is-mmc-card.html)
+
 
 ## À voir aussi
 
