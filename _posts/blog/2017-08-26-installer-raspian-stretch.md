@@ -43,7 +43,7 @@ author: Nico
 
 ## Retrouver un appareil sur le réseau local
 
-Si on doit retrouver un Raspberry sur le réseau, la première commande à essayer est<br/>`ping c-1 raspberrypi.local`.
+Si on doit retrouver un Raspberry sur le réseau, la première commande à essayer est<br/>`ping -c1 raspberrypi.local`.
 Mais si on ne connait pas le nom du Raspberry, alors il faut balayer toutes les adresses possibles (*network scan*).
 Il y a deux commandes utiles pour cela, `arp` et `nmap`. Sur la commande `nmap` doit être installée via Homebrew.
 Pour ceux qui préfèrent les GUI, il y a aussi [Zenmap](https://nmap.org/zenmap/).
@@ -442,10 +442,13 @@ L’éjection du disque se passe en deux étapes :
 
 1. Démonter ses points de montage.
    Dans le cas présenté, il n’en a qu’un qui est monté à `/media/pi/LaCie`, mais dont la référence se trouve à `/dev/sda2`.
-2. Déclencher le disque.
+2. Couper l’alimentation du disque.
    La référence du disque lui-même se trouve à `/dev/sda`.
 
+> N. B. Il faut s’assurer que le disque n’est plus utilisé, sinon le système refusera de le démonter avec l’erreur `target is busy`. C’est à ça que sert le changement de répertoire ci-dessous.
+
 ```bash
+cd
 udisksctl unmount --block-device /dev/sda2
 sudo udisksctl power-off --block-device /dev/sda
 ```
