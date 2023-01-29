@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-  feature: 2021-04-24-proto-plateforme-de-stewart_001.jpg
+    feature: 2021-04-24-proto-plateforme-de-stewart_001.jpg
 date: 2019-03-27T17:00:00+01:00
 published: true
 author: Nico
@@ -97,85 +97,85 @@ Avec un joystick analogique, des biellettes en fil de fer et des clones de servo
 
 Article Wikipedia
 
-- <https://en.wikipedia.org/wiki/Stewart_platform>
+-   <https://en.wikipedia.org/wiki/Stewart_platform>
 
 Vidéo qui m’a donné envie de réaliser une plateforme de Stewart
 San-José State University
 
-- <https://www.youtube.com/watch?v=j4OmVLc_oDw>
+-   <https://www.youtube.com/watch?v=j4OmVLc_oDw>
 
 Malheureusement, ils ont fermé leur site fullmotiondynamics.com.
 
 California Polytechnic University of Pomona — Mechanical Engineering Department — Controls Class Final Project
 
-- <https://www.youtube.com/watch?v=7Jw8m4pbTYI>
+-   <https://www.youtube.com/watch?v=7Jw8m4pbTYI>
 
 MIPT, Department of Radio Engineering and Cybernetics
 2 degrés de liberté + code Arduino
 
-- <https://www.youtube.com/watch?v=p65XPP53rLo>
+-   <https://www.youtube.com/watch?v=p65XPP53rLo>
 
 Vidéo où l’on voit bien les imperfections métrologiques
 
-- <https://www.youtube.com/watch?v=QdKo9PYwGaU>
-- Ils utilisent ce controleur de servos
-  <https://www.phidgets.com/?tier=3&catid=21&pcid=18&prodid=1032>
+-   <https://www.youtube.com/watch?v=QdKo9PYwGaU>
+-   Ils utilisent ce controleur de servos
+    <https://www.phidgets.com/?tier=3&catid=21&pcid=18&prodid=1032>
 
 Athus Vieira
 
-- <https://www.linkedin.com/pulse/ball-plate-system-robotic-pid-control-athus-vieira/>
-- <https://www.youtube.com/watch?v=9XhcSSrA4Yc>
-- PID tuning <http://emanual.robotis.com/docs/en/platform/openmanipulator/>
+-   <https://www.linkedin.com/pulse/ball-plate-system-robotic-pid-control-athus-vieira/>
+-   <https://www.youtube.com/watch?v=9XhcSSrA4Yc>
+-   PID tuning <http://emanual.robotis.com/docs/en/platform/openmanipulator/>
 
 Instructables by moosenee (avec gros plan sur le touch screen) **😃 Avec du code Arduino !**
 
-- <https://www.instructables.com/id/PID-Controlled-Ball-Balancing-Stewart-Platform/>
-- <https://github.com/a6guerre/Ball-balanced-on-Stewart-Platform>
-- <https://github.com/a6guerre/Ball-balanced-on-Stewart-Platform/blob/master/Readme.pdf>
+-   <https://www.instructables.com/id/PID-Controlled-Ball-Balancing-Stewart-Platform/>
+-   <https://github.com/a6guerre/Ball-balanced-on-Stewart-Platform>
+-   <https://github.com/a6guerre/Ball-balanced-on-Stewart-Platform/blob/master/Readme.pdf>
 
 Instructables by ThomasKNR **😃 Avec du code Arduino !**
 
-- <https://www.instructables.com/id/Arduino-controlled-Rotary-Stewart-Platform/>
-- <https://github.com/ThomasKNR/RotaryStewartPlatform>
+-   <https://www.instructables.com/id/Arduino-controlled-Rotary-Stewart-Platform/>
+-   <https://github.com/ThomasKNR/RotaryStewartPlatform>
 
 xoxota99/stewy GitHub **😃 Avec du code Arduino !**
 
-- <https://github.com/xoxota99/stewy>
+-   <https://github.com/xoxota99/stewy>
 
 Chaine YouTube avec une collection d’une vingtaine de vidéos
 
-- <https://www.youtube.com/playlist?list=PLVNyl3oDY7lsYDQMKvguyPkpJ0Eaqb9z_>
+-   <https://www.youtube.com/playlist?list=PLVNyl3oDY7lsYDQMKvguyPkpJ0Eaqb9z_>
 
 Blender
 
-- <https://www.youtube.com/watch?v=uNKHX5B011E>
+-   <https://www.youtube.com/watch?v=uNKHX5B011E>
 
 Webots
 
-- <https://cyberbotics.com/>
-- <https://www.youtube.com/watch?v=ddrtiwjKAaY>
+-   <https://cyberbotics.com/>
+-   <https://www.youtube.com/watch?v=ddrtiwjKAaY>
 
 Projet memememememememe **😃 Avec un simulateur fonctionnel en Processing et le code pour RPi !**
 
-- <https://memememememememe.me/post/stewart-platform-math/>
-- <https://github.com/thiagohersan/memememe>
+-   <https://memememememememe.me/post/stewart-platform-math/>
+-   <https://github.com/thiagohersan/memememe>
 
 **😃 Autres codes Arduino !**
 
-- <https://www.marginallyclever.com/product/rotary-stewart-platform-v2/>
-- <https://github.com/MarginallyClever/RotaryStewartPlatform/blob/master/RSPv1/RSPv1.ino>
+-   <https://www.marginallyclever.com/product/rotary-stewart-platform-v2/>
+-   <https://github.com/MarginallyClever/RotaryStewartPlatform/blob/master/RSPv1/RSPv1.ino>
 
 Robots à chaînes exotiques, Jean-Pierre Merlet, INRIA Sophia-Antipolis
 
-- <https://www-sop.inria.fr/members/Jean-Pierre.Merlet/Archi/node17.html>
+-   <https://www-sop.inria.fr/members/Jean-Pierre.Merlet/Archi/node17.html>
 
 ## PLATEFORME DE STEWART AVEC 3 DEGRÉS DE LIBERTÉ
 
 <!-- - <https://www.instructables.com/id/Ball-Balancing-PID-System/> -->
 
-- <https://www.instructables.com/id/3DOF-Ball-on-Plate-Using-Closed-Loop-Stepper-Motor/>
-- <https://people.ece.cornell.edu/land/courses/ece4760/FinalProjects/f2017/psl58_aw698_eb645/psl58_aw698_eb645/index.html#HLD>
-- <https://youtu.be/2i5qN2XWZLk>
+-   <https://www.instructables.com/id/3DOF-Ball-on-Plate-Using-Closed-Loop-Stepper-Motor/>
+-   <https://people.ece.cornell.edu/land/courses/ece4760/FinalProjects/f2017/psl58_aw698_eb645/psl58_aw698_eb645/index.html#HLD>
+-   <https://youtu.be/2i5qN2XWZLk>
 
 ## MECCAD Ball and plate
 
@@ -183,26 +183,26 @@ https://youtu.be/bEM5AywnzKg
 
 ## SPRK: A Low-Cost Stewart Platform For Motion Study In Surgical Robotics
 
-- <https://goldberg.berkeley.edu/pubs/2018_ISMR_stewart_design.pdf>
-- <https://github.com/BerkeleyAutomation/sprk>
+-   <https://goldberg.berkeley.edu/pubs/2018_ISMR_stewart_design.pdf>
+-   <https://github.com/BerkeleyAutomation/sprk>
 
 ## PLATEFORME DE STEWART AVEC RETOUR DE FORCE
 
 Dynamixel motor
 
-- <http://www.robotis.us/dynamixel/>
+-   <http://www.robotis.us/dynamixel/>
 
 Avec GUI Processing [Arun Dayal Udai]
 
-- <https://youtu.be/LFpyIZx2QGU?t=221>
-- <https://www.youtube.com/watch?v=rD4kTW_khXQ>
-- <https://www.youtube.com/watch?v=RqUcHulonHk>
+-   <https://youtu.be/LFpyIZx2QGU?t=221>
+-   <https://www.youtube.com/watch?v=rD4kTW_khXQ>
+-   <https://www.youtube.com/watch?v=RqUcHulonHk>
 
 Felix Ros **😃 Avec du code Processing et Arduino !**
 
-- <http://www.felixros.com/>
-- <https://github.com/felixros2401/Stewart-Platform>
-- <https://www.instructables.com/id/Controlling-a-Stewart-Platform/>
+-   <http://www.felixros.com/>
+-   <https://github.com/felixros2401/Stewart-Platform>
+-   <https://www.instructables.com/id/Controlling-a-Stewart-Platform/>
 
 ## PLATEFORME DE STEWART À BASE CIRCULAIRE (ROTOPOD)
 
@@ -212,30 +212,30 @@ Version de Circular-Base-Stewart-Platform
 
 **😃 Il montre un logiciel de tunning des PID dans le 2e lien**
 
-- <https://www.youtube.com/channel/UCgm1PM2V9BgfP7Qaze1teAw>
-- <https://youtu.be/zna9Hw_Ei58?t=482>
+-   <https://www.youtube.com/channel/UCgm1PM2V9BgfP7Qaze1teAw>
+-   <https://youtu.be/zna9Hw_Ei58?t=482>
 
 Version commerciale de Mikrolar
 
-- <http://mikrolar.com/r3000.html>
+-   <http://mikrolar.com/r3000.html>
 
 ## Versions commerciales
 
-- <https://motionsystems.eu/products/>
+-   <https://motionsystems.eu/products/>
 
 ## Modelling and Simulation of a 6DOF Motion Platform with Permanent Magnet Linear Actuators for Testing in Wind Tunnel
 
-- <https://www.youtube.com/watch?v=AZjgcrV642c>
+-   <https://www.youtube.com/watch?v=AZjgcrV642c>
 
 ## SIMULATEUR SUR MATHEMATICA
 
-- <https://www.wolfram.com/training/videos/ENG032/>
+-   <https://www.wolfram.com/training/videos/ENG032/>
 
 ## MATLAB FORWARD KINEMATICS SOLVER
 
 **😃 Avec du code Matlab !**
 
-- <https://github.com/jotux/Steward-Platform-Forward-Kinematics-Solver>
+-   <https://github.com/jotux/Steward-Platform-Forward-Kinematics-Solver>
 
 PDF à trouver :
 
@@ -248,112 +248,112 @@ PDF à trouver :
 
 ### Application 1 : Labyrinthe
 
-- Concours de vitesse de sortie du labyrinthe
-  - plusieurs robots s’affrontent en mode auto
-  - plusieurs utilisateurs s’affrontent en mode manuel
+-   Concours de vitesse de sortie du labyrinthe
+    -   plusieurs robots s’affrontent en mode auto
+    -   plusieurs utilisateurs s’affrontent en mode manuel
 
 ### Application 2 : Système de stabilisation pour appareil photo
 
-- Besoin d’un 7e axe pour augmenter l’angle de rotation autour de l’axe Z.
+-   Besoin d’un 7e axe pour augmenter l’angle de rotation autour de l’axe Z.
 
 ### Application 3 : Ball bouncing
 
-- <http://poe.olin.edu/2017/Bounce/>
-- <https://github.com/TShapinsky/Bounce>
+-   ~~poe.olin.edu/2017/Bounce/~~
+-   <https://github.com/TShapinsky/Bounce>
 
 ## IMPLÉMENTATION
 
 ### inputs
 
-- Mesure de la position de la bille par tapis résistif
-- Commande depuis navigateur web
-- Commande depuis Blender
-- BLE via smartphone
-- Joystick cablé (Wii Nunchuck)
+-   Mesure de la position de la bille par tapis résistif
+-   Commande depuis navigateur web
+-   Commande depuis Blender
+-   BLE via smartphone
+-   Joystick cablé (Wii Nunchuck)
 
 ### outputs
 
-- Mouvements du robot (6 ou 7 axes)
-- Retour visuel sur navigateur web
-- Retour visuel sur Blender
+-   Mouvements du robot (6 ou 7 axes)
+-   Retour visuel sur navigateur web
+-   Retour visuel sur Blender
 
 ## MATÉRIEL
 
 ### Servomoteurs
 
-- Tower Pro MG90s Servos
-  - <https://www.banggood.com/6X-Towerpro-MG90S-Metal-Gear-RC-Micro-Servo-p-1072260.html>
-  - <https://www.towerpro.com.tw/product/mg90s-3/>
-  - <https://www.youtube.com/watch?v=iHPGoKHgzHo>
-- <https://servodatabase.com/>
-- KST DS115MG servos
-- GWS Micro 2BBMG servo (<https://www.youtube.com/watch?v=TgqJbneXZI8>)
-- HS5485HB (<https://github.com/a6guerre/Ball-balanced-on-Stewart-Platform/blob/master/Readme.pdf>)
-- <http://www.robotis.us/dynamixel-mx-64t/> (Utilisé par Arun Dayal Udai)
-- MG995 (<https://www.banggood.com/MG995-High-Torgue-Mental-Gear-Analog-Servo-p-73885.html>) (Rolf)
-- Tower Pro SG-5010 servos (<https://01.org/developerjourney/recipe/building-stewart-platform>)
-- Hitec HS-5625MG (utilisé par <https://github.com/xoxota99/stewy>)
-- MG996R <https://fr.aliexpress.com/item//32636102294.html>
-- Parallax 900-00005 (utilisé par fullmotiondynamics)
-  <https://www.parallax.com/product/900-00005>
+-   Tower Pro MG90s Servos
+    -   <https://www.banggood.com/6X-Towerpro-MG90S-Metal-Gear-RC-Micro-Servo-p-1072260.html>
+    -   <https://www.towerpro.com.tw/product/mg90s-3/>
+    -   <https://www.youtube.com/watch?v=iHPGoKHgzHo>
+-   <https://servodatabase.com/>
+-   KST DS115MG servos
+-   GWS Micro 2BBMG servo (<https://www.youtube.com/watch?v=TgqJbneXZI8>)
+-   HS5485HB (<https://github.com/a6guerre/Ball-balanced-on-Stewart-Platform/blob/master/Readme.pdf>)
+-   <http://www.robotis.us/dynamixel-mx-64t/> (Utilisé par Arun Dayal Udai)
+-   MG995 (<https://www.banggood.com/MG995-High-Torgue-Mental-Gear-Analog-Servo-p-73885.html>) (Rolf)
+-   Tower Pro SG-5010 servos (~~01.org/developerjourney/recipe/building-stewart-platform~~)
+-   Hitec HS-5625MG (utilisé par <https://github.com/xoxota99/stewy>)
+-   MG996R <https://fr.aliexpress.com/item//32636102294.html>
+-   Parallax 900-00005 (utilisé par fullmotiondynamics)
+    <https://www.parallax.com/product/900-00005>
 
 ### Fonctionnement des servos
 
-- Analogiques <https://www.youtube.com/watch?v=LXURLvga8bQ>
-- <https://learn.sparkfun.com/tutorials/hobby-servo-tutorial/all>
+-   Analogiques <https://www.youtube.com/watch?v=LXURLvga8bQ>
+-   <https://learn.sparkfun.com/tutorials/hobby-servo-tutorial/all>
 
 ### Driver de servos
 
-- PCA9685 (16 servos, I²C) <https://aliexpress.com/af/32718274859.html>
+-   PCA9685 (16 servos, I²C) <https://aliexpress.com/af/32718274859.html>
 
 ### Rotules + tiges
 
-- M3x100mm <https://aliexpress.com/af/32775630549.html>
-- En M2 <https://aliexpress.com/af/32704692789.html>
-- rotule <https://aliexpress.com/af/32887391192.html>
-- tige <https://aliexpress.com/af/32468820900.html>
-- tige + rotule <https://aliexpress.com/af/32904104171.html>
-- magnétique <https://aliexpress.com/af/32818135577.html>
-- complète <https://aliexpress.com/af/32894390128.html>
+-   M3x100mm <https://aliexpress.com/af/32775630549.html>
+-   En M2 <https://aliexpress.com/af/32704692789.html>
+-   rotule <https://aliexpress.com/af/32887391192.html>
+-   tige <https://aliexpress.com/af/32468820900.html>
+-   tige + rotule <https://aliexpress.com/af/32904104171.html>
+-   magnétique <https://aliexpress.com/af/32818135577.html>
+-   complète <https://aliexpress.com/af/32894390128.html>
 
 ### Alim 5V
 
-- Courant 10A <https://aliexpress.com/af/32810906485.html>
+-   Courant 10A <https://aliexpress.com/af/32810906485.html>
 
 ### Levier de servo (Servo horn arm)
 
-- couleur tritanium <https://aliexpress.com/af/32843432977.html>
-- <https://aliexpress.com/af/32811563669.html>
+-   couleur tritanium <https://aliexpress.com/af/32843432977.html>
+-   <https://aliexpress.com/af/32811563669.html>
 
 ### Liste complète de matériel
 
-- <https://01.org/developerjourney/recipe/building-stewart-platform>
+-   ~~01.org/developerjourney/recipe/building-stewart-platform~~
 
 ### Touch screen
 
-- Digikey 360-3520-ND (le lien ne fonctionne plus) www.digikey.ch/short/pj85db (utilisé par <https://github.com/xoxota99/stewy>)
-- <https://aliexpress.com/af/32809597549.html>
+-   Digikey 360-3520-ND ~~www.digikey.ch/short/pj85db~~ (utilisé par <https://github.com/xoxota99/stewy>)
+-   <https://aliexpress.com/af/32809597549.html>
 
 ### ESP32
 
-- WeMos ESP32 WROOM
-  - <https://www.banggood.com/fr/WeMos-ESP32-WiFi-Bluetooth-Development-Board-Ultra-Low-Power-Consumption-Dual-Core-ESP-32-ESP-32S-p-1175488.html>
+-   WeMos ESP32 WROOM
+    -   <https://www.banggood.com/fr/WeMos-ESP32-WiFi-Bluetooth-Development-Board-Ultra-Low-Power-Consumption-Dual-Core-ESP-32-ESP-32S-p-1175488.html>
 
 ### Joystick
 
-- Wii Nunchuck <https://aliexpress.com/af/32827461737.html>
+-   Wii Nunchuck <https://aliexpress.com/af/32827461737.html>
 
 ### Calculs
 
-- <https://www.scratchapixel.com/lessons/mathematics-physics-for-computer-graphics/geometry/transforming-points-and-vectors>
+-   <https://www.scratchapixel.com/lessons/mathematics-physics-for-computer-graphics/geometry/transforming-points-and-vectors>
 
 ### PCB
 
-- <https://jlcpcb.com>
+-   <https://jlcpcb.com>
 
 ### Système complet avec caméra [Swiftflying Store](https://swiftflying.fr.aliexpress.com/store/3246059)
 
-- Le lien ne fonctionne plus : fr.aliexpress.com/item/32957141466.html
+-   Le lien ne fonctionne plus : fr.aliexpress.com/item/32957141466.html
 
 ## PINOUT
 
@@ -366,7 +366,7 @@ STPB
 
 ## DELTA-ROBOT ONE — Robot Delta Arduino
 
-- <https://www.hackster.io/deltarobotone/delta-robot-one-8386a1?utm_campaign=new_projects&utm_content=2&utm_medium=email&utm_source=hackster&utm_term=project_name>
+-   <https://www.hackster.io/deltarobotone/delta-robot-one-8386a1?utm_campaign=new_projects&utm_content=2&utm_medium=email&utm_source=hackster&utm_term=project_name>
 
 ## Calcul de la cinématique inverse
 
@@ -374,11 +374,11 @@ Cinématique inverse avec servomoteurs **😃 Meilleure source pour les calculs 
 
 > Méthode de calcul de la cinématique inverse utilisée par le projet memememememememe. C’est la seule méthode qui inclu des servomoteurs en rotation. Les autres proposent systématiquement des actuateurs linéaires.
 
-- <https://web.archive.org/web/20130506134518/http://www.wokinghamu3a.org.uk/Maths%20of%20the%20Stewart%20Platform%20v5.pdf>
+-   <https://memememememememe.me/assets/posts/stewart-platform-math/MathsOfStewartPlatformV5.pdf>
 
 Analyse vectorielle des lieux de singularité de la plate-forme de Gough-Stewart
 
-- <https://corpus.ulaval.ca/jspui/bitstream/20.500.11794/23444/1/28962.pdf>
+-   ~~corpus.ulaval.ca/jspui/bitstream/20.500.11794/23444/1/28962.pdf~~
 
 <https://stringfixer.com/fr/Stewart_platform>
 
