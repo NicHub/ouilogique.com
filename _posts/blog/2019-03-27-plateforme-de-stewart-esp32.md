@@ -380,54 +380,54 @@ Analyse vectorielle des lieux de singularité de la plate-forme de Gough-Stewart
 
 - <https://corpus.ulaval.ca/jspui/bitstream/20.500.11794/23444/1/28962.pdf>
 
-https://stringfixer.com/fr/Stewart_platform
+<https://stringfixer.com/fr/Stewart_platform>
 
-https://fr.lambdageeks.com/parallel-robot-kinematics/
+<https://fr.lambdageeks.com/parallel-robot-kinematics/>
 
-https://fr.wikipedia.org/wiki/Reymond_Clavel
+<https://fr.wikipedia.org/wiki/Reymond_Clavel>
 
-https://fr.wikipedia.org/wiki/Robot_Delta
+<https://fr.wikipedia.org/wiki/Robot_Delta>
 
-https://vimeo.com/129643275
+<https://vimeo.com/129643275>
 
-https://www.ni.com/fr-ch/shop/software/products/6-dof-stewart-platform-control-library.html
+<https://www.ni.com/fr-ch/shop/software/products/6-dof-stewart-platform-control-library.html>
 
-https://www.ni.com/fr-ch/shop/software/products/stewart-platform-trainer-toolkit.html
+<https://www.ni.com/fr-ch/shop/software/products/stewart-platform-trainer-toolkit.html>
 
-https://www.xarg.org/paper/inverse-kinematics-of-a-stewart-platform/
+<https://www.xarg.org/paper/inverse-kinematics-of-a-stewart-platform/>
 
-https://youtu.be/1jrP3_1ML9M
+<https://youtu.be/1jrP3_1ML9M>
 
 ## Divers
 
-https://youtu.be/S-_VvNg_4cE
+<https://youtu.be/S-_VvNg_4cE>
 
-https://youtu.be/N1g_KwHqew8
+<https://youtu.be/N1g_KwHqew8>
 
-Stewart's Platform. Microcontrollers: ATMega 1284PA, ATMega 8. Servos: TowerPro MG995
+Stewart’s Platform. Microcontrollers: ATMega 1284PA, ATMega 8. Servos: TowerPro MG995
 
-https://grabcad.com/oleksandr.stepanenko-1/models
+<https://grabcad.com/oleksandr.stepanenko-1/models>
 
-https://youtu.be/eXULfD94gho
+<https://youtu.be/eXULfD94gho>
 
-https://youtu.be/Bf_1pUyjNiM
+<https://youtu.be/Bf_1pUyjNiM>
 
-https://youtu.be/c1oxyk2IIOQ
+<https://youtu.be/c1oxyk2IIOQ>
 
-https://youtu.be/vlCH4zhIqmM
+<https://youtu.be/vlCH4zhIqmM>
 
-https://acrome.net/product/stewart-platform
+<https://acrome.net/product/stewart-platform>
 
-https://youtu.be/5wCK6XGC3ig
+<https://youtu.be/5wCK6XGC3ig>
 
-https://motionsystems.eu/product-category/motion-platforms/
+<https://motionsystems.eu/product-category/motion-platforms/>
 
-https://youtu.be/VeD4_FghKhQ
+<https://youtu.be/VeD4_FghKhQ>
 
-https://youtu.be/PzOGIeGEyHY
+<https://youtu.be/PzOGIeGEyHY>
 
-https://upcommons.upc.edu/bitstream/handle/2117/101560/Memoria_TFG_Aitor_Ramirez.pdf?sequence=1&isAllowed=y
+<https://upcommons.upc.edu/bitstream/handle/2117/101560/Memoria_TFG_Aitor_Ramirez.pdf?sequence=1&isAllowed=y>
 
-https://youtu.be/hkoTRNfivbU
+<https://youtu.be/hkoTRNfivbU>
 
-https://youtu.be/fDgqAfzSy0c
+<https://youtu.be/fDgqAfzSy0c>
