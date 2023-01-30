@@ -43,7 +43,7 @@ Pour la quatrième version, je ne génère plus le PWM des servos avec l’ESP32
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1ll8JVwJC50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-> Changement de bande adhésive pour tenir le câble du Nunshunk.<br/>
+> Changement de bande adhésive pour tenir le câble du Nunshunk.
 > Le fil rouge à gauche du breadboard ne sert à rien.
 
 [![Plateforme de Stewart — ouilogique.com][i10]{:style="width:100%;"}][i10]
