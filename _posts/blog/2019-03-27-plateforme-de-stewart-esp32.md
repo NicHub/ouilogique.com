@@ -43,6 +43,32 @@ Pour la quatrième version, je ne génère plus le PWM des servos avec l’ESP32
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1ll8JVwJC50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+> Changement de bande adhésive pour tenir le câble du Nunshunk.
+
+[![Plateforme de Stewart — ouilogique.com][i10]{:style="width:100%;"}][i10]
+
+[i10]: ../../files/plateforme-de-stewart/images/2023-01-30-proto-plateforme-de-stewart_001.jpg
+
+[![Plateforme de Stewart — ouilogique.com][i11]{:style="width:100%;"}][i11]
+
+[i11]: ../../files/plateforme-de-stewart/images/2023-01-30-proto-plateforme-de-stewart_002.jpg
+
+[![Plateforme de Stewart — ouilogique.com][i12]{:style="width:50%; float:left"}][i12]
+
+[i12]: ../../files/plateforme-de-stewart/images/2023-01-30-proto-plateforme-de-stewart_003.jpg
+
+[![Plateforme de Stewart — ouilogique.com][i13]{:style="width:50%; float:left"}][i13]
+
+[i13]: ../../files/plateforme-de-stewart/images/2023-01-30-proto-plateforme-de-stewart_004.jpg
+
+[![Plateforme de Stewart — ouilogique.com][i14]{:style="width:50%; float:left"}][i14]
+
+[i14]: ../../files/plateforme-de-stewart/images/2023-01-30-proto-plateforme-de-stewart_005.jpg
+
+[![Plateforme de Stewart — ouilogique.com][i15]{:style="width:50%; float:left"}][i15]
+
+[i15]: ../../files/plateforme-de-stewart/images/2023-01-30-proto-plateforme-de-stewart_006.jpg
+
 ## Troisième version
 
 Avec un clone de Nunchuck (joystick I²C de la console Wii), des vraie biellettes et des clones de servos Tower Pro MG90s. J’ai abandonné les clones de servos Tower Pro MG996R qui ne fonctionnent vraiment pas bien, car ils sont beaucoup trop lents et consomment trop de courant.
