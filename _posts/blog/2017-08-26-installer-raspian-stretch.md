@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2017-08-26T18:26:00+02:00
 published: true
 author: Nico
@@ -14,37 +14,53 @@ author: Nico
 
 ## Matériel utilisé pour cette procédure
 
-- Un Raspberry Pi modèle 2
-- Une carte SD 32 GB
-- Un ordinateur macOS Sierra
-- Un routeur
-- Un câble Ethernet
+-   Un Raspberry Pi modèle 2
+-   Une carte SD 32 GB
+-   Un ordinateur macOS Sierra
+-   Un routeur
+-   Un câble Ethernet
 
 > Pas besoin d’écran, de clavier ou de souris pour le Raspberry, nous utiliserons uniquement SSH pour nous connecter au RPi depuis le Mac.
 
 ## Préparation (~15 min)
 
-- Télécharger RASPBIAN STRETCH WITH DESKTOP (1.76 Go) <https://www.raspberrypi.org/downloads/raspbian/>
-- Décompresser l’archive `2017-08-16-raspbian-stretch.zip`. Elle contient une image disque qui se nomme `2017-08-16-raspbian-stretch.img`. Sur macOS Sierra, l’utilitaire d’archive par défaut se débrouille très bien pour la décompression.
-- Télécharger et installer Etcher <https://etcher.io/>
-- Ouvrir Etcher et dans les options (icône en forme de roue dentée en haut à droite), décocher l’option “Auto-unmount on success”, puis cliquer sur “Back” pour revenir à l’écran d’accueil.
+-   Télécharger RASPBIAN STRETCH WITH DESKTOP (1.76 Go)
+    <https://www.raspberrypi.org/downloads/raspbian/>.
+-   Décompresser l’archive
+    `2017-08-16-raspbian-stretch.zip`.
+    Elle contient une image disque qui se nomme
+    `2017-08-16-raspbian-stretch.img`.
+    Sur macOS Sierra, l’utilitaire d’archive par défaut se débrouille très bien pour la décompression.
+-   Télécharger et installer Etcher
+    <https://etcher.io/>.
+-   Ouvrir Etcher et dans les options (icône en forme de roue dentée en haut à droite), décocher l’option “Auto-unmount on success”, puis cliquer sur “Back” pour revenir à l’écran d’accueil.
 
 ## Procédure d’installation (~30 min)
 
-- Dans Etcher, cliquer sur “Select image” et choisir le fichier “2017-08-16-raspbian-stretch.img”.
-- Insérer la carte SD et vérifier qu’Etcher l’a bien détectée.
-- Cliquer sur “Flash”. Entrez votre mot de passe lorsque le dialogue le demande. L’écriture de l’image disque prend environ 15 min et la vérification (si elle a été sélectionnée dans les préférences) prend aussi 15 min. Ces temps peuvent beaucoup varier en fonction de votre matériel.
-- Quand Etcher a terminé, créer un fichier vide appelé “ssh” à la racine de la carte SD. N’importe quel éditeur de texte fera l’affaire. On peut aussi utiliser la commande suivante dans le terminal :<br/>`touch /Volumes/boot/ssh`.
-- Éjecter la carte SD dans le Finder.
-- Insérer la carte SD dans le Raspberry.
-- Connecter le câble Ethernet.
-- Brancher le câble d’alimentation du Raspberry.
-- Après environ 30 secondes, se connecter au Raspberry avec la commande<br/>`ssh pi@raspberrypi.local`. Le mot de passe par défaut est `raspberry`. Si une entrée existe déjà pour `raspberrypi.local` dans le fichier `~/.ssh/known_hosts` de l’ordinateur hôte (pas le RPi), il faut la supprimer.
+-   Dans Etcher, cliquer sur “Select image” et choisir le fichier “2017-08-16-raspbian-stretch.img”.
+-   Insérer la carte SD et vérifier qu’Etcher l’a bien détectée.
+-   Cliquer sur “Flash”.
+    Entrez votre mot de passe lorsque le dialogue le demande.
+    L’écriture de l’image disque prend environ 15 min et la vérification (si elle a été sélectionnée dans les préférences) prend aussi 15 min.
+    Ces temps peuvent beaucoup varier en fonction de votre matériel.
+-   Quand Etcher a terminé, créer un fichier vide appelé “ssh” à la racine de la carte SD.
+    N’importe quel éditeur de texte fera l’affaire.
+    On peut aussi utiliser la commande suivante dans le terminal :<br/>
+    `touch /Volumes/boot/ssh`.
+-   Éjecter la carte SD dans le Finder.
+-   Insérer la carte SD dans le Raspberry.
+-   Connecter le câble Ethernet.
+-   Brancher le câble d’alimentation du Raspberry.
+-   Après environ 30 secondes, se connecter au Raspberry avec la commande<br/>
+    `ssh pi@raspberrypi.local`.
+    Le mot de passe par défaut est `raspberry`.
+    Si une entrée existe déjà pour `raspberrypi.local` dans le fichier `~/.ssh/known_hosts` de l’ordinateur hôte (pas le RPi), il faut la supprimer.
 
 ## Retrouver un appareil sur le réseau local
 
-Si on doit retrouver un Raspberry sur le réseau, la première commande à essayer est<br/>`ping -c1 raspberrypi.local`.
-Mais si on ne connait pas le nom du Raspberry, alors il faut balayer toutes les adresses possibles (*network scan*).
+Si on doit retrouver un Raspberry sur le réseau, la première commande à essayer est<br/>
+`ping -c1 raspberrypi.local`.
+Mais si on ne connait pas le nom du Raspberry, alors il faut balayer toutes les adresses possibles (_network scan_).
 Il y a deux commandes utiles pour cela, `arp` et `nmap`. Sur la commande `nmap` doit être installée via Homebrew.
 Pour ceux qui préfèrent les GUI, il y a aussi [Zenmap](https://nmap.org/zenmap/).
 
@@ -59,8 +75,9 @@ nmap -sP 192.168.1.0/24
 ## Mise à jour de Raspbian
 
 ```bash
-sudo apt-get --assume-yes update # ~23 s
-sudo apt-get --assume-yes dist-upgrade # ~3 min
+sudo apt-get --assume-yes update
+sudo apt-get --assume-yes upgrade
+sudo apt-get --assume-yes dist-upgrade
 ```
 
 ## Configuration
@@ -102,7 +119,6 @@ sudo raspi-config
 # Advanced Options / Expand filesystem
 ```
 
-
 ## SSH
 
 **Sur l’ordinateur hôte**
@@ -139,17 +155,37 @@ chmod 600 ~/.ssh/mozilla_rsa
 chmod 644 ~/.ssh/mozilla_rsa.pub
 ```
 
+## Selection des interfaces utilisateurs
 
-## VNC
+Par défaut, l’interface graphique est activée et elle consomme beaucoup de ressources.
+Donc si on ne l’utilise pas, il est conseillé de la désactiver.
 
 ```bash
 sudo raspi-config
-# - Interfacing Options / I3 VNC <Yes>.
+# 1 System Options
+# S5 Boot / Auto Login
+# B2 Console Autologin ou B1 Console
+````
+
+## VNC
+
+> N. B. Il faut que l’interface graphique soit activée pour que VNC fonctionne (voir § précédent).
+
+```bash
+sudo raspi-config
+# 3 Interfacing Options / I3 VNC <Yes>.
 
 # Si l’option n’est pas visible, il faut
 # installer VNC au préalable avec la commande :
 sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
 ```
+
+Télécharger un client VNC pour se connecter au serveur VNC du rPi.
+Par exemple RealVNC :
+<https://www.realvnc.com/download/viewer/>.
+
+> N. B. Le client VNC installé par défaut sur macOS ne fonctionne pas pour se connecter au serveur VNC du rPI.
+> L’erreur retournée est<br />_Le logiciel de l’ordinateur distant semble ne pas être compatible avec cette version de Partage d’écran._<br />`bash /System/Library/CoreServices/Applications/Screen\ Sharing.app`
 
 ## Enlever les programmes inutiles
 
@@ -164,14 +200,12 @@ sudo apt-get autoremove
 df -h # Vous venez de libérer 1.1 GB !
 ```
 
-
 ## Réinstaller un programme qu’on croyait inutile
 
 ```bash
 sudo apt-get --assume-yes update
 sudo apt-get --assume-yes install wolfram-engine
 ```
-
 
 ## Ajouter quelques programmes utiles
 
@@ -210,7 +244,6 @@ tmux set-option -g mouse on
 tmux set-option -g mouse off
 ```
 
-
 ### GNU screen
 
 ```bash
@@ -231,7 +264,6 @@ python3 -m serial.tools.list_ports
 screen /dev/ttyACM0 115200
 # ctrl-A K # pour arrêter la transmission série
 ```
-
 
 ## Partager un espace disque avec samba
 
@@ -259,6 +291,7 @@ wins support = yes
 ```
 
 À la fin du fichier, ajouter les informations suivantes :
+
 ```conf
 # Source
 # https://raspberrypihq.com/how-to-share-a-folder-with-a-windows-computer-from-a-raspberry-pi/
@@ -273,7 +306,8 @@ directory mask = 0777
 public = no
 ```
 
-Le flag `public = no` indique que l’accès en temps qu’invité est désactivé. Si on le change en `public = yes`, le disque est partagé en lecture seule.
+Le flag `public = no` indique que l’accès en temps qu’invité est désactivé.
+Si on le change en `public = yes`, le disque est partagé en lecture seule.
 
 ```bash
 sudo smbpasswd -a pi
@@ -290,7 +324,8 @@ smb://raspberrypi.local
 
 ### Monter le disque partagé sur Windows
 
-Voir <https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-drive>
+Voir
+<https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-drive>
 
 ```bash
 smb://raspberrypi.local
@@ -298,20 +333,27 @@ smb://raspberrypi.local
 
 ### Installer une autre version de Python 3
 
+> Les informations de ce chapitre sont passablement obsolètes car les dernières versions de l’OS du rPi intègrent des versions de Python supérieures à 3.6.
+> Donc avant d’installer une nouvelle version de Python 3, il est prudent de vérifier la version installée sur le Raspberry avec la commande
+>
+> `bash python3 --version`
+>
+> On peut aussi vérifier la version de l’OS avec la commande
+>
+> ```bash cat /etc/os-release````
+>
 > Edit du 16 octobre 2019 : Raspbian Buster intègre la version 3.7.3 de Python.
->
-> Avant d’installer une nouvelle version de Python 3, il est prudent de vérifier la version installée sur le Raspberry avec la commande
->
-> `python3 --version`
+> Edit du 11 février 2023 : Raspberry Pi OS Bullseye 64 bit intègre la version 3.9.2 de Python.
 
-Raspbian Stretch propose la version 3.5 de Python. Comme Python 3.6 apporte de nouvelles fonctionnalités comme les *f-strings* et que le module `asyncio` a été amélioré, je pense que c’est intéressant de l’installer aussi. L’idée est aussi de pouvoir tester le module [quart][quart].
+Raspbian Stretch propose la version 3.5 de Python. Comme Python 3.6 apporte de nouvelles fonctionnalités comme les _f-strings_ et que le module `asyncio` a été amélioré, je pense que c’est intéressant de l’installer aussi. L’idée est aussi de pouvoir tester le module [quart][quart].
 
 Source : <https://liftcodeplay.com/2017/06/30/how-to-install-python-3-6-on-raspbian-linux-for-raspberry-pi/>
 Les versions de Python disponibles sont téléchargeables à : <https://www.python.org/ftp/python/>
-Temps d’installation : environ 30 min.
+Temps d’installation : environ 30 min.
 Cette procédure n’écrase pas les versions de Python existantes.
 
 Cette procédure montre comment installer Python 3.6.7.
+
 > J’ai aussi essayé d’installer la version 3.7.1 et l’installation a réussi, mais malheureusement pip ne fonctionnait pas, donc il m’était impossible d’installer de nouveaux modules.
 
 ```bash
@@ -328,7 +370,8 @@ exit
 cd ~ && sudo rm -rf temp
 ```
 
-Créer un lien pour que Python 3.6 soit la version de Python 3 par défaut. Ceci nous permettra d’indiquer le *shebang* `#!/usr/bin/env python3` au début des scripts et de les exécuter avec la commande `python3 <nom_du_script.py>`.
+Créer un lien pour que Python 3.6 soit la version de Python 3 par défaut.
+Ceci nous permettra d’indiquer le _shebang_ `#!/usr/bin/env python3` au début des scripts et de les exécuter avec la commande `python3 <nom_du_script.py>`.
 
 ```bash
 which python3.6 # /usr/local/bin/python3.6
@@ -359,7 +402,8 @@ sudo apt-get --assume-yes install picocom
 picocom -b 115200 -p 1 -c /dev/tty
 ```
 
-Pour pouvoir l’utiliser sans être sudoer, il faut que l’utilisateur courant fasse partie du groupe dialout (et peut-être des groupes plugdev et input, je ne suis plus sûr). Il faut redémarrer le rPi pour que le changement soit pris en compte.
+Pour pouvoir l’utiliser sans être sudoer, il faut que l’utilisateur courant fasse partie du groupe dialout (et peut-être des groupes plugdev et input, je ne suis plus sûr).
+Il faut redémarrer le rPi pour que le changement soit pris en compte.
 
 ```bash
 sudo usermod -a -G dialout $USER
@@ -374,11 +418,18 @@ Ce n’est pas une bonne idée de juste tirer la prise quand on veut arrêter ou
 En effet, au bout de quelque temps, le système se retrouve avec un grand nombre de fichiers partiels et probablement illisibles.
 Si des fichiers importants sont touchés, le Raspberry peut devenir inutilisable.
 
-Donc pour éteindre un Raspberry, on utilisera une des commandes suivantes
+Donc pour éteindre un Raspberry, on utilisera une des commandes ci-dessous.
+La différence entre elles n’est pas aussi évidente qu’il y parait :
+<https://unix.stackexchange.com/a/196471/199660>.
+Seule la commande `halt` éteint la LED rouge d’alimentation, donc je suppose que c’est celle qu’il faut privilégier.
+
+> N. B. Attention, aucune de ces commandes ne coupe l’alimentation de la carte ou l’alimentation des ports USB.
+> Donc ce n’est pas une bonne option pour éjecter un disque externe par exemple.
 
 ```bash
 sudo halt
-sudo shutdown -h now
+sudo poweroff
+sudo shutdown -h now --poweroff
 ```
 
 Et pour redémarrer un Raspberry, on utilisera une des commandes suivantes
@@ -388,13 +439,10 @@ sudo reboot
 sudo shutdown -r now
 ```
 
-> N. B. Attention, les commandes `halt` et `shutdown` ne coupent ni l’alimentation de la carte, ni l’alimentation des ports USB.
-> Donc ce n’est pas une bonne option pour éjecter un disque externe par exemple.
-
 ## Lire un disque externe
 
 Lorsqu’on connecte un disque externe, il est automatiquement accessible au chemin `/media/pi/nom_du_disque`.
-Ce chemin est ausi appelé *point de montage*.
+Ce chemin est ausi appelé _point de montage_.
 On peut le voir avec la commande `ls` et accéder aux répertoires avec la commande `cd`.
 Dans l’exemple ci-dessous, le disque externe s’appelle `LaCie`.
 Ce nom changera avec d’autres fabricants ou si plusieurs disques du même fabricant sont utilisés en même temps.
@@ -405,17 +453,16 @@ ls -l /media/pi/
 cd /media/pi/LaCie
 ```
 
-
 ## Éjecter un disque externe
 
 > N. B. À proprement parler, seuls les médias comme les CD où les bandes peuvent être éjectés. Mais le terme est aussi utilisé pour les autres médias.
 
 Éjecter un média est un peu plus compliqué que de le connecter et l’utiliser.
-En effet, sur un Raspbery ou n’importe quel [système *nix](https://fr.wikipedia.org/wiki/Type_Unix), il faut comprendre trois notions :
+En effet, sur un Raspbery ou n’importe quel [système \*nix](https://fr.wikipedia.org/wiki/Type_Unix), il faut comprendre trois notions :
 
-- Les disques
-- Les partitions
-- Les points de montage
+-   Les disques
+-   Les partitions
+-   Les points de montage
 
 Pour explorer ces concepts, utilisons la commande `lsblk`.
 
@@ -445,7 +492,8 @@ L’éjection du disque se passe en deux étapes :
 2. Couper l’alimentation du disque.
    La référence du disque lui-même se trouve à `/dev/sda`.
 
-> N. B. Il faut s’assurer que le disque n’est plus utilisé, sinon le système refusera de le démonter avec l’erreur `target is busy`. C’est à ça que sert le changement de répertoire ci-dessous.
+> N. B. Il faut s’assurer que le disque n’est plus utilisé, sinon le système refusera de le démonter avec l’erreur `target is busy`.
+> C’est à ça que sert le changement de répertoire ci-dessous.
 
 ```bash
 cd
@@ -464,11 +512,10 @@ Voici quelques explications sur ces informations.
 
 ### Pour aller plus loin
 
-- [What you need to know about disks and disk partitions in Linux](https://linuxbsdos.com/2021/11/27/what-you-need-to-know-about-disks-and-disk-partitions-in-linux/).
-- [What is NVMe SSD technology?](https://www.kingston.com/en/ssd/what-is-nvme-ssd-technology)
-- [What Is an MMC Card - Full Guide](https://recoverit.wondershare.com/memorycard-recovery/what-is-mmc-card.html)
-
+-   [What you need to know about disks and disk partitions in Linux](https://linuxbsdos.com/2021/11/27/what-you-need-to-know-about-disks-and-disk-partitions-in-linux/).
+-   [What is NVMe SSD technology?](https://www.kingston.com/en/ssd/what-is-nvme-ssd-technology)
+-   [What Is an MMC Card - Full Guide](https://recoverit.wondershare.com/memorycard-recovery/what-is-mmc-card.html)
 
 ## À voir aussi
 
-- <https://www.raspberrypi.com/news/raspberry-pi-bullseye-update-april-2022/>
+-   <https://www.raspberrypi.com/news/raspberry-pi-bullseye-update-april-2022/>
