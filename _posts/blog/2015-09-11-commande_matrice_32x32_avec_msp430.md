@@ -38,9 +38,9 @@ Le brochage est décrit au début du programme ci-dessous.
 
 <https://learn.adafruit.com/32x16-32x32-rgb-led-matrix?view=all>
 
-## Brochage des différents connecteurs de matrices
+## Brochage des différents connecteurs de matrices
 
-<http://www.ec086.com/Technical_support.html>
+~~http://www.ec086.com/Technical_support.html~~
 
 ## Programme
 
