@@ -15,7 +15,7 @@ author: Nico
 
 
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_010_lowres.jpg)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_010_lowres.jpg)
 
 
 128 full-color display type P6-16
@@ -191,61 +191,61 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 
 
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_001_lowres.jpg)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_001_lowres.jpg)
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_002_lowres.jpg)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_002_lowres.jpg)
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_003_lowres.jpg)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_003_lowres.jpg)
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_004_lowres.jpg)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_004_lowres.jpg)
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_005_lowres.jpg)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_005_lowres.jpg)
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_006_lowres.jpg)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_006_lowres.jpg)
 
 ### Carte GPRS + USB *XC-1015 MSC6.3*
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_007_lowres.jpg)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_007_lowres.jpg)
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_008_lowres.jpg)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_008_lowres.jpg)
 
 ### Nappe
 
 > ⚠ Un des connecteurs de cette nappe est plus bas que normal (environ 3mm du câble jusqu’au sommet). C’est nécessaire pour pouvoir assembler l’afficheur !
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_009_lowres.jpg)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_009_lowres.jpg)
 
 
 ### Logiciel `MiniLEDDisplayEditorV2.exe`
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/MiniLEDDisplayEditorV2_001.png)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/MiniLEDDisplayEditorV2_001.png)
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/MiniLEDDisplayEditorV2_002.png)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/MiniLEDDisplayEditorV2_002.png)
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/MiniLEDDisplayEditorV2_003.png)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/MiniLEDDisplayEditorV2_003.png)
 
 
 ### Profilé 118 × 35 mm
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/profile_118x35_001_lowres.jpg)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/profile_118x35_001_lowres.jpg)
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/profile_118x35_002_lowres.jpg)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/profile_118x35_002_lowres.jpg)
 
 > ⚠ À priori, les rainures au dos ne peuvent pas être utilisées avec de la visserie standard. En effet le M5 est trop petit et le M6 est trop grand. [Voir le dessin Onshape](https://cad.onshape.com/documents/e5f336ade20ccc683bafba82/w/173a1521199ae1cdb856deb0/e/e25f28ef1201f0b017f8ac6d)
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/profile_118x35_003.png)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/profile_118x35_003.png)
 
 ### Connecteur jack ⌀ 5.5 mm / ⌀ 2.5 mm
 
 > ⚠ Le connecteur jack de l’afficheur ne mesure que 9 mm de long et a un diamètre intérieur de 2.5 mm. Quand on le tourne, il y a de temps en temps des mauvais contacts qui font que l’afficheur redémarre. Avec un connecteur de 11 mm de long, de diamètre intérieur de 2.5 mm, mais pourvus d’ergots, ce problème disparait.
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_011_lowres.jpg)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_011_lowres.jpg)
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_012.jpg)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_012.jpg)
 
 > J’ai également fait un test avec deux [connecteurs jack de test d’une longueur de 12 mm, de diamètres 5.5/2.1 mm et sans ergot](http://www.banggood.com/DC-Power-Male-Female-5_5X-2_1mm-Connector-Adapter-Plug-Cable-Pressed-connected-for-LED-Strips-12V-p-998683.html?p=0431091025639201412F). Le connecteur de test sur l’afficheur a un très bon contact alors que le connecteur de test branché au jack de l’alimentation pose le même problème de faux contact que si l’alimentation est directement connectée à l’afficheur.
 
-![](/files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_013.jpg)
+![](../../files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_013.jpg)
 
 La norme de ce genre de connecteurs s’appelle EIAJ et il me semble que celui de l’afficheur est un EIAJ-04.
 

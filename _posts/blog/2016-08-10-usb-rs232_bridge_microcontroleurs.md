@@ -45,23 +45,23 @@ void loop()
 - GND connecté à GND.
 - Les cavaliers RXD et TXD connectés horizontalement (mode `HW UART` selon le pictogramme à côté des cavaliers).
 
-![Branchement des Launchpad](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_launchpad_lowres.jpg)
+![Branchement des Launchpad](../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_launchpad_lowres.jpg)
 
 ### Résultats
 
 On peut envoyer des commandes d’un Launchpad vers l’autre via [CoolTerm][1]. Malheureusement, même si on modifie la vitesse de transmission dans CoolTerm, elle reste à 9600 bauds entre les deux Launchpad. J’ai vérifié ça avec un analyseur logique.
 
-![CoolTerm Launchpad 1](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/coolterm_launchpad_1.png)
+![CoolTerm Launchpad 1](../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/coolterm_launchpad_1.png)
 
-![CoolTerm Launchpad 2](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/coolterm_launchpad_2.png)
+![CoolTerm Launchpad 2](../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/coolterm_launchpad_2.png)
 
-![Scanalogic entre les Launchpad](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/acquisition_launchpad.png)
+![Scanalogic entre les Launchpad](../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/acquisition_launchpad.png)
 
 ### Sans le microcontrôleur
 
 Et ça fonctionne aussi sans le microcontrôleur.
 
-![Branchement des Launchpad sans MSP430](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_launchpad_sans_msp430_lowres.jpg)
+![Branchement des Launchpad sans MSP430](../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_launchpad_sans_msp430_lowres.jpg)
 
 [0]: http://arduino.stackexchange.com/questions/18575/send-at-commands-to-esp8266-from-arduino-uno-via-a-softwareserial-port/18614#18614
 [1]: http://freeware.the-meiers.org/
@@ -79,7 +79,7 @@ Idem que pour les Launchpad (programme serial_end.ino)
 
 - Deux ESP8266-12E avec RX connecté à TX et inversement TX à RX.
 
-![Branchement des ESP8266-12E](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_esp8266-12E_test1_lowres.jpg)
+![Branchement des ESP8266-12E](../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_esp8266-12E_test1_lowres.jpg)
 
 ### Résultats
 
@@ -87,11 +87,11 @@ On peut envoyer des commandes d’un ESP8266-12E vers l’autre via [CoolTerm][1
 
 #### 9600 bauds
 
-![Scanalogic entre les ESP8266-12E 9600 bauds](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/acquisition_esp8266-12E_9600.png)
+![Scanalogic entre les ESP8266-12E 9600 bauds](../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/acquisition_esp8266-12E_9600.png)
 
 #### 115200 bauds
 
-![Scanalogic entre les ESP8266-12E 115200 bauds](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/acquisition_esp8266-12E_115200.png)
+![Scanalogic entre les ESP8266-12E 115200 bauds](../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/acquisition_esp8266-12E_115200.png)
 
 ---
 
@@ -108,7 +108,7 @@ La différence entre le test 2 et le test 1, c’est que j’ai connecté la bro
 - Deux ESP8266-12E avec RX connecté à TX et inversement TX à RX.
 - RST connecté à GND
 
-![Branchement des ESP8266-12E](/files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_esp8266-12E_test2_lowres.jpg)
+![Branchement des ESP8266-12E](../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_esp8266-12E_test2_lowres.jpg)
 
 ### Résultats
 

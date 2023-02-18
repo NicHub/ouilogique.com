@@ -12,11 +12,11 @@ published: true
 author: Nico
 ---
 
-![...](/files/2016-06-04-test_horloge_temps_reel_i2c/2016-06-04-test_horloge_temps_reel_i2c_001_lowres.jpg)
+![...](../../files/2016-06-04-test_horloge_temps_reel_i2c/2016-06-04-test_horloge_temps_reel_i2c_001_lowres.jpg)
 
-![...](/files/2016-06-04-test_horloge_temps_reel_i2c/2016-06-04-test_horloge_temps_reel_i2c_002_lowres.jpg)
+![...](../../files/2016-06-04-test_horloge_temps_reel_i2c/2016-06-04-test_horloge_temps_reel_i2c_002_lowres.jpg)
 
-![...](/files/2016-06-04-test_horloge_temps_reel_i2c/2016-06-04-test_horloge_temps_reel_i2c_003_lowres.jpg)
+![...](../../files/2016-06-04-test_horloge_temps_reel_i2c/2016-06-04-test_horloge_temps_reel_i2c_003_lowres.jpg)
 
 
 ~~~ c++

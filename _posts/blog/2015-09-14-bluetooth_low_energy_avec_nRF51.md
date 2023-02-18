@@ -16,14 +16,14 @@ redirect_from:
 
 
 
-![](/files/2015-09-14-bluetooth_low_energy_avec_nRF51/nRF51_001.jpg)
+![](../../files/2015-09-14-bluetooth_low_energy_avec_nRF51/nRF51_001.jpg)
 
-![](/files/2015-09-14-bluetooth_low_energy_avec_nRF51/nRF51_002.jpg)
+![](../../files/2015-09-14-bluetooth_low_energy_avec_nRF51/nRF51_002.jpg)
 
 
 ## Brochage
 
-![](/files/2015-05-28-pinouts/images/xnRF51-DK_Pinout_4.png)
+![](../../files/2015-05-28-pinouts/images/xnRF51-DK_Pinout_4.png)
 
 > Seules les broches P0.01 à P0.06 peuvent être configurées en entrées analogiques.
 >

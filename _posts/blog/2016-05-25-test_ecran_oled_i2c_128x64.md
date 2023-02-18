@@ -12,9 +12,9 @@ published: true
 author: Nico
 ---
 
-![...](/files/2016-05-25-test_ecran_oled_i2c_128x64/test_ecran_oled_i2c_128x64_001_lowres.jpg)
+![...](../../files/2016-05-25-test_ecran_oled_i2c_128x64/test_ecran_oled_i2c_128x64_001_lowres.jpg)
 
-![...](/files/2016-05-25-test_ecran_oled_i2c_128x64/test_ecran_oled_i2c_128x64_002_lowres.jpg)
+![...](../../files/2016-05-25-test_ecran_oled_i2c_128x64/test_ecran_oled_i2c_128x64_002_lowres.jpg)
 
 ~~~ c++
 

@@ -6,13 +6,12 @@ categories:
 excerpt:
 tags: []
 image:
-  feature:
+    feature:
 date: 2015-01-07T12:00:00+01:00
 author: Nico
 redirect_from:
-  - /blog/programmer_un_msp430_en_mode_ISP/
+    - /blog/programmer_un_msp430_en_mode_ISP/
 ---
-
 
 Lors du [quatrième MOOC sur les µcontrôleurs de l’EPFL](https://www.coursera.org/course/microcontroleurs), Pierre-Yves Rochat nous a présenté comment utiliser une carte Launchpad pour programmer un MSP430 sur un breadboard. Cette façon de programmer est souvent appelée [ISP (in-system programmer) ou programmation in situ](http://fr.wikipedia.org/wiki/Programmation_in-situ) en français.
 
@@ -20,49 +19,43 @@ Lors du [quatrième MOOC sur les µcontrôleurs de l’EPFL](https://www.courser
 Le document original peut être téléchargé ici :
 <http://pyr.ch/coursera/ExperiencesAvecLaunchpad.pdf>
 -->
-[Le document original au format PDF](/files/2015-01-07-programmer_un_msp430_en_mode_ISP/ExperiencesAvecLaunchpad.pdf)
+
+[Le document original au format PDF](../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/ExperiencesAvecLaunchpad.pdf)
 
 Voilà le proto sur breadboard :
 
-![](/files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/P1030387.JPG)
-
+![](../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/P1030387.JPG)
 
 Voilà le résultat final :
 
-![](/files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_021.jpg)
-
+![](../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_021.jpg)
 
 <figure class="half">
-    <img src="/files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/adafruit_perma-proto_pt_129.jpg" alt="image">
-    <img src="/files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/adafruit_perma-proto_pt_131-1.jpg" alt="image">
+    <img src="../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/adafruit_perma-proto_pt_129.jpg" alt="image">
+    <img src="../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/adafruit_perma-proto_pt_131-1.jpg" alt="image">
 <!--    <figcaption>Caption describing these two images.</figcaption>
  --></figure>
 
-
-
-
 ## Leçons apprises
 
-- Programmer un MSP sur breadboard (un MSP430G2231 dans cette application).
-- Utiliser une découpeuse laser.
-- [Les plaques à souder Perma-Proto d’Adafruit](http://www.adafruit.com/blog/2011/11/18/adafruit-perma-proto-half-sized-breadboard-pcb-3-pack/) sont très pratiques.
-- Que les LED RGB translucides sont très nettement moins lumineuses que les transparentes. J’utilise une LED translucide dans ce projet, mais j’ai un gadget similaire avec une LED transparente et la différence est frappante. J’aurais aussi dû être moins conservatif sur la question de la consommation et utiliser des résistances plus faibles.
-- Qu’une LED éclaire beaucoup plus sur le dessus que sur les côtés.
-- Qu’il est horriblement long et compliqué de réaliser un projet, même aussi simple que celui-là quand on a pas de matériel. J’étais tributaire des horaires d’ouverture du [FabLab Chêne 20](http://www.fablab-chene20.ch) et ça a été la course permanente pour réaliser ce montage. Notez que j’ai réalisé deux autres versions : une qui ne sera jamais utilisée et une autre que j’ai offerte à Noël, mais qui ne contient pas le montage électronique, c’est donc un simple photophore pour y placer une bougie et il a une forme différente de celui que je présente ici.
-
+-   Programmer un MSP sur breadboard (un MSP430G2231 dans cette application).
+-   Utiliser une découpeuse laser.
+-   [Les plaques à souder Perma-Proto d’Adafruit](http://www.adafruit.com/blog/2011/11/18/adafruit-perma-proto-half-sized-breadboard-pcb-3-pack/) sont très pratiques.
+-   Que les LED RGB translucides sont très nettement moins lumineuses que les transparentes. J’utilise une LED translucide dans ce projet, mais j’ai un gadget similaire avec une LED transparente et la différence est frappante. J’aurais aussi dû être moins conservatif sur la question de la consommation et utiliser des résistances plus faibles.
+-   Qu’une LED éclaire beaucoup plus sur le dessus que sur les côtés.
+-   Qu’il est horriblement long et compliqué de réaliser un projet, même aussi simple que celui-là quand on a pas de matériel. J’étais tributaire des horaires d’ouverture du [FabLab Chêne 20](http://www.fablab-chene20.ch) et ça a été la course permanente pour réaliser ce montage. Notez que j’ai réalisé deux autres versions : une qui ne sera jamais utilisée et une autre que j’ai offerte à Noël, mais qui ne contient pas le montage électronique, c’est donc un simple photophore pour y placer une bougie et il a une forme différente de celui que je présente ici.
 
 <figure class="half">
-	<img src="/files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_018.jpg" alt="image">
-	<img src="/files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_001.jpg" alt="image">
+	<img src="../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_018.jpg" alt="image">
+	<img src="../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_001.jpg" alt="image">
 <!-- 	<figcaption>Caption describing these two images.</figcaption>
  --></figure>
 
 <figure class="half">
-	<img src="/files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_006.jpg" alt="image">
-	<img src="/files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_008.jpg" alt="image">
+	<img src="../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_006.jpg" alt="image">
+	<img src="../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_008.jpg" alt="image">
 <!-- 	<figcaption>Caption describing these two images.</figcaption>
  --></figure>
-
 
 ## Notes
 
@@ -70,15 +63,13 @@ Pour ceux qui ont participé au quatrième MOOC sur les microcontrôleurs, voici
 
 <https://class.coursera.org/microcontroleurs-004/forum/thread?thread_id=327>
 
-
 ## Code
 
 Et voilà le code pour faire des jolies transitions sur la LED RGB :
 
-
 {% highlight C++ %}
 
-/*
+/\*
 
     Blink Noël
 
@@ -91,8 +82,7 @@ Et voilà le code pour faire des jolies transitions sur la LED RGB :
     Version MSP430
     Implémenté sur MSP430G2231
 
-*/
-
+\*/
 
 #include "Energia.h"
 
@@ -110,20 +100,20 @@ int i;
 
 void customDelay( unsigned long iMax )
 {
-    volatile unsigned long iDelay;
-    for( iDelay=0; iDelay<iMax; iDelay++ ){ }
+volatile unsigned long iDelay;
+for( iDelay=0; iDelay<iMax; iDelay++ ){ }
 }
 
 void setLeds( int setR, int setG, int setB )
 {
-    analogWrite( ledR, setR );
-    analogWrite( ledG, setG );
-    analogWrite( ledB, setB );
+analogWrite( ledR, setR );
+analogWrite( ledG, setG );
+analogWrite( ledB, setB );
 }
 
 int main()
 {
-    WDTCTL = WDTPW + WDTHOLD;
+WDTCTL = WDTPW + WDTHOLD;
 
     // Configuration des LED en OUTPUT et de toutes les autres I/O en INPUT
     // avec Pulldown. Pour les I/O inutilisées, TI recommande de les
@@ -174,9 +164,7 @@ int main()
         for( i = 0; i < 256; i++ ){ setLeds( i,     0,     255   ); customDelay( myDelay ); }
         for( i = 0; i < 256; i++ ){ setLeds( 255,   0,     255-i ); customDelay( myDelay ); }
     }
+
 }
-
-
-
 
 {% endhighlight %}

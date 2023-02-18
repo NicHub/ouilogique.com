@@ -17,6 +17,6 @@ Mise en route de l’analyseur logique [Scanalogic-2](http://www.ikalogic.com/ik
 
 Ça fonctionne bien, même sur Mac.
 
-![](/files/2015-06-27-Scanalogic-2_Logic_Analyzer/Scanalogic-2_Logic_Analyzer_001.jpg)
+![](../../files/2015-06-27-Scanalogic-2_Logic_Analyzer/Scanalogic-2_Logic_Analyzer_001.jpg)
 
-![](/files/2015-06-27-Scanalogic-2_Logic_Analyzer/Scanalogic-2_Logic_Analyzer_002.jpg)
+![](../../files/2015-06-27-Scanalogic-2_Logic_Analyzer/Scanalogic-2_Logic_Analyzer_002.jpg)

@@ -16,7 +16,7 @@ redirect_from:
 
 
 
-![](/files/2015-09-11-commande_matrice_32x32_avec_msp430/msp430-mx32x32.jpeg)
+![](../../files/2015-09-11-commande_matrice_32x32_avec_msp430/msp430-mx32x32.jpeg)
 
 ## Référence de la matrice sur AliExpress
 
@@ -33,9 +33,9 @@ Le brochage est décrit au début du programme ci-dessous.
 
 [Image du connecteur sur Adafruit.com](https://learn.adafruit.com/system/assets/assets/000/023/769/original/led_matrix_socket3.png?1426305755){:target="_blank"}
 
-![](/files/2015-09-11-commande_matrice_32x32_avec_msp430/mx32x32_connecteur.jpeg){:height="438px" width="300px"}
+![](../../files/2015-09-11-commande_matrice_32x32_avec_msp430/mx32x32_connecteur.jpeg){:height="438px" width="300px"}
 
-![](/files/2015-09-11-commande_matrice_32x32_avec_msp430/msp430-mx32x32_brochage.jpeg)
+![](../../files/2015-09-11-commande_matrice_32x32_avec_msp430/msp430-mx32x32_brochage.jpeg)
 
 
 ## Article sur Adafruit

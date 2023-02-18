@@ -12,11 +12,11 @@ published: true
 author: Nico
 ---
 
-![batterie noname ouverte](/files/2016-10-05-tests_batteries/batterie_noname+boitier_lowres.jpg)
+![batterie noname ouverte](../../files/2016-10-05-tests_batteries/batterie_noname+boitier_lowres.jpg)
 
-![Test batterie noname](/files/2016-10-05-tests_batteries/test_batterie_18650_noname_lowres.jpg)
+![Test batterie noname](../../files/2016-10-05-tests_batteries/test_batterie_18650_noname_lowres.jpg)
 
-![Test batterie Infinity PV](/files/2016-10-05-tests_batteries/test_batterie_infinityPV_lowres.jpg)
+![Test batterie Infinity PV](../../files/2016-10-05-tests_batteries/test_batterie_infinityPV_lowres.jpg)
 
 
 | Batterie                     | Capacité annoncée | Capacité mesurée | Capacité mesurée<br/>vs annoncée | Durée de la décharge | Tension mesurée | Courant mesuré | Résistance calculée |

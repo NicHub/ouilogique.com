@@ -31,6 +31,6 @@ La communication se passe de la façon suivante :
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/b8a_t5Tyg44" frameborder="0" allowfullscreen></iframe>
 
-![](/files/2015-06-26-nodejs_arduino_matrices/2015-05-29_platine.jpg)
+![](../../files/2015-06-26-nodejs_arduino_matrices/2015-05-29_platine.jpg)
 
-![](/files/2015-06-26-nodejs_arduino_matrices/2015-05-30_boutons.jpg)
+![](../../files/2015-06-26-nodejs_arduino_matrices/2015-05-30_boutons.jpg)

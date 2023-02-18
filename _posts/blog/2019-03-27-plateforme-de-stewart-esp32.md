@@ -14,7 +14,7 @@ author: Nico
 
 [![Plateforme de Stewart — ouilogique.com][i1]{:style="width:50%;"}][i1]
 
-[i1]: ../../files/plateforme-de-stewart/images/stewart-plateform-ouilogique.jpg
+[i1]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/stewart-plateform-ouilogique.jpg
 
 Premiers prototypes d’une plateforme de Stewart que je construis dans le cadre du projet 2019 (P19) du [Microclub][microclub].
 
@@ -33,11 +33,11 @@ Pour la quatrième version, je ne génère plus le PWM des servos avec l’ESP32
 
 [![Plateforme de Stewart — ouilogique.com][i8]{:style="width:100%;"}][i8]
 
-[i8]: ../../files/plateforme-de-stewart/images/2021-04-24-proto-plateforme-de-stewart_001.jpg
+[i8]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2021-04-24-proto-plateforme-de-stewart_001.jpg
 
 [![Plateforme de Stewart — ouilogique.com][i9]{:style="width:100%;"}][i9]
 
-[i9]: ../../files/plateforme-de-stewart/images/2021-04-24-proto-plateforme-de-stewart_002.jpg
+[i9]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2021-04-24-proto-plateforme-de-stewart_002.jpg
 
 <div style="display:block; margin-bottom:50px;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1ll8JVwJC50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -48,28 +48,28 @@ Pour la quatrième version, je ne génère plus le PWM des servos avec l’ESP32
 
 [![Plateforme de Stewart — ouilogique.com][i10]{:style="width:100%;"}][i10]
 
-[i10]: ../../files/plateforme-de-stewart/images/2023-01-30-proto-plateforme-de-stewart_001.jpg
+[i10]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2023-01-30-proto-plateforme-de-stewart_001.jpg
 
 [![Plateforme de Stewart — ouilogique.com][i11]{:style="width:100%;"}][i11]
 
 <!-- Layout 2×2 -->
-[i11]: ../../files/plateforme-de-stewart/images/2023-01-30-proto-plateforme-de-stewart_002.jpg
+[i11]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2023-01-30-proto-plateforme-de-stewart_002.jpg
 
 [![Plateforme de Stewart — ouilogique.com][i12]{:style="width:50%; float:left"}][i12]
 
-[i12]: ../../files/plateforme-de-stewart/images/2023-01-30-proto-plateforme-de-stewart_003.jpg
+[i12]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2023-01-30-proto-plateforme-de-stewart_003.jpg
 
 [![Plateforme de Stewart — ouilogique.com][i13]{:style="width:50%; float:left"}][i13]
 
-[i13]: ../../files/plateforme-de-stewart/images/2023-01-30-proto-plateforme-de-stewart_004.jpg
+[i13]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2023-01-30-proto-plateforme-de-stewart_004.jpg
 
 [![Plateforme de Stewart — ouilogique.com][i14]{:style="width:50%; float:left"}][i14]
 
-[i14]: ../../files/plateforme-de-stewart/images/2023-01-30-proto-plateforme-de-stewart_005.jpg
+[i14]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2023-01-30-proto-plateforme-de-stewart_005.jpg
 
 [![Plateforme de Stewart — ouilogique.com][i15]{:style="width:50%; float:left; clear:right; margin-bottom:200px;"}][i15]
 
-[i15]: ../../files/plateforme-de-stewart/images/2023-01-30-proto-plateforme-de-stewart_006.jpg
+[i15]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2023-01-30-proto-plateforme-de-stewart_006.jpg
 
 ## Troisième version
 
@@ -81,7 +81,7 @@ Avec un clone de Nunchuck (joystick I²C de la console Wii), des vraie biellette
 
 [![Plateforme de Stewart — ouilogique.com][i7]{:style="width:50%; margin-bottom:100px"}][i7]
 
-[i7]: ../../files/plateforme-de-stewart/images/2019-05-31-proto-plateforme-de-stewart_001.jpg
+[i7]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2019-05-31-proto-plateforme-de-stewart_001.jpg
 
 ## Deuxième version
 
@@ -89,19 +89,19 @@ Avec un clone de Nunchuck (joystick I²C de la console Wii), des vraie biellette
 
 [![Plateforme de Stewart — ouilogique.com][i3]{:style="width:50%; float:left"}][i3]
 
-[i3]: ../../files/plateforme-de-stewart/images/2019-05-03-proto-plateforme-de-stewart_001.jpg
+[i3]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2019-05-03-proto-plateforme-de-stewart_001.jpg
 
 [![Plateforme de Stewart — ouilogique.com][i4]{:style="width:50%; float:left"}][i4]
 
-[i4]: ../../files/plateforme-de-stewart/images/2019-05-03-proto-plateforme-de-stewart_002.jpg
+[i4]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2019-05-03-proto-plateforme-de-stewart_002.jpg
 
 [![Plateforme de Stewart — ouilogique.com][i5]{:style="width:50%; float:left"}][i5]
 
-[i5]: ../../files/plateforme-de-stewart/images/2019-05-03-proto-plateforme-de-stewart_003.jpg
+[i5]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2019-05-03-proto-plateforme-de-stewart_003.jpg
 
 [![Plateforme de Stewart — ouilogique.com][i6]{:style="width:50%; float:left; clear:right; margin-bottom:200px;"}][i6]
 
-[i6]: ../../files/plateforme-de-stewart/images/2019-05-03-proto-plateforme-de-stewart_004.jpg
+[i6]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2019-05-03-proto-plateforme-de-stewart_004.jpg
 
 ## Première version
 
@@ -113,11 +113,11 @@ Avec un joystick analogique, des biellettes en fil de fer et des clones de servo
 
 [![Plateforme de Stewart — ouilogique.com][i2]{:style="width:50%; float:left"}][i2]
 
-[i2]: ../../files/plateforme-de-stewart/images/2019-03-21-proto-plateforme-de-stewart_001.jpg
+[i2]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2019-03-21-proto-plateforme-de-stewart_001.jpg
 
 [![Plateforme de Stewart — ouilogique.com][i2b]{:style="width:50%; float:left; clear:right; margin-bottom:100px"}][i2b]
 
-[i2b]: ../../files/plateforme-de-stewart/images/2019-03-21-proto-plateforme-de-stewart_002.jpg
+[i2b]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2019-03-21-proto-plateforme-de-stewart_002.jpg
 
 ---
 

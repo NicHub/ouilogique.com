@@ -28,11 +28,11 @@ Le test consiste à placer une diode entre les pattes d’alimentation de la fic
 
 **Le hub doit être alimenté pendant le test.**
 
-![](/files/2015-07-02-usb_hub_test/test_usb_hub_003.svg){:height="527px" width="300px"}
+![](../../files/2015-07-02-usb_hub_test/test_usb_hub_003.svg){:height="527px" width="300px"}
 
-![](/files/2015-07-02-usb_hub_test/test_usb_hub_001.jpg)
+![](../../files/2015-07-02-usb_hub_test/test_usb_hub_001.jpg)
 
-![](/files/2015-07-02-usb_hub_test/test_usb_hub_004.jpg)
+![](../../files/2015-07-02-usb_hub_test/test_usb_hub_004.jpg)
 
 ### Conclusion
 
@@ -65,20 +65,20 @@ Un autre souci de ma config, c’est mon écran Apple Thunderbolt 27". Il a un h
 
 Sur cette image, on voit que la LED ne s’allume pas ⇒ donc c’est bon.
 
-![](/files/2015-07-02-usb_hub_test/test_usb_hub_005_lowres.jpg)
+![](../../files/2015-07-02-usb_hub_test/test_usb_hub_005_lowres.jpg)
 
 
 ---
 
 Sur cette image, on voit que le montage de test fonctionne et que si la LED ne s’est pas allumée dans le test ci-dessus, c’est vraiment parce qu’il n’y avait pas de jus.
 
-![](/files/2015-07-02-usb_hub_test/test_usb_hub_006_lowres.jpg)
+![](../../files/2015-07-02-usb_hub_test/test_usb_hub_006_lowres.jpg)
 
 ---
 
 Pour info, le hub vu de dessous
 
-![](/files/2015-07-02-usb_hub_test/test_usb_hub_007.jpg)
+![](../../files/2015-07-02-usb_hub_test/test_usb_hub_007.jpg)
 
 
 
