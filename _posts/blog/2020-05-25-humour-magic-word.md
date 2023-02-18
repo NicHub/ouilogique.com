@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2020-05-25T06:33:00+02:00
 published: true
 author: Nico

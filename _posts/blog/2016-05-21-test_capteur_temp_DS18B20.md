@@ -6,13 +6,11 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2016-05-21T19:00:00+02:00
 published: true
 author: Nico
 ---
-
-
 
 ![...](../../files/2016-05-21-test_capteur_temp_DS18B20/2016-05-21-test_capteur_temp_DS18B20_003_lowres.jpg)
 
@@ -20,10 +18,7 @@ author: Nico
 
 ![...](../../files/2016-05-21-test_capteur_temp_DS18B20/2016-05-21-test_capteur_temp_DS18B20_002_lowres.jpg)
 
-
-
-~~~ c++
-
+```c++
 /*
 
 PROGRAMME BASIQUE POUR LIRE UN CAPTEUR DE TEMPÉRATURE DS18B20
@@ -107,5 +102,4 @@ void loop()
   Serial.print( Temp, 1 );
   Serial.print( " degC\n" );
 }
-
-~~~
+```

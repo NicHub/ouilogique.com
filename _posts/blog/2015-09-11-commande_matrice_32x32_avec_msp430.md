@@ -6,15 +6,13 @@ categories:
 excerpt:
 tags: []
 image:
-     feature: msp430-mx32x32.jpg
+    feature: msp430-mx32x32.jpg
 date: 2015-09-11T10:00:00+01:00
 published: true
 author: Nico
 redirect_from:
-  - /blog/commande_matrice_32x32_avec_msp430/
+    - /blog/commande_matrice_32x32_avec_msp430/
 ---
-
-
 
 ![](../../files/2015-09-11-commande_matrice_32x32_avec_msp430/msp430-mx32x32.jpeg)
 
@@ -26,39 +24,31 @@ redirect_from:
 
 Launchpad-MSP430 rev 1.5, voir le brochage ici : <https://ouilogique.com/blog/pinouts/index.html#pinout-launchpad-msp430>
 
-
 ## Brochage
 
 Le brochage est décrit au début du programme ci-dessous.
 
-[Image du connecteur sur Adafruit.com](https://learn.adafruit.com/system/assets/assets/000/023/769/original/led_matrix_socket3.png?1426305755){:target="_blank"}
+[Image du connecteur sur Adafruit.com](https://learn.adafruit.com/system/assets/assets/000/023/769/original/led_matrix_socket3.png?1426305755){:target="\_blank"}
 
 ![](../../files/2015-09-11-commande_matrice_32x32_avec_msp430/mx32x32_connecteur.jpeg){:height="438px" width="300px"}
 
 ![](../../files/2015-09-11-commande_matrice_32x32_avec_msp430/msp430-mx32x32_brochage.jpeg)
 
-
 ## Article sur Adafruit
 
 <https://learn.adafruit.com/32x16-32x32-rgb-led-matrix?view=all>
-
 
 ## Brochage des différents connecteurs de matrices
 
 <http://www.ec086.com/Technical_support.html>
 
-
-
 ## Programme
 
 Le programme ci-dessous m’a été gracieusement transmis par [Pierre-Yves Rochat](mailto:pyr@pyr.ch). La seule chose que j’ai modifiée est la description du brochage pour qu’elle corresponde à ma matrice. Voir l’article d’Adafruit ci-dessus au sujet des différentes descriptions de brochage.
 
-
 &nbsp;
 
-
-{% highlight C++ %}
-
+```c++
 // Brochage de la matrice (HUB75)
 
 //     (P2.0) |  R0 [ 1]         [ 2] G0  | (P2.2)
@@ -574,5 +564,4 @@ void setup() { // Initialisations :
 void loop() { // Boucle de l'animation
   Interprete();
 }
-
-{% endhighlight %}
+```

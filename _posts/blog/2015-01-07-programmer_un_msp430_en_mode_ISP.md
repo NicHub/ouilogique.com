@@ -67,9 +67,8 @@ Pour ceux qui ont participé au quatrième MOOC sur les microcontrôleurs, voici
 
 Et voilà le code pour faire des jolies transitions sur la LED RGB :
 
-{% highlight C++ %}
-
-/\*
+```c++
+/*
 
     Blink Noël
 
@@ -82,7 +81,8 @@ Et voilà le code pour faire des jolies transitions sur la LED RGB :
     Version MSP430
     Implémenté sur MSP430G2231
 
-\*/
+*/
+
 
 #include "Energia.h"
 
@@ -100,20 +100,20 @@ int i;
 
 void customDelay( unsigned long iMax )
 {
-volatile unsigned long iDelay;
-for( iDelay=0; iDelay<iMax; iDelay++ ){ }
+    volatile unsigned long iDelay;
+    for( iDelay=0; iDelay<iMax; iDelay++ ){ }
 }
 
 void setLeds( int setR, int setG, int setB )
 {
-analogWrite( ledR, setR );
-analogWrite( ledG, setG );
-analogWrite( ledB, setB );
+    analogWrite( ledR, setR );
+    analogWrite( ledG, setG );
+    analogWrite( ledB, setB );
 }
 
 int main()
 {
-WDTCTL = WDTPW + WDTHOLD;
+    WDTCTL = WDTPW + WDTHOLD;
 
     // Configuration des LED en OUTPUT et de toutes les autres I/O en INPUT
     // avec Pulldown. Pour les I/O inutilisées, TI recommande de les
@@ -164,7 +164,5 @@ WDTCTL = WDTPW + WDTHOLD;
         for( i = 0; i < 256; i++ ){ setLeds( i,     0,     255   ); customDelay( myDelay ); }
         for( i = 0; i < 256; i++ ){ setLeds( 255,   0,     255-i ); customDelay( myDelay ); }
     }
-
 }
-
-{% endhighlight %}
+```

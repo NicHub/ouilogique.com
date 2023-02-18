@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2016-06-07T10:13:00+02:00
 published: true
 author: Nico
@@ -28,27 +28,22 @@ author: Nico
 
 [horloge-cycles-ultradiens-arduino.ino + aTunes.h](https://github.com/NicHub/ouilogique-Arduino/tree/master/horloge-cycles-ultradiens-arduino)
 
-
 ### Description du programme
 
-C’est une horloge qui affiche les pourcentages d’attention par cycles d’une heure et demie. On définit la valeur de la constante `heureAttentionMax` au nombre de secondes du pic d’attention du cycle. Par exemple, si votre cycle a un pic à 7 h 15 (= 26100 s), cela correspond à `heureAttentionMax = 26100 % 5400 = 4500` où `%` est l’opérateur *modulo* et 5400 est le nombre de secondes dans 1 h 30. La constante `heureAttentionMax` doit être ajustée manuellement dans le programme.
+C’est une horloge qui affiche les pourcentages d’attention par cycles d’une heure et demie. On définit la valeur de la constante `heureAttentionMax` au nombre de secondes du pic d’attention du cycle. Par exemple, si votre cycle a un pic à 7 h 15 (= 26100 s), cela correspond à `heureAttentionMax = 26100 % 5400 = 4500` où `%` est l’opérateur _modulo_ et 5400 est le nombre de secondes dans 1 h 30. La constante `heureAttentionMax` doit être ajustée manuellement dans le programme.
 
 L’heure de horloge temps réel DS1307 peut être mise à jour via le port RS232. Comme le programme utilise beaucoup de RAM, j’ai désactivé cette fonctionnalité par défaut. Pour la réactiver, il suffit de changer la valeur de `avecSerial false` à `avecSerial true` à la ligne 46 et de recharger le programme sur le microcontrôleur.
 
 ### Notes
 
-- Les pullups ont une résistance de 4.7 kΩ.
-- Le carillon sonne lorsque le cycle est à 100 %.
-- Le bouton connecté à `D2` permet d’activer ou de désactiver le carillon.
+-   Les pullups ont une résistance de 4.7 kΩ.
+-   Le carillon sonne lorsque le cycle est à 100 %.
+-   Le bouton connecté à `D2` permet d’activer ou de désactiver le carillon.
 
 ### Voir aussi
 
-- [Test d’une horloge temps réel DS1307 I²C](https://ouilogique.com/test_horloge_temps_reel_i2c/)
-- [Test d’un écran OLED 128×64 I²C](https://ouilogique.com/test_ecran_oled_i2c_128x64/)
-
-
-
-
+-   [Test d’une horloge temps réel DS1307 I²C](https://ouilogique.com/test_horloge_temps_reel_i2c/)
+-   [Test d’un écran OLED 128×64 I²C](https://ouilogique.com/test_ecran_oled_i2c_128x64/)
 
 ## Version pour ESP8266
 

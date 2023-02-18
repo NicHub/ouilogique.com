@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature: esp-prog-board-close-up.jpg
+    feature: esp-prog-board-close-up.jpg
 date: 2019-07-26T14:00:00+02:00
 published: true
 author: Nico
@@ -20,33 +20,32 @@ author: Nico
 
 [i4]: ../../files/2019-07-26-debuggage-esp32/esp-prog-board-close-up-back-lowres.jpg
 
+Cet article montre comment mettre en route un board _ESP&#8209;Prog_ et les outils intégrés à PlatformIO pour flasher et débugger un ESP32.
 
-Cet article montre comment mettre en route un board *ESP&#8209;Prog* et les outils intégrés à PlatformIO pour flasher et débugger un ESP32.
+Le board _ESP&#8209;Prog_ permet de faire deux choses distinctes :
 
-Le board *ESP&#8209;Prog* permet de faire deux choses distinctes :
-
-  - du débuggage en utilisant une interface JTAG (connecteur 10 broches) (ESP32 uniquement)
-  - de flasher des programmes (ESP8266 & ESP32)
+-   du débuggage en utilisant une interface JTAG (connecteur 10 broches) (ESP32 uniquement)
+-   de flasher des programmes (ESP8266 & ESP32)
 
 ## Documentation
 
-  - *PIO Unified Debugger* (intégré à PlatformIO)
-    - <https://docs.platformio.org/en/latest/plus/debugging.html>
-  - *ESP-Prog*
-    - <https://docs.platformio.org/en/latest/plus/debug-tools/esp-prog.html>
-    - <https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md>
+-   _PIO Unified Debugger_ (intégré à PlatformIO)
+    -   <https://docs.platformio.org/en/latest/plus/debugging.html>
+-   _ESP-Prog_
+    -   <https://docs.platformio.org/en/latest/plus/debug-tools/esp-prog.html>
+    -   <https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md>
 
 ## Matériel utilisé
 
-  - [ESP32](https://www.banggood.com/Geekcreit-ESP32-WiFi-bluetooth-Development-Board-Ultra-Low-Power-Consumption-Dual-Core-ESP-32-ESP-32S-p-1175488.html)
-  - [ESP-Prog](https://fr.aliexpress.com/item/33022365662.html)
-  - [Câble JTAG 2.54 mm (2×5 broches)](https://fr.aliexpress.com/item/32981928255.html)
+-   [ESP32](https://www.banggood.com/Geekcreit-ESP32-WiFi-bluetooth-Development-Board-Ultra-Low-Power-Consumption-Dual-Core-ESP-32-ESP-32S-p-1175488.html)
+-   [ESP-Prog](https://fr.aliexpress.com/item/33022365662.html)
+-   [Câble JTAG 2.54 mm (2×5 broches)](https://fr.aliexpress.com/item/32981928255.html)
 
 ## Vidéo d’Andreas Spiess
 
-  Source d’inspiration de cet article. Merci Andreas.
+Source d’inspiration de cet article. Merci Andreas.
 
-  - <https://www.youtube.com/watch?v=psMqilqlrRQ>
+-   <https://www.youtube.com/watch?v=psMqilqlrRQ>
 
 ## Connexions JTAG
 
@@ -54,7 +53,7 @@ Le board *ESP&#8209;Prog* permet de faire deux choses distinctes :
 
 Les couleurs sont indicatives et correspondent simplement aux fils que j’ai utilisés et que l’on peut voir sur la photo.
 
-```
+```bash
        ESP32        PROG BOARD      |      PROG BOARD    ESP32
 ====================================|=================================
 jaune  3.3V      1. VDD             |   2. ESP_TMS       IO_14  vert
@@ -70,10 +69,10 @@ bleu   GND       3. GND             |   4. ESP_TCK       IO_13  violet
 
 ## Mise en route
 
-  - S’assurer que les cavaliers sont configurés correctement (voir l’image ci-dessus).
-  - Connecter le câble JTAG comme indiqué dans le tableau ci-dessus.
-  - Ouvrir un projet PlatformIO existant ou en créer un nouveau.
-  - Ajouter les informations suivantes dans le fichier `platformio.ini`.
+-   S’assurer que les cavaliers sont configurés correctement (voir l’image ci-dessus).
+-   Connecter le câble JTAG comme indiqué dans le tableau ci-dessus.
+-   Ouvrir un projet PlatformIO existant ou en créer un nouveau.
+-   Ajouter les informations suivantes dans le fichier `platformio.ini`.
 
 ```ini
 debug_tool = esp-prog
@@ -81,7 +80,7 @@ upload_protocol = esp-prog
 debug_init_break = tbreak setup
 ```
 
-  - Pour info, voici le fichier `platformio.ini` que j’ai utilisé :
+-   Pour info, voici le fichier `platformio.ini` que j’ai utilisé :
 
 ```ini
 
@@ -106,26 +105,21 @@ upload_protocol = esp-prog
 debug_init_break = tbreak setup
 ```
 
- - Brancher le connecteurs USB de l’ESP&#8209;Prog à l’ordinateur. L’ESP&#8209;Prog utilise deux ports série. Il n’y a pas besoin de brancher le connecteur USB de l’ESP, mais ça peut être pratique pour accéder à l’interface série. L’ESP&#8209;Prog a aussi une interface série que je n’ai pas testé.
- - Sous Mac, il faut installer libusb avec [Homebrew][Homebrew] (`brew update && brew upgrade && brew install libusb`).
- - Sous Windows, il faut modifier le pilote par défaut avec le logiciel [Zadig][Zadig]. Voir [la procédure dans la vidéo d’Andreas Spiess à 14:52][Zadig Andreas].
- - Uploader le programme avec la commande standard de PlatformIO (`ctrl alt u`).
- - Placer quelques points d’arrêts dans le programme.
- - Démarrer le débuggage (menu `Debug/Start Debugging F5`).
+-   Brancher le connecteurs USB de l’ESP&#8209;Prog à l’ordinateur. L’ESP&#8209;Prog utilise deux ports série. Il n’y a pas besoin de brancher le connecteur USB de l’ESP, mais ça peut être pratique pour accéder à l’interface série. L’ESP&#8209;Prog a aussi une interface série que je n’ai pas testé.
+-   Sous Mac, il faut installer libusb avec [Homebrew][homebrew] (`brew update && brew upgrade && brew install libusb`).
+-   Sous Windows, il faut modifier le pilote par défaut avec le logiciel [Zadig][zadig]. Voir [la procédure dans la vidéo d’Andreas Spiess à 14:52][zadig andreas].
+-   Uploader le programme avec la commande standard de PlatformIO (`ctrl alt u`).
+-   Placer quelques points d’arrêts dans le programme.
+-   Démarrer le débuggage (menu `Debug/Start Debugging F5`).
 
-
-[Zadig Andreas]: https://youtu.be/psMqilqlrRQ?t=892
-[Zadig]: https://zadig.akeo.ie
-[Homebrew]: https://brew.sh/
-
+[zadig andreas]: https://youtu.be/psMqilqlrRQ?t=892
+[zadig]: https://zadig.akeo.ie
+[homebrew]: https://brew.sh/
 
 [![Debuggage d’un ESP32 avec un ESP-Prog et PIO Unified Debugger — ouilogique.com][i2]{:style="width:90%;"}][i2]
 
 [i2]: ../../files/2019-07-26-debuggage-esp32/pio-unified-debugger-001.jpg
 
-
-
-{% comment %}
 <!--
 
 # ESP-Prog Board
@@ -225,4 +219,3 @@ sudo kextunload /Library/Extensions/FTDIUSBSerialDriver.kext
 
 
 -->
-{% endcomment %}

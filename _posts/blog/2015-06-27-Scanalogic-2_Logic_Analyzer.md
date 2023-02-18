@@ -6,11 +6,11 @@ categories:
 excerpt:
 tags: []
 image:
-  feature:
+    feature:
 date: 2015-06-27T20:44:00+01:00
 author: Nico
 redirect_from:
-  - /blog/Scanalogic-2_Logic_Analyzer/
+    - /blog/Scanalogic-2_Logic_Analyzer/
 ---
 
 Mise en route de l’analyseur logique [Scanalogic-2](http://www.ikalogic.com/ikalogic-products/scanalogic-2/) que [Didel](http://didel.ch/) m’a envoyé cette semaine.

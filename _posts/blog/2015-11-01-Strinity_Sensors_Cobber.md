@@ -6,13 +6,11 @@ categories:
 excerpt:
 tags: []
 image:
-     feature: Strinity_Sensors_Cobber_001.jpg
+    feature: Strinity_Sensors_Cobber_001.jpg
 date: 2015-11-01T00:26:00+01:00
 published: true
 author: Nico
 ---
-
-
 
 J’ai acheté une carte chez Banggood pour me faire une mini station météo :
 
@@ -20,31 +18,31 @@ J’ai acheté une carte chez Banggood pour me faire une mini station météo :
 
 C’est une carte “trois en un” qui permet de mesurer :
 
-- la luminosité ambiante `(U3:TSL2561, 0x39)`
-- la pression et l’altitude `(U4:BMP180, 0x77)`
-- la température et l’humidité `(U5:AM2321, 0x5C)`
+-   la luminosité ambiante `(U3:TSL2561, 0x39)`
+-   la pression et l’altitude `(U4:BMP180, 0x77)`
+-   la température et l’humidité `(U5:AM2321, 0x5C)`
 
 Elle offre la possibilité de sélectionner la tension (3.3 V ou 5V) à l’aide d’un bouton.
 
 La mise en route fut un peu fastidieuse vu qu’il n’y a pas de doc sur Banggood. Heureusement, Adafruit propose deux pilotes pour la carte `BMP180` :
 
-- <https://github.com/adafruit/Adafruit_BMP085_Unified>
-- <https://github.com/adafruit/Adafruit-BMP085-Library>
+-   <https://github.com/adafruit/Adafruit_BMP085_Unified>
+-   <https://github.com/adafruit/Adafruit-BMP085-Library>
 
 > La version “Unified” nécessite également cette librairie :
-<https://github.com/adafruit/Adafruit_Sensor>
+> <https://github.com/adafruit/Adafruit_Sensor>
 
 et un pilote pour la carte `TSL2561` :
 
-- <https://github.com/adafruit/Adafruit_TSL2561>
+-   <https://github.com/adafruit/Adafruit_TSL2561>
 
 Pour la mesure de température, ça se corse parce qu’Adafruit n’a qu’un pilote pour la carte `AM2315` et il ne fonctionne pas avec la carte `AM2321` :
 
-- <https://github.com/adafruit/Adafruit_AM2315>
+-   <https://github.com/adafruit/Adafruit_AM2315>
 
 Sinon Wangdong propose un pilote qui ne fonctionne pas non plus :
 
-- <https://github.com/wangdong/AM2321>
+-   <https://github.com/wangdong/AM2321>
 
 Il me reste plus qu’à lire la spec en chinois ;-) <https://www.microduino.cc/wiki/images/d/d1/AM2321.pdf>
 
@@ -62,12 +60,11 @@ Bon, j’ai décidé de m’y remettre après une semaine de pause et comme le c
 
 > Et comme une image vaut mille mots, j’ai fait une jolie photo du PCB et je me suis rendu compte que le capteur de température n’y est pas... je pouvais le chercher longtemps sur le bus I²C ! Grrr ! La morale de cette histoire, c’est qu’il vaut mieux commencer par prendre le temps de regarder de près les cartes bon marché !
 
-
 ## Liens
 
-- [BMP180 Digital pressure sensor — Bosch Sensortec](../../files/2015-11-01-Strinity_Sensors_Cobber/BST-BMP180-DS000-09.pdf)
-- [TSL2560, TSL2561 Light-to-Digital Converter — TAOS](../../files/2015-11-01-Strinity_Sensors_Cobber/TSL2561.pdf)
-- [Lien fourni sur page support Banggood](http://pan.baidu.com/s/1qWjYtqs)
+-   [BMP180 Digital pressure sensor — Bosch Sensortec](../../files/2015-11-01-Strinity_Sensors_Cobber/BST-BMP180-DS000-09.pdf)
+-   [TSL2560, TSL2561 Light-to-Digital Converter — TAOS](../../files/2015-11-01-Strinity_Sensors_Cobber/TSL2561.pdf)
+-   [Lien fourni sur page support Banggood](http://pan.baidu.com/s/1qWjYtqs)
 
 <!--
 <figure class="half">

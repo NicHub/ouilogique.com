@@ -6,19 +6,17 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2017-05-11T16:12:00+02:00
 published: true
 author: Nico
 ---
 
-
 ## Matériel
 
-- [BMP280 (pression et température) acheté chez Banggood pour 1.98 $][2]
-- [ATmega328P-AU Pro Mini 3.3V 8MHz, acheté chez Banggood pour 13 $ les 5 pièces][1]
-- [Programmateur FTDI][3]
-
+-   [BMP280 (pression et température) acheté chez Banggood pour 1.98 $][2]
+-   [ATmega328P-AU Pro Mini 3.3V 8MHz, acheté chez Banggood pour 13 $ les 5 pièces][1]
+-   [Programmateur FTDI][3]
 
 ## Code de test
 
@@ -26,20 +24,20 @@ author: Nico
 
 ## Notes
 
-Comme ce modèle de BMP280 n’a pas de régulateur de tension 3.3 V, j’en ai ajouté un ([LP2950][7]) soudé sur *veroboard* entre le programmateur FTDI et l’Arduino.
+Comme ce modèle de BMP280 n’a pas de régulateur de tension 3.3 V, j’en ai ajouté un ([LP2950][7]) soudé sur _veroboard_ entre le programmateur FTDI et l’Arduino.
 
 Ce capteur peut être utilisé sur le bus I²C ou le bus SPI. Les dénominations des broches indiquées sur le PCB sont pour l’I²C. Pour le SPI, la table ci-dessous indique la conversion.
 
 ## Brochage SPI
 
-| BMP280 | SPI Arduino   |
-| :-:    | :-:           |
-| VCC    | VCC           |
-| GND    | GND           |
-| SCL    | SCK    pin 13 |
-| SDA    | MOSI   pin 11 |
-| CSB    | SS     pin 10 |
-| SDO    | MISO   pin 12 |
+| BMP280 | SPI Arduino |
+| :----: | :---------: |
+|  VCC   |     VCC     |
+|  GND   |     GND     |
+|  SCL   | SCK pin 13  |
+|  SDA   | MOSI pin 11 |
+|  CSB   |  SS pin 10  |
+|  SDO   | MISO pin 12 |
 
 ## Résultats
 
@@ -49,9 +47,9 @@ Je n’ai testé que le mode SPI (hardware) et pas le mode I²C et ça fonctionn
 
 ## Voir aussi
 
-- [Article d’Adafruit sur le BMP280][4]
-- [BMP280 sur le site de Bosch][5]
-- [Datasheet du BMP280][6]
+-   [Article d’Adafruit sur le BMP280][4]
+-   [BMP280 sur le site de Bosch][5]
+-   [Datasheet du BMP280][6]
 
 [image-1]: ../../files/2017-05-11-bmp280-arduino-pro-mini/2017-05-11-bmp280-arduino-pro-mini-001.jpg
 [1]: http://www.banggood.com/5Pcs-3_3V-8MHz-ATmega328P-AU-Pro-Mini-Microcontroller-Board-For-Arduino-p-980292.html?p=0431091025639201412F

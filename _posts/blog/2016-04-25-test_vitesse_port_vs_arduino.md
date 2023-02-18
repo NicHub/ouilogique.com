@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Test de vitesse entre les fonctions de manipulation de ports et les fonctions Arduino"
+title: "Test de vitesse entre les fonctions de manipulation de ports et les fonctions Arduino"
 modified:
 categories:
 excerpt:
@@ -38,9 +38,7 @@ Le programme de test est disponible ci-dessous. Si le test est fait avec une bou
 | `digitalRead`                                                                    | 63        |
 
 
-
-~~~ c++
-
+```c++
 /*
  *
  * Mesure des temps d’exécution de diverses fonctions.
@@ -265,8 +263,7 @@ void loop()
 
     _delay_ms( 2000 );
 }
-
-~~~
+```
 
 
 

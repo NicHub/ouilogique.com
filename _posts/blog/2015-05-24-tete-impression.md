@@ -8,26 +8,21 @@ author: Nico
 comments: true
 share: true
 image:
-  feature: 2015-02-23_microDelta_002.jpg
+    feature: 2015-02-23_microDelta_002.jpg
 published: true
 redirect_from:
-  - /blog/tete-impression/
+    - /blog/tete-impression/
 ---
-
 
 Ma [µDelta](http://www.reprap-france.com) a [une nouvelle tête d’impression](http://s.click.aliexpress.com/e/J2zVfYFAq) nettement plus longue que l’originale, mais elle fonctionne nettement mieux.
 
-
 ![](../../files/2015-05-24-tete-impression/images/2015-05-24_hotend_6628216843.jpg)
 
-
-Petit souci cependant, l’étalonnage de Reprap-France ne fonctionne plus... Il faut donc ruser en modifiant directement le réglage *Z max length [mm]* du Firmware enregistré sur l’EEPROM de la carte Teensylu.
+Petit souci cependant, l’étalonnage de Reprap-France ne fonctionne plus... Il faut donc ruser en modifiant directement le réglage _Z max length [mm]_ du Firmware enregistré sur l’EEPROM de la carte Teensylu.
 
 ![](../../files/2015-05-24-tete-impression/images/FirmwareEEPROMSettings_1.png)
 
 ![](../../files/2015-05-24-tete-impression/images/FirmwareEEPROMSettings_2.png)
-
-
 
 <figure class="half">
 	<img src="../../files/2015-05-24-tete-impression/images/910737-Voronoi_Klein_Bottle_001.jpg" alt="image">

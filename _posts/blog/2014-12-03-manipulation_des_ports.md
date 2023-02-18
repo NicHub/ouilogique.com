@@ -6,22 +6,19 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2014-12-03T12:00:00+01:00
 published: true
 author: Nico
 redirect_from:
-  - /blog/manipulation_des_ports/
+    - /blog/manipulation_des_ports/
 ---
-
-
-
 
 ## Description des registres AVR & MSP
 
 | R/W | MSP     | AVR     | USAGE                                                                                   |
-| :-- | :--     | :--     | :--                                                                                     |
-| r/w | `PxDIR` | `DDRx`  | DIRECTION DES E/S : `0` = input  / `1` = output                                         |
+| :-- | :------ | :------ | :-------------------------------------------------------------------------------------- |
+| r/w | `PxDIR` | `DDRx`  | DIRECTION DES E/S : `0` = input / `1` = output                                          |
 | r   | `PxIN`  | `PINx`  | LECTURE DES E/S                                                                         |
 | r/w | `PxOUT` | `PORTx` | ÉCRITURE DES E/S OU SÉLECTION DES RÉSISTANCES DE TIRAGE : `1` = pullup / `0` = pulldown |
 | r/w | `PxREN` |         | Pullup / Pulldown : `0` = disabled / `1` = enabled                                      |
@@ -31,11 +28,9 @@ redirect_from:
 > doc AVR, voir [datasheet chap. 14 p.75](http://www.atmel.com/images/atmel-8271-8-bit-avr-microcontroller-atmega48a-48pa-88a-88pa-168a-168pa-328-328p_datasheet_complete.pdf)
 > doc MSP, voir [slau144j.pdf p.329, 333](http://www.ti.com/lit/ug/slau144j/slau144j.pdf)
 
-
 ## Exemple de programme
 
-{% highlight C++ %}
-
+```c++
 /*
   BLINK pin 2 to 9
 */
@@ -61,26 +56,17 @@ void loop()
 
   _delay_ms( 500 );
 }
-
-{% endhighlight %}
-
-
-
-
-
+```
 
 ## Liens
 
 <http://www.mon-club-elec.fr/pmwiki_reference_arduino/pmwiki.php?n=Main.PortManipulation>
 
-
-
 ## Manipulation des registres de l’ESP8266
 
 Je n’ai pas trouvé de page qui décrit comment manipuler les registres de l’ESP, mais en fouillant dans les librairie, j’ai réussi à trouver comment réaliser un programme Blink.
 
-
-{% highlight C++ %}
+```c++
 /*
   Blink ESP8266 avec manipulation directe du registre GPO.
 
@@ -120,4 +106,4 @@ void loop()
   GPO |= (1<<LED_PIN);
   delay( 1000 );
 }
-{% endhighlight %}
+```

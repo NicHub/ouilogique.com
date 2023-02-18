@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2020-12-25T13:19:00+01:00
 published: true
 author: Nico
@@ -22,32 +22,37 @@ Pi-hole est un système de blocage d’accès aux contenus Internet adventices, 
 
 Cet article explique comment installer et configurer Pi-hole sur un Raspberry avec Raspberry Pi OS Buster. À noter que Pi-hole peut aussi être déployé sur d’autres OS ainsi que dans une image Docker.
 
-*Note :* Si vous voulez juste tester le système avec un Pi-hole existant, vous pouvez utiliser celui de Digitec à l’adresse IP `40.114.239.83`.
+_Note :_ Si vous voulez juste tester le système avec un Pi-hole existant, vous pouvez utiliser celui de Digitec à l’adresse IP `40.114.239.83`.
 Ils ont aussi écrit un article sur leur solution : [Article Pi-hole Digitec](https://www.digitec.ch/fr/page/le-pi-hole-de-digitec-ou-comment-en-finir-avec-les-publicites-18923).
 Bien évidemment, il faut être à l’aise avec le fait que Digitec aura connaissance de toutes les URL que votre ordinateur interroge.
 
 ## Ressources
 
-- [Site officiel de Pi-hole](https://pi-hole.net)
-- [Documentation de Pi-hole](https://docs.pi-hole.net)
-- [Liste des modèles de Raspberry compatibles](https://docs.pi-hole.net/ftldns/compatibility/)
-- [Liste des OS compatibles](https://docs.pi-hole.net/main/prerequisites/#supported-operating-systems)
+-   [Site officiel de Pi-hole](https://pi-hole.net)
+-   [Documentation de Pi-hole](https://docs.pi-hole.net)
+-   [Liste des modèles de Raspberry compatibles](https://docs.pi-hole.net/ftldns/compatibility/)
+-   [Liste des OS compatibles](https://docs.pi-hole.net/main/prerequisites/#supported-operating-systems)
 
 ## Installation de Pi-hole sur le Raspberry
 
-- Flasher Raspberry Pi OS sur une carte SD. ([Voir la procédure détaillée.](../installer-raspian-stretch/))
-- Connecter le Raspberry au réseau.
-- Ouvrir un terminal sur le Raspberry et installer Pi-hole avec la commande suivante :
+-   Flasher Raspberry Pi OS sur une carte SD. ([Voir la procédure détaillée.](../installer-raspian-stretch/))
+-   Connecter le Raspberry au réseau.
+-   Ouvrir un terminal sur le Raspberry et installer Pi-hole avec la commande suivante :
+
 ```bash
 curl -sSL https://install.pi-hole.net | bash
 ```
-- Accepter les options par défaut de l’installateur.
-- À la fin de l’installation, relever l’adresse IP locale du Rasperry affichée par l’installateur. On peut aussi l’obtenir avec la commande :
+
+-   Accepter les options par défaut de l’installateur.
+-   À la fin de l’installation, relever l’adresse IP locale du Rasperry affichée par l’installateur. On peut aussi l’obtenir avec la commande :
+
 ```bash
 hostname -I
 ```
-- Relever également le mot de passe de l’interface d’administration de Pi-hole.
-- Redémarrer le Raspberry avec la commande
+
+-   Relever également le mot de passe de l’interface d’administration de Pi-hole.
+-   Redémarrer le Raspberry avec la commande
+
 ```bash
 sudo reboot
 ```
@@ -58,83 +63,83 @@ sudo reboot
 >
 > <span style="color:red">L’adresse IP locale de mon RPi est 192.168.1.28. Dans les explications si dessous, il faut remplacer cette IP par celle de votre RPi.</span>
 
-- Se connecter à l’interface d’administration du routeur
-  <http://192.168.1.1/>.
-- Activer le mode expert en cliquant sur le bouton en haut à droite.
+-   Se connecter à l’interface d’administration du routeur
+    <http://192.168.1.1/>.
+-   Activer le mode expert en cliquant sur le bouton en haut à droite.
 
 **Définir le Raspberry comme serveur DNS local**
 
-- Sur la page d’accueil du routeur, cliquer sur le bouton `Ma Sunrise Internet Box` en haut à gauche, puis sur l’onglet `DNS`
-  <http://192.168.1.1/0.2/gui/#/mybox/dns/server>.
-- Les valeurs par défaut du routeur sont :
-  - `Activer : ON`
-  - `Serveur DNS Primaire : 192.168.1.1`
-  - `Serveur DNS Secondaire : (vide)`
-- Il faut modifier ces valeurs de la façon suivante :
-  - `Activer : ON`
-  - `Serveur DNS Primaire : 192.168.1.28`
-  - `Serveur DNS Secondaire : 192.168.1.28`
+-   Sur la page d’accueil du routeur, cliquer sur le bouton `Ma Sunrise Internet Box` en haut à gauche, puis sur l’onglet `DNS`
+    <http://192.168.1.1/0.2/gui/#/mybox/dns/server>.
+-   Les valeurs par défaut du routeur sont :
+    -   `Activer : ON`
+    -   `Serveur DNS Primaire : 192.168.1.1`
+    -   `Serveur DNS Secondaire : (vide)`
+-   Il faut modifier ces valeurs de la façon suivante :
+    -   `Activer : ON`
+    -   `Serveur DNS Primaire : 192.168.1.28`
+    -   `Serveur DNS Secondaire : 192.168.1.28`
 
 **Redirection des requêtes sortant sur le port 53 vers le port 53 du Raspberry**
 
-- Sur la page d’accueil du routeur, cliquer sur `Contrôle d’Accès`, puis sur l’onglet `Redirection de ports`
-  <http://192.168.1.1/0.2/gui/#/access-control/port-forwarding/add-rule>.
-- Dans la section `Ajouter des règles manuellement` :
-  - Cliquer sur la liste déroulante `Services` et sélectionner `DNS`.
-  - `Hôte Interne : 192.168.1.28`
-  - Laisser les autres valeurs par défaut.
-  - Cliquer sur ajouter.
+-   Sur la page d’accueil du routeur, cliquer sur `Contrôle d’Accès`, puis sur l’onglet `Redirection de ports`
+    <http://192.168.1.1/0.2/gui/#/access-control/port-forwarding/add-rule>.
+-   Dans la section `Ajouter des règles manuellement` :
+    -   Cliquer sur la liste déroulante `Services` et sélectionner `DNS`.
+    -   `Hôte Interne : 192.168.1.28`
+    -   Laisser les autres valeurs par défaut.
+    -   Cliquer sur ajouter.
 
 **Désactiver le mode DHCP**
 
-- Sur la page d’accueil du routeur, cliquer sur le bouton `Ma Sunrise Internet Box` en haut à gauche, puis sur l’onglet `DHCP`
-  <http://192.168.1.1/0.2/gui/#/mybox/DHCP>.
-- Dans la section `DHCP`, cliquer sur le bouton `Activer` pour le mettre sur `OFF`.
+-   Sur la page d’accueil du routeur, cliquer sur le bouton `Ma Sunrise Internet Box` en haut à gauche, puis sur l’onglet `DHCP`
+    <http://192.168.1.1/0.2/gui/#/mybox/DHCP>.
+-   Dans la section `DHCP`, cliquer sur le bouton `Activer` pour le mettre sur `OFF`.
 
 **Redémarrer le routeur**
 
-- Sur la page d’accueil du routeur, cliquer sur le bouton `Ma Sunrise Internet Box` en haut à gauche, puis sur l’onglet `Maintenance`
-  <http://192.168.1.1/0.2/gui/#/mybox/maintenance/reset>.
-- Cliquer sur `Redémarrer`.
+-   Sur la page d’accueil du routeur, cliquer sur le bouton `Ma Sunrise Internet Box` en haut à gauche, puis sur l’onglet `Maintenance`
+    <http://192.168.1.1/0.2/gui/#/mybox/maintenance/reset>.
+-   Cliquer sur `Redémarrer`.
 
 ## Configuration de Pi-hole
 
 **Activer le DHCP**
 
-- Accéder à la page d’accueil de Pi-hole en naviguant à l’adresse
-  <http://192.168.1.28/admin/>.
-- Dans le menu de gauche, cliquer sur `Settings`, puis sur l’onglet `DHCP`
-  <http://192.168.1.28/admin/settings.php?tab=piholedhcp>.
-- Activer le DHCP en cliquant sur `DHCP server enabled`.
+-   Accéder à la page d’accueil de Pi-hole en naviguant à l’adresse
+    <http://192.168.1.28/admin/>.
+-   Dans le menu de gauche, cliquer sur `Settings`, puis sur l’onglet `DHCP`
+    <http://192.168.1.28/admin/settings.php?tab=piholedhcp>.
+-   Activer le DHCP en cliquant sur `DHCP server enabled`.
 
 **Ajout des listes de blocages (Adlists)**
 
-- Dans le menu de gauche, cliquer sur `Group Management`, puis sur `Adlists`
-  <http://192.168.1.28/admin/groups-adlists.php>.
-- Copier les [URL des listes de blocage (Adlists)](../../files/2020-12-25-installer-pi-hole-sur-un-raspberry/pi-hole-adlists.txt).
-- Coller ces URL dans le champ `Address`. Les retours à la ligne sont acceptés comme séparateur d’URL.
-- Cliquer sur le bouton `Add`.
+-   Dans le menu de gauche, cliquer sur `Group Management`, puis sur `Adlists`
+    <http://192.168.1.28/admin/groups-adlists.php>.
+-   Copier les [URL des listes de blocage (Adlists)](../../files/2020-12-25-installer-pi-hole-sur-un-raspberry/pi-hole-adlists.txt).
+-   Coller ces URL dans le champ `Address`. Les retours à la ligne sont acceptés comme séparateur d’URL.
+-   Cliquer sur le bouton `Add`.
 
 **Mettre à jour la base de données**
 
-- Dans le menu de gauche, cliquer sur `Tools`, puis sur `Update Gravity`
-  <http://192.168.1.28/admin/gravity.php>.
-- Cliquer sur le bouton `Update`.
+-   Dans le menu de gauche, cliquer sur `Tools`, puis sur `Update Gravity`
+    <http://192.168.1.28/admin/gravity.php>.
+-   Cliquer sur le bouton `Update`.
 
 **Ajout des faux positifs (Whitelist)**
 
-- Dans le menu de gauche, cliquer sur `Whitelist`
-  <http://192.168.1.28/admin/groups-domains.php?type=white>.
-- Copier les [URL des faux positifs (Whitelist)](../../files/2020-12-25-installer-pi-hole-sur-un-raspberry/pi-hole-whitelist.txt).
-- Coller ces URL dans le champ `Domain`. Les retours à la ligne sont acceptés comme séparateur d’URL.
-- Activer l’option `Add domain as wildcard`.
-- Cliquer sur le bouton `Add to Whitelist`.
+-   Dans le menu de gauche, cliquer sur `Whitelist`
+    <http://192.168.1.28/admin/groups-domains.php?type=white>.
+-   Copier les [URL des faux positifs (Whitelist)](../../files/2020-12-25-installer-pi-hole-sur-un-raspberry/pi-hole-whitelist.txt).
+-   Coller ces URL dans le champ `Domain`. Les retours à la ligne sont acceptés comme séparateur d’URL.
+-   Activer l’option `Add domain as wildcard`.
+-   Cliquer sur le bouton `Add to Whitelist`.
 
 **Ajout des vrais positifs (Blacklist)**
 
-- Dans le menu de gauche, cliquer sur `Blacklist`
-  <http://192.168.1.28/admin/groups-domains.php?type=black>
-- Ajouter des URL à votre convenance.
+-   Dans le menu de gauche, cliquer sur `Blacklist`
+    <http://192.168.1.28/admin/groups-domains.php?type=black>
+-   Ajouter des URL à votre convenance.
 
 Voilà, Pi-hole est installé et fonctionnel. Nous allons voir maintenant comment récupérer quelques informations.
 
@@ -177,9 +182,9 @@ Pourcentage d’URL uniques :     30,4 %
 
 Pi-hole enregistre les informations dans des bases de données SQLite3 :
 
-- `/etc/pihole/gravity.db`.
-- `/etc/pihole/macvendor.db`.
-- `/etc/pihole/pihole-FTL.db`.
+-   `/etc/pihole/gravity.db`.
+-   `/etc/pihole/macvendor.db`.
+-   `/etc/pihole/pihole-FTL.db`.
 
 Il est possible de faire des requêtes sur ces bases de données directement depuis Bash. Par exemple, la commande suivante renvoie les 3 domaines les plus demandés depuis l’installation de Pi-hole :
 
@@ -251,5 +256,3 @@ Pour afficher les URL de la blacklist :
 sqlite3 "/etc/pihole/gravity.db" "SELECT domain FROM vw_regex_blacklist;"
 sqlite3 "/etc/pihole/gravity.db" "SELECT domain FROM vw_blacklist;"
 ```
-
-❧

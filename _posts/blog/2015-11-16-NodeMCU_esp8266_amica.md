@@ -6,17 +6,13 @@ categories:
 excerpt:
 tags: []
 image:
-     feature: NodeMCU_esp8266_amica.jpg
+    feature: NodeMCU_esp8266_amica.jpg
 date: 2015-11-16T14:51:00+01:00
 published: true
 author: Nico
 ---
 
-
-
 > Voir aussi [l’article sur l’ESP8266 LoLin](/NodeMCU_esp8266/)
-
-
 
 ## Référence AliExpress
 
@@ -26,20 +22,19 @@ author: Nico
 
 <https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx>
 
-La version *4.x.13 - August 31*, 2016 fonctionne sous macOS Sierra.
+La version _4.x.13 - August 31_, 2016 fonctionne sous macOS Sierra.
 
 ## Premières impressions
 
-- Le chip Silabs CP2102 semble plus rapide que le CH340G utilisé par LoLin.
-- Le pinout est différent de LoLin sur la 2<sup>e</sup> et la 3<sup>e</sup> pin en haut à gauche sur l’image du pinout ci-dessous.
-- Les largeurs des cartes Amica et LoLin sont différentes, et leurs deux rangées de pins sont aussi espacées de valeurs différentes :<br/>
-LoLin ⇒ 11 × 2.54 = 27.94 mm<br/>
-Amica ⇒ 9 × 2.54 = 22.86 mm
-- Au premier test, la carte a refusé de communiquer sur le port série. Sur le dessous de la carte, il est indiqué 9600 bauds, mais il me semble qu’en fait c’est 115200 bauds. De toute façon, aucune vitesse ne semblait fonctionner, donc j’ai flashé un nouveau firmware et ça a fonctionné.
-- Pour flasher le firmware, j’ai dû appuyer sur le bouton “FLASH” et tout en le maintenant appuyé, presser une fois le bouton “RST”. Sur LoLin, ce n’est pas nécessaire.
-- Les barrettes de pins ne sont pas perpendiculaires au PCB, mais ça entre quand même dans un breadboard.
-- Cette carte a deux LED : une bleue sur GPIO 4 à côté de l’antenne et une rouge sur GPIO 0 à 7 mm du bouton “RST”. La carte LoLin n’a que la LED bleue.
-
+-   Le chip Silabs CP2102 semble plus rapide que le CH340G utilisé par LoLin.
+-   Le pinout est différent de LoLin sur la 2<sup>e</sup> et la 3<sup>e</sup> pin en haut à gauche sur l’image du pinout ci-dessous.
+-   Les largeurs des cartes Amica et LoLin sont différentes, et leurs deux rangées de pins sont aussi espacées de valeurs différentes :<br/>
+    LoLin ⇒ 11 × 2.54 = 27.94 mm<br/>
+    Amica ⇒ 9 × 2.54 = 22.86 mm
+-   Au premier test, la carte a refusé de communiquer sur le port série. Sur le dessous de la carte, il est indiqué 9600 bauds, mais il me semble qu’en fait c’est 115200 bauds. De toute façon, aucune vitesse ne semblait fonctionner, donc j’ai flashé un nouveau firmware et ça a fonctionné.
+-   Pour flasher le firmware, j’ai dû appuyer sur le bouton “FLASH” et tout en le maintenant appuyé, presser une fois le bouton “RST”. Sur LoLin, ce n’est pas nécessaire.
+-   Les barrettes de pins ne sont pas perpendiculaires au PCB, mais ça entre quand même dans un breadboard.
+-   Cette carte a deux LED : une bleue sur GPIO 4 à côté de l’antenne et une rouge sur GPIO 0 à 7 mm du bouton “RST”. La carte LoLin n’a que la LED bleue.
 
 ![](../../files/2015-11-16-NodeMCU_esp8266_amica/NodeMCU_esp8266_amica_001_lowres.jpg)
 
@@ -47,12 +42,9 @@ Amica ⇒ 9 × 2.54 = 22.86 mm
 
 ![](../../files/2015-11-16-NodeMCU_esp8266_amica/NodeMCU_esp8266_amica_003_lowres.jpg)
 
-
-
 ## Pinout
 
 ![](../../files/2015-05-28-pinouts/images/NodeMCU_esp8266_amica_pinout.png)
-
 
 ## Vitesse de la liaison série
 
@@ -60,7 +52,7 @@ Le test consiste à flasher un firmware identique sur LoLin et Amica et de compa
 
 ### Script de flashage
 
-{% highlight bash %}
+```bash
 #!/bin/bash
 
 # USBPORT=/dev/cu.SLAB_USBtoUART
@@ -74,27 +66,27 @@ esptool.py           \
     --flash_size 32m \
     --flash_freq 40m \
     0x00000 $FIRMWARE
-{% endhighlight %}
+```
 
 ### Résultat LoLin
 
-{% highlight bash %}
+```bash
 Connecting...
 Erasing flash...
 Wrote 450560 bytes at 0x00000000 in 33.2 seconds (108.6 kbit/s)...
 
 Leaving...
-{% endhighlight %}
+```
 
 ### Résultat Amica
 
-{% highlight bash %}
+```bash
 Connecting...
 Erasing flash...
 Wrote 450560 bytes at 0x00000000 in 22.8 seconds (158.0 kbit/s)...
 
 Leaving...
-{% endhighlight %}
+```
 
 ### Conclusion
 

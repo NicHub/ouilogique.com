@@ -6,17 +6,16 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2017-09-30T12:54:00+02:00
 published: true
 author: Nico
 ---
 
-
 ## Matériel
 
-- Un Arduino Nano
-- [Un bouton piézoélectrique (piezo-switch)][2]
+-   Un Arduino Nano
+-   [Un bouton piézoélectrique (piezo-switch)][2]
 
 ## Image
 
@@ -42,9 +41,9 @@ La polarité est sans importance.
 
 Le code sur GitHub montre trois façons d’utiliser ce bouton avec un Arduino :
 
-- `simple-piezo-switch-001.ino` n’est pas utilisable en tant que tel. Il montre juste que le switch envoie une impulsion et qu’il va falloir être un peu plus malin que ça pour l’utiliser.
-- `simple-piezo-switch-002.ino` montre comment faire du _polling_ pour lire le bouton.
-- `simple-piezo-switch-003.ino` montre comment utiliser les interruptions.
+-   `simple-piezo-switch-001.ino` n’est pas utilisable en tant que tel. Il montre juste que le switch envoie une impulsion et qu’il va falloir être un peu plus malin que ça pour l’utiliser.
+-   `simple-piezo-switch-002.ino` montre comment faire du _polling_ pour lire le bouton.
+-   `simple-piezo-switch-003.ino` montre comment utiliser les interruptions.
 
 [https://github.com/NicHub/ouilogique-Arduino/tree/master/piezo-switch][1]
 

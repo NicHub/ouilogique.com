@@ -53,6 +53,7 @@ Pour la quatrième version, je ne génère plus le PWM des servos avec l’ESP32
 [![Plateforme de Stewart — ouilogique.com][i11]{:style="width:100%;"}][i11]
 
 <!-- Layout 2×2 -->
+
 [i11]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2023-01-30-proto-plateforme-de-stewart_002.jpg
 
 [![Plateforme de Stewart — ouilogique.com][i12]{:style="width:50%; float:left"}][i12]

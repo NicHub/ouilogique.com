@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2022-06-19T12:00:00+02:00
 published: true
 author: Nico

@@ -165,7 +165,7 @@ sudo raspi-config
 # 1 System Options
 # S5 Boot / Auto Login
 # B2 Console Autologin ou B1 Console
-````
+```
 
 ## VNC
 
@@ -335,15 +335,19 @@ smb://raspberrypi.local
 
 > Les informations de ce chapitre sont passablement obsolètes car les dernières versions de l’OS du rPi intègrent des versions de Python supérieures à 3.6.
 > Donc avant d’installer une nouvelle version de Python 3, il est prudent de vérifier la version installée sur le Raspberry avec la commande
->
-> `bash python3 --version`
->
+
+```bash
+python3 --version
+```
+
 > On peut aussi vérifier la version de l’OS avec la commande
+
+```bash
+cat /etc/os-release
+```
 >
-> ```bash cat /etc/os-release````
->
-> Edit du 16 octobre 2019 : Raspbian Buster intègre la version 3.7.3 de Python.
-> Edit du 11 février 2023 : Raspberry Pi OS Bullseye 64 bit intègre la version 3.9.2 de Python.
+> Édit du 16 octobre 2019 : Raspbian Buster intègre la version 3.7.3 de Python.
+> Édit du 11 février 2023 : Raspberry Pi OS Bullseye 64 bit intègre la version 3.9.2 de Python.
 
 Raspbian Stretch propose la version 3.5 de Python. Comme Python 3.6 apporte de nouvelles fonctionnalités comme les _f-strings_ et que le module `asyncio` a été amélioré, je pense que c’est intéressant de l’installer aussi. L’idée est aussi de pouvoir tester le module [quart][quart].
 

@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2017-09-18T18:43:00+02:00
 published: true
 author: Nico
@@ -21,15 +21,14 @@ apt-cache show mosquitto # Version: 1.4.10-3+deb9u4
 
 ## Matériel
 
-- Un Raspberry Pi (testé avec un Raspberry Pi 2, Raspbian Stretch)
-- Un Mac (testé avec macOS Sierra et Mojave)
+-   Un Raspberry Pi (testé avec un Raspberry Pi 2, Raspbian Stretch)
+-   Un Mac (testé avec macOS Sierra et Mojave)
 
 ## Installation de Raspian Stretch
 
 J’ai testé la procédure ci-dessous avec une installation propre de Raspian Stretch.
 
 <https://ouilogique.com/installer-raspian-stretch/>
-
 
 ## Installation et compilation de mosquitto 1.6.4
 
@@ -38,7 +37,6 @@ Les informations ci-dessous sont tirées de ce blog avec quelques adaptations :
 <https://goo.gl/BQh6hA>
 
 ```bash
-
 # Installation des dépendances
 sudo apt-get --assume-yes install \
 build-essential \
@@ -149,7 +147,6 @@ sudo reboot
 
 # Vérifier que tout fonctionne
 pidof mosquitto
-
 ```
 
 ## Pour tester
@@ -175,14 +172,12 @@ while true ; do mosquitto_pub --retain --host raspberrypi.local --topic "SUPERTE
 --message '{"DATE":"'"`gdate "+%Y-%m-%dT%H:%M:%6N+%Z"`"'"}' ; sleep 0.1 ; done
 ```
 
-{% comment %}
 <!--
-
 ## Installation de Mosquitto MQTT
 
-- Sur le Mac, ouvrir le Terminal et taper la commande `ssh pi@raspberrypi.local`. Quand SSH demande d’autoriser la connexion, répondre `yes` en toutes lettres, puis entrer le mot de passe par défaut `raspberry`.
-- Changer la zone horaire avec `sudo raspi-config`, puis sélectionner `4 Localisation Options/I2 Change Timezone`.
-- Installer les mises à jour du système :
+-   Sur le Mac, ouvrir le Terminal et taper la commande `ssh pi@raspberrypi.local`. Quand SSH demande d’autoriser la connexion, répondre `yes` en toutes lettres, puis entrer le mot de passe par défaut `raspberry`.
+-   Changer la zone horaire avec `sudo raspi-config`, puis sélectionner `4 Localisation Options/I2 Change Timezone`.
+-   Installer les mises à jour du système :
 
 ```bash
 sudo apt-get update # ~ 2 min
@@ -190,7 +185,7 @@ sudo apt-get upgrade # ~ 12 min
 sudo apt-get dist-upgrade # ~ 0 min
 ```
 
-- Installer GNU `screen` :
+-   Installer GNU `screen` :
 
 ```bash
 sudo apt-get install screen
@@ -199,14 +194,13 @@ nano ~/.screenrc
 shell -$SHELL
 ```
 
-- Installer `mosquitto` :
+-   Installer `mosquitto` :
 
 ```bash
 sudo apt-get install mosquitto mosquitto-clients python-mosquitto
 ```
 
-
-- Pour les tests, il faut commenter la ligne suivante dans le fichier `mosquitto.conf`
+-   Pour les tests, il faut commenter la ligne suivante dans le fichier `mosquitto.conf`
 
 ```bash
 sudo nano /etc/mosquitto/conf.d/mosquitto.conf
@@ -214,7 +208,8 @@ sudo nano /etc/mosquitto/conf.d/mosquitto.conf
 # password_file /etc/mosquitto/passwd
 ```
 
-- Le deamon `mosquitto` accepte les commandes suivantes :
+-   Le deamon `mosquitto` accepte les commandes suivantes :
+
 ```bash
 sudo /etc/init.d/mosquitto status
 sudo /etc/init.d/mosquitto start
@@ -223,27 +218,21 @@ sudo /etc/init.d/mosquitto reload
 sudo /etc/init.d/mosquitto try-restart
 ```
 
-
 Il y a deux fichiers de configuration et les deux semblent être utilisés
+
 ```bash
 /etc/mosquitto/mosquitto.conf # ⇒ configuration globale
 /etc/mosquitto/conf.d/mosquitto.conf # ⇒ configuration pour le daemon
 ```
 
-
 /var/log/mosquitto/mosquitto.log
 /var/lib/mosquitto/mosquitto.db
-
-
 
 mosquitto_sub -h test.mosquitto.org -t "SMBA38/#" –v
 
 pi@raspberrypi:~$ mosquitto_pub -h test.mosquitto.org -t SMBA38/temps/Ext -m 17
 pi@raspberrypi:~$ mosquitto_pub -h test.mosquitto.org -t SMBA38/temps/Ext -m 15
 pi@raspberrypi:~$ mosquitto_pub -h test.mosquitto.org -t SMBA38/temps/Int -m 21
-
-
-
 
 brew install mosquitto
 
@@ -253,12 +242,6 @@ brew services start mosquitto
 
 mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
 
-
-
-
 [1]: https://www.raspberrypi.org/downloads/raspbian/
 [2]: https://etcher.io/
-
-
 -->
-{% endcomment %}

@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2017-01-13T16:45:00+01:00
 published: true
 author: Nico
@@ -16,10 +16,10 @@ author: Nico
 
 ## Matériel
 
-- [DC-12V-10A-Relay-1CH-Wireless-RF-Remote-Control-Switch-Transmitter-Receiver][1]
-- [USB-male-to-screw-connector-USB][2]
-- [Wago 2 broches][3]
-- [Booster 2A 2V-24V][5]
+-   [DC-12V-10A-Relay-1CH-Wireless-RF-Remote-Control-Switch-Transmitter-Receiver][1]
+-   [USB-male-to-screw-connector-USB][2]
+-   [Wago 2 broches][3]
+-   [Booster 2A 2V-24V][5]
 
 [1]: http://www.banggood.com/DC-12V-10A-Relay-1CH-Wireless-RF-Remote-Control-Switch-Transmitter-Receiver-p-1040721.html?p=0431091025639201412F
 [2]: https://fr.aliexpress.com/item/5Pcs-free-shipping-USB-male-to-screw-connector-USB-plug-with-shield-connector-USB-Adapter-USB2/32705960671.html

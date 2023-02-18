@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2016-08-10T10:34:00+02:00
 published: true
 author: Nico
@@ -18,7 +18,7 @@ L’idée est de déterminer s’il est possible de remplacer un bridge USB-RS23
 
 ### Programmation des Launchpad
 
-{% highlight C++ %}
+```c++
 /*
   serial_end.ino
 
@@ -37,13 +37,13 @@ void setup()
   { Serial.end(); }
 void loop()
   {}
-{% endhighlight %}
+```
 
 ### Branchements
 
-- Deux Launchpad avec RX connecté à TX et inversement TX à RX.
-- GND connecté à GND.
-- Les cavaliers RXD et TXD connectés horizontalement (mode `HW UART` selon le pictogramme à côté des cavaliers).
+-   Deux Launchpad avec RX connecté à TX et inversement TX à RX.
+-   GND connecté à GND.
+-   Les cavaliers RXD et TXD connectés horizontalement (mode `HW UART` selon le pictogramme à côté des cavaliers).
 
 ![Branchement des Launchpad](../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_launchpad_lowres.jpg)
 
@@ -77,7 +77,7 @@ Idem que pour les Launchpad (programme serial_end.ino)
 
 ### Branchements
 
-- Deux ESP8266-12E avec RX connecté à TX et inversement TX à RX.
+-   Deux ESP8266-12E avec RX connecté à TX et inversement TX à RX.
 
 ![Branchement des ESP8266-12E](../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_esp8266-12E_test1_lowres.jpg)
 
@@ -105,8 +105,8 @@ La différence entre le test 2 et le test 1, c’est que j’ai connecté la bro
 
 ### Branchements
 
-- Deux ESP8266-12E avec RX connecté à TX et inversement TX à RX.
-- RST connecté à GND
+-   Deux ESP8266-12E avec RX connecté à TX et inversement TX à RX.
+-   RST connecté à GND
 
 ![Branchement des ESP8266-12E](../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_esp8266-12E_test2_lowres.jpg)
 

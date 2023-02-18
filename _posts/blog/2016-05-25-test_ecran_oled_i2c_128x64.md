@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2016-05-25T17:22:00+02:00
 published: true
 author: Nico
@@ -16,8 +16,7 @@ author: Nico
 
 ![...](../../files/2016-05-25-test_ecran_oled_i2c_128x64/test_ecran_oled_i2c_128x64_002_lowres.jpg)
 
-~~~ c++
-
+```c++
 /*
 
 PROGRAMME BASIQUE POUR TESTER L’ÉCRAN OLED 128×64 I²C
@@ -116,5 +115,4 @@ void cadreEcran( void )
 {
   display.drawRect( 0, 0, display.width()-2, display.height()-2, WHITE );
 }
-
-~~~
+```

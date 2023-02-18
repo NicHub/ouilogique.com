@@ -6,7 +6,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2016-06-04T14:29:00+02:00
 published: true
 author: Nico
@@ -18,9 +18,7 @@ author: Nico
 
 ![...](../../files/2016-06-04-test_horloge_temps_reel_i2c/2016-06-04-test_horloge_temps_reel_i2c_003_lowres.jpg)
 
-
-~~~ c++
-
+```c++
 /*
 
 TEST DE L’HORLOGE TEMPS RÉEL (RTC) DS1307 I²C
@@ -70,5 +68,4 @@ void loop()
   Serial.print( buf );
   _delay_ms( 1000 );
 }
-
-~~~
+```
