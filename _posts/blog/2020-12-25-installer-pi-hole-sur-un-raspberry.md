@@ -35,7 +35,7 @@ Bien évidemment, il faut être à l’aise avec le fait que Digitec aura connai
 
 ## Installation de Pi-hole sur le Raspberry
 
-- Flasher Raspberry Pi OS sur une carte SD. ([Voir la procédure détaillée.](./installer-raspian-stretch/))
+- Flasher Raspberry Pi OS sur une carte SD. ([Voir la procédure détaillée.](../installer-raspian-stretch/))
 - Connecter le Raspberry au réseau.
 - Ouvrir un terminal sur le Raspberry et installer Pi-hole avec la commande suivante :
 ```bash
