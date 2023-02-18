@@ -22,7 +22,7 @@ redirect_from:
 
 <https://www.youtube.com/watch?v=jeQCoiZT5gg&feature=em-subs_digest-vrecs>
 
-![](https://avatars1.githubusercontent.com/u/189606?v=3&s=96)
+<!-- ![](https://avatars1.githubusercontent.com/u/189606?v=3&s=96) -->
 
 ## ADVANTAGES OF STATIC SITES
 
