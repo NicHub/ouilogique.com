@@ -327,8 +327,10 @@ smb://raspberrypi.local
 Voir
 <https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-drive>
 
+On peu aussi entrer le chemin d’accès au Raspberry au [format UNC](https://en.wikipedia.org/wiki/Path_(computing)#Universal_Naming_Convention) directement dans la barre d’adresse de l’explorateur Windows (raccourcis Win+E, Ctrl+L)
+
 ```bash
-smb://raspberrypi.local
+\\raspberrypi.local
 ```
 
 ### Installer une autre version de Python 3
