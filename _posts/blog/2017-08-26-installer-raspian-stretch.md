@@ -283,7 +283,7 @@ sudo apt-get --assume-yes install samba samba-common-bin
 sudo nano /etc/samba/smb.conf
 ```
 
-Au début du fichier, vérifier les informations suivantes :
+Vérifier la présence des informations suivantes :
 
 ```conf
 workgroup = WORKGROUP
