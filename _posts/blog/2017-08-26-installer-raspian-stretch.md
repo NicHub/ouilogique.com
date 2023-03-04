@@ -333,6 +333,12 @@ On peu aussi entrer le chemin d’accès au Raspberry au [format UNC](https://en
 \\raspberrypi.local
 ```
 
+Si la résolution du nom d’hôte ne fonctionne pas, on peut aussi utiliser l’adresse IP :
+
+```bash
+\\192.168.1.240
+```
+
 ### Installer une autre version de Python 3
 
 > Les informations de ce chapitre sont passablement obsolètes car les dernières versions de l’OS du rPi intègrent des versions de Python supérieures à 3.6.
