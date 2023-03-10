@@ -17,7 +17,7 @@ https://www.python.org/doc/sunset-python-2/
 
 # Prérequis
 
-> Note : Sous windows, les commandes ci-dessous doivent être éxécutées dans un terminal avec les droit administrateur (Win+R, cmd + Ctrl-Shift-Enter). De plus, la commande pour invoquer python doit changée de `python3` à `py`.
+> Note : Sous windows, les commandes ci-dessous doivent être exécutées dans un terminal avec les droit administrateur (Win+R, cmd + Ctrl-Shift-Enter). De plus, la commande pour invoquer python doit changée de `python3` à `py`.
 
 -   Installer la dernière version LTS de [NodeJS](https://nodejs.org/en/download/). Actuellement, c’est la 18.14.2.
 -   Installer Python (<https://www.python.org/downloads/>). La version actuelle est la 3.11.2. La version minimum pour suivre les exemples est la 3.6.
@@ -60,7 +60,9 @@ Ses avatages sont :
 
 ## Jupyter dans VSCode
 
-Il y a plusieurs façon d’exécuter des scripts Python dans VSCode. La façon la plus intéressante est avec Jupyter. Pour
+Il y a plusieurs façon d’exécuter des scripts Python dans VSCode.
+La façon la plus intéressante est avec Jupyter.
+Pour
 
 # Raspberry blink Python
 
@@ -86,12 +88,11 @@ while True:
     sleep(1) # Sleep for 1 second```
 ````
 
+-   environnements virtuels
+-   iPython
+-   f-strings
+-   VSCode Jupyter
 
+# Remote GPIO
 
-
-
-- environnements virtuels
-- iPython
-- f-strings
-- VSCode Jupyter
-
+Voir exemple remote_gpio.py

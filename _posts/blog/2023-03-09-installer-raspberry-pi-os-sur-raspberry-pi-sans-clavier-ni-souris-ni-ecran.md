@@ -14,18 +14,18 @@ redirect_from:
     - /installer-raspian-stretch/
 ---
 
-> L’article original s’intitulait “Installer Raspian Stretch sur Raspberry Pi” et était accessible à cette URL :
+Cet article montre comment configurer un Raspberry de A à Z à l’aide d’un ordinateur standard. Le Raspberry sera donc en mode *headless*, c’est-à-dire sans clavier, ni souris, ni écran.
+
+> N.B. L’article original, écrit en août 2017, s’intitulait “Installer Raspian Stretch sur Raspberry Pi” et était accessible à cette URL :
 > <https://ouilogique.com/installer-raspian-stretch/> qui est maintenant redirigée vers l’URL actuelle.
 
 ## Matériel utilisé pour cette procédure
 
 -   Un Raspberry Pi modèle 2 (ou plus)
 -   Une carte SD (32 GB recommandés)
--   Un ordinateur macOS Sierra (ou plus récent)
--   Un routeur
+-   Un ordinateur standard
+-   Un routeur (optionnel, on peut connecter le Rpi directement sur le port Ethernet)
 -   Un câble Ethernet
-
-> Pas besoin d’écran, de clavier ou de souris pour le Raspberry, nous utiliserons uniquement SSH pour nous connecter au RPi depuis un ordinateur standard.
 
 ## Préparation (~15 min)
 
@@ -45,19 +45,21 @@ Il peut être téléchargé ici :
 On a le choix entre plusieurs moutures de l’OS.
 Celle que je préfère est la version “Raspberry Pi OS (64-bit)”.
 La raison est que j’ai besoin d’un OS 64 bit pour faire tourner Prince (<https://www.princexml.com/>).
-En cas de doute, il vaut mieux choisir l’OS recommandé, c’est-à-dire “Raspberry Pi OS (32-bit).
+En cas de doute, il vaut mieux choisir l’OS recommandé, c’est-à-dire “Raspberry Pi OS (32-bit)”.
 
 ## Choix du terminal
 
-Si vous êtes sur macOS ou n’importe quel système *nix, le choix est vite fait, il suffit d’utiliser le terminal par défaut.
+Si vous êtes sur macOS ou n’importe quel système \*nix, le choix est vite fait, il suffit d’utiliser le terminal par défaut.
+Ça ne veut pas dire qu’il n’y a qu’une possibilité, mais qu’il y a de fortes chances que vous sachiez déjà quel terminal choisir.
 
-Par contre si vous êtes sur Windows, il y a plusieurs possibilités.
+Par contre si vous êtes sur Windows, il y a de fortes chances que vous ne sachiez pas quel terminal choisir.
+Donc voici quelques possibiltés.
 
--   Windows PowerShell
--   COMMAND.COM (cmd)
--   MinGW ([Git Bash installé avec Git](https://git-scm.com/))
+-   Windows PowerShell (intégré à Windows)
+-   COMMAND.COM (cmd) (intégré à Windows)
+-   [MinGW – Git Bash installé avec Git](https://git-scm.com/)
 -   [Cygwin](https://www.cygwin.com/)
-
+-   [PuTTY](https://putty.org/)
 
 ## Procédure d’installation (~30 min)
 
@@ -66,21 +68,21 @@ Par contre si vous êtes sur Windows, il y a plusieurs possibilités.
 -   Insérer une carte SD, cliquer sur “Choisir le stockage” et choisir la carte SD.
 -   **Important :** Cliquer sur la roue dentée et s’assurer que l’option “Activer SSH” est activée.
 
-    > Anciennement, l’activation de SSH se faisant en créant un fichier vide appelé `ssh`dans le répertoire `boot` , par exemple avec la commande `touch /Volumes/boot/ssh`.
+    > Anciennement, l’activation de SSH se faisant en créant un fichier vide appelé `ssh`dans le répertoire `boot`, par exemple avec la commande `touch /Volumes/boot/ssh`.
     > Ce n’est plus nécessaire aujourd’hui.
 
 -   Cliquer sur “ÉCRIRE”.
     Entrez votre mot de passe lorsque le dialogue le demande.
-    L’écriture de l’image disque prend environ 15 min et la vérification (si elle a été sélectionnée dans les préférences) prend aussi 15 min.
+    L’écriture de l’image disque prend environ 10 min avec la vérification (si elle a été sélectionnée dans les préférences).
     Ces temps peuvent beaucoup varier en fonction de votre matériel.
 -   Éjecter la carte SD.
 -   Insérer la carte SD dans le Raspberry éteint.
 -   Connecter le câble Ethernet.
 -   Brancher le câble d’alimentation du Raspberry.
--   Après environ 30 secondes, se connecter au Raspberry avec la commande<br/>
+-   Après environ 30 secondes, ouvrir un terminal et se connecter au Raspberry avec la commande<br/>
     `ssh pi@raspberrypi.local`.
     Le mot de passe par défaut est `raspberry`.
-    Si une entrée existe déjà pour `raspberrypi.local` dans le fichier `~/.ssh/known_hosts` (ou sur Windows `%HOMEPATH%\.ssh\known_hosts`) de l’ordinateur hôte (pas le RPi), il faut la supprimer.
+    Si SSH renvoie l’erreur “WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!”, c’est parce qu’une entrée existe déjà pour `raspberrypi.local` dans le fichier `~/.ssh/known_hosts` (ou sur Windows `%HOMEPATH%\.ssh\known_hosts`) de l’ordinateur hôte (pas le RPi). Donc pour aller plus loin, il faut supprimer les lignes qui commencent par `raspberrypi.local` dans le fichier `known_hosts`.
 
 ## Retrouver un appareil sur le réseau local
 
@@ -104,6 +106,7 @@ nmap -sP 192.168.1.0/24
 sudo apt-get --assume-yes update
 sudo apt-get --assume-yes upgrade
 sudo apt-get --assume-yes dist-upgrade
+sudo apt-get --assume-yes autoremove
 ```
 
 ## Configuration
@@ -139,8 +142,6 @@ source ~/.bash_profile
 
 ```bash
 sudo raspi-config
-# Localisation Options
-# Interfacing Options / P2 SSH
 # Update
 # Advanced Options / Expand filesystem
 ```
@@ -150,7 +151,6 @@ sudo raspi-config
 **Sur l’ordinateur hôte**
 
 ```bash
-cd ~/.ssh
 # Si le fichier ~/.ssh/id_rsa.pub n’existe pas,
 # il faut le créer avec `ssh-keygen`.
 ssh-keygen # Accepter toutes les valeurs par défaut.
@@ -160,7 +160,7 @@ cat ~/.ssh/id_rsa.pub # + Copier le résultat dans le presse-papier.
 **Sur le RPi**
 
 ```bash
-mkdir ~/.ssh
+mkdir -p ~/.ssh
 chmod 700 ~/.ssh
 nano ~/.ssh/authorized_keys # + Coller la clé de l’hôte à la fin du fichier.
 chmod 644 ~/.ssh/authorized_keys
@@ -195,7 +195,7 @@ sudo raspi-config
 
 ## VNC
 
-> N. B. Il faut que l’interface graphique soit activée pour que VNC fonctionne (voir § précédent).
+> N.B. Il faut que l’interface graphique soit activée pour que VNC fonctionne (voir § précédent).
 
 ```bash
 sudo raspi-config
@@ -286,6 +286,8 @@ tmux set-option -g mouse off
 
 ### GNU screen
 
+> Je préfère ne pas utiliser GNU screen, mais parfois... on a pas le choix.
+
 ```bash
 sudo apt-get --assume-yes install screen
 echo "shell -$SHELL" > ~/.screenrc # Pour que screen lise .bash_profile
@@ -350,7 +352,7 @@ Le flag `public = no` indique que l’accès en temps qu’invité est désactiv
 Si on le change en `public = yes`, le disque est partagé en lecture seule.
 
 ```bash
-sudo smbpasswd -a pi
+sudo smbpasswd -a pi # Pour changer le mot de passe.
 ```
 
 ### Monter le disque partagé sur macOS
@@ -507,7 +509,7 @@ cd /media/pi/LaCie
 
 ## Éjecter un disque externe
 
-> N. B. À proprement parler, seuls les médias comme les CD où les bandes peuvent être éjectés. Mais le terme est aussi utilisé pour les autres médias.
+> N.B. À proprement parler, seuls les médias comme les CD où les bandes peuvent être éjectés. Mais le terme est aussi utilisé pour les autres médias.
 
 Éjecter un média est un peu plus compliqué que de le connecter et l’utiliser.
 En effet, sur un Raspbery ou n’importe quel [système \*nix](https://fr.wikipedia.org/wiki/Type_Unix), il faut comprendre trois notions :
@@ -544,7 +546,7 @@ L’éjection du disque se passe en deux étapes :
 2. Couper l’alimentation du disque.
    La référence du disque lui-même se trouve à `/dev/sda`.
 
-> N. B. Il faut s’assurer que le disque n’est plus utilisé, sinon le système refusera de le démonter avec l’erreur `target is busy`.
+> N.B. Il faut s’assurer que le disque n’est plus utilisé, sinon le système refusera de le démonter avec l’erreur `target is busy`.
 > C’est à ça que sert le changement de répertoire ci-dessous.
 
 ```bash
@@ -552,6 +554,14 @@ cd
 udisksctl unmount --block-device /dev/sda2
 sudo udisksctl power-off --block-device /dev/sda
 ```
+
+## Monter un disque externe
+
+Si le Raspberry est configuré pour démarrer en mode *Desktop Autologin* (`sudo raspi-config # options 1 + S5 + B4`), les disques externes sont automatiquement montés par le système et il n’y a donc pas besoin de s’en occuper. Ceci est valable même si on ne se con
+Par contre s’il est configuré pour démarrarer en mode *Text console* (`sudo raspi-config # options 1 + S5 + B1 ou B2`), les points de montages sont créés
+
+
+https://raspberrypi.stackexchange.com/questions/141161/automatically-mount-usb-storage-on-raspberry-os-bullseye-lite-as-desktop-versio
 
 <!--
 Voici quelques explications sur ces informations.

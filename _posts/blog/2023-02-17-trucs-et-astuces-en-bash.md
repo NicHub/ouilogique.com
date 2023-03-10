@@ -100,3 +100,54 @@ La commande apt offre une expérience utilisateur plus conviviale et plus facile
 Cependant, apt-get est toujours largement utilisé et peut être plus flexible dans certains cas d'utilisation, car il offre un contrôle plus fin sur les options et les paramètres.
 
 En général, les deux commandes sont largement interchangeables et peuvent être utilisées selon les préférences personnelles de l'utilisateur.
+
+
+# Les flux standard de Linux
+
+Source : https://www.howtogeek.com/435903/what-are-stdin-stdout-and-stderr-on-linux/
+
+Sous Linux, les flux - comme presque tout le reste - sont traités comme des fichiers. Vous pouvez lire du texte à partir d'un fichier et vous pouvez écrire du texte dans un fichier. Ces deux actions impliquent un flux de données. Le concept de traitement d'un flux de données comme un fichier n'est donc pas si compliqué que cela.
+
+Il y a trois flux standard :
+- stdin (standard in) est le flux d'entrée standard. Il accepte du texte en entrée.
+- stdout (standard out) est le flux de sortie standard.
+- stderr (standard error) permet de renvoyer des éventuelles erreurs.
+
+Sous Linux, les flux - comme presque tout le reste - sont traités comme des fichiers. Vous pouvez lire du texte à partir d'un fichier et vous pouvez écrire du texte dans un fichier. Ces deux actions impliquent un flux de données. Le concept de traitement d'un flux de données comme un fichier n'est donc pas si compliqué que cela.
+
+Chaque fichier associé à un processus se voit attribuer un numéro unique pour l'identifier. C'est ce qu'on appelle le descripteur de fichier. Chaque fois qu'une action doit être effectuée sur un fichier, le descripteur de fichier est utilisé pour identifier le fichier.
+
+Ces valeurs sont toujours utilisées pour stdin, stdout et stderr :
+
+    0: stdin
+    1: stdout
+    2: stderr
+
+
+
+# Commandes utiles
+
+grep # tout seul ou en pipe
+find
+ls
+rclone
+ps
+which
+man
+kill
+git
+md5
+zip
+chmod
+alias
+sudo
+nano
+byobu
+cd
+ping
+wget
+curl
+apt-get
+arp -a
+echo
+printf
