@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    color: bisque;
+    font-family: monospace;
+    font-size: 200%;
+}
+
+:link {
+    color: inherit;
+}
+
+li {
+    height:50px;
+    padding: 10px 0 0 0 ;
+
+}
