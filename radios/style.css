@@ -12,6 +12,9 @@ main {
 :link {
     color: inherit;
 }
+:visited {
+    color: inherit;
+}
 h1,
 h2,
 h3 {
