@@ -2,12 +2,13 @@ body {
     background-color: rgb(30,30,30);
     color: burlywood;
     font-family: monospace;
-    font-size: 200%;
+    font-size: 150%;
 }
 main {
-    width: 50%;
+    width: 90%;
     margin: 10px auto 100px;
     display: block;
+    text-align: center;
 }
 :link {
     color: inherit;
@@ -37,7 +38,6 @@ figcaption {
 audio {
     background-color: transparent;
     color: red;
-    /* border: 1px solid red; */
     transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);
 
 }
