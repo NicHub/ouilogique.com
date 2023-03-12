@@ -2,84 +2,11 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RADIOS</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" href="style.css" />
-
-    <script>
-        "use strict";
-        function pause_other(_e) {
-            var audio_elems = document.querySelectorAll("audio");
-            for (let _i = 0; _i < audio_elems.length; _i++) {
-                if (audio_elems[_i] == _e) {
-                    continue
-                }
-                audio_elems[_i].pause();
-            }
-        }
-    </script>
-
+    <meta http-equiv="refresh" content="0; url=https://ouilogique.ch/radios/" />
 </head>
 
 <body>
 
-    <main>
-        <h1>RADIOS</h1>
-
-        <p><a href="http://fluxradios.blogspot.com/">liste de flux radios</a></p>
-
-        <h2>France</h2>
-
-        <figure>
-            <figcaption>France Inter</figcaption>
-            <audio controls onplay="pause_other(this)">
-                <source src="http://direct.franceinter.fr/live/franceinter-hifi.aac">
-                <source src="http://direct.franceinter.fr/live/franceinter-midfi.mp3">
-            </audio>
-        </figure>
-
-        <figure>
-            <figcaption>Europe 1</figcaption>
-            <audio controls onplay="pause_other(this)">
-                <source src="http://stream.europe1.fr/europe1.aac">
-                <source src="http://stream.europe1.fr/europe1.mp3">
-            </audio>
-        </figure>
-
-        <figure>
-            <figcaption>France Culture</figcaption>
-            <audio controls onplay="pause_other(this)">
-                <source src="http://direct.franceculture.fr/live/franceculture-hifi.aac">
-                <source src="http://direct.franceculture.fr/live/franceculture-midfi.mp3">
-            </audio>
-        </figure>
-
-        <h2>Suisse</h2>
-
-        <figure>
-            <figcaption>RTS — La 1ère</figcaption>
-            <audio controls onplay="pause_other(this)">
-                <source src="http://stream.srg-ssr.ch/m/la-1ere/mp3_128">
-            </audio>
-        </figure>
-
-        <figure>
-            <figcaption>RTS — Espace 2</figcaption>
-            <audio controls onplay="pause_other(this)">
-                <source src="http://stream.srg-ssr.ch/m/espace-2/mp3_128">
-            </audio>
-        </figure>
-
-        <figure>
-            <figcaption>RTS — Couleur 3</figcaption>
-            <audio controls onplay="pause_other(this)">
-                <source src="http://stream.srg-ssr.ch/m/couleur3/mp3_128">
-            </audio>
-        </figure>
-    </main>
 </body>
 
 </html>
