@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(30,30,30);
     color: burlywood;
     font-family: monospace;
     font-size: 200%;
@@ -20,8 +20,24 @@ h2,
 h3 {
     color: bisque;
 }
+h2 {
+    margin: 50px 0 0
+}
 
-li {
-    height: 50px;
-    padding: 10px 0 0 0;
+figure {
+    /* height: 50px; */
+    margin:10px 0;
+}
+
+figcaption {
+
+    padding: 0 0 5px 0;
+}
+
+audio {
+    background-color: transparent;
+    color: red;
+    /* border: 1px solid red; */
+    transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);
+
 }
