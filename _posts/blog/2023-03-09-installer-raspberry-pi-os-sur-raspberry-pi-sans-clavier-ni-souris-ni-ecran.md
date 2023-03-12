@@ -14,7 +14,7 @@ redirect_from:
     - /installer-raspian-stretch/
 ---
 
-Cet article montre comment configurer un Raspberry de A à Z à l’aide d’un ordinateur standard. Le Raspberry sera donc en mode *headless*, c’est-à-dire sans clavier, ni souris, ni écran.
+Cet article montre comment configurer un Raspberry de A à Z à l’aide d’un ordinateur standard. Le Raspberry sera donc en mode _headless_, c’est-à-dire sans clavier, ni souris, ni écran.
 
 > N.B. L’article original, écrit en août 2017, s’intitulait “Installer Raspian Stretch sur Raspberry Pi” et était accessible à cette URL :
 > <https://ouilogique.com/installer-raspian-stretch/> qui est maintenant redirigée vers l’URL actuelle.
@@ -557,9 +557,8 @@ sudo udisksctl power-off --block-device /dev/sda
 
 ## Monter un disque externe
 
-Si le Raspberry est configuré pour démarrer en mode *Desktop Autologin* (`sudo raspi-config # options 1 + S5 + B4`), les disques externes sont automatiquement montés par le système et il n’y a donc pas besoin de s’en occuper. Ceci est valable même si on ne se con
-Par contre s’il est configuré pour démarrarer en mode *Text console* (`sudo raspi-config # options 1 + S5 + B1 ou B2`), les points de montages sont créés
-
+Si le Raspberry est configuré pour démarrer en mode _Desktop Autologin_ (`sudo raspi-config # options 1 + S5 + B4`), les disques externes sont automatiquement montés par le système et il n’y a donc pas besoin de s’en occuper. Ceci est valable même si on ne se con
+Par contre s’il est configuré pour démarrarer en mode _Text console_ (`sudo raspi-config # options 1 + S5 + B1 ou B2`), les points de montages sont créés
 
 https://raspberrypi.stackexchange.com/questions/141161/automatically-mount-usb-storage-on-raspberry-os-bullseye-lite-as-desktop-versio
 
@@ -581,6 +580,13 @@ Voici quelques explications sur ces informations.
 ## À voir aussi
 
 -   <https://www.raspberrypi.com/news/raspberry-pi-bullseye-update-april-2022/>
+-   <https://learnxinyminutes.com/docs/bash/>
+-   <https://devhints.io/bash>
+-   <https://www.gnu.org/software/bash/manual/html_node/Bourne-Shell-Builtins.html>
+
+-   <https://funprojects.blog/2021/04/26/control-usb-powered-devices/>
+-   <https://raspberrypi.stackexchange.com/questions/118656/raspberry-pi4-uhubctl-bash-script-wont-run>
+-   <https://github.com/codazoda/hub-ctrl.c/issues/17>
 
 ## Quelques commandes utiles
 
