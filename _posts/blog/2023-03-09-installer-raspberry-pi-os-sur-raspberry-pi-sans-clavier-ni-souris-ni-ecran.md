@@ -120,7 +120,7 @@ Copier-coller les commandes suivantes dans .bash_profile
 ```bash
 PS1=$'\n\n\xf0\x9f\x98\xBA'"  \t – \[\033[01;32m\]\u@\h\[\033[00m\]:\W > "
 alias ll='ls -lGhF'
-alias la='ls -a'
+alias la='ll -a'
 alias gs='git status'
 alias lsserial='python3 -m serial.tools.list_ports'
 IP=$(hostname -I | awk '{print $1}')
@@ -237,14 +237,78 @@ sudo apt-get --assume-yes install wolfram-engine
 
 ### BYOBU
 
-Byobu est un gestionnaire de fenêtres et un multiplexeur de terminal en mode texte sous licence GPLv3.
+[Byobu](https://www.byobu.org/) est un gestionnaire de fenêtres et un multiplexeur de terminal en mode texte sous licence GPLv3. Il a été conçu à l’origine pour apporter des améliorations élégantes au gestionnaire de fenêtres GNU Screen, par ailleurs fonctionnel, simple et pratique, pour la distribution serveur Ubuntu. Byobu comprend maintenant des profils améliorés, des raccourcis clavier pratiques, des utilitaires de configuration et des notifications d’état du système commutables pour le gestionnaire de fenêtres GNU Screen et le multiplexeur de terminal plus moderne Tmux, et fonctionne sur la plupart des distributions Linux, BSD et Mac.
+
+Le code source se trouve sur GitHub :
+
+<https://github.com/dustinkirkland/byobu>
+
+Dans la terminologie de Byobu, une session (_session_) est une instance de Byobu en cours d’exécution. Une session se compose d’une collection de fenêtres (_windows_), qui sont essentiellement des sessions shell, et de volets (_panes_), qui sont des sous-sections de fenêtre.
 
 ```bash
 sudo apt-get install byobu
 byobu
+
 # Configurer les options de base en pressant sur F1
+
+# Configurer le raccourci de “l’escape sequence”.
+# Conseil: utiliser la lettre “B”.
+Change escape sequence
+# Configurer le démarrage automatique de Byobu.
 Byobu currently does not launch at login (toggle on)
 ```
+
+### .bash_profile
+
+Pour charger `.bash_profile`, ajouter la commande suivante dans `~/.bashrc` :
+```bash
+_bash_profile_sourced=1 . ~/.bash_profile 2>/dev/null || true
+```
+
+### Raccourcis clavier
+
+Les raccourcis claviers sont définis dans le fichier [f-keys.tmux](https://github.com/dustinkirkland/byobu/blob/master/usr/share/byobu/keybindings/f-keys.tmux).
+
+```bash
+/usr/share/byobu/keybindings/f-keys.tmux
+```
+
+Sur macOS, la majorité des raccourcis n’est utilisable qu’à travers la touche `F12`. Donc quand l’aide indique le raccourci clavier `C-a`, il faut le remplacer par `F12`.
+
+Par exemple, `F12 %` scinde le volet actuel en deux volets verticaux.
+
+La liste de toutes les fonction `F12` est disponible avec la commande `F12 ?`.
+
+Ci-dessous, la liste des raccourcis autres que `F12`.
+
+<!--
+| Label | Key     |
+| ----- | ------- |
+| C     | Control |
+| S     | Shift   |
+| M     | Meta    |
+-->
+
+| Key    | Action                                |
+| ------ | ------------------------------------- |
+| F1     | configuration menu                    |
+| F2     | new window                            |
+| F3     | previous window                       |
+| F4     | next window                           |
+| F5     | refresh menu bar status notifications |
+| F6     | detach                                |
+| F7     | —                                     |
+| F8     | rename window                         |
+| F9     | configuration menu                    |
+| F10    | —                                     |
+| F11    | —                                     |
+| F12    | —                                     |
+| ctrl-D | kill window                           |
+
+**À lire**
+
+-   <https://www.digitalocean.com/community/tutorials/how-to-install-and-use-byobu-for-terminal-management-on-ubuntu-16-04>
+-   <https://superuser.com/a/818753/508141>
 
 ### TMUX
 
@@ -279,7 +343,7 @@ set-option -g mouse on
 # aux shells existants, mais on peut le faire dans
 # chaque shell individuel avec la commande
 tmux set-option -g mouse on
-# En mode mouse on, il n'est possible de sélectionner
+# En mode mouse on, il n’est possible de sélectionner
 # du texte. Il faut donc revenir en mode off.
 tmux set-option -g mouse off
 ```
@@ -595,4 +659,10 @@ Voici quelques explications sur ces informations.
 ```bash
 cat /sys/firmware/devicetree/base/model
 # Raspberry Pi 4 Model B Rev 1.1
+```
+
+-   Déterminer la version de l’OS
+
+```bash
+cat /etc/os_release
 ```
