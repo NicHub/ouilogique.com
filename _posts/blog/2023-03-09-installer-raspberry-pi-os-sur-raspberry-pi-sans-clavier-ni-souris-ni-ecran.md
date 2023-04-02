@@ -611,14 +611,14 @@ udisksctl unmount --block-device /dev/sda2
 sudo udisksctl power-off --block-device /dev/sda
 ```
 
-## Monter un disque externe
+<!--
+### Monter un disque externe
 
 Si le Raspberry est configuré pour démarrer en mode _Desktop Autologin_ (`sudo raspi-config # options 1 + S5 + B4`), les disques externes sont automatiquement montés par le système et il n’y a donc pas besoin de s’en occuper. Ceci est valable même si on ne se con
 Par contre s’il est configuré pour démarrarer en mode _Text console_ (`sudo raspi-config # options 1 + S5 + B1 ou B2`), les points de montages sont créés
 
 https://raspberrypi.stackexchange.com/questions/141161/automatically-mount-usb-storage-on-raspberry-os-bullseye-lite-as-desktop-versio
 
-<!--
 Voici quelques explications sur ces informations.
 
 - Les disques durs standards sont nommés avec le préfixe `sd`suivi d’une lettre attribuée dans l’ordre alphabétique. Donc le premier disque aura le nom `sda`, le deuxième `sdb`, etc.
