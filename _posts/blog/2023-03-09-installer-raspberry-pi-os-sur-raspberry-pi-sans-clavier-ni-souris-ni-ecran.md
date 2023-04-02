@@ -237,13 +237,9 @@ sudo apt-get --assume-yes install wolfram-engine
 
 ### BYOBU
 
-[Byobu](https://www.byobu.org/) est un gestionnaire de fenêtres et un multiplexeur de terminal en mode texte sous licence GPLv3. Il a été conçu à l’origine pour apporter des améliorations élégantes au gestionnaire de fenêtres GNU Screen, par ailleurs fonctionnel, simple et pratique, pour la distribution serveur Ubuntu. Byobu comprend maintenant des profils améliorés, des raccourcis clavier pratiques, des utilitaires de configuration et des notifications d’état du système commutables pour le gestionnaire de fenêtres GNU Screen et le multiplexeur de terminal plus moderne Tmux, et fonctionne sur la plupart des distributions Linux, BSD et Mac.
+Byobu (<https://www.byobu.org/>) est un gestionnaire de fenêtres et un multiplexeur de terminal en mode texte sous licence GPLv3. Il a été conçu à l’origine pour apporter des améliorations élégantes au gestionnaire de fenêtres GNU Screen, par ailleurs fonctionnel, simple et pratique, pour la distribution serveur Ubuntu. Byobu comprend maintenant des profils améliorés, des raccourcis clavier pratiques, des utilitaires de configuration et des notifications d’état du système commutables pour le gestionnaire de fenêtres GNU Screen et le multiplexeur de terminal plus moderne Tmux, et fonctionne sur la plupart des distributions Linux, BSD et Mac. Le code source se trouve sur GitHub : <https://github.com/dustinkirkland/byobu>
 
-Le code source se trouve sur GitHub :
-
-<https://github.com/dustinkirkland/byobu>
-
-Dans la terminologie de Byobu, une session (_session_) est une instance de Byobu en cours d’exécution. Une session se compose d’une collection de fenêtres (_windows_), qui sont essentiellement des sessions shell, et de volets (_panes_), qui sont des sous-sections de fenêtre.
+Dans la terminologie de Byobu, une session est une instance de Byobu en cours d’exécution. Une session se compose d’une collection de fenêtres (_windows_), qui sont essentiellement des sessions shell, et de volets (_panes_), qui sont des sous-sections de fenêtre.
 
 ```bash
 sudo apt-get install byobu
@@ -258,22 +254,23 @@ Change escape sequence
 Byobu currently does not launch at login (toggle on)
 ```
 
-### .bash_profile
+#### .bash_profile
 
 Pour charger `.bash_profile`, ajouter la commande suivante dans `~/.bashrc` :
+
 ```bash
 _bash_profile_sourced=1 . ~/.bash_profile 2>/dev/null || true
 ```
 
-### Raccourcis clavier
+#### Raccourcis clavier
 
-Les raccourcis claviers sont définis dans le fichier [f-keys.tmux](https://github.com/dustinkirkland/byobu/blob/master/usr/share/byobu/keybindings/f-keys.tmux).
+Les raccourcis claviers sont définis dans le fichier `f-keys.tmux` ([source](https://github.com/dustinkirkland/byobu/blob/master/usr/share/byobu/keybindings/f-keys.tmux)).
 
 ```bash
 /usr/share/byobu/keybindings/f-keys.tmux
 ```
 
-Sur macOS, la majorité des raccourcis n’est utilisable qu’à travers la touche `F12`. Donc quand l’aide indique le raccourci clavier `C-a`, il faut le remplacer par `F12`.
+Sur macOS, la majorité des raccourcis n’est utilisable qu’à travers la touche `F12`. Donc quand l’aide indique la combinaison `C-a`, il faut la remplacer par `F12`.
 
 Par exemple, `F12 %` scinde le volet actuel en deux volets verticaux.
 
@@ -305,7 +302,7 @@ Ci-dessous, la liste des raccourcis autres que `F12`.
 | F12    | —                                     |
 | ctrl-D | kill window                           |
 
-**À lire**
+#### À lire
 
 -   <https://www.digitalocean.com/community/tutorials/how-to-install-and-use-byobu-for-terminal-management-on-ubuntu-16-04>
 -   <https://superuser.com/a/818753/508141>
@@ -313,7 +310,7 @@ Ci-dessous, la liste des raccourcis autres que `F12`.
 ### TMUX
 
 > N.B. Ce chapitre est ici pour référence.
-> Je n’utilise plus Tmux directement, mais à travers [Byobu](#BYOBU).
+> Je n’utilise plus Tmux directement, mais à travers [Byobu](#byobu).
 
 ```bash
 sudo apt --assume-yes install tmux
@@ -532,14 +529,9 @@ sudo reboot
 
 ## Arrêter ou redémarrer un Raspberry
 
-Ce n’est pas une bonne idée de juste tirer la prise quand on veut arrêter ou redémarrer son Raspberry.
-En effet, au bout de quelque temps, le système se retrouve avec un grand nombre de fichiers partiels et probablement illisibles.
-Si des fichiers importants sont touchés, le Raspberry peut devenir inutilisable.
+Ce n’est pas une bonne idée de juste tirer la prise quand on veut arrêter ou redémarrer son Raspberry. En effet, au bout de quelque temps, le système se retrouve avec un grand nombre de fichiers partiels et probablement illisibles. Si des fichiers importants sont touchés, le Raspberry peut devenir inutilisable.
 
-Donc pour éteindre un Raspberry, on utilisera une des commandes ci-dessous.
-La différence entre elles n’est pas aussi évidente qu’il y parait :
-<https://unix.stackexchange.com/a/196471/199660>.
-Seule la commande `halt` éteint la LED rouge d’alimentation, donc je suppose que c’est celle qu’il faut privilégier.
+Donc pour éteindre un Raspberry, on utilisera une des commandes ci-dessous. La différence entre elles n’est pas aussi évidente qu’il y parait (voir <https://unix.stackexchange.com/a/196471/199660>). Seule la commande `halt` éteint la LED rouge d’alimentation, donc je suppose que c’est celle qu’il faut privilégier.
 
 > N. B. Attention, aucune de ces commandes ne coupe l’alimentation de la carte ou l’alimentation des ports USB.
 > Donc ce n’est pas une bonne option pour éjecter un disque externe par exemple.
@@ -648,6 +640,7 @@ Voici quelques explications sur ces informations.
 -   <https://devhints.io/bash>
 -   <https://www.gnu.org/software/bash/manual/html_node/Bourne-Shell-Builtins.html>
 
+<!-- Liens transmis par Johannes -->
 -   <https://funprojects.blog/2021/04/26/control-usb-powered-devices/>
 -   <https://raspberrypi.stackexchange.com/questions/118656/raspberry-pi4-uhubctl-bash-script-wont-run>
 -   <https://github.com/codazoda/hub-ctrl.c/issues/17>
