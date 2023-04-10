@@ -272,7 +272,10 @@ Les raccourcis claviers sont définis dans le fichier `f-keys.tmux` ([source](ht
 
 Sur macOS, la majorité des raccourcis n’est utilisable qu’à travers la touche `F12`. Donc quand l’aide indique la combinaison `C-a`, il faut la remplacer par `F12`.
 
-Par exemple, `F12 %` scinde le volet actuel en deux volets verticaux.
+Par exemple,
+
+-  `F12 %` scinde le volet actuel en deux volets verticaux.
+-  `F12 |` scinde le volet actuel en deux volets horizontaux.
 
 La liste de toutes les fonction `F12` est disponible avec la commande `F12 ?`.
 
