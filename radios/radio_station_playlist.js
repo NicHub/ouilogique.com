@@ -19,6 +19,15 @@ let radio_station_playlist = [
     },
     {
         "geo_name": "France",
+        "station_name": "Europe 2",
+        "live_urls": ["https://www.europe2.fr/webradios"],
+        "stream_urls": [
+            "http://europe2.lmn.fm/vr-wr2.mp3",
+            "http://europe2.lmn.fm/vr-wr2.aac"
+        ]
+    },
+    {
+        "geo_name": "France",
         "station_name": "France Culture",
         "live_urls": ["https://www.radiofrance.fr/franceculture"],
         "stream_urls": [
