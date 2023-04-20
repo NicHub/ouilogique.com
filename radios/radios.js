@@ -8,7 +8,7 @@
  */
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const loadScript = (fileURL, async = true, type = "text/javascript") => {
+const loadScript = (fileURL, async = false, type = "text/javascript") => {
     return new Promise((resolve, reject) => {
         try {
             const scriptElement = document.createElement("script");
