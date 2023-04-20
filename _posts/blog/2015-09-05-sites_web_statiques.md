@@ -41,17 +41,17 @@ redirect_from:
 ## GENERATORS I
 
 -   moveable type
--   [nanoc](http://nanoc.ws) (ruby)
+-   [nanoc](https://nanoc.ws) (ruby)
 -   jekyll (ruby) ⇒
 -   assemble ⇒ zurb
 -   stacey ⇒ mozilla WebFWD
 
 ## GENERATORS II
 
--   [assemble](http://assemble.io) ⇒ À regarder, basé sur Yeoman et Grunt
--   [Cactus](http://cactusformac.com)
--   [docpad](http://docpad.org)
--   [Dropplets](http://dropplets.com)
+-   [assemble](https://assemble.io) ⇒ À regarder, basé sur Yeoman et Grunt
+-   Cactus ~~(cactusformac.com)~~
+-   [docpad](https://docpad.org)
+-   [Dropplets](https://dropplets.com)
 -   [hexo](https://hexo.io)
 -   hugo
 -   hyde
@@ -65,7 +65,7 @@ redirect_from:
 
 ## MARKDOWN TOOLS
 
--   Web editor <http://dillinger.io>
+-   Web editor <https://dillinger.io>
 -   mouapp
 -   gitbook
 
@@ -88,18 +88,18 @@ redirect_from:
 
 ## CMS for flatfile gen
 
--   [Kirby](http://getkirby.com)
--   [Statamic](http://statamic.com) ⇒ ♡
--   [pico](http://picocms.org)
--   [stacey](http://www.staceyapp.com)
--   [cockpit](http://getcockpit.com) ⇒ SQLite
--   [monstra](http://monstra.org)
--   [razorCMS](http://www.razorcms.co.uk)
+-   [Kirby](https://getkirby.com)
+-   [Statamic](https://statamic.com) ⇒ ♡
+-   [pico](https://picocms.org)
+-   [stacey](https://github.com/kolber/stacey)
+-   [cockpit](https://getcockpit.com) ⇒ SQLite
+-   [monstra](https://monstra.org)
+-   [razorCMS](https://github.com/Ganginator/razorCMS)
 
 ### examples
 
 -   Statamic ⇒ [ASANA](https://asana.com)
--   Kirby ⇒ [World Backup Day](http://www.worldbackupday.com/fr/)
+-   Kirby ⇒ [World Backup Day](https://www.worldbackupday.com/fr/)
 
 ## DISCUSSION
 
@@ -121,7 +121,7 @@ don’t want to pay for bandwidth ⇒ YouTube, Vimeo
 d3js
 highchart
 
-<http://caniuse.com/>
+<https://caniuse.com/>
 
 ## Generator for CMS
 
@@ -131,15 +131,15 @@ WP ⇒ Wp-Super Cache
 
 ## Alternatives
 
--   [Hammer](http://hammerformac.com)
--   [Mixture](http://mixture.io) ⇒ Stopped, use Gulp or Grunt
--   [Cactus](http://cactusformac.com)
+-   [Hammer](https://hammerformac.com)
+-   [Mixture](https://mixture.io) ⇒ Stopped, use Gulp or Grunt
+-   Cactus ~~(cactusformac.com)~~
 
 ### À voir aussi
 
--   [codekit](http://incident57.com/codekit/)
--   [wufoo](http://www.wufoo.com)
--   [Parse](https://parse.com)
+-   [codekit](https://codekitapp.com/)
+-   [wufoo](https://www.wufoo.com)
+-   [Parse](https://parseplatform.org/)
 
 ## Comparing Static Site Engines with Brian Rinaldi
 
@@ -155,13 +155,13 @@ WP ⇒ Wp-Super Cache
 
 ### Harp
 
-<http://harpjs.com>
+<https://harpjs.com>
 
 ### roots (voir article)
 
 ## Bootstrap
 
-[18 Essential Bootstrap UI Editors](http://mashable.com/2013/10/20/bootstrap-editors/)
+[18 Essential Bootstrap UI Editors](https://mashable.com/2013/10/20/bootstrap-editors/)
 
 ## AASPIR
 

@@ -13,7 +13,7 @@ redirect_from:
     - /blog/Scanalogic-2_Logic_Analyzer/
 ---
 
-Mise en route de l’analyseur logique [Scanalogic-2](http://www.ikalogic.com/ikalogic-products/scanalogic-2/) que [Didel](http://didel.ch/) m’a envoyé cette semaine.
+Mise en route de l’analyseur logique Scanalogic-2 ~~(www.ikalogic.com/ikalogic-products/scanalogic-2/)~~ que [Didel](https://didel.ch/) m’a envoyé cette semaine.
 
 Ça fonctionne bien, même sur Mac.
 

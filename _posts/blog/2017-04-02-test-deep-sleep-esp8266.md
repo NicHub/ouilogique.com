@@ -40,7 +40,7 @@ author: Nico
 **Pour comparaison**
 
 -   un MSP430 consomme 230 µA en mode _Active_, 0.5 µA en mode _Standby_ et 0.1 µA en mode _Off_ ([Datasheet du MSP430](http://www.ti.com/lit/ds/symlink/msp430g2453.pdf)).
--   un ATtiny consomme 300 µA en mode _Active_ et 0.1 µA en mode _Power-down_ ([Datasheet de l’ATtiny](http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf)).
+-   un ATtiny consomme 300 µA en mode _Active_ et 0.1 µA en mode _Power-down_ ([Datasheet de l’ATtiny](https://ww1.microchip.com/downloads/en/devicedoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf)).
 
 ### Deep Sleep
 

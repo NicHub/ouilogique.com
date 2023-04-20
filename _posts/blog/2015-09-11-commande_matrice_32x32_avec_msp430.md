@@ -18,7 +18,7 @@ redirect_from:
 
 ## Référence de la matrice sur AliExpress
 
-<http://fr.aliexpress.com/item/p6-RGB-video-led-module-32-32-RGB-smd-led-module-export-korea/1677389664.html>
+<https://fr.aliexpress.com/item/1677389664.html>
 
 ## Launchpad
 
@@ -40,7 +40,7 @@ Le brochage est décrit au début du programme ci-dessous.
 
 ## Brochage des différents connecteurs de matrices
 
-~~http://www.ec086.com/Technical_support.html~~
+~~www.ec086.com/Technical_support.html~~
 
 ## Programme
 

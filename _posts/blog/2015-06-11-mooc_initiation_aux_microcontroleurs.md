@@ -15,11 +15,11 @@ redirect_from:
 
 Un peu de pub pour le cours de microcontrôleurs en ligne de l’EPFL :
 
-<https://www.coursera.org/course/microcontroleurs>
+<https://www.coursera.org/learn/microcontroleurs>
 
 Et voici le cours au format GitBook :
 
-<https://www.gitbook.com/book/nichub/initiation-aux-microcontroleurs/details>
+~~www.gitbook.com/book/nichub/initiation-aux-microcontroleurs/details~~
 
 ![](../../files/2015-06-11-mooc_initiation_aux_microcontroleurs/Microcontroleurs-v1.0.jpg)
 

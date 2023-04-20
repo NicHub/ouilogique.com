@@ -27,18 +27,18 @@ redirect_from:
 
 > Source principale
 
--   <http://www.didel.com/diduino/ProgrammerUnAtTiny.pdf>
+-   <https://www.didel.com/diduino/ProgrammerUnAtTiny.pdf>
 
 > Autres sources
 
--   <http://arduino.cc/en/Tutorial/ArduinoISP>
--   <http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf>
+-   <https://arduino.cc/en/Tutorial/ArduinoISP>
+-   <https://ww1.microchip.com/downloads/en/devicedoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf>
 
 > À voir aussi
 
--   <http://arduino.cc/en/Main/Standalone>
--   <http://arduino.cc/en/Tutorial/ArduinoToBreadboard>
--   <http://codeandlife.com/2012/03/21/using-arduino-uno-as-isp/>
+-   <https://arduino.cc/en/Main/Standalone>
+-   <https://arduino.cc/en/Tutorial/ArduinoToBreadboard>
+-   <https://codeandlife.com/2012/03/21/using-arduino-uno-as-isp/>
 
 ## Préambule
 
@@ -98,7 +98,7 @@ Cette opération est nécessaire pour les microcontrôleurs qui n’ont jamais �
 -   Charger le bootloader :
     -   `Outils/Graver la séquence d’initialisation`
 
-D’après [Didel](http://www.didel.com/diduino/ProgrammerUnAtTiny.pdf), ce n’est pas vraiment un _bootloader_ qui est chargé, mais une configuration des fusibles qui est réalisée.
+D’après [Didel](https://www.didel.com/diduino/ProgrammerUnAtTiny.pdf), ce n’est pas vraiment un _bootloader_ qui est chargé, mais une configuration des fusibles qui est réalisée.
 
 ## Programmer l’ATtiny
 
@@ -139,13 +139,13 @@ int main()
 
 ## Résolution de problèmes
 
-Certaines cartes UNO requièrent l’ajout d’un condensateur de 10 µF entre la pin `RESET` et la pin `GND`. Voir à ce sujet <http://forum.arduino.cc/index.php?topic=104435.0>. Pour moi, ça a fonctionné sans ce condensateur.
+Certaines cartes UNO requièrent l’ajout d’un condensateur de 10 µF entre la pin `RESET` et la pin `GND`. Voir à ce sujet <https://forum.arduino.cc/index.php?topic=104435.0>. Pour moi, ça a fonctionné sans ce condensateur.
 
 ## Programmation des fusibles
 
-> Les infos de ce chapitres m’ont été gracieusement transmises par [Richard](http://www.fablab-chene20.ch).
+> Les infos de ce chapitres m’ont été gracieusement transmises par Richard ~~(www.fablab-chene20.ch)~~.
 
-Les fusibles (_fuses_ en anglais) sont des paramètres intégrés aux microcontrôleurs d’Atmel et que l’on peut modifier à l’aide du programme [`avrdude`](http://www.nongnu.org/avrdude/user-manual/avrdude.html). C’est ce même programme qui est utilisé par l’IDE Arduino pour envoyer les fichiers compilés sur le microcontrôleur. On peut d’ailleurs voir ce qu’il fait de la manière suivante :
+Les fusibles (_fuses_ en anglais) sont des paramètres intégrés aux microcontrôleurs d’Atmel et que l’on peut modifier à l’aide du programme [`avrdude`](https://www.nongnu.org/avrdude/user-manual/avrdude.html). C’est ce même programme qui est utilisé par l’IDE Arduino pour envoyer les fichiers compilés sur le microcontrôleur. On peut d’ailleurs voir ce qu’il fait de la manière suivante :
 
 -   Ouvrir les préférences de l’IDE Arduino
 -   Cliquer sur le lien en bas de la fenêtre pour ouvrir le dossier contenant les préférences. Alternativement on peut directement éditer le fichier avec la commande `open ~/Library/Arduino15/preferences.txt`
@@ -202,7 +202,7 @@ avrdude: safemode: Fuses OK (H:FF, E:D7, L:62)
 
 ### Écriture des fusibles
 
-Pour configurer les fusibles, il est conseillé d’utiliser un outil de configuration, comme <http://www.engbedded.com/fusecalc/> ou de lire le chapitre _20. Memory Programming_ de la spécification <http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf>. La vidéo <https://www.youtube.com/watch?v=jP1NTgs-a-s> donne une bonne introduction en anglais.
+Pour configurer les fusibles, il est conseillé d’utiliser un outil de configuration, comme <https://www.engbedded.com/fusecalc/> ou de lire le chapitre _20. Memory Programming_ de la spécification <https://ww1.microchip.com/downloads/en/devicedoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf>. La vidéo <https://www.youtube.com/watch?v=jP1NTgs-a-s> donne une bonne introduction en anglais.
 
 Dans notre cas, nous allons simplement utiliser les valeurs données par l’utilitaire _fusecalc_ ci-dessus pour enlever la division par 8 de la fréquence d’horloge. La seule valeur que nous changeons est
 

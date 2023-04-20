@@ -13,11 +13,11 @@ redirect_from:
     - /blog/programmer_un_msp430_en_mode_ISP/
 ---
 
-Lors du [quatrième MOOC sur les µcontrôleurs de l’EPFL](https://www.coursera.org/course/microcontroleurs), Pierre-Yves Rochat nous a présenté comment utiliser une carte Launchpad pour programmer un MSP430 sur un breadboard. Cette façon de programmer est souvent appelée [ISP (in-system programmer) ou programmation in situ](http://fr.wikipedia.org/wiki/Programmation_in-situ) en français.
+Lors du [quatrième MOOC sur les µcontrôleurs de l’EPFL](https://www.coursera.org/learn/microcontroleurs), Pierre-Yves Rochat nous a présenté comment utiliser une carte Launchpad pour programmer un MSP430 sur un breadboard. Cette façon de programmer est souvent appelée [ISP (in-system programmer) ou programmation in situ](https://fr.wikipedia.org/wiki/Programmation_in-situ) en français.
 
 <!--
 Le document original peut être téléchargé ici :
-<http://pyr.ch/coursera/ExperiencesAvecLaunchpad.pdf>
+<https://pyr.ch/coursera/ExperiencesAvecLaunchpad.pdf>
 -->
 
 [Le document original au format PDF](../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/ExperiencesAvecLaunchpad.pdf)
@@ -40,10 +40,10 @@ Voilà le résultat final :
 
 -   Programmer un MSP sur breadboard (un MSP430G2231 dans cette application).
 -   Utiliser une découpeuse laser.
--   [Les plaques à souder Perma-Proto d’Adafruit](http://www.adafruit.com/blog/2011/11/18/adafruit-perma-proto-half-sized-breadboard-pcb-3-pack/) sont très pratiques.
+-   [Les plaques à souder Perma-Proto d’Adafruit](https://www.adafruit.com/blog/2011/11/18/adafruit-perma-proto-half-sized-breadboard-pcb-3-pack/) sont très pratiques.
 -   Que les LED RGB translucides sont très nettement moins lumineuses que les transparentes. J’utilise une LED translucide dans ce projet, mais j’ai un gadget similaire avec une LED transparente et la différence est frappante. J’aurais aussi dû être moins conservatif sur la question de la consommation et utiliser des résistances plus faibles.
 -   Qu’une LED éclaire beaucoup plus sur le dessus que sur les côtés.
--   Qu’il est horriblement long et compliqué de réaliser un projet, même aussi simple que celui-là quand on a pas de matériel. J’étais tributaire des horaires d’ouverture du [FabLab Chêne 20](http://www.fablab-chene20.ch) et ça a été la course permanente pour réaliser ce montage. Notez que j’ai réalisé deux autres versions : une qui ne sera jamais utilisée et une autre que j’ai offerte à Noël, mais qui ne contient pas le montage électronique, c’est donc un simple photophore pour y placer une bougie et il a une forme différente de celui que je présente ici.
+-   Qu’il est horriblement long et compliqué de réaliser un projet, même aussi simple que celui-là quand on a pas de matériel. J’étais tributaire des horaires d’ouverture du FabLab Chêne 20 ~~(www.fablab-chene20.ch)~~ et ça a été la course permanente pour réaliser ce montage. Notez que j’ai réalisé deux autres versions : une qui ne sera jamais utilisée et une autre que j’ai offerte à Noël, mais qui ne contient pas le montage électronique, c’est donc un simple photophore pour y placer une bougie et il a une forme différente de celui que je présente ici.
 
 <figure class="half">
 	<img src="../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_018.jpg" alt="image">
@@ -75,7 +75,7 @@ Et voilà le code pour faire des jolies transitions sur la LED RGB :
     Effet “Arc-en-ciel” sur une LED RGB. Idéal pour un gadget de Noël.
 
     L’algorithme “Arc-en-ciel RGB” vient de :
-    http://fightpc.blogspot.ch/2008/03/arduino-mood-light.html
+    https://fightpc.blogspot.ch/2008/03/arduino-mood-light.html
     https://sites.google.com/site/c4rjim/blog/lampara_colores2.pde
 
     Version MSP430
@@ -118,7 +118,7 @@ int main()
     // Configuration des LED en OUTPUT et de toutes les autres I/O en INPUT
     // avec Pulldown. Pour les I/O inutilisées, TI recommande de les
     // configurer soit en OUTPUT (PxOUT est sans importance) ou en INPUT avec
-    // Pullup/Pulldown (voir http://www.ti.com/lit/ug/slau144j/slau144j.pdf).
+    // Pullup/Pulldown (voir https://www.ti.com/lit/ug/slau144j/slau144j.pdf).
     // Comme le µcontrôleur sera moulé dans de la colle, si des impuretés
     // viennent à faire baisser la résistance, la solution INPUT/Pulldown
     // paraît plus sûre qu’OUTPUT ou INPUT/Pullup.

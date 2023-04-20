@@ -30,7 +30,7 @@ redirect_from:
 
 ## Support imprimé 3D
 
-<http://www.thingiverse.com/thing:1012855>
+<https://www.thingiverse.com/thing:1012855>
 
 <https://cad.onshape.com/documents/3f05e14ebb62415c928ff36e/w/d85b78be98c545f6ab2fd41f/e/7053fbf40382442182af2f67>
 
@@ -84,7 +84,7 @@ norme C 99 ⇒ permet des déclarations spéciales de struct
 ## Liens
 
 -   <http://jmkikori.no-ip.org/jmk/joomla-static/index.php/2-uncategorised/1-introduction-bluetooth-low-energy.html>
--   <https://developer.mbed.org/platforms/Nordic-nRF51-DK/>
+-   <https://os.mbed.com/platforms/Nordic-nRF51-DK/>
 -   [Bande industrielle, scientifique et médicale (Wikipédia)](https://fr.wikipedia.org/wiki/Bande_industrielle,_scientifique_et_médicale)
 -   [Bluetooth (Wikipédia)](https://fr.wikipedia.org/wiki/Bluetooth)
 -   [Bluetooth Accessory Design Guidelines for Apple Products](https://developer.apple.com/hardwaredrivers/BluetoothDesignGuidelines.pdf)
