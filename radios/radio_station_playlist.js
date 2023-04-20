@@ -13,8 +13,8 @@ let radio_station_playlist = [
         "station_name": "Europe 1",
         "live_urls": ["https://www.europe1.fr/direct-video"],
         "stream_urls": [
-            "https://stream.europe1.fr/europe1.mp3",
-            "http://stream.europe1.fr/europe1.aac"
+            "https://stream.europe1.fr/europe1.aac",
+            "https://stream.europe1.fr/europe1.mp3"
         ]
     },
     {
@@ -22,8 +22,8 @@ let radio_station_playlist = [
         "station_name": "Europe 2",
         "live_urls": ["https://www.europe2.fr/webradios"],
         "stream_urls": [
-            "http://europe2.lmn.fm/vr-wr2.mp3",
-            "http://europe2.lmn.fm/vr-wr2.aac"
+            "https://europe2.lmn.fm/vr-wr2.aac",
+            "https://europe2.lmn.fm/vr-wr2.mp3"
         ]
     },
     {
@@ -39,15 +39,15 @@ let radio_station_playlist = [
         "geo_name": "France",
         "station_name": "Radio 74",
         "live_urls": ["https://www.radio.fr/s/radio74"],
-        "stream_urls": ["http://radio74.ice.infomaniak.ch/radio74.aac"]
+        "stream_urls": ["https://radio74.ice.infomaniak.ch/radio74.aac"]
     },
     {
         "geo_name": "France",
         "station_name": "France Musique",
         "live_urls": ["https://www.radiofrance.fr/francemusique"],
         "stream_urls": [
-            "http://direct.francemusique.fr/live/francemusique-midfi.mp3",
-            "http://direct.francemusique.fr/live/francemusique-lofi.mp3"
+            "https://direct.francemusique.fr/live/francemusique-midfi.mp3",
+            "https://direct.francemusique.fr/live/francemusique-lofi.mp3"
         ]
     },
     {
