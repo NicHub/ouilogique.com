@@ -9,6 +9,12 @@
     <title>RADIOS</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.svg">
     <style>
+        /*
+            This empty style element is a dirty hack needed because without it, Google font import
+            makes the “spinner” in place of the favicon to spin forever.
+         */
+    </style>
+    <style>
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&family=League+Gothic&display=swap');
 
         body {
@@ -22,6 +28,7 @@
         }
 
         main {
+            display: flex;
             width: 80%;
             margin: 10px auto 100px;
             display: block;
