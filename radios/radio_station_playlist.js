@@ -12,6 +12,26 @@ let radio_station_playlist =
     },
     {
         "geo_name": "France",
+        "station_name": "Radiofrance — FIP : Rock",
+        "live_urls": [
+            "http://icecast.radiofrance.fr/fiprock-hifi.aac"
+        ],
+        "stream_urls": [
+            "https://www.radiofrance.fr/fip/radio-rock"
+        ]
+    },
+    {
+        "geo_name": "France",
+        "station_name": "Radiofrance — FIP : Pop",
+        "live_urls": [
+            "http://icecast.radiofrance.fr/fippop-hifi.aac"
+        ],
+        "stream_urls": [
+            "https://www.radiofrance.fr/fip/radio-pop"
+        ]
+    },
+    {
+        "geo_name": "France",
         "station_name": "Europe 1",
         "live_urls": [
             "https://www.europe1.fr/direct-video"

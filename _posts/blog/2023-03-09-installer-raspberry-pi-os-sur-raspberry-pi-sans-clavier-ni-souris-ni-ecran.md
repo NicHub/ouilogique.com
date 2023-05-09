@@ -103,11 +103,17 @@ nmap -sP 192.168.1.0/24
 ## Mise à jour de Raspbian
 
 ```bash
-sudo apt-get --assume-yes update
-sudo apt-get --assume-yes upgrade
-sudo apt-get --assume-yes dist-upgrade
-sudo apt-get --assume-yes autoremove
+sudo apt-get update --assume-yes
+sudo apt-get upgrade --assume-yes
+sudo apt-get dist-upgrade --assume-yes
+sudo apt-get autoremove --assume-yes
 ```
+
+> **Explications** > <br>sources
+> <br>- <https://www.lecoindunet.com/difference-apt-update-upgrade-full-upgrade> > <br>- <https://askubuntu.com/a/527421/949794> > <br>`sudo apt-get update` : Télécharge les informations des paquets à partir des sources configurées
+> <br>`sudo apt-get upgrade` : Mets à jour les paquets installés sans en supprimer.
+> <br>`sudo apt-get dist-upgrade` : Installe les versions candidates des paquets installés en installant ou en supprimant d’autres paquets si nécessaire.
+> <br>`sudo apt-get autoremove` : Supprime les dépendances qui ne sont plus utilisées.
 
 ## Configuration
 
@@ -134,6 +140,10 @@ TIMEFORMAT=$'\nElapsed time: %E'
 ##
 VENVPATH="$HOME/pyenv/bin/activate"
 if [[ -f "$VENVPATH" ]]; then source "$VENVPATH"; fi
+
+# If Byobu is installed, launch it at startup.
+[[ -f /usr/bin/byobu-launch ]] && _byobu_sourced=1 . /usr/bin/byobu-launch 2>/dev/null || true
+
 ```
 
 ```bash
@@ -185,6 +195,7 @@ chmod 644 ~/.ssh/mozilla_rsa.pub
 
 Par défaut, l’interface graphique est activée et elle consomme beaucoup de ressources.
 Donc si on ne l’utilise pas, il est conseillé de la désactiver.
+Malheureusement, lorsqu’elle est désactivée, les disques ne sont pas montés automatiquement lorsqu’on les connecte au RPi.
 
 ```bash
 sudo raspi-config
@@ -242,7 +253,7 @@ Byobu (<https://www.byobu.org/>) est un gestionnaire de fenêtres et un multiple
 Dans la terminologie de Byobu, une session est une instance de Byobu en cours d’exécution. Une session se compose d’une collection de fenêtres (_windows_), qui sont essentiellement des sessions shell, et de volets (_panes_), qui sont des sous-sections de fenêtre.
 
 ```bash
-sudo apt-get install byobu
+sudo apt-get install byobu --assume-yes
 byobu
 
 # Configurer les options de base en pressant sur F1
@@ -254,6 +265,7 @@ Change escape sequence
 Byobu currently does not launch at login (toggle on)
 ```
 
+<!--
 #### .bash_profile
 
 Pour charger `.bash_profile`, ajouter la commande suivante dans `~/.bashrc` :
@@ -261,6 +273,7 @@ Pour charger `.bash_profile`, ajouter la commande suivante dans `~/.bashrc` :
 ```bash
 _bash_profile_sourced=1 . ~/.bash_profile 2>/dev/null || true
 ```
+-->
 
 #### Raccourcis clavier
 
@@ -274,8 +287,8 @@ Sur macOS, la majorité des raccourcis n’est utilisable qu’à travers la tou
 
 Par exemple,
 
--  `F12 %` scinde le volet actuel en deux volets verticaux.
--  `F12 |` scinde le volet actuel en deux volets horizontaux.
+-   `F12 %` scinde le volet actuel en deux volets verticaux.
+-   `F12 |` scinde le volet actuel en deux volets horizontaux.
 
 La liste de toutes les fonction `F12` est disponible avec la commande `F12 ?`.
 
@@ -309,6 +322,12 @@ Ci-dessous, la liste des raccourcis autres que `F12`.
 
 -   <https://www.digitalocean.com/community/tutorials/how-to-install-and-use-byobu-for-terminal-management-on-ubuntu-16-04>
 -   <https://superuser.com/a/818753/508141>
+
+### iPython
+
+```bash
+python3 -m pip install ipython
+```
 
 ### TMUX
 
@@ -425,7 +444,7 @@ Dans le Finder :
 
 ```bash
 ⌘ K
-smb://raspberrypi.local
+smb://pi@raspberrypi.local
 ```
 
 ### Monter le disque partagé sur Windows
@@ -433,7 +452,7 @@ smb://raspberrypi.local
 Voir
 <https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-drive>
 
-On peu aussi entrer le chemin d’accès au Raspberry au [format UNC](<https://en.wikipedia.org/wiki/Path_(computing)#Universal_Naming_Convention>) directement dans la barre d’adresse de l’explorateur Windows (raccourcis Win+E, Ctrl+L)
+On peu aussi entrer le chemin d’accès au Raspberry au [format UNC](<https://en.wikipedia.org/wiki/Path_(computing)#Universal_Naming_Convention>) directement dans la barre d’adresse de l’explorateur Windows (raccourcis Win+E, Ctrl+L).
 
 ```bash
 \\raspberrypi.local
@@ -530,11 +549,32 @@ sudo usermod -a -G input $USER
 sudo reboot
 ```
 
+### torsocks
+
+Torsocks permet d’utiliser le réseau Tor en ligne de commande, autrement dit, il permet de “torifier” la ligne de commande.
+
+```bash
+sudo apt-get install torsocks --assume-yes
+ANS=$(torsocks wget -qO- https://check.torproject.org/api/ip)
+echo $ANS
+# {"IsTor":true,"IP":"××.××.××.××"}
+```
+
+## YouTube-DL
+
+```bash
+python3 -m pip install --force-reinstall https://github.com/yt-dlp/yt-dlp/archive/master.tar.gz
+```
+
 ## Arrêter ou redémarrer un Raspberry
 
-Ce n’est pas une bonne idée de juste tirer la prise quand on veut arrêter ou redémarrer son Raspberry. En effet, au bout de quelque temps, le système se retrouve avec un grand nombre de fichiers partiels et probablement illisibles. Si des fichiers importants sont touchés, le Raspberry peut devenir inutilisable.
+Ce n’est pas une bonne idée de juste tirer la prise quand on veut arrêter ou redémarrer son Raspberry.
+En effet, au bout de quelque temps, le système se retrouve avec un grand nombre de fichiers partiels et probablement illisibles.
+Si des fichiers importants sont touchés, le Raspberry peut devenir inutilisable.
 
-Donc pour éteindre un Raspberry, on utilisera une des commandes ci-dessous. La différence entre elles n’est pas aussi évidente qu’il y parait (voir <https://unix.stackexchange.com/a/196471/199660>). Seule la commande `halt` éteint la LED rouge d’alimentation, donc je suppose que c’est celle qu’il faut privilégier.
+Donc pour éteindre un Raspberry, on utilisera une des commandes ci-dessous.
+La différence entre elles n’est pas aussi évidente qu’il y parait (voir <https://unix.stackexchange.com/a/196471/199660>).
+Seule la commande `halt` éteint la LED rouge d’alimentation, donc je suppose que c’est celle qu’il faut privilégier.
 
 > N. B. Attention, aucune de ces commandes ne coupe l’alimentation de la carte ou l’alimentation des ports USB.
 > Donc ce n’est pas une bonne option pour éjecter un disque externe par exemple.
@@ -644,6 +684,7 @@ Voici quelques explications sur ces informations.
 -   <https://www.gnu.org/software/bash/manual/html_node/Bourne-Shell-Builtins.html>
 
 <!-- Liens transmis par Johannes -->
+
 -   <https://funprojects.blog/2021/04/26/control-usb-powered-devices/>
 -   <https://raspberrypi.stackexchange.com/questions/118656/raspberry-pi4-uhubctl-bash-script-wont-run>
 -   <https://github.com/codazoda/hub-ctrl.c/issues/17>
