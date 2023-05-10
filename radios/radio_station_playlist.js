@@ -14,20 +14,20 @@ let radio_station_playlist =
         "geo_name": "France",
         "station_name": "Radiofrance — FIP : Rock",
         "live_urls": [
-            "http://icecast.radiofrance.fr/fiprock-hifi.aac"
+            "https://www.radiofrance.fr/fip/radio-rock"
         ],
         "stream_urls": [
-            "https://www.radiofrance.fr/fip/radio-rock"
+            "http://icecast.radiofrance.fr/fiprock-hifi.aac"
         ]
     },
     {
         "geo_name": "France",
         "station_name": "Radiofrance — FIP : Pop",
         "live_urls": [
-            "http://icecast.radiofrance.fr/fippop-hifi.aac"
+            "https://www.radiofrance.fr/fip/radio-pop"
         ],
         "stream_urls": [
-            "https://www.radiofrance.fr/fip/radio-pop"
+            "http://icecast.radiofrance.fr/fippop-hifi.aac"
         ]
     },
     {
