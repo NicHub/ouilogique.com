@@ -8,8 +8,7 @@
     <title>RADIOS</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&family=League+Gothic&display=swap');
-    </style>
-    <style>
+
         body {
             background-color: rgb(30, 30, 30);
             color: burlywood;
@@ -75,7 +74,7 @@
             border-radius: 40px;
         }
 
-        p.bottom_links {
+        footer p {
             color: #CCC;
         }
     </style>
@@ -85,22 +84,26 @@
 <body>
     <h1>RADIOS</h1>
     <main id="target"></main>
-    <p style="margin:100px 0; font-size:50pt; color:bisque;">𝄞</p>
-    <p class="bottom_links">
-        <a href="https://gist.github.com/NicHub/af77e134f69d06a90df4ff1e99e83b90">Enceintes Bluetooth</a>
-    </p>
-    <p class="bottom_links">
-        <a href="https://fluxradios.blogspot.com/">fluxradios.blogspot.com</a>
-    </p>
-    <p class="bottom_links">
-        <a href="https://www.ecouter-en-direct.com/">www.ecouter-en-direct.com</a>
-    </p>
-    <p class="bottom_links">
-        <a href="https://www.emetteurs.ch/wiki/index.php/La_bande_FM_et_DAB%2B_à_Lausanne">Radios région lausannoise</a>
-    </p>
+    <footer>
+        <p style="margin:100px 0; font-size:50pt; color:bisque;">𝄞</p>
+        <p>
+            <a href="https://gist.github.com/NicHub/af77e134f69d06a90df4ff1e99e83b90">Enceintes Bluetooth</a>
+        </p>
+        <p>
+            <a href="https://fluxradios.blogspot.com/">fluxradios.blogspot.com</a>
+        </p>
+        <p>
+            <a href="https://www.ecouter-en-direct.com/">www.ecouter-en-direct.com</a>
+        </p>
+        <p>
+            <a href="https://www.emetteurs.ch/wiki/index.php/La_bande_FM_et_DAB%2B_à_Lausanne">Radios région
+                lausannoise</a>
+        </p>
+    </footer>
     <script>
+        "use strict";
         const timestamp = new Date().getTime();
-        document.write('<script src="radios.js?t=' + timestamp + '"><\/script>');
+        document.write(`<script src="radios.js?t=${timestamp}"><\/script>`);
     </script>
 </body>
 
