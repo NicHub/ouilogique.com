@@ -17,7 +17,7 @@ let radio_station_playlist =
             "https://www.radiofrance.fr/fip/radio-rock"
         ],
         "stream_urls": [
-            "http://icecast.radiofrance.fr/fiprock-hifi.aac"
+            "https://icecast.radiofrance.fr/fiprock-hifi.aac"
         ]
     },
     {
@@ -27,7 +27,7 @@ let radio_station_playlist =
             "https://www.radiofrance.fr/fip/radio-pop"
         ],
         "stream_urls": [
-            "http://icecast.radiofrance.fr/fippop-hifi.aac"
+            "https://icecast.radiofrance.fr/fippop-hifi.aac"
         ]
     },
     {
