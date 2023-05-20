@@ -6,9 +6,10 @@ shopt -s expand_aliases
 alias inkscape='/Applications/Inkscape.app/Contents/MacOS/Inkscape'
 
 FILE_NAMES=(
-    favicon
+    favicon_512x512
 )
 for file_name in "${FILE_NAMES[@]}"; do
+    echo "PROCESSING ${file_name}"
 
     inkscape                      \
         --export-area-page        \

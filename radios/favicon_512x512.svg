@@ -3,20 +3,26 @@
     xmlns="http://www.w3.org/2000/svg">
     <title>RADIO ICON</title>
     <style type="text/css">
-        svg {
-            background: transparent;
+        #bkg_for_dumb_inkscape path {
+            fill: black;
+            stroke: black;
         }
 
         path,
         circle {
             stroke: goldenrod;
-            stroke-width: 2.5;
             stroke-linecap: round;
             stroke-linejoin: round;
         }
 
         circle {
+            stroke-width: 2;
+            opacity: 1;
             fill: none;
+        }
+
+        path {
+            stroke-width: 1;
         }
     </style>
 
@@ -28,14 +34,28 @@
 
         <g id="d2">
             <path d="
-            M-12, -3.5 h24
-            M-12,  3.5 h24
+            M -7.66 -10.5      7.66 -10.5
+            M-10.95  -7.0     10.95  -7.0
+            M-12.52  -3.5     12.52  -3.5
+            M-13.0    0.0     13.0    0.0
+            M-12.52   3.5     12.52   3.5
+            M-10.95   7.0     10.95   7.0
+            M -7.66  10.5      7.66  10.5
+            " />
+        </g>
+
+        <g id="bkg_for_dumb_inkscape">
+            <path d="
+            M -15 -15 h30 v30 h-30 z
             " />
         </g>
 
     </defs>
 
     <g>
+        <g>
+            <use xlink:href="#bkg_for_dumb_inkscape" />
+        </g>
         <g transform="rotate(0)">
             <use xlink:href="#d2" />
         </g>
