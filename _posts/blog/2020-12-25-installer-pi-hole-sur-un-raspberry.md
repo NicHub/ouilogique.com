@@ -154,8 +154,8 @@ Les Adlists sont stockées dans des fichiers textes qu’il est possible de tél
 scp 'pi@192.168.1.28:/etc/pihole/*.domains' .
 
 # Concatène tous les fichiers,
-# classe les URL par ordre alphabétique
-# et supprime les doublons.
+# classe les URL par ordre alphabétique
+# et supprime les doublons.
 cat *.domains | sort | uniq -u > pihole_adlist_urls_sorted_unique.txt
 
 # Compte les URL.
@@ -208,7 +208,7 @@ echo "SELECT domain,count(domain) FROM queries WHERE (STATUS == 2 OR STATUS == 3
 # L’exécuter depuis Bash :
 cat ~/get_queried_most.sql | sqlite3 "/etc/pihole/pihole-FTL.db"
 
-# Ou l’exécuter depuis le shell SQLite3 :
+# Ou l’exécuter depuis le shell SQLite3 :
 sqlite3 "/etc/pihole/pihole-FTL.db"
 .read /home/pi/get_queried_most.sql
 ```

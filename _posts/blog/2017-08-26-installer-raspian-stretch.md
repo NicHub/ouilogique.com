@@ -235,7 +235,7 @@ tmux kill-session -t 0 # détruit une session détachée
 nano ~/.tmux.conf
 # et ajouter le paramètre
 set-option -g mouse on
-# Il ne s’appliquera qu’aux nouveaux shells et pas
+# Il ne s’appliquera qu’aux nouveaux shells et pas
 # aux shells existants, mais on peut le faire dans
 # chaque shell individuel avec la commande
 tmux set-option -g mouse on

@@ -66,7 +66,7 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 | `<F4>` | défilement vers le bas    |
 | `<F5>` | clignote                  |
 
-## Combinaisons de modes de défilements possibles sur deux lignes
+## Combinaisons de modes de défilements possibles sur deux lignes
 
 |        |      |      |      |      |      |      |      |      |      |      |      |
 | --     | --   | --   | --   | --   | --   | --   | --   | --   | --   | --   | --   |
