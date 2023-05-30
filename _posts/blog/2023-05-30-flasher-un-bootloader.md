@@ -56,9 +56,9 @@ Le flashage du bootloader se fait en trois temps.
 -   Ensuite on configure le type de programmateur à la valeur `Arduino as ISP` dans le menu `Tools/Programmer: "Arduino as ISP"`.
 -   Enfin, on flashe le bootloader de la cible avec la fonction `Burn bootloader` tout en bas du menu `Tools`.
 
-# Vérification
+## Vérification
 
-Pour vérifier que le flashage s’est bien déroulé, on peut programme la cible en utilisant le programmeteur. Pour cela, il faut vérifier que le type de programmateur est toujours configuré à `Arduino as ISP` (voir ci-dessus), puis utiliser la commande `Upload using programmer` du menu `Sketch`.
+Pour vérifier que le flashage s’est bien déroulé, on peut programmer la cible en utilisant le programmateur. Pour cela, il faut vérifier que le type de programmateur est toujours configuré à `Arduino as ISP` (voir ci-dessus), puis utiliser la commande `Upload using programmer` du menu `Sketch`.
 
 > Attention, si on utilise la commande `Upload` conventionnelle, c’est le programmateur qui sera programmé et pas la cible. Dans tous les cas, ce n’est pas grave, il suffit d’uploader à nouveau le programme `Arduino as ISP` sur le programmateur.
 
