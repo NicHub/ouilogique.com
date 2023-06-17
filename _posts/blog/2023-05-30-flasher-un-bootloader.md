@@ -40,19 +40,20 @@ Il faut connecter une à une les broches ICSP qui se trouvent à l’arrière de
 À noter que les broches ICSP se trouvent à deux endroits :
 
 -   À l’arrière de la carte
--   Sur les côté de la carte (broches usuelles)
+-   Sur les côtés de la carte (broches usuelles)
 
 Sur l’Aduino UNO, il y a deux groupes de broches ICSP.
 Celui qui nous intéresse ici est à l’arrière de la carte.
-L’autre groupe qui est proche du connecteur USB permet de programmer la puce ATmega16U2 qui permet la communication sur le bus USB.
+L’autre groupe qui est proche du connecteur USB permet de programmer la puce ATmega16U2 qui permet la communication sur le bus USB.
 
 Consulter les brochages ici pour plus de détail : <https://ouilogique.com/pinouts/>.
 
-> Attention, les broches ICSP sont tournées de 180° entre le UNO et le Nano si on prend le connecteur USB comme référence.
+> Attention : l’orientation des broches ICSP sur le UNO et le Nano sont différentes.
+> Elles sont tournées de 180° l’une par rapport à l’autre, en utilisant le connecteur USB comme référence.
 
 Voir aussi la page <https://qastack.fr/arduino/40098/icsp-pin-what-is-it-actually>.
 
-Je conseille également de connecter trois LEDs sur les broches 7, 8 et 9.
+Je conseille également de connecter trois LEDs sur les broches 7, 8 et 9.
 C’est optionnel, mais ces LEDs aident beaucoup à comprendre ce qui se passe.
 
 | Broche | Signal      |
@@ -85,7 +86,7 @@ avrdude -C $AVRDUDE_CONF -v -p atmega328p -c arduino -P /dev/cu.usbmodem4012401
 On peut aussi programmer la cible en utilisant le programmateur.
 Ceci aura pour effet d’effacer le bootloader et on récupérera donc la place qu’il prend en mémoire, soit environ 512 octets.
 De plus les programmes s’exécuteront sans délai lorsque le microcontrôleur est mis sous tension.
-Ceci est dû au fait que le bootloader attend 1 ou 2 secondes au démarrage pour permettre la programmation par le port série.
+Ceci est dû au fait que le bootloader attend 1 ou 2 secondes au démarrage pour permettre la programmation par le port série.
 
 Pour vérifier si un bootloader est présent, il faut redémarrer la carte en appuyant sur le bouton _reset_ et observer l’état de la LED intégrée.
 Si elle clignote rapidement pendant environ une seconde puis fait une pause d’environ une seconde aussi, c’est que le bootloader est présent.
@@ -105,4 +106,4 @@ Pour programmer la cible en utilisant le programmateur, il faut :
 
 > Si on essaie de programmer un microcontrôleur qui n’a pas de bootloader via le port série, l’upload échouera avec l’erreur `programmer is not responding`.
 
-> Si on programme le microcontrôleur avec un programmateur, il faut débrancher les éventuels composants qui seraient connecté aux broches ICSP.
+> Si on programme le microcontrôleur avec un programmateur, il faut débrancher les éventuels composants qui seraient connectés aux broches ICSP.
