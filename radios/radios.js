@@ -89,7 +89,6 @@ function main() {
         }
     }
     document.getElementById("target").innerHTML = html_code;
-    console.log(html_code);
 }
 
 function pause_other(_e) {
