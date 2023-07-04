@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Fira Code";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(FiraCode-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Fira Code";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(FiraCode-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(LeagueGothic-Regular-VariableFont_wdth.ttf) format("truetype");
+}
