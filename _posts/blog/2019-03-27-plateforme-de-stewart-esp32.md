@@ -457,6 +457,8 @@ Stewart’s Platform. Microcontrollers: ATMega 1284PA, ATMega 8. Servos: TowerPr
 
 <https://upcommons.upc.edu/bitstream/handle/2117/101560/Memoria_TFG_Aitor_Ramirez.pdf?sequence=1&isAllowed=y>
 
-<https://youtu.be/hkoTRNfivbU>
+[Fast Programming of 6-DOF Hexapod 6-Axis Motion Stewart Platform: Software, Mechanics, Controller](https://youtu.be/hkoTRNfivbU)
 
-<https://youtu.be/fDgqAfzSy0c>
+[Stewart Platform Joystick](https://youtu.be/fDgqAfzSy0c)
+
+[I Built a Ball Balancing Robot](https://youtu.be/v4F-cGDGiEw)
