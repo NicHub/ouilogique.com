@@ -63,16 +63,16 @@ let radio_station_playlist =
             "https://direct.franceculture.fr/live/franceculture-midfi.mp3"
         ]
     },
-    {
-        "geo_name": "France",
-        "station_name": "Radio 74",
-        "live_urls": [
-            "https://www.radio.fr/s/radio74"
-        ],
-        "stream_urls": [
-            "https://radio74.ice.infomaniak.ch/radio74.aac"
-        ]
-    },
+    // {
+    //     "geo_name": "France",
+    //     "station_name": "Radio 74",
+    //     "live_urls": [
+    //         "https://www.radio.fr/s/radio74"
+    //     ],
+    //     "stream_urls": [
+    //         "https://radio74.ice.infomaniak.ch/radio74.aac"
+    //     ]
+    // },
     {
         "geo_name": "France",
         "station_name": "France Musique",
