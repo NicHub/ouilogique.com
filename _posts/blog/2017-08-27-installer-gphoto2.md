@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Installer GPHOTO2"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

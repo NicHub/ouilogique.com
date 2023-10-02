@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Sandwich de WEMOS"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

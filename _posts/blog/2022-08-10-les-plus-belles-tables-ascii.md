@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Les plus belles tables ASCII"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

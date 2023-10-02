@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Test de décharge de batteries"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

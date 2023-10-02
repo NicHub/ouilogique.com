@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "BMP280 avec Arduino Pro Mini"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

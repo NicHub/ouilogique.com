@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Introduction au langage JavaScript"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

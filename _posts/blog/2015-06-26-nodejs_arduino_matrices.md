@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Commander des Arduino avec Node.js"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:
@@ -12,6 +9,7 @@ date: 2015-06-26T17:15:00+01:00
 author: Nico
 redirect_from:
     - /blog/nodejs_arduino_matrices/
+published: true
 ---
 
 Le système est géré avec un Raspberry Pi B+ avec :

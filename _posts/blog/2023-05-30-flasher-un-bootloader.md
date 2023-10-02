@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Flasher un bootloader"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

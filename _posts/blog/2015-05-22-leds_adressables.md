@@ -2,12 +2,8 @@
 lang: fr
 layout: page
 title: "LED adressables"
-excerpt:
-categories:
 tags: [LED, PWM, NeoPixel, FastLED]
 author: Nico
-comments: true
-share: true
 image:
     feature: 2015-02-23_microDelta_002.jpg
 date: 2015-05-22T12:00:00+02:00

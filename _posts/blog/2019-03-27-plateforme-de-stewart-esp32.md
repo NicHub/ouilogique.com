@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Plateforme de Stewart pilotée avec un ESP32"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature: 2021-04-24-proto-plateforme-de-stewart_001.jpg

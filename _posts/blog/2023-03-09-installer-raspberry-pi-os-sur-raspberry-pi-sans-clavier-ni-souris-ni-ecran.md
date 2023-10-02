@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Installer Raspberry Pi OS sur Raspberry Pi sans clavier, ni souris, ni écran"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

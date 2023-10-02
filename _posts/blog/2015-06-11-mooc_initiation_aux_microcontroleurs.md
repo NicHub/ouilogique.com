@@ -1,17 +1,15 @@
 ---
+author: Nico
+date: 2015-06-11 12:00:00+01:00
+image:
+  feature: null
 lang: fr
 layout: page
-title: "MOOC — Initiation aux microcontrôleurs"
-modified:
-categories:
-excerpt:
-tags: []
-image:
-    feature:
-date: 2015-06-11T12:00:00+01:00
-author: Nico
+published: true
 redirect_from:
-    - /blog/mooc_initiation_aux_microcontroleurs/
+- /blog/mooc_initiation_aux_microcontroleurs/
+tags: []
+title: "MOOC \u2014 Initiation aux microcontr\xF4leurs"
 ---
 
 Un peu de pub pour le cours de microcontrôleurs en ligne de l’EPFL :

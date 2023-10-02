@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Test de hubs USB"
-modified: 2015-11-20T12:00:00+01:00
-categories:
-excerpt:
 tags: []
 image:
     feature:
@@ -12,6 +9,7 @@ date: 2015-07-02T09:47:00+01:00
 author: Nico
 redirect_from:
     - /blog/usb_hub_test/
+published: true
 ---
 
 -   [Test du hub _Anne LXL4072201A_](#test-du-hub-anne-lxl4072201a)

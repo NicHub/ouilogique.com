@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Horloge à cycles ultradiens"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

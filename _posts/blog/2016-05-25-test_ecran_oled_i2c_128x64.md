@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Test d’un écran OLED 128×64 I²C"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

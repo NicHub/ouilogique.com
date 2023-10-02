@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Introduction au langage CSS"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

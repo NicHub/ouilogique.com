@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "NeoPixel sur Raspberry Pi"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Programme basique pour commander un servomoteur"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

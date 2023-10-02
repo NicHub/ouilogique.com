@@ -2,13 +2,9 @@
 lang: fr
 layout: page
 title: "Tête d’impression chinoise pour µDelta"
-excerpt:
-categories:
 tags: [Impression 3D]
 author: Nico
-comments_: true
-share: true
-image_:
+image:
     feature: 2015-02-23_microDelta_002.jpg
 date: 2015-05-24T12:00:00+02:00
 published: true

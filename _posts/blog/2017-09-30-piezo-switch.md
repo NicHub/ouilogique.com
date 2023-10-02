@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Bouton piézoélectrique sur Arduino"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

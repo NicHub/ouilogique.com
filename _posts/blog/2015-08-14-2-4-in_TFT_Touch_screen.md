@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: 'Test d’un écran TFT 2.4"'
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature: TFT_screen_2.jpg

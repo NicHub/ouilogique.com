@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Humour Matplotlib"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

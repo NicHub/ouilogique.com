@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Relai commandé par microcontrôleur"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

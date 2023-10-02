@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Installer Mosquitto MQTT avec WebSocket sur un Raspberry Pi"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

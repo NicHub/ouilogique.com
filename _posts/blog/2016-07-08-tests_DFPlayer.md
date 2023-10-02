@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Tests de modules DFPlayer"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

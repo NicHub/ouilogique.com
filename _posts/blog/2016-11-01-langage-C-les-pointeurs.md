@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Les pointeurs en C"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:

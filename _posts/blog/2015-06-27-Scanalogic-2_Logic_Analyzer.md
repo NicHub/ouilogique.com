@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Analyseur logique Scanalogic-2"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:
@@ -12,6 +9,7 @@ date: 2015-06-27T20:44:00+01:00
 author: Nico
 redirect_from:
     - /blog/Scanalogic-2_Logic_Analyzer/
+published: true
 ---
 
 Mise en route de l’analyseur logique Scanalogic-2 ~~(www.ikalogic.com/ikalogic-products/scanalogic-2/)~~ que [Didel](https://didel.ch/) m’a envoyé cette semaine.

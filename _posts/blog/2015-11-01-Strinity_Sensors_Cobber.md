@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Mise en route d’un capteur de pression, température et humidité <em>Strinity Sensors Cobber</em> I²C"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature: Strinity_Sensors_Cobber_001.jpg

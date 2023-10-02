@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Programmer un MSP430 en mode ISP"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature:
@@ -12,6 +9,7 @@ date: 2015-01-07T12:00:00+01:00
 author: Nico
 redirect_from:
     - /blog/programmer_un_msp430_en_mode_ISP/
+published: true
 ---
 
 Lors du [quatrième MOOC sur les µcontrôleurs de l’EPFL](https://www.coursera.org/learn/microcontroleurs), Pierre-Yves Rochat nous a présenté comment utiliser une carte Launchpad pour programmer un MSP430 sur un breadboard. Cette façon de programmer est souvent appelée [ISP (in-system programmer) ou programmation in situ](https://fr.wikipedia.org/wiki/Programmation_in-situ) en français.

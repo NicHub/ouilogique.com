@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Afficheur à LED 128×16"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature: 2015-11-26-afficheur_a_led_128x16_010.jpg

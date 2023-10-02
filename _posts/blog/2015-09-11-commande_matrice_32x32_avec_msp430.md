@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Commande d’une matrice 32×32 avec un MSP430"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature: msp430-mx32x32.jpg

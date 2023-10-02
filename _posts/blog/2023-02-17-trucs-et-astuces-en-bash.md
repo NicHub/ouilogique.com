@@ -2,8 +2,6 @@
 lang: fr
 layout: page
 title: "Trucs et astuces en Bash"
-categories:
-excerpt:
 tags: []
 image:
     feature:

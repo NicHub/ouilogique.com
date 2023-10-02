@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Neopixel Didel WS2813"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature: 2017-04-27-neopixel-didel-ws2813-000.jpg

@@ -2,9 +2,6 @@
 lang: fr
 layout: page
 title: "Découverte du Bluetooth Low Energy avec la carte Nordic Semiconductor nRF51"
-modified:
-categories:
-excerpt:
 tags: []
 image:
     feature: nRF51.jpg
