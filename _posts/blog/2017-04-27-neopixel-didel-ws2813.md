@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Neopixel Didel WS2813"
 modified:

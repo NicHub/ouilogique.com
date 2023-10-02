@@ -1,14 +1,16 @@
 ---
+lang: fr
 layout: page
 title: "Tête d’impression chinoise pour µDelta"
 excerpt:
 categories:
 tags: [Impression 3D]
 author: Nico
-comments: true
+comments_: true
 share: true
-image:
+image_:
     feature: 2015-02-23_microDelta_002.jpg
+date: 2015-05-24T12:00:00+02:00
 published: true
 redirect_from:
     - /blog/tete-impression/
@@ -16,22 +18,37 @@ redirect_from:
 
 Ma [µDelta](https://www.reprap-france.com) a [une nouvelle tête d’impression](https://s.click.aliexpress.com/e/J2zVfYFAq) nettement plus longue que l’originale, mais elle fonctionne nettement mieux.
 
-![](../../files/2015-05-24-tete-impression/images/2015-05-24_hotend_6628216843.jpg)
+
+[![ouilogique.com][img_1]][img_1]
+
+[img_1]: ../../files/2015-05-24-tete-impression/images/2015-05-24_hotend_6628216843.jpg
 
 Petit souci cependant, l’étalonnage de Reprap-France ne fonctionne plus... Il faut donc ruser en modifiant directement le réglage _Z max length [mm]_ du Firmware enregistré sur l’EEPROM de la carte Teensylu.
 
-![](../../files/2015-05-24-tete-impression/images/FirmwareEEPROMSettings_1.png)
+[![ouilogique.com][img_2]][img_2]
 
-![](../../files/2015-05-24-tete-impression/images/FirmwareEEPROMSettings_2.png)
+[img_2]: ../../files/2015-05-24-tete-impression/images/FirmwareEEPROMSettings_1.png
 
-<figure class="half">
-	<img src="../../files/2015-05-24-tete-impression/images/910737-Voronoi_Klein_Bottle_001.jpg" alt="image">
-	<img src="../../files/2015-05-24-tete-impression/images/910737-Voronoi_Klein_Bottle_002.jpg" alt="image">
-	<figcaption><a href="https://www.thingiverse.com/thing:910737">Voronoi Klein Bottle — Thingiverse 910737</a></figcaption>
-</figure>
+[![ouilogique.com][img_3]][img_3]
 
-<figure class="half">
-	<img src="../../files/2015-05-24-tete-impression/images/910737-Voronoi_Klein_Bottle_003.jpg" alt="image">
-	<img src="../../files/2015-05-24-tete-impression/images/910737-Voronoi_Klein_Bottle_004.jpg" alt="image">
-	<figcaption><a href="https://www.thingiverse.com/thing:910737">Voronoi Klein Bottle — Thingiverse 910737</a></figcaption>
-</figure>
+[img_3]: ../../files/2015-05-24-tete-impression/images/FirmwareEEPROMSettings_2.png
+
+
+[![ouilogique.com][i3]{:style="width:50%; float:left"}][i3]
+
+[i3]: ../../files/2015-05-24-tete-impression/images/910737-Voronoi_Klein_Bottle_001.jpg
+
+[![ouilogique.com][i4]{:style="width:50%; float:left"}][i4]
+
+[i4]: ../../files/2015-05-24-tete-impression/images/910737-Voronoi_Klein_Bottle_002.jpg
+
+[![ouilogique.com][i5]{:style="width:50%; float:left"}][i5]
+
+[i5]: ../../files/2015-05-24-tete-impression/images/910737-Voronoi_Klein_Bottle_003.jpg
+
+[![ouilogique.com][i6]{:style="width:50%; float:left; clear:right; margin-bottom:200px;"}][i6]
+
+[i6]: ../../files/2015-05-24-tete-impression/images/910737-Voronoi_Klein_Bottle_004.jpg
+
+
+[Voronoi Klein Bottle — Thingiverse 910737](https://www.thingiverse.com/thing:910737)

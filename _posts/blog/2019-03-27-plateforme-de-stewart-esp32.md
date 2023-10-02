@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Plateforme de Stewart pilotée avec un ESP32"
 modified:

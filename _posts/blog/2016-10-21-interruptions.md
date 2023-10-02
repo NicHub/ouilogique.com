@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "External interrupts on the ATmega168/328"
 modified:

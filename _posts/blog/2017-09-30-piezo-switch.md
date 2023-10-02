@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Bouton piézoélectrique sur Arduino"
 modified:

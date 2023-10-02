@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Test du deep sleep de l’ESP8266"
 modified:

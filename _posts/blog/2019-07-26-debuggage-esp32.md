@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Débuggage sur ESP32 avec un <em>ESP&#8209;Prog</em> et <em>PIO Unified Debugger</em>"
 modified:

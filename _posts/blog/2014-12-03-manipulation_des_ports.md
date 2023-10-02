@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "La manipulation des entrées-sorties à l’aide des registres de port"
 modified:

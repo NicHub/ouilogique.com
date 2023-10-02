@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Générateurs de sites web statiques"
 modified:

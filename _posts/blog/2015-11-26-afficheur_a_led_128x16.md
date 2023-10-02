@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Afficheur à LED 128×16"
 modified:

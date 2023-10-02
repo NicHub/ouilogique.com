@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Commande d’un relai bistable 240 V avec un Arduino Pro Mini"
 modified:

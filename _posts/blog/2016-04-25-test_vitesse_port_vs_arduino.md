@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Test de vitesse entre les fonctions de manipulation de ports et les fonctions Arduino"
 modified:
@@ -6,7 +7,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2016-04-25T19:35:00+02:00
 published: true
 author: Nico

@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Analyseur logique Scanalogic-2"
 modified:

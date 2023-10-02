@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Mise en route d’une carte <em>Amica</em> avec le firmware NodeMCU et un module WiFi ESP8266"
 modified:

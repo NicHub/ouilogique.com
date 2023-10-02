@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Installer Pi-hole sur un Raspberry"
 modified:

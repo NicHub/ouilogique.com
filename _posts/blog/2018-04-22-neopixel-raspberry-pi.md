@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "NeoPixel sur Raspberry Pi"
 modified:

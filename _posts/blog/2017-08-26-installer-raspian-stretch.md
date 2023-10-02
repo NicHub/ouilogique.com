@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Installer Raspian Stretch sur Raspberry Pi"
 modified:

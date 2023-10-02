@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Test de hubs USB"
 modified: 2015-11-20T12:00:00+01:00
@@ -24,11 +25,19 @@ Le test consiste à placer une diode entre les pattes d’alimentation de la fic
 
 **Le hub doit être alimenté pendant le test.**
 
-![](../../files/2015-07-02-usb_hub_test/test_usb_hub_003.svg){:height="527px" width="300px"}
 
-![](../../files/2015-07-02-usb_hub_test/test_usb_hub_001.jpg)
+[![ouilogique.com][img_1]{:style="width:50%;"}][img_1]
 
-![](../../files/2015-07-02-usb_hub_test/test_usb_hub_004.jpg)
+[img_1]: ../../files/2015-07-02-usb_hub_test/test_usb_hub_003.svg
+
+
+[![ouilogique.com][img_2]{:style="width:50%;"}][img_2]
+
+[img_2]: ../../files/2015-07-02-usb_hub_test/test_usb_hub_001.jpg
+
+[![ouilogique.com][img_3]{:style="width:50%;"}][img_3]
+
+[img_3]: ../../files/2015-07-02-usb_hub_test/test_usb_hub_004.jpg
 
 ### Conclusion
 
@@ -59,19 +68,25 @@ Un autre souci de ma config, c’est mon écran Apple Thunderbolt 27". Il a un h
 
 Sur cette image, on voit que la LED ne s’allume pas ⇒ donc c’est bon.
 
-![](../../files/2015-07-02-usb_hub_test/test_usb_hub_005_lowres.jpg)
+[![ouilogique.com][img_4]{:style="width:50%;"}][img_4]
+
+[img_4]: ../../files/2015-07-02-usb_hub_test/test_usb_hub_005_lowres.jpg
 
 ---
 
 Sur cette image, on voit que le montage de test fonctionne et que si la LED ne s’est pas allumée dans le test ci-dessus, c’est vraiment parce qu’il n’y avait pas de jus.
 
-![](../../files/2015-07-02-usb_hub_test/test_usb_hub_006_lowres.jpg)
+[![ouilogique.com][img_5]{:style="width:50%;"}][img_5]
+
+[img_5]: ../../files/2015-07-02-usb_hub_test/test_usb_hub_006_lowres.jpg
 
 ---
 
 Pour info, le hub vu de dessous
 
-![](../../files/2015-07-02-usb_hub_test/test_usb_hub_007.jpg)
+[![ouilogique.com][img_6]{:style="width:50%;"}][img_6]
+
+[img_6]: ../../files/2015-07-02-usb_hub_test/test_usb_hub_007.jpg
 
 ## Référence du matériel de test
 

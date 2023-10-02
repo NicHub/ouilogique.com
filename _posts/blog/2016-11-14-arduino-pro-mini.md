@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Mise en route d’un Arduino Pro Mini 3.3 V"
 modified:

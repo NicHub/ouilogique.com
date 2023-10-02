@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Humour Magic Word"
 modified:

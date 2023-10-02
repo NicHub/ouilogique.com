@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Trucs et astuces en Python"
 categories:

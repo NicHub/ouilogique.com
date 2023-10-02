@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Introduction au langage JavaScript"
 modified:
@@ -6,7 +7,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2018-02-17T12:00:00+01:00
 published: true
 author: Nico

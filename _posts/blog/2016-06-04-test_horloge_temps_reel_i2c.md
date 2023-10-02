@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Test d’une horloge temps réel DS1307 I²C"
 modified:

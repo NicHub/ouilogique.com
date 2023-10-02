@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: 'Test d’un écran TFT 2.4"'
 modified:

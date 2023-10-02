@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Tests de modules DFPlayer"
 modified:

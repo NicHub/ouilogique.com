@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Introduction au langage CSS"
 modified:
@@ -6,7 +7,7 @@ categories:
 excerpt:
 tags: []
 image:
-     feature:
+    feature:
 date: 2018-02-16T12:00:00+01:00
 published: true
 author: Nico
@@ -586,7 +587,7 @@ Il existe d’autres *frameworks*, comme [Foundation][Foundation] qui est aussi 
 
 Avec cette introduction sur la technologie CSS, vous avez maintenant une base pour comprendre comment mettre en forme une page HTML simple.
 
-Si vous désirez approfondir vos connaissances, vous pouvez lire les [articles sur la technologie CSS sur le site MDN][CSS sur MDN].
+Si vous désirez approfondir vos connaissances, vous pouvez lire [l’article “Composer le HTML avec les CSS”][Composer le HTML avec les CSS].
 
 Pour vous aider lors de l’écriture de vos feuilles de style, vous trouverez une liste exhaustive des mots-clés de la syntaxe CSS ici : [Référence CSS MDN][Référence CSS MDN].
 
@@ -604,7 +605,7 @@ Le site du W3C contient lui aussi beaucoup d’informations utiles : [CSS sur l
 
 [Référence CSS MDN]: https://developer.mozilla.org/fr/docs/Web/CSS/Reference
 
-[CSS sur MDN]: https://developer.mozilla.org/fr/Apprendre/CSS
+[Composer le HTML avec les CSS]: https://developer.mozilla.org/fr/Apprendre/CSS
 
 [Google Insights]: https://developers.google.com/speed/pagespeed/insights/?hl=fr
 

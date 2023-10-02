@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Programmer un ATtiny25V avec un Arduino UNO comme programmateur"
 excerpt:
@@ -9,6 +10,7 @@ comments: true
 share: true
 image:
     feature: 2015-02-23_microDelta_002.jpg
+date: 2015-05-21T12:00:00+02:00
 published: true
 redirect_from:
     - /blog/programmer_un_attiny_avec_un_arduino_uno/

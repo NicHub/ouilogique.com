@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Utiliser des cartes à microcontrôleurs comme bridge USB&#8209;RS232"
 modified:

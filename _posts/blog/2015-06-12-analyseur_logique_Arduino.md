@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Un analyseur logique Arduino"
 modified:

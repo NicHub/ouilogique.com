@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Les pointeurs en C"
 modified:

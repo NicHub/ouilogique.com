@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Humour There is no place like 127.0.0.1"
 modified:

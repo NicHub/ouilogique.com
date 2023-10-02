@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Programmer un MSP430 en mode ISP"
 modified:
@@ -24,17 +25,23 @@ Le document original peut être téléchargé ici :
 
 Voilà le proto sur breadboard :
 
-![](../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/P1030387.JPG)
+[![ouilogique.com][img_1]][img_1]
+
+[img_1]: ../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/P1030387.JPG
 
 Voilà le résultat final :
 
-![](../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_021.jpg)
+[![ouilogique.com][img_2]][img_2]
 
-<figure class="half">
-    <img src="../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/adafruit_perma-proto_pt_129.jpg" alt="image">
-    <img src="../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/adafruit_perma-proto_pt_131-1.jpg" alt="image">
-<!--    <figcaption>Caption describing these two images.</figcaption>
- --></figure>
+[img_2]: ../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_021.jpg
+
+[![ouilogique.com][i3]{:style="width:50%; float:left"}][i3]
+
+[i3]: ../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/adafruit_perma-proto_pt_129.jpg
+
+[![ouilogique.com][i4]{:style="width:50%; float:left"}][i4]
+
+[i4]: ../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/adafruit_perma-proto_pt_131-1.jpg
 
 ## Leçons apprises
 
@@ -45,17 +52,21 @@ Voilà le résultat final :
 -   Qu’une LED éclaire beaucoup plus sur le dessus que sur les côtés.
 -   Qu’il est horriblement long et compliqué de réaliser un projet, même aussi simple que celui-là quand on a pas de matériel. J’étais tributaire des horaires d’ouverture du FabLab Chêne 20 ~~(www.fablab-chene20.ch)~~ et ça a été la course permanente pour réaliser ce montage. Notez que j’ai réalisé deux autres versions : une qui ne sera jamais utilisée et une autre que j’ai offerte à Noël, mais qui ne contient pas le montage électronique, c’est donc un simple photophore pour y placer une bougie et il a une forme différente de celui que je présente ici.
 
-<figure class="half">
-	<img src="../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_018.jpg" alt="image">
-	<img src="../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_001.jpg" alt="image">
-<!-- 	<figcaption>Caption describing these two images.</figcaption>
- --></figure>
+[![ouilogique.com][img_903]{:style="width:50%; float:left"}][img_903]
 
-<figure class="half">
-	<img src="../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_006.jpg" alt="image">
-	<img src="../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_008.jpg" alt="image">
-<!-- 	<figcaption>Caption describing these two images.</figcaption>
- --></figure>
+[img_903]: ../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_018.jpg
+
+[![ouilogique.com][img_904]{:style="width:50%; float:left"}][img_904]
+
+[img_904]: ../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_001.jpg
+
+[![ouilogique.com][img_905]{:style="width:50%; float:left"}][img_905]
+
+[img_905]: ../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_006.jpg
+
+[![ouilogique.com][img_906]{:style="width:50%; float:left; clear:right; margin-bottom:200px;"}][img_906]
+
+[img_906]: ../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/images/blink_noel_v2_008.jpg
 
 ## Notes
 

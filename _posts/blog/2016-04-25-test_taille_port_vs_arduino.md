@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Test de taille entre les fonctions de manipulation de ports et les fonctions Arduino"
 modified:

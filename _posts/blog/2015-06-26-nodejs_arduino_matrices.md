@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Commander des Arduino avec Node.js"
 modified:

@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Hacker une clé RF433"
 modified:

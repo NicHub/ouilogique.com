@@ -1,4 +1,5 @@
 ---
+lang: fr
 layout: page
 title: "Test du capteur de température DS18B20 avec le protocole OneWire"
 modified:
