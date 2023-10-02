@@ -1,13 +1,14 @@
 ---
-lang: fr
-layout: page
-title: "Commande d’un relai bistable 240 V avec un Arduino Pro Mini"
-tags: []
+author: Nico
+date: 2017-04-14 10:00:00+02:00
 image:
     feature: relai-bistable-commande-tension-pcb-1490x745.jpg
-date: 2017-04-14T10:00:00+02:00
+lang: fr
+layout: page
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Commande d’un relai bistable 240 V avec un Arduino Pro Mini
 ---
 
 ## Projet
@@ -45,7 +46,7 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 
 ## Programme
 
-<https://github.com/NicHub/ouilogique-Arduino/blob/master/relai-bistable-commande-tension/relai-bistable-commande-tension.ino>
+-   <https://github.com/NicHub/ouilogique-Arduino/blob/master/relai-bistable-commande-tension/relai-bistable-commande-tension.ino>
 
 > Pour la programmation de l’Arduino Pro Mini dans l’IDE Arduino, voir <https://ouilogique.com/arduino-pro-mini/>
 

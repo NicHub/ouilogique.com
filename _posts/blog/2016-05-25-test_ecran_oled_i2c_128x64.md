@@ -1,18 +1,23 @@
 ---
+author: Nico
+date: 2016-05-25 17:22:00+02:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Test d’un écran OLED 128×64 I²C"
-tags: []
-image:
-    feature:
-date: 2016-05-25T17:22:00+02:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Test d’un écran OLED 128×64 I²C
 ---
 
-![...](../../files/2016-05-25-test_ecran_oled_i2c_128x64/test_ecran_oled_i2c_128x64_001_lowres.jpg)
+[![ouilogique.com][img_1]][img_1]
 
-![...](../../files/2016-05-25-test_ecran_oled_i2c_128x64/test_ecran_oled_i2c_128x64_002_lowres.jpg)
+[img_1]: ../../files/2016-05-25-test_ecran_oled_i2c_128x64/test_ecran_oled_i2c_128x64_001_lowres.jpg
+
+[![ouilogique.com][img_2]][img_2]
+
+[img_2]: ../../files/2016-05-25-test_ecran_oled_i2c_128x64/test_ecran_oled_i2c_128x64_002_lowres.jpg
 
 ```c++
 /*

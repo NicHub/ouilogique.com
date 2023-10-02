@@ -1,13 +1,14 @@
 ---
+author: Nico
+date: 2017-10-22 17:54:00+02:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Humour Matplotlib"
-tags: []
-image:
-    feature:
-date: 2017-10-22T17:54:00+02:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Humour Matplotlib
 ---
 
 Un peu d’humour avec Matplotlib. L’exemple vient de la page <https://matplotlib.org/1.3.0/examples/showcase/xkcd.html>.

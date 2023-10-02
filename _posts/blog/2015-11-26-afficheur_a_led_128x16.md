@@ -1,13 +1,14 @@
 ---
-lang: fr
-layout: page
-title: "Afficheur à LED 128×16"
-tags: []
+author: Nico
+date: 2015-11-26 15:00:00+01:00
 image:
     feature: 2015-11-26-afficheur_a_led_128x16_010.jpg
-date: 2015-11-26T15:00:00+01:00
+lang: fr
+layout: page
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Afficheur à LED 128×16
 ---
 
 ![](../../files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_010_lowres.jpg)
@@ -223,7 +224,7 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 
 La norme de ce genre de connecteurs s’appelle EIAJ et il me semble que celui de l’afficheur est un EIAJ-04.
 
-<https://en.wikipedia.org/wiki/EIAJ_connector>
+-   <https://en.wikipedia.org/wiki/EIAJ_connector>
 
 ### Conclusion
 

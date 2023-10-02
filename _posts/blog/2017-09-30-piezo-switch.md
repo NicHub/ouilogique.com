@@ -1,13 +1,14 @@
 ---
+author: Nico
+date: 2017-09-30 12:54:00+02:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Bouton piézoélectrique sur Arduino"
-tags: []
-image:
-    feature:
-date: 2017-09-30T12:54:00+02:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Bouton piézoélectrique sur Arduino
 ---
 
 ## Matériel

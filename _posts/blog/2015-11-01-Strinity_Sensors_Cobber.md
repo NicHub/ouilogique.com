@@ -1,18 +1,21 @@
 ---
-lang: fr
-layout: page
-title: "Mise en route d’un capteur de pression, température et humidité <em>Strinity Sensors Cobber</em> I²C"
-tags: []
+author: Nico
+date: 2015-11-01 00:26:00+01:00
 image:
     feature: Strinity_Sensors_Cobber_001.jpg
-date: 2015-11-01T00:26:00+01:00
+lang: fr
+layout: page
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title:
+    Mise en route d’un capteur de pression, température et humidité <em>Strinity
+    Sensors Cobber</em> I²C
 ---
 
 J’ai acheté une carte chez Banggood pour me faire une mini station météo :
 
-<http://www.banggood.com/4-in-1-Temperature-Pressure-Altitude-Light-Sensor-Module-p-965547.html?p=0431091025639201412F>.
+-   <http://www.banggood.com/4-in-1-Temperature-Pressure-Altitude-Light-Sensor-Module-p-965547.html?p=0431091025639201412F>.
 
 C’est une carte “trois en un” qui permet de mesurer :
 
@@ -52,7 +55,7 @@ En attendant, j’ai testé la luminosité et la pression et les mesures ont l�
 
 Bon, j’ai décidé de m’y remettre après une semaine de pause et comme le capteur de température ne veut rien savoir, j’ai utilisé un scanner I²C disponible ici :
 
-<http://playground.arduino.cc/Main/I2cScanner>
+-   <http://playground.arduino.cc/Main/I2cScanner>
 
 > Résultat des courses : Le capteur de température ne répond pas ! Et il semble que je ne sois pas le seul dans ce cas, un autre client de Banggod a mentionné ce problème aussi. Bon, je peux quand même lire la température indiquée par le capteur de pression...
 

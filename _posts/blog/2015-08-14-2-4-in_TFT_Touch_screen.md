@@ -1,20 +1,20 @@
 ---
-lang: fr
-layout: page
-title: 'Test d’un écran TFT 2.4"'
-tags: []
+author: Nico
+date: 2015-07-14 14:20:00+01:00
 image:
     feature: TFT_screen_2.jpg
-date: 2015-07-14T14:20:00+01:00
+lang: fr
+layout: page
 published: true
-author: Nico
 redirect_from:
     - /blog/2-4-in_TFT_Touch_screen/
+tags: []
+title: Test d’un écran TFT 2.4"
 ---
 
 J’ai acheté un écran TFT 2.4" chez Banggood :
 
-<https://www.banggood.com/UNO-R3-ATmega328P-Board-2_4-Inch-TFT-LCD-Screen-Module-For-Arduino-p-945755.html?p=0431091025639201412F>
+-   <https://www.banggood.com/UNO-R3-ATmega328P-Board-2_4-Inch-TFT-LCD-Screen-Module-For-Arduino-p-945755.html?p=0431091025639201412F>
 
 C’est un écran tactile résistif avec un lecteur de carte micro SD intégré. Le PCB indique [www.mcufriend.com](https://www.mcufriend.com), mais ce site ne répondait pas au moment où j’ai essayé. Je me suis donc armé de patience et après quelques heures et quelques dizaines de recherches sur Google, j’ai réussi à en faire quelque chose.
 

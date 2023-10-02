@@ -1,15 +1,15 @@
 ---
+author: Nico
+date: 2023-03-09 12:00:00+01:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Installer Raspberry Pi OS sur Raspberry Pi sans clavier, ni souris, ni écran"
-tags: []
-image:
-    feature:
-date: 2023-03-09T12:00:00+01:00
 published: true
-author: Nico
 redirect_from:
     - /installer-raspian-stretch/
+tags: []
+title: Installer Raspberry Pi OS sur Raspberry Pi sans clavier, ni souris, ni écran
 ---
 
 Cet article montre comment configurer un Raspberry de A à Z à l’aide d’un ordinateur standard. Le Raspberry sera donc en mode _headless_, c’est-à-dire sans clavier, ni souris, ni écran.
@@ -38,7 +38,7 @@ Aujourd’hui, les choses sont un peu différentes.
 _Etcher_ a été remplacé par _Raspberry Pi Imager_ et on a plus besoin de télécharger l’OS séparément, car c’est le programme qui s’en charge.
 Il peut être téléchargé ici :
 
-<https://www.raspberrypi.com/software/>
+-   <https://www.raspberrypi.com/software/>
 
 On a le choix entre plusieurs moutures de l’OS.
 Celle que je préfère est la version “Raspberry Pi OS (64-bit)”.
@@ -217,7 +217,8 @@ sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
 
 Télécharger un client VNC pour se connecter au serveur VNC du rPi.
 Par exemple RealVNC :
-<https://www.realvnc.com/download/viewer/>.
+
+-   <https://www.realvnc.com/download/viewer/>.
 
 > N. B. Le client VNC installé par défaut sur macOS ne fonctionne pas pour se connecter au serveur VNC du rPI.
 > L’erreur retournée est<br />_Le logiciel de l’ordinateur distant semble ne pas être compatible avec cette version de Partage d’écran._<br />`bash /System/Library/CoreServices/Applications/Screen\ Sharing.app`
@@ -448,7 +449,8 @@ smb://pi@raspberrypi.local
 ### Monter le disque partagé sur Windows
 
 Voir
-<https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-drive>
+
+-   <https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-drive>
 
 On peu aussi entrer le chemin d’accès au Raspberry au [format UNC](<https://en.wikipedia.org/wiki/Path_(computing)#Universal_Naming_Convention>) directement dans la barre d’adresse de l’explorateur Windows (raccourcis Win+E, Ctrl+L).
 

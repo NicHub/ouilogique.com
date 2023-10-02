@@ -1,13 +1,14 @@
 ---
+author: Nico
+date: 2016-11-14 16:00:00+01:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Mise en route d’un Arduino Pro Mini 3.3 V"
-tags: []
-image:
-    feature:
-date: 2016-11-14T16:00:00+01:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Mise en route d’un Arduino Pro Mini 3.3 V
 ---
 
 L’Arduino Pro Mini n’a pas d’UART visible sur le port USB de l’ordinateur qui va le programmer. On doit donc utiliser un programmateur externe. Dans cet article, je présente deux solutions :

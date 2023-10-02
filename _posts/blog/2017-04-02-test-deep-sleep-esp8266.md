@@ -1,13 +1,14 @@
 ---
+author: Nico
+date: 2017-04-02 18:30:00+02:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Test du deep sleep de l’ESP8266"
-tags: []
-image:
-    feature:
-date: 2017-04-02T18:30:00+02:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Test du deep sleep de l’ESP8266
 ---
 
 ## Matériel
@@ -18,19 +19,19 @@ author: Nico
 
 ## Différences entre les 3 modes de veille
 
-<http://www.espressif.com/sites/default/files/9b-esp8266-low_power_solutions_en_0.pdf>
+-   <http://www.espressif.com/sites/default/files/9b-esp8266-low_power_solutions_en_0.pdf>
 
 -   Modem-sleep
 -   Light-sleep
 -   Deep-sleep
 
-|           Item            | Modem-sleep | Light-sleep | Deep-sleep |
-| :-----------------------: | ----------- | ----------- | ---------- |
-|           Wi-Fi           | OFF         | OFF         | OFF        |
-|       System clock        | ON          | OFF         | OFF        |
-|            RTC            | ON          | ON          | ON         |
-|            CPU            | ON          | Pending     | OFF        |
-|     Substrate current     | 15 mA       | 0.4 mA      | ~ 20 µA    |
+| Item                      | Modem-sleep | Light-sleep | Deep-sleep |
+| ------------------------- | ----------- | ----------- | ---------- |
+| Wi-Fi                     | OFF         | OFF         | OFF        |
+| System clock              | ON          | OFF         | OFF        |
+| RTC                       | ON          | ON          | ON         |
+| CPU                       | ON          | Pending     | OFF        |
+| Substrate current         | 15 mA       | 0.4 mA      | ~ 20 µA    |
 | Average current DTIM = 1  | 16.2 mA     | 1.8 mA      | -          |
 | Average current DTIM = 3  | 15.4 mA     | 0.9 mA      | -          |
 | Average current DTIM = 10 | 15.2 mA     | 0.55 mA     | -          |
@@ -61,15 +62,21 @@ L’ESP sort du _deep sleep_ à intervales réguliers. Lors de ce reset, D0 pass
 
 _Note : 273.70 µs correspond à 21896 cycles d’horloge à 80 MHz (= 80E+6 \* 273.7E-6)._
 
-![Deep Sleep ESP8266 — Test 1](../../files/2017-04-02-test-deep-sleep-esp8266/2017-04-02-test-deep-sleep-esp8266-montage-1.jpg)
+[![Deep Sleep ESP8266 — Test 1][img_1]][img_1]
 
-![Deep Sleep ESP8266 — Signal de reset sur D0](../../files/2017-04-02-test-deep-sleep-esp8266/2017-04-02-test-deep-sleep-esp8266-signal-DO-reset.jpg)
+[img_1]: ../../files/2017-04-02-test-deep-sleep-esp8266/2017-04-02-test-deep-sleep-esp8266-montage-1.jpg
+
+[![Deep Sleep ESP8266 — Signal de reset sur D0][img_2]][img_2]
+
+[img_2]: ../../files/2017-04-02-test-deep-sleep-esp8266/2017-04-02-test-deep-sleep-esp8266-signal-DO-reset.jpg
 
 ## Montage 2 — Interruption externe
 
 L’ESP sort du _deep sleep_ lorsque le bouton connecté en _pull-up_ est pressé. Problème garanti avec ce montage parce que l’ESP sera _reseté_ autant de fois que le bouton sera pressé, y compris lors des rebonds du bouton. Une solution serait d’utiliser une bascule en entrée (<https://github.com/esp8266/Arduino/issues/1488>).
 
-![Deep Sleep ESP8266 — Test 2](../../files/2017-04-02-test-deep-sleep-esp8266/2017-04-02-test-deep-sleep-esp8266-montage-2.jpg)
+[![Deep Sleep ESP8266 — Test 2][img_3]][img_3]
+
+[img_3]: ../../files/2017-04-02-test-deep-sleep-esp8266/2017-04-02-test-deep-sleep-esp8266-montage-2.jpg
 
 ## Programme de test
 
@@ -150,5 +157,5 @@ void loop()
 
 ## Sources
 
-<http://www.esp8266.com/viewtopic.php?f=13&t=8315>
-<https://www.youtube.com/watch?v=9G-nMGcELG8&index=11&list=PL3XBzmAj53Rlu3Byy_GkqG6b-nwEpWku0>
+-   <http://www.esp8266.com/viewtopic.php?f=13&t=8315>
+-   <https://www.youtube.com/watch?v=9G-nMGcELG8&index=11&list=PL3XBzmAj53Rlu3Byy_GkqG6b-nwEpWku0>

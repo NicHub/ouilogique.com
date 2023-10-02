@@ -1,23 +1,22 @@
 ---
+author: Nico
+date: 2023-02-17 12:00:00+01:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Trucs et astuces en Bash"
-tags: []
-image:
-    feature:
-date: 2023-02-17T12:00:00+01:00
 published: false
-author: Nico
+redirect_from: []
+tags: []
+title: Trucs et astuces en Bash
 ---
-
 
 # Quelques termes
 
-- terminal
-- shell
-- ligne de commande
-- console
-
+-   terminal
+-   shell
+-   ligne de commande
+-   console
 
 En informatique, quelle est la différence entre une console, un shell, un terminal ?
 
@@ -31,29 +30,15 @@ Les termes "console", "shell" et "terminal" sont souvent utilisés de manière i
 
 En résumé, une console est une interface utilisateur textuelle brute, un shell est un programme qui permet d'exécuter des commandes en ligne de commande, et un terminal est un programme qui fournit une interface graphique à une console pour permettre une interaction plus conviviale avec le système d'exploitation.
 
-
 # Utilité de tmux
-
-
-
-
-
-
 
 crontab led
 @reboot /usr/bin/python3 /home/pi/Desktop/led_chase_1.py
 
-
-
 https://linuxize.com/post/bash-check-if-file-exists/
 
-
 [ -r /home/pi/.bash_profile ] && . /home/pi/.bash_profile
-[ -r /home/pi/.byobu/prompt ] && . /home/pi/.byobu/prompt   #byobu-prompt#
-
-
-
-
+[ -r /home/pi/.byobu/prompt ] && . /home/pi/.byobu/prompt #byobu-prompt#
 
 # update
 
@@ -64,7 +49,6 @@ Plus précisément, cette commande va se connecter aux serveurs de packages du s
 Cela permet de maintenir le système à jour et de s'assurer que les dernières versions des logiciels et des correctifs de sécurité sont disponibles pour l'installation.
 
 Il est important de noter que cette commande ne met pas à jour les paquets eux-mêmes, mais seulement la liste des paquets disponibles. Pour installer les mises à jour disponibles, il faut utiliser la commande sudo apt-get upgrade.
-
 
 # upgrade
 
@@ -100,7 +84,6 @@ Cependant, apt-get est toujours largement utilisé et peut être plus flexible d
 
 En général, les deux commandes sont largement interchangeables et peuvent être utilisées selon les préférences personnelles de l'utilisateur.
 
-
 # Les flux standard de Linux
 
 Source : https://www.howtogeek.com/435903/what-are-stdin-stdout-and-stderr-on-linux/
@@ -108,9 +91,10 @@ Source : https://www.howtogeek.com/435903/what-are-stdin-stdout-and-stderr-on-l
 Sous Linux, les flux - comme presque tout le reste - sont traités comme des fichiers. Vous pouvez lire du texte à partir d'un fichier et vous pouvez écrire du texte dans un fichier. Ces deux actions impliquent un flux de données. Le concept de traitement d'un flux de données comme un fichier n'est donc pas si compliqué que cela.
 
 Il y a trois flux standard :
-- stdin (standard in) est le flux d'entrée standard. Il accepte du texte en entrée.
-- stdout (standard out) est le flux de sortie standard.
-- stderr (standard error) permet de renvoyer des éventuelles erreurs.
+
+-   stdin (standard in) est le flux d'entrée standard. Il accepte du texte en entrée.
+-   stdout (standard out) est le flux de sortie standard.
+-   stderr (standard error) permet de renvoyer des éventuelles erreurs.
 
 Sous Linux, les flux - comme presque tout le reste - sont traités comme des fichiers. Vous pouvez lire du texte à partir d'un fichier et vous pouvez écrire du texte dans un fichier. Ces deux actions impliquent un flux de données. Le concept de traitement d'un flux de données comme un fichier n'est donc pas si compliqué que cela.
 
@@ -121,8 +105,6 @@ Ces valeurs sont toujours utilisées pour stdin, stdout et stderr :
     0: stdin
     1: stdout
     2: stderr
-
-
 
 # Commandes utiles
 

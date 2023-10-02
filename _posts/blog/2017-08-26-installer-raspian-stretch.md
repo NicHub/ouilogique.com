@@ -1,13 +1,14 @@
 ---
+author: Nico
+date: 2017-08-26 18:26:00+02:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Installer Raspian Stretch sur Raspberry Pi"
-tags: []
-image:
-    feature:
-date: 2017-08-26T18:26:00+02:00
 published: false
-author: Nico
+redirect_from: []
+tags: []
+title: Installer Raspian Stretch sur Raspberry Pi
 ---
 
 ## Matériel utilisé pour cette procédure
@@ -180,7 +181,8 @@ sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
 
 Télécharger un client VNC pour se connecter au serveur VNC du rPi.
 Par exemple RealVNC :
-<https://www.realvnc.com/download/viewer/>.
+
+-   <https://www.realvnc.com/download/viewer/>.
 
 > N. B. Le client VNC installé par défaut sur macOS ne fonctionne pas pour se connecter au serveur VNC du rPI.
 > L’erreur retournée est<br />_Le logiciel de l’ordinateur distant semble ne pas être compatible avec cette version de Partage d’écran._<br />`bash /System/Library/CoreServices/Applications/Screen\ Sharing.app`
@@ -323,9 +325,10 @@ smb://raspberrypi.local
 ### Monter le disque partagé sur Windows
 
 Voir
-<https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-drive>
 
-On peu aussi entrer le chemin d’accès au Raspberry au [format UNC](https://en.wikipedia.org/wiki/Path_(computing)#Universal_Naming_Convention) directement dans la barre d’adresse de l’explorateur Windows (raccourcis Win+E, Ctrl+L)
+-   <https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-drive>
+
+On peu aussi entrer le chemin d’accès au Raspberry au [format UNC](<https://en.wikipedia.org/wiki/Path_(computing)#Universal_Naming_Convention>) directement dans la barre d’adresse de l’explorateur Windows (raccourcis Win+E, Ctrl+L)
 
 ```bash
 \\raspberrypi.local
@@ -351,7 +354,7 @@ python3 --version
 ```bash
 cat /etc/os-release
 ```
->
+
 > Édit du 16 octobre 2019 : Raspbian Buster intègre la version 3.7.3 de Python.
 > Édit du 11 février 2023 : Raspberry Pi OS Bullseye 64 bit intègre la version 3.9.2 de Python.
 
@@ -430,7 +433,9 @@ Si des fichiers importants sont touchés, le Raspberry peut devenir inutilisable
 
 Donc pour éteindre un Raspberry, on utilisera une des commandes ci-dessous.
 La différence entre elles n’est pas aussi évidente qu’il y parait :
-<https://unix.stackexchange.com/a/196471/199660>.
+
+-   <https://unix.stackexchange.com/a/196471/199660>.
+
 Seule la commande `halt` éteint la LED rouge d’alimentation, donc je suppose que c’est celle qu’il faut privilégier.
 
 > N. B. Attention, aucune de ces commandes ne coupe l’alimentation de la carte ou l’alimentation des ports USB.

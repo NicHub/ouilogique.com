@@ -1,13 +1,14 @@
 ---
+author: Nico
+date: 2023-05-30 12:00:00+01:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Flasher un bootloader"
-tags: []
-image:
-    feature:
-date: 2023-05-30T12:00:00+01:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Flasher un bootloader
 ---
 
 [![Flasher un bootloader — ouilogique.com][i1]{:style="width:100%;"}][i1]

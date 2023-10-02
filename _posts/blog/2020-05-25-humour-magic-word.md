@@ -1,13 +1,14 @@
 ---
+author: Nico
+date: 2020-05-25 06:33:00+02:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Humour Magic Word"
-tags: []
-image:
-    feature:
-date: 2020-05-25T06:33:00+02:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Humour Magic Word
 ---
 
 [![sudo is the magic word][image-1]][image-1]

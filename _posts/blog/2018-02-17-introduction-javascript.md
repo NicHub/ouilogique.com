@@ -1,13 +1,14 @@
 ---
+author: Nico
+date: 2018-02-17 12:00:00+01:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Introduction au langage JavaScript"
-tags: []
-image:
-    feature:
-date: 2018-02-17T12:00:00+01:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Introduction au langage JavaScript
 ---
 
 

@@ -1,20 +1,27 @@
 ---
+author: Nico
+date: 2016-06-04 14:29:00+02:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Test d’une horloge temps réel DS1307 I²C"
-tags: []
-image:
-    feature:
-date: 2016-06-04T14:29:00+02:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Test d’une horloge temps réel DS1307 I²C
 ---
 
-![...](../../files/2016-06-04-test_horloge_temps_reel_i2c/2016-06-04-test_horloge_temps_reel_i2c_001_lowres.jpg)
+[![ouilogique.com][img_1]][img_1]
 
-![...](../../files/2016-06-04-test_horloge_temps_reel_i2c/2016-06-04-test_horloge_temps_reel_i2c_002_lowres.jpg)
+[img_1]: ../../files/2016-06-04-test_horloge_temps_reel_i2c/2016-06-04-test_horloge_temps_reel_i2c_001_lowres.jpg
 
-![...](../../files/2016-06-04-test_horloge_temps_reel_i2c/2016-06-04-test_horloge_temps_reel_i2c_003_lowres.jpg)
+[![ouilogique.com][img_2]][img_2]
+
+[img_2]: ../../files/2016-06-04-test_horloge_temps_reel_i2c/2016-06-04-test_horloge_temps_reel_i2c_002_lowres.jpg
+
+[![ouilogique.com][img_3]][img_3]
+
+[img_3]: ../../files/2016-06-04-test_horloge_temps_reel_i2c/2016-06-04-test_horloge_temps_reel_i2c_003_lowres.jpg
 
 ```c++
 /*

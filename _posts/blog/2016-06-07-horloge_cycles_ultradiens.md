@@ -1,26 +1,31 @@
 ---
+author: Nico
+date: 2016-06-07 10:13:00+02:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Horloge à cycles ultradiens"
-tags: []
-image:
-    feature:
-date: 2016-06-07T10:13:00+02:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Horloge à cycles ultradiens
 ---
 
 ## Version pour Arduino Nano
 
 **Première version avec un bouton poussoir**
 
-![Horloge à cycles ultradiens — Arduino Nano](../../files/2016-06-07-horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_002_lowres.jpg)
+[![Horloge à cycles ultradiens — Arduino Nano][img_1]][img_1]
+
+[img_1]: ../../files/2016-06-07-horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_002_lowres.jpg
 
 **Deuxième version avec un encodeur rotatif KY-040**
 
 > L’encodeur rotatif peut être remplacé par un simple bouton poussoir pour l’instant parce que je n’utilise que cette fonction. J’ai commencé à tester cet encodeur avec le traceur série de l’IDE Arduino et [le programme de test se trouve sur mon GitHub](https://github.com/NicHub/ouilogique-Arduino/blob/master/encodeur-rotatif-KY-040/encodeur-rotatif-KY-040-test-1/encodeur-rotatif-KY-040-test-1.ino). Je modifierai bientôt le programme de l’horloge pour y intégrer un menu que l’on pourra utiliser avec l’encodeur.
 
-![Horloge à cycles ultradiens — Arduino Nano](../../files/2016-06-07-horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_004_lowres.jpg)
+[![Horloge à cycles ultradiens — Arduino Nano][img_2]][img_2]
+
+[img_2]: ../../files/2016-06-07-horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_004_lowres.jpg
 
 ### Code source
 
@@ -47,8 +52,10 @@ L’heure de horloge temps réel DS1307 peut être mise à jour via le port RS23
 
 La version pour l’ESP8266 synchronise l’heure de horloge temps réel DS1307 avec un serveur NTP.
 
-![Horloge à cycles ultradiens — ESP8266](../../files/2016-06-07-horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_003_lowres.jpg)
+[![Horloge à cycles ultradiens — ESP8266][img_3]][img_3]
+
+[img_3]: ../../files/2016-06-07-horloge_cycles_ultradiens/images/horloge_cycles_ultradiens_003_lowres.jpg
 
 ### Code source
 
-<https://github.com/NicHub/ouilogique-ESP8266-Arduino/tree/master/horloge-cycles-ultradiens-esp8266>
+-   <https://github.com/NicHub/ouilogique-ESP8266-Arduino/tree/master/horloge-cycles-ultradiens-esp8266>

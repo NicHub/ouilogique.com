@@ -1,15 +1,15 @@
 ---
+author: Nico
+date: 2015-06-26 17:15:00+01:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Commander des Arduino avec Node.js"
-tags: []
-image:
-    feature:
-date: 2015-06-26T17:15:00+01:00
-author: Nico
+published: true
 redirect_from:
     - /blog/nodejs_arduino_matrices/
-published: true
+tags: []
+title: Commander des Arduino avec Node.js
 ---
 
 Le système est géré avec un Raspberry Pi B+ avec :
@@ -27,6 +27,10 @@ La communication se passe de la façon suivante :
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/b8a_t5Tyg44" frameborder="0" allowfullscreen></iframe>
 
-![](../../files/2015-06-26-nodejs_arduino_matrices/2015-05-29_platine.jpg)
+[![ouilogique.com][img_1]][img_1]
 
-![](../../files/2015-06-26-nodejs_arduino_matrices/2015-05-30_boutons.jpg)
+[img_1]: ../../files/2015-06-26-nodejs_arduino_matrices/2015-05-29_platine.jpg
+
+[![ouilogique.com][img_2]][img_2]
+
+[img_2]: ../../files/2015-06-26-nodejs_arduino_matrices/2015-05-30_boutons.jpg

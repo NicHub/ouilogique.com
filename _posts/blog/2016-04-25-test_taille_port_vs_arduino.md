@@ -1,13 +1,16 @@
 ---
+author: Nico
+date: 2016-04-25 19:35:00+02:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Test de taille entre les fonctions de manipulation de ports et les fonctions Arduino"
-tags: []
-image:
-    feature:
-date: 2016-04-25T19:35:00+02:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title:
+    Test de taille entre les fonctions de manipulation de ports et les fonctions
+    Arduino
 ---
 
 Voici un comparatif de la taille mémoire du programme `blink` lorsqu’on utilise les fonctions de port ou les fonctions Arduino.

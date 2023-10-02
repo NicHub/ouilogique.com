@@ -1,15 +1,15 @@
 ---
-lang: fr
-layout: page
-title: "Découverte du Bluetooth Low Energy avec la carte Nordic Semiconductor nRF51"
-tags: []
+author: Nico
+date: 2015-09-14 00:00:00+01:00
 image:
     feature: nRF51.jpg
-date: 2015-09-14T00:00:00+01:00
+lang: fr
+layout: page
 published: true
-author: Nico
 redirect_from:
     - /blog/bluetooth_low_energy_avec_nRF51/
+tags: []
+title: Découverte du Bluetooth Low Energy avec la carte Nordic Semiconductor nRF51
 ---
 
 ![](../../files/2015-09-14-bluetooth_low_energy_avec_nRF51/nRF51_001.jpg)
@@ -28,9 +28,8 @@ redirect_from:
 
 ## Support imprimé 3D
 
-<https://www.thingiverse.com/thing:1012855>
-
-<https://cad.onshape.com/documents/3f05e14ebb62415c928ff36e/w/d85b78be98c545f6ab2fd41f/e/7053fbf40382442182af2f67>
+-   <https://www.thingiverse.com/thing:1012855>
+-   <https://cad.onshape.com/documents/3f05e14ebb62415c928ff36e/w/d85b78be98c545f6ab2fd41f/e/7053fbf40382442182af2f67>
 
 ## La carte nRF51 en bref
 

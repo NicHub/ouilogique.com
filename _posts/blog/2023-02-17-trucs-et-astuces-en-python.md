@@ -1,13 +1,14 @@
 ---
+author: Nico
+date: 2023-02-17 12:00:00+01:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Trucs et astuces en Python"
-tags: []
-image:
-    feature:
-date: 2023-02-17T12:00:00+01:00
 published: false
-author: Nico
+redirect_from: []
+tags: []
+title: Trucs et astuces en Python
 ---
 
 ## Python 2 vs 3
@@ -61,11 +62,10 @@ Ses avatages sont :
 
 Il y a plusieurs façon d’exécuter des scripts Python dans VSCode.
 La façon la plus intéressante est avec Jupyter.
-Pour
 
 # Raspberry blink Python
 
-<https://raspberrypihq.com/making-a-led-blink-using-the-raspberry-pi-and-python/>
+-   <https://raspberrypihq.com/making-a-led-blink-using-the-raspberry-pi-and-python/>
 
 Normallement, le module Python `python3-rpi.gpio` est installé d’origine.
 

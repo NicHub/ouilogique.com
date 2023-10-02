@@ -1,13 +1,14 @@
 ---
-lang: fr
-layout: page
-title: "Neopixel Didel WS2813"
-tags: []
+author: Nico
+date: 2017-04-27 18:48:00+02:00
 image:
     feature: 2017-04-27-neopixel-didel-ws2813-000.jpg
-date: 2017-04-27T18:48:00+02:00
+lang: fr
+layout: page
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Neopixel Didel WS2813
 ---
 
 ## Projet

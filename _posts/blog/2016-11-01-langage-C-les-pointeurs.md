@@ -1,20 +1,26 @@
 ---
+author: Nico
+date: 2016-11-01 20:17:00+01:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Les pointeurs en C"
-tags: []
-image:
-    feature:
-date: 2016-11-01T20:17:00+01:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Les pointeurs en C
 ---
 
-Je suis en train de suivre [le très bon cours sur la programmation en C d’Open Classrooms][1] et le deuxième exercice consiste à expliquer les pointeurs à quelqu’un qui n’y connait rien mais qui a des bases en C. Or donc, c’est une bonne occasion de créer une page sur mon blog à ce sujet histoire de faire d’une pierre deux coups, puisque d’après [Mathieu Nebra][2], le prof de ce cours, les programmeurs sont des gros fainéants qui n’aiment pas répéter deux fois les mêmes choses, et... je crois qu’il a raison.
+Je suis en train de suivre [le très bon cours sur la programmation en C d’Open Classrooms][1] et le deuxième exercice consiste à expliquer les pointeurs à quelqu’un qui n’y connait rien mais qui a des bases en C.
+Or donc, c’est une bonne occasion de créer une page sur mon blog à ce sujet histoire de faire d’une pierre deux coups, puisque d’après [Mathieu Nebra][2], le prof de ce cours, les programmeurs sont des gros fainéants qui n’aiment pas répéter deux fois les mêmes choses, et... je crois qu’il a raison.
 
-> Les exemples de cet article sont formatés selon la façon traditionnelle des cours sur le langage C. Donc si vous ne connaissez que la présentation Arduino, cela pourrait vous surprendre. Cependant toutes les notions abordées ici sont réutilisables en Arduino C.
+> Les exemples de cet article sont formatés selon la façon traditionnelle des cours sur le langage C.
+> Donc si vous ne connaissez que la présentation Arduino, cela pourrait vous surprendre.
+> Cependant toutes les notions abordées ici sont réutilisables en Arduino C.
 
-Donc commençons par une lapalissade grande comme une maison : la programmation, c’est surtout une affaire de données. Eh oui, rien de très extraordinaire : pour faire avancer le schmilblick les programmes que l’on donne à manger à nos ordinateurs ou nos microcontrôleurs ont besoin de données que l’on va stocker dans des variables. Et c’est bien joli de remplir leurs mémoires avec lesdites données, encore faut-il pouvoir les retrouver et pour cela il y a deux façons de s’y prendre :
+Donc commençons par une lapalissade grande comme une maison : la programmation, c’est surtout une affaire de données.
+Eh oui, rien de très extraordinaire : pour faire avancer le schmilblick les programmes que l’on donne à manger à nos ordinateurs ou nos microcontrôleurs ont besoin de données que l’on va stocker dans des variables.
+Et c’est bien joli de remplir leurs mémoires avec lesdites données, encore faut-il pouvoir les retrouver et pour cela il y a deux façons de s’y prendre :
 
 1. les transmettre par valeur
 2. les transmettre par référence
@@ -23,7 +29,8 @@ Voyons ça d’un peu plus près :
 
 ## Transmission de variables par valeur
 
-Transmettre le contenu d’une variable par valeur est à peu près une des premières choses que l’on apprend à faire, quel que soit le langage de programmation que l’on étudie. Voici ce que ça donne en C :
+Transmettre le contenu d’une variable par valeur est à peu près une des premières choses que l’on apprend à faire, quel que soit le langage de programmation que l’on étudie.
+Voici ce que ça donne en C :
 
 ```c++
 #include <stdio.h>
@@ -39,7 +46,13 @@ int main()
 }
 ```
 
-L’exemple ci-dessus est des plus basique, mais il faut bien commencer par quelque chose. D’abord on instancie la variable `maVariable` avec le type `int` et on lui assigne la valeur `1` dans la foulée. Ensuite, on affiche le contenu de cette variable. Et pour l’affichage, on utilise la fonction `printf` à laquelle on transmet la _valeur_ de `maVariable`, c’est-à-dire `1` dans cet exemple. Ce qui ne se voit pas par contre, c’est qu’en interne, `maVariable` a été copiée, un peu comme si on avait fait une photocopie et que l’on avait envoyé cette photocopie à la fonction `printf`. Comme `printf` est une fonction de la librairie standard du C ce comportement est difficile à mettre en évidence. Pour cela, nous allons définir une fonction et tout deviendra plus clair.
+L’exemple ci-dessus est des plus basique, mais il faut bien commencer par quelque chose.
+D’abord on instancie la variable `maVariable` avec le type `int` et on lui assigne la valeur `1` dans la foulée.
+Ensuite, on affiche le contenu de cette variable.
+Et pour l’affichage, on utilise la fonction `printf` à laquelle on transmet la _valeur_ de `maVariable`, c’est-à-dire `1` dans cet exemple.
+Ce qui ne se voit pas par contre, c’est qu’en interne, `maVariable` a été copiée, un peu comme si on avait fait une photocopie et que l’on avait envoyé cette photocopie à la fonction `printf`.
+Comme `printf` est une fonction de la librairie standard du C ce comportement est difficile à mettre en évidence.
+Pour cela, nous allons définir une fonction et tout deviendra plus clair.
 
 ```c++
 #include <stdio.h>
@@ -82,15 +95,22 @@ void ex02( int maVariable ) // `maVariable` est transmise par valeur
 
 Dans ce deuxième exemple, on se rend tout de suite compte des limitations du passage de variables par valeur :
 
--   Les valeurs sont copiées et la copie ne revient pas à l’expéditeur (l’expéditeur, c’est la fonction `main()` et le destinataire, c’est la fonction `ex02()`). C’est du vol qualifié et c’est surtout pas pratique si on veut que notre fonction retourne un résultat différent de la donnée de base. Bon, il y a toujours la possibilité d’utiliser un `return`, on en discutera après.
--   Et ces copies prennent de la place en mémoire. Sur un ordi ça ne causera de problèmes que pour des gros programmes, mais sur l’ATmega328p d’un Arduino UNO avec 2 ko de RAM, ça compte.
+-   Les valeurs sont copiées et la copie ne revient pas à l’expéditeur (l’expéditeur, c’est la fonction `main()` et le destinataire, c’est la fonction `ex02()`).
+    C’est du vol qualifié et c’est surtout pas pratique si on veut que notre fonction retourne un résultat différent de la donnée de base.
+    Bon, il y a toujours la possibilité d’utiliser un `return`, on en discutera après.
+-   Et ces copies prennent de la place en mémoire.
+    Sur un ordi ça ne causera de problèmes que pour des gros programmes, mais sur l’ATmega328p d’un Arduino UNO avec 2 ko de RAM, ça compte.
 -   C’est potentiellement lent, puisqu’il faut copier les valeurs avant de les envoyer (sans compter le salaire de la secrétaire qui fait les copies... pff).
 
-Bon ben je crois que le constat est clair, on a besoin d’un autre système pour transmettre nos variables. Et comme j’ai _spoilé_ la réponse au début de cet article, vous savez déjà qu’il s’agit de la...
+Bon ben je crois que le constat est clair, on a besoin d’un autre système pour transmettre nos variables.
+Et comme j’ai _spoilé_ la réponse au début de cet article, vous savez déjà qu’il s’agit de la...
 
 ## Transmission de variables par référence
 
-Si vous ne connaissiez vraiment rien aux pointeurs avant de commencer la lecture de cet article, je suppose que l’inventeur qui sommeille en vous a dû se réveiller et s’écrier “Mais bon sang, pourquoi on ne transmettrait pas l’original plutôt que la copie !” Et bien vous venez de (ré)inventer le passage de variables par référence : BRAVO ! Et le principe est très simple, on ne transmet plus le contenu de nos variables, mais leurs adresses. Et ben oui, c’est un peu “viens chez moi, j’habite chez une copine”. Il suffit de transmettre l’adresse de la variable, histoire que le programme sache où aller passer sa soirée. Donc comme un exemple vaut 1000 mots en voici un :
+Si vous ne connaissiez vraiment rien aux pointeurs avant de commencer la lecture de cet article, je suppose que l’inventeur qui sommeille en vous a dû se réveiller et s’écrier “Mais bon sang, pourquoi on ne transmettrait pas l’original plutôt que la copie !” Et bien vous venez de (ré)inventer le passage de variables par référence : BRAVO ! Et le principe est très simple, on ne transmet plus le contenu de nos variables, mais leurs adresses.
+Et ben oui, c’est un peu “viens chez moi, j’habite chez une copine”.
+Il suffit de transmettre l’adresse de la variable, histoire que le programme sache où aller passer sa soirée.
+Donc comme un exemple vaut 1000 mots en voici un :
 
 ```c++
 #include <stdio.h>
@@ -170,7 +190,8 @@ void ex03( int *adresseDeMaVariable )
 ### Petit récapitulatif
 
 -   Si on veut obtenir l’adresse en mémoire d’une variable, il faut utiliser le signe `&`.
--   L’adresse doit être stockée dans une variable de même type que la variable pointée (`int` dans l’exemple) avec en plus le signe `*`. C’est ce qu’on appelle un _pointeur_.
+-   L’adresse doit être stockée dans une variable de même type que la variable pointée (`int` dans l’exemple) avec en plus le signe `*`.
+    C’est ce qu’on appelle un _pointeur_.
 -   Si l’on demande la valeur du pointeur SANS le signe `*` on obtient en fait L’ADRESSE de la variable pointée.
 -   Si l’on demande la valeur du pointeur AVEC le signe `*` on obtient en fait LA VALEUR de la variable pointée.
 
@@ -196,14 +217,14 @@ Donc pour ne pas se mélanger les pinceaux, il vaut mieux éviter d’écrire :
 -   quand on spécifie qu’une fonction accepte un pointeur en paramètre, on utilise le signe `*`, alors que ce qui est transmis est l’adresse et pas la valeur.
 -   quand on veut obtenir la valeur pointée (et pas l’adresse), on doit aussi utiliser le signe `*`.
 
-<!--
- -->
-
 ## Pour la suite
 
-Mon exemple de transmission de variable par référence pourrait ne pas utiliser de pointeur, mais la possibilité de retourner une valeur à la fin de la fonction avec le mot clé `return`. Cependant les `return` sont en général utilisés pour retourner le statut d’exécution de la fonction, autrement dit si elle a réussi à faire ce qu’on lui a demandé ou pas.
+Mon exemple de transmission de variable par référence pourrait ne pas utiliser de pointeur, mais la possibilité de retourner une valeur à la fin de la fonction avec le mot clé `return`.
+Cependant les `return` sont en général utilisés pour retourner le statut d’exécution de la fonction, autrement dit si elle a réussi à faire ce qu’on lui a demandé ou pas.
 
-Et les `return` ont une limitation particulièrement ennuyeuse qui nous obligera de toute façon à utiliser les pointeurs : ils ne peuvent pas transmettre de tableaux. Et comme les tableaux sont omniprésents en programmation, on va donc également utiliser abondamment les pointeurs. Mais ça fera l’objet d’un autre article.
+Et les `return` ont une limitation particulièrement ennuyeuse qui nous obligera de toute façon à utiliser les pointeurs : ils ne peuvent pas transmettre de tableaux.
+Et comme les tableaux sont omniprésents en programmation, on va donc également utiliser abondamment les pointeurs.
+Mais ça fera l’objet d’un autre article.
 
 ## Note pour les pros
 
@@ -212,9 +233,10 @@ Et les `return` ont une limitation particulièrement ennuyeuse qui nous obligera
 
 ## Utilisation des pointeurs pour les tableaux
 
-Quand j’aurai le temps, j’écrirai un article sur ce sujet. Pour l’instant voici quelques exemples que j’ai posté sur StackExchange :
+Quand j’aurai le temps, j’écrirai un article sur ce sujet.
+Pour l’instant voici quelques exemples que j’ai posté sur StackExchange :
 
-<http://arduino.stackexchange.com/a/31417/13995>
+-   <http://arduino.stackexchange.com/a/31417/13995>
 
 [1]: https://openclassrooms.com/courses/apprenez-a-programmer-en-c
 [2]: https://openclassrooms.com/membres/mateo21

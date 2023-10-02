@@ -1,13 +1,14 @@
 ---
+author: Nico
+date: 2022-06-19 12:00:00+02:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Humour There is no place like 127.0.0.1"
-tags: []
-image:
-    feature:
-date: 2022-06-19T12:00:00+02:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Humour There is no place like 127.0.0.1
 ---
 
 Trop bien la pub [init7](https://www.init7.net/)

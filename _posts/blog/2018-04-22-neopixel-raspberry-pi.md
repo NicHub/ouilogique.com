@@ -1,13 +1,14 @@
 ---
+author: Nico
+date: 2018-04-22 12:33:00+02:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "NeoPixel sur Raspberry Pi"
-tags: []
-image:
-    feature:
-date: 2018-04-22T12:33:00+02:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: NeoPixel sur Raspberry Pi
 ---
 
 Voici comment configurer un Raspberry Pi pour l’utiliser avec des LED NeoPixel WS281x. Je présente la version Python, mais d’autres langages sont supportés.

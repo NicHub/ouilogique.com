@@ -1,13 +1,14 @@
 ---
-lang: fr
-layout: page
-title: "Débuggage sur ESP32 avec un <em>ESP&#8209;Prog</em> et <em>PIO Unified Debugger</em>"
-tags: []
+author: Nico
+date: 2019-07-26 14:00:00+02:00
 image:
     feature: esp-prog-board-close-up.jpg
-date: 2019-07-26T14:00:00+02:00
+lang: fr
+layout: page
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Débuggage sur ESP32 avec un <em>ESP&#8209;Prog</em> et <em>PIO Unified Debugger</em>
 ---
 
 [![ESP-Prog — ouilogique.com][i3]{:style="width:90%;"}][i3]

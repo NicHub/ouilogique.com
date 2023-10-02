@@ -1,15 +1,19 @@
 ---
-lang: fr
-layout: page
-title: "LED adressables"
-tags: [LED, PWM, NeoPixel, FastLED]
 author: Nico
+date: 2015-05-22 12:00:00+02:00
 image:
     feature: 2015-02-23_microDelta_002.jpg
-date: 2015-05-22T12:00:00+02:00
+lang: fr
+layout: page
 published: true
 redirect_from:
     - /blog/leds_adressables/
+tags:
+    - LED
+    - PWM
+    - NeoPixel
+    - FastLED
+title: LED adressables
 ---
 
 Pour mon [projet de programmation d’un MSP430 en mode ISP](/blog/programmer_un_msp430_en_mode_ISP/), j’ai utilisé une LED RGB. C’est simplement trois LED dans un seul boîtier avec quatre pattes : une pour chaque couleur et une pour la masse.

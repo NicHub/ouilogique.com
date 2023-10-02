@@ -1,22 +1,22 @@
 ---
-lang: fr
-layout: page
-title: "Commande d’une matrice 32×32 avec un MSP430"
-tags: []
+author: Nico
+date: 2015-09-11 10:00:00+01:00
 image:
     feature: msp430-mx32x32.jpg
-date: 2015-09-11T10:00:00+01:00
+lang: fr
+layout: page
 published: true
-author: Nico
 redirect_from:
     - /blog/commande_matrice_32x32_avec_msp430/
+tags: []
+title: Commande d’une matrice 32×32 avec un MSP430
 ---
 
 ![](../../files/2015-09-11-commande_matrice_32x32_avec_msp430/msp430-mx32x32.jpeg)
 
 ## Référence de la matrice sur AliExpress
 
-<https://fr.aliexpress.com/item/1677389664.html>
+-   <https://fr.aliexpress.com/item/1677389664.html>
 
 ## Launchpad
 
@@ -34,7 +34,7 @@ Le brochage est décrit au début du programme ci-dessous.
 
 ## Article sur Adafruit
 
-<https://learn.adafruit.com/32x16-32x32-rgb-led-matrix?view=all>
+-   <https://learn.adafruit.com/32x16-32x32-rgb-led-matrix?view=all>
 
 ## Brochage des différents connecteurs de matrices
 

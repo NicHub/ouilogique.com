@@ -1,15 +1,15 @@
 ---
+author: Nico
+date: 2017-08-27 01:00:00+02:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Installer GPHOTO2"
-tags: []
-image:
-    feature:
-date: 2017-08-27T01:00:00+02:00
 published: true
-author: Nico
 redirect_from:
     - https://ouilogique.com/gphoto2/
+tags: []
+title: Installer GPHOTO2
 ---
 
 <!--

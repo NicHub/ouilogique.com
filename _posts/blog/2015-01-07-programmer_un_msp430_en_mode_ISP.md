@@ -1,22 +1,23 @@
 ---
+author: Nico
+date: 2015-01-07 12:00:00+01:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Programmer un MSP430 en mode ISP"
-tags: []
-image:
-    feature:
-date: 2015-01-07T12:00:00+01:00
-author: Nico
+published: true
 redirect_from:
     - /blog/programmer_un_msp430_en_mode_ISP/
-published: true
+tags: []
+title: Programmer un MSP430 en mode ISP
 ---
 
-Lors du [quatrième MOOC sur les µcontrôleurs de l’EPFL](https://www.coursera.org/learn/microcontroleurs), Pierre-Yves Rochat nous a présenté comment utiliser une carte Launchpad pour programmer un MSP430 sur un breadboard. Cette façon de programmer est souvent appelée [ISP (in-system programmer) ou programmation in situ](https://fr.wikipedia.org/wiki/Programmation_in-situ) en français.
+Lors du [quatrième MOOC sur les µcontrôleurs de l’EPFL](https://www.coursera.org/learn/microcontroleurs), Pierre-Yves Rochat nous a présenté comment utiliser une carte Launchpad pour programmer un MSP430 sur un breadboard.
+Cette façon de programmer est souvent appelée [ISP (in-system programmer) ou programmation in situ](https://fr.wikipedia.org/wiki/Programmation_in-situ) en français.
 
 <!--
 Le document original peut être téléchargé ici :
-<https://pyr.ch/coursera/ExperiencesAvecLaunchpad.pdf>
+-   <https://pyr.ch/coursera/ExperiencesAvecLaunchpad.pdf>
 -->
 
 [Le document original au format PDF](../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/ExperiencesAvecLaunchpad.pdf)
@@ -46,9 +47,13 @@ Voilà le résultat final :
 -   Programmer un MSP sur breadboard (un MSP430G2231 dans cette application).
 -   Utiliser une découpeuse laser.
 -   [Les plaques à souder Perma-Proto d’Adafruit](https://www.adafruit.com/blog/2011/11/18/adafruit-perma-proto-half-sized-breadboard-pcb-3-pack/) sont très pratiques.
--   Que les LED RGB translucides sont très nettement moins lumineuses que les transparentes. J’utilise une LED translucide dans ce projet, mais j’ai un gadget similaire avec une LED transparente et la différence est frappante. J’aurais aussi dû être moins conservatif sur la question de la consommation et utiliser des résistances plus faibles.
+-   Que les LED RGB translucides sont très nettement moins lumineuses que les transparentes.
+    J’utilise une LED translucide dans ce projet, mais j’ai un gadget similaire avec une LED transparente et la différence est frappante.
+    J’aurais aussi dû être moins conservatif sur la question de la consommation et utiliser des résistances plus faibles.
 -   Qu’une LED éclaire beaucoup plus sur le dessus que sur les côtés.
--   Qu’il est horriblement long et compliqué de réaliser un projet, même aussi simple que celui-là quand on a pas de matériel. J’étais tributaire des horaires d’ouverture du FabLab Chêne 20 ~~(www.fablab-chene20.ch)~~ et ça a été la course permanente pour réaliser ce montage. Notez que j’ai réalisé deux autres versions : une qui ne sera jamais utilisée et une autre que j’ai offerte à Noël, mais qui ne contient pas le montage électronique, c’est donc un simple photophore pour y placer une bougie et il a une forme différente de celui que je présente ici.
+-   Qu’il est horriblement long et compliqué de réaliser un projet, même aussi simple que celui-là quand on a pas de matériel.
+    J’étais tributaire des horaires d’ouverture du FabLab Chêne 20 ~~(www.fablab-chene20.ch)~~ et ça a été la course permanente pour réaliser ce montage.
+    Notez que j’ai réalisé deux autres versions : une qui ne sera jamais utilisée et une autre que j’ai offerte à Noël, mais qui ne contient pas le montage électronique, c’est donc un simple photophore pour y placer une bougie et il a une forme différente de celui que je présente ici.
 
 [![ouilogique.com][img_903]{:style="width:50%; float:left"}][img_903]
 
@@ -70,7 +75,7 @@ Voilà le résultat final :
 
 Pour ceux qui ont participé au quatrième MOOC sur les microcontrôleurs, voici le lien vers le forum où j’ai présenté ce projet :
 
-<https://class.coursera.org/microcontroleurs-004/forum/thread?thread_id=327>
+-   <https://class.coursera.org/microcontroleurs-004/forum/thread?thread_id=327>
 
 ## Code
 

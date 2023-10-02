@@ -1,16 +1,19 @@
 ---
+author: Nico
+date: 2017-01-13 16:45:00+01:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Relai commandé par microcontrôleur"
-tags: []
-image:
-    feature:
-date: 2017-01-13T16:45:00+01:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Relai commandé par microcontrôleur
 ---
 
-![Relai](../../files/2017-01-13-relai-commande-par-microcontroleur/relai-commande-par-microcontroleur-001_lowres.jpg)
+[![Relai][img_1]][img_1]
+
+[img_1]: ../../files/2017-01-13-relai-commande-par-microcontroleur/relai-commande-par-microcontroleur-001_lowres.jpg
 
 ## Matériel
 

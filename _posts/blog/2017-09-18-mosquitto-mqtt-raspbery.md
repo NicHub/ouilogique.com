@@ -1,16 +1,18 @@
 ---
+author: Nico
+date: 2017-09-18 18:43:00+02:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Installer Mosquitto MQTT avec WebSocket sur un Raspberry Pi"
-tags: []
-image:
-    feature:
-date: 2017-09-18T18:43:00+02:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Installer Mosquitto MQTT avec WebSocket sur un Raspberry Pi
 ---
 
-Sur Raspbian Stretch, la version de `mosquitto` est assez vieille, donc cette procédure permet d’installer la dernière version disponible dans le dépôt. Au moment où j’écris ce billet, la vesion disponible avec `apt-get` est la `1.4.10` alors que la dernière version est la `1.6.4` (<https://mosquitto.org/files/source/>).
+Sur Raspbian Stretch, la version de `mosquitto` est assez vieille, donc cette procédure permet d’installer la dernière version disponible dans le dépôt.
+Au moment où j’écris ce billet, la vesion disponible avec `apt-get` est la `1.4.10` alors que la dernière version est la `1.6.4` (<https://mosquitto.org/files/source/>).
 
 ```bash
 # Voir la version qui sera installée avec apt-get.
@@ -26,13 +28,13 @@ apt-cache show mosquitto # Version: 1.4.10-3+deb9u4
 
 J’ai testé la procédure ci-dessous avec une installation propre de Raspian Stretch.
 
-<https://ouilogique.com/installer-raspian-stretch/>
+-   <https://ouilogique.com/installer-raspian-stretch/>
 
 ## Installation et compilation de mosquitto 1.6.4
 
 Les informations ci-dessous sont tirées de ce blog avec quelques adaptations :
 
-<https://goo.gl/BQh6hA>
+-   <https://goo.gl/BQh6hA>
 
 ```bash
 # Installation des dépendances
@@ -173,7 +175,8 @@ while true ; do mosquitto_pub --retain --host raspberrypi.local --topic "SUPERTE
 <!--
 ## Installation de Mosquitto MQTT
 
--   Sur le Mac, ouvrir le Terminal et taper la commande `ssh pi@raspberrypi.local`. Quand SSH demande d’autoriser la connexion, répondre `yes` en toutes lettres, puis entrer le mot de passe par défaut `raspberry`.
+-   Sur le Mac, ouvrir le Terminal et taper la commande `ssh pi@raspberrypi.local`.
+    Quand SSH demande d’autoriser la connexion, répondre `yes` en toutes lettres, puis entrer le mot de passe par défaut `raspberry`.
 -   Changer la zone horaire avec `sudo raspi-config`, puis sélectionner `4 Localisation Options/I2 Change Timezone`.
 -   Installer les mises à jour du système :
 

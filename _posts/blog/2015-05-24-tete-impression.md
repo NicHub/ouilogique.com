@@ -1,19 +1,19 @@
 ---
-lang: fr
-layout: page
-title: "Tête d’impression chinoise pour µDelta"
-tags: [Impression 3D]
 author: Nico
+date: 2015-05-24 12:00:00+02:00
 image:
     feature: 2015-02-23_microDelta_002.jpg
-date: 2015-05-24T12:00:00+02:00
+lang: fr
+layout: page
 published: true
 redirect_from:
     - /blog/tete-impression/
+tags:
+    - Impression 3D
+title: Tête d’impression chinoise pour µDelta
 ---
 
 Ma [µDelta](https://www.reprap-france.com) a [une nouvelle tête d’impression](https://s.click.aliexpress.com/e/J2zVfYFAq) nettement plus longue que l’originale, mais elle fonctionne nettement mieux.
-
 
 [![ouilogique.com][img_1]][img_1]
 
@@ -28,7 +28,6 @@ Petit souci cependant, l’étalonnage de Reprap-France ne fonctionne plus... Il
 [![ouilogique.com][img_3]][img_3]
 
 [img_3]: ../../files/2015-05-24-tete-impression/images/FirmwareEEPROMSettings_2.png
-
 
 [![ouilogique.com][i3]{:style="width:50%; float:left"}][i3]
 
@@ -45,6 +44,5 @@ Petit souci cependant, l’étalonnage de Reprap-France ne fonctionne plus... Il
 [![ouilogique.com][i6]{:style="width:50%; float:left; clear:right; margin-bottom:200px;"}][i6]
 
 [i6]: ../../files/2015-05-24-tete-impression/images/910737-Voronoi_Klein_Bottle_004.jpg
-
 
 [Voronoi Klein Bottle — Thingiverse 910737](https://www.thingiverse.com/thing:910737)

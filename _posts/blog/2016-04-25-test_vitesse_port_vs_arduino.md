@@ -1,15 +1,17 @@
 ---
+author: Nico
+date: 2016-04-25 19:35:00+02:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Test de vitesse entre les fonctions de manipulation de ports et les fonctions Arduino"
-tags: []
-image:
-    feature:
-date: 2016-04-25T19:35:00+02:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title:
+    Test de vitesse entre les fonctions de manipulation de ports et les fonctions
+    Arduino
 ---
-
 
 Les fonctionnalités offertes par l’écosystème Arduino sont forts pratiques, particulièrement pour les débutants, mais ne sont pas toujours des plus efficaces en terme d’utilisation des ressources, particulièrement en ce qui concerne l’utilisation des temps de cycles. Voici un petit comparatifs avec les fonctions de manipulation de port.
 
@@ -19,9 +21,8 @@ J’ai mesuré les résultats présentés ci-dessous sur un clone d’[Arduino N
 
 Le programme de test est disponible ci-dessous. Si le test est fait avec une boucle `for`, il faut ajouter 2 aux nombres de cycles indiqués dans le tableau.
 
-| ---                                                                              |           |
 | Fonction                                                                         | Nb cycles |
-| -                                                                                | :-        |
+| -------------------------------------------------------------------------------- | :-------- |
 | `bitSet`                                                                         | 2         |
 | `bitClear`                                                                       | 2         |
 | `digitalWrite`                                                                   | 81        |
@@ -29,12 +30,11 @@ Le programme de test est disponible ci-dessous. Si le test est fait avec une bou
 | `PORTB ^= 1 << bLed13`                                                           | 3         |
 | `bitRead( PORTB, bLed13 ) ? bitClear( PORTB, bLed13 ) : bitSet( PORTB, bLed13 )` | 5         |
 | ---                                                                              |           |
-| <code class="highlighter-rouge">DDRB &#124;= ( 1 << bLed13 )</code>              | 2         |
+| <code style="color:red">DDRB &#124;= ( 1 << bLed13 )</code>                      | 2         |
 | `pinMode( Led13, OUTPUT )`                                                       | 68        |
 | ---                                                                              |           |
 | `bitRead`                                                                        | 1         |
 | `digitalRead`                                                                    | 63        |
-
 
 ```c++
 /*
@@ -262,8 +262,6 @@ void loop()
     _delay_ms( 2000 );
 }
 ```
-
-
 
 ## À lire également
 

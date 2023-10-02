@@ -1,22 +1,25 @@
 ---
+author: Nico
+date: 2016-06-02 18:49:00+02:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Programme basique pour commander un servomoteur"
-tags: []
-image:
-    feature:
-date: 2016-06-02T18:49:00+02:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Programme basique pour commander un servomoteur
 ---
 
 ## À voir aussi
 
-<https://www.youtube.com/watch?v=iH9_xtulyws>
+-   <https://www.youtube.com/watch?v=iH9_xtulyws>
 
 ## Programme basique pour commander un servomoteur
 
 [![Servo moteur basique][image-1]][image-1]
+
+[image-1]: ../../files/2016-06-02-servomoteur-basique/2016-06-02-servomoteur-basique_lowres.jpg
 
 ```c++
 /*
@@ -112,5 +115,3 @@ void clignoteLed13()
   }
 }
 ```
-
-[image-1]: ../../files/2016-06-02-servomoteur-basique/2016-06-02-servomoteur-basique_lowres.jpg

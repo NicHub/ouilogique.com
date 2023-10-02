@@ -1,16 +1,15 @@
 ---
+author: Nico
+date: 2015-09-05 13:53:00+01:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Générateurs de sites web statiques"
-tags: []
-date: 2015-09-05T13:53:00+01:00
-image:
-  feature: null
 published: true
-author: Nico
 redirect_from:
     - /blog/sites_web_statiques/
-published: true
+tags: []
+title: Générateurs de sites web statiques
 ---
 
 > Ouilogique.com est généré avec Jekyll.
@@ -21,7 +20,7 @@ published: true
 
 <iframe style="margin: 10px auto; display:block" width="640" height="360" src="https://www.youtube.com/embed/jeQCoiZT5gg" frameborder="0" allowfullscreen></iframe>
 
-<https://www.youtube.com/watch?v=jeQCoiZT5gg&feature=em-subs_digest-vrecs>
+-   <https://www.youtube.com/watch?v=jeQCoiZT5gg&feature=em-subs_digest-vrecs>
 
 <!-- ![](https://avatars1.githubusercontent.com/u/189606?v=3&s=96) -->
 
@@ -122,13 +121,14 @@ don’t want to pay for bandwidth ⇒ YouTube, Vimeo
 d3js
 highchart
 
-<https://caniuse.com/>
+-   <https://caniuse.com/>
 
 ## Generator for CMS
 
 Drupal ⇒ Boost
 WP ⇒ Wp-Super Cache
-<https://ghost.org> ⇒ Buster
+
+-   <https://ghost.org> ⇒ Buster
 
 ## Alternatives
 
@@ -144,7 +144,7 @@ WP ⇒ Wp-Super Cache
 
 ## Comparing Static Site Engines with Brian Rinaldi
 
-<https://www.youtube.com/watch?v=R-fJWOO1bjE>
+-   <https://www.youtube.com/watch?v=R-fJWOO1bjE>
 
 ### Jekyll
 
@@ -152,11 +152,11 @@ WP ⇒ Wp-Super Cache
 
 ### Middleman
 
-<https://middlemanapp.com>
+-   <https://middlemanapp.com>
 
 ### Harp
 
-<https://harpjs.com>
+-   <https://harpjs.com>
 
 ### roots (voir article)
 

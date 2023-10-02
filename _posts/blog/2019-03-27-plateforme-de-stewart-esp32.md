@@ -1,13 +1,14 @@
 ---
-lang: fr
-layout: page
-title: "Plateforme de Stewart pilotée avec un ESP32"
-tags: []
+author: Nico
+date: 2019-03-27 17:00:00+01:00
 image:
     feature: 2021-04-24-proto-plateforme-de-stewart_001.jpg
-date: 2019-03-27T17:00:00+01:00
+lang: fr
+layout: page
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Plateforme de Stewart pilotée avec un ESP32
 ---
 
 [![Plateforme de Stewart — ouilogique.com][i1]{:style="width:50%;"}][i1]
@@ -23,7 +24,7 @@ Premiers prototypes d’une plateforme de Stewart que je construis dans le cadre
 
 **Le code source et quelques détails sur GitHub**
 
-<https://github.com/NicHub/stewart-platform-esp32>
+-   <https://github.com/NicHub/stewart-platform-esp32>
 
 ## Quatrième version
 
@@ -72,7 +73,8 @@ Pour la quatrième version, je ne génère plus le PWM des servos avec l’ESP32
 
 ## Troisième version
 
-Avec un clone de Nunchuck (joystick I²C de la console Wii), des vraie biellettes et des clones de servos Tower Pro MG90s. J’ai abandonné les clones de servos Tower Pro MG996R qui ne fonctionnent vraiment pas bien, car ils sont beaucoup trop lents et consomment trop de courant.
+Avec un clone de Nunchuck (joystick I²C de la console Wii), des vraie biellettes et des clones de servos Tower Pro MG90s.
+J’ai abandonné les clones de servos Tower Pro MG996R qui ne fonctionnent vraiment pas bien, car ils sont beaucoup trop lents et consomment trop de courant.
 
 <div style="display:block; margin-bottom:50px;">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1uQ3CkhVr-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -399,61 +401,45 @@ STPB
 
 Cinématique inverse avec servomoteurs **😃 Meilleure source pour les calculs pour l’instant !**
 
-> Méthode de calcul de la cinématique inverse utilisée par le projet memememememememe. C’est la seule méthode qui inclu des servomoteurs en rotation. Les autres proposent systématiquement des actuateurs linéaires.
+> Méthode de calcul de la cinématique inverse utilisée par le projet memememememememe.
+> C’est la seule méthode qui inclu des servomoteurs en rotation.
+> Les autres proposent systématiquement des actuateurs linéaires.
 
 -   <https://memememememememe.me/assets/posts/stewart-platform-math/MathsOfStewartPlatformV5.pdf>
 
 Analyse vectorielle des lieux de singularité de la plate-forme de Gough-Stewart
 
 -   ~~corpus.ulaval.ca/jspui/bitstream/20.500.11794/23444/1/28962.pdf~~
-
-<https://stringfixer.com/fr/Stewart_platform>
-
-<https://fr.lambdageeks.com/parallel-robot-kinematics/>
-
-<https://fr.wikipedia.org/wiki/Reymond_Clavel>
-
-<https://fr.wikipedia.org/wiki/Robot_Delta>
-
-<https://vimeo.com/129643275>
-
-<https://www.ni.com/fr-ch/shop/software/products/6-dof-stewart-platform-control-library.html>
-
-<https://www.ni.com/fr-ch/shop/software/products/stewart-platform-trainer-toolkit.html>
-
-<https://www.xarg.org/paper/inverse-kinematics-of-a-stewart-platform/>
-
-<https://youtu.be/1jrP3_1ML9M>
+-   <https://stringfixer.com/fr/Stewart_platform>
+-   <https://fr.lambdageeks.com/parallel-robot-kinematics/>
+-   <https://fr.wikipedia.org/wiki/Reymond_Clavel>
+-   <https://fr.wikipedia.org/wiki/Robot_Delta>
+-   <https://vimeo.com/129643275>
+-   <https://www.ni.com/fr-ch/shop/software/products/6-dof-stewart-platform-control-library.html>
+-   <https://www.ni.com/fr-ch/shop/software/products/stewart-platform-trainer-toolkit.html>
+-   <https://www.xarg.org/paper/inverse-kinematics-of-a-stewart-platform/>
+-   <https://youtu.be/1jrP3_1ML9M>
 
 ## Divers
 
-<https://youtu.be/S-_VvNg_4cE>
+-   <https://youtu.be/S-_VvNg_4cE>
+-   <https://youtu.be/N1g_KwHqew8>
 
-<https://youtu.be/N1g_KwHqew8>
+Stewart’s Platform.
+Microcontrollers: ATMega 1284PA, ATMega 8.
+Servos: TowerPro MG995
 
-Stewart’s Platform. Microcontrollers: ATMega 1284PA, ATMega 8. Servos: TowerPro MG995
-
-<https://grabcad.com/oleksandr.stepanenko-1/models>
-
-<https://youtu.be/eXULfD94gho>
-
-<https://youtu.be/Bf_1pUyjNiM>
-
-<https://youtu.be/c1oxyk2IIOQ>
-
-<https://youtu.be/vlCH4zhIqmM>
-
-<https://acrome.net/product/stewart-platform>
-
-<https://youtu.be/5wCK6XGC3ig>
-
-<https://motionsystems.eu/product-category/motion-platforms/>
-
-<https://youtu.be/VeD4_FghKhQ>
-
-<https://youtu.be/PzOGIeGEyHY>
-
-<https://upcommons.upc.edu/bitstream/handle/2117/101560/Memoria_TFG_Aitor_Ramirez.pdf?sequence=1&isAllowed=y>
+-   <https://grabcad.com/oleksandr.stepanenko-1/models>
+-   <https://youtu.be/eXULfD94gho>
+-   <https://youtu.be/Bf_1pUyjNiM>
+-   <https://youtu.be/c1oxyk2IIOQ>
+-   <https://youtu.be/vlCH4zhIqmM>
+-   <https://acrome.net/product/stewart-platform>
+-   <https://youtu.be/5wCK6XGC3ig>
+-   <https://motionsystems.eu/product-category/motion-platforms/>
+-   <https://youtu.be/VeD4_FghKhQ>
+-   <https://youtu.be/PzOGIeGEyHY>
+-   <https://upcommons.upc.edu/bitstream/handle/2117/101560/Memoria_TFG_Aitor_Ramirez.pdf?sequence=1&isAllowed=y>
 
 [Fast Programming of 6-DOF Hexapod 6-Axis Motion Stewart Platform: Software, Mechanics, Controller](https://youtu.be/hkoTRNfivbU)
 

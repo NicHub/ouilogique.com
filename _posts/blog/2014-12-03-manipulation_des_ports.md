@@ -1,15 +1,15 @@
 ---
+author: Nico
+date: 2014-12-03 12:00:00+01:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "La manipulation des entrées-sorties à l’aide des registres de port"
-tags: []
-image:
-    feature:
-date: 2014-12-03T12:00:00+01:00
 published: true
-author: Nico
 redirect_from:
     - /blog/manipulation_des_ports/
+tags: []
+title: La manipulation des entrées-sorties à l’aide des registres de port
 ---
 
 ## Description des registres AVR & MSP
@@ -58,7 +58,7 @@ void loop()
 
 ## Liens
 
-<https://www.mon-club-elec.fr/pmwiki_reference_arduino/pmwiki.php?n=Main.PortManipulation>
+-   <https://www.mon-club-elec.fr/pmwiki_reference_arduino/pmwiki.php?n=Main.PortManipulation>
 
 ## Manipulation des registres de l’ESP8266
 

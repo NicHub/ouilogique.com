@@ -1,20 +1,27 @@
 ---
+author: Nico
+date: 2016-05-21 19:00:00+02:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Test du capteur de température DS18B20 avec le protocole OneWire"
-tags: []
-image:
-    feature:
-date: 2016-05-21T19:00:00+02:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Test du capteur de température DS18B20 avec le protocole OneWire
 ---
 
-![...](../../files/2016-05-21-test_capteur_temp_DS18B20/2016-05-21-test_capteur_temp_DS18B20_003_lowres.jpg)
+[![ouilogique.com][img_1]][img_1]
 
-![...](../../files/2016-05-21-test_capteur_temp_DS18B20/2016-05-21-test_capteur_temp_DS18B20_001_lowres.jpg)
+[img_1]: ../../files/2016-05-21-test_capteur_temp_DS18B20/2016-05-21-test_capteur_temp_DS18B20_003_lowres.jpg
 
-![...](../../files/2016-05-21-test_capteur_temp_DS18B20/2016-05-21-test_capteur_temp_DS18B20_002_lowres.jpg)
+[![ouilogique.com][img_2]][img_2]
+
+[img_2]: ../../files/2016-05-21-test_capteur_temp_DS18B20/2016-05-21-test_capteur_temp_DS18B20_001_lowres.jpg
+
+[![ouilogique.com][img_3]][img_3]
+
+[img_3]: ../../files/2016-05-21-test_capteur_temp_DS18B20/2016-05-21-test_capteur_temp_DS18B20_002_lowres.jpg
 
 ```c++
 /*

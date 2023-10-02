@@ -1,13 +1,14 @@
 ---
+author: Nico
+date: 2020-12-25 13:19:00+01:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Installer Pi-hole sur un Raspberry"
-tags: []
-image:
-    feature:
-date: 2020-12-25T13:19:00+01:00
 published: true
-author: Nico
+redirect_from: []
+tags: []
+title: Installer Pi-hole sur un Raspberry
 ---
 
 ## Source

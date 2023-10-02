@@ -1,15 +1,15 @@
 ---
+author: Nico
+date: 2015-07-02 09:47:00+01:00
+image:
+    feature: null
 lang: fr
 layout: page
-title: "Test de hubs USB"
-tags: []
-image:
-    feature:
-date: 2015-07-02T09:47:00+01:00
-author: Nico
+published: true
 redirect_from:
     - /blog/usb_hub_test/
-published: true
+tags: []
+title: Test de hubs USB
 ---
 
 -   [Test du hub _Anne LXL4072201A_](#test-du-hub-anne-lxl4072201a)
@@ -23,11 +23,9 @@ Le test consiste à placer une diode entre les pattes d’alimentation de la fic
 
 **Le hub doit être alimenté pendant le test.**
 
-
 [![ouilogique.com][img_1]{:style="width:50%;"}][img_1]
 
 [img_1]: ../../files/2015-07-02-usb_hub_test/test_usb_hub_003.svg
-
 
 [![ouilogique.com][img_2]{:style="width:50%;"}][img_2]
 
