@@ -11,9 +11,9 @@ tags: []
 title: Flasher un bootloader
 ---
 
-[![Flasher un bootloader — ouilogique.com][img_1]{:style="width:100%;"}][img_1]
+[![Flasher un bootloader — ouilogique.com][img_1]][img_1]{:style="width:100%;"}
 
-[i1]: ../../files/2023-05-30-flasher-un-bootloader/images/2023-05-30-flasher-un-bootloader-001_lowres.jpg
+[img_1]: ../../files/2023-05-30-flasher-un-bootloader/images/2023-05-30-flasher-un-bootloader-001_lowres.jpg
 
 Un de mes Arduino Nano refusait de se faire flasher et retournait systématiquement une erreur du genre `not in sync`.
 En googlant, j’ai trouvé que plusieurs personnes ont résolu ce problème en changeant le type de bootloader en `ATmega328p (Old Bootloader)` dans le menu `Tools/Processor: "ATmega328p"/` de l’IDE Arduino.
