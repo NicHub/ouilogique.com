@@ -29,8 +29,8 @@ La communication se passe de la façon suivante :
 
 [![ouilogique.com][img_1]][img_1]
 
-[img_1]: ../../files/2015-06-26-nodejs_arduino_matrices/2015-05-29_platine.jpg
+[img_1]: ../../files/2015-06-26-nodejs_arduino_matrices/images/2015-05-29_platine.jpg
 
 [![ouilogique.com][img_2]][img_2]
 
-[img_2]: ../../files/2015-06-26-nodejs_arduino_matrices/2015-05-30_boutons.jpg
+[img_2]: ../../files/2015-06-26-nodejs_arduino_matrices/images/2015-05-30_boutons.jpg

@@ -11,13 +11,13 @@ tags: []
 title: Débuggage sur ESP32 avec un <em>ESP&#8209;Prog</em> et <em>PIO Unified Debugger</em>
 ---
 
-[![ESP-Prog — ouilogique.com][i3]{:style="width:90%;"}][i3]
+[![ESP-Prog — ouilogique.com][img_3]{:style="width:90%;"}][img_3]
 
-[i3]: ../../files/2019-07-26-debuggage-esp32/esp-prog-board-close-up-lowres.jpg
+[img_3]: ../../files/2019-07-26-debuggage-esp32/images/esp-prog-board-close-up-lowres.jpg
 
-[![ESP-Prog back — ouilogique.com][i4]{:style="width:90%;"}][i4]
+[![ESP-Prog back — ouilogique.com][img_4]{:style="width:90%;"}][img_4]
 
-[i4]: ../../files/2019-07-26-debuggage-esp32/esp-prog-board-close-up-back-lowres.jpg
+[img_4]: ../../files/2019-07-26-debuggage-esp32/images/esp-prog-board-close-up-back-lowres.jpg
 
 Cet article montre comment mettre en route un board _ESP&#8209;Prog_ et les outils intégrés à PlatformIO pour flasher et débugger un ESP32.
 
@@ -62,9 +62,9 @@ bleu   GND       3. GND             |   4. ESP_TCK       IO_13  violet
        -         9. GND             |  10. NC            -
 ```
 
-[![Debuggage d’un ESP32 avec un ESP-Prog et PIO Unified Debugger — ouilogique.com][i1]{:style="width:90%;"}][i1]
+[![Debuggage d’un ESP32 avec un ESP-Prog et PIO Unified Debugger — ouilogique.com][img_1]{:style="width:90%;"}][img_1]
 
-[i1]: ../../files/2019-07-26-debuggage-esp32/esp-prog-board-lowres.jpg
+[img_1]: ../../files/2019-07-26-debuggage-esp32/images/esp-prog-board-lowres.jpg
 
 ## Mise en route
 
@@ -115,9 +115,9 @@ debug_init_break = tbreak setup
 [zadig]: https://zadig.akeo.ie
 [homebrew]: https://brew.sh/
 
-[![Debuggage d’un ESP32 avec un ESP-Prog et PIO Unified Debugger — ouilogique.com][i2]{:style="width:90%;"}][i2]
+[![Debuggage d’un ESP32 avec un ESP-Prog et PIO Unified Debugger — ouilogique.com][img_2]{:style="width:90%;"}][img_2]
 
-[i2]: ../../files/2019-07-26-debuggage-esp32/pio-unified-debugger-001.jpg
+[img_2]: ../../files/2019-07-26-debuggage-esp32/images/pio-unified-debugger-001.jpg
 
 <!--
 

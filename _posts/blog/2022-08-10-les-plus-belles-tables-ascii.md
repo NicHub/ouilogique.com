@@ -17,9 +17,9 @@ Hier (9 août 2022), je suis tombé sur une table de caractères ASCII de toute 
 
 -   <https://github.com/tomgibara/ascii-table>
 
-[![ASCII table 1.1 Tom Gibara][image-1]][image-1]
+[![ASCII table 1.1 Tom Gibara][img_1]][img_1]
 
-[image-1]: ../../files/2022-08-10-les-plus-belles-tables-ascii/ascii-table-1.1-tom-gibara.svg
+[img_1]: ../../files/2022-08-10-les-plus-belles-tables-ascii/images/ascii-table-1.1-tom-gibara.svg
 
 ## theasciicode.com.ar
 

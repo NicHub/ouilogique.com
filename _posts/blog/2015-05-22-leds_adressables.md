@@ -20,7 +20,9 @@ Pour mon [projet de programmation d’un MSP430 en mode ISP](/blog/programmer_un
 
 Jusque là, rien de bien méchant. Mais comme je n’avais qu’une LED de ce type et que je l’ai soudée sur mon [Perma-Proto d’Adafruit](https://www.adafruit.com/blog/2011/11/18/adafruit-perma-proto-half-sized-breadboard-pcb-3-pack/), il m’en fallait des nouvelles. Ni une, ni deux, j’ai commandé quatre [LED P9823-F8](https://shop.boxtec.ch/led-neopixel-8mm-p9823-p-42265.html) chez Boxtec.
 
-![](../../files/2015-05-22-leds_adressables/images/67053.jpg){:height="250px" width="250px"}
+[![ouilogique.com][img_1]][img_1]{:height="250px" width="250px"}
+
+[img_1]: ../../files/2015-05-22-leds_adressables/images/67053.jpg
 
 Mal m’en a pris, elles ne sont pas du tout du même type que ma LED RGB de base. En fait ce sont des LED adressables en PWM. Eh oui, elles contiennent de la logique capable de comprendre un signal PWM et de s’allumer en conséquence. Avec en plus la possibilité d’être mises en série.
 
@@ -35,15 +37,23 @@ Celle d’Adafruit est plus simple à mettre en œuvre et les exemples fonctionn
 
 ## Pinout
 
-![](../../files/2015-05-22-leds_adressables/images/LED_P9823-F8_pinout.jpg){:width="200px"}
+[![ouilogique.com][img_2]][img_2]{:width="200px"}
+
+[img_2]: ../../files/2015-05-22-leds_adressables/images/LED_P9823-F8_pinout.jpg
 
 ## Câblage
 
-![](../../files/2015-05-22-leds_adressables/images/LED_P9823-F8_cablage.jpg){:width="600px"}
+[![ouilogique.com][img_3]][img_3]{:width="600px"}
 
-![](../../files/2015-05-22-leds_adressables/images/P1030717.JPG)
+[img_3]: ../../files/2015-05-22-leds_adressables/images/LED_P9823-F8_cablage.jpg
 
-![](../../files/2015-05-22-leds_adressables/2015-05-22-leds_adressables_bb.svg)
+[![ouilogique.com][img_4]][img_4]
+
+[img_4]: ../../files/2015-05-22-leds_adressables/images/P1030717.JPG
+
+[![ouilogique.com][img_5]][img_5]
+
+[img_5]: ../../files/2015-05-22-leds_adressables/images/2015-05-22-leds_adressables.svg
 
 ### Notes
 
@@ -53,7 +63,7 @@ Celle d’Adafruit est plus simple à mettre en œuvre et les exemples fonctionn
 
 ## Exemple de programme
 
-[P9823_LED_RS232.ino](../../files/2015-05-22-leds_adressables/P9823_LED_RS232.ino)
+[P9823_LED_RS232.ino](../../files/2015-05-22-leds_adressables/docs/P9823_LED_RS232.ino)
 
 ## Liens
 

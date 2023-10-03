@@ -25,15 +25,15 @@ Et voilà ce que ça donne en action :
 
 [![ouilogique.com][img_1]][img_1]
 
-[img_1]: ../../files/2015-06-12-analyseur_logique_Arduino/2015-04-22_analyseur_logique.png
+[img_1]: ../../files/2015-06-12-analyseur_logique_Arduino/images/2015-04-22_analyseur_logique.png
 
 [![ouilogique.com][img_2]][img_2]
 
-[img_2]: ../../files/2015-06-12-analyseur_logique_Arduino/2015-04-22_RF433_proto_1.jpg
+[img_2]: ../../files/2015-06-12-analyseur_logique_Arduino/images/2015-04-22_RF433_proto_1.jpg
 
 [![ouilogique.com][img_3]][img_3]
 
-[img_3]: ../../files/2015-06-12-analyseur_logique_Arduino/2015-04-22_RF433_proto_2.jpg
+[img_3]: ../../files/2015-06-12-analyseur_logique_Arduino/images/2015-04-22_RF433_proto_2.jpg
 
 ## Logiciels pour la visualisation des traces
 

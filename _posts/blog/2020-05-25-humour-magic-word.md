@@ -11,6 +11,6 @@ tags: []
 title: Humour Magic Word
 ---
 
-[![sudo is the magic word][image-1]][image-1]
+[![sudo is the magic word][img_1]][img_1]
 
-[image-1]: ../../files/2020-05-25-humour-magic-word/magic-word.jpg
+[img_1]: ../../files/2020-05-25-humour-magic-word/images/magic-word.jpg

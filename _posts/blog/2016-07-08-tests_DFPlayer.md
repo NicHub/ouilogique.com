@@ -33,9 +33,9 @@ En conclusion, ça marche bien avec les sorties DAC ou avec les sorties SPK.
 J’ai testé deux cartes micro SD : une de 32 Go et une autre de 8 Go et les deux ont fonctionné sans problème.
 Le formatage en FAT32 sous OSX avec l’utilitaire de disques n’a pas posé de problème non plus.
 
-[![Test d’un module DFPlayer avec un Arduino nano][image-1]][image-1]
+[![Test d’un module DFPlayer avec un Arduino nano][img_1]][img_1]
 
-[image-1]: ../../files/2016-07-08-tests_DFPlayer/images/2016-07-08-tests_DFPlayer_001_lowres.jpg
+[img_1]: ../../files/2016-07-08-tests_DFPlayer/images/2016-07-08-tests_DFPlayer_001_lowres.jpg
 
 ## Programme d’exemple
 

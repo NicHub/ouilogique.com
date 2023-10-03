@@ -13,7 +13,7 @@ title: NeoPixel sur Raspberry Pi
 
 Voici comment configurer un Raspberry Pi pour l’utiliser avec des LED NeoPixel WS281x. Je présente la version Python, mais d’autres langages sont supportés.
 
-[![NeoPixel sur Raspberry Pi][image-1]][image-1]
+[![NeoPixel sur Raspberry Pi][img_1]][img_1]
 
 > Les deux câbles brun et bleu à droite du _breadboard_ sont connectés à une alimentation 5 V.
 
@@ -102,7 +102,7 @@ Voici ce que me retourne la commande `top`. On voit que le processus `python` co
         1 root      20   0   22780   3952   2788 S   0.0  0.4   0:02.85 systemd
         2 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kthreadd
 
-[image-1]: ../../files/2018-04-22-neopixel-raspberry-pi/2018-04-22-neopixel-raspberry-pi-001_lowres.jpg
+[img_1]: ../../files/2018-04-22-neopixel-raspberry-pi/images/2018-04-22-neopixel-raspberry-pi-001_lowres.jpg
 [adafruit neopixels on raspberry pi]: https://learn.adafruit.com/neopixels-on-raspberry-pi/software
 [rpi_ws281x from jgarff on github]: https://github.com/jgarff/rpi_ws281x
 [anneau de 24 led ws2812 — neopixel]: https://www.banggood.com/CJMCU-24-Bit-WS2812-5050-RGB-LED-Driver-Development-Board-p-974188.html?p=0431091025639201412F)

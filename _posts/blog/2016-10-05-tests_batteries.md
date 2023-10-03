@@ -13,15 +13,15 @@ title: Test de décharge de batteries
 
 [![batterie noname ouverte][img_1]][img_1]
 
-[img_1]: ../../files/2016-10-05-tests_batteries/batterie_noname+boitier_lowres.jpg
+[img_1]: ../../files/2016-10-05-tests_batteries/images/batterie_noname+boitier_lowres.jpg
 
 [![Test batterie noname][img_2]][img_2]
 
-[img_2]: ../../files/2016-10-05-tests_batteries/test_batterie_18650_noname_lowres.jpg
+[img_2]: ../../files/2016-10-05-tests_batteries/images/test_batterie_18650_noname_lowres.jpg
 
 [![Test batterie Infinity PV][img_3]][img_3]
 
-[img_3]: ../../files/2016-10-05-tests_batteries/test_batterie_infinityPV_lowres.jpg
+[img_3]: ../../files/2016-10-05-tests_batteries/images/test_batterie_infinityPV_lowres.jpg
 
 | Batterie                     | Capacité annoncée | Capacité mesurée | Capacité mesurée<br/>vs annoncée | Durée de la décharge | Tension mesurée | Courant mesuré | Résistance calculée |
 | :--------------------------- | ----------------: | ---------------: | -------------------------------: | -------------------: | --------------: | -------------: | ------------------: |

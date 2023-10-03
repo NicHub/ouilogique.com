@@ -60,7 +60,7 @@ sudo pip3 install .
 
 -   Connecter l’adaptateur SDR.
 
-[![Raspberry Pi avec dongle SDR][image-1]][image-1]
+[![Raspberry Pi avec dongle SDR][img_1]][img_1]
 
 -   Dans l’interface graphique de Raspbian, ouvrir un terminal et taper la commande `urh`.
 -   Dans la fenêtre qui s’ouvre, aller dans le menu `File/Record Signal...`.
@@ -68,7 +68,7 @@ sudo pip3 install .
 -   Cliquer sur la flèche arrondie en regard de `Device Identifier`. L’identifiant de l’adaptateur doit d’afficher, par exemple : `Realtek RTL2838UHIDIR (SN: 00000001)`.
 -   Laisser les autres options par défaut.
 
-[![Enregistrement d’un signal RF433 avec URH][image-2]][image-2]
+[![Enregistrement d’un signal RF433 avec URH][img_2]][img_2]
 
 -   Cliquer sur le bouton `Start`.
 -   Appuyer sur le bouton de la clé RF433.
@@ -86,7 +86,7 @@ sudo pip3 install .
 -   Maintenant, on a les bits du signal (97 bits dans mon cas). Mais il faut encore évaluer combien de bits sont dans l’intervalle sans signal. Dans mon cas, il y en a 31, donc une période complète comprend 97 + 31 = 128 bits.
 -   Il faut également ajouter les zéros au code copié. Dans mon cas, il y en a 31.
 
-[![Enregistrement d’un signal RF433 avec URH][image-3]][image-3]
+[![Enregistrement d’un signal RF433 avec URH][img_3]][img_3]
 
 ## Tester le code copié
 
@@ -96,7 +96,7 @@ L’émetteur RF433 est connecté à la broche 7.
 
 Les boutons sont connectés aux broches 8, 9 et 10. Pour un premier test, un seul bouton suffit.
 
-[![Enregistrement d’un signal RF433 avec URH][image-4]][image-4]
+[![Enregistrement d’un signal RF433 avec URH][img_4]][img_4]
 
 Le code de test se trouve ici : [rf433-spoof sur GitHub][rf433-spoof sur github].
 
@@ -117,14 +117,14 @@ Et il ne reste plus qu’à flasher l’Arduino et faire un test.
 -   <http://gqrx.dk/>
 -   <https://airspy.com>
 
+[img_1]: ../../files/2018-07-15-hacker-une-cle-rf433/images/hacker-une-cle-rf433-001.jpg
+[img_2]: ../../files/2018-07-15-hacker-une-cle-rf433/images/hacker-une-cle-rf433-002.jpg
+[img_3]: ../../files/2018-07-15-hacker-une-cle-rf433/images/hacker-une-cle-rf433-003.jpg
+[img_4]: ../../files/2018-07-15-hacker-une-cle-rf433/images/hacker-une-cle-rf433-004.jpg
 [video andreas]: https://www.youtube.com/watch?v=L0fSEbGEY-Q
 [urh github]: https://github.com/jopohl/urh
 [installer raspbian stretch]: https://ouilogique.com/installer-raspian-stretch/
 [truc install urh]: https://github.com/jopohl/urh/issues/502
-[image-1]: ../../files/2018-07-15-hacker-une-cle-rf433/hacker-une-cle-rf433-001.jpg
-[image-2]: ../../files/2018-07-15-hacker-une-cle-rf433/hacker-une-cle-rf433-002.jpg
-[image-3]: ../../files/2018-07-15-hacker-une-cle-rf433/hacker-une-cle-rf433-003.jpg
-[image-4]: ../../files/2018-07-15-hacker-une-cle-rf433/hacker-une-cle-rf433-004.jpg
 [rf433-spoof sur github]: https://github.com/NicHub/ouilogique-Arduino/tree/master/rf433-spoof
 [émetteur rf433]: https://fr.aliexpress.com/item/1Lot-1-pair-2pcs-RF-wireless-receiver-module-transmitter-module-Ordinary-super-regeneration-315-433MHZ-DC5V/968306683.html
 [clé rf433]: https://fr.aliexpress.com/item/Universal-2-Channels-Electric-Garage-Door-Cloning-Remote-Control-Key-Fob-433mhz/32816768549.html

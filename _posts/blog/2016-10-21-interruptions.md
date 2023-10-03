@@ -25,7 +25,7 @@ If you look at the AVR pinout diagram you will see the INTx which are used for E
 
 [![Figure 1: ATmega168/328 - External Interrupt Pins][img_1]][img_1]
 
-[img_1]: ../../files/2016-10-21-interruptions/ATmega328-INTx.jpg
+[img_1]: ../../files/2016-10-21-interruptions/images/ATmega328-INTx.jpg
 
 The ATmega8 and the ATmega88/168/328 are backwards compatible when it comes to the pinouts however, they are programmed slightly different and while external interrupts work the same way on both types of micro controllers they do require different code to run.
 
@@ -96,7 +96,7 @@ ISR( INT0_vect )
 
 [![Figure 2: ATmega168/328 - Pin Change Interrupt Pins][img_2]][img_2]
 
-[img_2]: ../../files/2016-10-21-interruptions/ATmega328-PCINTx.jpg
+[img_2]: ../../files/2016-10-21-interruptions/images/ATmega328-PCINTx.jpg
 
 One important thing to note, on the older ATmega8 does not have any PCINT pints, therefore, this section of the tutorial only applies to ATmega88 through ATmega328.
 

@@ -12,13 +12,19 @@ tags: []
 title: Découverte du Bluetooth Low Energy avec la carte Nordic Semiconductor nRF51
 ---
 
-![](../../files/2015-09-14-bluetooth_low_energy_avec_nRF51/nRF51_001.jpg)
+[![ouilogique.com][img_1]][img_1]
 
-![](../../files/2015-09-14-bluetooth_low_energy_avec_nRF51/nRF51_002.jpg)
+[img_1]: ../../files/2015-09-14-bluetooth_low_energy_avec_nRF51/images/nRF51_001.jpg
+
+[![ouilogique.com][img_2]][img_2]
+
+[img_2]: ../../files/2015-09-14-bluetooth_low_energy_avec_nRF51/images/nRF51_002.jpg
 
 ## Brochage
 
-![](../../files/2015-05-28-pinouts/images/xnRF51-DK_Pinout_4.png)
+[![ouilogique.com][img_3]][img_3]
+
+[img_3]: ../../files/2015-05-28-pinouts/images/xnRF51-DK_Pinout_4.png
 
 > Seules les broches P0.01 à P0.06 peuvent être configurées en entrées analogiques.
 >

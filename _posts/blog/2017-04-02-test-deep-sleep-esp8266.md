@@ -64,11 +64,11 @@ _Note : 273.70 µs correspond à 21896 cycles d’horloge à 80 MHz (= 80E+6
 
 [![Deep Sleep ESP8266 — Test 1][img_1]][img_1]
 
-[img_1]: ../../files/2017-04-02-test-deep-sleep-esp8266/2017-04-02-test-deep-sleep-esp8266-montage-1.jpg
+[img_1]: ../../files/2017-04-02-test-deep-sleep-esp8266/images/2017-04-02-test-deep-sleep-esp8266-montage-1.jpg
 
 [![Deep Sleep ESP8266 — Signal de reset sur D0][img_2]][img_2]
 
-[img_2]: ../../files/2017-04-02-test-deep-sleep-esp8266/2017-04-02-test-deep-sleep-esp8266-signal-DO-reset.jpg
+[img_2]: ../../files/2017-04-02-test-deep-sleep-esp8266/images/2017-04-02-test-deep-sleep-esp8266-signal-DO-reset.jpg
 
 ## Montage 2 — Interruption externe
 
@@ -76,7 +76,7 @@ L’ESP sort du _deep sleep_ lorsque le bouton connecté en _pull-up_ est press�
 
 [![Deep Sleep ESP8266 — Test 2][img_3]][img_3]
 
-[img_3]: ../../files/2017-04-02-test-deep-sleep-esp8266/2017-04-02-test-deep-sleep-esp8266-montage-2.jpg
+[img_3]: ../../files/2017-04-02-test-deep-sleep-esp8266/images/2017-04-02-test-deep-sleep-esp8266-montage-2.jpg
 
 ## Programme de test
 

@@ -18,8 +18,8 @@ Mise en route de l’analyseur logique Scanalogic-2 ~~(www.ikalogic.com/ikalogic
 
 [![ouilogique.com – Scanalogic-2_Logic_Analyzer][img_1]][img_1]
 
-[img_1]: ../../files/2015-06-27-Scanalogic-2_Logic_Analyzer/Scanalogic-2_Logic_Analyzer_001.jpg
+[img_1]: ../../files/2015-06-27-Scanalogic-2_Logic_Analyzer/images/Scanalogic-2_Logic_Analyzer_001.jpg
 
 [![ouilogique.com – Scanalogic-2_Logic_Analyzer][img_2]][img_2]
 
-[img_2]: ../../files/2015-06-27-Scanalogic-2_Logic_Analyzer/Scanalogic-2_Logic_Analyzer_002.jpg
+[img_2]: ../../files/2015-06-27-Scanalogic-2_Logic_Analyzer/images/Scanalogic-2_Logic_Analyzer_002.jpg

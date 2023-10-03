@@ -18,9 +18,9 @@ title: Bouton piézoélectrique sur Arduino
 
 ## Image
 
-[![Bouton piézoélectrique avec Arduino Nano][image-1]][image-1]
+[![Bouton piézoélectrique avec Arduino Nano][img_1]][img_1]
 
-[image-1]: ../../files/2017-09-30-piezo-switch/2017-09-30-piezo-switch-001-lowres.jpg
+[img_1]: ../../files/2017-09-30-piezo-switch/images/2017-09-30-piezo-switch-001-lowres.jpg
 
 ## Fonctionnement
 

@@ -42,7 +42,9 @@ Ce capteur peut être utilisé sur le bus I²C ou le bus SPI. Les dénominations
 
 Je n’ai testé que le mode SPI (hardware) et pas le mode I²C et ça fonctionne bien.
 
-[![BMP280 + Arduino Pro Mini][image-1]][image-1]
+[![BMP280 + Arduino Pro Mini][img_1]][img_1]
+
+[img_1]: ../../files/2017-05-11-bmp280-arduino-pro-mini/images/2017-05-11-bmp280-arduino-pro-mini-001.jpg
 
 ## Voir aussi
 
@@ -50,7 +52,6 @@ Je n’ai testé que le mode SPI (hardware) et pas le mode I²C et ça fonctionn
 -   [BMP280 sur le site de Bosch][5]
 -   [Datasheet du BMP280][6]
 
-[image-1]: ../../files/2017-05-11-bmp280-arduino-pro-mini/2017-05-11-bmp280-arduino-pro-mini-001.jpg
 [1]: http://www.banggood.com/5Pcs-3_3V-8MHz-ATmega328P-AU-Pro-Mini-Microcontroller-Board-For-Arduino-p-980292.html?p=0431091025639201412F
 [2]: https://www.banggood.com/GY-BMP280-3_3-High-Precision-Atmospheric-Pressure-Sensor-Module-For-Arduino-p-1111135.html?p=0431091025639201412F
 [3]: http://www.miniinthebox.com/fr/programme-downloader-ftdi-basic-usb-a-ttl-ft232-pour-arduino_p903425.html

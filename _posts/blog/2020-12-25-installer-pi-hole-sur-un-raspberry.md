@@ -115,7 +115,7 @@ sudo reboot
 
 -   Dans le menu de gauche, cliquer sur `Group Management`, puis sur `Adlists`
     <http://192.168.1.28/admin/groups-adlists.php>.
--   Copier les [URL des listes de blocage (Adlists)](../../files/2020-12-25-installer-pi-hole-sur-un-raspberry/pi-hole-adlists.txt).
+-   Copier les [URL des listes de blocage (Adlists)](../../files/2020-12-25-installer-pi-hole-sur-un-raspberry/docs/pi-hole-adlists.txt).
 -   Coller ces URL dans le champ `Address`. Les retours à la ligne sont acceptés comme séparateur d’URL.
 -   Cliquer sur le bouton `Add`.
 
@@ -129,7 +129,7 @@ sudo reboot
 
 -   Dans le menu de gauche, cliquer sur `Whitelist`
     <http://192.168.1.28/admin/groups-domains.php?type=white>.
--   Copier les [URL des faux positifs (Whitelist)](../../files/2020-12-25-installer-pi-hole-sur-un-raspberry/pi-hole-whitelist.txt).
+-   Copier les [URL des faux positifs (Whitelist)](../../files/2020-12-25-installer-pi-hole-sur-un-raspberry/docs/pi-hole-whitelist.txt).
 -   Coller ces URL dans le champ `Domain`. Les retours à la ligne sont acceptés comme séparateur d’URL.
 -   Activer l’option `Add domain as wildcard`.
 -   Cliquer sur le bouton `Add to Whitelist`.

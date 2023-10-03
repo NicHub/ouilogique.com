@@ -544,7 +544,7 @@ console.log( "Le chiffre vaut " + 7 );
 
 [Microclub]: https://microclub.ch/
 
-[microclub-atelier-html-embarque.pdf]:  ../../files/2018-02-17-html-embarque/microclub-atelier-html-embarque.pdf
+[microclub-atelier-html-embarque.pdf]:  https://raw.githubusercontent.com/wiki/NicHub/microclub-atelier-html-embarque/md2pdf/microclub-atelier-html-embarque.pdf
 
 [Introduction au langage HTML]: ../introduction-html/
 

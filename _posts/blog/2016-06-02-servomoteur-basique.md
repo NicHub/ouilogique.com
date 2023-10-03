@@ -17,9 +17,9 @@ title: Programme basique pour commander un servomoteur
 
 ## Programme basique pour commander un servomoteur
 
-[![Servo moteur basique][image-1]][image-1]
+[![Servo moteur basique][img_1]][img_1]
 
-[image-1]: ../../files/2016-06-02-servomoteur-basique/2016-06-02-servomoteur-basique_lowres.jpg
+[img_1]: ../../files/2016-06-02-servomoteur-basique/images/2016-06-02-servomoteur-basique_lowres.jpg
 
 ```c++
 /*

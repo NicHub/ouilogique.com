@@ -29,12 +29,12 @@ Pour les connexions, j’ai utilisé des [Long 8-pin Headers][6] qui sont forts 
 
 ## Images
 
-[![WEMOS Sandwich][image-1]][image-1]
+[![WEMOS Sandwich][img_1]][img_1]
 
-[![WEMOS Sandwich][image-2]][image-2]
+[![WEMOS Sandwich][img_2]][img_2]
 
-[image-1]: ../../files/2017-05-22-wemos-sandwich/wemos-sandwich-001.jpg
-[image-2]: ../../files/2017-05-22-wemos-sandwich/wemos-sandwich-002.jpg
+[img_1]: ../../files/2017-05-22-wemos-sandwich/images/wemos-sandwich-001.jpg
+[img_2]: ../../files/2017-05-22-wemos-sandwich/images/wemos-sandwich-002.jpg
 [1]: https://www.banggood.com/WeMos-D1-Mini-Single-Lithium-Battery-Charging-And-Battery-Boost-Shield-p-1092773.html?p=0431091025639201412F
 [2]: https://www.banggood.com/WeMos-D1-Mini-V2-NodeMcu-4M-Bytes-Lua-WIFI-Internet-Of-Things-Development-Board-Based-ESP8266-p-1115398.html?p=0431091025639201412F
 [3]: https://www.banggood.com/DC-5V-1CH-Relay-Shield-V2-Version-2-For-WEMOS-D1-Mini-ESP8266-WiFi-Module-p-1102379.html?p=0431091025639201412F

@@ -25,15 +25,15 @@ Le test consiste à placer une diode entre les pattes d’alimentation de la fic
 
 [![ouilogique.com][img_1]{:style="width:50%;"}][img_1]
 
-[img_1]: ../../files/2015-07-02-usb_hub_test/test_usb_hub_003.svg
+[img_1]: ../../files/2015-07-02-usb_hub_test/images/test_usb_hub_003.svg
 
 [![ouilogique.com][img_2]{:style="width:50%;"}][img_2]
 
-[img_2]: ../../files/2015-07-02-usb_hub_test/test_usb_hub_001.jpg
+[img_2]: ../../files/2015-07-02-usb_hub_test/images/test_usb_hub_001.jpg
 
 [![ouilogique.com][img_3]{:style="width:50%;"}][img_3]
 
-[img_3]: ../../files/2015-07-02-usb_hub_test/test_usb_hub_004.jpg
+[img_3]: ../../files/2015-07-02-usb_hub_test/images/test_usb_hub_004.jpg
 
 ### Conclusion
 
@@ -66,7 +66,7 @@ Sur cette image, on voit que la LED ne s’allume pas ⇒ donc c’est bon.
 
 [![ouilogique.com][img_4]{:style="width:50%;"}][img_4]
 
-[img_4]: ../../files/2015-07-02-usb_hub_test/test_usb_hub_005_lowres.jpg
+[img_4]: ../../files/2015-07-02-usb_hub_test/images/test_usb_hub_005_lowres.jpg
 
 ---
 
@@ -74,7 +74,7 @@ Sur cette image, on voit que le montage de test fonctionne et que si la LED ne s
 
 [![ouilogique.com][img_5]{:style="width:50%;"}][img_5]
 
-[img_5]: ../../files/2015-07-02-usb_hub_test/test_usb_hub_006_lowres.jpg
+[img_5]: ../../files/2015-07-02-usb_hub_test/images/test_usb_hub_006_lowres.jpg
 
 ---
 
@@ -82,7 +82,7 @@ Pour info, le hub vu de dessous
 
 [![ouilogique.com][img_6]{:style="width:50%;"}][img_6]
 
-[img_6]: ../../files/2015-07-02-usb_hub_test/test_usb_hub_007.jpg
+[img_6]: ../../files/2015-07-02-usb_hub_test/images/test_usb_hub_007.jpg
 
 ## Référence du matériel de test
 

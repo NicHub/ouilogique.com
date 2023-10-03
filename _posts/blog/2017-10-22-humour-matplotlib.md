@@ -13,9 +13,9 @@ title: Humour Matplotlib
 
 Un peu d’humour avec Matplotlib. L’exemple vient de la page <https://matplotlib.org/1.3.0/examples/showcase/xkcd.html>.
 
-[![Effets des pizzas sur ma santé][image-1]][image-1]
+[![Effets des pizzas sur ma santé][img_1]][img_1]
 
-[image-1]: ../../files/2017-10-22-humour-matplotlib/effet-des-pizzas-sur-ma-sante.png
+[img_1]: ../../files/2017-10-22-humour-matplotlib/images/effet-des-pizzas-sur-ma-sante.png
 
 Et le code se trouve là : [effet-des-pizzas-sur-ma-sante.py][effet-des-pizzas-sur-ma-sante]
 
@@ -41,12 +41,12 @@ Vous pouvez découvrir les techniques de base dans [le fichier de démo][demo].
 
 ## Références
 
--   [Mon aide mémoire Python](../../files/2017-10-22-humour-matplotlib/python_aide-memoire.py)
+-   [Mon aide mémoire Python](../../files/2017-10-22-humour-matplotlib/docs/python_aide-memoire.py)
 -   <http://www.diveintopython3.net/>
 -   <https://python.developpez.com/cours/plongez_au_coeur_de_python/?page=page1>
 
-[effet-des-pizzas-sur-ma-sante]: ../../files/2017-10-22-humour-matplotlib/effet-des-pizzas-sur-ma-sante.py
-[demo]: ../../files/2017-10-22-humour-matplotlib/demo.py
+[effet-des-pizzas-sur-ma-sante]: ../../files/2017-10-22-humour-matplotlib/docs/effet-des-pizzas-sur-ma-sante.py
+[demo]: ../../files/2017-10-22-humour-matplotlib/docs/demo.py
 
 ## Notes
 

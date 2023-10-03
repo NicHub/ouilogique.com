@@ -50,7 +50,7 @@ void loop()
 
 [![Branchement des Launchpad][img_1]][img_1]
 
-[img_1]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_launchpad_lowres.jpg
+[img_1]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/images/branchement_launchpad_lowres.jpg
 
 ### Résultats
 
@@ -62,15 +62,15 @@ J’ai vérifié ça avec un analyseur logique.
 
 [![CoolTerm Launchpad 1][img_2]][img_2]
 
-[img_2]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/coolterm_launchpad_1.png
+[img_2]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/images/coolterm_launchpad_1.png
 
 [![CoolTerm Launchpad 2][img_3]][img_3]
 
-[img_3]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/coolterm_launchpad_2.png
+[img_3]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/images/coolterm_launchpad_2.png
 
 [![Scanalogic entre les Launchpad][img_4]][img_4]
 
-[img_4]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/acquisition_launchpad.png
+[img_4]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/images/acquisition_launchpad.png
 
 ### Sans le microcontrôleur
 
@@ -78,7 +78,7 @@ Et ça fonctionne aussi sans le microcontrôleur.
 
 [![Branchement des Launchpad sans MSP430][img_5]][img_5]
 
-## [img_5]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_launchpad_sans_msp430_lowres.jpg
+[img_5]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/images/branchement_launchpad_sans_msp430_lowres.jpg
 
 ## Essai avec ESP8266-12E — Test 1
 
@@ -92,7 +92,7 @@ Idem que pour les Launchpad (programme serial_end.ino)
 
 [![Branchement des ESP8266-12E][img_6]][img_6]
 
-[img_6]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_esp8266-12E_test1_lowres.jpg
+[img_6]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/images/branchement_esp8266-12E_test1_lowres.jpg
 
 ### Résultats
 
@@ -104,13 +104,13 @@ Encore une fois j’ai vérifié ça avec un analyseur logique.
 
 [![Scanalogic entre les ESP8266-12E 9600 bauds][img_7]][img_7]
 
-[img_7]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/acquisition_esp8266-12E_9600.png
+[img_7]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/images/acquisition_esp8266-12E_9600.png
 
 #### 115200 bauds
 
 [![Scanalogic entre les ESP8266-12E 115200 bauds][img_8]][img_8]
 
-[img_8]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/acquisition_esp8266-12E_115200.png
+[img_8]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/images/acquisition_esp8266-12E_115200.png
 
 ---
 
@@ -130,7 +130,7 @@ Pour vérifier que les ESP ne démarrent pas, j’ai chargé le programme blink.
 
 [![Branchement des ESP8266-12E][img_9]][img_9]
 
-[img_9]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/branchement_esp8266-12E_test2_lowres.jpg
+[img_9]: ../../files/2016-08-10-usb-rs232_bridge_microcontroleurs/images/branchement_esp8266-12E_test2_lowres.jpg
 
 ### Résultats
 

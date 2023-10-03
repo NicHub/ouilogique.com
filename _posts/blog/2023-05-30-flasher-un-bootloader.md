@@ -11,7 +11,7 @@ tags: []
 title: Flasher un bootloader
 ---
 
-[![Flasher un bootloader — ouilogique.com][i1]{:style="width:100%;"}][i1]
+[![Flasher un bootloader — ouilogique.com][img_1]{:style="width:100%;"}][img_1]
 
 [i1]: ../../files/2023-05-30-flasher-un-bootloader/images/2023-05-30-flasher-un-bootloader-001_lowres.jpg
 

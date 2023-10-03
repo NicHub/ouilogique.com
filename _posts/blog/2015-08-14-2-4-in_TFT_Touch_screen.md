@@ -155,9 +155,9 @@ Les deux drivers LCD sont des TM74HC245.
 [Datasheet en chinois](https://www.szjdf.net/Private/ProductFiles/595775de665f4acba6a1.pdf)
 Datasheet traduite par Google ~~goo.gl/hKB7W1~~
 
-[![TM74HC245][10]][10]
+[![TM74HC245][4]][4]
 
-[1]: ../../files/2015-08-14-2-4-in_TFT_Touch_screen/2-4-in_TFT_Touch_screen_front.jpg
-[2]: ../../files/2015-08-14-2-4-in_TFT_Touch_screen/2-4-in_TFT_Touch_screen_ouilogique_com.jpg
-[3]: ../../files/2015-08-14-2-4-in_TFT_Touch_screen/2-4-in_TFT_Touch_screen_back.jpg
-[10]: ../../files/2015-08-14-2-4-in_TFT_Touch_screen/2-4-in_TFT_Touch_screen_ouilogique_TM74HC245_videoinverse.jpg
+[1]: ../../files/2015-08-14-2-4-in_TFT_Touch_screen/images/2-4-in_TFT_Touch_screen_front.jpg
+[2]: ../../files/2015-08-14-2-4-in_TFT_Touch_screen/images/2-4-in_TFT_Touch_screen_ouilogique_com.jpg
+[3]: ../../files/2015-08-14-2-4-in_TFT_Touch_screen/images/2-4-in_TFT_Touch_screen_back.jpg
+[4]: ../../files/2015-08-14-2-4-in_TFT_Touch_screen/images/2-4-in_TFT_Touch_screen_ouilogique_TM74HC245_videoinverse.jpg

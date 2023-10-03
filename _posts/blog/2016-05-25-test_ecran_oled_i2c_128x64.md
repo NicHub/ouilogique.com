@@ -13,11 +13,11 @@ title: Test d’un écran OLED 128×64 I²C
 
 [![ouilogique.com][img_1]][img_1]
 
-[img_1]: ../../files/2016-05-25-test_ecran_oled_i2c_128x64/test_ecran_oled_i2c_128x64_001_lowres.jpg
+[img_1]: ../../files/2016-05-25-test_ecran_oled_i2c_128x64/images/test_ecran_oled_i2c_128x64_001_lowres.jpg
 
 [![ouilogique.com][img_2]][img_2]
 
-[img_2]: ../../files/2016-05-25-test_ecran_oled_i2c_128x64/test_ecran_oled_i2c_128x64_002_lowres.jpg
+[img_2]: ../../files/2016-05-25-test_ecran_oled_i2c_128x64/images/test_ecran_oled_i2c_128x64_002_lowres.jpg
 
 ```c++
 /*

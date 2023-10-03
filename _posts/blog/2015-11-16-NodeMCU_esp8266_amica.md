@@ -37,15 +37,23 @@ La version _4.x.13 - August 31_, 2016 fonctionne sous macOS Sierra.
 -   Les barrettes de pins ne sont pas perpendiculaires au PCB, mais ça entre quand même dans un breadboard.
 -   Cette carte a deux LED : une bleue sur GPIO 4 à côté de l’antenne et une rouge sur GPIO 0 à 7 mm du bouton “RST”. La carte LoLin n’a que la LED bleue.
 
-![](../../files/2015-11-16-NodeMCU_esp8266_amica/NodeMCU_esp8266_amica_001_lowres.jpg)
+[![ouilogique.com][img_1]][img_1]
 
-![](../../files/2015-11-16-NodeMCU_esp8266_amica/NodeMCU_esp8266_amica_002_lowres.jpg)
+[img_1]: ../../files/2015-11-16-NodeMCU_esp8266_amica/images/NodeMCU_esp8266_amica_001_lowres.jpg
 
-![](../../files/2015-11-16-NodeMCU_esp8266_amica/NodeMCU_esp8266_amica_003_lowres.jpg)
+[![ouilogique.com][img_2]][img_2]
+
+[img_2]: ../../files/2015-11-16-NodeMCU_esp8266_amica/images/NodeMCU_esp8266_amica_002_lowres.jpg
+
+[![ouilogique.com][img_3]][img_3]
+
+[img_3]: ../../files/2015-11-16-NodeMCU_esp8266_amica/images/NodeMCU_esp8266_amica_003_lowres.jpg
 
 ## Pinout
 
-![](../../files/2015-05-28-pinouts/images/NodeMCU_esp8266_amica_pinout.png)
+[![ouilogique.com][img_4]][img_4]
+
+[img_4]: ../../files/2015-05-28-pinouts/images/NodeMCU_esp8266_amica_pinout.png
 
 ## Vitesse de la liaison série
 

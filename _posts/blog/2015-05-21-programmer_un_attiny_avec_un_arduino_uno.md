@@ -61,7 +61,7 @@ et la quatrième LED, bleue, sert à vérifier que l’ATtiny a effectivement é
 
 [![ouilogique.com][img_1]][img_1]
 
-[img_1]: ../../files/2015-05-21-programmer_un_attiny_avec_un_arduino_uno/programmer_un_attiny25v.svg
+[img_1]: ../../files/2015-05-21-programmer_un_attiny_avec_un_arduino_uno/images/programmer_un_attiny25v.svg
 
 ## Préparation logicielle (IDE < 1.6.4)
 

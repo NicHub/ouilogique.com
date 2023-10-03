@@ -20,7 +20,7 @@ Le document original peut être téléchargé ici :
 -   <https://pyr.ch/coursera/ExperiencesAvecLaunchpad.pdf>
 -->
 
-[Le document original au format PDF](../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/ExperiencesAvecLaunchpad.pdf)
+[Le document original au format PDF](../../files/2015-01-07-programmer_un_msp430_en_mode_ISP/docs/ExperiencesAvecLaunchpad.pdf)
 
 Voilà le proto sur breadboard :
 
