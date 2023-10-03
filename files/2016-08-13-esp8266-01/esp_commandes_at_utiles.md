@@ -10,10 +10,10 @@ Les commandes de ce fichier sont tirées des pages :
 
 ---
 
-# Get status ⇒ retourne OK ou ERROR
+## Get status ⇒ retourne OK ou ERROR
 AT
 
-# Return the current firmware version.
+## Return the current firmware version.
 AT+GMR
 
 > AT version:0.40.0.0(Aug  8 2015 14:45:58)
@@ -22,16 +22,16 @@ AT+GMR
 > Build:1.3.0.2 Sep 11 2015 11:48:04
 > OK
 
-# Baud rate ⇒ fonctionne pas
+## Baud rate ⇒ fonctionne pas
 AT+CIOBAUD?
 
-# returns the Mode of operation of the module.
+## returns the Mode of operation of the module.
 AT+CWMODE?
 
-# List access points in range.
+## List access points in range.
 AT+CWLAP
 
-# Connect to your home/office access point
+## Connect to your home/office access point
 AT+CWJAP="yourSSID","yourWifiPassword"
 AT+CWJAP="×××","×××"
 
@@ -40,10 +40,10 @@ AT+CWJAP="×××","×××"
 >
 > OK
 
-# Disconnect
+## Disconnect
 AT+CWQAP
 
-# Current IP
+## Current IP
 AT+CIFSR
 
 > +CIFSR:STAIP,"192.168.1.132"
@@ -51,24 +51,24 @@ AT+CIFSR
 >
 > OK
 
-#  ESP on STation mode
+##  ESP on STation mode
 AT+CWMODE?
 AT+CWMODE=1
 
-# start a web server with ESP module
+## start a web server with ESP module
 AT+CIPMUX=1
 
-# start the server at HTTP port 80
+## start the server at HTTP port 80
 AT+CIPSERVER=1,80
 
-# close server
+## close server
 AT+CIPSERVER=0
 AT+RST
 
 > OK
 > 1,CLOSED
 
-# Current IP
+## Current IP
 AT+CIFSR
 
 > +CIFSR:STAIP,"192.168.1.132"

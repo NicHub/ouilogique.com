@@ -15,7 +15,7 @@ title: Trucs et astuces en Python
 
 https://www.python.org/doc/sunset-python-2/
 
-# Prérequis
+## Prérequis
 
 > Note : Sous windows, les commandes ci-dessous doivent être exécutées dans un terminal avec les droit administrateur (Win+R, cmd + Ctrl-Shift-Enter). De plus, la commande pour invoquer python doit changée de `python3` à `py`.
 
@@ -63,7 +63,7 @@ Ses avatages sont :
 Il y a plusieurs façon d’exécuter des scripts Python dans VSCode.
 La façon la plus intéressante est avec Jupyter.
 
-# Raspberry blink Python
+## Raspberry blink Python
 
 -   <https://raspberrypihq.com/making-a-led-blink-using-the-raspberry-pi-and-python/>
 
@@ -92,6 +92,6 @@ while True:
 -   f-strings
 -   VSCode Jupyter
 
-# Remote GPIO
+## Remote GPIO
 
 Voir exemple remote_gpio.py

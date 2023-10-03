@@ -11,7 +11,7 @@ tags: []
 title: Trucs et astuces en Bash
 ---
 
-# Quelques termes
+## Quelques termes
 
 -   terminal
 -   shell
@@ -30,7 +30,7 @@ Les termes "console", "shell" et "terminal" sont souvent utilisés de manière i
 
 En résumé, une console est une interface utilisateur textuelle brute, un shell est un programme qui permet d'exécuter des commandes en ligne de commande, et un terminal est un programme qui fournit une interface graphique à une console pour permettre une interaction plus conviviale avec le système d'exploitation.
 
-# Utilité de tmux
+## Utilité de tmux
 
 crontab led
 @reboot /usr/bin/python3 /home/pi/Desktop/led_chase_1.py
@@ -40,7 +40,7 @@ https://linuxize.com/post/bash-check-if-file-exists/
 [ -r /home/pi/.bash_profile ] && . /home/pi/.bash_profile
 [ -r /home/pi/.byobu/prompt ] && . /home/pi/.byobu/prompt #byobu-prompt#
 
-# update
+## update
 
 La commande Bash sudo apt-get update sert à mettre à jour la liste des paquets disponibles sur un système Ubuntu ou Debian.
 
@@ -50,7 +50,7 @@ Cela permet de maintenir le système à jour et de s'assurer que les dernières 
 
 Il est important de noter que cette commande ne met pas à jour les paquets eux-mêmes, mais seulement la liste des paquets disponibles. Pour installer les mises à jour disponibles, il faut utiliser la commande sudo apt-get upgrade.
 
-# upgrade
+## upgrade
 
 La commande Bash sudo apt-get upgrade sert à mettre à jour les paquets installés sur un système Ubuntu ou Debian.
 
@@ -60,7 +60,7 @@ Il est important de noter que la commande sudo apt-get upgrade ne va pas install
 
 Il est recommandé de régulièrement exécuter la commande sudo apt-get update suivi de la commande sudo apt-get upgrade pour s'assurer que votre système est à jour et sécurisé.
 
-# dist-upgrade
+## dist-upgrade
 
 La commande Bash sudo apt-get dist-upgrade sert à effectuer une mise à niveau complète du système d'exploitation Ubuntu ou Debian.
 
@@ -72,7 +72,7 @@ Il est important de noter que la commande sudo apt-get dist-upgrade est plus pui
 
 En général, il est recommandé de faire une sauvegarde complète du système avant de procéder à une mise à niveau majeure.
 
-# apt-get vs apt
+## apt-get vs apt
 
 Les commandes apt-get et apt sont toutes deux des outils de gestion de paquets pour les systèmes Ubuntu et Debian.
 
@@ -84,7 +84,7 @@ Cependant, apt-get est toujours largement utilisé et peut être plus flexible d
 
 En général, les deux commandes sont largement interchangeables et peuvent être utilisées selon les préférences personnelles de l'utilisateur.
 
-# Les flux standard de Linux
+## Les flux standard de Linux
 
 Source : https://www.howtogeek.com/435903/what-are-stdin-stdout-and-stderr-on-linux/
 
@@ -106,7 +106,7 @@ Ces valeurs sont toujours utilisées pour stdin, stdout et stderr :
     1: stdout
     2: stderr
 
-# Commandes utiles
+## Commandes utiles
 
 grep # tout seul ou en pipe
 find
