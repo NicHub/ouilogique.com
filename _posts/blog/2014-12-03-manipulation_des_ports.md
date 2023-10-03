@@ -8,7 +8,9 @@ layout: page
 published: true
 redirect_from:
     - /blog/manipulation_des_ports/
-tags: []
+tags:
+    - AVR
+    - MSP
 title: La manipulation des entrées-sorties à l’aide des registres de port
 ---
 
