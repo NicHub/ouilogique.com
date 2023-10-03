@@ -59,7 +59,9 @@ Les trois premières LED, verte, rouge et orange, servent à afficher le statut 
 et la quatrième LED, bleue, sert à vérifier que l’ATtiny a effectivement été programmé avec le programme `tinyblinky.ino`.
 À noter que les LED sont optionnelles.
 
-![](/images/programmer_un_attiny_avec_un_arduino_uno/programmer_un_attiny25v_bb.svg)
+[![ouilogique.com][img_1]][img_1]
+
+[img_1]: ../../files/2015-05-21-programmer_un_attiny_avec_un_arduino_uno/programmer_un_attiny25v.svg
 
 ## Préparation logicielle (IDE < 1.6.4)
 
