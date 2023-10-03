@@ -11,10 +11,6 @@ tags: []
 title: Flasher un bootloader
 ---
 
-[![Flasher un bootloader — ouilogique.com][img_1]][img_1]{:style="width:100%;"}
-
-[img_1]: ../../files/2023-05-30-flasher-un-bootloader/images/2023-05-30-flasher-un-bootloader-001_lowres.jpg
-
 Un de mes Arduino Nano refusait de se faire flasher et retournait systématiquement une erreur du genre `not in sync`.
 En googlant, j’ai trouvé que plusieurs personnes ont résolu ce problème en changeant le type de bootloader en `ATmega328p (Old Bootloader)` dans le menu `Tools/Processor: "ATmega328p"/` de l’IDE Arduino.
 Mais pour moi, ça n’a pas marché.
@@ -22,6 +18,10 @@ Du coup, j’ai décidé de reflasher le bootloader en utilisant un Arduino UNO 
 Cette façon de faire s’appelle “ICSP” ou _In Circuit Serial Programming_.
 
 > Source : La plupart des informations proviennent de cette page : <https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoISP>
+
+[![Flasher un bootloader — ouilogique.com][img_1]][img_1]
+
+[img_1]: ../../files/2023-05-30-flasher-un-bootloader/images/2023-05-30-flasher-un-bootloader-001_lowres.jpg
 
 ## Câblage
 
