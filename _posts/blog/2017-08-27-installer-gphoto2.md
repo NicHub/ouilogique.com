@@ -119,7 +119,7 @@ Un moyen simple de visionner les photos est de créer un mini serveur web sur le
 
 ```bash
 # Ces deux commandes peuvent être copiées-collées directement dans le terminal ou mises dans le fichier ~/.bash_profile.
-# Voir https://ouilogique.com/installer-raspian-stretch/#configuration.
+# Voir https://ouilogique.com/installer-raspberry-pi-os-sur-raspberry-pi-sans-clavier-ni-souris-ni-ecran/#configuration.
 IP=$(hostname -I | awk '{print $1}')
 alias pyserver='PORT=4000; echo -e "\nhttp://localhost:$PORT"; echo -e "http://$IP:$PORT\n"; python -m SimpleHTTPServer $PORT'
 # Démarre le serveur (ctrl-C pour l’arrêter)
@@ -139,5 +139,5 @@ Comme le serveur bloque la ligne de commande, il est préférable de l’utilise
 -   <https://github.com/NicHub/ouilogique.com/commit/d4f594d08b8c9a30e6577072fafda794f4ec93bc>
 -   <https://packages.debian.org/stretch/gphoto2>
 
-[1]: https://ouilogique.com/installer-raspian-stretch/
-[2]: https://ouilogique.com/installer-raspian-stretch/#gnu-screen
+[1]: ../installer-raspberry-pi-os-sur-raspberry-pi-sans-clavier-ni-souris-ni-ecran/
+[2]: ../installer-raspberry-pi-os-sur-raspberry-pi-sans-clavier-ni-souris-ni-ecran/#gnu-screen

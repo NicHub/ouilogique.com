@@ -28,7 +28,7 @@ apt-cache show mosquitto # Version: 1.4.10-3+deb9u4
 
 J’ai testé la procédure ci-dessous avec une installation propre de Raspian Stretch.
 
--   <https://ouilogique.com/installer-raspian-stretch/>
+-   <https://ouilogique.com/installer-raspberry-pi-os-sur-raspberry-pi-sans-clavier-ni-souris-ni-ecran/>
 
 ## Installation et compilation de mosquitto 1.6.4
 

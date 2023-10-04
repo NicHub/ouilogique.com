@@ -123,7 +123,7 @@ Et il ne reste plus qu’à flasher l’Arduino et faire un test.
 [img_4]: ../../files/2018-07-15-hacker-une-cle-rf433/images/hacker-une-cle-rf433-004.jpg
 [video andreas]: https://www.youtube.com/watch?v=L0fSEbGEY-Q
 [urh github]: https://github.com/jopohl/urh
-[installer raspbian stretch]: https://ouilogique.com/installer-raspian-stretch/
+[installer raspbian stretch]: ../installer-raspberry-pi-os-sur-raspberry-pi-sans-clavier-ni-souris-ni-ecran/
 [truc install urh]: https://github.com/jopohl/urh/issues/502
 [rf433-spoof sur github]: https://github.com/NicHub/ouilogique-Arduino/tree/master/rf433-spoof
 [émetteur rf433]: https://fr.aliexpress.com/item/1Lot-1-pair-2pcs-RF-wireless-receiver-module-transmitter-module-Ordinary-super-regeneration-315-433MHZ-DC5V/968306683.html
