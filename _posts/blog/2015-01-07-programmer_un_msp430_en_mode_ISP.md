@@ -8,7 +8,9 @@ layout: page
 published: true
 redirect_from:
     - /blog/programmer_un_msp430_en_mode_ISP/
-tags: []
+tags:
+    - MSP430
+    - ISP
 title: Programmer un MSP430 en mode ISP
 ---
 

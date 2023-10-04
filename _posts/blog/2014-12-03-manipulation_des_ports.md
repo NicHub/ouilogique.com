@@ -10,7 +10,9 @@ redirect_from:
     - /blog/manipulation_des_ports/
 tags:
     - AVR
-    - MSP
+    - MSP430
+    - Arduino
+    - Texas Instruments
 title: La manipulation des entrées-sorties à l’aide des registres de port
 ---
 

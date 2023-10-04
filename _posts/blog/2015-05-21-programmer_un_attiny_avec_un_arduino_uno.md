@@ -12,6 +12,7 @@ tags:
     - ATtiny
     - ISP
     - UNO
+    - Flashage
 title: Programmer un ATtiny25V avec un Arduino UNO comme programmateur
 ---
 
