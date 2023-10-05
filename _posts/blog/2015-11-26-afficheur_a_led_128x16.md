@@ -2,7 +2,7 @@
 author: Nico
 date: 2015-11-26 15:00:00+01:00
 image:
-    feature: 2015-11-26-afficheur_a_led_128x16_010.jpg
+    feature: banner_2015-11-26-afficheur_a_led_128x16.jpg
 lang: fr
 layout: page
 published: true

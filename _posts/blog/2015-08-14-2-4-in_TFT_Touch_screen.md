@@ -2,7 +2,7 @@
 author: Nico
 date: 2015-07-14 14:20:00+01:00
 image:
-    feature: TFT_screen_2.jpg
+    feature: banner_2015-08-14-2-4-in_TFT_Touch_screen.jpg
 lang: fr
 layout: page
 published: true

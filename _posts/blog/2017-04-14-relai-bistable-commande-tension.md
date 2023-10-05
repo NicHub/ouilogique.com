@@ -2,7 +2,7 @@
 author: Nico
 date: 2017-04-14 10:00:00+02:00
 image:
-    feature: relai-bistable-commande-tension-pcb-1490x745.jpg
+    feature: banner_2017-04-14-relai-bistable-commande-tension.jpg
 lang: fr
 layout: page
 published: true

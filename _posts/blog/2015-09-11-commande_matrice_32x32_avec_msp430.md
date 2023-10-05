@@ -2,7 +2,7 @@
 author: Nico
 date: 2015-09-11 10:00:00+01:00
 image:
-    feature: msp430-mx32x32.jpg
+    feature: banner_2015-09-11-commande_matrice_32x32_avec_msp430.jpg
 lang: fr
 layout: page
 published: true

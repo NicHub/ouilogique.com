@@ -2,7 +2,7 @@
 author: Nico
 date: 2017-04-27 18:48:00+02:00
 image:
-    feature: 2017-04-27-neopixel-didel-ws2813-000.jpg
+    feature: banner_2017-04-27-neopixel-didel-ws2813.jpg
 lang: fr
 layout: page
 published: true

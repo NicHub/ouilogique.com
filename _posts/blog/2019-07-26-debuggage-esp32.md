@@ -2,7 +2,7 @@
 author: Nico
 date: 2019-07-26 14:00:00+02:00
 image:
-    feature: esp-prog-board-close-up.jpg
+    feature: banner_2019-07-26-debuggage-esp32.jpg
 lang: fr
 layout: page
 published: true

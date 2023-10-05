@@ -2,7 +2,7 @@
 author: Nico
 date: 2019-03-27 17:00:00+01:00
 image:
-    feature: 2021-04-24-proto-plateforme-de-stewart_001.jpg
+    feature: banner_2019-03-27-plateforme-de-stewart-esp32.jpg
 lang: fr
 layout: page
 published: true

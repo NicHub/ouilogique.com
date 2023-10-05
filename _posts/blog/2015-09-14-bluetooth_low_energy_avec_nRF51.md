@@ -2,7 +2,7 @@
 author: Nico
 date: 2015-09-14 00:00:00+01:00
 image:
-    feature: nRF51.jpg
+    feature: banner_2015-09-14-bluetooth_low_energy_avec_nRF51.jpg
 lang: fr
 layout: page
 published: true

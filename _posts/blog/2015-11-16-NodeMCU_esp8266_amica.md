@@ -2,7 +2,7 @@
 author: Nico
 date: 2015-11-16 14:51:00+01:00
 image:
-    feature: NodeMCU_esp8266_amica.jpg
+    feature: banner_2015-11-16-NodeMCU_esp8266_amica.jpg
 lang: fr
 layout: page
 published: true

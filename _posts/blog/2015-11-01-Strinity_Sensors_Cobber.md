@@ -2,7 +2,7 @@
 author: Nico
 date: 2015-11-01 00:26:00+01:00
 image:
-    feature: Strinity_Sensors_Cobber_001.jpg
+    feature: banner_2015-11-01-Strinity_Sensors_Cobber.jpg
 lang: fr
 layout: page
 published: true

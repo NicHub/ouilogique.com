@@ -2,7 +2,7 @@
 author: Nico
 date: 2015-05-24 12:00:00+02:00
 image:
-    feature: 2015-02-23_microDelta_002.jpg
+    feature: banner_2015-05-24-tete-impression.jpg
 lang: fr
 layout: page
 published: true

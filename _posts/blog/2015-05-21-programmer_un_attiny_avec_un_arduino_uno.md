@@ -2,7 +2,7 @@
 author: Nico
 date: 2015-05-21 12:00:00+02:00
 image:
-    feature: 2015-02-23_microDelta_002.jpg
+    feature: null
 lang: fr
 layout: page
 published: true
