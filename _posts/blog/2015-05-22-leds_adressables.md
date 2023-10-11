@@ -20,7 +20,7 @@ Pour mon [projet de programmation d’un MSP430 en mode ISP](/programmer_un_msp4
 
 Jusque là, rien de bien méchant. Mais comme je n’avais qu’une LED de ce type et que je l’ai soudée sur mon [Perma-Proto d’Adafruit](https://www.adafruit.com/blog/2011/11/18/adafruit-perma-proto-half-sized-breadboard-pcb-3-pack/), il m’en fallait des nouvelles. Ni une, ni deux, j’ai commandé quatre [LED P9823-F8](https://shop.boxtec.ch/led-neopixel-8mm-p9823-p-42265.html) chez Boxtec.
 
-[![ouilogique.com][img_1]][img_1]{:height="250px" width="250px"}
+[![ouilogique.com][img_1]{:style="width:250px"}][img_1]
 
 [img_1]: ../../files/2015-05-22-leds_adressables/images/67053.jpg
 
@@ -37,13 +37,13 @@ Celle d’Adafruit est plus simple à mettre en œuvre et les exemples fonctionn
 
 ## Pinout
 
-[![ouilogique.com][img_2]][img_2]{:width="200px"}
+[![ouilogique.com][img_2]{:style="width:200px"}][img_2]
 
 [img_2]: ../../files/2015-05-22-leds_adressables/images/LED_P9823-F8_pinout.jpg
 
 ## Câblage
 
-[![ouilogique.com][img_3]][img_3]{:width="600px"}
+[![ouilogique.com][img_3]{:style="width:600px"}][img_3]
 
 [img_3]: ../../files/2015-05-22-leds_adressables/images/LED_P9823-F8_cablage.jpg
 

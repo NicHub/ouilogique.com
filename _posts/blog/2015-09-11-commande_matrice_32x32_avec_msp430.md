@@ -28,9 +28,9 @@ Launchpad-MSP430 rev 1.5, voir le brochage ici : <https://ouilogique.com/blog/p
 
 Le brochage est décrit au début du programme ci-dessous.
 
-[Image du connecteur sur Adafruit.com](https://learn.adafruit.com/system/assets/assets/000/023/769/original/led_matrix_socket3.png?1426305755){:target="\_blank"}
+[Image du connecteur sur Adafruit.com](https://learn.adafruit.com/system/assets/assets/000/023/769/original/led_matrix_socket3.png?1426305755)
 
-[![ouilogique.com][img_2]][img_2]{:height="438px" width="300px"}
+[![ouilogique.com][img_2]{:style="width:250px"}][img_2]
 
 [img_2]: ../../files/2015-09-11-commande_matrice_32x32_avec_msp430/images/mx32x32_connecteur.jpeg
 

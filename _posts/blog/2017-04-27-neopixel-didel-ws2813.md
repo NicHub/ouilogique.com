@@ -47,7 +47,7 @@ Les programmes de Didel sont optimisés pour être aussi compacts que possible e
 | RGBvsLogRGB.ino |    886 o (2%)    |         42 o (2%)         |
 |   Huetest.ino   |   1264 o (4%)    |         23 o (1%)         |
 
-[![Neopixel Didel WS2813][img_1]{: width="90%" }][img_1]
+[![Neopixel Didel WS2813][img_1]{:style="width:90%"}][img_1]
 
 ## Édit de février-mars 2018
 
@@ -64,11 +64,11 @@ Le programme de test se trouve [sur mon GitHub][programme de test].
 
 **Alimentation avec l’Arduino Nano**
 
-[![Neopixel Didel WS2813 alimentée par l’Arduino Nano][img_2]{: width="90%" }][img_2]
+[![Neopixel Didel WS2813 alimentée par l’Arduino Nano][img_2]{:style="width:90%"}][img_2]
 
 **Alimentation avec une source externe 5 V**
 
-[![Neopixel Didel WS2813 alimentée par une source externe 5 V][img_3]{: width="90%" }][img_3]
+[![Neopixel Didel WS2813 alimentée par une source externe 5 V][img_3]{:style="width:90%"}][img_3]
 
 ## Test avec un Raspberry Pi
 
@@ -84,7 +84,7 @@ La broche de données est la 18.
 
 > Résultat du test : ça fonctionne parfaitement. Le RPi peut sans problème être utilisé à 100 % de sa capacité et en même temps piloter les deux LED. Peut-être que ça sera plus dur avec plus de LED... à voir.
 
-[![Neopixel Didel WS2813 avec un Raspberry Pi][img_4]{: width="90%" }][img_4]
+[![Neopixel Didel WS2813 avec un Raspberry Pi][img_4]{:style="width:90%"}][img_4]
 
 ## Voir aussi
 

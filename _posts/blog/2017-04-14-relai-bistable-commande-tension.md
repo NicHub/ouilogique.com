@@ -56,7 +56,7 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 
 ## Schéma électrique
 
-[![Schéma électrique relai bistable Arduino Prp Mini][i1]{: width="90%" }][i1]
+[![Schéma électrique relai bistable Arduino Prp Mini][i1]{:style="width:90%"}][i1]
 
 [i1]: ../../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension.sch.svg
 
