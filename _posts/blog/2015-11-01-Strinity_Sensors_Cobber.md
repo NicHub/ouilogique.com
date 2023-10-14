@@ -15,7 +15,7 @@ title:
 
 J’ai acheté une carte chez Banggood pour me faire une mini station météo :
 
--   <http://www.banggood.com/4-in-1-Temperature-Pressure-Altitude-Light-Sensor-Module-p-965547.html?p=0431091025639201412F>.
+-   <http://www.banggood.com/4-in-1-Temperature-Pressure-Altitude-Light-Sensor-Module-p-965547.html?p=0431091025639201412F>{:rel="nofollow"}.
 
 C’est une carte “trois en un” qui permet de mesurer :
 
@@ -45,7 +45,8 @@ Sinon Wangdong propose un pilote qui ne fonctionne pas non plus :
 
 -   <https://github.com/wangdong/AM2321>
 
-Il me reste plus qu’à lire la spec en chinois ;-) <https://www.microduino.cc/wiki/images/d/d1/AM2321.pdf>
+Il me reste plus qu’à lire la spec en chinois ;-)
+<https://www.microduino.cc/wiki/images/d/d1/AM2321.pdf>{:rel="nofollow"}
 
 En attendant, j’ai testé la luminosité et la pression et les mesures ont l’air cohérentes, ce qui est un bon point. À noter quand même que la carte `BMP180` retourne aussi la température.
 
@@ -65,7 +66,7 @@ Bon, j’ai décidé de m’y remettre après une semaine de pause et comme le c
 
 -   [BMP180 Digital pressure sensor — Bosch Sensortec](../../files/2015-11-01-Strinity_Sensors_Cobber/docs/BST-BMP180-DS000-09.pdf)
 -   [TSL2560, TSL2561 Light-to-Digital Converter — TAOS](../../files/2015-11-01-Strinity_Sensors_Cobber/docs/TSL2561.pdf)
--   Lien fourni sur page support Banggood ~~http://pan.baidu.com/s/1qWjYtqs~~
+-   Lien fourni sur page support Banggood <http://pan.baidu.com/s/1qWjYtqs>{:rel="nofollow"}
 
 [![ouilogique.com][img_1]][img_1]
 

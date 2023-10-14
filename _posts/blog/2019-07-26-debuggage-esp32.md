@@ -32,7 +32,7 @@ Le board _ESP&#8209;Prog_ permet de faire deux choses distinctes :
     -   <https://docs.platformio.org/en/latest/plus/debugging.html>
 -   _ESP-Prog_
     -   <https://docs.platformio.org/en/latest/plus/debug-tools/esp-prog.html>
-    -   <https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md>
+    -   <https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md>{:rel="nofollow"}
 
 ## Matériel utilisé
 

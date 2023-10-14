@@ -29,7 +29,7 @@ Bien évidemment, il faut être à l’aise avec le fait que Digitec aura connai
 
 -   [Site officiel de Pi-hole](https://pi-hole.net)
 -   [Documentation de Pi-hole](https://docs.pi-hole.net)
--   [Liste des modèles de Raspberry compatibles](https://docs.pi-hole.net/ftldns/compatibility/)
+-   [Liste des modèles de Raspberry compatibles](https://docs.pi-hole.net/ftldns/compatibility/){:rel="nofollow"}
 -   [Liste des OS compatibles](https://docs.pi-hole.net/main/prerequisites/#supported-operating-systems)
 
 ## Installation de Pi-hole sur le Raspberry

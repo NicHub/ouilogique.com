@@ -12,7 +12,7 @@ tags: []
 title: Un analyseur logique Arduino
 ---
 
-> Les informations ci-dessous viennent à l’origine d’un tuto qui n’est malheureusement plus en ligne ~~(letsmakerobots.com/node/31422)~~.
+> Les informations ci-dessous viennent à l’origine d’un tuto qui n’est malheureusement plus en ligne <https://letsmakerobots.com/node/31422>{:rel="nofollow"}.
 
 En résumé, cette solution nécessite deux programmes :
 
@@ -40,7 +40,7 @@ Et voilà ce que ça donne en action :
 Pour l’analyse post-mortem, il y a :
 
 -   [GTKWave](https://gtkwave.sourceforge.net/)
--   Scansion — Logic Poet ~~(www.logicpoet.com/scansion/)~~
+-   Scansion — Logic Poet <https://www.logicpoet.com/scansion/>{:rel="nofollow"}
 -   [Et d’autres sur Wikipedia](https://en.wikipedia.org/wiki/Waveform_viewer)
 
 Le format d’enregistrement des traces que j’utilise est le [VCD (Value Change Dump)](https://en.wikipedia.org/wiki/Value_change_dump)

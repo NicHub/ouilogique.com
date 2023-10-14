@@ -17,7 +17,7 @@ Les fonctionnalités offertes par l’écosystème Arduino sont forts pratiques,
 
 J’ai mesuré les résultats présentés ci-dessous sur un clone d’[Arduino Nano][1]. Les temps sont donnés en nombre de cycles d’horloge, et dans le cas présenté, un cycle vaut 62.5 ns (16 MHz).
 
-[1]: /ch340_driver/#quelques-commandes-pour-obtenir-des-infos-sur-les-ports-usb
+[1]: ../ch340_driver/#quelques-commandes-pour-obtenir-des-infos-sur-les-ports-usb
 
 Le programme de test est disponible ci-dessous. Si le test est fait avec une boucle `for`, il faut ajouter 2 aux nombres de cycles indiqués dans le tableau.
 

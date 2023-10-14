@@ -18,7 +18,7 @@ title: Générateurs de sites web statiques
 
 ## Simon Wood — Future Insights
 
-<iframe style="margin: 10px auto; display:block" width="640" height="360" src="https://www.youtube.com/embed/jeQCoiZT5gg" frameborder="0" allowfullscreen></iframe>
+<iframe width="799" height="449" src="https://www.youtube.com/embed/jeQCoiZT5gg" title="YouTube video player" frameborder="0" allow="web-share" allowfullscreen></iframe>
 
 -   <https://www.youtube.com/watch?v=jeQCoiZT5gg&feature=em-subs_digest-vrecs>
 
@@ -49,9 +49,9 @@ title: Générateurs de sites web statiques
 ## GENERATORS II
 
 -   [assemble](https://assemble.io) ⇒ À regarder, basé sur Yeoman et Grunt
--   Cactus ~~(cactusformac.com)~~
+-   [Cactus](cactusformac.com){:rel="nofollow"}
 -   [docpad](https://docpad.org)
--   [Dropplets](https://dropplets.com)
+-   [Dropplets](https://dropplets.com){:rel="nofollow"}
 -   [hexo](https://hexo.io)
 -   hugo
 -   hyde
@@ -133,8 +133,8 @@ WP ⇒ Wp-Super Cache
 ## Alternatives
 
 -   [Hammer](https://hammerformac.com)
--   [Mixture](https://mixture.io) ⇒ Stopped, use Gulp or Grunt
--   Cactus ~~(cactusformac.com)~~
+-   [Mixture](https://mixture.io){:rel="nofollow"} ⇒ Stopped, use Gulp or Grunt
+-   [Cactus](cactusformac.com){:rel="nofollow"}
 
 ### À voir aussi
 

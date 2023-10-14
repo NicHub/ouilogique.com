@@ -12,18 +12,13 @@ tags: []
 title: Installer GPHOTO2
 ---
 
-<!--
-Ancienne URL
-https://ouilogique.com/gphoto2/
--->
-
 La bibliothèque GPHOTO2 est utilisée par des applications pour accéder à une grande variété de modèles d’appareils photo numériques, à l’aide des protocoles standards comme l’USB Mass Storage et PTP, ou à l’aide des protocoles propres aux fabricants.
 
 Dans cet article, je présente l’installation de GPHOTO2 sous MaxOS Sierra et sous Raspbian Stretch.
 
 ## Installation de GPHOTO2 sur _macOS Sierra_
 
-L’installation de GPHOTO2 sur _macOS Sierra_ se fait avec [Homebrew](https://brew.sh/index_fr.html)
+L’installation de GPHOTO2 sur _macOS Sierra_ se fait avec [Homebrew](https://formulae.brew.sh/formula/gphoto2)
 
 ```bash
 brew update

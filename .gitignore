@@ -11,3 +11,4 @@ _site
 codekit-config.json
 Gemfile.lock
 Thumbs.db
+*_site_blacklisted_*

@@ -18,10 +18,10 @@ Un peu de pub pour le cours de microcontrôleurs en ligne de l’EPFL :
 
 Et voici le cours au format GitBook :
 
-~~www.gitbook.com/book/nichub/initiation-aux-microcontroleurs/details~~
+<https://www.gitbook.com/book/nichub/initiation-aux-microcontroleurs/details>{:rel="nofollow"}
 
 [![MOOC Microcontrôleurs EPFL][img_mooc]][img_mooc]
 
 [img_mooc]: ../../files/2015-06-11-mooc_initiation_aux_microcontroleurs/images/Microcontroleurs-v1.0.jpg
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wCgJRtzTvmI" frameborder="0" allowfullscreen></iframe>
+<iframe width="799" height="449" src="https://www.youtube.com/embed/wCgJRtzTvmI" title="YouTube video player" frameborder="0" allow="web-share" allowfullscreen></iframe>

@@ -13,15 +13,15 @@ title:
     WiFi ESP8266
 ---
 
-> Voir aussi [l’article sur l’ESP8266 LoLin](/NodeMCU_esp8266/)
+> Voir aussi [l’article sur l’ESP8266 LoLin](../NodeMCU_esp8266/)
 
 ## Référence AliExpress
 
--   ~~http://fr.aliexpress.com/item/V2-4M-4FLASH-NodeMcu-Lua-WIFI-Networking-development-board-Based-ESP8266/32448694790.html~~
+-   <http://fr.aliexpress.com/item/V2-4M-4FLASH-NodeMcu-Lua-WIFI-Networking-development-board-Based-ESP8266/32448694790.html>{:rel="nofollow"}
 
 ## Installation du pilote pour le Silabs CP2102
 
--   ~~https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx~~
+-   <https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx>{:rel="nofollow"}
 
 La version _4.x.13 - August 31_, 2016 fonctionne sous macOS Sierra.
 
@@ -103,4 +103,4 @@ Le chip Silabs CP2102 est 50 % plus rapide que le CH340G ! J’ai réalisé ce
 
 ## Drivers Silabs CP2102
 
--   ~~https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx~~
+-   <https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx>{:rel="nofollow"}

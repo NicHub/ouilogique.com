@@ -27,7 +27,7 @@ Cet article m’a été inspiré par [la vidéo d’Andreas Spiess “How to Hac
 
 ## Matériel
 
--   SDR-Dongle: <http://s.click.aliexpress.com/e/bQ91w8QM> ou <http://bit.ly/2NcRMT2>
+-   SDR-Dongle: <http://s.click.aliexpress.com/e/bQ91w8QM>{:rel="nofollow"} ou <http://bit.ly/2NcRMT2>
 -   Raspberry Pi modèle 2 ou 3. On peut aussi utiliser URH sur Windows, Linux et sur Mac, donc le RPi est optionnel. À noter que l’adaptateur SDR que j’ai n’est pas reconnu par URH sur mon Mac et j’ai donc opté pour la solution RPi.
 -   Un Arduino UNO ou équivalent
 -   Un bouton

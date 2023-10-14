@@ -38,9 +38,7 @@ Pour la quatrième version, je ne génère plus le PWM des servos avec l’ESP32
 
 [i9]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2021-04-24-proto-plateforme-de-stewart_002.jpg
 
-<div style="display:block; margin-bottom:50px;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1ll8JVwJC50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<iframe width="799" height="449" src="https://www.youtube-nocookie.com/embed/1ll8JVwJC50?si=UcQgFnI2AXPPRVbU" title="YouTube video player" frameborder="0" allow="web-share" allowfullscreen></iframe>
 
 > Changement de bande adhésive pour tenir le câble du Nunshunk.
 > Le fil rouge à gauche du breadboard ne sert à rien.
@@ -76,9 +74,7 @@ Pour la quatrième version, je ne génère plus le PWM des servos avec l’ESP32
 Avec un clone de Nunchuck (joystick I²C de la console Wii), des vraie biellettes et des clones de servos Tower Pro MG90s.
 J’ai abandonné les clones de servos Tower Pro MG996R qui ne fonctionnent vraiment pas bien, car ils sont beaucoup trop lents et consomment trop de courant.
 
-<div style="display:block; margin-bottom:50px;">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1uQ3CkhVr-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<iframe width="799" height="449" src="https://www.youtube-nocookie.com/embed/1uQ3CkhVr-k?si=WrfEftOAmqUKBwQS" title="YouTube video player" frameborder="0" allow="web-share" allowfullscreen></iframe>
 
 [![Plateforme de Stewart — ouilogique.com][i7]{:style="width:50%; margin-bottom:100px"}][i7]
 
@@ -108,11 +104,9 @@ Avec un clone de Nunchuck (joystick I²C de la console Wii), des vraie biellette
 
 Avec un joystick analogique, des biellettes en fil de fer et des clones de servos Tower Pro MG90s.
 
-<div style="display:block; margin-bottom:50px;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qbQuXtnF4H4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<iframe width="799" height="449" src="https://www.youtube-nocookie.com/embed/qbQuXtnF4H4?si=dCC7E5JSER5oO-0a" title="YouTube video player" frameborder="0" allow="web-share" allowfullscreen></iframe>
 
-[![Plateforme de Stewart — ouilogique.com][i2]{:style="width:50%; float:left"}][i2]
+[![Plateforme de Stewart — ouilogique.com][i2]{:style="width:50%; float:left; margin-bottom:100px"}][i2]
 
 [i2]: ../../files/2019-03-27-plateforme-de-stewart-esp32/images/2019-03-21-proto-plateforme-de-stewart_001.jpg
 
@@ -287,7 +281,7 @@ PDF à trouver :
 
 ### Application 3 : Ball bouncing
 
--   ~~poe.olin.edu/2017/Bounce/~~
+-   <https://poe.olin.edu/2017/Bounce/>{:rel="nofollow"}
 -   <https://github.com/TShapinsky/Bounce>
 
 ## IMPLÉMENTATION
@@ -319,8 +313,8 @@ PDF à trouver :
 -   GWS Micro 2BBMG servo (<https://www.youtube.com/watch?v=TgqJbneXZI8>)
 -   HS5485HB (<https://github.com/a6guerre/Ball-balanced-on-Stewart-Platform/blob/master/Readme.pdf>)
 -   <http://www.robotis.us/dynamixel-mx-64t/> (Utilisé par Arun Dayal Udai)
--   MG995 (<https://www.banggood.com/MG995-High-Torgue-Mental-Gear-Analog-Servo-p-73885.html>) (Rolf)
--   Tower Pro SG-5010 servos ~~(01.org/developerjourney/recipe/building-stewart-platform)~~
+-   MG995 (<https://www.banggood.com/MG995-High-Torgue-Mental-Gear-Analog-Servo-p-73885.html>){:rel="nofollow"} (Rolf)
+-   Tower Pro SG-5010 servos <https://01.org/developerjourney/recipe/building-stewart-platform>{:rel="nofollow"}
 -   Hitec HS-5625MG (utilisé par <https://github.com/xoxota99/stewy>)
 -   MG996R <https://fr.aliexpress.com/item//32636102294.html>
 -   Parallax 900-00005 (utilisé par fullmotiondynamics)
@@ -356,11 +350,11 @@ PDF à trouver :
 
 ### Liste complète de matériel
 
--   ~~01.org/developerjourney/recipe/building-stewart-platform~~
+-   <https://01.org/developerjourney/recipe/building-stewart-platform>{:rel="nofollow"}
 
 ### Touch screen
 
--   Digikey 360-3520-ND ~~www.digikey.ch/short/pj85db~~ (utilisé par <https://github.com/xoxota99/stewy>)
+-   [Digikey 360-3520-ND](https://www.digikey.ch/short/pj85db){:rel="nofollow"} (utilisé par <https://github.com/xoxota99/stewy>)
 -   <https://aliexpress.com/af/32809597549.html>
 
 ### ESP32
@@ -409,8 +403,8 @@ Cinématique inverse avec servomoteurs **😃 Meilleure source pour les calculs 
 
 Analyse vectorielle des lieux de singularité de la plate-forme de Gough-Stewart
 
--   ~~corpus.ulaval.ca/jspui/bitstream/20.500.11794/23444/1/28962.pdf~~
--   <https://stringfixer.com/fr/Stewart_platform>
+-   <https://corpus.ulaval.ca/jspui/bitstream/20.500.11794/23444/1/28962.pdf>{:rel="nofollow"}
+-   <https://stringfixer.com/fr/Stewart_platform>{:rel="nofollow"}
 -   <https://fr.lambdageeks.com/parallel-robot-kinematics/>
 -   <https://fr.wikipedia.org/wiki/Reymond_Clavel>
 -   <https://fr.wikipedia.org/wiki/Robot_Delta>

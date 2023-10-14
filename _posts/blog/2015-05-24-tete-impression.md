@@ -13,7 +13,7 @@ tags:
 title: Tête d’impression chinoise pour µDelta
 ---
 
-Ma [µDelta](https://www.reprap-france.com) a [une nouvelle tête d’impression](https://s.click.aliexpress.com/e/J2zVfYFAq) nettement plus longue que l’originale, mais elle fonctionne nettement mieux.
+Ma [µDelta](https://www.reprap-france.com) a [une nouvelle tête d’impression](https://s.click.aliexpress.com/e/J2zVfYFAq){:rel="nofollow"} nettement plus longue que l’originale, mais elle fonctionne nettement mieux.
 
 [![ouilogique.com][img_1]][img_1]
 

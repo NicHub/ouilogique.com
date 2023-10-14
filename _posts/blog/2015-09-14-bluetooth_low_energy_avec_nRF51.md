@@ -86,22 +86,22 @@ norme C 99 ⇒ permet des déclarations spéciales de struct
 
 ## Liens
 
--   <http://jmkikori.no-ip.org/jmk/joomla-static/index.php/2-uncategorised/1-introduction-bluetooth-low-energy.html>
+-   <http://jmkikori.no-ip.org/jmk/joomla-static/index.php/2-uncategorised/1-introduction-bluetooth-low-energy.html>{:rel="nofollow"}
 -   <https://os.mbed.com/platforms/Nordic-nRF51-DK/>
 -   [Bande industrielle, scientifique et médicale (Wikipédia)](https://fr.wikipedia.org/wiki/Bande_industrielle,_scientifique_et_médicale)
 -   [Bluetooth (Wikipédia)](https://fr.wikipedia.org/wiki/Bluetooth)
 -   [Bluetooth Accessory Design Guidelines for Apple Products](https://developer.apple.com/hardwaredrivers/BluetoothDesignGuidelines.pdf)
 -   [Kit Didel](http://www.didel.com/diduino/AdanRF51.pdf)
--   [https://evothings.com](https://evothings.com)
+-   [https://evothings.com](https://evothings.com){:rel="nofollow"}
 -   [List of Bluetooth Smart and Bluetooth Smart Ready products available now](http://www.bluetooth.com/Pages/Bluetooth-Smart-Devices-List.aspx)
 
 ## Modules BLE
 
--   [RedBearLab](http://redbearlab.com/nrf51822/)
+-   [RedBearLab](http://redbearlab.com/nrf51822/){:rel="nofollow"}
 -   [Aliexpress](http://fr.aliexpress.com/item/Low-power-consumption-BLE4-0-module-with-2-4GHz-PCB-antenna16-28mm-Free-sample/32334323347.html)
--   [MDBT40 (SeeedStudio)](http://www.seeedstudio.com/depot/MDBT40P%C2%A0%C2%A0nRF51822%C2%A0based%C2%A0BLE%C2%A0module-p-2503.html) — [MDBT40 (Raytac)](http://www.raytac.com/download/MDBT40/MDBT40%20spec-Version%20A3.pdf)
+-   [MDBT40 (SeeedStudio)](http://www.seeedstudio.com/depot/MDBT40P%C2%A0%C2%A0nRF51822%C2%A0based%C2%A0BLE%C2%A0module-p-2503.html) — [MDBT40 (Raytac)](http://www.raytac.com/download/MDBT40/MDBT40%20spec-Version%20A3.pdf){:rel="nofollow"}
 -   [Banggood (avec quartz 32 kHz)](http://www.banggood.com/NRF51822-2_4GHz-Network-Bluetooth-Serial-Module-Support-For-Apple-Android-p-992468.html?p=0431091025639201412F)
 -   [Microchip BM77](http://www.microchip.com/wwwproducts/Devices.aspx?product=bm77)
--   [HM-10 Bluetooth 4.0 Module Transparent Serial Port With Logic Level Translator](http://www.banggood.com/HM-10-Bluetooth-4_0-Module-Transparent-Serial-Port-p-967059.html?p=0431091025639201412F)
+-   [HM-10 Bluetooth 4.0 Module Transparent Serial Port With Logic Level Translator](http://www.banggood.com/HM-10-Bluetooth-4_0-Module-Transparent-Serial-Port-p-967059.html?p=0431091025639201412F){:rel="nofollow"}
 -   [DFRobot — Bluno](http://www.dfrobot.com/)
 -   [Bluno Beetle V1.0 — AliExpress](http://fr.aliexpress.com/item/DFRoBot-100-Original-DIY-Bluno-Beetle-V1-0-wearable-mini-Micro-main-controller-Board-with-Bluetooth/32456535853.html)

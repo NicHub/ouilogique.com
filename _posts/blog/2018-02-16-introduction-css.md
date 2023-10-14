@@ -163,7 +163,7 @@ Cela dit, c’est un bon moyen de créer une exception pour un élément donné.
 
 ## LA SYNTAXE
 
-Pour apprendre les bases de la syntaxe CSS, nous allons utiliser l’exemple ci-dessous ([adapté de l’exemple sur MDN][syntaxe CSS MDN]).
+Pour apprendre les bases de la syntaxe CSS, nous allons utiliser l’exemple ci-dessous ([adapté de l’exemple sur MDN][syntaxe CSS MDN]{:rel="nofollow"}).
 
 fichier `syntaxe.css`
 
@@ -310,13 +310,13 @@ Pour s’assurer qu’un code CSS est valide, on peut utiliser [le validateur CS
 
 ### Pour en savoir plus
 
--   [Les déclarations CSS MDN][Les déclarations CSS MDN]
--   [Les blocs CSS MDN][Les blocs CSS MDN]
--   [Les règles CSS MDN][Les règles CSS MDN]
+-   [Les déclarations CSS MDN][Les déclarations CSS MDN]{:rel="nofollow"}
+-   [Les blocs CSS MDN][Les blocs CSS MDN]{:rel="nofollow"}
+-   [Les règles CSS MDN][Les règles CSS MDN]{:rel="nofollow"}
 
 ### Les instructions CSS
 
-[Les instructions CSS MDN][Les instructions CSS MDN]
+[Les instructions CSS MDN][Les instructions CSS MDN]{:rel="nofollow"}
 
 ## LES SÉLECTEURS
 
@@ -334,7 +334,7 @@ En CSS, les sélecteurs sont utilisés afin de cibler une partie spécifique d�
 -   Les pseudo-éléments
 -   Les combinateurs
 
-Pour découvrir les sélecteurs, rendez-vous sur la page [des sélecteurs de MDN][Les sélecteurs MDN].
+Pour découvrir les sélecteurs, rendez-vous sur la page [des sélecteurs de MDN][Les sélecteurs MDN]{:rel="nofollow"}.
 
 ## LA CASCADE
 
@@ -430,11 +430,11 @@ Cette feuille de style illustre ce qui se passe lorsqu’un sélecteur de niveau
 
 ### Pour en savoir plus
 
--   [Pondération MDN][Pondération MDN]
+-   [Pondération MDN][Pondération MDN]{:rel="nofollow"}
 
 ## L’HÉRITAGE
 
-[Héritage MDN][Héritage MDN]
+[Héritage MDN][Héritage MDN]{:rel="nofollow"}
 
 ## LES _MEDIA QUERIES_
 
@@ -604,30 +604,18 @@ Le site du W3C contient lui aussi beaucoup d’informations utiles : [CSS sur l
 [CSS sur MDN]: https://developer.mozilla.org/fr/docs/Web/CSS
 [Référence CSS MDN]: https://developer.mozilla.org/fr/docs/Web/CSS/Reference
 [Composer le HTML avec les CSS]: https://developer.mozilla.org/fr/Apprendre/CSS
-
 [Google Insights]: https://developers.google.com/speed/pagespeed/insights/?hl=fr
-
 [syntaxe CSS MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_syntaxe
-
 [Les déclarations CSS MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_syntaxe#Les_d%C3%A9clarations_CSS
-
 [Les blocs CSS MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_syntaxe#Les_blocs_CSS
-
 [Les règles CSS MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_syntaxe#Les_r%C3%A8gles_CSS
-
 [Les instructions CSS MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_syntaxe#Les_r%C3%A8gles_CSS
-
 [Sass]: http://sass-lang.com/
-
 [W3C CSS Validator]: https://jigsaw.w3.org/css-validator/#validate_by_input
-
 [Les sélecteurs MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/Les_s%C3%A9lecteurs
-
 [Pondération MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_cascade_et_l_h%C3%A9ritage#Le_poids_des_s%C3%A9lecteurs
-
 [Héritage MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_cascade_et_l_h%C3%A9ritage#L'h%C3%A9ritage
-
-[ouilogique ESP8266 WeMos]: https://ouilogique.com/NodeMCU_esp8266/
+[ouilogique ESP8266 WeMos]: ../NodeMCU_esp8266/
 [Wiki du cours HTML embarqué]: https://github.com/NicHub/microclub-atelier-html-embarque/wiki
 [Les medias queries MDN]: https://developer.mozilla.org/fr/docs/Web/CSS/Requ%C3%AAtes_m%C3%A9dia/Utiliser_les_Media_queries
 [HTML Color Picker W3 Schools]: https://www.w3schools.com/colors/colors_picker.asp?color=00bfff

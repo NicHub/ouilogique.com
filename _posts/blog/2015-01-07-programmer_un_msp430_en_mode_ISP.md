@@ -54,7 +54,7 @@ Voilà le résultat final :
     J’aurais aussi dû être moins conservatif sur la question de la consommation et utiliser des résistances plus faibles.
 -   Qu’une LED éclaire beaucoup plus sur le dessus que sur les côtés.
 -   Qu’il est horriblement long et compliqué de réaliser un projet, même aussi simple que celui-là quand on a pas de matériel.
-    J’étais tributaire des horaires d’ouverture du FabLab Chêne 20 ~~(www.fablab-chene20.ch)~~ et ça a été la course permanente pour réaliser ce montage.
+    J’étais tributaire des horaires d’ouverture du [FabLab Chêne 20](https://www.fablab-chene20.ch){:rel="nofollow"} et ça a été la course permanente pour réaliser ce montage.
     Notez que j’ai réalisé deux autres versions : une qui ne sera jamais utilisée et une autre que j’ai offerte à Noël, mais qui ne contient pas le montage électronique, c’est donc un simple photophore pour y placer une bougie et il a une forme différente de celui que je présente ici.
 
 [![ouilogique.com][img_903]{:style="width:50%; float:left"}][img_903]
@@ -77,7 +77,7 @@ Voilà le résultat final :
 
 Pour ceux qui ont participé au quatrième MOOC sur les microcontrôleurs, voici le lien vers le forum où j’ai présenté ce projet :
 
--   <https://class.coursera.org/microcontroleurs-004/forum/thread?thread_id=327>
+-   <https://class.coursera.org/microcontroleurs-004/forum/thread?thread_id=327>{:rel="nofollow"}
 
 ## Code
 

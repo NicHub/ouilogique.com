@@ -15,13 +15,13 @@ title: Neopixel Didel WS2813
 
 Test d’un strip de 2 LED que [Didel](http://www.didel.com/NewsF.html) m’a gracieusement offert.
 
-On peut l’acheter chez Boxtec et dans ce cas, il a 11 LED adressables WS2813. <http://shop.boxtec.ch/didel-neopixel-stickbreakout-ws2813-p-42819.html>
+On peut l’acheter chez Boxtec et dans ce cas, il a 11 LED adressables WS2813. <http://shop.boxtec.ch/didel-neopixel-stickbreakout-ws2813-p-42819.html>{:rel="nofollow"}
 
-Il y a un guide utilisateur ici : <http://cdn2.boxtec.ch/pub/didel/WS2813MiniStrip.pdf>
+Il y a un guide utilisateur ici : <http://cdn2.boxtec.ch/pub/didel/WS2813MiniStrip.pdf>{:rel="nofollow"}
 
-Et la spécification des LED WS2813 se trouve ici : <http://cdn2.boxtec.ch/pub/diverse/WS2813.pdf>
+Et la spécification des LED WS2813 se trouve ici : <http://cdn2.boxtec.ch/pub/diverse/WS2813.pdf>{:rel="nofollow"}
 
-Didel propose des exemples de programme pour Arduino <http://didel.com/WS28.zip> et c’est eux que j’ai testés.
+Didel propose des exemples de programme pour Arduino <http://didel.com/WS28.zip>{:rel="nofollow"} et c’est eux que j’ai testés.
 
 ## Brochage
 
@@ -99,5 +99,5 @@ La broche de données est la 18.
 [img_2]: ../../files/2017-04-27-neopixel-didel-ws2813/images/2017-04-27-neopixel-didel-ws2813-002.jpg
 [img_3]: ../../files/2017-04-27-neopixel-didel-ws2813/images/2017-04-27-neopixel-didel-ws2813-003.jpg
 [img_4]: ../../files/2017-04-27-neopixel-didel-ws2813/images/2017-04-27-neopixel-didel-ws2813-004.jpg
-[neopixels-rpi]: https://learn.adafruit.com/neopixels-on-raspberry-pi/software
+[neopixels-rpi]: https://learn.adafruit.com/neopixels-on-raspberry-pi?view=all
 [stress-test]: https://core-electronics.com.au/tutorials/stress-testing-your-raspberry-pi.html

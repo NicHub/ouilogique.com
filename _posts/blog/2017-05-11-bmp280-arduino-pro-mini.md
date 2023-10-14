@@ -49,8 +49,8 @@ Je n’ai testé que le mode SPI (hardware) et pas le mode I²C et ça fonctionn
 ## Voir aussi
 
 -   [Article d’Adafruit sur le BMP280][4]
--   [BMP280 sur le site de Bosch][5]
--   [Datasheet du BMP280][6]
+-   [BMP280 sur le site de Bosch][5]{:rel="nofollow"}
+-   [Datasheet du BMP280][6]{:rel="nofollow"}
 
 [1]: http://www.banggood.com/5Pcs-3_3V-8MHz-ATmega328P-AU-Pro-Mini-Microcontroller-Board-For-Arduino-p-980292.html?p=0431091025639201412F
 [2]: https://www.banggood.com/GY-BMP280-3_3-High-Precision-Atmospheric-Pressure-Sensor-Module-For-Arduino-p-1111135.html?p=0431091025639201412F

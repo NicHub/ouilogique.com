@@ -21,7 +21,7 @@ Voici comment configurer un Raspberry Pi pour l’utiliser avec des LED NeoPixel
 
 Les informations de cet article proviennent des sources suivantes :
 
--   [Adafruit NeoPixels On Raspberry Pi][adafruit neopixels on raspberry pi]
+-   [Adafruit NeoPixels On Raspberry Pi][adafruit neopixels on raspberry pi]{:rel="nofollow"}
 -   [rpi_ws281x from jgarff on GitHub][rpi_ws281x from jgarff on github]
 
 ## Câblage
@@ -37,7 +37,7 @@ L’anneau de LED a 4 connexions :
 
 ## Matériel
 
--   [Anneau de 24 LED WS2812 — NeoPixel][anneau de 24 led ws2812 — neopixel]
+-   [Anneau de 24 LED WS2812 — NeoPixel][anneau de 24 led ws2812 — neopixel]{:rel="nofollow"}
 -   [Logic Level Converter][logic level converter]
 -   Raspberry Pi 2 Model B / Raspbian Stretch
 -   Raspberry Pi 3 Model B / Raspbian Jessie

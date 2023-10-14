@@ -140,7 +140,7 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 1. Brancher le câble USB entre l’afficheur et l’ordinateur.
 2. Vérifier si la carte USB est reconnue dans les périphériques de Windows.
 3. Si c’est le cas, noter son port COM.
-4. Si ce n’est pas le cas installer le driver pour le CH340 et retourner au point 2.
+4. Si ce n’est pas le cas installer le driver pour le CH340 et retourner au point 2.
 5. Utiliser le logiciel fourni (MiniLEDDisplayEditorV2.exe)
 
 ## COMMANDE PAR USB SUR OS X
@@ -149,7 +149,7 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 
 Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de l’IDE Arduino fonctionne bien.
 
--   Installer le pilote pour la communication USB avec le CH340 <https://ouilogique.com/ch340_driver/>
+-   Installer le pilote pour la communication USB avec le CH340 <../ch340_driver/>
 -   L’adresse du port RS232 est de la forme `/dev/cu.wchusbserial14240`
 -   Vitesse de transmission : 9600 bauds
 -   Attendre ~ 3 s entre chaque commande
@@ -254,7 +254,7 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 
 [img_18]: ../../files/2015-11-26-afficheur_a_led_128x16/images/2015-11-26-afficheur_a_led_128x16_012.jpg
 
-> J’ai également fait un test avec deux [connecteurs jack de test d’une longueur de 12 mm, de diamètres 5.5/2.1 mm et sans ergot](http://www.banggood.com/DC-Power-Male-Female-5_5X-2_1mm-Connector-Adapter-Plug-Cable-Pressed-connected-for-LED-Strips-12V-p-998683.html?p=0431091025639201412F). Le connecteur de test sur l’afficheur a un très bon contact alors que le connecteur de test branché au jack de l’alimentation pose le même problème de faux contact que si l’alimentation est directement connectée à l’afficheur.
+> J’ai également fait un test avec deux [connecteurs jack de test d’une longueur de 12 mm, de diamètres 5.5/2.1 mm et sans ergot](http://www.banggood.com/DC-Power-Male-Female-5_5X-2_1mm-Connector-Adapter-Plug-Cable-Pressed-connected-for-LED-Strips-12V-p-998683.html?p=0431091025639201412F){:rel="nofollow"}. Le connecteur de test sur l’afficheur a un très bon contact alors que le connecteur de test branché au jack de l’alimentation pose le même problème de faux contact que si l’alimentation est directement connectée à l’afficheur.
 
 [![ouilogique.com][img_19]][img_19]
 

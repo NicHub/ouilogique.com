@@ -62,7 +62,7 @@ void loop()
 
 ## Liens
 
--   <https://www.mon-club-elec.fr/pmwiki_reference_arduino/pmwiki.php?n=Main.PortManipulation>
+-   <https://www.mon-club-elec.fr/pmwiki_reference_arduino/pmwiki.php?n=Main.PortManipulation>{:rel="nofollow"}
 
 ## Manipulation des registres de l’ESP8266
 

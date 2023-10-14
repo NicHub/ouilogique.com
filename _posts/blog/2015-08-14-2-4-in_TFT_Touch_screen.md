@@ -16,7 +16,7 @@ J’ai acheté un écran TFT 2.4" chez Banggood :
 
 -   <https://www.banggood.com/UNO-R3-ATmega328P-Board-2_4-Inch-TFT-LCD-Screen-Module-For-Arduino-p-945755.html?p=0431091025639201412F>
 
-C’est un écran tactile résistif avec un lecteur de carte micro SD intégré. Le PCB indique [www.mcufriend.com](https://www.mcufriend.com), mais ce site ne répondait pas au moment où j’ai essayé. Je me suis donc armé de patience et après quelques heures et quelques dizaines de recherches sur Google, j’ai réussi à en faire quelque chose.
+C’est un écran tactile résistif avec un lecteur de carte micro SD intégré. Le PCB indique [www.mcufriend.com](https://www.mcufriend.com){:rel="nofollow"}, mais ce site ne répondait pas au moment où j’ai essayé. Je me suis donc armé de patience et après quelques heures et quelques dizaines de recherches sur Google, j’ai réussi à en faire quelque chose.
 
 > Avant de faire quoi que ce soit, il semble que ça soit une bonne idée d’isoler le connecteur USB de l’Arduino UNO avec de l’adhésif Kapton par exemple.
 
@@ -41,7 +41,7 @@ Il faut redémarrer l’IDE Arduino pour utiliser les librairies.
 
 La librairie `TFTLCD-Library` contient un dossier `exemples` que vous pouvez copier pour faire des modifications et un dossier `bitmaps`. Les bitmaps peuvent être copiées à la racine d’une carte Micro SD. Celle-ci fonctionne bien pour moi :
 
-~~www.banggood.com/8GB-Micro-SDTF-Memory-Card-For-Cell-Phone-PDA-MP3-Player-p-926928.html?p=0431091025639201412F~~
+<https://www.banggood.com/8GB-Micro-SDTF-Memory-Card-For-Cell-Phone-PDA-MP3-Player-p-926928.html?p=0431091025639201412F>{:rel="nofollow"}
 
 > L’écran fonctionne aussi sans carte micro SD. Elle est juste utile pour stocker des bitmaps.
 
@@ -101,7 +101,7 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 
 ## Spécifications
 
-> Source : ~~www.smokeandwires.co.nz/blog/a-2-4-tft-touchscreen-shield-for-arduino/~~
+> Source : <https://www.smokeandwires.co.nz/blog/a-2-4-tft-touchscreen-shield-for-arduino/>{:rel="nofollow"}
 
 | Screen Size | 2.4 inch |
 | Resolution | 240 x 320 |
@@ -152,8 +152,8 @@ p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.width());
 
 Les deux drivers LCD sont des TM74HC245.
 
-[Datasheet en chinois](https://www.szjdf.net/Private/ProductFiles/595775de665f4acba6a1.pdf)
-Datasheet traduite par Google ~~goo.gl/hKB7W1~~
+[Datasheet en chinois](https://www.szjdf.net/Private/ProductFiles/595775de665f4acba6a1.pdf){:rel="nofollow"}
+Datasheet traduite par Google <https://goo.gl/hKB7W1>{:rel="nofollow"}
 
 [![TM74HC245][4]][4]
 

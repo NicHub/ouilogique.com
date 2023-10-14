@@ -160,7 +160,7 @@ Pour moi, ça a fonctionné sans ce condensateur.
 
 ## Programmation des fusibles
 
-> Les infos de ce chapitres m’ont été gracieusement transmises par Richard ~~(www.fablab-chene20.ch)~~.
+> Les infos de ce chapitres m’ont été gracieusement transmises par Richard [FabLab Chêne 20](https://www.fablab-chene20.ch){:rel="nofollow"}.
 
 Les fusibles (_fuses_ en anglais) sont des paramètres intégrés aux microcontrôleurs d’Atmel et que l’on peut modifier à l’aide du programme [`avrdude`](https://www.nongnu.org/avrdude/user-manual/avrdude.html).
 C’est ce même programme qui est utilisé par l’IDE Arduino pour envoyer les fichiers compilés sur le microcontrôleur.

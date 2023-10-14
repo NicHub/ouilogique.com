@@ -44,7 +44,7 @@ Le brochage est décrit au début du programme ci-dessous.
 
 ## Brochage des différents connecteurs de matrices
 
-~~www.ec086.com/Technical_support.html~~
+<https://www.ec086.com/Technical_support.html>{:rel="nofollow"}
 
 ## Programme
 
