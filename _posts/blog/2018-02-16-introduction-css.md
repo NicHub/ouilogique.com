@@ -615,7 +615,7 @@ Le site du W3C contient lui aussi beaucoup d’informations utiles : [CSS sur l
 [Les sélecteurs MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/Les_s%C3%A9lecteurs
 [Pondération MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_cascade_et_l_h%C3%A9ritage#Le_poids_des_s%C3%A9lecteurs
 [Héritage MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_cascade_et_l_h%C3%A9ritage#L'h%C3%A9ritage
-[ouilogique ESP8266 WeMos]: ../NodeMCU_esp8266/
+[ouilogique ESP8266 WeMos]: /NodeMCU_esp8266/
 [Wiki du cours HTML embarqué]: https://github.com/NicHub/microclub-atelier-html-embarque/wiki
 [Les medias queries MDN]: https://developer.mozilla.org/fr/docs/Web/CSS/Requ%C3%AAtes_m%C3%A9dia/Utiliser_les_Media_queries
 [HTML Color Picker W3 Schools]: https://www.w3schools.com/colors/colors_picker.asp?color=00bfff

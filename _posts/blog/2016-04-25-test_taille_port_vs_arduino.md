@@ -33,7 +33,7 @@ Les variables globales utilisent 9 octets (0%) de mémoire dynamique, ce qui lai
 
 ## Conclusion
 
-On voit que la taille en mémoire de stockage de programme est 2.16 fois plus élevée avec les fonctions Arduino qu’en manipulant directement les ports. Et la taille, c’est une chose, mais il y a aussi un net avantage dans la vitesse d’exécution, comme vous pouvez le découvrir dans l’article suivant : [Test de vitesse entre les fonctions de manipulation de ports et les fonctions Arduino](../test_vitesse_port_vs_arduino/).
+On voit que la taille en mémoire de stockage de programme est 2.16 fois plus élevée avec les fonctions Arduino qu’en manipulant directement les ports. Et la taille, c’est une chose, mais il y a aussi un net avantage dans la vitesse d’exécution, comme vous pouvez le découvrir dans l’article suivant : [Test de vitesse entre les fonctions de manipulation de ports et les fonctions Arduino](/test_vitesse_port_vs_arduino/).
 
 ```c++
 // BlinkPort.ino

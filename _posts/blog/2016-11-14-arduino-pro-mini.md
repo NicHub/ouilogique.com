@@ -137,5 +137,5 @@ Par contre les fils ne sont pas branchés dans le bon ordre, donc il faut corrig
 [2]: #programmation-de-larduino-pro-mini-avec-un-convertisseur-usb-série-miniinthebox
 [3]: http://www.banggood.com/5Pcs-3_3V-8MHz-ATmega328P-AU-Pro-Mini-Microcontroller-Board-For-Arduino-p-980292.html?p=0431091025639201412F
 [4]: http://www.miniinthebox.com/fr/programme-downloader-ftdi-basic-usb-a-ttl-ft232-pour-arduino_p903425.html
-[5]: ../pinouts/#pinout-arduino-pro-mini
-[6]: ../usb-rs232_bridge_microcontroleurs/
+[5]: /pinouts/#pinout-arduino-pro-mini
+[6]: /usb-rs232_bridge_microcontroleurs/

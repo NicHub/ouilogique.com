@@ -16,7 +16,7 @@ tags:
 title: LED adressables
 ---
 
-Pour mon [projet de programmation d’un MSP430 en mode ISP](../programmer_un_msp430_en_mode_ISP/), j’ai utilisé une LED RGB. C’est simplement trois LED dans un seul boîtier avec quatre pattes : une pour chaque couleur et une pour la masse.
+Pour mon [projet de programmation d’un MSP430 en mode ISP](/programmer_un_msp430_en_mode_ISP/), j’ai utilisé une LED RGB. C’est simplement trois LED dans un seul boîtier avec quatre pattes : une pour chaque couleur et une pour la masse.
 
 Jusque là, rien de bien méchant. Mais comme je n’avais qu’une LED de ce type et que je l’ai soudée sur mon [Perma-Proto d’Adafruit](https://www.adafruit.com/blog/2011/11/18/adafruit-perma-proto-half-sized-breadboard-pcb-3-pack/), il m’en fallait des nouvelles. Ni une, ni deux, j’ai commandé quatre [LED P9823-F8](https://shop.boxtec.ch/led-neopixel-8mm-p9823-p-42265.html) chez Boxtec.
 

@@ -13,7 +13,7 @@ title:
     WiFi ESP8266
 ---
 
-> Voir aussi [l’article sur l’ESP8266 LoLin](../NodeMCU_esp8266/)
+> Voir aussi [l’article sur l’ESP8266 LoLin](/NodeMCU_esp8266/)
 
 ## Référence AliExpress
 
