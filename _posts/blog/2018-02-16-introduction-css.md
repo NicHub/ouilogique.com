@@ -11,37 +11,28 @@ tags: []
 title: Introduction au langage CSS
 ---
 
-
-
 Ce document fait partie du [cours sur le HTML embarqué][Wiki du cours HTML embarqué] que j’ai donné au [Microclub][Microclub] en janvier et février 2018 à l’EPFL.
-
-
 
 ## LES DOCUMENTS DU COURS
 
-- [Introduction au langage HTML][Introduction au langage HTML]
-- [Introduction au langage CSS][Introduction au langage CSS]
-- [Introduction au langage JavaScript][Introduction au langage JavaScript]
-- [Cours complet au format PDF][microclub-atelier-html-embarque.pdf]
-
-
-
+-   [Introduction au langage HTML][Introduction au langage HTML]
+-   [Introduction au langage CSS][Introduction au langage CSS]
+-   [Introduction au langage JavaScript][Introduction au langage JavaScript]
+-   [Cours complet au format PDF][microclub-atelier-html-embarque.pdf]
 
 ## INTRODUCTION
 
 Nous avons vu que le langage HTML permet de définir la structure du contenu d’un document. Nous allons maintenant voir comment mettre en forme l’apparence de ce contenu grâce au langage CSS.
 
-CSS signifie *Cascading Style Sheets*, c’est à dire *Feuilles de style en cascade*. CSS fait appel à des sélecteurs qui permettent d’appliquer les styles aux différents éléments HTML.
+CSS signifie _Cascading Style Sheets_, c’est à dire _Feuilles de style en cascade_. CSS fait appel à des sélecteurs qui permettent d’appliquer les styles aux différents éléments HTML.
 
 ### Note
 
-Il n’y a pas que les documents HTML qui peuvent profiter de la mise en forme avec CSS, les documents SVG (*Scalable Vector Graphics* ou graphique vectoriel adaptable, en français) le peuvent aussi.
+Il n’y a pas que les documents HTML qui peuvent profiter de la mise en forme avec CSS, les documents SVG (_Scalable Vector Graphics_ ou graphique vectoriel adaptable, en français) le peuvent aussi.
 
 ### Pour en savoir plus
 
-- [CSS sur MDN][CSS sur MDN]
-
-
+-   [CSS sur MDN][CSS sur MDN]
 
 ## BÉNÉFICES DE LA TECHNOLOGIE CSS
 
@@ -53,30 +44,27 @@ Ce cours lui-même est un exemple de cette possibilité offerte par CSS. Il y a 
 
 **Prérequis**
 
-- Rédaction des documents au format Markdown.
+-   Rédaction des documents au format Markdown.
 
 **Scénario 1 : Génération avec GitHub**
 
-- Lors de la mise en ligne, GitHub convertit automatiquement les fichiers Markdown en HTML et affiche le résultat sur leur site en utilisant leur propre CSS.
+-   Lors de la mise en ligne, GitHub convertit automatiquement les fichiers Markdown en HTML et affiche le résultat sur leur site en utilisant leur propre CSS.
 
 **Scénario 2 : Génération avec Pandoc**
 
-- J’utilise [Pandoc][Pandoc] pour convertir les fichiers Markdown en HTML et j’inclus dans le fichier HTML la feuille de style CSS qui permet de lire [ce fichier][Ce cours au format HTML] dans un navigateur.
+-   J’utilise [Pandoc][Pandoc] pour convertir les fichiers Markdown en HTML et j’inclus dans le fichier HTML la feuille de style CSS qui permet de lire [ce fichier][Ce cours au format HTML] dans un navigateur.
 
 **Scénario 3 : Génération avec Prince**
 
-- J’utilise [Prince][Prince] pour convertir le fichier HTML du scénario 2 en format PDF. La feuille de style est également la même, mais elle contient des instructions qui permettent de différencier le rendu à l’écran et le rendu au format PDF.
+-   J’utilise [Prince][Prince] pour convertir le fichier HTML du scénario 2 en format PDF. La feuille de style est également la même, mais elle contient des instructions qui permettent de différencier le rendu à l’écran et le rendu au format PDF.
 
 **Conclusion**
 
 On voit que les trois scénarios utilisent des CSS différents et qu’un fichier source peut générer différents fichiers cibles.
 
+### EXEMPLE AVEC _CSS ZEN GARDEN_
 
-### EXEMPLE AVEC *CSS ZEN GARDEN*
-
-Un exemple spectaculaire de la puissance de la technologie CSS est le site [*CSS Zen Garden*][CSS Zen Garden]. Le défi proposé par ce site est que tous les participants mettent en forme le même fichier HTML et le résultat visuel doit être aussi original que possible. Je vous laisse juger de l’inventivité des participants ainsi que de la puissance de la technologie CSS.
-
-
+Un exemple spectaculaire de la puissance de la technologie CSS est le site [_CSS Zen Garden_][CSS Zen Garden]. Le défi proposé par ce site est que tous les participants mettent en forme le même fichier HTML et le résultat visuel doit être aussi original que possible. Je vous laisse juger de l’inventivité des participants ainsi que de la puissance de la technologie CSS.
 
 ## POSITION DU CSS
 
@@ -94,14 +82,17 @@ Avec des fichiers CSS externes, il est également plus facile de gérer des scé
 
 Voici un exemple de fichier CSS (style.css) :
 
+<!-- prettier-ignore-start -->
 ```css
 p {
     color: firebrick;
 }
 ```
+<!-- prettier-ignore-end -->
 
 Pour faire appel à ce fichier, il faut inclure la balise `<link>` dans le document HTML, généralement à l’intérieur de la balise `<head>`, mais la norme HTML 5 permet de positionner cette balise dans l’élément `<body>` également.
 
+<!-- prettier-ignore-start -->
 ```html
 <!DOCTYPE html>
 <html>
@@ -115,6 +106,7 @@ Pour faire appel à ce fichier, il faut inclure la balise `<link>` dans le docum
 </body>
 </html>
 ```
+<!-- prettier-ignore-end -->
 
 ### CSS interne au fichier HTML, dans la balise `<style>`
 
@@ -124,6 +116,7 @@ On peut aussi utiliser cette méthode pour créer des exceptions pour une page d
 
 C’est aussi un moyen de forcer les agents utilisateurs à ne pas réutiliser les informations de leur cache.
 
+<!-- prettier-ignore-start -->
 ```html
 <!DOCTYPE html>
 <html>
@@ -141,6 +134,7 @@ C’est aussi un moyen de forcer les agents utilisateurs à ne pas réutiliser l
 </body>
 </html>
 ```
+<!-- prettier-ignore-end -->
 
 ### CSS interne au fichier HTML, dans l’attribut `style` d’un élément HTML
 
@@ -152,6 +146,7 @@ Elle a également le désavantage d’empêcher la gestion de scénarios de tran
 
 Cela dit, c’est un bon moyen de créer une exception pour un élément donné.
 
+<!-- prettier-ignore-start -->
 ```html
 <!DOCTYPE html>
 <html>
@@ -164,8 +159,7 @@ Cela dit, c’est un bon moyen de créer une exception pour un élément donné.
 </body>
 </html>
 ```
-
-
+<!-- prettier-ignore-end -->
 
 ## LA SYNTAXE
 
@@ -173,6 +167,7 @@ Pour apprendre les bases de la syntaxe CSS, nous allons utiliser l’exemple ci-
 
 fichier `syntaxe.css`
 
+<!-- prettier-ignore-start -->
 ```css
 body {
     font: 1em/150% "Helvetica Neue", Arial, monospace;
@@ -205,9 +200,11 @@ div p + p {
     padding-top: 0;
 }
 ```
+<!-- prettier-ignore-end -->
 
 fichier `syntaxe.html`
 
+<!-- prettier-ignore-start -->
 ```html
 <!DOCTYPE html>
 <html>
@@ -239,37 +236,42 @@ fichier `syntaxe.html`
 </body>
 </html>
 ```
+<!-- prettier-ignore-end -->
 
 ### Anatomie d’une règle CSS
 
 Une règle CSS se présente sous la forme suivante :
 
+<!-- prettier-ignore-start -->
 ```css
 sélecteur1, sélecteur2 {
     propriété1: valeur1;
     propriété2: valeur2;
 }
 ```
+<!-- prettier-ignore-end -->
 
 Voici un exemple réel de règle :
 
+<!-- prettier-ignore-start -->
 ```css
 div p, #id:first-line {
     background-color: antiquewhite;
     color: cadetblue;
 }
 ```
+<!-- prettier-ignore-end -->
 
 On voit qu’une règle est composée de la manière suivante :
 
-- Un ou plusieurs **sélecteurs** séparés par des virgules, ici `div p` et `#id:first-line`.
-- Un bloc délimité par des accolades `{}`.
-- Un **bloc** peut être vide ou contenir une ou plusieurs **déclarations**, ici `background-color: antiquewhite;` et `color: cadetblue;`.
-- Les blocs peuvent être imbriqués.
-- Chaque déclaration est constituée de **propriétés** et de **valeurs** séparées du caractère deux points (`:`).
-- Les déclarations sont terminées par un point-virgule.
-- Le point-virgule est optionnel (mais recommandé) pour la dernière déclaration d’un bloc.
-- Les déclarations peuvent être mises sur une ou plusieurs lignes.
+-   Un ou plusieurs **sélecteurs** séparés par des virgules, ici `div p` et `#id:first-line`.
+-   Un bloc délimité par des accolades `{}`.
+-   Un **bloc** peut être vide ou contenir une ou plusieurs **déclarations**, ici `background-color: antiquewhite;` et `color: cadetblue;`.
+-   Les blocs peuvent être imbriqués.
+-   Chaque déclaration est constituée de **propriétés** et de **valeurs** séparées du caractère deux points (`:`).
+-   Les déclarations sont terminées par un point-virgule.
+-   Le point-virgule est optionnel (mais recommandé) pour la dernière déclaration d’un bloc.
+-   Les déclarations peuvent être mises sur une ou plusieurs lignes.
 
 > **Les instructions CSS sont sensibles à la casse (majuscule ≠ minuscule).**
 > En CSS, il n’est pas possible de définir des variables ou des constantes, ce qui est très problématique pour gérer des projets complexes. Dans ce cas, on utilisera un langage de génération de feuilles de style comme [Sass][Sass].
@@ -279,6 +281,7 @@ On voit qu’une règle est composée de la manière suivante :
 
 Il est possible de commenter le code CSS de la manière suivante :
 
+<!-- prettier-ignore-start -->
 ```css
 body {
     font: 1em/150% "Helvetica Neue", Arial, monospace;
@@ -295,6 +298,7 @@ body {
     */
 }
 ```
+<!-- prettier-ignore-end -->
 
 > CSS ne permet pas de commenter ligne par ligne, comme il est possible de le faire en JavaScript avec les symboles `//`.
 
@@ -306,35 +310,31 @@ Pour s’assurer qu’un code CSS est valide, on peut utiliser [le validateur CS
 
 ### Pour en savoir plus
 
-- [Les déclarations CSS MDN][Les déclarations CSS MDN]
-- [Les blocs CSS MDN][Les blocs CSS MDN]
-- [Les règles CSS MDN][Les règles CSS MDN]
+-   [Les déclarations CSS MDN][Les déclarations CSS MDN]
+-   [Les blocs CSS MDN][Les blocs CSS MDN]
+-   [Les règles CSS MDN][Les règles CSS MDN]
 
 ### Les instructions CSS
 
 [Les instructions CSS MDN][Les instructions CSS MDN]
 
-
-
 ## LES SÉLECTEURS
 
 En CSS, les sélecteurs sont utilisés afin de cibler une partie spécifique d’une page web à mettre en forme. Afin de pouvoir être précis, CSS est très riche en sélecteurs et une grande partie de sa flexibilité dépend de ceux-ci.
 
-- Les sélecteurs simples
-    - Les sélecteurs de type (type selectors)
-    - Les sélecteurs de classe
-    - Les sélecteurs d’identifiant
-    - Le sélecteur universel
-- Les sélecteurs d’attribut
-    - Définition et valeur des sélecteurs d’attribut
-    - Les sélecteurs d’attribut utilisant un filtre sur les fragments de chaînes
-- Les pseudo-classes
-- Les pseudo-éléments
-- Les combinateurs
+-   Les sélecteurs simples
+    -   Les sélecteurs de type (type selectors)
+    -   Les sélecteurs de classe
+    -   Les sélecteurs d’identifiant
+    -   Le sélecteur universel
+-   Les sélecteurs d’attribut
+    -   Définition et valeur des sélecteurs d’attribut
+    -   Les sélecteurs d’attribut utilisant un filtre sur les fragments de chaînes
+-   Les pseudo-classes
+-   Les pseudo-éléments
+-   Les combinateurs
 
 Pour découvrir les sélecteurs, rendez-vous sur la page [des sélecteurs de MDN][Les sélecteurs MDN].
-
-
 
 ## LA CASCADE
 
@@ -342,14 +342,15 @@ Comme son nom l’indique, CSS agit en cascade, ce qui signifie que les définit
 
 Dans l’exemple ci-dessous, la couleur du texte à l’intérieur des balises `<p>` est définie 3 fois. Pour être exhaustif, il faut aussi mentionner que les agents utilisateurs appliquent eux aussi des styles par défaut et qu’ils peuvent permettre aux utilisateurs de créer leurs propres styles. Donc, l’agent utilisateur lira les 5 sources suivantes et dans cet ordre :
 
-1. Style par défaut de l’agent utilisateur ⇒ *black*
-2. Utilisateur de l’agent utilisateur ⇒ *not set*
-3. Fichier externe (style.css) ⇒ *firebrick*
-4. Balise `<style>` ⇒ *aqua*
-5. Attribut `style` de l’élément `<p>` ⇒ *blueviolet*
+1. Style par défaut de l’agent utilisateur ⇒ _black_
+2. Utilisateur de l’agent utilisateur ⇒ _not set_
+3. Fichier externe (style.css) ⇒ _firebrick_
+4. Balise `<style>` ⇒ _aqua_
+5. Attribut `style` de l’élément `<p>` ⇒ _blueviolet_
 
-Les règles de cascade imposent que, si des règles sont en concurrence, ce soit la dernière qui est appliquée. Donc dans l’exemple ci-dessous, la couleur du texte sera *blueviolet*.
+Les règles de cascade imposent que, si des règles sont en concurrence, ce soit la dernière qui est appliquée. Donc dans l’exemple ci-dessous, la couleur du texte sera _blueviolet_.
 
+<!-- prettier-ignore-start -->
 ```html
 <!DOCTYPE html>
 <html>
@@ -380,7 +381,7 @@ Les règles de cascade imposent que, si des règles sont en concurrence, ce soit
 </body>
 </html>
 ```
-
+<!-- prettier-ignore-end -->
 
 ## LA PONDÉRATION
 
@@ -392,19 +393,22 @@ Les règles de la cascade s’appliquent pour prioriser les différentes sources
 
 Pour déterminer si une règle s’applique plutôt qu’une autre on regarde :
 
-- Celle qui possède le plus de sélecteurs de niveau 1.
-- Si le nombre de sélecteurs de niveau 1 est le même : celle qui possède le plus de sélecteurs de niveau 2.
-- Si le nombre de sélecteurs de niveau 2 est le même : celle qui possède le plus de sélecteurs de niveau 3.
-- Enfin, si les sélecteurs ont le même poids, ce sera l’ordre des règles dans le fichier source qui importera : la règle la plus basse dans le fichier l’emportera sur une règle déclarée avant.
+-   Celle qui possède le plus de sélecteurs de niveau 1.
+-   Si le nombre de sélecteurs de niveau 1 est le même : celle qui possède le plus de sélecteurs de niveau 2.
+-   Si le nombre de sélecteurs de niveau 2 est le même : celle qui possède le plus de sélecteurs de niveau 3.
+-   Enfin, si les sélecteurs ont le même poids, ce sera l’ordre des règles dans le fichier source qui importera : la règle la plus basse dans le fichier l’emportera sur une règle déclarée avant.
 
 Prenons ce fragment de HTML par exemple :
 
+<!-- prettier-ignore-start -->
 ```html
 <p id="cookie" class="crispy">Ce cookie est <span>délicieux !</span></p>
 ```
+<!-- prettier-ignore-end -->
 
 Cette feuille de style illustre ce qui se passe lorsqu’un sélecteur de niveau 1 entre en conflit avec d’autres sélecteurs :
 
+<!-- prettier-ignore-start -->
 ```css
 /* Ce sélecteur est composé d’un sélecteur de niveau 1
    Poids : 1 | 0 | 0 */
@@ -422,33 +426,34 @@ Cette feuille de style illustre ce qui se passe lorsqu’un sélecteur de niveau
    est vert. Un seul sélecteur de niveau 1 sera toujours
    prioritaire par rapport à X sélecteurs de niveau 2. */
 ```
+<!-- prettier-ignore-end -->
 
 ### Pour en savoir plus
 
-- [Pondération MDN][Pondération MDN]
-
-
+-   [Pondération MDN][Pondération MDN]
 
 ## L’HÉRITAGE
 
 [Héritage MDN][Héritage MDN]
 
+## LES _MEDIA QUERIES_
 
-## LES *MEDIA QUERIES*
-
-Les *media queries*, ou requêtes media en français, sont des instructions CSS qui permettent d’appliquer des règles CSS différentes en fonction de l’appareil utilisé et ceci sans modification du code HTML. Elles sont à la base de ce qu’on appelle le *responsive design* ou design adaptatif en français et c’est ce qui permet à un site web de s’afficher lisiblement à la fois sur un écran de bureau 27" et sur l’écran d’un téléphone.
+Les _media queries_, ou requêtes media en français, sont des instructions CSS qui permettent d’appliquer des règles CSS différentes en fonction de l’appareil utilisé et ceci sans modification du code HTML. Elles sont à la base de ce qu’on appelle le _responsive design_ ou design adaptatif en français et c’est ce qui permet à un site web de s’afficher lisiblement à la fois sur un écran de bureau 27" et sur l’écran d’un téléphone.
 
 On peut spécifier le média cible à deux endroits différents :
 
 Dans l’attribut `media` de la balise `<link>` qui appelle le code CSS :
 
+<!-- prettier-ignore-start -->
 ```html
 <link rel="stylesheet" media="screen" href="style-screen.css" />
 <link rel="stylesheet" media="print" href="style-print.css" />
 ```
+<!-- prettier-ignore-end -->
 
 Ou dans le CSS lui-même :
 
+<!-- prettier-ignore-start -->
 ```css
 body
 {
@@ -471,18 +476,17 @@ body
   }
 }
 ```
-
+<!-- prettier-ignore-end -->
 
 ### Pour en savoir plus
 
-- [Les medias queries MDN][Les medias queries MDN]
-
-
+-   [Les medias queries MDN][Les medias queries MDN]
 
 ## LES COULEURS
 
 Les couleurs peuvent être définies de plusieurs façons différentes. Tous les exemples ci-dessous définissent la même couleur <span style="color: white; background-color:firebrick">firebrick</span>.
 
+<!-- prettier-ignore-start -->
 ```css
 /* Par nom : */
 body { background-color: firebrick; }
@@ -502,14 +506,17 @@ body { background-color: hsl(0, 68%, 42%); }
 /* Par code decimal HSL avec gestion de la transparence : */
 body { background-color: hsla(0, 68%, 42%, 0.5); }
 ```
+<!-- prettier-ignore-end -->
 
 ### Notation courte
 
 Il existe aussi une notation courte sur 3 chiffres au lieu de 6. Par exemple, `#B22` est équivalent à `#BB2222`, ce qui est très proche de `#B22222` de notre exemple ci-dessus.
 
+<!-- prettier-ignore-start -->
 ```css
 body { background-color: #B22; }
 ```
+<!-- prettier-ignore-end -->
 
 ### Nombre de couleurs
 
@@ -517,25 +524,26 @@ La notation standard sur 6 chiffres permet d’afficher 16<sup>6</sup> = 256<s
 
 ### Pour en savoir plus
 
-- [HTML Color Picker W3 Schools][HTML Color Picker W3 Schools]
-- [Couleurs CSS MDN][Couleurs CSS MDN]
-
-
+-   [HTML Color Picker W3 Schools][HTML Color Picker W3 Schools]
+-   [Couleurs CSS MDN][Couleurs CSS MDN]
 
 ## FRAMEWORKS
 
-Mettre en forme des pages HTML peut vite devenir une tâche complexe, particulièrement quand on veut l’afficher sur des écrans de tailles très différentes. Pour cela, il est fortement conseillé de ne pas réinventer la roue et d’utiliser un *framework*, c’est-à-dire une collection d’outils prête à l’emploi.
+Mettre en forme des pages HTML peut vite devenir une tâche complexe, particulièrement quand on veut l’afficher sur des écrans de tailles très différentes. Pour cela, il est fortement conseillé de ne pas réinventer la roue et d’utiliser un _framework_, c’est-à-dire une collection d’outils prête à l’emploi.
 
-Dans le monde du CSS, le *framework* [Bootstrap][Bootstrap] est très populaire en ce moment. Il est basé sur un système de grille à 12 colonnes qui sont utilisées pour l’alignement des éléments visuels.
+Dans le monde du CSS, le _framework_ [Bootstrap][Bootstrap] est très populaire en ce moment. Il est basé sur un système de grille à 12 colonnes qui sont utilisées pour l’alignement des éléments visuels.
 
 Un désavantage de Bootstrap est que le fichier CSS de base (bootstrap.min.css) pèse 118 ko, ce qui est relativement conséquent quand on veut travailler avec un [ESP8266][ouilogique ESP8266 WeMos]. Mais j’ai essayé et ça fonctionne. Si la topologie du projet le permet, il est de toute façon préférable de charger Bootstrap depuis un CDN et pas depuis le site web ou l’appareil IoT de l’application en utilisant le code suivant :
 
+<!-- prettier-ignore-start -->
 ```html
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
 ```
+<!-- prettier-ignore-end -->
 
 Voici un canevas pour bien commencer avec Bootstrap. Il est assez complet, donc dans la plupart des cas, il conviendra d’enlever les éléments inutilisés.
 
+<!-- prettier-ignore-start -->
 ```html
 <!DOCTYPE html>
 <html lang="fr">
@@ -571,15 +579,14 @@ Voici un canevas pour bien commencer avec Bootstrap. Il est assez complet, donc 
 </body>
 </html>
 ```
+<!-- prettier-ignore-end -->
 
-Il existe d’autres *frameworks*, comme [Foundation][Foundation] qui est aussi très populaire.
+Il existe d’autres _frameworks_, comme [Foundation][Foundation] qui est aussi très populaire.
 
 ### Pour en savoir plus
 
-- [Site officiel de Bootstrap, en][Bootstrap]
-- [Site officiel de Foundation, en][Foundation]
-
-
+-   [Site officiel de Bootstrap, en][Bootstrap]
+-   [Site officiel de Foundation, en][Foundation]
 
 ## POUR LA SUITE
 
@@ -591,18 +598,11 @@ Pour vous aider lors de l’écriture de vos feuilles de style, vous trouverez u
 
 Le site du W3C contient lui aussi beaucoup d’informations utiles : [CSS sur le site du W3C][CSS W3C].
 
-
-
 [Foundation]: https://foundation.zurb.com/
-
 [Bootstrap]: https://getbootstrap.com/
-
 [CSS W3C]: https://www.w3.org/Style/CSS/Overview.fr.html
-
 [CSS sur MDN]: https://developer.mozilla.org/fr/docs/Web/CSS
-
 [Référence CSS MDN]: https://developer.mozilla.org/fr/docs/Web/CSS/Reference
-
 [Composer le HTML avec les CSS]: https://developer.mozilla.org/fr/Apprendre/CSS
 
 [Google Insights]: https://developers.google.com/speed/pagespeed/insights/?hl=fr
@@ -628,31 +628,17 @@ Le site du W3C contient lui aussi beaucoup d’informations utiles : [CSS sur l
 [Héritage MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_cascade_et_l_h%C3%A9ritage#L'h%C3%A9ritage
 
 [ouilogique ESP8266 WeMos]: https://ouilogique.com/NodeMCU_esp8266/
-
 [Wiki du cours HTML embarqué]: https://github.com/NicHub/microclub-atelier-html-embarque/wiki
-
 [Les medias queries MDN]: https://developer.mozilla.org/fr/docs/Web/CSS/Requ%C3%AAtes_m%C3%A9dia/Utiliser_les_Media_queries
-
 [HTML Color Picker W3 Schools]: https://www.w3schools.com/colors/colors_picker.asp?color=00bfff
-
 [Couleurs CSS MDN]: https://developer.mozilla.org/fr/docs/Web/CSS/color
-
 [Pandoc]: https://pandoc.org/
-
 [Ce cours au format HTML]: https://raw.githubusercontent.com/wiki/NicHub/microclub-atelier-html-embarque/md2pdf/microclub-atelier-html-embarque.html
-
 [Ce cours au format PDF]: https://raw.githubusercontent.com/wiki/NicHub/microclub-atelier-html-embarque/md2pdf/microclub-atelier-html-embarque.pdf
-
 [Prince]: https://www.princexml.com/
-
 [CSS Zen Garden]: http://www.csszengarden.com/
-
 [Microclub]: https://microclub.ch/
-
 [microclub-atelier-html-embarque.pdf]: https://raw.githubusercontent.com/wiki/NicHub/microclub-atelier-html-embarque/md2pdf/microclub-atelier-html-embarque.pdf
-
 [Introduction au langage HTML]: ../introduction-html/
-
 [Introduction au langage CSS]: ../introduction-css/
-
 [Introduction au langage JavaScript]: ../introduction-javascript/

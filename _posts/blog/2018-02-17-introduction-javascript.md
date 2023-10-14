@@ -11,27 +11,18 @@ tags: []
 title: Introduction au langage JavaScript
 ---
 
-
-
 Ce document fait partie du [cours sur le HTML embarqué][Wiki du cours HTML embarqué] que j’ai donné au [Microclub][Microclub] en janvier et février 2018 à l’EPFL.
-
-
 
 ## LES DOCUMENTS DU COURS
 
-- [Introduction au langage HTML][Introduction au langage HTML]
-- [Introduction au langage CSS][Introduction au langage CSS]
-- [Introduction au langage JavaScript][Introduction au langage JavaScript]
-- [Cours complet au format PDF][microclub-atelier-html-embarque.pdf]
-
-
-
+-   [Introduction au langage HTML][Introduction au langage HTML]
+-   [Introduction au langage CSS][Introduction au langage CSS]
+-   [Introduction au langage JavaScript][Introduction au langage JavaScript]
+-   [Cours complet au format PDF][microclub-atelier-html-embarque.pdf]
 
 ## INTRODUCTION
 
 Nous avons vu que le langage HTML permet de définir la structure du contenu d’un document et que le langage CSS permet de mettre en forme ce contenu. Nous allons maintenant voir comment utiliser le langage JavaScript pour rendre ce contenu interactif.
-
-
 
 ## L’ORIGINE DU NOM JAVASCRIPT
 
@@ -41,9 +32,7 @@ JavaScript est normalisé par l’Ecma International (curieusement en Europe) so
 
 ### Pour en savoir plus
 
-- [Differences from ECMA-262 and JavaScript][Differences from ECMA-262 and JavaScript]
-
-
+-   [Differences from ECMA-262 and JavaScript][Differences from ECMA-262 and JavaScript]
 
 ## UTILISATION DE JAVASCRIPT
 
@@ -53,45 +42,41 @@ JavaScript permet d’automatiser certaines tâches qui rendront les pages web i
 
 Exemples d’utilisation :
 
-- Effets visuels animés.
-- Vérification des données entrées par un utilisateur.
-- Communication automatique avec des appareils IoT.
-- ...
+-   Effets visuels animés.
+-   Vérification des données entrées par un utilisateur.
+-   Communication automatique avec des appareils IoT.
+-   ...
 
 ### Pour en savoir plus
 
-- [JavaScript sur MDN][JavaScript sur MDN]
-- [Une réintroduction à JavaScript sur MDN][Une réintroduction à JavaScript sur MDN]
-
-
+-   [JavaScript sur MDN][JavaScript sur MDN]
+-   [Une réintroduction à JavaScript sur MDN][Une réintroduction à JavaScript sur MDN]
 
 ## VERSIONS
 
-Curieusement, il est difficile de déterminer la version JavaScript utilisée par les navigateurs web. Chose incroyable, le langage n’offre pas de moyen d’obtenir cette information par programmation. On trouve des *hacks* sur internet, mais aucune solution officielle.
+Curieusement, il est difficile de déterminer la version JavaScript utilisée par les navigateurs web. Chose incroyable, le langage n’offre pas de moyen d’obtenir cette information par programmation. On trouve des _hacks_ sur internet, mais aucune solution officielle.
 
-En utilisant [un de ces *hacks*][jsfiddle JS version], j’ai trouvé les résultats suivants (6 janvier 2018) :
+En utilisant [un de ces _hacks_][jsfiddle JS version], j’ai trouvé les résultats suivants (6 janvier 2018) :
 
-| JS   | Navigateur                       | OS    |
-| :--- | :---                             | :---  |
-| 1.3  | Internet Explorer 11.125.16299.0 | Win10 |
-| 1.5  | Microsoft Edge 41.16299.15.0     | Win10 |
-| 1.5  | Firefox 57.0.4 (64 bits)         | Win10 |
-| 1.5  | Firefox 57.0.4 (64 bits)         | macOS |
-| 1.7  | Chrome 63.0.3239.132 (64 bits)   | Win10 |
-| 1.7  | Chrome 63.0.3239.132 (64 bits)   | macOS |
-| 1.7  | Opera 50.0.2762.45               | macOS |
-| 1.7  | Opera Neon 1.0.2531.0 (64-bit)   | macOS |
-| 1.7  | Safari 11.0.2                    | macOS |
+| JS  | Navigateur                       | OS    |
+| :-- | :------------------------------- | :---- |
+| 1.3 | Internet Explorer 11.125.16299.0 | Win10 |
+| 1.5 | Microsoft Edge 41.16299.15.0     | Win10 |
+| 1.5 | Firefox 57.0.4 (64 bits)         | Win10 |
+| 1.5 | Firefox 57.0.4 (64 bits)         | macOS |
+| 1.7 | Chrome 63.0.3239.132 (64 bits)   | Win10 |
+| 1.7 | Chrome 63.0.3239.132 (64 bits)   | macOS |
+| 1.7 | Opera 50.0.2762.45               | macOS |
+| 1.7 | Opera Neon 1.0.2531.0 (64-bit)   | macOS |
+| 1.7 | Safari 11.0.2                    | macOS |
 
 On voit dans la table ci-dessus que la majorité des navigateurs modernes utilisent la version 1.7 de JavaScript. Firefox et Edge utilisent la version 1.5 et Internet Explorer est à la traîne avec la version 1.3. Ces résultats sont surprenants, parce que si on en croit [la table de correspondance du site W3Schools (au bas de la page)][JavaScript Versions sur W3Schools], ces versions sont très vieilles (informatiquement parlant) :
 
-| JS    | ECMA  | Année |
-| :---: | :---: | :---: |
-| 1.3   | 1     | 1998  |
-| 1.5   | 3     | 2000  |
-| 1.7   | 3     | 2006  |
-
-
+| JS  | ECMA | Année |
+| :-: | :--: | :---: |
+| 1.3 |  1   | 1998  |
+| 1.5 |  3   | 2000  |
+| 1.7 |  3   | 2006  |
 
 ## POSITION DES SCRIPTS
 
@@ -107,6 +92,7 @@ Les avantages de placer le code JS dans un ou plusieurs fichiers externes sont l
 
 Voici un exemple de fichier JS :
 
+<!-- prettier-ignore-start -->
 ```js
 "use strict";
 function main(source)
@@ -117,12 +103,15 @@ function main(source)
 }
 main("index.js");
 ```
+<!-- prettier-ignore-end -->
 
 Pour faire appel à ce script, il faut inclure la balise `<script>` ci-dessous dans le fichier HTML :
 
+<!-- prettier-ignore-start -->
 ```html
 <script src="index.js"></script>
 ```
+<!-- prettier-ignore-end -->
 
 Le plus souvent, on l’inclura juste avant la fermeture de la balise `</body>` car ceci a l’avantage de nous assurer que l’agent utilisateur a connaissance de toute la structure du fichier avant d’exécuter le script. Cependant, il est possible d’intégrer la balise `<script>` presque n’importe où dans le fichier et on la trouve souvent dans la balise `<head>`.
 
@@ -132,6 +121,7 @@ Les avantages de placer le code JS dans un fichier qui contient les instructions
 
 Voici un exemple de balises `<script>` intégrées au fichier HTML. On peut observer que ces balises peuvent être placées indifféremment dans la section `head` ou `body` et que la variable `now` et la fonction `main` définies dans le premier script sont globales et peuvent donc être réutilisées dans les scripts suivants.
 
+<!-- prettier-ignore-start -->
 ```html
 <!DOCTYPE html>
 <html>
@@ -157,6 +147,7 @@ Voici un exemple de balises `<script>` intégrées au fichier HTML. On peut obse
     </body>
 </html>
 ```
+<!-- prettier-ignore-end -->
 
 De la même manière si une fonction ou une variable sont définies dans un fichier externe, on peut y accéder dans un script de la page HTML.
 
@@ -166,8 +157,8 @@ De la même manière si une fonction ou une variable sont définies dans un fich
 
 Certains éléments HTML possèdent des attributs qui acceptent du code JavaScript. Par exemple, dans le code ci-dessous, on voit que les éléments `<html>` et `<body>` ont respectivement leurs attributs `onclick` et `onload` qui contiennent du code JavaScript.
 
-- `html onclick` ⇒ est exécuté lorsque l’élément `<html>` est cliqué.
-- `body onload` ⇒ est exécuté lorsque l’élément `<body>` est chargé.
+-   `html onclick` ⇒ est exécuté lorsque l’élément `<html>` est cliqué.
+-   `body onload` ⇒ est exécuté lorsque l’élément `<body>` est chargé.
 
 On voit aussi qu’un script externe est appelé (`<script src="index.js"></script>`) et que la fonction `main()` qui y est définie est utilisée par l’attribut `onload`.
 
@@ -175,6 +166,7 @@ De la même manière, la variable `cpt` définie dans le script à la fin de l�
 
 > À noter que le préfixe `javascript:` est optionnel, sauf lorsqu’on utilise du JavaScript dans un attribut `href`.
 
+<!-- prettier-ignore-start -->
 ```html
 <!DOCTYPE html>
 <html onclick="javascript:
@@ -196,7 +188,7 @@ De la même manière, la variable `cpt` définie dans le script à la fin de l�
 </body>
 </html>
 ```
-
+<!-- prettier-ignore-end -->
 
 ## LES BASES DU LANGAGE
 
@@ -206,10 +198,12 @@ Le langage JavaScript est sensible à la casse, ce qui veut dire que les majuscu
 
 Par exemple :
 
+<!-- prettier-ignore-start -->
 ```js
 element = document.getElementById(id); // correct
 ELEMENT = DOCUMENT.GETELEMENTBYID(ID); // incorrect
 ```
+<!-- prettier-ignore-end -->
 
 ### Fin d’instructions
 
@@ -217,9 +211,11 @@ Les instructions sont terminées par le caractère `;`. Les navigateurs sont sou
 
 ### La directive `use strict`
 
+<!-- prettier-ignore-start -->
 ```js
 "use strict";
 ```
+<!-- prettier-ignore-end -->
 
 La directive `"use strict";` se place au début d’un script et indique qu’il doit être exécuté en mode “strict” qui permet au navigateur d’exécuter le script plus rapidement. Avec `"use strict";`, la déclaration des variables est obligatoire comme nous allons le voir ci-dessous.
 
@@ -229,6 +225,7 @@ Pour les détails voir : [le mode scrict (MDN, fr)][le mode scrict (MDN, fr)].
 
 Lorsqu’on utilise le mode strict, les variables doivent être déclarées et ceci ce fait généralement avec le mot clé `var`.
 
+<!-- prettier-ignore-start -->
 ```js
 console.log( a ); // Uncaught ReferenceError: a is not defined
 var a;            // Déclaration de la variable a
@@ -236,6 +233,7 @@ console.log( a ); // a = Undefined
 a = 3.14;
 console.log( a ); // a = 3.14
 ```
+<!-- prettier-ignore-end -->
 
 On peut aussi déclarer les variables avec `let` et `const`.
 La portée de `let` est plus réduite que celle de `var`.
@@ -246,6 +244,7 @@ La plupart du temps, c’est le mot clé `var` que l’on utilisera.
 
 ### Portée d’une variable
 
+<!-- prettier-ignore-start -->
 ```js
 var x = 1;        // x est global
 console.log( "1. x = " + x ); // x est disponible à l’extérieur de la fonction
@@ -264,9 +263,11 @@ console.log( "6. y = " + y ); // x est disponible à l’intérieur de la foncti
 
 // Les variables définies dans la fonction ne sont plus accessibles à l’extérieur.
 ```
+<!-- prettier-ignore-end -->
 
 ### Modification d’une variable avec des opérateurs arithmétiques
 
+<!-- prettier-ignore-start -->
 ```js
 var i = 0;
 i += 2;
@@ -288,11 +289,13 @@ console.log( i ); // -1.2
 --i
 console.log( i ); // -2.2
 ```
+<!-- prettier-ignore-end -->
 
 Pour la division entière, voir <http://stackoverflow.com/a/17218003/3057377>
 
 ### Test `if-then-else`
 
+<!-- prettier-ignore-start -->
 ```js
 /*
 La structure “if-then-else” emprunte la syntaxe du C.
@@ -315,9 +318,11 @@ else
     console.log( "..faux" );
 }
 ```
+<!-- prettier-ignore-end -->
 
 ### Comparaison faible vs stricte
 
+<!-- prettier-ignore-start -->
 ```js
 /*
 Comparaison faible vs stricte
@@ -345,9 +350,11 @@ if( a === b )
 else
     console.log( "=== NOT OK" );
 ```
+<!-- prettier-ignore-end -->
 
 ### Boucle `while`
 
+<!-- prettier-ignore-start -->
 ```js
 
 // La structure “while” emprunte la syntaxe du C.
@@ -373,9 +380,11 @@ while( compteur < 10 )
 // avec “let” dans le bloc ne sont pas visbles à l’extérieur du bloc.
 console.log( "compteur (après bloc) = ", compteur );
 ```
+<!-- prettier-ignore-end -->
 
 ### Quitter une boucle avec `break`
 
+<!-- prettier-ignore-start -->
 ```js
 // On peut quitter une boucle “while” avec un “break”
 compteur = 0;
@@ -385,18 +394,22 @@ while( compteur < 10 )
     if( compteur > 5 ) break;
 }
 ```
+<!-- prettier-ignore-end -->
 
 ### La boucle `do...while`
 
+<!-- prettier-ignore-start -->
 ```js
 compteur = 0;
 do
     console.log( "compteur = ", compteur++ );
 while( compteur < 10 )
 ```
+<!-- prettier-ignore-end -->
 
 ### Incrémentation
 
+<!-- prettier-ignore-start -->
 ```js
 // POST INCRÉMENTATION “X++”
 // Si l’opérateur est utilisé en suffixe (par exemple : x++),
@@ -416,9 +429,11 @@ while( compteur < 10 )
 // plus de détails ici :
 // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Op%C3%A9rateurs_arithm%C3%A9tiques
 ```
+<!-- prettier-ignore-end -->
 
 ### La boucle `for`
 
+<!-- prettier-ignore-start -->
 ```js
 // BOUCLE “FOR” AVEC VAR
 for( var cpt=1; cpt<=5; cpt++ ) // “++cpt” ou “cpt++” sont équivalents ici.
@@ -440,9 +455,11 @@ for( ;; )
     break;
 }
 ```
+<!-- prettier-ignore-end -->
 
 ### Les fonctions
 
+<!-- prettier-ignore-start -->
 ```js
 console.log( "\n\n\n# APPEL DE FONCTIONS" );
 
@@ -454,9 +471,11 @@ function direBonjour()
 }
 direBonjour();
 ```
+<!-- prettier-ignore-end -->
 
 ### Valeur de sortie des fonctions et portée des variables
 
+<!-- prettier-ignore-start -->
 ```js
 // Une fonction ne peut retourner qu’une seule valeur
 // les variables définies dans les fonctions ne sont pas visibles à l’extérieur
@@ -469,9 +488,11 @@ var resultat = direBonjour2();
 console.log( resultat );
 console.log( typeof( message ) ); // typeof( message ) = undefined
 ```
+<!-- prettier-ignore-end -->
 
 ### Paramètres des fonctions
 
+<!-- prettier-ignore-start -->
 ```js
 function direBonjour( prenom1, prenom2 )
 {
@@ -482,10 +503,11 @@ console.log( direBonjour( "Baptiste" ) );
 console.log( direBonjour( "Baptiste", "Sophie" ) );
 console.log( direBonjour( "Baptiste", "Sophie", "Toto" ) );
 ```
+<!-- prettier-ignore-end -->
 
+### Les chaînes de caractères (_string_)
 
-### Les chaînes de caractères (*string*)
-
+<!-- prettier-ignore-start -->
 ```js
 console.log( "\n\n\n# LES CHAÎNES DE CARACTÈRES (STRING)" );
 
@@ -498,56 +520,39 @@ console.log( "guillemets doubles " );
 console.log( '"guillemets" \'simples\' ' );
 console.log( "'guillemets' \"doubles\" " );
 ```
-
+<!-- prettier-ignore-end -->
 
 > Attention en JSON, seuls les guillemets doubles sont valables !
 
 > Il existe une nouvelle fonctionnalité appelée “Littéraux de gabarits”
-qui utilise le caractère “`” (backticks ou accent grave) comme délimiteur.
-Cette fonctionnalité est récente et n’est pas acceptée universellement.
-
+> qui utilise le caractère “`” (backticks ou accent grave) comme délimiteur.
+> Cette fonctionnalité est récente et n’est pas acceptée universellement.
 
 ### Concaténation de chaînes de caractères
 
+<!-- prettier-ignore-start -->
 ```js
 console.log( "Bonjour " + "à vous !" );
 console.log( "Le chiffre vaut " + 7 );
 ```
-
+<!-- prettier-ignore-end -->
 
 ## LES LIBRAIRIES
 
-- <https://www.jqwidgets.com/>
-- <http://dashing.io/>
-
-
-
-
+-   <https://www.jqwidgets.com/>
+-   <http://dashing.io/>
 
 [JavaScript sur MDN]: https://developer.mozilla.org/fr/docs/Web/JavaScript
-
 [Une réintroduction à JavaScript sur MDN]: https://developer.mozilla.org/fr/docs/Web/JavaScript/Une_r%C3%A9introduction_%C3%A0_JavaScript
-
 [Differences from ECMA-262 and JavaScript]: https://docstore.mik.ua/orelly/web2/action/appd_01.htm
-
 [JavaScript Versions sur W3Schools]: https://www.w3schools.com/js/js_versions.asp
-
 [jsfiddle JS version]: http://jsfiddle.net/Ac6CT/
-
 [Wiki du cours HTML embarqué]: https://github.com/NicHub/microclub-atelier-html-embarque/wiki
-
 [css-interne]: https://github.com/NicHub/microclub-atelier-html-embarque/wiki/cours-1-css#css-interne-au-fichier-html-dans-la-balise-style
-
 [le mode scrict (MDN, fr)]: https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Strict_mode
-
 [Instruction let (MDN, fr)]: https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/let
-
 [Microclub]: https://microclub.ch/
-
-[microclub-atelier-html-embarque.pdf]:  https://raw.githubusercontent.com/wiki/NicHub/microclub-atelier-html-embarque/md2pdf/microclub-atelier-html-embarque.pdf
-
+[microclub-atelier-html-embarque.pdf]: https://raw.githubusercontent.com/wiki/NicHub/microclub-atelier-html-embarque/md2pdf/microclub-atelier-html-embarque.pdf
 [Introduction au langage HTML]: ../introduction-html/
-
 [Introduction au langage CSS]: ../introduction-css/
-
 [Introduction au langage JavaScript]: ../introduction-javascript/
