@@ -44,20 +44,20 @@ title: Installer Raspian Stretch sur Raspberry Pi
     Ces temps peuvent beaucoup varier en fonction de votre matériel.
 -   Quand Etcher a terminé, créer un fichier vide appelé “ssh” à la racine de la carte SD.
     N’importe quel éditeur de texte fera l’affaire.
-    On peut aussi utiliser la commande suivante dans le terminal :<br/>
+    On peut aussi utiliser la commande suivante dans le terminal :<br>
     `touch /Volumes/boot/ssh`.
 -   Éjecter la carte SD dans le Finder.
 -   Insérer la carte SD dans le Raspberry.
 -   Connecter le câble Ethernet.
 -   Brancher le câble d’alimentation du Raspberry.
--   Après environ 30 secondes, se connecter au Raspberry avec la commande<br/>
+-   Après environ 30 secondes, se connecter au Raspberry avec la commande<br>
     `ssh pi@raspberrypi.local`.
     Le mot de passe par défaut est `raspberry`.
     Si une entrée existe déjà pour `raspberrypi.local` dans le fichier `~/.ssh/known_hosts` de l’ordinateur hôte (pas le RPi), il faut la supprimer.
 
 ## Retrouver un appareil sur le réseau local
 
-Si on doit retrouver un Raspberry sur le réseau, la première commande à essayer est<br/>
+Si on doit retrouver un Raspberry sur le réseau, la première commande à essayer est<br>
 `ping -c1 raspberrypi.local`.
 Mais si on ne connait pas le nom du Raspberry, alors il faut balayer toutes les adresses possibles (_network scan_).
 Il y a deux commandes utiles pour cela, `arp` et `nmap`. Sur la commande `nmap` doit être installée via Homebrew.
@@ -179,12 +179,12 @@ sudo raspi-config
 sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
 ```
 
-Télécharger un client VNC pour se connecter au serveur VNC du rPi.
+Télécharger un client VNC pour se connecter au serveur VNC du RPi.
 Par exemple RealVNC :
 
 -   <https://www.realvnc.com/download/viewer/>.
 
-> N. B. Le client VNC installé par défaut sur macOS ne fonctionne pas pour se connecter au serveur VNC du rPI.
+> N. B. Le client VNC installé par défaut sur macOS ne fonctionne pas pour se connecter au serveur VNC du RPi.
 > L’erreur retournée est<br />_Le logiciel de l’ordinateur distant semble ne pas être compatible avec cette version de Partage d’écran._<br />`bash /System/Library/CoreServices/Applications/Screen\ Sharing.app`
 
 ## Enlever les programmes inutiles
@@ -342,7 +342,7 @@ Si la résolution du nom d’hôte ne fonctionne pas, on peut aussi utiliser l�
 
 ### Installer une autre version de Python 3
 
-> Les informations de ce chapitre sont passablement obsolètes car les dernières versions de l’OS du rPi intègrent des versions de Python supérieures à 3.6.
+> Les informations de ce chapitre sont passablement obsolètes car les dernières versions de l’OS du RPi intègrent des versions de Python supérieures à 3.6.
 > Donc avant d’installer une nouvelle version de Python 3, il est prudent de vérifier la version installée sur le Raspberry avec la commande
 
 ```bash
@@ -416,7 +416,7 @@ picocom -b 115200 -p 1 -c /dev/tty
 ```
 
 Pour pouvoir l’utiliser sans être sudoer, il faut que l’utilisateur courant fasse partie du groupe dialout (et peut-être des groupes plugdev et input, je ne suis plus sûr).
-Il faut redémarrer le rPi pour que le changement soit pris en compte.
+Il faut redémarrer le RPi pour que le changement soit pris en compte.
 
 ```bash
 sudo usermod -a -G dialout $USER

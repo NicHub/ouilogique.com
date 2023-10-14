@@ -23,7 +23,7 @@ title: Test de décharge de batteries
 
 [img_3]: ../../files/2016-10-05-tests_batteries/images/test_batterie_infinityPV_lowres.jpg
 
-| Batterie                                      | Capacité annoncée | Capacité mesurée | Capacité mesurée<br/>vs annoncée | Durée de la décharge | Tension mesurée | Courant mesuré | Résistance calculée |
+| Batterie                                      | Capacité annoncée | Capacité mesurée | Capacité mesurée<br>vs annoncée | Durée de la décharge | Tension mesurée | Courant mesuré | Résistance calculée |
 | :-------------------------------------------- | ----------------: | ---------------: | -------------------------------: | -------------------: | --------------: | -------------: | ------------------: |
 | Sans marque 18650                             |          2600 mAh |         1526 mAh |                              59% |               3 h 58 |          4.90 V |         0.39 A |              12.6 Ω |
 | [Samsung INR18650 - 25R ][1]{:rel="nofollow"} |          2500 mAh |         1472 mAh |                              59% |               3 h 06 |               - |              - |                   - |

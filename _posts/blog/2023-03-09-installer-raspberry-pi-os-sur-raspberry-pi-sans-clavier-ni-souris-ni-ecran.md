@@ -12,22 +12,23 @@ tags: []
 title: Installer Raspberry Pi OS sur Raspberry Pi sans clavier, ni souris, ni écran
 ---
 
-Cet article montre comment configurer un Raspberry de A à Z à l’aide d’un ordinateur standard. Le Raspberry sera donc en mode _headless_, c’est-à-dire sans clavier, ni souris, ni écran.
+Cet article montre comment configurer un Raspberry de A à Z à l’aide d’un ordinateur standard.
+Le Raspberry sera donc en mode _headless_, c’est-à-dire sans clavier, ni souris, ni écran.
 
-> N.B. L’article original, écrit en août 2017, s’intitulait “Installer Raspian Stretch sur Raspberry Pi” et était accessible à cette URL :
+> N.B. L’article original, écrit en août 2017, s’intitulait “Installer Raspian Stretch sur Raspberry Pi” et était accessible à cette URL :
 > <https://ouilogique.com/installer-raspian-stretch/> qui est maintenant redirigée vers l’URL actuelle.
 
 ## Matériel utilisé pour cette procédure
 
 -   Un Raspberry Pi modèle 2 (ou plus)
--   Une carte SD (32 GB recommandés)
+-   Une carte SD (32 Go recommandés)
 -   Un ordinateur standard
--   Un routeur (optionnel, on peut connecter le Rpi directement sur le port Ethernet)
+-   Un routeur (optionnel, on peut connecter le RPi directement sur le port Ethernet)
 -   Un câble Ethernet
 
 ## Préparation (~15 min)
 
-> N.B. Ce chapitre a été mis a jour en mars 2023
+> N.B. Ce chapitre a été mis à jour en mars 2023
 
 ## Choix de l’OS
 
@@ -51,7 +52,7 @@ Si vous êtes sur macOS ou n’importe quel système \*nix, le choix est vite fa
 Ça ne veut pas dire qu’il n’y a qu’une possibilité, mais qu’il y a de fortes chances que vous sachiez déjà quel terminal choisir.
 
 Par contre si vous êtes sur Windows, il y a de fortes chances que vous ne sachiez pas quel terminal choisir.
-Donc voici quelques possibiltés.
+Donc voici quelques possibilités.
 
 -   Windows PowerShell (intégré à Windows)
 -   COMMAND.COM (cmd) (intégré à Windows)
@@ -61,15 +62,15 @@ Donc voici quelques possibiltés.
 
 ## Procédure d’installation (~30 min)
 
--   Sur un ordinateur standard (pas le Raspeberry), [télécharger _Raspberry Pi Imager_](https://www.raspberrypi.com/software/) et l’installer.
+-   Sur un ordinateur standard (pas le Raspberry), [télécharger _Raspberry Pi Imager_](https://www.raspberrypi.com/software/) et l’installer.
 -   Dans _Raspberry Pi Imager_, cliquer sur “Système d’exploitation” et [sélectionner l’OS de votre choix](#choix-de-los).
 -   Insérer une carte SD, cliquer sur “Choisir le stockage” et choisir la carte SD.
 -   **Important :** Cliquer sur la roue dentée et s’assurer que l’option “Activer SSH” est activée.
 
-    > Anciennement, l’activation de SSH se faisant en créant un fichier vide appelé `ssh`dans le répertoire `boot`, par exemple avec la commande `touch /Volumes/boot/ssh`.
+    > Anciennement, l’activation de SSH se faisait en créant un fichier vide appelé `ssh`dans le répertoire `boot`, par exemple avec la commande `touch /Volumes/boot/ssh`.
     > Ce n’est plus nécessaire aujourd’hui.
 
--   Cliquer sur “ÉCRIRE”.
+-   Cliquer sur <kbd>ÉCRIRE</kbd>.
     Entrez votre mot de passe lorsque le dialogue le demande.
     L’écriture de l’image disque prend environ 10 min avec la vérification (si elle a été sélectionnée dans les préférences).
     Ces temps peuvent beaucoup varier en fonction de votre matériel.
@@ -77,17 +78,19 @@ Donc voici quelques possibiltés.
 -   Insérer la carte SD dans le Raspberry éteint.
 -   Connecter le câble Ethernet.
 -   Brancher le câble d’alimentation du Raspberry.
--   Après environ 30 secondes, ouvrir un terminal et se connecter au Raspberry avec la commande<br/>
-    `ssh pi@raspberrypi.local`.
+-   Après environ 30 secondes, ouvrir un terminal et se connecter au Raspberry avec la commande `ssh pi@raspberrypi.local`.
     Le mot de passe par défaut est `raspberry`.
-    Si SSH renvoie l’erreur “WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!”, c’est parce qu’une entrée existe déjà pour `raspberrypi.local` dans le fichier `~/.ssh/known_hosts` (ou sur Windows `%HOMEPATH%\.ssh\known_hosts`) de l’ordinateur hôte (pas le RPi). Donc pour aller plus loin, il faut supprimer les lignes qui commencent par `raspberrypi.local` dans le fichier `known_hosts`.
+    Si SSH renvoie l’erreur `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!`,<br>
+    c’est parce qu’une entrée existe déjà pour `raspberrypi.local` dans le fichier `~/.ssh/known_hosts` (ou sur Windows `%HOMEPATH%\.ssh\known_hosts`) de l’ordinateur hôte (pas le RPi).
+    Donc pour aller plus loin, il faut supprimer les lignes qui commencent par `raspberrypi.local` dans le fichier `known_hosts`.
 
 ## Retrouver un appareil sur le réseau local
 
-Si on doit retrouver un Raspberry sur le réseau, la première commande à essayer est<br/>
+Si on doit retrouver un Raspberry sur le réseau, la première commande à essayer est<br>
 `ping -c1 raspberrypi.local`.
 Mais si on ne connait pas le nom du Raspberry, alors il faut balayer toutes les adresses possibles (_network scan_).
-Il y a deux commandes utiles pour cela, `arp` et `nmap`. Sur la commande `nmap` doit être installée via Homebrew.
+Il y a deux commandes utiles pour cela, `arp` et `nmap`.
+Sur la commande `nmap` doit être installée via Homebrew.
 Pour ceux qui préfèrent les GUI, il y a aussi [Zenmap](https://nmap.org/zenmap/).
 
 ```bash
@@ -101,17 +104,16 @@ nmap -sP 192.168.1.0/24
 ## Mise à jour de Raspbian
 
 ```bash
-sudo apt-get update --assume-yes
-sudo apt-get upgrade --assume-yes
-sudo apt-get dist-upgrade --assume-yes
-sudo apt-get autoremove --assume-yes
+sudo apt-get -y update       # Télécharge les informations des paquets à partir des sources configurées.
+sudo apt-get -y upgrade      # Mets à jour les paquets installés sans en supprimer.
+sudo apt-get -y dist-upgrade # Installe les versions candidates des paquets installés en installant ou en supprimant d’autres paquets si nécessaire.
+sudo apt-get -y autoremove   # Supprime les dépendances qui ne sont plus utilisées.
 ```
 
-> **Explications** > <br>sources
-> <br>- <https://www.lecoindunet.com/difference-apt-update-upgrade-full-upgrade> > <br>- <https://askubuntu.com/a/527421/949794> > <br>`sudo apt-get update` : Télécharge les informations des paquets à partir des sources configurées
-> <br>`sudo apt-get upgrade` : Mets à jour les paquets installés sans en supprimer.
-> <br>`sudo apt-get dist-upgrade` : Installe les versions candidates des paquets installés en installant ou en supprimant d’autres paquets si nécessaire.
-> <br>`sudo apt-get autoremove` : Supprime les dépendances qui ne sont plus utilisées.
+À voir aussi :
+
+-   <https://www.lecoindunet.com/difference-apt-update-upgrade-full-upgrade>
+-   <https://askubuntu.com/a/527421/949794>
 
 ## Configuration
 
@@ -119,7 +121,7 @@ sudo apt-get autoremove --assume-yes
 nano ~/.bash_profile
 ```
 
-Copier-coller les commandes suivantes dans .bash_profile
+Copier-coller les commandes suivantes dans .bash_profile :
 
 ```bash
 PS1=$'\n\n\xf0\x9f\x98\xBA'"  \t – \[\033[01;32m\]\u@\h\[\033[00m\]:\W > "
@@ -189,7 +191,7 @@ chmod 600 ~/.ssh/mozilla_rsa
 chmod 644 ~/.ssh/mozilla_rsa.pub
 ```
 
-## Selection des interfaces utilisateurs
+## Sélection des interfaces utilisateurs
 
 Par défaut, l’interface graphique est activée et elle consomme beaucoup de ressources.
 Donc si on ne l’utilise pas, il est conseillé de la désactiver.
@@ -204,7 +206,7 @@ sudo raspi-config
 
 ## VNC
 
-> N.B. Il faut que l’interface graphique soit activée pour que VNC fonctionne (voir § précédent).
+> N.B. Il faut que l’interface graphique soit activée pour que VNC fonctionne (voir § précédent).
 
 ```bash
 sudo raspi-config
@@ -215,17 +217,17 @@ sudo raspi-config
 sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
 ```
 
-Télécharger un client VNC pour se connecter au serveur VNC du rPi.
+Télécharger un client VNC pour se connecter au serveur VNC du RPi.
 Par exemple RealVNC :
 
 -   <https://www.realvnc.com/download/viewer/>.
 
-> N. B. Le client VNC installé par défaut sur macOS ne fonctionne pas pour se connecter au serveur VNC du rPI.
+> N.B. Le client VNC installé par défaut sur macOS ne fonctionne pas pour se connecter au serveur VNC du RPi.
 > L’erreur retournée est<br />_Le logiciel de l’ordinateur distant semble ne pas être compatible avec cette version de Partage d’écran._<br />`bash /System/Library/CoreServices/Applications/Screen\ Sharing.app`
 
 ## Enlever les programmes inutiles
 
-Enfin, inutiles pour moi....
+Enfin, inutiles pour moi...
 
 ```bash
 df -h # Pour voir la capacité de la carte SD
@@ -233,7 +235,7 @@ sudo apt-get purge wolfram-engine
 sudo apt-get purge libreoffice*
 sudo apt-get clean
 sudo apt-get autoremove
-df -h # Vous venez de libérer 1.1 GB !
+df -h # Vous venez de libérer 1.1 Go !
 ```
 
 ## Réinstaller un programme qu’on croyait inutile
@@ -247,9 +249,13 @@ sudo apt-get --assume-yes install wolfram-engine
 
 ### Byobu
 
-Byobu (<https://www.byobu.org/>) est un gestionnaire de fenêtres et un multiplexeur de terminal en mode texte sous licence GPLv3. Il a été conçu à l’origine pour apporter des améliorations élégantes au gestionnaire de fenêtres GNU Screen, par ailleurs fonctionnel, simple et pratique, pour la distribution serveur Ubuntu. Byobu comprend maintenant des profils améliorés, des raccourcis clavier pratiques, des utilitaires de configuration et des notifications d’état du système commutables pour le gestionnaire de fenêtres GNU Screen et le multiplexeur de terminal plus moderne Tmux, et fonctionne sur la plupart des distributions Linux, BSD et Mac. Le code source se trouve sur GitHub : <https://github.com/dustinkirkland/byobu>
+Byobu (<https://www.byobu.org/>) est un gestionnaire de fenêtres et un multiplexeur de terminal en mode texte sous licence GPLv3.
+Il a été conçu à l’origine pour apporter des améliorations élégantes au gestionnaire de fenêtres GNU Screen, par ailleurs fonctionnel, simple et pratique, pour la distribution serveur Ubuntu.
+Byobu comprend maintenant des profils améliorés, des raccourcis clavier pratiques, des utilitaires de configuration et des notifications d’état du système commutables pour le gestionnaire de fenêtres GNU Screen et le multiplexeur de terminal plus moderne Tmux, et fonctionne sur la plupart des distributions Linux, BSD et Mac.
+Le code source se trouve sur GitHub : <https://github.com/dustinkirkland/byobu>
 
-Dans la terminologie de Byobu, une session est une instance de Byobu en cours d’exécution. Une session se compose d’une collection de fenêtres (_windows_), qui sont essentiellement des sessions shell, et de volets (_panes_), qui sont des sous-sections de fenêtre.
+Dans la terminologie de Byobu, une session est une instance de Byobu en cours d’exécution.
+Une session se compose d’une collection de fenêtres (_windows_), qui sont essentiellement des sessions _shell_, et de volets (_panes_), qui sont des sous-sections de fenêtre.
 
 ```bash
 sudo apt-get install byobu --assume-yes
@@ -276,20 +282,22 @@ _bash_profile_sourced=1 . ~/.bash_profile 2>/dev/null || true
 
 #### Raccourcis clavier
 
-Les raccourcis claviers sont définis dans le fichier `f-keys.tmux` ([source](https://github.com/dustinkirkland/byobu/blob/master/usr/share/byobu/keybindings/f-keys.tmux)).
+Les raccourcis clavier sont définis dans le fichier
+`f-keys.tmux` ([source](https://github.com/dustinkirkland/byobu/blob/master/usr/share/byobu/keybindings/f-keys.tmux)).
 
 ```bash
 /usr/share/byobu/keybindings/f-keys.tmux
 ```
 
-Sur macOS, la majorité des raccourcis n’est utilisable qu’à travers la touche `F12`. Donc quand l’aide indique la combinaison `C-a`, il faut la remplacer par `F12`.
+Sur macOS, la majorité des raccourcis n’est utilisable qu’à travers la touche `F12`.
+Donc quand l’aide indique la combinaison `C-a`, il faut la remplacer par `F12`.
 
 Par exemple,
 
 -   `F12 %` scinde le volet actuel en deux volets verticaux.
 -   `F12 |` scinde le volet actuel en deux volets horizontaux.
 
-La liste de toutes les fonction `F12` est disponible avec la commande `F12 ?`.
+La liste de toutes les fonctions `F12` est disponible avec la commande `F12 ?`.
 
 Ci-dessous, la liste des raccourcis autres que `F12`.
 
@@ -330,13 +338,13 @@ python3 -m pip install ipython
 
 ### Tmux
 
-> N.B. Ce chapitre est ici pour référence.
+> N.B. Ce chapitre est ici pour référence.
 > Je n’utilise plus Tmux directement, mais à travers [Byobu](#byobu).
 
 ```bash
 sudo apt --assume-yes install tmux
 
-tmux # crée et démarre un nouveau shell
+tmux # crée et démarre un nouveau _shell_
 tmux new -s session_name  # idem mais avec un nom de session
 tmux detach # pour se détacher du shell en cours
 
@@ -452,7 +460,7 @@ Voir
 
 -   <https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-drive>
 
-On peu aussi entrer le chemin d’accès au Raspberry au [format UNC](<https://en.wikipedia.org/wiki/Path_(computing)#Universal_Naming_Convention>) directement dans la barre d’adresse de l’explorateur Windows (raccourcis Win+E, Ctrl+L).
+On peut aussi entrer le chemin d’accès au Raspberry au [format UNC](<https://en.wikipedia.org/wiki/Path_(computing)#Universal_Naming_Convention>) directement dans la barre d’adresse de l’explorateur Windows (raccourcis Win+E, Ctrl+L).
 
 ```bash
 \\raspberrypi.local
@@ -466,7 +474,7 @@ Si la résolution du nom d’hôte ne fonctionne pas, on peut aussi utiliser l�
 
 ### Installer une autre version de Python 3
 
-> Les informations de ce chapitre sont passablement obsolètes car les dernières versions de l’OS du rPi intègrent des versions de Python supérieures à 3.6.
+> Les informations de ce chapitre sont passablement obsolètes car les dernières versions de l’OS du RPi intègrent des versions de Python supérieures à 3.6.
 > Donc avant d’installer une nouvelle version de Python 3, il est prudent de vérifier la version installée sur le Raspberry avec la commande
 
 ```bash
@@ -479,10 +487,12 @@ python3 --version
 cat /etc/os-release
 ```
 
-> Édit du 16 octobre 2019 : Raspbian Buster intègre la version 3.7.3 de Python.
+> Édit du 16 octobre 2019 : Raspbian Buster intègre la version 3.7.3 de Python.
 > Édit du 11 février 2023 : Raspberry Pi OS Bullseye 64 bit intègre la version 3.9.2 de Python.
 
-Raspbian Stretch propose la version 3.5 de Python. Comme Python 3.6 apporte de nouvelles fonctionnalités comme les _f-strings_ et que le module `asyncio` a été amélioré, je pense que c’est intéressant de l’installer aussi. L’idée est aussi de pouvoir tester le module [quart][quart].
+Raspbian Stretch propose la version 3.5 de Python.
+Comme Python 3.6 apporte de nouvelles fonctionnalités comme les _f-strings_ et que le module `asyncio` a été amélioré, je pense que c’est intéressant de l’installer aussi.
+L’idée est aussi de pouvoir tester le module [quart][quart].
 
 Source : <https://liftcodeplay.com/2017/06/30/how-to-install-python-3-6-on-raspbian-linux-for-raspberry-pi/>
 Les versions de Python disponibles sont téléchargeables à : <https://www.python.org/ftp/python/>
@@ -491,7 +501,7 @@ Cette procédure n’écrase pas les versions de Python existantes.
 
 Cette procédure montre comment installer Python 3.6.7.
 
-> J’ai aussi essayé d’installer la version 3.7.1 et l’installation a réussi, mais malheureusement pip ne fonctionnait pas, donc il m’était impossible d’installer de nouveaux modules.
+> J’ai aussi essayé d’installer la version 3.7.1 et l’installation a réussi, mais malheureusement `pip` ne fonctionnait pas, donc il m’était impossible d’installer de nouveaux modules.
 
 ```bash
 sudo apt-get --assume-yes install build-essential checkinstall
@@ -540,7 +550,7 @@ picocom -b 115200 -p 1 -c /dev/tty
 ```
 
 Pour pouvoir l’utiliser sans être sudoer, il faut que l’utilisateur courant fasse partie du groupe dialout (et peut-être des groupes plugdev et input, je ne suis plus sûr).
-Il faut redémarrer le rPi pour que le changement soit pris en compte.
+Il faut redémarrer le RPi pour que le changement soit pris en compte.
 
 ```bash
 sudo usermod -a -G dialout $USER
@@ -576,7 +586,7 @@ Donc pour éteindre un Raspberry, on utilisera une des commandes ci-dessous.
 La différence entre elles n’est pas aussi évidente qu’il y parait (voir <https://unix.stackexchange.com/a/196471/199660>).
 Seule la commande `halt` éteint la LED rouge d’alimentation, donc je suppose que c’est celle qu’il faut privilégier.
 
-> N. B. Attention, aucune de ces commandes ne coupe l’alimentation de la carte ou l’alimentation des ports USB.
+> N.B. Attention, aucune de ces commandes ne coupe l’alimentation de la carte ou l’alimentation des ports USB.
 > Donc ce n’est pas une bonne option pour éjecter un disque externe par exemple.
 
 ```bash
@@ -595,7 +605,7 @@ sudo shutdown -r now
 ## Lire un disque externe
 
 Lorsqu’on connecte un disque externe, il est automatiquement accessible au chemin `/media/pi/nom_du_disque`.
-Ce chemin est ausi appelé _point de montage_.
+Ce chemin est aussi appelé _point de montage_.
 On peut le voir avec la commande `ls` et accéder aux répertoires avec la commande `cd`.
 Dans l’exemple ci-dessous, le disque externe s’appelle `LaCie`.
 Ce nom changera avec d’autres fabricants ou si plusieurs disques du même fabricant sont utilisés en même temps.
@@ -608,7 +618,8 @@ cd /media/pi/LaCie
 
 ## Éjecter un disque externe
 
-> N.B. À proprement parler, seuls les médias comme les CD où les bandes peuvent être éjectés. Mais le terme est aussi utilisé pour les autres médias.
+> N.B. À proprement parler, seuls les médias comme les CD ou les bandes peuvent être éjectés.
+> Mais le terme est aussi utilisé pour les autres médias.
 
 Éjecter un média est un peu plus compliqué que de le connecter et l’utiliser.
 En effet, sur un Raspbery ou n’importe quel [système \*nix](https://fr.wikipedia.org/wiki/Type_Unix), il faut comprendre trois notions :
@@ -645,7 +656,7 @@ L’éjection du disque se passe en deux étapes :
 2. Couper l’alimentation du disque.
    La référence du disque lui-même se trouve à `/dev/sda`.
 
-> N.B. Il faut s’assurer que le disque n’est plus utilisé, sinon le système refusera de le démonter avec l’erreur `target is busy`.
+> N.B. Il faut s’assurer que le disque n’est plus utilisé, sinon le système refusera de le démonter avec l’erreur `target is busy`.
 > C’est à ça que sert le changement de répertoire ci-dessous.
 
 ```bash
@@ -657,17 +668,20 @@ sudo udisksctl power-off --block-device /dev/sda
 <!--
 ### Monter un disque externe
 
-Si le Raspberry est configuré pour démarrer en mode _Desktop Autologin_ (`sudo raspi-config # options 1 + S5 + B4`), les disques externes sont automatiquement montés par le système et il n’y a donc pas besoin de s’en occuper. Ceci est valable même si on ne se con
-Par contre s’il est configuré pour démarrarer en mode _Text console_ (`sudo raspi-config # options 1 + S5 + B1 ou B2`), les points de montages sont créés
+Si le Raspberry est configuré pour démarrer en mode _Desktop Autologin_ (`sudo raspi-config # options 1 + S5 + B4`), les disques externes sont automatiquement montés par le système et il n’y a donc pas besoin de s’en occuper.
+Ceci est valable même si on ne se con
+Par contre s’il est configuré pour démarrer en mode _Text console_ (`sudo raspi-config # options 1 + S5 + B1 ou B2`), les points de montages sont créés
 
 https://raspberrypi.stackexchange.com/questions/141161/automatically-mount-usb-storage-on-raspberry-os-bullseye-lite-as-desktop-versio
 
 Voici quelques explications sur ces informations.
 
-- Les disques durs standards sont nommés avec le préfixe `sd`suivi d’une lettre attribuée dans l’ordre alphabétique. Donc le premier disque aura le nom `sda`, le deuxième `sdb`, etc.
-  L’acronyme `sd`signifie *SCSI mass-storage driver*. Ici, c’est le pilote qui est SCSI, même si le disque n’est pas SCSI.
-- Les stockages NVMe (Non-Volatile Memory Express) sont nommés avec le préfix `nvm`.
-- Les stockages MMC (Multi Media Card) sont nommés avec le préfix `nvm`.
+- Les disques durs standards sont nommés avec le préfixe `sd`suivi d’une lettre attribuée dans l’ordre alphabétique.
+  Donc le premier disque aura le nom `sda`, le deuxième `sdb`, etc.
+  L’acronyme `sd`signifie *SCSI mass-storage driver*.
+  Ici, c’est le pilote qui est SCSI, même si le disque n’est pas SCSI.
+- Les stockages NVMe (Non-Volatile Memory Express) sont nommés avec le préfixe `nvm`.
+- Les stockages MMC (Multi Media Card) sont nommés avec le préfixe `nvm`.
  -->
 
 ### Pour aller plus loin

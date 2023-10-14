@@ -49,8 +49,8 @@ Pas de mot passe par défaut.
 
 ## Commande par SMS
 
-> ⚠ Les commandes sont sensibles à la casse !<br/>
-> ⚠ Les accents ne sont pas supportés !<br/>
+> ⚠ Les commandes sont sensibles à la casse !<br>
+> ⚠ Les accents ne sont pas supportés !<br>
 > ⚠ 140 caractères maximum !
 
 ### Protocole
@@ -86,7 +86,7 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 
 ### Exemples de messages sur une ligne
 
-> Le mode de défilement est optionnel. Si on ne le précise pas, tous les modes de défilement sont utilisés successivement et dans l’ordre chronologique (F1, F2,...). On ne peut pas spécifier plusieurs modes de défilement sur une ligne donnée.<br/>
+> Le mode de défilement est optionnel. Si on ne le précise pas, tous les modes de défilement sont utilisés successivement et dans l’ordre chronologique (F1, F2,...). On ne peut pas spécifier plusieurs modes de défilement sur une ligne donnée.<br>
 > Les lignes de commande ci-dessous doivent être envoyées dans des SMS distincts.
 
     *<F1><CG>A GAGNER EN CE MOMENT A L'EURO MILLIONS : <CR>!! 147 MILLION$ !!#02
@@ -95,7 +95,7 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 ### Exemples de messages sur deux lignes
 
 > En mode deux lignes, les caractères ont une hauteur de 7 px.
-> Par défaut, la première lignes est statique et la deuxième défile vers la gauche.<br/>
+> Par défaut, la première lignes est statique et la deuxième défile vers la gauche.<br>
 > On peut changer les modes de défilement des deux lignes. Voir les combinaisons possibles ci-dessus.
 
     *<L1><F2>KIOSQUE DE MONTCHOISI<L2><F2>JOYEUSES FETES DE FIN D'ANNEE#01
@@ -114,16 +114,16 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 
 ### Spécifier la vitesse
 
-> Vitesses de 1 à 6<br/>
-> 1 = rapide, 6 = lent<br/>
-> Utiliser de préférence les vitesses S1, S2 et S3. Les autres ont tendance à scintiller.<br/>
+> Vitesses de 1 à 6<br>
+> 1 = rapide, 6 = lent<br>
+> Utiliser de préférence les vitesses S1, S2 et S3. Les autres ont tendance à scintiller.<br>
 > La vitesse est définie pour tous les messages. On ne peut pas régler des vitesses individuelles.
 
     *S1*
 
 ### Spécifier la luminosité
 
-> Luminosité de 1 à 6<br/>
+> Luminosité de 1 à 6<br>
 > 1 = moins lumineux, 6 = plus lumineux
 > La luminosité est définie pour tous les messages. On ne peut pas régler des luminosité individuelles.
 
