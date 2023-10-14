@@ -21,7 +21,7 @@ title: Afficheur à LED 128×16
 
 [Xuan Cai](http://www.szxcled.com)
 
-## INFORMATIONS AU DÉMARRAGE
+## Informations au démarrage
 
     Colorful LED V39
     System Checks..
@@ -35,7 +35,7 @@ title: Afficheur à LED 128×16
 
 > L’afficheur n’a pas d’antenne et la réception est très mauvaise dès que l’on s’éloigne des fenêtres. Pour pallier ce problème, j’ai acheté [ce modèle d’antenne chez AliExpress](http://www.aliexpress.com/item/10PCS-Radio-Antenna-900-1800MHZ-GPRS-GSM-SMA-Male-Plug-Right-Angle-Female-Thead/32358787182.html) et il fonctionne très bien. Le CSQ est de 14 au milieu d’une pièce (environ 3 m de la fenêtre).
 
-## CARTE SIM
+## Carte SIM
 
 Introduire la carte SIM avec son support en plastique.
 
@@ -43,11 +43,11 @@ Ressortir la carte en pressant le bouton vert à côté de celle-ci.
 
 La carte SIM permet de contrôler l’afficheur à distance via SMS ou _Fetion App_ (service chinois de messagerie).
 
-## MOT DE PASSE
+## Mot de passe
 
 Pas de mot passe par défaut.
 
-## COMMANDE PAR SMS
+## Commande par SMS
 
 > ⚠ Les commandes sont sensibles à la casse !<br/>
 > ⚠ Les accents ne sont pas supportés !<br/>
@@ -135,7 +135,7 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 
     *DEL*
 
-## COMMANDE PAR USB SUR WINDOWS
+## Commande par usb sur windows
 
 1. Brancher le câble USB entre l’afficheur et l’ordinateur.
 2. Vérifier si la carte USB est reconnue dans les périphériques de Windows.
@@ -143,7 +143,7 @@ Les autres sélecteurs (mode de défilement, n° de ligne, couleur) sont optionn
 4. Si ce n’est pas le cas installer le driver pour le CH340 et retourner au point 2.
 5. Utiliser le logiciel fourni (MiniLEDDisplayEditorV2.exe)
 
-## COMMANDE PAR USB SUR OS X
+## Commande par usb sur os x
 
 > Pour trouver les commandes RS232 à envoyer, j’ai espionné les transmissions du logiciel `MiniLEDDisplayEditorV2.exe` avec [Free Serial Analyzer](http://freeserialanalyzer.com/) sous Win10/VirtualBox.
 
@@ -162,13 +162,13 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
     <ID01><PD><L1><F4>KIOSQUE DE MONTCHOISI<L2><F4>JOYEUSES FETES DE FIN D'ANNEE<E>
     <ID01><RG>ABCD<E>
 
-## MODULE GSM/GPRS
+## Module GSM/GPRS
 
 [Quectel GC65](http://www.quectel.com/UploadFile/Product/%E7%A7%BB%E8%BF%9C%E9%80%9A%E4%BF%A1_GC65_GSM_%E4%BA%A7%E5%93%81%E8%A7%84%E6%A0%BC%E4%B9%A6_V2.0.pdf)
 
 850/**900/1800**/1900 MHz
 
-## IMAGES
+## Images
 
 [![ouilogique.com][img_2]][img_2]
 

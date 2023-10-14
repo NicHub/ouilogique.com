@@ -245,7 +245,7 @@ sudo apt-get --assume-yes install wolfram-engine
 
 ## Ajouter quelques programmes utiles
 
-### BYOBU
+### Byobu
 
 Byobu (<https://www.byobu.org/>) est un gestionnaire de fenêtres et un multiplexeur de terminal en mode texte sous licence GPLv3. Il a été conçu à l’origine pour apporter des améliorations élégantes au gestionnaire de fenêtres GNU Screen, par ailleurs fonctionnel, simple et pratique, pour la distribution serveur Ubuntu. Byobu comprend maintenant des profils améliorés, des raccourcis clavier pratiques, des utilitaires de configuration et des notifications d’état du système commutables pour le gestionnaire de fenêtres GNU Screen et le multiplexeur de terminal plus moderne Tmux, et fonctionne sur la plupart des distributions Linux, BSD et Mac. Le code source se trouve sur GitHub : <https://github.com/dustinkirkland/byobu>
 
@@ -328,7 +328,7 @@ Ci-dessous, la liste des raccourcis autres que `F12`.
 python3 -m pip install ipython
 ```
 
-### TMUX
+### Tmux
 
 > N.B. Ce chapitre est ici pour référence.
 > Je n’utilise plus Tmux directement, mais à travers [Byobu](#byobu).

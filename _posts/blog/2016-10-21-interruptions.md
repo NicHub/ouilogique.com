@@ -13,11 +13,11 @@ title: External interrupts on the ATmega168/328
 
 Original Source (doesn’t exists anymore) : [EXTERNAL INTERRUPTS ON THE ATmega168/328](https://sites.google.com/site/qeewiki/books/avr-guide/external-interrupts-on-the-atmega328)
 
-## INTRODUCTION
+## Introduction
 
 In the previous section I talked about the basics of interrupts. In this section, we will talk about the first type of device interrupts called external interrupts. These interrupts are basically called on a given status change on the INTn pin. This is essentially an input interrupt and is great to use for applications when you might need to react quickly to an outside source, such as a bumper of your robot hitting the wall or to detect a blown fuse.
 
-## HARDWARE
+## Hardware
 
 Hardware wise there is not difference between External Interrupts and Inputs so don’t be afraid to reread the Digital Input Tutorial if you need a refresher.
 
@@ -92,7 +92,7 @@ ISR( INT0_vect )
 
 ---
 
-## PIN CHANGE INTERRUPTS
+## Pin change interrupts
 
 [![Figure 2: ATmega168/328 - Pin Change Interrupt Pins][img_2]][img_2]
 

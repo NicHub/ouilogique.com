@@ -13,14 +13,14 @@ title: Introduction au langage CSS
 
 Ce document fait partie du [cours sur le HTML embarqué][Wiki du cours HTML embarqué] que j’ai donné au [Microclub][Microclub] en janvier et février 2018 à l’EPFL.
 
-## LES DOCUMENTS DU COURS
+## Les documents du cours
 
 -   [Introduction au langage HTML][Introduction au langage HTML]
 -   [Introduction au langage CSS][Introduction au langage CSS]
 -   [Introduction au langage JavaScript][Introduction au langage JavaScript]
 -   [Cours complet au format PDF][microclub-atelier-html-embarque.pdf]
 
-## INTRODUCTION
+## Introduction
 
 Nous avons vu que le langage HTML permet de définir la structure du contenu d’un document. Nous allons maintenant voir comment mettre en forme l’apparence de ce contenu grâce au langage CSS.
 
@@ -34,7 +34,7 @@ Il n’y a pas que les documents HTML qui peuvent profiter de la mise en forme a
 
 -   [CSS sur MDN][CSS sur MDN]
 
-## BÉNÉFICES DE LA TECHNOLOGIE CSS
+## Bénéfices de la technologie css
 
 Une des grandes forces de la technologie CSS est d’offrir la possibilité de mettre en forme un document de façons complètement différentes en adaptant uniquement les feuilles de style, mais sans modifier le document HTML source.
 
@@ -62,11 +62,11 @@ Ce cours lui-même est un exemple de cette possibilité offerte par CSS. Il y a 
 
 On voit que les trois scénarios utilisent des CSS différents et qu’un fichier source peut générer différents fichiers cibles.
 
-### EXEMPLE AVEC _CSS ZEN GARDEN_
+### Exemple avec _CSS Zen Garden_
 
 Un exemple spectaculaire de la puissance de la technologie CSS est le site [_CSS Zen Garden_][CSS Zen Garden]. Le défi proposé par ce site est que tous les participants mettent en forme le même fichier HTML et le résultat visuel doit être aussi original que possible. Je vous laisse juger de l’inventivité des participants ainsi que de la puissance de la technologie CSS.
 
-## POSITION DU CSS
+## Position du CSS
 
 Les instructions CSS peuvent être définies dans 3 endroits différents :
 
@@ -161,7 +161,7 @@ Cela dit, c’est un bon moyen de créer une exception pour un élément donné.
 ```
 <!-- prettier-ignore-end -->
 
-## LA SYNTAXE
+## La syntaxe
 
 Pour apprendre les bases de la syntaxe CSS, nous allons utiliser l’exemple ci-dessous ([adapté de l’exemple sur MDN][syntaxe CSS MDN]{:rel="nofollow"}).
 
@@ -318,7 +318,7 @@ Pour s’assurer qu’un code CSS est valide, on peut utiliser [le validateur CS
 
 [Les instructions CSS MDN][Les instructions CSS MDN]{:rel="nofollow"}
 
-## LES SÉLECTEURS
+## Les sélecteurs
 
 En CSS, les sélecteurs sont utilisés afin de cibler une partie spécifique d’une page web à mettre en forme. Afin de pouvoir être précis, CSS est très riche en sélecteurs et une grande partie de sa flexibilité dépend de ceux-ci.
 
@@ -336,7 +336,7 @@ En CSS, les sélecteurs sont utilisés afin de cibler une partie spécifique d�
 
 Pour découvrir les sélecteurs, rendez-vous sur la page [des sélecteurs de MDN][Les sélecteurs MDN]{:rel="nofollow"}.
 
-## LA CASCADE
+## La cascade
 
 Comme son nom l’indique, CSS agit en cascade, ce qui signifie que les définitions de style sont lues les unes après les autres et que si deux règles sont identiques, c’est la dernière qui sera appliquée.
 
@@ -383,7 +383,7 @@ Les règles de cascade imposent que, si des règles sont en concurrence, ce soit
 ```
 <!-- prettier-ignore-end -->
 
-## LA PONDÉRATION
+## La pondération
 
 Les règles de la cascade s’appliquent pour prioriser les différentes sources. Que se passe-t-il si, pour une même source, plusieurs règles concernent le même élément ? Dans ce cas, pour prioriser les règles, on prendra en compte le poids du sélecteur. Le poids d’un sélecteur est calculé en fonction de sa spécificité :
 
@@ -432,11 +432,11 @@ Cette feuille de style illustre ce qui se passe lorsqu’un sélecteur de niveau
 
 -   [Pondération MDN][Pondération MDN]{:rel="nofollow"}
 
-## L’HÉRITAGE
+## L’héritage
 
 [Héritage MDN][Héritage MDN]{:rel="nofollow"}
 
-## LES _MEDIA QUERIES_
+## Les _media queries_
 
 Les _media queries_, ou requêtes media en français, sont des instructions CSS qui permettent d’appliquer des règles CSS différentes en fonction de l’appareil utilisé et ceci sans modification du code HTML. Elles sont à la base de ce qu’on appelle le _responsive design_ ou design adaptatif en français et c’est ce qui permet à un site web de s’afficher lisiblement à la fois sur un écran de bureau 27" et sur l’écran d’un téléphone.
 
@@ -482,7 +482,7 @@ body
 
 -   [Les medias queries MDN][Les medias queries MDN]
 
-## LES COULEURS
+## Les couleurs
 
 Les couleurs peuvent être définies de plusieurs façons différentes. Tous les exemples ci-dessous définissent la même couleur <span style="color: white; background-color:firebrick">firebrick</span>.
 
@@ -527,7 +527,7 @@ La notation standard sur 6 chiffres permet d’afficher 16<sup>6</sup> = 256<s
 -   [HTML Color Picker W3 Schools][HTML Color Picker W3 Schools]
 -   [Couleurs CSS MDN][Couleurs CSS MDN]
 
-## FRAMEWORKS
+## Frameworks
 
 Mettre en forme des pages HTML peut vite devenir une tâche complexe, particulièrement quand on veut l’afficher sur des écrans de tailles très différentes. Pour cela, il est fortement conseillé de ne pas réinventer la roue et d’utiliser un _framework_, c’est-à-dire une collection d’outils prête à l’emploi.
 
@@ -588,7 +588,7 @@ Il existe d’autres _frameworks_, comme [Foundation][Foundation] qui est aussi 
 -   [Site officiel de Bootstrap, en][Bootstrap]
 -   [Site officiel de Foundation, en][Foundation]
 
-## POUR LA SUITE
+## Pour la suite
 
 Avec cette introduction sur la technologie CSS, vous avez maintenant une base pour comprendre comment mettre en forme une page HTML simple.
 

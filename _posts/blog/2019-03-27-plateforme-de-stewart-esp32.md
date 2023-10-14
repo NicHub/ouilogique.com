@@ -116,7 +116,7 @@ Avec un joystick analogique, des biellettes en fil de fer et des clones de servo
 
 ---
 
-## AIDE-MÉMOIRE
+## Aide-mémoire
 
 Article Wikipedia
 
@@ -192,7 +192,7 @@ Robots à chaînes exotiques, Jean-Pierre Merlet, INRIA Sophia-Antipolis
 
 -   <https://www-sop.inria.fr/members/Jean-Pierre.Merlet/Archi/node17.html>
 
-## PLATEFORME DE STEWART AVEC 3 DEGRÉS DE LIBERTÉ
+## Plateforme de Stewart avec 3 degrés de liberté
 
 <!-- - <https://www.instructables.com/id/Ball-Balancing-PID-System/> -->
 
@@ -209,7 +209,7 @@ https://youtu.be/bEM5AywnzKg
 -   <https://goldberg.berkeley.edu/pubs/2018_ISMR_stewart_design.pdf>
 -   <https://github.com/BerkeleyAutomation/sprk>
 
-## PLATEFORME DE STEWART AVEC RETOUR DE FORCE
+## Plateforme de Stewart avec retour de force
 
 Dynamixel motor
 
@@ -227,7 +227,7 @@ Felix Ros **😃 Avec du code Processing et Arduino !**
 -   <https://github.com/felixros2401/Stewart-Platform>
 -   <https://www.instructables.com/id/Controlling-a-Stewart-Platform/>
 
-## PLATEFORME DE STEWART À BASE CIRCULAIRE (ROTOPOD)
+## Plateforme de Stewart à base circulaire (Rotopod)
 
 Un rotopod permet de faire une rotation complète sans ajouter un 7e moteur.
 
@@ -250,11 +250,11 @@ Version commerciale de Mikrolar
 
 -   <https://www.youtube.com/watch?v=AZjgcrV642c>
 
-## SIMULATEUR SUR MATHEMATICA
+## Simulateur sur Mathematica
 
 -   <https://www.wolfram.com/training/videos/ENG032/>
 
-## MATLAB FORWARD KINEMATICS SOLVER
+## Matlab forward kinematics solver
 
 **😃 Avec du code Matlab !**
 
@@ -267,7 +267,7 @@ PDF à trouver :
 > Department of Mechanical Engineering, Korea University, 5-Ka Anam-Dong Sungbuk-Ku, Seoul, 136-701, South Korea.
 > 36th issue of Mechanism and Machine Theory magazine (2001, 1073-1085).
 
-## APPLICATIONS MICROCLUB
+## Applications Microclub
 
 ### Application 1 : Labyrinthe
 
@@ -300,7 +300,7 @@ PDF à trouver :
 -   Retour visuel sur navigateur web
 -   Retour visuel sur Blender
 
-## MATÉRIEL
+## Matériel
 
 ### Servomoteurs
 
@@ -378,7 +378,7 @@ PDF à trouver :
 
 -   Le lien ne fonctionne plus : fr.aliexpress.com/item/32957141466.html
 
-## PINOUT
+## Pinout
 
 31 DIRA GPIO14
 34 TC5 GPIO13

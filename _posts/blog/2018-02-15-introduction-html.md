@@ -13,14 +13,14 @@ title: Introduction au langage HTML
 
 Ce document fait partie du [cours sur le HTML embarqué][Wiki du cours HTML embarqué] que j’ai donné au [Microclub][Microclub] en janvier et février 2018 à l’EPFL.
 
-## LES DOCUMENTS DU COURS
+## Les documents du cours
 
 -   [Introduction au langage HTML][Introduction au langage HTML]
 -   [Introduction au langage CSS][Introduction au langage CSS]
 -   [Introduction au langage JavaScript][Introduction au langage JavaScript]
 -   [Cours complet au format PDF][microclub-atelier-html-embarque.pdf]
 
-## LES AGENTS UTILISATEURS
+## Les agents utilisateurs
 
 Dans le cadre de ce cours, un _agent utilisateur_, ou _user agent_ en anglais, est un logiciel qui peut traiter des données conformes aux normes HTML, XHTML, CSS, JavaScript et JSON. Cette liste n’est pas exhaustive et différents agents utilisateurs offrent des possibilités plus étendues ou au contraire plus restreintes. Pour la suite, nous nous focaliserons sur la partie du traitement des fichiers HTML, CSS et JavaScript.
 
@@ -36,7 +36,7 @@ Dans la grande majorité des cas, l’agent utilisateur sera un navigateur web, 
 
 -   [Agents utilisateurs (Wikipedia fr)][User agent]
 
-## LA STRUCTURE MINIMALE D’UNE PAGE HTML
+## La structure minimale d’une page html
 
 Voici la structure minimale pour qu’un document soit considéré comme un document HTML par tous les agents utilisateurs.
 
@@ -89,7 +89,7 @@ Le contenu de l’élément `<title>` sera affiché dans l’onglet de la page d
 **6. `<body></body>`**
 Et enfin, le contenu visible par l’utilisateur de la page est placé dans l’élément `<body>`. Il est possible de générer dynamiquement ce contenu avec JavaScript.
 
-## LES ÉLÉMENTS ET LEURS BALISES
+## Les éléments et leurs balises
 
 ### Structure des éléments HTML
 
@@ -299,7 +299,7 @@ Comme nous l’avons vu ci-dessus, un élément HTML est composé de balises et 
 -   [Référence des éléments HTML (MDN fr)][Référence des éléments HTML]
 -   [HTML Element Reference (W3Schools en)][HTML Element Reference]
 
-## LES ATTRIBUTS
+## Les attributs
 
 Toutes les balises acceptent des attributs, certains étant obligatoires d’autres optionnels.
 
@@ -341,7 +341,7 @@ HTML5 permet à l’utilisateur de définir ses propres attributs ce qui peut ê
 
 [Voir les attributs de données sur MDN][Les attributs de données sur MDN]
 
-## LE DOCTYPE
+## Le doctype
 
 Le doctype est une chaine de caractère présente au début du fichier et qui définit explicitement la version de la norme HTML utilisée dans le document. Le mot _doctype_ est un mot-valise tiré de la locution anglaise _Document Type Declaration_. Le seul doctype que nous utiliserons dans le cadre de ce cours est le doctype HTML 5 qui se déclare de la manière suivante :
 
@@ -377,7 +377,7 @@ Le doctype est un élément à part dans la grammaire HTML dans le sens où sa b
 -   [Mode quirks de Mozilla (MDN fr)][Mode quirks de Mozilla]
 -   [Fix Your Site With the Right DOCTYPE!][Fix Your Site With the Right DOCTYPE!]
 
-## L’ESPACE DE NOM
+## L’espace de nom
 
 Certains validateurs comme celui de l’éditeur [_Oxygen XML Editor_][oxygenxml.com] imposent que l’espace de nom soit spécifié et ceci se fait dans l’attribut `xmlns` de la balise `<html>` ouvrante :
 
@@ -389,7 +389,7 @@ Certains validateurs comme celui de l’éditeur [_Oxygen XML Editor_][oxygenxml
 ```
 <!-- prettier-ignore-end -->
 
-## LES ÉDITEURS DE CODE HTML
+## Les éditeurs de code html
 
 Voici une liste non exhaustive d’éditeurs de code HTML :
 
@@ -404,11 +404,11 @@ Voici une liste non exhaustive d’éditeurs de code HTML :
 -   [Nano][nano]
 -   ...
 
-## LA VALIDATION
+## La validation
 
 À ce stade, nous pouvons commencer à vérifier que ce que nous faisons est valide avec le validateur du World Wide Web Consortium (W3C) [W3C Markup Validation Service][validator input].
 
-## LES ENTITÉS
+## Les entités
 
 Les entités servent à référencer les caractères par un code qui peut être textuel, décimal ou hexadécimal. Ceci est particulièrement utile dans les cas suivants :
 
@@ -504,7 +504,7 @@ alors qu’en XHTML, toutes les balises doivent être fermées :
 -   [Apostrophe et « impostrophe »][Apostrophe et « impostrophe »]
 -   [Google HTML/CSS Style Guide][Google HTML CSS Style Guide]
 
-## LE TRAITEMENT DES BLANCS
+## Le traitement des blancs
 
 > On appelle “blanc” ou _whitespace_ en anglais, un caractère qui n’a pas de représentation graphique. Les blancs les plus usuels sont le retour à la ligne et l’espace ([qui est un mot féminin en typographie][Un espace ou une espace ?]).
 

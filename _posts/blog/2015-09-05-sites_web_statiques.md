@@ -24,7 +24,7 @@ title: Générateurs de sites web statiques
 
 <!-- ![](https://avatars1.githubusercontent.com/u/189606?v=3&s=96) -->
 
-## ADVANTAGES OF STATIC SITES
+## Advantages of static sites
 
 -   speed
 -   simplicity
@@ -33,12 +33,12 @@ title: Générateurs de sites web statiques
 -   cheap
 -   portability (Convenient hosting)
 
-## SITES ANNUAIRES
+## Sites annuaires
 
 -   <https://staticsitegenerators.net>
 -   <https://www.staticgen.com>
 
-## GENERATORS I
+## Generators I
 
 -   moveable type
 -   [nanoc](https://nanoc.ws) (ruby)
@@ -46,7 +46,7 @@ title: Générateurs de sites web statiques
 -   assemble ⇒ zurb
 -   stacey ⇒ mozilla WebFWD
 
-## GENERATORS II
+## Generators II
 
 -   [assemble](https://assemble.io) ⇒ À regarder, basé sur Yeoman et Grunt
 -   [Cactus](cactusformac.com){:rel="nofollow"}
@@ -63,13 +63,13 @@ title: Générateurs de sites web statiques
 -   stacey
 -   wintersmith
 
-## MARKDOWN TOOLS
+## Markdown tools
 
 -   Web editor <https://dillinger.io>
 -   mouapp
 -   gitbook
 
-## TEMPLATES
+## Templates
 
 -   handlebars
 -   mustache
@@ -78,7 +78,7 @@ title: Générateurs de sites web statiques
 -   jade
 -   twig
 
-## HOSTING
+## Hosting
 
 -   git pages
 -   AWS S3
@@ -96,27 +96,27 @@ title: Générateurs de sites web statiques
 -   [monstra](https://monstra.org)
 -   [razorCMS](https://github.com/Ganginator/razorCMS)
 
-### examples
+### Examples
 
 -   Statamic ⇒ [ASANA](https://asana.com)
 -   Kirby ⇒ [World Backup Day](https://www.worldbackupday.com/fr/)
 
-## DISCUSSION
+## Discussion
 
 -   disqus
 -   livefyre
 -   intensedebate
 
-## SURVEYS
+## Surveys
 
 google docs
 survey monkeys
 
-## VIDEOS
+## Videos
 
 don’t want to pay for bandwidth ⇒ YouTube, Vimeo
 
-## CHARTS
+## Charts
 
 d3js
 highchart
@@ -158,13 +158,13 @@ WP ⇒ Wp-Super Cache
 
 -   <https://harpjs.com>
 
-### roots (voir article)
+### Roots (voir article)
 
 ## Bootstrap
 
 [18 Essential Bootstrap UI Editors](https://mashable.com/2013/10/20/bootstrap-editors/)
 
-## AASPIR
+## Aaspir
 
 -   <http://www.mauricezundel.ch>
 -   <https://maishademo.wordpress.com/>

@@ -13,18 +13,18 @@ title: Introduction au langage JavaScript
 
 Ce document fait partie du [cours sur le HTML embarqué][Wiki du cours HTML embarqué] que j’ai donné au [Microclub][Microclub] en janvier et février 2018 à l’EPFL.
 
-## LES DOCUMENTS DU COURS
+## Les documents du cours
 
 -   [Introduction au langage HTML][Introduction au langage HTML]
 -   [Introduction au langage CSS][Introduction au langage CSS]
 -   [Introduction au langage JavaScript][Introduction au langage JavaScript]
 -   [Cours complet au format PDF][microclub-atelier-html-embarque.pdf]
 
-## INTRODUCTION
+## Introduction
 
 Nous avons vu que le langage HTML permet de définir la structure du contenu d’un document et que le langage CSS permet de mettre en forme ce contenu. Nous allons maintenant voir comment utiliser le langage JavaScript pour rendre ce contenu interactif.
 
-## L’ORIGINE DU NOM JAVASCRIPT
+## L’origine du nom JavaScript
 
 JavaScript aurait dû s’appeler LiveScript, mais a été renommé par une décision marketing dans le but de capitaliser sur la popularité du langage Java de Sun Microsystems, malgré le fait qu’ils n’aient que très peu en commun. Cela a toujours été une grande source de confusion.
 
@@ -34,7 +34,7 @@ JavaScript est normalisé par l’Ecma International (curieusement en Europe) so
 
 -   [Differences from ECMA-262 and JavaScript][Differences from ECMA-262 and JavaScript]
 
-## UTILISATION DE JAVASCRIPT
+## Utilisation de JavaScript
 
 JavaScript est principalement utilisé dans les navigateurs web, mais on le trouve aussi dans d’autres environnements tels que Node.js, Apache CouchDB voire Adobe Acrobat.
 
@@ -52,7 +52,7 @@ Exemples d’utilisation :
 -   [JavaScript sur MDN][JavaScript sur MDN]
 -   [Une réintroduction à JavaScript sur MDN][Une réintroduction à JavaScript sur MDN]
 
-## VERSIONS
+## Versions
 
 Curieusement, il est difficile de déterminer la version JavaScript utilisée par les navigateurs web. Chose incroyable, le langage n’offre pas de moyen d’obtenir cette information par programmation. On trouve des _hacks_ sur internet, mais aucune solution officielle.
 
@@ -78,7 +78,7 @@ On voit dans la table ci-dessus que la majorité des navigateurs modernes utilis
 | 1.5 |  3   | 2000  |
 | 1.7 |  3   | 2006  |
 
-## POSITION DES SCRIPTS
+## Position des scripts
 
 À l’instar des feuilles de style CSS, le code JavaScript peut être défini dans 3 endroits différents :
 
@@ -86,9 +86,9 @@ On voit dans la table ci-dessus que la majorité des navigateurs modernes utilis
 2. Dans une ou plusieurs balises `<script>` qui peuvent se trouver dans la balise `<head>` ou dans la balise `<body>`.
 3. Dans certains attributs de certains éléments HTML, comme `<body onload>` ou `<img onerror>`.
 
-### JS externe au fichier HTML
+### JavaScript externe au fichier HTML
 
-Les avantages de placer le code JS dans un ou plusieurs fichiers externes sont les mêmes que pour les fichiers CSS, c’est-à-dire que les informations ne seront téléchargées qu’une fois et mises en cache par les agents utilisateurs. De plus, plusieurs fichiers peuvent être regroupés en un seul pour minimiser le nombre de requêtes HTTP.
+Les avantages de placer le code JavaScript dans un ou plusieurs fichiers externes sont les mêmes que pour les fichiers CSS, c’est-à-dire que les informations ne seront téléchargées qu’une fois et mises en cache par les agents utilisateurs. De plus, plusieurs fichiers peuvent être regroupés en un seul pour minimiser le nombre de requêtes HTTP.
 
 Voici un exemple de fichier JS :
 
@@ -115,9 +115,9 @@ Pour faire appel à ce script, il faut inclure la balise `<script>` ci-dessous d
 
 Le plus souvent, on l’inclura juste avant la fermeture de la balise `</body>` car ceci a l’avantage de nous assurer que l’agent utilisateur a connaissance de toute la structure du fichier avant d’exécuter le script. Cependant, il est possible d’intégrer la balise `<script>` presque n’importe où dans le fichier et on la trouve souvent dans la balise `<head>`.
 
-### JS interne au fichier HTML, dans la balise `<script>`
+### JavaScript interne au fichier HTML, dans la balise `<script>`
 
-Les avantages de placer le code JS dans un fichier qui contient les instructions JS et HTML sont les mêmes que pour le CSS ([s’y référer pour plus de détails][css-interne]).
+Les avantages de placer le code dans un fichier qui contient les instructions JavaScript et HTML sont les mêmes que pour le CSS ([s’y référer pour plus de détails][css-interne]).
 
 Voici un exemple de balises `<script>` intégrées au fichier HTML. On peut observer que ces balises peuvent être placées indifféremment dans la section `head` ou `body` et que la variable `now` et la fonction `main` définies dans le premier script sont globales et peuvent donc être réutilisées dans les scripts suivants.
 
@@ -151,9 +151,9 @@ Voici un exemple de balises `<script>` intégrées au fichier HTML. On peut obse
 
 De la même manière si une fonction ou une variable sont définies dans un fichier externe, on peut y accéder dans un script de la page HTML.
 
-> On remarque également que c’est la même balise `<script>` qui est utilisée que le code JS soit externe ou interne à la page HTML. Par contraste, CSS utilise la balise `<style>` pour le code interne et la balise `<link>` pour le code externe.
+> On remarque également que c’est la même balise `<script>` qui est utilisée que le code JavaScript soit externe ou interne à la page HTML. Par contraste, CSS utilise la balise `<style>` pour le code interne et la balise `<link>` pour le code externe.
 
-### JS interne au fichier HTML, dans les attributs d’un élément HTML
+### JavaScript interne au fichier HTML, dans les attributs d’un élément HTML
 
 Certains éléments HTML possèdent des attributs qui acceptent du code JavaScript. Par exemple, dans le code ci-dessous, on voit que les éléments `<html>` et `<body>` ont respectivement leurs attributs `onclick` et `onload` qui contiennent du code JavaScript.
 
@@ -162,7 +162,7 @@ Certains éléments HTML possèdent des attributs qui acceptent du code JavaScri
 
 On voit aussi qu’un script externe est appelé (`<script src="index.js"></script>`) et que la fonction `main()` qui y est définie est utilisée par l’attribut `onload`.
 
-De la même manière, la variable `cpt` définie dans le script à la fin de l’élément `<head>` peut être utilisée par le JS de l’attribut `onclick` car elle est globale. À priori, c’est une mauvaise idée de déclarer une variable globale après qu’elle soit utilisée comme dans cet exemple, mais l’évènement `onclick` ne sera disponible qu’une fois la page complètement chargée, donc dans ce cas, ça n’a pas d’incidence.
+De la même manière, la variable `cpt` définie dans le script à la fin de l’élément `<head>` peut être utilisée par le JavaScript de l’attribut `onclick` car elle est globale. À priori, c’est une mauvaise idée de déclarer une variable globale après qu’elle soit utilisée comme dans cet exemple, mais l’évènement `onclick` ne sera disponible qu’une fois la page complètement chargée, donc dans ce cas, ça n’a pas d’incidence.
 
 > À noter que le préfixe `javascript:` est optionnel, sauf lorsqu’on utilise du JavaScript dans un attribut `href`.
 
@@ -175,7 +175,7 @@ De la même manière, la variable `cpt` définie dans le script à la fin de l�
                console.log('html onclick ' + cpt);">
 <head>
     <meta charset="utf-8" />
-    <title>JS dans les attributs HTML</title>
+    <title>JavaScriptdans les attributs HTML</title>
     <script src="index.js"></script>
     <script>
         "use strict";
@@ -190,7 +190,7 @@ De la même manière, la variable `cpt` définie dans le script à la fin de l�
 ```
 <!-- prettier-ignore-end -->
 
-## LES BASES DU LANGAGE
+## Les bases du langage
 
 ### Casse
 
@@ -537,7 +537,7 @@ console.log( "Le chiffre vaut " + 7 );
 ```
 <!-- prettier-ignore-end -->
 
-## LES LIBRAIRIES
+## Les librairies
 
 -   <https://www.jqwidgets.com/>
 -   <http://dashing.io/>
