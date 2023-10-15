@@ -313,7 +313,7 @@ PDF à trouver :
 -   GWS Micro 2BBMG servo (<https://www.youtube.com/watch?v=TgqJbneXZI8>)
 -   HS5485HB (<https://github.com/a6guerre/Ball-balanced-on-Stewart-Platform/blob/master/Readme.pdf>)
 -   <http://www.robotis.us/dynamixel-mx-64t/> (Utilisé par Arun Dayal Udai)
--   MG995 (<https://www.banggood.com/MG995-High-Torgue-Mental-Gear-Analog-Servo-p-73885.html>){:rel="nofollow"} (Rolf)
+-   [MG995](https://www.banggood.com/MG995-High-Torgue-Mental-Gear-Analog-Servo-p-73885.html){:rel="nofollow"} (Rolf)
 -   Tower Pro SG-5010 servos <https://01.org/developerjourney/recipe/building-stewart-platform>{:rel="nofollow"}
 -   Hitec HS-5625MG (utilisé par <https://github.com/xoxota99/stewy>)
 -   MG996R <https://fr.aliexpress.com/item//32636102294.html>
