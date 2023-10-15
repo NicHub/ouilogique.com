@@ -49,7 +49,7 @@ title: Générateurs de sites web statiques
 ## Generators II
 
 -   [assemble](https://assemble.io) ⇒ À regarder, basé sur Yeoman et Grunt
--   [Cactus](cactusformac.com){:rel="nofollow"}
+-   [Cactus](https://github.com/eudicots/Cactus)
 -   [docpad](https://docpad.org)
 -   [Dropplets](https://dropplets.com){:rel="nofollow"}
 -   [hexo](https://hexo.io)
@@ -134,7 +134,7 @@ WP ⇒ Wp-Super Cache
 
 -   [Hammer](https://hammerformac.com)
 -   [Mixture](https://mixture.io){:rel="nofollow"} ⇒ Stopped, use Gulp or Grunt
--   [Cactus](cactusformac.com){:rel="nofollow"}
+-   [Cactus](https://github.com/eudicots/Cactus)
 
 ### À voir aussi
 

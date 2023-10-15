@@ -19,7 +19,7 @@ title: Afficheur à LED 128×16
 
 16×128 pixels
 
-[Xuan Cai](http://www.szxcled.com)
+[Xuan Cai](https://www.szxcled.com/)
 
 ## Informations au démarrage
 
