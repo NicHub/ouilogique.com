@@ -223,7 +223,9 @@ Par exemple RealVNC :
 -   <https://www.realvnc.com/en/connect/download/viewer/>.
 
 > N.B. Le client VNC installé par défaut sur macOS ne fonctionne pas pour se connecter au serveur VNC du RPi.
-> L’erreur retournée est<br />_Le logiciel de l’ordinateur distant semble ne pas être compatible avec cette version de Partage d’écran._<br />`bash /System/Library/CoreServices/Applications/Screen\ Sharing.app`
+> L’erreur retournée est<br>
+  _Le logiciel de l’ordinateur distant semble ne pas être compatible avec cette version de Partage d’écran._<br>
+  `bash /System/Library/CoreServices/Applications/Screen\ Sharing.app`
 
 ## Enlever les programmes inutiles
 

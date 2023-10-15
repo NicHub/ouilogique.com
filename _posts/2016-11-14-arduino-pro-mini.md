@@ -32,7 +32,10 @@ This behaviour is deprecated and will result in an error in future version
 You probably want to use 0xfd instead of 0x05 (double check with your datasheet first).
 ```
 
-Donc, je mes suis rabattu sur MiniCore : <https://github.com/MCUdude/MiniCore>, d’après la suggestion trouvée à <http://arduino.stackexchange.com/a/31199/13995>.
+Donc, je mes suis rabattu sur MiniCore :
+<https://github.com/MCUdude/MiniCore>,
+d’après la suggestion trouvée à
+<https://arduino.stackexchange.com/a/31199/13995>.
 
 La procédure d’utilisation est très bien détaillée sur la page GitHub de MiniCore, donc je ne la répète pas ici.
 

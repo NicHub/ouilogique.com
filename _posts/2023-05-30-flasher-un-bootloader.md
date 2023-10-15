@@ -17,7 +17,8 @@ Mais pour moi, ça n’a pas marché.
 Du coup, j’ai décidé de reflasher le bootloader en utilisant un Arduino UNO comme programmateur.
 Cette façon de faire s’appelle “ICSP” ou _In Circuit Serial Programming_.
 
-> Source : La plupart des informations proviennent de cette page : <https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoISP>
+> Source : La plupart des informations proviennent de cette page :
+> <https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoISP>
 
 [![Flasher un bootloader — ouilogique.com][img_1]][img_1]
 
