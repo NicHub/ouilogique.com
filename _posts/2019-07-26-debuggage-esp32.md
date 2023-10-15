@@ -176,7 +176,7 @@ vert
 ## Ressources
 
   - Documentation officielle
-    - <https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md>
+    - <https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md>{:rel="nofollow"}
   - Installation du driver pour macOS
     - <https://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf>
 

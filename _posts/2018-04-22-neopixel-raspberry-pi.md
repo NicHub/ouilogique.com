@@ -103,8 +103,8 @@ Voici ce que me retourne la commande `top`. On voit que le processus `python` co
         2 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kthreadd
 
 [img_1]: ../files/2018-04-22-neopixel-raspberry-pi/images/2018-04-22-neopixel-raspberry-pi-001_lowres.jpg
-[adafruit neopixels on raspberry pi]: https://learn.adafruit.com/neopixels-on-raspberry-pi/software
+[adafruit neopixels on raspberry pi]: https://learn.adafruit.com/neopixels-on-raspberry-pi?view=all
 [rpi_ws281x from jgarff on github]: https://github.com/jgarff/rpi_ws281x
-[anneau de 24 led ws2812 — neopixel]: https://www.banggood.com/CJMCU-24-Bit-WS2812-5050-RGB-LED-Driver-Development-Board-p-974188.html?p=0431091025639201412F)
+[anneau de 24 led ws2812 — neopixel]: https://www.banggood.com/CJMCU-24-Bit-WS2812-5050-RGB-LED-Driver-Development-Board-p-974188.html?p=0431091025639201412F){:rel="nofollow"}
 [logic level converter]: https://www.banggood.com/Logic-Level-Converter-Bi-Directional-IIC-4-Way-Level-Conversion-Module-p-938774.html?p=0431091025639201412F)
 [gnu screen sur ouilogique.com]: ../installer-raspberry-pi-os-sur-raspberry-pi-sans-clavier-ni-souris-ni-ecran/#gnu-screen

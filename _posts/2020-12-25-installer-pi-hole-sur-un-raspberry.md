@@ -64,13 +64,13 @@ sudo reboot
 > <span style="color:red">L’adresse IP locale de mon RPi est 192.168.1.28. Dans les explications si dessous, il faut remplacer cette IP par celle de votre RPi.</span>
 
 -   Se connecter à l’interface d’administration du routeur
-    <http://192.168.1.1/>.
+    <http://192.168.1.1/>{:rel="nofollow"}.
 -   Activer le mode expert en cliquant sur le bouton en haut à droite.
 
 **Définir le Raspberry comme serveur DNS local**
 
 -   Sur la page d’accueil du routeur, cliquer sur le bouton `Ma Sunrise Internet Box` en haut à gauche, puis sur l’onglet `DNS`
-    <http://192.168.1.1/0.2/gui/#/mybox/dns/server>.
+    <http://192.168.1.1/0.2/gui/#/mybox/dns/server>{:rel="nofollow"}.
 -   Les valeurs par défaut du routeur sont :
     -   `Activer : ON`
     -   `Serveur DNS Primaire : 192.168.1.1`
@@ -83,7 +83,7 @@ sudo reboot
 **Redirection des requêtes sortant sur le port 53 vers le port 53 du Raspberry**
 
 -   Sur la page d’accueil du routeur, cliquer sur `Contrôle d’Accès`, puis sur l’onglet `Redirection de ports`
-    <http://192.168.1.1/0.2/gui/#/access-control/port-forwarding/add-rule>.
+    <http://192.168.1.1/0.2/gui/#/access-control/port-forwarding/add-rule>{:rel="nofollow"}.
 -   Dans la section `Ajouter des règles manuellement` :
     -   Cliquer sur la liste déroulante `Services` et sélectionner `DNS`.
     -   `Hôte Interne : 192.168.1.28`
@@ -93,13 +93,13 @@ sudo reboot
 **Désactiver le mode DHCP**
 
 -   Sur la page d’accueil du routeur, cliquer sur le bouton `Ma Sunrise Internet Box` en haut à gauche, puis sur l’onglet `DHCP`
-    <http://192.168.1.1/0.2/gui/#/mybox/DHCP>.
+    <http://192.168.1.1/0.2/gui/#/mybox/DHCP>{:rel="nofollow"}.
 -   Dans la section `DHCP`, cliquer sur le bouton `Activer` pour le mettre sur `OFF`.
 
 **Redémarrer le routeur**
 
 -   Sur la page d’accueil du routeur, cliquer sur le bouton `Ma Sunrise Internet Box` en haut à gauche, puis sur l’onglet `Maintenance`
-    <http://192.168.1.1/0.2/gui/#/mybox/maintenance/reset>.
+    <http://192.168.1.1/0.2/gui/#/mybox/maintenance/reset>{:rel="nofollow"}.
 -   Cliquer sur `Redémarrer`.
 
 ## Configuration de Pi-hole
@@ -107,15 +107,15 @@ sudo reboot
 **Activer le DHCP**
 
 -   Accéder à la page d’accueil de Pi-hole en naviguant à l’adresse
-    <http://192.168.1.28/admin/>.
+    <http://192.168.1.28/admin/>{:rel="nofollow"}.
 -   Dans le menu de gauche, cliquer sur `Settings`, puis sur l’onglet `DHCP`
-    <http://192.168.1.28/admin/settings.php?tab=piholedhcp>.
+    <http://192.168.1.28/admin/settings.php?tab=piholedhcp>{:rel="nofollow"}.
 -   Activer le DHCP en cliquant sur `DHCP server enabled`.
 
 **Ajout des listes de blocages (Adlists)**
 
 -   Dans le menu de gauche, cliquer sur `Group Management`, puis sur `Adlists`
-    <http://192.168.1.28/admin/groups-adlists.php>.
+    <http://192.168.1.28/admin/groups-adlists.php>{:rel="nofollow"}.
 -   Copier les [URL des listes de blocage (Adlists)](../files/2020-12-25-installer-pi-hole-sur-un-raspberry/docs/pi-hole-adlists.txt).
 -   Coller ces URL dans le champ `Address`. Les retours à la ligne sont acceptés comme séparateur d’URL.
 -   Cliquer sur le bouton `Add`.
@@ -123,13 +123,13 @@ sudo reboot
 **Mettre à jour la base de données**
 
 -   Dans le menu de gauche, cliquer sur `Tools`, puis sur `Update Gravity`
-    <http://192.168.1.28/admin/gravity.php>.
+    <http://192.168.1.28/admin/gravity.php>{:rel="nofollow"}.
 -   Cliquer sur le bouton `Update`.
 
 **Ajout des faux positifs (Whitelist)**
 
 -   Dans le menu de gauche, cliquer sur `Whitelist`
-    <http://192.168.1.28/admin/groups-domains.php?type=white>.
+    <http://192.168.1.28/admin/groups-domains.php?type=white>{:rel="nofollow"}.
 -   Copier les [URL des faux positifs (Whitelist)](../files/2020-12-25-installer-pi-hole-sur-un-raspberry/docs/pi-hole-whitelist.txt).
 -   Coller ces URL dans le champ `Domain`. Les retours à la ligne sont acceptés comme séparateur d’URL.
 -   Activer l’option `Add domain as wildcard`.
@@ -138,7 +138,7 @@ sudo reboot
 **Ajout des vrais positifs (Blacklist)**
 
 -   Dans le menu de gauche, cliquer sur `Blacklist`
-    <http://192.168.1.28/admin/groups-domains.php?type=black>
+    <http://192.168.1.28/admin/groups-domains.php?type=black>{:rel="nofollow"}
 -   Ajouter des URL à votre convenance.
 
 Voilà, Pi-hole est installé et fonctionnel. Nous allons voir maintenant comment récupérer quelques informations.

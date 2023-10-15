@@ -597,7 +597,7 @@ Exemple avec du code JavaScript intégré dans le code HTML :
 [nano]: https://www.nano-editor.org/
 [gedit]: https://doc.ubuntu-fr.org/gedit
 [bbedit]: https://www.barebones.com/products/bbedit/
-[notepad++]: https://notepad-plus-plus.org/fr/
+[notepad++]: https://notepad-plus-plus.org/
 [code.visualstudio.com]: https://code.visualstudio.com/
 [atom.io]: https://atom.io/
 [sublimetext.com]: https://www.sublimetext.com/
