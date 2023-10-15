@@ -13,7 +13,7 @@ title: Analyseur logique Scanalogic-2
 ---
 
 Mise en route de l’analyseur logique Scanalogic-2
-<http://www.ikalogic.com/ikalogic-products/scanalogic-2/>{:rel="nofollow"}
+<https://www.ikalogic.com/ikalogic-products/scanalogic-2/>{:rel="nofollow"}
 que [Didel](https://www.didel.com/) m’a envoyé cette semaine.
 
 Ça fonctionne bien, même sur Mac.

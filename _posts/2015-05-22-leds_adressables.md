@@ -18,7 +18,7 @@ title: LED adressables
 
 Pour mon [projet de programmation d’un MSP430 en mode ISP](/programmer_un_msp430_en_mode_ISP/), j’ai utilisé une LED RGB. C’est simplement trois LED dans un seul boîtier avec quatre pattes : une pour chaque couleur et une pour la masse.
 
-Jusque là, rien de bien méchant. Mais comme je n’avais qu’une LED de ce type et que je l’ai soudée sur mon [Perma-Proto d’Adafruit](https://www.adafruit.com/blog/2011/11/18/adafruit-perma-proto-half-sized-breadboard-pcb-3-pack/), il m’en fallait des nouvelles. Ni une, ni deux, j’ai commandé quatre [LED P9823-F8](https://shop.boxtec.ch/led-neopixel-8mm-p9823-p-42265.html) chez Boxtec.
+Jusque là, rien de bien méchant. Mais comme je n’avais qu’une LED de ce type et que je l’ai soudée sur mon [Perma-Proto d’Adafruit](https://blog.adafruit.com/2011/11/18/adafruit-perma-proto-half-sized-breadboard-pcb-3-pack/), il m’en fallait des nouvelles. Ni une, ni deux, j’ai commandé quatre [LED P9823-F8](https://shop.boxtec.ch/led-neopixel-8mm-p9823-p-42265.html) chez Boxtec.
 
 [![ouilogique.com][img_1]{:style="width:250px"}][img_1]
 
@@ -26,7 +26,7 @@ Jusque là, rien de bien méchant. Mais comme je n’avais qu’une LED de ce ty
 
 Mal m’en a pris, elles ne sont pas du tout du même type que ma LED RGB de base. En fait ce sont des LED adressables en PWM. Eh oui, elles contiennent de la logique capable de comprendre un signal PWM et de s’allumer en conséquence. Avec en plus la possibilité d’être mises en série.
 
-D’après Boxtec, la [LED P9823-F8](https://shop.boxtec.ch/led-neopixel-8mm-p9823-p-42265.html) est compatible avec [le modèle WS2812 vendu par Adafruit](https://www.adafruit.com/datasheets/WS2812.pdf).
+D’après Boxtec, la [LED P9823-F8](https://shop.boxtec.ch/led-neopixel-8mm-p9823-p-42265.html) est compatible avec [le modèle WS2812 vendu par Adafruit](https://cdn-shop.adafruit.com/datasheets/WS2812.pdf).
 
 Pour la programmation sur Arduino, j’ai trouvé deux librairies :
 

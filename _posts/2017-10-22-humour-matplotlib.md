@@ -42,7 +42,7 @@ Vous pouvez découvrir les techniques de base dans [le fichier de démo][demo].
 ## Références
 
 -   [Mon aide mémoire Python](../files/2017-10-22-humour-matplotlib/docs/python_aide-memoire.py)
--   <http://www.diveintopython3.net/>
+-   <https://diveintopython3.net/>
 -   <https://python.developpez.com/cours/plongez_au_coeur_de_python/?page=page1>
 
 [effet-des-pizzas-sur-ma-sante]: ../files/2017-10-22-humour-matplotlib/docs/effet-des-pizzas-sur-ma-sante.py
@@ -52,4 +52,4 @@ Vous pouvez découvrir les techniques de base dans [le fichier de démo][demo].
 
 La police utilisée par xkcd est _Humor Sans_ et peut être téléchargée ici : <https://github.com/shreyankg/xkcd-desktop>. Malheureusement, elle ne fonctionne que sous Gnome.
 
-Une police qui ressemble est _Graphite_. Adobe en propose une version payante ici : <https://fonts.adobe.com/fonts/graphite#fonts-section>. Mais on peut télécharger gratuitement une des fontes ici : <https://www.fontyukle.net/en/DownLoad-Graphite+Std.ttf> ou la famille entière ici : <https://www.wfonts.com/font/graphite-std>.
+Une police qui ressemble est _Graphite_. Adobe en propose une version payante ici : <https://fonts.adobe.com/fonts/graphite#fonts-section>. Mais on peut télécharger gratuitement une des fontes ici : <https://www.fontyukle.net/downloadfont/Graphite%20Std> ou la famille entière ici : <https://www.wfonts.com/font/graphite-std>.

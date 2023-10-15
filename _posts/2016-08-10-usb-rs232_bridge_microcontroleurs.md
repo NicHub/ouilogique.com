@@ -15,7 +15,7 @@ L’idée est de déterminer s’il est possible de remplacer un bridge USB-RS23
 Elle m’a été inspirée par [cette réponse sur StackExchange][2].
 
 [1]: https://fr.wikipedia.org/wiki/UART
-[2]: http://arduino.stackexchange.com/questions/18575/send-at-commands-to-esp8266-from-arduino-uno-via-a-softwareserial-port/18614#18614
+[2]: https://arduino.stackexchange.com/questions/18575/send-at-commands-to-esp8266-from-arduino-uno-via-a-softwareserial-port/18614#18614
 
 ## Essai avec Launchpad
 

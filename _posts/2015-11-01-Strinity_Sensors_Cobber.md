@@ -15,7 +15,7 @@ title:
 
 J’ai acheté une carte chez Banggood pour me faire une mini station météo :
 
--   <http://www.banggood.com/4-in-1-Temperature-Pressure-Altitude-Light-Sensor-Module-p-965547.html?p=0431091025639201412F>{:rel="nofollow"}.
+-   <https://www.banggood.com/sitemap.html>{:rel="nofollow"}.
 
 C’est une carte “trois en un” qui permet de mesurer :
 
@@ -56,7 +56,7 @@ En attendant, j’ai testé la luminosité et la pression et les mesures ont l�
 
 Bon, j’ai décidé de m’y remettre après une semaine de pause et comme le capteur de température ne veut rien savoir, j’ai utilisé un scanner I²C disponible ici :
 
--   <http://playground.arduino.cc/Main/I2cScanner>
+-   <https://playground.arduino.cc/Main/I2cScanner>
 
 > Résultat des courses : Le capteur de température ne répond pas ! Et il semble que je ne sois pas le seul dans ce cas, un autre client de Banggod a mentionné ce problème aussi. Bon, je peux quand même lire la température indiquée par le capteur de pression...
 

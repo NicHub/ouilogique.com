@@ -291,7 +291,7 @@ console.log( i ); // -2.2
 ```
 <!-- prettier-ignore-end -->
 
-Pour la division entière, voir <http://stackoverflow.com/a/17218003/3057377>
+Pour la division entière, voir <https://stackoverflow.com/questions/4228356/how-to-perform-an-integer-division-and-separately-get-the-remainder-in-javascr/17218003#17218003>
 
 ### Test `if-then-else`
 
@@ -543,14 +543,14 @@ console.log( "Le chiffre vaut " + 7 );
 -   <http://dashing.io/>
 
 [JavaScript sur MDN]: https://developer.mozilla.org/fr/docs/Web/JavaScript
-[Une réintroduction à JavaScript sur MDN]: https://developer.mozilla.org/fr/docs/Web/JavaScript/Une_r%C3%A9introduction_%C3%A0_JavaScript
+[Une réintroduction à JavaScript sur MDN]: https://developer.mozilla.org/fr/docs/Web/JavaScript/Language_overview
 [Differences from ECMA-262 and JavaScript]: https://docstore.mik.ua/orelly/web2/action/appd_01.htm
 [JavaScript Versions sur W3Schools]: https://www.w3schools.com/js/js_versions.asp
-[jsfiddle JS version]: http://jsfiddle.net/Ac6CT/
+[jsfiddle JS version]: https://jsfiddle.net/Ac6CT/
 [Wiki du cours HTML embarqué]: https://github.com/NicHub/microclub-atelier-html-embarque/wiki
 [css-interne]: https://github.com/NicHub/microclub-atelier-html-embarque/wiki/cours-1-css#css-interne-au-fichier-html-dans-la-balise-style
 [le mode scrict (MDN, fr)]: https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Strict_mode
-[Instruction let (MDN, fr)]: https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/let
+[Instruction let (MDN, fr)]: https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/let
 [Microclub]: https://microclub.ch/
 [microclub-atelier-html-embarque.pdf]: https://raw.githubusercontent.com/wiki/NicHub/microclub-atelier-html-embarque/md2pdf/microclub-atelier-html-embarque.pdf
 [Introduction au langage HTML]: ../introduction-html/

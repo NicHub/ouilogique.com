@@ -27,22 +27,22 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
     -   [Spécifications (PDF)](../files/2017-04-14-relai-bistable-commande-tension/docs/adw1_eng_tds.pdf)
 -   [Transistor NPN BC337, Spécifications (PDF)](../files/2017-04-14-relai-bistable-commande-tension/docs/BC337-D.PDF)
 -   [Veroboard, Carte de laboratoire Papier bakélisé au phénol FR2, 710-2, Rademacher](https://www.distrelec.ch/fr/carte-de-laboratoire-papier-bakelise-au-phenol-fr2-rademacher-710/p/14832982)
--   [Diode 1N4004 400 V 1A DO-41](https://fr.aliexpress.com/item/50pcs-1N4004-400V-1A-DO-41-Axial-Lead-Silicon-Rectifier-Diodes/32464825368.html)
+-   [Diode 1N4004 400 V 1A DO-41](https://www.aliexpress.us/item/2251832278510616.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US)
 -   [Optocoupleur SFH620A DIP DIP-4][1]
     -   [Spécifications (PDF)](../files/2017-04-14-relai-bistable-commande-tension/docs/sfh620.pdf)
--   [Relai solid state (pour le tout premier proto)](https://fr.aliexpress.com/item/Industrial-FOTEK-single-phase-solid-state-relay-SSR-25DA-25A-actually-3-32V-DC-TO-24/32621331021.html)
--   [Boitier plastique](https://fr.aliexpress.com/item/Two-colors-plastic-enclosure-diy-project-box-abs-plastic-box-electronics-small-desktop-box-135/32426076659.html)
+-   [Relai solid state (pour le tout premier proto)](https://www.aliexpress.us/item/2251832435016269.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US)
+-   [Boitier plastique](https://www.aliexpress.us/item/2251832239761907.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US)
     -   [Boitier plastique dimensions 1][img_1]
     -   [Boitier plastique dimensions 2][img_2]
     -   [Onshape 1](https://cad.onshape.com/documents/bdfa03cae61f8d99e05c256d/w/6a80dbc21d7d7ec99d4ca430/e/ff237b71c3e3937e7775091c)
     -   [Onshape 2](https://cad.onshape.com/documents/bdfa03cae61f8d99e05c256d/w/6a80dbc21d7d7ec99d4ca430/e/d16ebce6912d78151dce1e60)
--   [Presse-étoupes](https://fr.aliexpress.com/item/PG7-Cable-Glands-Nylon-plastic-waterproof-cable-connectors-spiral-fixed-2013-New-product/1000045565.html)
--   [Forêts à étage (pour la découpe des passages des presse-étoupes)](https://fr.aliexpress.com/item/3pcs-HSS-Steel-Step-Cone-Milling-Cutter-Titanium-Coated-Step-Drill-Cutting-Tools-Bit-Set/32661376446.html)
--   [Arduino Pro Mini](http://www.banggood.com/5Pcs-3_3V-8MHz-ATmega328P-AU-Pro-Mini-Microcontroller-Board-For-Arduino-p-980292.html?p=0431091025639201412F)
--   [Interface clone FTDI (je déconseille ce modèle car il envoie du 5 V en mode 3.3 V, mais pour l’Arduino Pro Mini, ça n’a pas de conséquence)](http://www.miniinthebox.com/fr/programme-downloader-ftdi-basic-usb-a-ttl-ft232-pour-arduino_p903425.html)
--   [Borniers](http://www.banggood.com/20pcs-2-Pin-Plug-in-Screw-Terminal-Block-Connector-5_08mm-Pitch-p-993197.html?p=0431091025639201412F)
--   [Connecteurs 3 pôles](https://fr.aliexpress.com/item/F217-10-sets-ht5-08-3pin-Terminal-plug-type-300V-10A-5-08mm-pitch-connector-pcb/32657384224.html)
--   [Connecteurs 2 pôles (plus disponible)](https://fr.aliexpress.com/item/10-sets-5-08-2pin-Right-angle-Terminal-plug-type-300V-10A-5-08mm-pitch-connector/32787731420.html)
+-   [Presse-étoupes](https://www.aliexpress.us/item/2251800813730813.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US)
+-   [Forêts à étage (pour la découpe des passages des presse-étoupes)](https://www.aliexpress.us/item/2251832475061694.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US)
+-   [Arduino Pro Mini](https://usa.banggood.com/5Pcs-3_3V-8MHz-ATmega328P-AU-Pro-Mini-Microcontroller-With-Pins-Development-Board-p-980292.html?imageAb=2&akmClientCountry=America&p=0431091025639201412F&a=1697373190.4133&akmClientCountry=America)
+-   [Interface clone FTDI (je déconseille ce modèle car il envoie du 5 V en mode 3.3 V, mais pour l’Arduino Pro Mini, ça n’a pas de conséquence)](https://m.miniinthebox.com/fr/p/programme-downloader-ftdi-basic-usb-a-ttl-ft232-pour-arduino_p903425.html)
+-   [Borniers](https://usa.banggood.com/20pcs-2-Pin-Plug-In-Screw-Terminal-Block-Connector-5_08mm-Pitch-p-993197.html?imageAb=1&akmClientCountry=America&p=0431091025639201412F&a=1697373192.6246&akmClientCountry=America)
+-   [Connecteurs 3 pôles](https://www.aliexpress.us/item/2251832471069472.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US)
+-   [Connecteurs 2 pôles (plus disponible)](https://www.aliexpress.us/item/2251832601416668.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US)
 
 
 [img_1]: ../files/2017-04-14-relai-bistable-commande-tension/images/dimension-boitier-plastique-1.jpg
@@ -131,7 +131,7 @@ Le tout premier prototype était basé sur un Arduino UNO avec deux relais _soli
 [![Prototype sur veroboard commande relai solid state avec Arduino UNO][i8]][i8]
 
 [i8]: ../files/2017-04-14-relai-bistable-commande-tension/images/relai-bistable-commande-tension-000.jpg
-[1]: https://fr.aliexpress.com/item/Free-shippin-10pcs-lot-SFH620A-DIP-DIP-4-new-original/32553455903.html?spm=2114.13010608.0.0.H1VvjL
+[1]: https://www.aliexpress.us/item/2251832367141151.html?spm=2114.13010608.0.0.H1VvjL&gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US
 [2]: https://www.distrelec.ch/fr/relais-de-puissance-pour-circuits-imprimes-vdc-400-mw-panasonic-adw1203w/p/11030041
 [3]: https://www.distrelec.ch/fr/bloc-alimentation-decoupage-sortie-mean-well-irm-03/p/30051638
 [4]: ../files/2017-04-14-relai-bistable-commande-tension/docs/irm03_eng_tds.pdf

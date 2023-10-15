@@ -48,7 +48,7 @@ Voilà le résultat final :
 
 -   Programmer un MSP sur breadboard (un MSP430G2231 dans cette application).
 -   Utiliser une découpeuse laser.
--   [Les plaques à souder Perma-Proto d’Adafruit](https://www.adafruit.com/blog/2011/11/18/adafruit-perma-proto-half-sized-breadboard-pcb-3-pack/) sont très pratiques.
+-   [Les plaques à souder Perma-Proto d’Adafruit](https://blog.adafruit.com/2011/11/18/adafruit-perma-proto-half-sized-breadboard-pcb-3-pack/) sont très pratiques.
 -   Que les LED RGB translucides sont très nettement moins lumineuses que les transparentes.
     J’utilise une LED translucide dans ce projet, mais j’ai un gadget similaire avec une LED transparente et la différence est frappante.
     J’aurais aussi dû être moins conservatif sur la question de la consommation et utiliser des résistances plus faibles.

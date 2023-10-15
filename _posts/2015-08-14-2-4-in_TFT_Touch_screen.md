@@ -26,7 +26,7 @@ Pour arriver à ce résultat, il faut tout d’abord télécharger trois librai
 
 -   <https://github.com/adafruit/Adafruit-GFX-Library>
 -   <https://github.com/adafruit/TFTLCD-Library>
--   <https://github.com/adafruit/Touch-Screen-Library>
+-   <https://github.com/adafruit/Adafruit_TouchScreen>
 
 et les mettre dans le dossier des librairies de l’IDE Arduino, par exemple `~/Documents/Arduino/libraries/` sur Mac. Le plus simple est d’exécuter les commandes suivantes dans un terminal :
 
@@ -34,7 +34,7 @@ et les mettre dans le dossier des librairies de l’IDE Arduino, par exemple `~/
 cd ~/Documents/Arduino/libraries/
 git clone https://github.com/adafruit/Adafruit-GFX-Library.git
 git clone https://github.com/adafruit/TFTLCD-Library.git
-git clone https://github.com/adafruit/Touch-Screen-Library.git
+git clone https://github.com/adafruit/Adafruit_TouchScreen.git
 ```
 
 Il faut redémarrer l’IDE Arduino pour utiliser les librairies.

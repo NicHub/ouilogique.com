@@ -18,7 +18,7 @@ title: Test de hubs USB
 ## Test du hub _Anne LXL4072201A_
 
 Test du hub USB de la marque _Anne_, modèle _LXL4072201A_, acheté sur AliExpress
-<https://fr.aliexpress.com/item/2014-newest-7-Port-USB-3-0-HUB-High-Speed-With-Power-Adapter-For-Laptop-Notebook/1997348166.html>{:rel="nofollow"}.
+<https://www.aliexpress.us/item/2251801811033414.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US>{:rel="nofollow"}.
 
 Le test consiste à placer une diode entre les pattes d’alimentation de la fiche USB qui est normalement connectée à l’ordinateur. Une résistance de 100 Ω peut être ajoutée en parallèle pour s’assurer que le hub détecte une charge et éviter ainsi l’enclenchement de la sécurité de haute impédance du hub. Le hub testé n’a visiblement pas cette protection puisque la LED s’est allumée sans la résistance de 100 Ω. On peut remplacer la résistance de 220 Ω par une résistance plus élevée pour diminuer l’intensité lumineuse. Avec une résistance d’1 kΩ par exemple, ça marche bien aussi.
 
@@ -42,7 +42,7 @@ Le test consiste à placer une diode entre les pattes d’alimentation de la fic
 
 ## Test du hub _Delock 61857_
 
-20 nov. 2015. Test du hub [Delock 61857](https://www.delock.de/produkte/S_61857/merkmale.html) acheté chez [NewConcept Informatique](https://store.ncinformatique.ch/).
+20 nov. 2015. Test du hub [Delock 61857](https://www.delock.de/produkt/61857/merkmale.html?f=s) acheté chez [NewConcept Informatique](https://store.ncinformatique.ch/).
 
 ### Conclusion
 
@@ -90,4 +90,4 @@ Pour info, le hub vu de dessous
 -   [Connecteur Jack-rapide](https://www.banggood.com/DC-Power-Male-Female-5_5X-2_1mm-Connector-Adapter-Plug-Cable-Pressed-connected-for-LED-Strips-12V-p-998683.html?p=0431091025639201412F){:rel="nofollow"}
 -   [Câble Jack-USB](https://www.banggood.com/USB-Port-to-5_5mm-2_1mm-5V-DC-Barrel-Jack-Power-Cable-Connector-p-997025.html?p=0431091025639201412F){:rel="nofollow"}
     ⚠ ce câble a une grande résistance de ligne qui fait chuter considérablement la tension !
--   [USB Femelle-Femelle](https://fr.aliexpress.com/item/laptop-High-Speed-blue-USB-3-0-cable-A-Female-TO-A-Female-Adapter-cables-converter/1855157465.html){:rel="nofollow"}
+-   [USB Femelle-Femelle](https://www.aliexpress.us/item/2251801668842713.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US){:rel="nofollow"}

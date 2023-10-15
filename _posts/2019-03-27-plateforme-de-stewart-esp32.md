@@ -253,7 +253,7 @@ Version commerciale de Mikrolar
 
 ## Simulateur sur Mathematica
 
--   <https://www.wolfram.com/training/videos/ENG032/>
+-   <https://www.wolfram.com/wolfram-u/courses/catalog/>
 
 ## Matlab forward kinematics solver
 
@@ -315,7 +315,7 @@ PDF à trouver :
 -   HS5485HB (<https://github.com/a6guerre/Ball-balanced-on-Stewart-Platform/blob/master/Readme.pdf>)
 -   <https://www.robotis.us/dynamixel-mx-64t/> (Utilisé par Arun Dayal Udai)
 -   [MG995](https://www.banggood.com/MG995-High-Torgue-Mental-Gear-Analog-Servo-p-73885.html){:rel="nofollow"} (Rolf)
--   Tower Pro SG-5010 servos <https://01.org/developerjourney/recipe/building-stewart-platform>{:rel="nofollow"}
+-   Tower Pro SG-5010 servos <https://www.intel.com/content/www/us/en/developer/topic-technology/open/overview.html>{:rel="nofollow"}
 -   Hitec HS-5625MG (utilisé par <https://github.com/xoxota99/stewy>)
 -   MG996R <https://fr.aliexpress.com/item/32636102294.html>
 -   Parallax 900-00005 (utilisé par fullmotiondynamics)
@@ -351,7 +351,7 @@ PDF à trouver :
 
 ### Liste complète de matériel
 
--   <https://01.org/developerjourney/recipe/building-stewart-platform>{:rel="nofollow"}
+-   <https://www.intel.com/content/www/us/en/developer/topic-technology/open/overview.html>{:rel="nofollow"}
 
 ### Touch screen
 
@@ -369,7 +369,7 @@ PDF à trouver :
 
 ### Calculs
 
--   <https://www.scratchapixel.com/lessons/mathematics-physics-for-computer-graphics/geometry/transforming-points-and-vectors>
+-   <https://www.scratchapixel.com/lessons/mathematics-physics-for-computer-graphics/geometry/transforming-points-and-vectors.html>
 
 ### PCB
 

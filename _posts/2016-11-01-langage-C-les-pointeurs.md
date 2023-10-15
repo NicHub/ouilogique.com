@@ -236,7 +236,7 @@ Mais ça fera l’objet d’un autre article.
 Quand j’aurai le temps, j’écrirai un article sur ce sujet.
 Pour l’instant voici quelques exemples que j’ai posté sur StackExchange :
 
--   <http://arduino.stackexchange.com/a/31417/13995>
+-   <https://arduino.stackexchange.com/questions/31413/arrange-vector-in-descending-order/31417#31417>
 
 [1]: https://openclassrooms.com/courses/apprenez-a-programmer-en-c
 [2]: https://openclassrooms.com/membres/mateo21

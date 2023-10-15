@@ -598,26 +598,26 @@ Pour vous aider lors de l’écriture de vos feuilles de style, vous trouverez u
 
 Le site du W3C contient lui aussi beaucoup d’informations utiles : [CSS sur le site du W3C][CSS W3C].
 
-[Foundation]: https://foundation.zurb.com/
+[Foundation]: https://get.foundation/
 [Bootstrap]: https://getbootstrap.com/
 [CSS W3C]: https://www.w3.org/Style/CSS/Overview.fr.html
 [CSS sur MDN]: https://developer.mozilla.org/fr/docs/Web/CSS
 [Référence CSS MDN]: https://developer.mozilla.org/fr/docs/Web/CSS/Reference
 [Composer le HTML avec les CSS]: https://developer.mozilla.org/fr/Apprendre/CSS
-[Google Insights]: https://developers.google.com/speed/pagespeed/insights/?hl=fr
+[Google Insights]: https://pagespeed.web.dev/?utm_source=psi&utm_medium=redirect&hl=fr
 [syntaxe CSS MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_syntaxe
 [Les déclarations CSS MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_syntaxe#Les_d%C3%A9clarations_CSS
 [Les blocs CSS MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_syntaxe#Les_blocs_CSS
 [Les règles CSS MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_syntaxe#Les_r%C3%A8gles_CSS
 [Les instructions CSS MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_syntaxe#Les_r%C3%A8gles_CSS
-[Sass]: http://sass-lang.com/
+[Sass]: https://sass-lang.com/
 [W3C CSS Validator]: https://jigsaw.w3.org/css-validator/#validate_by_input
 [Les sélecteurs MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/Les_s%C3%A9lecteurs
 [Pondération MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_cascade_et_l_h%C3%A9ritage#Le_poids_des_s%C3%A9lecteurs
 [Héritage MDN]: https://developer.mozilla.org/fr/Apprendre/CSS/Introduction_%C3%A0_CSS/La_cascade_et_l_h%C3%A9ritage#L'h%C3%A9ritage
 [ouilogique ESP8266 WeMos]: /NodeMCU_esp8266/
 [Wiki du cours HTML embarqué]: https://github.com/NicHub/microclub-atelier-html-embarque/wiki
-[Les medias queries MDN]: https://developer.mozilla.org/fr/docs/Web/CSS/Requ%C3%AAtes_m%C3%A9dia/Utiliser_les_Media_queries
+[Les medias queries MDN]: https://developer.mozilla.org/fr/docs/Web/CSS/CSS_media_queries/Using_media_queries
 [HTML Color Picker W3 Schools]: https://www.w3schools.com/colors/colors_picker.asp?color=00bfff
 [Couleurs CSS MDN]: https://developer.mozilla.org/fr/docs/Web/CSS/color
 [Pandoc]: https://pandoc.org/

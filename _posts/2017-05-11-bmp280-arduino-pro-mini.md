@@ -52,9 +52,9 @@ Je n’ai testé que le mode SPI (hardware) et pas le mode I²C et ça fonctionn
 -   [BMP280 sur le site de Bosch][5]{:rel="nofollow"}
 -   [Datasheet du BMP280][6]{:rel="nofollow"}
 
-[1]: http://www.banggood.com/5Pcs-3_3V-8MHz-ATmega328P-AU-Pro-Mini-Microcontroller-Board-For-Arduino-p-980292.html?p=0431091025639201412F
+[1]: https://usa.banggood.com/5Pcs-3_3V-8MHz-ATmega328P-AU-Pro-Mini-Microcontroller-With-Pins-Development-Board-p-980292.html?imageAb=2&akmClientCountry=America&p=0431091025639201412F&a=1697373190.4133&akmClientCountry=America
 [2]: https://www.banggood.com/GY-BMP280-3_3-High-Precision-Atmospheric-Pressure-Sensor-Module-For-Arduino-p-1111135.html?p=0431091025639201412F
-[3]: http://www.miniinthebox.com/fr/programme-downloader-ftdi-basic-usb-a-ttl-ft232-pour-arduino_p903425.html
+[3]: https://m.miniinthebox.com/fr/p/programme-downloader-ftdi-basic-usb-a-ttl-ft232-pour-arduino_p903425.html
 [4]: https://learn.adafruit.com/adafruit-bmp280-barometric-pressure-plus-temperature-sensor-breakout/wiring-and-test
 [5]: https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp280/
 [6]: https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp280-ds001.pdf

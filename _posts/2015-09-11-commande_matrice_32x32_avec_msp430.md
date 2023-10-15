@@ -28,7 +28,7 @@ Launchpad-MSP430 rev 1.5, voir le brochage ici : <../pinouts/#pinout-launchpad-
 
 Le brochage est décrit au début du programme ci-dessous.
 
-[Image du connecteur sur Adafruit.com](https://learn.adafruit.com/system/assets/assets/000/023/769/original/led_matrix_socket3.png?1426305755)
+[Image du connecteur sur Adafruit.com](https://cdn-learn.adafruit.com/assets/assets/000/023/769/original/led_matrix_socket3.png?1426305755)
 
 [![ouilogique.com][img_2]{:style="width:250px"}][img_2]
 

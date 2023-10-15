@@ -617,7 +617,7 @@ Exemple avec du code JavaScript intégré dans le code HTML :
 [Apostrophe et « impostrophe »]: https://www.antidote.info/fr/blogue/enquetes/apostrophe-et-impostrophe
 [Un espace ou une espace ?]: https://www.antidote.info/fr/blogue/enquetes/un-espace-ou-une-espace
 [Wiki du cours HTML embarqué]: https://github.com/NicHub/microclub-atelier-html-embarque/wiki
-[Éléments vides MDN, fr]: https://developer.mozilla.org/fr/docs/Glossaire/Element_vide
+[Éléments vides MDN, fr]: https://developer.mozilla.org/fr/docs/Glossary/Void_element
 [Recommended list of Doctype declarations (W3C en)]: https://www.w3.org/QA/2002/04/valid-dtd-list.html
 [Fix Your Site With the Right DOCTYPE!]: https://alistapart.com/article/doctype/
 [Les attributs de données sur MDN]: https://developer.mozilla.org/fr/Apprendre/HTML/Comment/Utiliser_attributs_donnes

@@ -33,6 +33,6 @@ title: Test de décharge de batteries
 | [Powerbank Solaire][4]                        |        20’000 mAh |         5806 mAh |                              29% |              15 h 58 |          4.55 V |         0.36 A |              12.6 Ω |
 
 [1]: http://www.gearbest.com/batteries/pp_241348.html
-[2]: http://www.lepetitvapoteur.com/fr/accus/1876-accu-mxjo-imr-18650-3000-ma-35-a-.html
+[2]: https://www.lepetitvapoteur.com/fr/accus/1876-accu-mxjo-imr-18650-3000-ma-35-a-.html
 [3]: https://www.infinitypv.com/images/HeLi-on_manual_v1.pdf
 [4]: https://www.youtube.com/watch?v=NL6nySngGtU
