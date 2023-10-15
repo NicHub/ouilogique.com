@@ -28,7 +28,8 @@ Premiers prototypes d’une plateforme de Stewart que je construis dans le cadre
 
 ## Quatrième version
 
-Pour la quatrième version, je ne génère plus le PWM des servos avec l’ESP32, mais avec un [driver I²C PCA9685](https://www.mouser.ch/ProductDetail/Adafruit/3416?qs=F5EMLAvA7ICYzX4Av%252BhRHw%3D%3D&countrycode=CH&currencycode=CHF).
+Pour la quatrième version, je ne génère plus le PWM des servos avec l’ESP32, mais avec un
+[driver I²C PCA9685](https://www.adafruit.com/product/815).
 
 [![Plateforme de Stewart — ouilogique.com][i8]{:style="width:100%;"}][i8]
 
