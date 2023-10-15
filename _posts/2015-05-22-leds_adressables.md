@@ -63,7 +63,7 @@ Celle d’Adafruit est plus simple à mettre en œuvre et les exemples fonctionn
 
 ## Exemple de programme
 
-[P9823_LED_RS232.ino](../../files/2015-05-22-leds_adressables/docs/P9823_LED_RS232.ino)
+[P9823_LED_RS232.ino](../files/2015-05-22-leds_adressables/docs/P9823_LED_RS232.ino)
 
 ## Liens
 

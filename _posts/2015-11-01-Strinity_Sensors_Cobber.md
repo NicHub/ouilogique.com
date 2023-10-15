@@ -64,8 +64,8 @@ Bon, j’ai décidé de m’y remettre après une semaine de pause et comme le c
 
 ## Liens
 
--   [BMP180 Digital pressure sensor — Bosch Sensortec](../../files/2015-11-01-Strinity_Sensors_Cobber/docs/BST-BMP180-DS000-09.pdf)
--   [TSL2560, TSL2561 Light-to-Digital Converter — TAOS](../../files/2015-11-01-Strinity_Sensors_Cobber/docs/TSL2561.pdf)
+-   [BMP180 Digital pressure sensor — Bosch Sensortec](../files/2015-11-01-Strinity_Sensors_Cobber/docs/BST-BMP180-DS000-09.pdf)
+-   [TSL2560, TSL2561 Light-to-Digital Converter — TAOS](../files/2015-11-01-Strinity_Sensors_Cobber/docs/TSL2561.pdf)
 -   Lien fourni sur page support Banggood <http://pan.baidu.com/s/1qWjYtqs>{:rel="nofollow"}
 
 [![ouilogique.com][img_1]][img_1]

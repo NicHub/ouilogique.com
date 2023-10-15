@@ -24,12 +24,12 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 -   [Alimentation Mean Well, IRM-03-3.3, 3.3V, PCB][3]
     -   [Spécifications (PDF)][4]
 -   [Relais de puissance pour circuits imprimés 3 VDC 400 mW, ADW1203W, Panasonic][2]
-    -   [Spécifications (PDF)](../../files/2017-04-14-relai-bistable-commande-tension/docs/adw1_eng_tds.pdf)
--   [Transistor NPN BC337, Spécifications (PDF)](../../files/2017-04-14-relai-bistable-commande-tension/docs/BC337-D.PDF)
+    -   [Spécifications (PDF)](../files/2017-04-14-relai-bistable-commande-tension/docs/adw1_eng_tds.pdf)
+-   [Transistor NPN BC337, Spécifications (PDF)](../files/2017-04-14-relai-bistable-commande-tension/docs/BC337-D.PDF)
 -   [Veroboard, Carte de laboratoire Papier bakélisé au phénol FR2, 710-2, Rademacher](https://www.distrelec.ch/fr/carte-de-laboratoire-papier-bakelise-au-phenol-fr2-rademacher-710/p/14832982)
 -   [Diode 1N4004 400 V 1A DO-41](https://fr.aliexpress.com/item/50pcs-1N4004-400V-1A-DO-41-Axial-Lead-Silicon-Rectifier-Diodes/32464825368.html)
 -   [Optocoupleur SFH620A DIP DIP-4][1]
-    -   [Spécifications (PDF)](../../files/2017-04-14-relai-bistable-commande-tension/docs/sfh620.pdf)
+    -   [Spécifications (PDF)](../files/2017-04-14-relai-bistable-commande-tension/docs/sfh620.pdf)
 -   [Relai solid state (pour le tout premier proto)](https://fr.aliexpress.com/item/Industrial-FOTEK-single-phase-solid-state-relay-SSR-25DA-25A-actually-3-32V-DC-TO-24/32621331021.html)
 -   [Boitier plastique](https://fr.aliexpress.com/item/Two-colors-plastic-enclosure-diy-project-box-abs-plastic-box-electronics-small-desktop-box-135/32426076659.html)
     -   [Boitier plastique dimensions 1][img_1]

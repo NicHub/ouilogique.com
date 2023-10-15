@@ -41,7 +41,7 @@ Vous pouvez découvrir les techniques de base dans [le fichier de démo][demo].
 
 ## Références
 
--   [Mon aide mémoire Python](../../files/2017-10-22-humour-matplotlib/docs/python_aide-memoire.py)
+-   [Mon aide mémoire Python](../files/2017-10-22-humour-matplotlib/docs/python_aide-memoire.py)
 -   <http://www.diveintopython3.net/>
 -   <https://python.developpez.com/cours/plongez_au_coeur_de_python/?page=page1>
 
