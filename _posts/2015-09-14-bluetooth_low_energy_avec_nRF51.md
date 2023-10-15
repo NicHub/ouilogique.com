@@ -91,7 +91,7 @@ norme C 99 ⇒ permet des déclarations spéciales de struct
 -   [Bande industrielle, scientifique et médicale (Wikipédia)](https://fr.wikipedia.org/wiki/Bande_industrielle,_scientifique_et_médicale)
 -   [Bluetooth (Wikipédia)](https://fr.wikipedia.org/wiki/Bluetooth)
 -   [Bluetooth Accessory Design Guidelines for Apple Products](https://developer.apple.com/hardwaredrivers/BluetoothDesignGuidelines.pdf)
--   [Kit Didel](http://www.didel.com/diduino/AdanRF51.pdf)
+-   [Kit Didel](https://www.didel.com/diduino/AdanRF51.pdf)
 -   [https://evothings.com](https://evothings.com){:rel="nofollow"}
 -   [List of Bluetooth Smart and Bluetooth Smart Ready products available now](http://www.bluetooth.com/Pages/Bluetooth-Smart-Devices-List.aspx){:rel="nofollow"}
 
@@ -99,7 +99,8 @@ norme C 99 ⇒ permet des déclarations spéciales de struct
 
 -   [RedBearLab](http://redbearlab.com/nrf51822/){:rel="nofollow"}
 -   [Aliexpress](http://fr.aliexpress.com/item/Low-power-consumption-BLE4-0-module-with-2-4GHz-PCB-antenna16-28mm-Free-sample/32334323347.html)
--   [MDBT40 (SeeedStudio)](http://www.seeedstudio.com/depot/MDBT40P%C2%A0%C2%A0nRF51822%C2%A0based%C2%A0BLE%C2%A0module-p-2503.html) — [MDBT40 (Raytac)](http://www.raytac.com/download/MDBT40/MDBT40%20spec-Version%20A3.pdf){:rel="nofollow"}
+-   [MDBT40 (SeeedStudio)](https://www.seeedstudio.com/MDBT40-ANT-P256V3-nRF51422-based-BLE-Module-p-2507.html)
+—   [MDBT40 (Raytac)](http://www.raytac.com/download/MDBT40/MDBT40%20spec-Version%20A3.pdf){:rel="nofollow"}
 -   [Banggood (avec quartz 32 kHz)](http://www.banggood.com/NRF51822-2_4GHz-Network-Bluetooth-Serial-Module-Support-For-Apple-Android-p-992468.html?p=0431091025639201412F){:rel="nofollow"}
 -   [Microchip BM77](http://www.microchip.com/wwwproducts/Devices.aspx?product=bm77)
 -   [HM-10 Bluetooth 4.0 Module Transparent Serial Port With Logic Level Translator](http://www.banggood.com/HM-10-Bluetooth-4_0-Module-Transparent-Serial-Port-p-967059.html?p=0431091025639201412F){:rel="nofollow"}

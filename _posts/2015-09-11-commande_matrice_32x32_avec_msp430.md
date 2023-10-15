@@ -22,7 +22,7 @@ title: Commande d’une matrice 32×32 avec un MSP430
 
 ## Launchpad
 
-Launchpad-MSP430 rev 1.5, voir le brochage ici : <https://ouilogique.com/blog/pinouts/index.html#pinout-launchpad-msp430>
+Launchpad-MSP430 rev 1.5, voir le brochage ici : <../pinouts/#pinout-launchpad-msp430>
 
 ## Brochage
 

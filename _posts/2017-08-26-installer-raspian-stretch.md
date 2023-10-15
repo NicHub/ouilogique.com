@@ -182,7 +182,7 @@ sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
 Télécharger un client VNC pour se connecter au serveur VNC du RPi.
 Par exemple RealVNC :
 
--   <https://www.realvnc.com/download/viewer/>.
+-   <https://www.realvnc.com/en/connect/download/viewer/>.
 
 > N. B. Le client VNC installé par défaut sur macOS ne fonctionne pas pour se connecter au serveur VNC du RPi.
 > L’erreur retournée est<br />_Le logiciel de l’ordinateur distant semble ne pas être compatible avec cette version de Partage d’écran._<br />`bash /System/Library/CoreServices/Applications/Screen\ Sharing.app`
@@ -326,7 +326,7 @@ smb://raspberrypi.local
 
 Voir
 
--   <https://support.microsoft.com/fr-ch/help/4026635/windows-map-a-network-drive>
+-   <https://support.microsoft.com/fr-fr/windows/mapper-un-lecteur-r%C3%A9seau-dans-windows-29ce55d1-34e3-a7e2-4801-131475f9557d>
 
 On peu aussi entrer le chemin d’accès au Raspberry au [format UNC](<https://en.wikipedia.org/wiki/Path_(computing)#Universal_Naming_Convention>) directement dans la barre d’adresse de l’explorateur Windows (raccourcis Win+E, Ctrl+L)
 

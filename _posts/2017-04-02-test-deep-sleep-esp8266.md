@@ -15,11 +15,11 @@ title: Test du deep sleep de l’ESP8266
 
 -   [WeMos® D1 Mini V2 NodeMcu 4M Bytes Lua WIFI Internet Of Things Development Board Based ESP8266][1]
 
-[1]: http://www.banggood.com/WeMos-D1-Mini-V2-NodeMcu-4M-Bytes-Lua-WIFI-Internet-Of-Things-Development-Board-Based-ESP8266-p-1115398.html?p=0431091025639201412F
+[1]: https://usa.banggood.com/D1-Mini-V2-NodeMcu-4M-Bytes-Lua-WIFI-Internet-Of-Things-Development-Board-Based-ESP8266-p-1115398.html?imageAb=2&akmClientCountry=America&p=0431091025639201412F&a=1697372252.7894&akmClientCountry=America
 
 ## Différences entre les 3 modes de veille
 
--   <http://www.espressif.com/sites/default/files/9b-esp8266-low_power_solutions_en_0.pdf>
+-   <https://www.espressif.com/sites/default/files/9b-esp8266-low_power_solutions_en_0.pdf>
 
 -   Modem-sleep
 -   Light-sleep
@@ -38,7 +38,7 @@ title: Test du deep sleep de l’ESP8266
 
 **Pour comparaison**
 
--   un MSP430 consomme 230 µA en mode _Active_, 0.5 µA en mode _Standby_ et 0.1 µA en mode _Off_ ([Datasheet du MSP430](http://www.ti.com/lit/ds/symlink/msp430g2453.pdf)).
+-   un MSP430 consomme 230 µA en mode _Active_, 0.5 µA en mode _Standby_ et 0.1 µA en mode _Off_ ([Datasheet du MSP430](https://www.ti.com/lit/ds/symlink/msp430g2453.pdf)).
 -   un ATtiny consomme 300 µA en mode _Active_ et 0.1 µA en mode _Power-down_ ([Datasheet de l’ATtiny](https://ww1.microchip.com/downloads/en/devicedoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf)).
 
 ### Deep Sleep
@@ -157,5 +157,5 @@ void loop()
 
 ## Sources
 
--   <http://www.esp8266.com/viewtopic.php?f=13&t=8315>
+-   <https://www.esp8266.com/viewtopic.php?f=13&t=8315>
 -   <https://www.youtube.com/watch?v=9G-nMGcELG8&index=11&list=PL3XBzmAj53Rlu3Byy_GkqG6b-nwEpWku0>

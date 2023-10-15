@@ -1,5 +1,9 @@
 # ouilogique.com
 
-Fichiers du blog [ouilogique.com](https://ouilogique.com)
+Fichiers du blog [ouilogique.com](https://ouilogique.com).
 
-Use `bash _serve.sh` to preview localy.
+Pour visionner le site localement :
+
+```bash
+bash _serve.sh
+```

@@ -149,7 +149,7 @@ Athus Vieira
 
 -   <https://www.linkedin.com/pulse/ball-plate-system-robotic-pid-control-athus-vieira/>
 -   <https://www.youtube.com/watch?v=9XhcSSrA4Yc>
--   PID tuning <http://emanual.robotis.com/docs/en/platform/openmanipulator/>
+-   PID tuning <https://emanual.robotis.com/docs/en/platform/openmanipulator/>
 
 Instructables by moosenee (avec gros plan sur le touch screen) **😃 Avec du code Arduino !**
 
@@ -186,7 +186,7 @@ Projet memememememememe **😃 Avec un simulateur fonctionnel en Processing et l
 
 **😃 Autres codes Arduino !**
 
--   <https://www.marginallyclever.com/product/rotary-stewart-platform-v2/>
+-   <https://www.marginallyclever.com/2013/09/rotary-stewart-platform-v2-now-on-thingiverse/>
 -   <https://github.com/MarginallyClever/RotaryStewartPlatform/blob/master/RSPv1/RSPv1.ino>
 
 Robots à chaînes exotiques, Jean-Pierre Merlet, INRIA Sophia-Antipolis
@@ -214,7 +214,7 @@ https://youtu.be/bEM5AywnzKg
 
 Dynamixel motor
 
--   <http://www.robotis.us/dynamixel/>
+-   <https://www.robotis.us/dynamixel/>
 
 Avec GUI Processing [Arun Dayal Udai]
 
@@ -224,7 +224,7 @@ Avec GUI Processing [Arun Dayal Udai]
 
 Felix Ros **😃 Avec du code Processing et Arduino !**
 
--   <http://www.felixros.com/>
+-   <https://www.felixros.com/>
 -   <https://github.com/felixros2401/Stewart-Platform>
 -   <https://www.instructables.com/id/Controlling-a-Stewart-Platform/>
 
@@ -241,7 +241,7 @@ Version de Circular-Base-Stewart-Platform
 
 Version commerciale de Mikrolar
 
--   <http://mikrolar.com/r3000.html>
+-   <https://mikrolar.com/r3000.html>
 
 ## Versions commerciales
 
@@ -313,11 +313,11 @@ PDF à trouver :
 -   KST DS115MG servos
 -   GWS Micro 2BBMG servo (<https://www.youtube.com/watch?v=TgqJbneXZI8>)
 -   HS5485HB (<https://github.com/a6guerre/Ball-balanced-on-Stewart-Platform/blob/master/Readme.pdf>)
--   <http://www.robotis.us/dynamixel-mx-64t/> (Utilisé par Arun Dayal Udai)
+-   <https://www.robotis.us/dynamixel-mx-64t/> (Utilisé par Arun Dayal Udai)
 -   [MG995](https://www.banggood.com/MG995-High-Torgue-Mental-Gear-Analog-Servo-p-73885.html){:rel="nofollow"} (Rolf)
 -   Tower Pro SG-5010 servos <https://01.org/developerjourney/recipe/building-stewart-platform>{:rel="nofollow"}
 -   Hitec HS-5625MG (utilisé par <https://github.com/xoxota99/stewy>)
--   MG996R <https://fr.aliexpress.com/item//32636102294.html>
+-   MG996R <https://fr.aliexpress.com/item/32636102294.html>
 -   Parallax 900-00005 (utilisé par fullmotiondynamics)
     <https://www.parallax.com/product/900-00005>
 
@@ -328,26 +328,26 @@ PDF à trouver :
 
 ### Driver de servos
 
--   PCA9685 (16 servos, I²C) <https://aliexpress.com/af/32718274859.html>
+-   PCA9685 (16 servos, I²C) <https://www.aliexpress.com/af/32718274859.html>
 
 ### Rotules + tiges
 
--   M3x100mm <https://aliexpress.com/af/32775630549.html>
--   En M2 <https://aliexpress.com/af/32704692789.html>
--   rotule <https://aliexpress.com/af/32887391192.html>
--   tige <https://aliexpress.com/af/32468820900.html>
--   tige + rotule <https://aliexpress.com/af/32904104171.html>
--   magnétique <https://aliexpress.com/af/32818135577.html>
--   complète <https://aliexpress.com/af/32894390128.html>
+-   M3x100mm <https://www.aliexpress.com/af/32775630549.html>
+-   En M2 <https://www.aliexpress.com/af/32704692789.html>
+-   rotule <https://www.aliexpress.com/af/32887391192.html>
+-   tige <https://www.aliexpress.com/af/32468820900.html>
+-   tige + rotule <https://www.aliexpress.com/af/32904104171.html>
+-   magnétique <https://www.aliexpress.com/af/32818135577.html>
+-   complète <https://www.aliexpress.com/af/32894390128.html>
 
 ### Alim 5V
 
--   Courant 10A <https://aliexpress.com/af/32810906485.html>
+-   Courant 10A <https://www.aliexpress.com/af/32810906485.html>
 
 ### Levier de servo (Servo horn arm)
 
--   couleur tritanium <https://aliexpress.com/af/32843432977.html>
--   <https://aliexpress.com/af/32811563669.html>
+-   couleur tritanium <https://www.aliexpress.com/af/32843432977.html>
+-   <https://www.aliexpress.com/af/32811563669.html>{:rel="nofollow"}
 
 ### Liste complète de matériel
 
@@ -356,16 +356,16 @@ PDF à trouver :
 ### Touch screen
 
 -   [Digikey 360-3520-ND](https://www.digikey.ch/short/pj85db){:rel="nofollow"} (utilisé par <https://github.com/xoxota99/stewy>)
--   <https://aliexpress.com/af/32809597549.html>
+-   <https://www.aliexpress.com/af/32809597549.html>
 
 ### ESP32
 
 -   WeMos ESP32 WROOM
-    -   <https://www.banggood.com/fr/WeMos-ESP32-WiFi-Bluetooth-Development-Board-Ultra-Low-Power-Consumption-Dual-Core-ESP-32-ESP-32S-p-1175488.html>
+    -   <https://www.banggood.com/de/ESP32-WiFi-+-bluetooth-Development-Board-Ultra-Low-Power-Consumption-Dual-Core-ESP-32-ESP-32S-Similar-ESP8266-Geekcreit-for-Arduino-products-that-work-with-official-Arduino-boards-p-1175488.html>
 
 ### Joystick
 
--   Wii Nunchuck <https://aliexpress.com/af/32827461737.html>
+-   Wii Nunchuck <https://www.aliexpress.com/af/32827461737.html>
 
 ### Calculs
 
@@ -410,8 +410,8 @@ Analyse vectorielle des lieux de singularité de la plate-forme de Gough-Stewart
 -   <https://fr.wikipedia.org/wiki/Reymond_Clavel>
 -   <https://fr.wikipedia.org/wiki/Robot_Delta>
 -   <https://vimeo.com/129643275>
--   <https://www.ni.com/fr-ch/shop/software/products/6-dof-stewart-platform-control-library.html>
--   <https://www.ni.com/fr-ch/shop/software/products/stewart-platform-trainer-toolkit.html>
+-   <https://www.ni.com/fr-ch/shop/product/6-dof-stewart-platform-control-library.html>
+-   <https://www.ni.com/fr-ch/shop/product/stewart-platform-trainer-toolkit.html>
 -   <https://www.xarg.org/paper/inverse-kinematics-of-a-stewart-platform/>
 -   <https://youtu.be/1jrP3_1ML9M>
 

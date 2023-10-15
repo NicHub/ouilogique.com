@@ -593,15 +593,15 @@ Exemple avec du code JavaScript intégré dans le code HTML :
 
 [white-space (MDN fr)]: https://developer.mozilla.org/fr/docs/Web/CSS/white-space
 [HTML and XHTML]: https://www.w3schools.com/html/html_xhtml.asp
-[unicode-table.com]: https://unicode-table.com/fr/
+[unicode-table.com]: https://symbl.cc/fr/unicode/table/
 [nano]: https://www.nano-editor.org/
 [gedit]: https://doc.ubuntu-fr.org/gedit
 [bbedit]: https://www.barebones.com/products/bbedit/
 [notepad++]: https://notepad-plus-plus.org/
 [code.visualstudio.com]: https://code.visualstudio.com/
-[atom.io]: https://atom.io/
+[atom.io]: https://github.blog/2022-06-08-sunsetting-atom/
 [sublimetext.com]: https://www.sublimetext.com/
-[brackets.io]: http://brackets.io/
+[brackets.io]: https://brackets.io/
 [User agent]: https://fr.wikipedia.org/wiki/User_agent
 [Les balises HTML et leur rôle]: https://developer.mozilla.org/fr/Apprendre/HTML/Balises_HTML
 [Référence des éléments HTML]: https://developer.mozilla.org/fr/docs/Web/HTML/Element
@@ -614,12 +614,12 @@ Exemple avec du code JavaScript intégré dans le code HTML :
 [validator.w3.org]: https://validator.w3.org/
 [validator input]: https://validator.w3.org/#validate_by_input
 [Prince XML]: https://www.princexml.com/
-[Apostrophe et « impostrophe »]: https://www.druide.com/fr/enquetes/apostrophe-et-impostrophe
-[Un espace ou une espace ?]: https://www.druide.com/fr/enquetes/un-espace-ou-une-espace
+[Apostrophe et « impostrophe »]: https://www.antidote.info/fr/blogue/enquetes/apostrophe-et-impostrophe
+[Un espace ou une espace ?]: https://www.antidote.info/fr/blogue/enquetes/un-espace-ou-une-espace
 [Wiki du cours HTML embarqué]: https://github.com/NicHub/microclub-atelier-html-embarque/wiki
 [Éléments vides MDN, fr]: https://developer.mozilla.org/fr/docs/Glossaire/Element_vide
 [Recommended list of Doctype declarations (W3C en)]: https://www.w3.org/QA/2002/04/valid-dtd-list.html
-[Fix Your Site With the Right DOCTYPE!]: http://alistapart.com/article/doctype
+[Fix Your Site With the Right DOCTYPE!]: https://alistapart.com/article/doctype/
 [Les attributs de données sur MDN]: https://developer.mozilla.org/fr/Apprendre/HTML/Comment/Utiliser_attributs_donnes
 [Microclub]: https://microclub.ch/
 [microclub-atelier-html-embarque.pdf]: https://raw.githubusercontent.com/wiki/NicHub/microclub-atelier-html-embarque/md2pdf/microclub-atelier-html-embarque.pdf

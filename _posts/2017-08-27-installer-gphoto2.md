@@ -126,11 +126,11 @@ Comme le serveur bloque la ligne de commande, il est préférable de l’utilise
 ## Quelques liens
 
 -   <http://gphoto.org/>
--   <http://lists.alioth.debian.org/pipermail/pkg-phototools-devel/2017-June/010392.html>
+-   <https://alioth-lists.debian.net/pipermail/pkg-phototools-devel/2017-June/010392.html>
 -   <https://github.com/gphoto/gphoto2>
 -   <https://github.com/gphoto/gphoto2/issues/72>
 -   <https://www.raspberrypi.org/forums/viewtopic.php?t=186405>
--   <http://archive.raspbian.org/raspbian/pool/main/g/gphoto2/>
+-   <https://archive.raspbian.org/raspbian/pool/main/g/gphoto2/>
 -   <https://github.com/NicHub/ouilogique.com/commit/d4f594d08b8c9a30e6577072fafda794f4ec93bc>
 -   <https://packages.debian.org/stretch/gphoto2>
 
