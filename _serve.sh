@@ -81,3 +81,8 @@ ruby -v
 # Start Jekyll.
 # Remove `2>/dev/null` to see warnings.
 bundle exec jekyll serve --config _config.yml,_config_dev.yml --incremental #2>/dev/null
+
+# In case of error
+# cannot load such file -- webrick
+# Try :
+# bundle add webrick
