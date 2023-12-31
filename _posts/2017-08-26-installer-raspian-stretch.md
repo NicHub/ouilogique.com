@@ -168,7 +168,7 @@ sudo raspi-config
 
 ## VNC
 
-> N. B. Il faut que l’interface graphique soit activée pour que VNC fonctionne (voir § précédent).
+> N.B. Il faut que l’interface graphique soit activée pour que VNC fonctionne (voir § précédent).
 
 ```bash
 sudo raspi-config
@@ -472,7 +472,7 @@ cd /media/pi/LaCie
 
 ## Éjecter un disque externe
 
-> N. B. À proprement parler, seuls les médias comme les CD où les bandes peuvent être éjectés. Mais le terme est aussi utilisé pour les autres médias.
+> N.B. À proprement parler, seuls les médias comme les CD où les bandes peuvent être éjectés. Mais le terme est aussi utilisé pour les autres médias.
 
 Éjecter un média est un peu plus compliqué que de le connecter et l’utiliser.
 En effet, sur un Raspbery ou n’importe quel [système \*nix](https://fr.wikipedia.org/wiki/Type_Unix), il faut comprendre trois notions :
@@ -509,7 +509,7 @@ L’éjection du disque se passe en deux étapes :
 2. Couper l’alimentation du disque.
    La référence du disque lui-même se trouve à `/dev/sda`.
 
-> N. B. Il faut s’assurer que le disque n’est plus utilisé, sinon le système refusera de le démonter avec l’erreur `target is busy`.
+> N.B. Il faut s’assurer que le disque n’est plus utilisé, sinon le système refusera de le démonter avec l’erreur `target is busy`.
 > C’est à ça que sert le changement de répertoire ci-dessous.
 
 ```bash

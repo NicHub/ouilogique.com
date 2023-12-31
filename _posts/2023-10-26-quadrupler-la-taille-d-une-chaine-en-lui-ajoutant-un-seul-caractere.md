@@ -8,15 +8,28 @@ layout: page
 published: false
 redirect_from: []
 tags: []
-title: Comment quadrupler la taille d’une chaine en ne lui ajoutant qu’un seul caractère ?
+title: Comment quadrupler la taille d’une chaine en lui ajoutant un seul caractère ?
 ---
 
-Dans ce billet de blog, nous allons découvrir quelques subtilités des chaines de caractères en Python et en UTF-8.
+Dans cet article, nous allons découvrir quelques subtilités des chaines de caractères en Python et en UTF-8.
+
 Particulièrement :
 
 -   Qu’il est possible de quadrupler la mémoire nécessaire à une chaine en ne lui ajoutant qu’un seul caractère.
--   Les particularités des encodages à taille fixe variables.
--   Comment compter super rapidement le nombre de caractères en fonction de leur taille en octet en UTF-8.
+-   Que cela est dû au fait qu’en Python la taille des caractères d’une chaine est fixe, alors qu’UTF-8 utilise une taille de caractères variable.
+-   Qu’il est possible de compter super rapidement le nombre de caractères en fonction de leur taille en octet dans une string codée en UTF-8.
+
+> N.B.
+> Dans cet article, quand il est fait mention de Python, il s’agit toujours de Python 3, jamais de Python 2.
+
+Les versions utilisées pour les tests sont :
+
+-   Python 3.11.6
+-   Python 3.12.1
+
+L’OS est macOS Sonoma 14.2.1 et les interpréteurs Python ont été installés avec [Homebrew].
+
+[Homebrew]: https://brew.sh/
 
 ## Calculer la taille d’une chaine en mémoire
 
@@ -26,29 +39,31 @@ Particulièrement :
 
 ## ...
 
-L’idée m’est venue d’écrire ce billet suite à une question sur Stackoverflow concernant le rapport entre la taille d’une chaine en mémoire avec Python comparée à sa taille quand elle est enregistrée dans un fichier UTF-8.
+L’idée m’est venue d’écrire cet article suite à [une question sur Stackoverflow] concernant la comparaison entre la taille d’une chaine de caractères en mémoire avec Python avec sa taille quand elle est enregistrée dans un fichier UTF-8.
 
-<https://stackoverflow.com/q/77310610/3057377>
+[une question sur Stackoverflow]: https://stackoverflow.com/q/77310610/3057377
 
 L’auteur s’étonne que la taille en mémoire soit 4 fois plus grande que celle sur disque.
 Mais est-ce si surprenant ?
 Voyons cela d’un peu plus près.
 
-Il faut d’abord savoir que Python enregistre les chaines avec des caractères codés sur 1, 2 ou 4 octets, mais tous les caractères d’une même chaine doivent être codés avec le même nombre d’octets. C’est “l’encodage à taille fixe” ou _“fixed-width encoding”_ en anglais.
+Il faut d’abord savoir que Python enregistre les chaines avec des caractères codés sur 1, 2 ou 4 octets, mais tous les caractères d’une même chaine doivent être codés avec le même nombre d’octets.
+C’est “l’encodage à taille fixe” ou _“fixed-width encoding”_ en anglais.
 
-En UTF-8, les choses sont un peu différentes, les chaines sont stockées sur 1, 2, 3 ou 4 octets, mais il est possible d’utiliser des caractères codés avec des nombres différents d’octets dans la même chaine. C’est “l’encodage à taille variable”, ou _“variable-width encoding”_ en anglais.
+En UTF-8, les choses sont un peu différentes, les chaines sont stockées sur 1, 2, 3 ou 4 octets, mais il est possible d’utiliser des caractères codés avec des nombres différents d’octets dans la même chaine.
+C’est “l’encodage à taille variable”, ou _“variable-width encoding”_ en anglais.
 
 Cette différence entre taille fixe et taille variable a une conséquence intéressante.
 Il est possible de quadrupler la taille d’une chaine en mémoire en lui ajoutant un seul caractère.
 Voici comment.
 
-Tout d’abord, créons une chaine contenant 1000 fois un caractère codé sur 1 octet, par exemple le caractère `A` et regardons sa taille.
+Tout d’abord, créons une chaine contenant 1000 fois le même caractère codé sur 1 octet, par exemple le caractère `A` et regardons la taille du résultat.
 
 ```python
 import sys
 s1 = "A" * 1000
 print(sys.getsizeof(s1))
-# 1049 avec Python version <= 3.11
+# 1049 avec Python version == 3.11
 # 1041 avec Python version == 3.12
 ```
 
@@ -80,16 +95,16 @@ os.path.getsize(fname)
 On constate que sur le disque, la taille de cette chaîne au format UTF-8 est d’exactement 1000 octets.
 
 C’est maintenant que les choses deviennent intéressantes.
-Ajoutons un caractère codé sur 4 octets à notre chaine initiale et regardons quelle taille fait notre nouvelle chaine.
+Ajoutons un caractère codé sur 4 octets à notre chaine initiale et regardons quelle est la taille du résultat.
 
 ```python
 s2 = s1 + "😈"
 print(sys.getsizeof(s2))
-# 4080 avec Python version <= 3.11
+# 4080 avec Python version == 3.11
 # 4064 avec Python version == 3.12
 ```
 
-On constate que sa taille est maintenant de 4000 octets plus quelques octets pour les métadonnées.
+On constate que sa taille est maintenant de 4000 octets, plus quelques octets pour les métadonnées.
 Sa taille en mémoire a donc quadruplé en ajoutant un seul caractère !
 Bingo, c’est l’effet de l’encodage à largeur fixe !
 Si un caractère de la chaine est codé sur 4 octets, alors tous les autres le seront aussi.
@@ -106,7 +121,7 @@ print(sys.getsizeof(s2u))
 On constate qu’en UTF-8 la taille de s2 est 4 octets plus grande que celle de s1.
 Ceci est dû au fait qu’UTF-8 enregistre les caractères avec leur taille initiale, donc 1000 × 1 octet pour le caractère `A` et 1 × 4 octets pour le caractère `😈`.
 
-Si on refaisait l’exercice en utilisant 1000 `😈` et 1 `A`, on trouverait un rapport de taille d’environ 1.
+Si on refaisait l’exercice en utilisant 1000 × `😈` et 1 × `A`, on trouverait un rapport de taille proche de 1.
 
 À noter que je ne tiens pas compte des caractères codés sur 2 et 3 octets, mais le même raisonnement peut facilement leur être étendu.
 
@@ -117,6 +132,13 @@ Par contre dès que les chaines sont plus grandes, ça fonctionne très bien.
 J’ai mesuré ce rapport sur une dizaine de fichiers contenant des livres entiers en français et je trouve un rapport moyen de 1.8.
 
 ## Calculer la taille d’une chaine en mémoire
+
+<!--
+
+Pour calculer la taille d
+
+
+ -->
 
 Nous avons vu qu’en Python, la taille d’une chaine en mémoire dépend très fortement des caractères qu’elle contient et pas seulement de leur quantité.
 
@@ -148,11 +170,11 @@ Elle dépend dépend principalement de la taille en octet du point de code le pl
 Lorsqu’une chaîne est vide, le nombre d’octets par caractère n’est pas défini (il est probablement supposé étant égal à 1 octet).
 Ces valeurs resteront les mêmes pour les chaines contenant uniquement des points de codes inférieurs à 128.
 
-| Nb d’octets<br>des métadonnées<br>Python <= 3.11 | Nb d’octets<br>des métadonnées<br>Python == 3.12 |
+| Nb d’octets<br>des métadonnées<br>Python == 3.11 | Nb d’octets<br>des métadonnées<br>Python == 3.12 |
 | :----------------------------------------------: | :----------------------------------------------: |
 |                        49                        |                        41                        |
 
-**Nombre de caractères dans la chaine == 1 et nb octet par caractère == 2 et Python == 3.12**
+**Nombre de caractères dans la chaine == 1<br>et nb octet par caractère == 2<br>et Python == 3.12**
 
 Curieusement, en Python 3.12, si la chaine ne contient qu’un caractère codé sur deux octets, la taille de la chaine ne suit pas la relation énoncée après les tableaux.
 
@@ -164,7 +186,7 @@ En plus, une telle chaine prend au total 61 octets alors qu’une chaine avec u
 
 **Tous les autres cas**
 
-| Points<br>de code  | Nb d’octets par<br>caractère | Nb d’octets<br>des métadonnées<br>Python <= 3.11 | Nb d’octets<br>des métadonnées<br>Python == 3.12 |
+| Points<br>de code  | Nb d’octets par<br>caractère | Nb d’octets<br>des métadonnées<br>Python == 3.11 | Nb d’octets<br>des métadonnées<br>Python == 3.12 |
 | :----------------: | :--------------------------: | :----------------------------------------------: | :----------------------------------------------: |
 |      0 .. 127      |              1               |                        49                        |                        41                        |
 |     128 .. 255     |              1               |                        73                        |                        57                        |
@@ -182,8 +204,7 @@ où
 -   O = Nb d’octets nécessaires pour le caractère ayant le point de code le plus élevé
 -   M = Nb d’octets utilisés par les métadonnées
 
-> N. B.
-> En Python, la valeur du point de code le plus grand possible peut être obtenue avec la constante `sys.maxunicode` et elle vaut `1’114’111 = 2²⁰ + 2¹⁶ - 1`.
+> N.B. En Python, la valeur du point de code le plus grand possible peut être obtenue avec la constante `sys.maxunicode` et elle vaut `1’114’111 = 2²⁰ + 2¹⁶ - 1`.
 
 ## Calculer la taille d’une chaine codée en UTF-8
 
@@ -206,16 +227,14 @@ où
 -   T = Taille de la chaine en mémoire
 -   Oi = Nb d’octets nécessaire pour chaque caractère individuel
 
-### NB
-
-Par défaut, UTF-8 n’utilise pas de métadonnées.
-Cepandant, il existe une variante qui s’appelle _UTF-8 with BOM_ _(Byte order mask)_ qui ajoute la séquence d’octet `EF BB BF` au début du fichier pour indiquer explicitement que le fichier est au format UTF-8.
-Ceci peut être utile si on doit être absolument sûr du type de fichier par exemple s’il est nécessaire de faire la distinction entre des fichiers UTF-8 et ASCII.
-En effet, un fichier UTF-8 qui ne contient que des caractères dont les points de code sont inférieurs à 128 ne peut pas être distingué d’un fichier ASCII avec le même contenu.
-Ce sont les mêmes fichiers.
-D’où l’intérêt de spécifier que l’on souhaite que le fichier soit traité comme étant en UTF-8.
-Dans la pratique, le BOM est rarement utilisé et peut apporter plus de problèmes que de solutions.
-Par contre, pour UTF-16 et UTF-32 le BOM est utile, mais ça ne fait pas partie du cadre de cet article.
+> N.B. Par défaut, UTF-8 n’utilise pas de métadonnées.
+> Cepandant, il existe une variante qui s’appelle _UTF-8 with BOM_ _(Byte order mask)_ qui ajoute la séquence d’octet `EF BB BF` au début du fichier pour indiquer explicitement que le fichier est au format UTF-8.
+> Ceci peut être utile si on doit être absolument sûr du type de fichier par exemple s’il est nécessaire de faire la distinction entre des fichiers UTF-8 et ASCII.
+> En effet, un fichier UTF-8 qui ne contient que des caractères dont les points de code sont inférieurs à 128 ne peut pas être distingué d’un fichier ASCII avec le même contenu.
+> Ce sont les mêmes fichiers.
+> D’où l’intérêt de spécifier que l’on souhaite que le fichier soit traité comme étant en UTF-8.
+> Dans la pratique, le BOM est rarement utilisé et peut apporter plus de problèmes que de solutions.
+> Par contre, pour UTF-16 et UTF-32 le BOM est utile, mais ça ne fait pas partie du cadre de cet article.
 
 <!--
 
@@ -238,7 +257,7 @@ Voici quelques conséquences de ces différences.
 
     -   Connaître la taille qu’elle prendra en mémoire.
     -   Connaître le nombre de caractères qu’elle contient.
-    -   Connaître la position des caractères.
+    -   Connaître la position de tous les caractères.
 
 En effet, si une chaine est enregistrée dans un fichier qui prend 1000 octets sur le disque, on ne peut pas savoir à l’avance s’il contient 1000 x 1 octets, 250 × 4 octets ou n’importe quelle autre combinaison avec des caractères codés sur 2 ou 3 octets.
 
