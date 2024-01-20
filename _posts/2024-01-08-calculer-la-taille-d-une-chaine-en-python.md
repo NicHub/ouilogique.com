@@ -80,7 +80,10 @@ où
 
 > N.B. En Python, la valeur du point de code le plus grand possible peut être obtenue avec la constante `sys.maxunicode`.
 > Pour les versions conventionnelles de Python, elle vaut `1’114’111 = 2²⁰ + 2¹⁶ - 1`.
-> Micropython n’implémente pas la
+> CircuitPython n’implémente pas la constante `sys.maxunicode`, mais il ne retourne pas d’erreur lorsqu’on exécute la commande `chr(1_114_111)`.
+> J’ai testé avec [CircuitPython 8.2.9 sur Lolin S2 Mini] qui utilise Python 3.4.0.
+
+[CircuitPython 8.2.9 sur Lolin S2 Mini]: https://circuitpython.org/board/lolin_s2_mini/
 
 ## Calculer la taille d’une chaine codée en UTF-8
 
