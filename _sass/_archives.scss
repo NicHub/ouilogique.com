@@ -23,7 +23,11 @@
       border-bottom-width: 0; /* remove underlines from items in post indexes */
     }
   }
-  a > span {
+  a > span.post_title {
+    display: inline-block;
+    width: 70%;
+  }
+  a > span.entry-date {
     float: right;
   }
   .entry-date {

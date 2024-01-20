@@ -407,3 +407,7 @@ $final_angle: 90deg;
 	text-decoration: line-through;
 	color:grey;
 }
+
+.red, .red * {
+	color: red !important;
+}

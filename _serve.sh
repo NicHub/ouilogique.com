@@ -62,6 +62,8 @@ url: http://$IP:$PORT
 host: $IP
 port: $PORT
 baseurl: ""
+unpublished: true
+incremental: true
 
 sass:
   style: normal
@@ -75,14 +77,22 @@ cat $CONFIG_DEV
 
 # Use ruby from Homebrew
 ruby -v
-export PATH=/usr/local/opt/ruby/bin:$PATH
+which ruby
+# export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+# Ruby 3.3 doesn’t work. Install ruby 3.1 with
+# brew install ruby@3.1
+export PATH="/opt/homebrew/Cellar/ruby@3.1/3.1.4/bin:$PATH"
 ruby -v
+which ruby
 
 # Start Jekyll.
 # Remove `2>/dev/null` to see warnings.
-bundle exec jekyll serve --config _config.yml,_config_dev.yml --incremental #2>/dev/null
+bundle exec jekyll serve --config _config.yml,_config_dev.yml # 2>/dev/null
 
-# In case of error
-# cannot load such file -- webrick
-# Try :
-# bundle add webrick
+# In case of problems
+# Delete:
+#   Gemfile.lock
+# Execute:
+#   bundle install
+#   gem update jekyll
+
