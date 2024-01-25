@@ -22,12 +22,12 @@ ou sur le site “[table de caractères Unicode]” (anciennement _unicode-table
 [table officielle des caractères Unicode]: https://www.unicode.org/charts/
 [table de caractères Unicode]: https://symbl.cc/fr/unicode/table/
 
-> N.B. L’ancêtre d’unicode est l’ASCII.
+> N.B. L’ancêtre d’Unicode est l’ASCII.
 
 ## Calculer la taille d’une chaine en Python
 
 Pour calculer la taille totale utilisée par Python pour représenter une chaine, il faut en premier trouver le caractère de la chaine qui a le point de code le plus élevé puis utiliser la table ci-dessous pour déterminer le nombre d’octets que Python utilisera pour stocker les caractères de la chaine.
-À noter que dès que l’on trouve un caractère dont le point de code est supérieur à 65’535, on est sûr que Python encodera la chaine sur 4 octets.
+À noter que dès que l’on trouve un caractère dont le point de code est supérieur à 65’535, on est sûr que Python encodera toute la chaine sur 4 octets et on a donc pas besoin de recenser la taille des autres caractères.
 
 |  Points<br>de code  | Nb d’octets par<br>caractère<br>(Python) | Encodage |
 | :-----------------: | :--------------------------------------: | :------: |
@@ -201,3 +201,10 @@ print(sys.getsizeof(s1), sys.getsizeof(s2))
 Note that every string in Python takes additional 49-80 bytes of memory, where it stores supplementary information, such as hash, length, length in bytes, encoding type and string flags. That's why an empty string takes 49 bytes of memory.
  -->
 
+
+
+<!--
+http://hapax.qc.ca/pdf/Chapitre-3.pdf
+page 48 / note de bas de page no 10.
+Chaque valeur scalaire Unicode peut être représentée, selon le format de stockage, sous la forme d’une suite d’octets (UTF-8), d’un seizet normal ou de deux seizets d’indirection (UTF-16) ou d’une valeur de 32 bits (UTF-32).
+-->

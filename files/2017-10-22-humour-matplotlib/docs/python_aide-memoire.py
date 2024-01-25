@@ -6,7 +6,7 @@ u"""
 
 Aide mémoire Python
 
-Ceci est un exemple de docstring. Elle commence par la lettre u pour supporter unicode.
+Ceci est un exemple de docstring. Elle commence par la lettre u pour supporter Unicode.
 
 """
 
