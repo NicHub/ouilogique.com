@@ -8,12 +8,12 @@ layout: page
 published: true
 redirect_from: []
 tags: []
-title: Nombre polygonal centré
+title: Générateur de nombres polygonaux centrés
 ---
 
-Cliquez sur l’image
+Cliquez sur l’image pour accéder au générateur de nombres polygonaux centrés.
 
-[![Nombre polygonal centré][img_1]][page_html]
+[![Générateur de nombres polygonaux centrés][img_1]][page_html]
 
 [img_1]: ../files/2024-02-08-centered_polygonal_numbers/favicon.svg
 [page_html]: ../files/2024-02-08-centered_polygonal_numbers/centered_polygonal_numbers.html
