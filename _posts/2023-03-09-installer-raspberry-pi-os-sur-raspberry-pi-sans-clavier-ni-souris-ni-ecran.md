@@ -224,8 +224,8 @@ Par exemple RealVNC :
 
 > N.B. Le client VNC installé par défaut sur macOS ne fonctionne pas pour se connecter au serveur VNC du RPi.
 > L’erreur retournée est<br>
-  _Le logiciel de l’ordinateur distant semble ne pas être compatible avec cette version de Partage d’écran._<br>
-  `bash /System/Library/CoreServices/Applications/Screen\ Sharing.app`
+> _Le logiciel de l’ordinateur distant semble ne pas être compatible avec cette version de Partage d’écran._<br>
+> `bash /System/Library/CoreServices/Applications/Screen\ Sharing.app`
 
 ## Enlever les programmes inutiles
 
@@ -376,6 +376,34 @@ tmux set-option -g mouse on
 tmux set-option -g mouse off
 ```
 
+
+```bash
+# https://ostechnix.com/install-tmux-plugin-manager/
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# tmux source ~/.tmux.conf
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
+
+
+``````
+
+
+À voir aussi :
+
+- <https://tmuxcheatsheet.com/>
+- [Tmux has forever changed the way I write code.]
+- [Tutorial Install And Use Tmux on MacOS]
+
+[Tmux has forever changed the way I write code.]: https://youtu.be/DzNmUNvnB04
+[Tutorial Install And Use Tmux on MacOS]: https://blog.eldernode.com/install-and-use-tmux-on-macos/
+
+
 ### GNU screen
 
 > Je préfère ne pas utiliser GNU screen, mais parfois... on a pas le choix.
@@ -490,6 +518,7 @@ cat /etc/os-release
 ```
 
 > Édit du 16 octobre 2019 : Raspbian Buster intègre la version 3.7.3 de Python.
+>
 > Édit du 11 février 2023 : Raspberry Pi OS Bullseye 64 bit intègre la version 3.9.2 de Python.
 
 Raspbian Stretch propose la version 3.5 de Python.
