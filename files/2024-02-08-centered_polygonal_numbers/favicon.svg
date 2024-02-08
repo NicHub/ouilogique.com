@@ -1,39 +1,49 @@
-<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" id="centered_polygonal_number_svg" version="1.1" viewBox="-11.0 -11.0 22 22"
+    width="800px" height="800px" style="background-color: rgba(255, 255, 255, 0);">
 
-<svg width="800px" height="800px" viewBox="-12 -12 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Centered polygonal number</title>
+    <desc>Centered polygonal number</desc>
 
     <style type="text/css">
-        circle, path {
-            stroke: #000;
+        circle,
+        path {
             fill: none;
-            stroke-width: 1.8;
-            stroke-linecap: round;
-            stroke-linejoin: round;
+            stroke-width: 0.5;
+            stroke: #000;
         }
-        @media(prefers-color-scheme: dark) {
-        circle, path {
-            stroke: #fff;
-        }
-        }
-        .l0 {
+
+        .l1 {
             fill: hsl(0, 80%, 80%);
             stroke: hsl(0, 80%, 70%);
         }
 
-        .l1 {
+        .l0 {
             fill: hsl(150, 65%, 67%);
             stroke: hsl(150, 65%, 57%);
         }
-        </style>
 
-    <g>
-        <circle class="l0" cx="0"        cy= "0" r="2.2" />
-        <circle class="l1" cx="-3.99023" cy="-8" r="2.2" />
-        <circle class="l1" cx="-8.65625" cy= "0" r="2.2" />
-        <circle class="l1" cx="-3.99023" cy= "8" r="2.2" />
-        <circle class="l1" cx="5.333984" cy= "8" r="2.2" />
-        <circle class="l1" cx="10.00000" cy= "0" r="2.2" />
-        <circle class="l1" cx="5.333984" cy="-8" r="2.2" />
+        @media(prefers-color-scheme: dark) {
+            .l0 {
+                fill: hsl(0, 80%, 80%);
+                stroke: hsl(0, 80%, 70%);
+            }
+
+            .l1 {
+                fill: hsl(150, 65%, 67%);
+                stroke: hsl(150, 65%, 57%);
+            }
+        }
+    </style>
+
+    <g id="svg_container">
+        <circle class="l0" r="2.6" cx="0.000" cy="0.000" />
+        <circle class="l1" r="2.6" cx="8.250" cy="0.000" />
+        <circle class="l1" r="2.6" cx="4.125" cy="-7.144" />
+        <circle class="l1" r="2.6" cx="-4.125" cy="-7.144" />
+        <circle class="l1" r="2.6" cx="-8.250" cy="-0.000" />
+        <circle class="l1" r="2.6" cx="-4.125" cy="7.144" />
+        <circle class="l1" r="2.6" cx="4.125" cy="7.144" />
     </g>
+
 
 </svg>

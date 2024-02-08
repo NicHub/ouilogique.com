@@ -11,7 +11,10 @@ tags: []
 title: Nombre polygonal centré
 ---
 
-À voir ici :
-[Nombre polygonal centré]
+Cliquez sur l’image
 
-[Nombre polygonal centré]: ../files/2024-02-08-centered_polygonal_numbers/centered_polygonal_numbers.html
+[![Nombre polygonal centré][img_1]][page_html]
+
+[img_1]: ../files/2024-02-08-centered_polygonal_numbers/favicon.svg
+[page_html]: ../files/2024-02-08-centered_polygonal_numbers/centered_polygonal_numbers.html
+
