@@ -132,7 +132,6 @@
         id = "centered_polygonal_number_svg"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
-        shape-rendering="crispEdges"
         viewBox="-40 -40 80 80">
     <!--
         Use this viewBox if the SVG is standalone :
@@ -215,13 +214,6 @@
     "use strict";
 
 
-    function rotatePoint(_x, _y, angle_rad) {
-        const newX = _x * Math.cos(angle_rad) - _y * Math.sin(angle_rad);
-        const newY = _x * Math.sin(angle_rad) + _y * Math.cos(angle_rad);
-        return { x: newX.toFixed(3), y: newY.toFixed(3) };
-    }
-
-
     /**
     *   Initialization of CPN, the object containing
     *   the data for the centered polygonal number.
@@ -272,6 +264,13 @@
     }
 
 
+    function rotatePoint(_x, _y, angle_rad) {
+        const newX = _x * Math.cos(angle_rad) - _y * Math.sin(angle_rad);
+        const newY = _x * Math.sin(angle_rad) + _y * Math.cos(angle_rad);
+        return { x: newX.toFixed(3), y: newY.toFixed(3) };
+    }
+
+
     function compute_centered_polygonal_number(cpn) {
         cpn.side_count = parseInt(cpn.side_count);
         cpn.layer_count = parseInt(cpn.layer_count);
@@ -279,7 +278,6 @@
         cpn.dot_radius = parseFloat(cpn.dot_radius);
 
         // Math stuff.
-        const angle1_deg = 360 / cpn.side_count;
         const angle1_rad = 2 * Math.PI / cpn.side_count;
         const angle2_rad = (Math.PI - angle1_rad) / 2;
         const dist_dot2_dot3 = 2 * cpn.layer_gap * Math.sin(angle1_rad / 2);
@@ -347,7 +345,7 @@
                                 class =  "${layer_class} ${side_class} dottext"
                                     x =  "${cpn.coords[_i].x}"
                                     y =  "${cpn.coords[_i].y}"
-                                            >${_i}</text>\n`;
+                                            >${_i + 1}</text>\n`;
         }
 
         // Add the numerical representation of the Centered Polygonal Number.
