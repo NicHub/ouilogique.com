@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--
+    "THE BEER-WARE LICENSE" (Revision 42):
+    I wrote this file. You can do what you want with this stuff.
+    If we meet some day, and you think this is worth it,
+    you can buy me a beer in return.
+
+    Nicolas Jeanmonod
+    ouilogique.com
+ -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CENTERED POLYGONAL NUMBER</title>
+    <title>CENTERED POLYGONAL NUMBER GENERATOR</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJjZW50ZXJlZF9wb2x5Z29uYWxfbnVtYmVyX3N2ZyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSItMTEuMCAtMTEuMCAyMiAyMiIKICAgIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMCk7Ij4KCiAgICA8dGl0bGU+Q2VudGVyZWQgcG9seWdvbmFsIG51bWJlcjwvdGl0bGU+CiAgICA8ZGVzYz5DZW50ZXJlZCBwb2x5Z29uYWwgbnVtYmVyPC9kZXNjPgoKICAgIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CiAgICAgICAgY2lyY2xlLAogICAgICAgIHBhdGggewogICAgICAgICAgICBmaWxsOiBub25lOwogICAgICAgICAgICBzdHJva2Utd2lkdGg6IDAuNTsKICAgICAgICAgICAgc3Ryb2tlOiAjMDAwOwogICAgICAgIH0KCiAgICAgICAgLmwxIHsKICAgICAgICAgICAgZmlsbDogaHNsKDAsIDgwJSwgODAlKTsKICAgICAgICAgICAgc3Ryb2tlOiBoc2woMCwgODAlLCA3MCUpOwogICAgICAgIH0KCiAgICAgICAgLmwwIHsKICAgICAgICAgICAgZmlsbDogaHNsKDE1MCwgNjUlLCA2NyUpOwogICAgICAgICAgICBzdHJva2U6IGhzbCgxNTAsIDY1JSwgNTclKTsKICAgICAgICB9CgogICAgICAgIEBtZWRpYShwcmVmZXJzLWNvbG9yLXNjaGVtZTogZGFyaykgewogICAgICAgICAgICAubDAgewogICAgICAgICAgICAgICAgZmlsbDogaHNsKDAsIDgwJSwgODAlKTsKICAgICAgICAgICAgICAgIHN0cm9rZTogaHNsKDAsIDgwJSwgNzAlKTsKICAgICAgICAgICAgfQoKICAgICAgICAgICAgLmwxIHsKICAgICAgICAgICAgICAgIGZpbGw6IGhzbCgxNTAsIDY1JSwgNjclKTsKICAgICAgICAgICAgICAgIHN0cm9rZTogaHNsKDE1MCwgNjUlLCA1NyUpOwogICAgICAgICAgICB9CiAgICAgICAgfQogICAgPC9zdHlsZT4KCiAgICA8ZyBpZD0ic3ZnX2NvbnRhaW5lciI+CiAgICAgICAgPGNpcmNsZSBjbGFzcz0ibDAiIHI9IjIuNiIgY3g9IjAuMDAwIiBjeT0iMC4wMDAiIC8+CiAgICAgICAgPGNpcmNsZSBjbGFzcz0ibDEiIHI9IjIuNiIgY3g9IjguMjUwIiBjeT0iMC4wMDAiIC8+CiAgICAgICAgPGNpcmNsZSBjbGFzcz0ibDEiIHI9IjIuNiIgY3g9IjQuMTI1IiBjeT0iLTcuMTQ0IiAvPgogICAgICAgIDxjaXJjbGUgY2xhc3M9ImwxIiByPSIyLjYiIGN4PSItNC4xMjUiIGN5PSItNy4xNDQiIC8+CiAgICAgICAgPGNpcmNsZSBjbGFzcz0ibDEiIHI9IjIuNiIgY3g9Ii04LjI1MCIgY3k9Ii0wLjAwMCIgLz4KICAgICAgICA8Y2lyY2xlIGNsYXNzPSJsMSIgcj0iMi42IiBjeD0iLTQuMTI1IiBjeT0iNy4xNDQiIC8+CiAgICAgICAgPGNpcmNsZSBjbGFzcz0ibDEiIHI9IjIuNiIgY3g9IjQuMTI1IiBjeT0iNy4xNDQiIC8+CiAgICA8L2c+CgoKPC9zdmc+">
 
     <style>
@@ -14,7 +24,7 @@
             padding: 0;
         }
         body {
-            background-color: rgba(200, 200, 200, 1);
+            background-color: rgba(255, 255, 255, 0);
             font-family: monospace;
             margin: 0;
             padding: 0;
@@ -43,26 +53,48 @@
         .header, .controls {
             background-color: rgba(255, 255, 255, 0.7);
         }
-        .controls {
+        .footer {
             align-items: center;
-            border-radius: 20px 20px 0 0;
+            background-color: rgba(200, 200, 200, 0);
             bottom: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            left: 50%;
+            display: absolute;
             margin: 0;
-            padding: 20px 0 10px 0;
             position: fixed;
+            width: 100%;
+        }
+        .controls {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 20px 20px 0 0;
+            margin: 0 auto;
+            max-width:700px;
+            min-width:200px;
+            padding: 20px 0px 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .controls p {
             text-align: center;
-            transform: translateX(-50%);
-            width: 600px;
+            margin: 20px auto 4px;
         }
         .control {
-            display: flex;
-            margin: 2px 0;
+            display: block;
+            margin: 0 auto;
         }
-
+        .control input {
+            max-width:160px;
+            min-width:10px;
+            display: inline-block;
+        }
+        .control label {
+            bottom:4px;
+            display: inline-block;
+            margin: 0 4px 0 0;
+            max-width:150px;
+            min-width:10px;
+            padding: 0;
+            position: relative;
+        }
         .header {
             background-color: rgba(255, 255, 255, 0.5);
             border-radius: 0 0 20px 20px;
@@ -91,7 +123,7 @@
 <body>
 
     <div class="header">
-        <h1>Centered polygonal number</h1>
+        <h1>Centered polygonal number generator</h1>
         <p><a tabindex="-1" target="_blank" href="https://en.wikipedia.org/wiki/Centered_polygonal_number">https://en.wikipedia.org/wiki/Centered_polygonal_number</a></p>
         <p><a tabindex="-1" target="_blank" href="https://stackoverflow.com/q/77922222/3057377">https://stackoverflow.com/q/77922222/3057377</a></p>
     </div>
@@ -102,19 +134,29 @@
         xmlns="http://www.w3.org/2000/svg"
         shape-rendering="crispEdges"
         viewBox="-40 -40 80 80">
+    <!--
+        Use this viewBox if the SVG is standalone :
+        viewBox="-20 -20 40 40"
+    -->
 
-        <!--
-            Use this viewBox if the SVG is standalone.
-            viewBox="-20 -20 40 40"
-         -->
-
-        <!--
+    <!--
         Idea from:
         https://stackoverflow.com/q/77922222/3057377
 
         See also:
         https://en.wikipedia.org/wiki/Centered_polygonal_number
     -->
+
+    <!--
+        "THE BEER-WARE LICENSE" (Revision 42):
+        I wrote this file. You can do what you want with this stuff.
+        If we meet some day, and you think this is worth it,
+        you can buy me a beer in return.
+
+        Nicolas Jeanmonod
+        ouilogique.com
+    -->
+
 
         <title>Centered polygonal number</title>
         <desc>Centered polygonal number</desc>
@@ -322,13 +364,15 @@
 
         </svg>
 
-<div class="controls">
-    <div class="control"><label for="display_ids"></label><input class="npn" id="display_ids" type="checkbox"></div>
-    <div class="control"><label for="side_count" ></label><input class="npn" id="side_count"  type="range" min="3" max="20" step="1"   value="6"></div>
-    <div class="control"><label for="layer_count"></label><input class="npn" id="layer_count" type="range" min="1" max="32" step="1"   value="4"></div>
-    <div class="control"><label for="layer_gap"  ></label><input class="npn" id="layer_gap"   type="range" min="1" max="10" step="1"   value="3"></div>
-    <div class="control"><label for="dot_radius" ></label><input class="npn" id="dot_radius"  type="range" min="0" max= "3" step="0.1" value="1"></div>
-    <p style="width:500px">Hint: Press the <kbd>Tab</kbd> key to select the controls<br>and set the values with theses keys<br><kbd>←</kbd> <kbd>space</kbd> <kbd>→</kbd></p>
+<div class="footer">
+    <div class="controls">
+        <div class="control"><label for="display_ids"></label><input class="npn" id="display_ids" type="checkbox"></div>
+        <div class="control"><label for="side_count" ></label><input class="npn" id="side_count"  type="range" min="3" max="20" step="1"   value="6"></div>
+        <div class="control"><label for="layer_count"></label><input class="npn" id="layer_count" type="range" min="1" max="32" step="1"   value="4"></div>
+        <div class="control"><label for="layer_gap"  ></label><input class="npn" id="layer_gap"   type="range" min="1" max="10" step="1"   value="3"></div>
+        <div class="control"><label for="dot_radius" ></label><input class="npn" id="dot_radius"  type="range" min="0" max= "3" step="0.1" value="1"></div>
+        <p>Hint: Press the <kbd>Tab</kbd> key to select the controls<br>and set the values with these keys<br><kbd>←</kbd> <kbd>space</kbd> <kbd>→</kbd></p>
+    </div>
 </div>
 
 <script>
