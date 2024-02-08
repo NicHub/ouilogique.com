@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTERED POLYGONAL NUMBER</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PgoKPHN2ZyB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIHZpZXdCb3g9Ii0xMiAtMTIgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCiAgICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgogICAgICAgIGNpcmNsZSwgcGF0aCB7CiAgICAgICAgICAgIHN0cm9rZTogIzAwMDsKICAgICAgICAgICAgZmlsbDogbm9uZTsKICAgICAgICAgICAgc3Ryb2tlLXdpZHRoOiAxLjg7CiAgICAgICAgICAgIHN0cm9rZS1saW5lY2FwOiByb3VuZDsKICAgICAgICAgICAgc3Ryb2tlLWxpbmVqb2luOiByb3VuZDsKICAgICAgICB9CiAgICAgICAgQG1lZGlhKHByZWZlcnMtY29sb3Itc2NoZW1lOiBkYXJrKSB7CiAgICAgICAgY2lyY2xlLCBwYXRoIHsKICAgICAgICAgICAgc3Ryb2tlOiAjZmZmOwogICAgICAgIH0KICAgICAgICB9CiAgICAgICAgLmwwIHsKICAgICAgICAgICAgZmlsbDogaHNsKDAsIDgwJSwgODAlKTsKICAgICAgICAgICAgc3Ryb2tlOiBoc2woMCwgODAlLCA3MCUpOwogICAgICAgIH0KCiAgICAgICAgLmwxIHsKICAgICAgICAgICAgZmlsbDogaHNsKDE1MCwgNjUlLCA2NyUpOwogICAgICAgICAgICBzdHJva2U6IGhzbCgxNTAsIDY1JSwgNTclKTsKICAgICAgICB9CiAgICAgICAgPC9zdHlsZT4KCiAgICA8Zz4KICAgICAgICA8Y2lyY2xlIGNsYXNzPSJsMCIgY3g9IjAiICAgICAgICBjeT0gIjAiIHI9IjIuMiIgLz4KICAgICAgICA8Y2lyY2xlIGNsYXNzPSJsMSIgY3g9Ii0zLjk5MDIzIiBjeT0iLTgiIHI9IjIuMiIgLz4KICAgICAgICA8Y2lyY2xlIGNsYXNzPSJsMSIgY3g9Ii04LjY1NjI1IiBjeT0gIjAiIHI9IjIuMiIgLz4KICAgICAgICA8Y2lyY2xlIGNsYXNzPSJsMSIgY3g9Ii0zLjk5MDIzIiBjeT0gIjgiIHI9IjIuMiIgLz4KICAgICAgICA8Y2lyY2xlIGNsYXNzPSJsMSIgY3g9IjUuMzMzOTg0IiBjeT0gIjgiIHI9IjIuMiIgLz4KICAgICAgICA8Y2lyY2xlIGNsYXNzPSJsMSIgY3g9IjEwLjAwMDAwIiBjeT0gIjAiIHI9IjIuMiIgLz4KICAgICAgICA8Y2lyY2xlIGNsYXNzPSJsMSIgY3g9IjUuMzMzOTg0IiBjeT0iLTgiIHI9IjIuMiIgLz4KICAgIDwvZz4KCjwvc3ZnPgo=">
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #FFF;
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-transform: uppercase;
+        }
+        svg {
+            height: 100%;
+            left: 0;
+            margin: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+        }
+        label {
+            display: inline-block;
+            margin: 0 10px 0 0;
+            text-align: right;
+            width: 170px;
+        }
+        input {
+            width: 300px;
+        }
+        .header, .controls {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        .controls {
+            align-items: center;
+            border-radius: 20px 20px 0 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            left: 50%;
+            margin: 0;
+            padding: 20px 0 10px 0;
+            position: fixed;
+            text-align: center;
+            transform: translateX(-50%);
+            width: 600px;
+        }
+        .control {
+            margin: 2px 0;
+            display: flex;
+        }
+
+        .header {
+            position: sticky;
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            top: 0;
+            width: 50%;
+            margin: 0 auto;
+        }
+        kbd {
+            border: 1px solid #AAA;
+            border-radius: 10%;
+            padding: 0 3px !important;
+            margin: 0;
+            min-width: 40px;
+            display: inline-block;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Centered polygonal number</h1>
+        <p><a tabindex="-1" target="_blank" href="https://en.wikipedia.org/wiki/Centered_polygonal_number">https://en.wikipedia.org/wiki/Centered_polygonal_number</a></p>
+        <p><a tabindex="-1" target="_blank" href="https://stackoverflow.com/q/77922222/3057377">https://stackoverflow.com/q/77922222/3057377</a></p>
+    </div>
+
+    <svg
+        id = "centered_polygonal_number_svg"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        shape-rendering="crispEdges"
+        viewBox="-40 -40 80 80">
+
+        <!--
+            Use this viewBox if the SVG is standalone.
+            viewBox="-20 -20 40 40"
+         -->
+
+        <!--
+        Idea from:
+        https://stackoverflow.com/q/77922222/3057377
+
+        See also:
+        https://en.wikipedia.org/wiki/Centered_polygonal_number
+    -->
+
+        <title>Centered polygonal number</title>
+        <desc>Centered polygonal number</desc>
+
+
+        <style>
+            /*
+            Style can be applied to individual dots by targeting their IDs.
+            For instance, the 10th dot can be accessed as follows:
+            #c10 { fill: red; }
+
+            If you want to display the IDs themselves, comment the `display none` statement below.
+
+            Style can also be applied to the dots within a specific layer by targeting their class.
+            For instance, the dots on the 2nd layer can be accessed as follows:
+            .l2 { fill: hsl(110, 45%, 75%); stroke: hsl(110, 45%, 65%); }
+
+            The last layer has an extra class called `.llast`.
+
+            Style can also be applied to slices.
+            For instance, the slices 1 to 6 can be accessed as follow:
+            .s1,.s2,.s3,.s4,.s5,.s6{ fill: hsl(0, 0%, 95%); stroke: hsl(0, 0%, 85%); }
+            */
+            svg { background-color: rgba(255, 255, 255, 0); }
+            text { text-anchor: middle; font-size: 4px; font-family: monospace; fill: hsl(0, 0%, 30%); z-index: 1000; dominant-baseline: middle; text-shadow: #FFF 0 0 20px; }
+            text.dottext {
+                fill: hsl(0, 0%, 0%);
+                font-size: 1px;
+                stroke: none;
+            }
+            circle { fill: hsl(0, 0%, 30%); stroke: hsl(0, 0%, 70%); stroke-width: 0.2; opacity: 0.6; }
+            .l0 { fill: hsl(0, 80%, 80%); stroke: hsl(0, 80%, 70%); }
+            .l1 { fill: hsl(150, 65%, 67%); stroke: hsl(150, 65%, 57%); }
+            .l2 { fill: hsl(110, 45%, 75%); stroke: hsl(110, 45%, 65%); }
+            .l3 { fill: hsl(255, 50%, 80%); stroke: hsl(255, 50%, 70%); }
+            .l4 { fill: hsl(120, 30%, 48%); stroke: hsl(120, 30%, 38%); }
+            .llast { fill: hsl(90, 100%, 50%); stroke: hsl(90, 100%, 40%); }
+            /*
+            .s1,.s2,.s3,.s4,.s5,.s6{ fill: hsl(0, 0%, 95%); stroke: hsl(0, 0%, 85%); }
+            */
+
+            @media print {
+                @page {
+                    size: 40mm 40mm;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        </style>
+
+        <g id="svg_container"></g>
+
+        <script type="application/ecmascript">
+    <![CDATA[
+
+    "use strict";
+
+
+    function rotatePoint(_x, _y, angle_rad) {
+        const newX = _x * Math.cos(angle_rad) - _y * Math.sin(angle_rad);
+        const newY = _x * Math.sin(angle_rad) + _y * Math.cos(angle_rad);
+        return { x: newX.toFixed(3), y: newY.toFixed(3) };
+    }
+
+
+    /**
+    *   Initialization of CPN, the object containing
+    *   the data for the centered polygonal number.
+    *   When calling the function `centered_polygonal_number`,
+    *   the first 4 properties must be provided.
+    *   The other properties are then computed.
+    */
+    let CPN = {
+        side_count  : 7,
+        layer_count : 5,
+        layer_gap   : 3,
+        dot_radius  : 1,
+        display_ids : false,
+        dot_count   : null,
+        coords      : [{
+            is_last_layer : null,
+                    layer : null,
+                    side : null,
+                    dot : null,
+                        x : null,
+                        y : null,
+        }],
+    };
+
+
+    /**
+    * Optional: Override CPN initial values with GET parameters if present.
+    * Example URL:
+    * centered_polygonal_numbers.svg?side_count=5&layer_count=3&layer_gap=2&dot_radius=0.5
+    */
+    const urlParams = new URLSearchParams(window.location.search);
+    for (const _p of urlParams) {
+        if (CPN.hasOwnProperty(_p[0])) {
+            CPN[_p[0]] = _p[1];
+        };
+    }
+
+
+    /**
+    * Draw with initial values.
+    */
+    centered_polygonal_number(CPN);
+
+
+    function centered_polygonal_number(cpn) {
+        cpn = compute_centered_polygonal_number(cpn);
+        drawSVG(cpn);
+    }
+
+
+    function compute_centered_polygonal_number(cpn) {
+        cpn.side_count = parseInt(cpn.side_count);
+        cpn.layer_count = parseInt(cpn.layer_count);
+        cpn.layer_gap = parseFloat(cpn.layer_gap);
+        cpn.dot_radius = parseFloat(cpn.dot_radius);
+
+        // Math stuff.
+        const angle1_deg = 360 / cpn.side_count;
+        const angle1_rad = 2 * Math.PI / cpn.side_count;
+        const angle2_rad = (Math.PI - angle1_rad) / 2;
+        const dist_dot2_dot3 = 2 * cpn.layer_gap * Math.sin(angle1_rad / 2);
+        const dx = -dist_dot2_dot3 * Math.cos(angle2_rad);
+        const dy = -dist_dot2_dot3 * Math.sin(angle2_rad); // SVG y sign is opposite to usual carthesian repr.
+        cpn.dot_count = cpn.side_count * cpn.layer_count / 2 * (cpn.layer_count - 1) + 1;
+
+        // Calculate rotation offset to ensure that the polygon lies flat on one side.
+        const rot_offset_flat =
+            (cpn.side_count - 2) % 4 === 0
+            ? 0
+            : (Math.PI - angle1_rad) / 2;
+
+        // Calculate the coordinates of the dots and some metadata.
+        cpn.coords = [];
+        for (let _i = 0; _i < cpn.layer_count; _i++) {
+            // Iterate by layer:
+            // - All layers: Iterate from 0 to cpn.layer_count - 1.
+            const is_last_layer = _i == cpn.layer_count - 1;
+            const jmax = _i > 0 ? cpn.side_count : 1;
+            const kmax = _i > 0 ? _i - 1 : 0;
+            for (let _j = 0; _j < jmax; _j++) {
+                // Iterate by polygon side:
+                // - First layer: Iterate once.
+                // - Other layers: Iterate from 0 to to cpn.side_count - 1.
+                const angle_rad = -angle1_rad * _j + rot_offset_flat;
+                for (let _k = 0; _k <= kmax; _k++) {
+                    // Iterate by dot.
+                    // - First layer: Iterate once.
+                    // - Other layers: Iterate from 0 to to layer_index - 1.
+                    const _x = _i * cpn.layer_gap + _k * dx;
+                    const _y = _k * dy;
+                    const xy = rotatePoint(_x, _y, angle_rad);
+                    cpn.coords.push({
+                is_last_layer : is_last_layer,
+                        layer : _i,
+                         side : _j,
+                          dot : _k,
+                            x : xy.x,
+                            y : xy.y,
+                    });
+                }
+            }
+        }
+        return cpn;
+    }
+
+
+    function drawSVG(cpn) {
+        let svg_string = ``;
+
+        // Add the dots and the text on them if CPN.display_ids is true.
+        for (let _i = 0; _i < cpn.coords.length; _i++) {
+            const layer_class = cpn.coords[_i].is_last_layer
+                ? `l${cpn.coords[_i].layer} llast`
+                : `l${cpn.coords[_i].layer}`;
+            const side_class = `s${cpn.coords[_i].side}`;
+            svg_string += `<circle id = "c${_i}"
+                                class = "${layer_class} ${side_class}"
+                                   cx =  "${cpn.coords[_i].x}"
+                                   cy =  "${cpn.coords[_i].y}"
+                                    r =  "${cpn.dot_radius}" />\n`
+            if (! CPN.display_ids) { continue };
+            svg_string +=   `<text id = "t${_i}"
+                                class =  "${layer_class} ${side_class} dottext"
+                                    x =  "${cpn.coords[_i].x}"
+                                    y =  "${cpn.coords[_i].y}"
+                                            >${_i}</text>\n`;
+        }
+
+        // Add the numerical representation of the Centered Polygonal Number.
+        svg_string += `<text id="dot_count" x="0" y="-16">${cpn.dot_count}</text>`;
+
+        // Update display.
+        const svg_container = document.getElementById("svg_container")
+        svg_container.innerHTML = svg_string;
+    }
+
+
+    ]]>
+            </script>
+
+        </svg>
+
+<div class="controls">
+    <div class="control"><label for="display_ids"></label><input class="npn" id="display_ids" type="checkbox"></div>
+    <div class="control"><label for="side_count" ></label><input class="npn" id="side_count"  type="range" min="3" max="20" step="1"   value="6" class="slider"></div>
+    <div class="control"><label for="layer_count"></label><input class="npn" id="layer_count" type="range" min="1" max="32" step="1"   value="4" class="slider"></div>
+    <div class="control"><label for="layer_gap"  ></label><input class="npn" id="layer_gap"   type="range" min="1" max="10" step="1"   value="3" class="slider"></div>
+    <div class="control"><label for="dot_radius" ></label><input class="npn" id="dot_radius"  type="range" min="0" max= "3" step="0.1" value="1" class="slider"></div>
+    <p style="width:500px">Hint: Press the <kbd>Tab</kbd> key to select the controls<br>and set the values with theses keys<br><kbd>←</kbd> <kbd>space</kbd> <kbd>→</kbd></p>
+</div>
+
+<script>
+
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+        update_CPN_and_label_all();
+    });
+
+
+    function update_CPN_and_label_all() {
+        const inputs = document.querySelectorAll("input.npn");
+        inputs.forEach(function(input) {
+            update_CPN_and_label_single(input);
+        });
+    }
+
+    function update_CPN_and_label_single(input) {
+        // Get the value of the input.
+        const val =
+        input.type === "checkbox"
+        ? input.checked
+        : input.value;
+
+        // Update the drawing.
+        CPN[input.id] = val;
+        centered_polygonal_number(CPN);
+
+        // Update the label.
+        const lbl = document.querySelector(`label[for="${input.id}"]`);
+        lbl.textContent = `${input.id} = ${val}`;
+    }
+
+
+    side_count.oninput = function() { update_CPN_and_label_single(this); }
+    layer_count.oninput = function() { update_CPN_and_label_single(this); }
+    layer_gap.oninput = function() { update_CPN_and_label_single(this); }
+    dot_radius.oninput = function() { update_CPN_and_label_single(this); }
+    display_ids.oninput = function() { update_CPN_and_label_single(this); }
+
+
+</script>
+
+</body>
+
+</html>
