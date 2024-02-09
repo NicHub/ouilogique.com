@@ -16,5 +16,5 @@ Cliquez sur l’image pour accéder au générateur de nombres polygonaux centr�
 [![Générateur de nombres polygonaux centrés][img_1]][page_html]
 
 [img_1]: ../files/2024-02-08-centered_polygonal_numbers/favicon.svg
-[page_html]: ../files/2024-02-08-centered_polygonal_numbers/centered_polygonal_numbers.html
+[page_html]: https://nichub.github.io/centered_polygonal_number_generator/centered_polygonal_number_generator.html
 
