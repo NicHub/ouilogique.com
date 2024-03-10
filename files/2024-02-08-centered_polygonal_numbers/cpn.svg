@@ -1,0 +1,164 @@
+
+<svg
+id="centered_polygonal_number_svg"
+version="1.1"
+xmlns="http://www.w3.org/2000/svg"
+viewBox="-40 -20 80 40">
+<!--
+Use this viewBox if the SVG is standalone :
+viewBox="-20 -20 40 40"
+-->
+
+<!--
+Idea from:
+https://stackoverflow.com/q/77922222/3057377
+
+See also:
+https://en.wikipedia.org/wiki/Centered_polygonal_number
+-->
+
+<!--
+"THE BEER-WARE LICENSE" (Revision 42):
+I wrote this file. You can do what you want with this stuff.
+If we meet some day, and you think this is worth it,
+you can buy me a beer in return.
+
+Nicolas Jeanmonod
+ouilogique.com
+-->
+
+
+<title>Centered polygonal number</title>
+<desc>Centered polygonal number</desc>
+
+
+<style>
+    /*
+    Style can be applied to individual dots by targeting their IDs.
+    For instance, the 10th dot can be accessed as follows:
+    #c10 { fill: red; }
+
+    Style can also be applied to the dots within a specific layer by targeting their class.
+    For instance, the dots on the 2nd layer can be accessed as follows:
+    .l2 { fill: hsl(110, 45%, 75%); stroke: hsl(110, 45%, 65%); }
+
+    The last layer has an extra class called `.llast`.
+
+    Style can also be applied to slices.
+    For instance, the slices 1 to 6 can be accessed as follow:
+    .s1,.s2,.s3,.s4,.s5,.s6{ fill: hsl(0, 0%, 95%); stroke: hsl(0, 0%, 85%); }
+    */
+    svg { background-color: rgba(255, 255, 255, 0); }
+    text {
+        text-anchor: middle;
+        font-size: 4px;
+        font-family: monospace;
+        fill: hsl(0, 0%, 30%);
+        z-index: 1000;
+        /*
+        To remove “Unknown property” warning in VSCode,
+        add `dominant-baseline` to css.lint.validProperties
+        in Settings (cmd ,).
+        */
+        dominant-baseline: middle;
+        text-shadow: #fff 0 0 20px;
+    }
+
+    text.dottext {
+        fill: hsl(0, 0%, 0%);
+        font-size: 1px;
+        stroke: none;
+    }
+    circle { fill: hsl(0, 0%, 30%); stroke: hsl(0, 0%, 70%); stroke-width: 0.2; opacity: 0.6; }
+    .l0 { fill: hsl(0, 80%, 80%); stroke: hsl(0, 80%, 70%); }
+    .l1 { fill: hsl(150, 65%, 67%); stroke: hsl(150, 65%, 57%); }
+    .l2 { fill: hsl(110, 45%, 75%); stroke: hsl(110, 45%, 65%); }
+    .l3 { fill: hsl(255, 50%, 80%); stroke: hsl(255, 50%, 70%); }
+    .l4 { fill: hsl(120, 30%, 48%); stroke: hsl(120, 30%, 38%); }
+    .llast { fill: hsl(90, 100%, 50%); stroke: hsl(90, 100%, 40%); }
+    /*
+    .s1,.s2,.s3,.s4,.s5,.s6{ fill: hsl(0, 0%, 95%); stroke: hsl(0, 0%, 85%); }
+    */
+
+    @media print {
+        @page {
+            size: 200mm 200mm;
+            margin: 0;
+            padding: 0;
+        }
+    }
+</style>
+
+<g xmlns="http://www.w3.org/2000/svg" id="svg_container"><circle id="c0" class="l0 s0" cx="0.000" cy="0.000" r="1"/>
+    <circle id="c1" class="l1 s0" cx="1.302" cy="2.703" r="1"/>
+    <circle id="c2" class="l1 s1" cx="2.925" cy="0.668" r="1"/>
+    <circle id="c3" class="l1 s2" cx="2.345" cy="-1.870" r="1"/>
+    <circle id="c4" class="l1 s3" cx="0.000" cy="-3.000" r="1"/>
+    <circle id="c5" class="l1 s4" cx="-2.345" cy="-1.870" r="1"/>
+    <circle id="c6" class="l1 s5" cx="-2.925" cy="0.668" r="1"/>
+    <circle id="c7" class="l1 s6" cx="-1.302" cy="2.703" r="1"/>
+    <circle id="c8" class="l2 s0" cx="2.603" cy="5.406" r="1"/>
+    <circle id="c9" class="l2 s0" cx="4.226" cy="3.370" r="1"/>
+    <circle id="c10" class="l2 s1" cx="5.850" cy="1.335" r="1"/>
+    <circle id="c11" class="l2 s1" cx="5.270" cy="-1.203" r="1"/>
+    <circle id="c12" class="l2 s2" cx="4.691" cy="-3.741" r="1"/>
+    <circle id="c13" class="l2 s2" cx="2.345" cy="-4.870" r="1"/>
+    <circle id="c14" class="l2 s3" cx="0.000" cy="-6.000" r="1"/>
+    <circle id="c15" class="l2 s3" cx="-2.345" cy="-4.870" r="1"/>
+    <circle id="c16" class="l2 s4" cx="-4.691" cy="-3.741" r="1"/>
+    <circle id="c17" class="l2 s4" cx="-5.270" cy="-1.203" r="1"/>
+    <circle id="c18" class="l2 s5" cx="-5.850" cy="1.335" r="1"/>
+    <circle id="c19" class="l2 s5" cx="-4.226" cy="3.370" r="1"/>
+    <circle id="c20" class="l2 s6" cx="-2.603" cy="5.406" r="1"/>
+    <circle id="c21" class="l2 s6" cx="-0.000" cy="5.406" r="1"/>
+    <circle id="c22" class="l3 s0" cx="3.905" cy="8.109" r="1"/>
+    <circle id="c23" class="l3 s0" cx="5.528" cy="6.073" r="1"/>
+    <circle id="c24" class="l3 s0" cx="7.151" cy="4.038" r="1"/>
+    <circle id="c25" class="l3 s1" cx="8.774" cy="2.003" r="1"/>
+    <circle id="c26" class="l3 s1" cx="8.195" cy="-0.535" r="1"/>
+    <circle id="c27" class="l3 s1" cx="7.616" cy="-3.073" r="1"/>
+    <circle id="c28" class="l3 s2" cx="7.036" cy="-5.611" r="1"/>
+    <circle id="c29" class="l3 s2" cx="4.691" cy="-6.741" r="1"/>
+    <circle id="c30" class="l3 s2" cx="2.345" cy="-7.870" r="1"/>
+    <circle id="c31" class="l3 s3" cx="0.000" cy="-9.000" r="1"/>
+    <circle id="c32" class="l3 s3" cx="-2.345" cy="-7.870" r="1"/>
+    <circle id="c33" class="l3 s3" cx="-4.691" cy="-6.741" r="1"/>
+    <circle id="c34" class="l3 s4" cx="-7.036" cy="-5.611" r="1"/>
+    <circle id="c35" class="l3 s4" cx="-7.616" cy="-3.073" r="1"/>
+    <circle id="c36" class="l3 s4" cx="-8.195" cy="-0.535" r="1"/>
+    <circle id="c37" class="l3 s5" cx="-8.774" cy="2.003" r="1"/>
+    <circle id="c38" class="l3 s5" cx="-7.151" cy="4.038" r="1"/>
+    <circle id="c39" class="l3 s5" cx="-5.528" cy="6.073" r="1"/>
+    <circle id="c40" class="l3 s6" cx="-3.905" cy="8.109" r="1"/>
+    <circle id="c41" class="l3 s6" cx="-1.302" cy="8.109" r="1"/>
+    <circle id="c42" class="l3 s6" cx="1.302" cy="8.109" r="1"/>
+    <circle id="c43" class="l4 llast s0" cx="5.207" cy="10.812" r="1"/>
+    <circle id="c44" class="l4 llast s0" cx="6.830" cy="8.776" r="1"/>
+    <circle id="c45" class="l4 llast s0" cx="8.453" cy="6.741" r="1"/>
+    <circle id="c46" class="l4 llast s0" cx="10.076" cy="4.706" r="1"/>
+    <circle id="c47" class="l4 llast s1" cx="11.699" cy="2.670" r="1"/>
+    <circle id="c48" class="l4 llast s1" cx="11.120" cy="0.132" r="1"/>
+    <circle id="c49" class="l4 llast s1" cx="10.541" cy="-2.406" r="1"/>
+    <circle id="c50" class="l4 llast s1" cx="9.961" cy="-4.944" r="1"/>
+    <circle id="c51" class="l4 llast s2" cx="9.382" cy="-7.482" r="1"/>
+    <circle id="c52" class="l4 llast s2" cx="7.036" cy="-8.611" r="1"/>
+    <circle id="c53" class="l4 llast s2" cx="4.691" cy="-9.741" r="1"/>
+    <circle id="c54" class="l4 llast s2" cx="2.345" cy="-10.870" r="1"/>
+    <circle id="c55" class="l4 llast s3" cx="0.000" cy="-12.000" r="1"/>
+    <circle id="c56" class="l4 llast s3" cx="-2.345" cy="-10.870" r="1"/>
+    <circle id="c57" class="l4 llast s3" cx="-4.691" cy="-9.741" r="1"/>
+    <circle id="c58" class="l4 llast s3" cx="-7.036" cy="-8.611" r="1"/>
+    <circle id="c59" class="l4 llast s4" cx="-9.382" cy="-7.482" r="1"/>
+    <circle id="c60" class="l4 llast s4" cx="-9.961" cy="-4.944" r="1"/>
+    <circle id="c61" class="l4 llast s4" cx="-10.541" cy="-2.406" r="1"/>
+    <circle id="c62" class="l4 llast s4" cx="-11.120" cy="0.132" r="1"/>
+    <circle id="c63" class="l4 llast s5" cx="-11.699" cy="2.670" r="1"/>
+    <circle id="c64" class="l4 llast s5" cx="-10.076" cy="4.706" r="1"/>
+    <circle id="c65" class="l4 llast s5" cx="-8.453" cy="6.741" r="1"/>
+    <circle id="c66" class="l4 llast s5" cx="-6.830" cy="8.776" r="1"/>
+    <circle id="c67" class="l4 llast s6" cx="-5.207" cy="10.812" r="1"/>
+    <circle id="c68" class="l4 llast s6" cx="-2.603" cy="10.812" r="1"/>
+    <circle id="c69" class="l4 llast s6" cx="-0.000" cy="10.812" r="1"/>
+    <circle id="c70" class="l4 llast s6" cx="2.603" cy="10.812" r="1"/>
+    <rect x="-8px" y="-19.4px" width="16px" height="6px" fill="rgba(255, 255, 255, 0.5)" stroke="none" stroke-width="0"/><text id="dot_count" x="0" y="-16">71</text></g>
+</svg>
