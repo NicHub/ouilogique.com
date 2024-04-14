@@ -41,18 +41,21 @@ Pour la quatrième version, je ne génère plus le PWM des servos avec l’ESP32
 
 <iframe width="799" height="449" src="https://www.youtube-nocookie.com/embed/1ll8JVwJC50?si=UcQgFnI2AXPPRVbU" title="YouTube video player" frameborder="0" allow="web-share" allowfullscreen></iframe>
 
-> Changement de bande adhésive pour tenir le câble du Nunshunk.
-> Le fil rouge à gauche du breadboard ne sert à rien.
+<br>
+
+> Changement de bande adhésive pour tenir le câble du Nunshunk et ajout d’un condensateur de 10 µF entre la broches RST et GND qui permet de [ne plus être obligé de presser sur BOOT lorsqu’on flashe l’ESP].
+
+[ne plus être obligé de presser sur BOOT lorsqu’on flashe l’ESP]: ../ne-pressez-plus-sur-boot-pour-flasher-un-esp/
 
 [![Plateforme de Stewart — ouilogique.com][i10]{:style="width:100%;"}][i10]
 
-[i10]: ../files/2019-03-27-plateforme-de-stewart-esp32/images/2023-01-30-proto-plateforme-de-stewart_001.jpg
+[i10]: ../files/2019-03-27-plateforme-de-stewart-esp32/images/2024-04-14-proto-plateforme-de-stewart_001.jpg
 
 [![Plateforme de Stewart — ouilogique.com][i11]{:style="width:100%;"}][i11]
 
 <!-- Layout 2×2 -->
 
-[i11]: ../files/2019-03-27-plateforme-de-stewart-esp32/images/2023-01-30-proto-plateforme-de-stewart_002.jpg
+[i11]: ../files/2019-03-27-plateforme-de-stewart-esp32/images/2024-04-14-proto-plateforme-de-stewart_002.jpg
 
 [![Plateforme de Stewart — ouilogique.com][i12]{:style="width:50%; float:left"}][i12]
 
