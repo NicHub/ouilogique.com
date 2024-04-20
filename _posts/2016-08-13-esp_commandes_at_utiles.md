@@ -16,6 +16,11 @@ Les commandes présentées télégraphiquement ici sont tirées des pages :
 -   <https://alselectro.wordpress.com/2015/05/05/wifi-module-esp8266-1-getting-started-with-at-commands/>
 -   <https://alselectro.wordpress.com/2015/05/13/wifi-module-esp8266-2-tcp-client-server-mode/>
 
+Voir aussi :
+
+-   <../esp8266-01/#programmation-avec-descommandesat>
+-   <https://docs.espressif.com/projects/esp-at/en/latest/esp32/AT_Command_Set/index.html>
+
 ---
 
 ## Get status
@@ -48,12 +53,6 @@ AT+GMR
 AT+CIOBAUD?
 ```
 
-## Mode of operation of the module
-
-```bash
-AT+CWMODE?
-```
-
 ## List access points in range
 
 ```bash
@@ -80,20 +79,7 @@ AT+CWJAP="×××","×××"
 AT+CWQAP
 ```
 
-## Current IP
-
-```bash
-AT+CIFSR
-```
-
-```bash
-> +CIFSR:STAIP,"192.168.1.132"
-> +CIFSR:STAMAC,"18:fe:34:d4:8e:d5"
->
-> OK
-```
-
-## ESP on STation mode
+## ESP on Station mode
 
 ```bash
 AT+CWMODE?
