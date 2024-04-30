@@ -206,7 +206,7 @@ Robots à chaînes exotiques, Jean-Pierre Merlet, INRIA Sophia-Antipolis
 
 ## MECCAD Ball and plate
 
-https://youtu.be/bEM5AywnzKg
+-   https://youtu.be/bEM5AywnzKg
 
 ## SPRK: A Low-Cost Stewart Platform For Motion Study In Surgical Robotics
 
@@ -438,9 +438,7 @@ Servos: TowerPro MG995
 -   <https://youtu.be/VeD4_FghKhQ>
 -   <https://youtu.be/PzOGIeGEyHY>
 -   <https://upcommons.upc.edu/bitstream/handle/2117/101560/Memoria_TFG_Aitor_Ramirez.pdf?sequence=1&isAllowed=y>
-
-[Fast Programming of 6-DOF Hexapod 6-Axis Motion Stewart Platform: Software, Mechanics, Controller](https://youtu.be/hkoTRNfivbU)
-
-[Stewart Platform Joystick](https://youtu.be/fDgqAfzSy0c)
-
-[I Built a Ball Balancing Robot](https://youtu.be/v4F-cGDGiEw)
+-   [Fast Programming of 6-DOF Hexapod 6-Axis Motion Stewart Platform: Software, Mechanics, Controller](https://youtu.be/hkoTRNfivbU)
+-   [Stewart Platform Joystick](https://youtu.be/fDgqAfzSy0c)
+-   [I Built a Ball Balancing Robot](https://youtu.be/v4F-cGDGiEw)
+-   [How Flight Simulators Trick Your Brain](https://www.youtube.com/watch?v=pfTdJD2OakA)
