@@ -136,3 +136,76 @@ Comme le serveur bloque la ligne de commande, il est préférable de l’utilise
 
 [1]: ../installer-raspberry-pi-os-sur-raspberry-pi-sans-clavier-ni-souris-ni-ecran/
 [2]: ../installer-raspberry-pi-os-sur-raspberry-pi-sans-clavier-ni-souris-ni-ecran/#gnu-screen
+
+---
+
+## Préparer un appareil Android
+
+source : <https://www.xda-developers.com/install-adb-windows-macos-linux/>
+
+-   Activer les options de développement
+-   Activer le débogage USB
+
+## Préparer un Mac
+
+Installer ADB (Android Debug Bridge)
+
+```bash
+brew update && brew upgrade
+brew install android-platform-tools
+adb --help | less
+```
+
+```bash
+adb devices
+
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+List of devices attached
+R3CR306GCCY	unauthorized
+```
+
+Autoriser sur l’appareil Android
+
+```bash
+adb devices
+
+List of devices attached
+R3CR306GCCY	device
+```
+
+```bash
+adb shell # CTRL D pour sortir
+adb pull /storage/emulated/0/DCIM/Screenshots
+adb pull /storage/emulated/0/DCIM/Camera/20240529_105639.heic
+adb pull /sdcard/DCIM/Camera/
+```
+
+## Voir aussi
+
+<https://github.com/Genymobile/scrcpy>
+
+brew install scrcpy
+
+
+https://www.lesimprimantes3d.fr/forum/topic/47189-tuto-octolapse-pour-des-appareils-android-non-support%C3%A9s-par-gphoto2/
+
+adb shell am start -a android.media.action.IMAGE_CAPTURE
+adb shell "am start -a android.media.action.STILL_IMAGE_CAMERA"
+
+
+
+adb shell "input keyevent KEYCODE_WAKEUP"  #...................... déverrouillage
+adb shell "input keyevent KEYCODE_SLEEP" #........................ verrouillage
+adb shell "input keyevent KEYCODE_HOME" #......................... écran d'accueil
+adb shell "input keyevent KEYCODE_CAMERA" #....................... prise de la photo
+adb shell "input keyevent KEYCODE_FOCUS" #........................ focus manuel avant de prendre une photo
+adb shell "am start -a android.media.action.IMAGE_CAPTURE" #...... ouverture de l'application photo par défaut
+adb shell "am start -a android.media.action.STILL_IMAGE_CAMERA" #. ouverture de l'application photo par défaut
+adb shell "am force-stop com.sec.android.app.camera" #............ fermeture de l'application photo
+adb shell ls #.................................................... la fonction "ls" classique avec tous les paramètres possibles
+adb pull $FullFileName #.......................................... copier de fichier(s)
+adb shell rm $FullFileName #...................................... suppression de fichier(s)
+
+"gphoto2" smartphone
+20220916_105454.jpg

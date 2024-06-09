@@ -721,6 +721,10 @@ Voici quelques explications sur ces informations.
 -   [What is NVMe SSD technology?](https://www.kingston.com/en/ssd/what-is-nvme-ssd-technology)
 -   [What Is an MMC Card - Full Guide](https://recoverit.wondershare.com/memorycard-recovery/what-is-mmc-card.html)
 
+## Configurer les interfaces réseaux
+
+Pour activer ou désactiver les différentes interfaces réseaux, on peut utiliser `nmtui`.
+
 ## À voir aussi
 
 -   <https://www.raspberrypi.com/news/raspberry-pi-bullseye-update-april-2022/>

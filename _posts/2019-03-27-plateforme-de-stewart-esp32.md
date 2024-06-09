@@ -442,3 +442,11 @@ Servos: TowerPro MG995
 -   [Stewart Platform Joystick](https://youtu.be/fDgqAfzSy0c)
 -   [I Built a Ball Balancing Robot](https://youtu.be/v4F-cGDGiEw)
 -   [How Flight Simulators Trick Your Brain](https://www.youtube.com/watch?v=pfTdJD2OakA)
+
+## Liens vers cette page
+
+-   https://www.oly-forum.com/topic/22413-hexapod-als-makrokopf/?do=findComment&comment=465403
+
+## À classer
+
+-   https://www.youtube.com/watch?v=kAaYaZcpbLo
