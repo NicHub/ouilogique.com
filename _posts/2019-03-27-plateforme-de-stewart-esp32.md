@@ -450,3 +450,5 @@ Servos: TowerPro MG995
 ## À classer
 
 -   https://www.youtube.com/watch?v=kAaYaZcpbLo
+-   https://github.com/T-Kuhn/HighPrecisionStepperJuggler/
+    -   https://www.youtube.com/watch?v=lYyAMDYzJQM
