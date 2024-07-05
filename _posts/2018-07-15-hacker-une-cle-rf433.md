@@ -128,3 +128,21 @@ Et il ne reste plus qu’à flasher l’Arduino et faire un test.
 [rf433-spoof sur github]: https://github.com/NicHub/ouilogique-Arduino/tree/master/rf433-spoof
 [émetteur rf433]: https://fr.aliexpress.com/item/1Lot-1-pair-2pcs-RF-wireless-receiver-module-transmitter-module-Ordinary-super-regeneration-315-433MHZ-DC5V/968306683.html
 [clé rf433]: https://fr.aliexpress.com/item/Universal-2-Channels-Electric-Garage-Door-Cloning-Remote-Control-Key-Fob-433mhz/32816768549.html
+
+## Autres logiciels
+
+### CubicSDR
+
+[cubicsdr.com](https://cubicsdr.com/)
+
+[![Cubic SDR][img_5]{:style="width:400px"}][img_5]
+
+[img_5]: ../files/2018-07-15-hacker-une-cle-rf433/images/hacker-une-cle-rf433-005.jpg
+
+### SDRangel
+
+[www.sdrangel.org](https://www.sdrangel.org/)
+
+[![SDR angel][img_6]{:style="width:400px"}][img_6]
+
+[img_6]: ../files/2018-07-15-hacker-une-cle-rf433/images/hacker-une-cle-rf433-006.jpg

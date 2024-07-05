@@ -181,19 +181,21 @@ adb pull /storage/emulated/0/DCIM/Camera/20240529_105639.heic
 adb pull /sdcard/DCIM/Camera/
 ```
 
-## Voir aussi
+## Idées en vrac
+
+> Faut que je mette de l’ordre dans cette section...
 
 <https://github.com/Genymobile/scrcpy>
 
+```bash
 brew install scrcpy
+```
 
+<https://www.lesimprimantes3d.fr/forum/topic/47189-tuto-octolapse-pour-des-appareils-android-non-support%C3%A9s-par-gphoto2/>
 
-https://www.lesimprimantes3d.fr/forum/topic/47189-tuto-octolapse-pour-des-appareils-android-non-support%C3%A9s-par-gphoto2/
-
+```bash
 adb shell am start -a android.media.action.IMAGE_CAPTURE
 adb shell "am start -a android.media.action.STILL_IMAGE_CAMERA"
-
-
 
 adb shell "input keyevent KEYCODE_WAKEUP"  #...................... déverrouillage
 adb shell "input keyevent KEYCODE_SLEEP" #........................ verrouillage
@@ -206,6 +208,9 @@ adb shell "am force-stop com.sec.android.app.camera" #............ fermeture de 
 adb shell ls #.................................................... la fonction "ls" classique avec tous les paramètres possibles
 adb pull $FullFileName #.......................................... copier de fichier(s)
 adb shell rm $FullFileName #...................................... suppression de fichier(s)
+```
 
+<!--
 "gphoto2" smartphone
 20220916_105454.jpg
+-->
