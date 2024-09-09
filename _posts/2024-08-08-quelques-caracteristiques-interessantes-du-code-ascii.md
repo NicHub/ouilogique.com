@@ -29,6 +29,10 @@ Je n’ai reporté que quelques points, donc regardez la vidéo pour le reste.
 
 J’ai plus ou moins reporté le texte original avec le style “parlé”, mais j’ai élagué un peu.
 
+L’auteur a publié un errata quelques semaines après :
+
+<https://www.youtube.com/watch?v=1MHSGivAJvI>
+
 ## Caractère <kbd>BEL</kbd> “Bel”
 
 > On peut faire sonner le terminal avec le caractère <kbd>BEL</kbd> (code ASCII = 0x7) :

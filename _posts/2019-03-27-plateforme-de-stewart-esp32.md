@@ -449,6 +449,7 @@ Servos: TowerPro MG995
 
 ## À classer
 
--   https://www.youtube.com/watch?v=kAaYaZcpbLo
+-   [Ball Balancing Robot pt.1](https://www.youtube.com/watch?v=kAaYaZcpbLo)
 -   https://github.com/T-Kuhn/HighPrecisionStepperJuggler/
-    -   https://www.youtube.com/watch?v=lYyAMDYzJQM
+    -   [The Octo-Bouncer](https://www.youtube.com/watch?v=lYyAMDYzJQM)
+-   [Why this Plate never lets the Ball Fall? Ball on Plate PID controller with Arduino](https://www.youtube.com/watch?v=0BDvbljP4Yk)
