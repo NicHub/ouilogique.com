@@ -298,6 +298,8 @@ Par exemple,
 
 -   `F12 %` scinde le volet actuel en deux volets verticaux.
 -   `F12 |` scinde le volet actuel en deux volets horizontaux.
+-   `F12 C-i` active le volet suivant.
+-   `F12 C-o` décale le contenu de chaque volet.
 
 La liste de toutes les fonctions `F12` est disponible avec la commande `F12 ?`.
 
