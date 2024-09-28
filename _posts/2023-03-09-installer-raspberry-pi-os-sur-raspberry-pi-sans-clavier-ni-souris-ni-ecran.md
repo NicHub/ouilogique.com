@@ -570,7 +570,7 @@ sudo python3.6 -m pip install --upgrade pip
 sudo python3.6 -m pip install quart
 ```
 
-[quart]: https://gitlab.com/pgjones/quart
+[quart]: https://github.com/pallets/quart/
 
 ### picocom
 

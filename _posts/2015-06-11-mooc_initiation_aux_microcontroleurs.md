@@ -14,7 +14,7 @@ title: MOOC — Initiation aux microcontrôleurs
 
 Un peu de pub pour le cours de microcontrôleurs en ligne de l’EPFL :
 
--   <https://www.coursera.org/learn/microcontroleurs>
+-   <https://www.coursera.org/learn/microcontroleurs>{:rel="nofollow"}
 
 Et voici le cours au format GitBook :
 

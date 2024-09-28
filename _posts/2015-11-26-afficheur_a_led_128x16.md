@@ -164,7 +164,7 @@ Utiliser un logiciel qui permet d’envoyer des caractères via RS232. Celui de 
 
 ## Module GSM/GPRS
 
-[Quectel GC65](http://www.quectel.com/UploadFile/Product/%E7%A7%BB%E8%BF%9C%E9%80%9A%E4%BF%A1_GC65_GSM_%E4%BA%A7%E5%93%81%E8%A7%84%E6%A0%BC%E4%B9%A6_V2.0.pdf)
+[Quectel GC65](http://www.quectel.com/UploadFile/Product/%E7%A7%BB%E8%BF%9C%E9%80%9A%E4%BF%A1_GC65_GSM_%E4%BA%A7%E5%93%81%E8%A7%84%E6%A0%BC%E4%B9%A6_V2.0.pdf){:rel="nofollow"}
 
 850/**900/1800**/1900 MHz
 
