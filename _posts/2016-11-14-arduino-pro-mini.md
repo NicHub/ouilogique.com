@@ -19,7 +19,7 @@ L’Arduino Pro Mini n’a pas d’UART visible sur le port USB de l’ordinateu
 ## Matériel
 
 -   [ATmega328P-AU Pro Mini 3.3V 8MHz, acheté chez Banggood pour 13 $ les 5 pièces][3]
--   [Programmateur FTDI][4]
+-   [Programmateur FTDI][4]{:rel="nofollow"}
 
 ## Programmation de l’Arduino Pro Mini avec un Arduino UNO (mode Arduino as ISP)
 

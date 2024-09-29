@@ -15,7 +15,7 @@ title: BMP280 avec Arduino Pro Mini
 
 -   [BMP280 (pression et température) acheté chez Banggood pour 1.98 $][2]
 -   [ATmega328P-AU Pro Mini 3.3V 8MHz, acheté chez Banggood pour 13 $ les 5 pièces][1]
--   [Programmateur FTDI][3]
+-   [Programmateur FTDI][3]{:rel="nofollow"}
 
 ## Code de test
 
