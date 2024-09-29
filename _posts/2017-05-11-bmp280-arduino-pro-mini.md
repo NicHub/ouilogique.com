@@ -23,7 +23,7 @@ title: BMP280 avec Arduino Pro Mini
 
 ## Notes
 
-Comme ce modèle de BMP280 n’a pas de régulateur de tension 3.3 V, j’en ai ajouté un ([LP2950][7]) soudé sur _veroboard_ entre le programmateur FTDI et l’Arduino.
+Comme ce modèle de BMP280 n’a pas de régulateur de tension 3.3 V, j’en ai ajouté un ([LP2950][7]{:rel="nofollow"}) soudé sur _veroboard_ entre le programmateur FTDI et l’Arduino.
 
 Ce capteur peut être utilisé sur le bus I²C ou le bus SPI. Les dénominations des broches indiquées sur le PCB sont pour l’I²C. Pour le SPI, la table ci-dessous indique la conversion.
 
@@ -48,7 +48,7 @@ Je n’ai testé que le mode SPI (hardware) et pas le mode I²C et ça fonctionn
 
 ## Voir aussi
 
--   [Article d’Adafruit sur le BMP280][4]
+-   [Article d’Adafruit sur le BMP280][4]{:rel="nofollow"}
 -   [BMP280 sur le site de Bosch][5]{:rel="nofollow"}
 -   [Datasheet du BMP280][6]{:rel="nofollow"}
 

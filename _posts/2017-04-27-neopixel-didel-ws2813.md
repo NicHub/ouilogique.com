@@ -74,7 +74,7 @@ Le programme de test se trouve [sur mon GitHub][programme de test].
 
 J’ai aussi fait un test avec un Raspberry Pi pour voir s’il est possible de faire fonctionner des LED adressables lorsque le processeur du RPi est utilisé au maximum de sa capacité.
 
-Pour les LED, j’ai utilisé [la solution logicielle proposée par Adafruit][neopixels-rpi].
+Pour les LED, j’ai utilisé [la solution logicielle proposée par Adafruit][neopixels-rpi]{:rel="nofollow"}.
 
 Pour le stress-test, j’ai utilisé [`vcgencmd`][stress-test].
 

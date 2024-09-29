@@ -39,7 +39,7 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 -   [Presse-étoupes](https://www.aliexpress.us/item/2251800813730813.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US)
 -   [Forêts à étage (pour la découpe des passages des presse-étoupes)](https://www.aliexpress.us/item/2251832475061694.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US)
 -   [Arduino Pro Mini](https://usa.banggood.com/5Pcs-3_3V-8MHz-ATmega328P-AU-Pro-Mini-Microcontroller-With-Pins-Development-Board-p-980292.html?imageAb=2&akmClientCountry=America&p=0431091025639201412F&a=1697373190.4133&akmClientCountry=America)
--   [Interface clone FTDI (je déconseille ce modèle car il envoie du 5 V en mode 3.3 V, mais pour l’Arduino Pro Mini, ça n’a pas de conséquence)](https://m.miniinthebox.com/fr/p/programme-downloader-ftdi-basic-usb-a-ttl-ft232-pour-arduino_p903425.html)
+-   [Interface clone FTDI (je déconseille ce modèle car il envoie du 5 V en mode 3.3 V, mais pour l’Arduino Pro Mini, ça n’a pas de conséquence)](https://m.miniinthebox.com/fr/p/programme-downloader-ftdi-basic-usb-a-ttl-ft232-pour-arduino_p903425.html){:rel="nofollow"}
 -   [Borniers](https://usa.banggood.com/20pcs-2-Pin-Plug-In-Screw-Terminal-Block-Connector-5_08mm-Pitch-p-993197.html?imageAb=1&akmClientCountry=America&p=0431091025639201412F&a=1697373192.6246&akmClientCountry=America)
 -   [Connecteurs 3 pôles](https://www.aliexpress.us/item/2251832471069472.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US)
 -   [Connecteurs 2 pôles (plus disponible)](https://www.aliexpress.us/item/2251832601416668.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US)
