@@ -26,6 +26,15 @@ Premiers prototypes d’une plateforme de Stewart que je construis dans le cadre
 
 -   <https://github.com/NicHub/stewart-platform-esp32>
 
+Le code de ce projet a été utilisé par Jakob Frabosilio pour sa thèse de Master qu’il a présenté en septembre 2024 à _Cal Poly_
+(_Faculty of California Polytechnic State University_), San Luis Obispo.
+
+[Design and Implementation of an Inverted Short Baseline Acoustic Positioning System](https://digitalcommons.calpoly.edu/theses/2914/)
+
+Quelques images et vidéos sont disponibles ici :
+
+<https://github.com/NicHub/stewart-platform-esp32/issues/5>
+
 ## Quatrième version
 
 Pour la quatrième version, je ne génère plus le PWM des servos avec l’ESP32, mais avec un
@@ -378,10 +387,11 @@ PDF à trouver :
 
 -   <https://jlcpcb.com>
 
-### Système complet avec caméra [Swiftflying Store](https://swiftflying.fr.aliexpress.com/store/3246059)
+### Système complet avec caméra [Swiftflying Store](https://swiftflying.fr.aliexpress.com/store/3246059){:rel="nofollow"}
 
--   Le lien ne fonctionne plus : fr.aliexpress.com/item/32957141466.html
+-   <https://fr.aliexpress.com/item/32957141466.html>{:rel="nofollow"}
 
+<!--
 ## Pinout
 
 31 DIRA GPIO14
@@ -390,6 +400,7 @@ TC4 GPIO15
 STPA
 STPB
 28 DIRB GPIO25
+-->
 
 ## DELTA-ROBOT ONE — Robot Delta Arduino
 
@@ -445,11 +456,11 @@ Servos: TowerPro MG995
 
 ## Liens vers cette page
 
--   https://www.oly-forum.com/topic/22413-hexapod-als-makrokopf/?do=findComment&comment=465403
+-   [Hexapod als Makrokopf?](https://www.oly-forum.com/topic/22413-hexapod-als-makrokopf/?do=findComment&comment=465403)
 
 ## À classer
 
 -   [Ball Balancing Robot pt.1](https://www.youtube.com/watch?v=kAaYaZcpbLo)
--   https://github.com/T-Kuhn/HighPrecisionStepperJuggler/
+-   [HighPrecisionStepperJuggler](https://github.com/T-Kuhn/HighPrecisionStepperJuggler/)
     -   [The Octo-Bouncer](https://www.youtube.com/watch?v=lYyAMDYzJQM)
 -   [Why this Plate never lets the Ball Fall? Ball on Plate PID controller with Arduino](https://www.youtube.com/watch?v=0BDvbljP4Yk)
