@@ -13,11 +13,11 @@ title: Sandwich de WEMOS
 
 ## Matériel
 
-Étage 1 : [Battery Shield][1]
-Étage 2 : [WEMOS ESP8266 V2][2]
+Étage 1 : [Battery Shield][1]{:rel="nofollow"}
+Étage 2 : [WEMOS ESP8266 V2][2]{:rel="nofollow"}
 Étage 3 : [Relay Shield][3]
 Étage 4 : [nRF24][4a] custom shield avec [condensateur 2200 µF][4b]
-Étage 5 : [DHT11 Shield][5]
+Étage 5 : [DHT11 Shield][5]{:rel="nofollow"}
 
 ## Notes
 

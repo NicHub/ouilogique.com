@@ -527,7 +527,7 @@ Raspbian Stretch propose la version 3.5 de Python.
 Comme Python 3.6 apporte de nouvelles fonctionnalités comme les _f-strings_ et que le module `asyncio` a été amélioré, je pense que c’est intéressant de l’installer aussi.
 L’idée est aussi de pouvoir tester le module [quart][quart].
 
-Source : <https://liftcodeplay.com/2017/06/30/how-to-install-python-3-6-on-raspbian-linux-for-raspberry-pi/>
+Source : <https://liftcodeplay.com/2017/06/30/how-to-install-python-3-6-on-raspbian-linux-for-raspberry-pi/>{:rel="nofollow"}
 Les versions de Python disponibles sont téléchargeables à : <https://www.python.org/ftp/python/>
 Temps d’installation : environ 30 min.
 Cette procédure n’écrase pas les versions de Python existantes.

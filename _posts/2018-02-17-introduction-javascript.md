@@ -11,7 +11,7 @@ tags: []
 title: Introduction au langage JavaScript
 ---
 
-Ce document fait partie du [cours sur le HTML embarqué][Wiki du cours HTML embarqué] que j’ai donné au [Microclub][Microclub] en janvier et février 2018 à l’EPFL.
+Ce document fait partie du [cours sur le HTML embarqué][Wiki du cours HTML embarqué] que j’ai donné au [Microclub][Microclub]{:rel="nofollow"} en janvier et février 2018 à l’EPFL.
 
 ## Les documents du cours
 

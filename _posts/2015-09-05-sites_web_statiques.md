@@ -156,7 +156,7 @@ WP ⇒ Wp-Super Cache
 
 ### Harp
 
--   <https://harpjs.com>
+-   <https://harpjs.com>{:rel="nofollow"}
 
 ### Roots (voir article)
 

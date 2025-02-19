@@ -26,7 +26,7 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 -   [Relais de puissance pour circuits imprimés 3 VDC 400 mW, ADW1203W, Panasonic][2]
     -   [Spécifications (PDF)](../files/2017-04-14-relai-bistable-commande-tension/docs/adw1_eng_tds.pdf)
 -   [Transistor NPN BC337, Spécifications (PDF)](../files/2017-04-14-relai-bistable-commande-tension/docs/BC337-D.PDF)
--   [Veroboard, Carte de laboratoire Papier bakélisé au phénol FR2, 710-2, Rademacher](https://www.distrelec.ch/fr/carte-de-laboratoire-papier-bakelise-au-phenol-fr2-rademacher-710/p/14832982)
+-   [Veroboard, Carte de laboratoire Papier bakélisé au phénol FR2, 710-2, Rademacher](https://www.distrelec.ch/fr/carte-de-laboratoire-papier-bakelise-au-phenol-fr2-rademacher-710/p/14832982){:rel="nofollow"}
 -   [Diode 1N4004 400 V 1A DO-41](https://www.aliexpress.us/item/2251832278510616.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US)
 -   [Optocoupleur SFH620A DIP DIP-4][1]
     -   [Spécifications (PDF)](../files/2017-04-14-relai-bistable-commande-tension/docs/sfh620.pdf)

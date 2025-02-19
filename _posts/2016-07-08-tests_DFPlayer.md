@@ -51,7 +51,7 @@ Pour utiliser le programme ci-dessus, il faut installer la bibliothèque `DFPlay
 
 -   <http://www.banggood.com/3Pcs-DFPlayer-Mini-MP3-Player-Module-For-Arduino-p-981366.html?p=0431091025639201412F>
 -   <https://www.dfrobot.com/wiki/index.php/DFPlayer_Mini_SKU:DFR0299>
--   <https://www.dfrobot.com/image/data/DFR0299/DFPlayer%20Mini%20Manul.pdf>
+-   <https://www.dfrobot.com/image/data/DFR0299/DFPlayer%20Mini%20Manul.pdf>{:rel="nofollow"}
 -   <http://www.trainelectronics.com/Arduino/MP3Sound/TalkingTemperature/FN-M16P%20Embedded%20MP3%20Audio%20Module%20Datasheet.pdf>
 
 ## NOTES

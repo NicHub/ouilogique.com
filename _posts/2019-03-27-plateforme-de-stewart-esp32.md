@@ -420,11 +420,11 @@ Analyse vectorielle des lieux de singularité de la plate-forme de Gough-Stewart
 
 -   <https://corpus.ulaval.ca/jspui/bitstream/20.500.11794/23444/1/28962.pdf>{:rel="nofollow"}
 -   <https://stringfixer.com/fr/Stewart_platform>{:rel="nofollow"}
--   <https://fr.lambdageeks.com/parallel-robot-kinematics/>
+-   <https://fr.lambdageeks.com/parallel-robot-kinematics/>{:rel="nofollow"}
 -   <https://fr.wikipedia.org/wiki/Reymond_Clavel>
 -   <https://fr.wikipedia.org/wiki/Robot_Delta>
 -   <https://vimeo.com/129643275>
--   <https://www.ni.com/fr-ch/shop/product/6-dof-stewart-platform-control-library.html>
+-   <https://www.ni.com/fr-ch/shop/product/6-dof-stewart-platform-control-library.html>{:rel="nofollow"}
 -   <https://www.ni.com/fr-ch/shop/product/stewart-platform-trainer-toolkit.html>
 -   <https://www.xarg.org/paper/inverse-kinematics-of-a-stewart-platform/>
 -   <https://youtu.be/1jrP3_1ML9M>

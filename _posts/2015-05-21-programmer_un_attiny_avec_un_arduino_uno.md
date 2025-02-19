@@ -70,7 +70,7 @@ et la quatrième LED, bleue, sert à vérifier que l’ATtiny a effectivement é
 > Ceci est valable pour les version de l’IDE Arduino qui n’avaient pas le gestionnaire de carte.
 > À partir de la version 1.6.4, suivre la procédure du chapitre suivant.
 
--   Télécharger les librairies (_Core Libraries_) de la famille ATtiny de <https://code.google.com/p/arduino-tiny/> en prenant garde de choisir la version correspondante à l’IDE Arduino qui va être utilisé par la suite.
+-   Télécharger les librairies (_Core Libraries_) de la famille ATtiny de <https://code.google.com/p/arduino-tiny/>{:rel="nofollow"} en prenant garde de choisir la version correspondante à l’IDE Arduino qui va être utilisé par la suite.
 -   Décompresser le fichier zip et déplacer le répertoire `tiny` dans `~/Documents/Arduino/hardware/`.
 -   Copier le fichier `tiny/avr/Prospective Boards.txt` vers `tiny/avr/boards.txt`.
 -   Le fichier `boards.txt` peut optionnellement être modifié, par exemple pour enlever des définitions de microcontrôleurs inutiles.
