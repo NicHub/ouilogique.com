@@ -38,7 +38,7 @@ L’anneau de LED a 4 connexions :
 ## Matériel
 
 -   [Anneau de 24 LED WS2812 — NeoPixel][anneau de 24 led ws2812 — neopixel]{:rel="nofollow"}
--   [Logic Level Converter][logic level converter]
+-   [Logic Level Converter][logic level converter]{:rel="nofollow"}
 -   Raspberry Pi 2 Model B / Raspbian Stretch
 -   Raspberry Pi 3 Model B / Raspbian Jessie
 

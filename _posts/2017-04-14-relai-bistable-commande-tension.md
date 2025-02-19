@@ -23,7 +23,7 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 
 -   [Alimentation Mean Well, IRM-03-3.3, 3.3V, PCB][3]
     -   [Spécifications (PDF)][4]
--   [Relais de puissance pour circuits imprimés 3 VDC 400 mW, ADW1203W, Panasonic][2]
+-   [Relais de puissance pour circuits imprimés 3 VDC 400 mW, ADW1203W, Panasonic][2]{:rel="nofollow"}
     -   [Spécifications (PDF)](../files/2017-04-14-relai-bistable-commande-tension/docs/adw1_eng_tds.pdf)
 -   [Transistor NPN BC337, Spécifications (PDF)](../files/2017-04-14-relai-bistable-commande-tension/docs/BC337-D.PDF)
 -   [Veroboard, Carte de laboratoire Papier bakélisé au phénol FR2, 710-2, Rademacher](https://www.distrelec.ch/fr/carte-de-laboratoire-papier-bakelise-au-phenol-fr2-rademacher-710/p/14832982){:rel="nofollow"}
@@ -40,7 +40,7 @@ Cette commande à relai est utilisée pour alimenter un lit électrique avec com
 -   [Forêts à étage (pour la découpe des passages des presse-étoupes)](https://www.aliexpress.us/item/2251832475061694.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US)
 -   [Arduino Pro Mini](https://usa.banggood.com/5Pcs-3_3V-8MHz-ATmega328P-AU-Pro-Mini-Microcontroller-With-Pins-Development-Board-p-980292.html?imageAb=2&akmClientCountry=America&p=0431091025639201412F&a=1697373190.4133&akmClientCountry=America)
 -   [Interface clone FTDI (je déconseille ce modèle car il envoie du 5 V en mode 3.3 V, mais pour l’Arduino Pro Mini, ça n’a pas de conséquence)](https://m.miniinthebox.com/fr/p/programme-downloader-ftdi-basic-usb-a-ttl-ft232-pour-arduino_p903425.html){:rel="nofollow"}
--   [Borniers](https://usa.banggood.com/20pcs-2-Pin-Plug-In-Screw-Terminal-Block-Connector-5_08mm-Pitch-p-993197.html?imageAb=1&akmClientCountry=America&p=0431091025639201412F&a=1697373192.6246&akmClientCountry=America)
+-   [Borniers](https://usa.banggood.com/20pcs-2-Pin-Plug-In-Screw-Terminal-Block-Connector-5_08mm-Pitch-p-993197.html?imageAb=1&akmClientCountry=America&p=0431091025639201412F&a=1697373192.6246&akmClientCountry=America){:rel="nofollow"}
 -   [Connecteurs 3 pôles](https://www.aliexpress.us/item/2251832471069472.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US)
 -   [Connecteurs 2 pôles (plus disponible)](https://www.aliexpress.us/item/2251832601416668.html?gatewayAdapt=fra2usa4itemAdapt&_randl_shipto=US)
 
@@ -94,7 +94,7 @@ J’ai designé le PCB sur KiCad et je l’ai fait fabriquer chez [SeeedStudio](
 
 > Les [optocoupleurs SFH620A][1] que j’ai reçus n’ont pas l’indication de la broche 1 sur le boitier. Cette broche se trouve en haut à gauche quand on tient la puce de façon à pouvoir lire le texte sur le dos du boitier normalement.
 
-> Les broches du [relai Panasonic ADW1203W][2] ne sont pas au pas de 2.54 mm. J’ai dû souder des fils aux broches et les plier pour pouvoir souder le tout sur le veroboard.
+> Les broches du [relai Panasonic ADW1203W][2]{:rel="nofollow"} ne sont pas au pas de 2.54 mm. J’ai dû souder des fils aux broches et les plier pour pouvoir souder le tout sur le veroboard.
 
 [![Prototype sur veroboard commande relai bistable avec Arduino Pro Mini][i3]][i3]
 
