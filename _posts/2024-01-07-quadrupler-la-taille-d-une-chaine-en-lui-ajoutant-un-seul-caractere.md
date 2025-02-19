@@ -77,7 +77,7 @@ On constate que la taille de la chaine codée en UTF-8 et stockée en mémoire v
 Comme pour la chaine précédente, Python ajoute quelques octets pour les métadonnées.
 Cette chaîne est stockée avec le type `bytes`, c’est-à-dire une séquence d’octets immuables.
 
-Convertissons une deuxième fois cette chaine, mais cette fois-ci, enregistrons-la sur le disque.
+Convertissons une deuxième fois cette chaine en UTF-8 en l’enregistrant sur le disque.
 
 ```python
 fname = "s1u.txt"
@@ -95,7 +95,7 @@ Voyons maintenant quand cette égalité n’est plus vraie.
 
 ## Quadruplons la taille de la chaine Python
 
-Ajoutons le caractère `😈` (`chr(128520)`) à notre chaine initiale et regardons quelle est la taille du résultat. À noter que ce caractère est codé sur 4 octets autant dans une chaine Python qu’une chaine UTF-8.
+Ajoutons le caractère `😈` (`chr(128520)`) à notre chaine initiale et regardons quelle est la taille du résultat. À noter que ce caractère est codé sur 4 octets, autant dans une chaine Python qu’une chaine UTF-8.
 
 ```python
 s2 = s1 + chr(128520)
@@ -139,26 +139,28 @@ Comme précédemment, la chaine en mémoire prend quelques octets supplémentair
 Dans cet article, je n’ai parlé que des caractères codés sur 1 ou 4 octets, mais le raisonnement peut être étendu aux caractères codés sur 2 ou 3 octets.
 Cependant, il faut prendre quelques précautions car les plages des tailles en octets ne se confondent pas pour tous les points de code.
 Par exemple, les points de code 2048 à 65’535 sont codés sur 3 octets en UTF-8 mais sur 2 octets en Python.
+<!--
 Il y a d’autres différences qui feront l’objet d’un autre article.
+-->
 
 En conclusion, le rapport entre la taille mémoire utilisée par Python et la taille en UTF-8 peut varier d’un facteur allant de 1 à 4.
 Ces chiffres ne sont pas valables pour les très petites chaines à cause de la taille des métadonnées.
 Par contre dès que les chaines sont plus grandes, ça fonctionne très bien.
 J’ai mesuré ce rapport sur une dizaine de fichiers contenant des livres entiers en français et je trouve un rapport moyen de 1.9.
 
-
 ## Réponse à la question
 
 Concernant la [question sur Stackoverflow], le fichier qui posait question peut être téléchargé ici :
 <https://data.statmt.org/cc-100/it.txt.xz>.
 
-Il est assez volumineux, mais Python s’en sort très bien concernant la vitesse de lecture.
+L’archive pèse 8.3 Go et le fichier décompressé 32 Go.
+C’est assez volumineux, mais Python s’en sort très bien concernant la vitesse de lecture.
 J’arrive à créer le décompte ci-dessous en moins de 600 ms sur un MacBook Pro de 2021 avec une puce M1 Pro (qui peut faire mieux en Python ?).
 
 Et la réponse à la question, c’est que le fichier contient beaucoup plus de caractères codés sur 1 octet que de caractères codés sur 2, 3 ou 4 octets.
 C’est contre-intuitif, mais maintenant, vous savez pourquoi c’est comme ça.
 
-````
+```
     1 byte·s ×    149_832_252 occurrence·s =     149_832_252 byte·s on disk
     2 byte·s ×        941_043 occurrence·s =       1_882_086 byte·s on disk
     3 byte·s ×        583_296 occurrence·s =       1_749_888 byte·s on disk
@@ -169,4 +171,4 @@ C’est contre-intuitif, mais maintenant, vous savez pourquoi c’est comme ça.
 Size in Python string format = 151_359_799 × 4 = 605_439_272 byte·s in RAM
 
                    Ratio Python String / UTF-8 =         3.9
-````
+```

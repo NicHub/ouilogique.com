@@ -83,7 +83,7 @@ où
 > CircuitPython n’implémente pas la constante `sys.maxunicode`, mais il ne retourne pas d’erreur lorsqu’on exécute la commande `chr(1_114_111)`.
 > J’ai testé avec [CircuitPython 8.2.9 sur Lolin S2 Mini] qui utilise Python 3.4.0.
 
-[CircuitPython 8.2.9 sur Lolin S2 Mini]: https://circuitpython.org/board/lolin_s2_mini/
+[CircuitPython 8.2.9 sur Lolin S2 Mini]: https://circuitpython.org/board/lolin_s2_mini/
 
 ## Calculer la taille d’une chaine codée en UTF-8
 
@@ -200,8 +200,6 @@ print(sys.getsizeof(s1), sys.getsizeof(s2))
 
 Note that every string in Python takes additional 49-80 bytes of memory, where it stores supplementary information, such as hash, length, length in bytes, encoding type and string flags. That's why an empty string takes 49 bytes of memory.
  -->
-
-
 
 <!--
 http://hapax.qc.ca/pdf/Chapitre-3.pdf
