@@ -171,3 +171,19 @@ WP ⇒ Wp-Super Cache
 -   <https://organizationdemo.wordpress.com/>
 -   <https://ampersanddemo.wordpress.com/>
 -   <https://motifdemo.wordpress.com/>
+
+## Du blog snipcart.com
+
+-   <https://snipcart.com/blog/choose-best-static-site-generator>
+-   <https://staticsitegenerators.net/>
+-   <https://nextjs.org/>
+-   <https://nuxtjs.org/>
+-   <https://www.gatsbyjs.com/>
+-   <https://www.11ty.dev/>
+-   <https://gohugo.io/>
+-   <https://jekyllrb.com/>
+-   <https://astro.build/>
+-   <https://kit.svelte.dev/>
+-   <https://www.bridgetownrb.com/>
+-   <https://vuepress.vuejs.org/>
+-   <https://scully.io/>
