@@ -88,7 +88,7 @@ _[Note perso] Je ne suis qu’à moitié d’accord avec Dylan. En effet, avec l
 _Ce concept est largement utilisé dans le langage HTML avec les balises ouvrantes et fermantes._
 _On est donc sûr que ça tient la route._
 
-> [13:42]: https://youtu.be/9rJO3vptblU?t=822
+[13:42]: https://youtu.be/9rJO3vptblU?t=822
 
 ## Majuscules et minuscules
 
