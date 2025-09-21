@@ -170,7 +170,7 @@ cat ~/.ssh/id_rsa.pub # + Copier le résultat dans le presse-papier.
 **Édit du 2025-08-03**
 
 > Infomaniak impose une clé SSH avec un algorithme sûr, par exemple ed25519 :
-> https://www.infomaniak.com/fr/support/faq/2054/se-connecter-avec-cle-ssh
+> <https://www.infomaniak.com/fr/support/faq/2054/se-connecter-avec-cle-ssh>.
 > À vérifier si ça fonctionne aussi sur RPi.
 
 ```bash
