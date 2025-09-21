@@ -44,7 +44,6 @@ Il peut être téléchargé ici :
 On a le choix entre plusieurs moutures de l’OS.
 Celle que je préfère est la version “Raspberry Pi OS (64-bit)”.
 La raison est que j’ai besoin d’un OS 64 bit pour faire tourner Prince (<https://www.princexml.com/>).
-En cas de doute, il vaut mieux choisir l’OS recommandé, c’est-à-dire “Raspberry Pi OS (32-bit)”.
 
 ## Choix du terminal
 
@@ -101,20 +100,6 @@ arp -a
 nmap -sP 192.168.1.0/24
 ```
 
-## Mise à jour de Raspbian
-
-```bash
-sudo apt-get -y update       # Télécharge les informations des paquets à partir des sources configurées.
-sudo apt-get -y upgrade      # Mets à jour les paquets installés sans en supprimer.
-sudo apt-get -y dist-upgrade # Installe les versions candidates des paquets installés en installant ou en supprimant d’autres paquets si nécessaire.
-sudo apt-get -y autoremove   # Supprime les dépendances qui ne sont plus utilisées.
-```
-
-À voir aussi :
-
--   <https://www.lecoindunet.com/difference-apt-update-upgrade-full-upgrade>
--   <https://askubuntu.com/a/527421/949794>
-
 ## Configuration
 
 ```bash
@@ -155,6 +140,29 @@ sudo raspi-config
 # Update
 # Advanced Options / Expand filesystem
 ```
+
+## Mise à jour de Raspbian
+
+```bash
+###
+# ! La langue du système doit être configurée avec raspi-config avant la mise à jour.
+##
+
+# Télécharge les informations des paquets à partir des sources configurées.
+# Et mets à jour les paquets installés sans en supprimer.
+sudo apt-get -y update && sudo apt-get -y upgrade
+
+# Installe les versions candidates des paquets installés en installant ou en supprimant d’autres paquets si nécessaire.
+sudo apt-get -y dist-upgrade
+
+# Supprime les dépendances qui ne sont plus utilisées.
+sudo apt-get -y autoremove
+```
+
+À voir aussi :
+
+-   <https://www.lecoindunet.com/difference-apt-update-upgrade-full-upgrade>
+-   <https://askubuntu.com/a/527421/949794>
 
 ## SSH
 
@@ -234,9 +242,7 @@ Par exemple RealVNC :
 -   <https://www.realvnc.com/en/connect/download/viewer/>.
 
 > N.B. Le client VNC installé par défaut sur macOS ne fonctionne pas pour se connecter au serveur VNC du RPi.
-> L’erreur retournée est<br>
-> _Le logiciel de l’ordinateur distant semble ne pas être compatible avec cette version de Partage d’écran._<br>
-> `bash /System/Library/CoreServices/Applications/Screen\ Sharing.app`
+> L’erreur retournée est<br>_Le logiciel de l’ordinateur distant semble ne pas être compatible avec cette version de Partage d’écran._<br>`bash /System/Library/CoreServices/Applications/Screen\ Sharing.app`
 
 ## Enlever les programmes inutiles
 
@@ -389,7 +395,6 @@ tmux set-option -g mouse on
 tmux set-option -g mouse off
 ```
 
-
 ```bash
 # https://ostechnix.com/install-tmux-plugin-manager/
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
@@ -404,18 +409,16 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 run '~/.tmux/plugins/tpm/tpm'
 
 
-``````
-
+```
 
 À voir aussi :
 
-- <https://tmuxcheatsheet.com/>
-- [Tmux has forever changed the way I write code.]
-- [Tutorial Install And Use Tmux on MacOS]
+-   <https://tmuxcheatsheet.com/>
+-   [Tmux has forever changed the way I write code.]
+-   [Tutorial Install And Use Tmux on MacOS]
 
 [Tmux has forever changed the way I write code.]: https://youtu.be/DzNmUNvnB04
 [Tutorial Install And Use Tmux on MacOS]: https://blog.eldernode.com/install-and-use-tmux-on-macos/
-
 
 ### GNU screen
 
