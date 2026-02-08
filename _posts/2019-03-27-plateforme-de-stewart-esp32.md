@@ -26,12 +26,14 @@ Premiers prototypes d’une plateforme de Stewart que je construis dans le cadre
 
 -   <https://github.com/NicHub/stewart-platform-esp32>
 
+## Hall of fame
+
 Le code de ce projet a été utilisé par Jakob Frabosilio pour sa thèse de Master qu’il a présenté en septembre 2024 à _Cal Poly_
 (_Faculty of California Polytechnic State University_), San Luis Obispo.
 
 [Design and Implementation of an Inverted Short Baseline Acoustic Positioning System](https://digitalcommons.calpoly.edu/theses/2914/)
 
-Quelques images et vidéos sont disponibles ici :
+Quelques images et vidéos de son travail sont disponibles ici :
 
 <https://github.com/NicHub/stewart-platform-esp32/issues/5>
 
