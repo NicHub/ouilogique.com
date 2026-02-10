@@ -7,3 +7,5 @@ Pour visionner le site localement :
 ```bash
 bash _serve.sh
 ```
+
+❊
